@@ -35,3 +35,12 @@ def test_narrative_rules():
     assert "Allison Transmission Inc." in " ".join(companies("Nova Bus receives a letter from Allison Transmission Inc. informing"))
     d = narrative_dates("2023-02-16 Issue found. 09/06/18 letter. On 5-May-2020 a call.", set())
     assert len(d) == 3
+
+
+def test_mask_classify():
+    from tt.maskrecover import classify
+    from tt.norm.aliases import AliasTable
+    al = AliasTable()
+    assert classify("Hale Products Inc", "notice from Hale Products received", al)[0] in ("M1", "M2")
+    assert classify("Bendix Commercial Vehicle Systems, LLC", "email from Bendix says", al)[0] == "PARTIAL"
+    assert classify("Acme Corp", "the supplier shipped bad steel", al)[0] == "INFERENTIAL"

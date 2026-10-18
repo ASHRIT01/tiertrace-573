@@ -83,6 +83,18 @@ def narrative_gain(out: str = "reports/narrative_gain.md"):
     typer.echo(md)
 
 
+@app.command("mask-size")
+def mask_size(out: str = "reports/mask_recover_size.md"):
+    """How many filings have the block supplier also named in the narrative (mask-and-recover test size)."""
+    from pathlib import Path
+    from tt.maskrecover import run
+    from tt.norm.aliases import AliasTable
+    md = run(Path("data/processed/sample_573.jsonl"), Path("data/audit_raw"), AliasTable.load("config/aliases.csv"))
+    Path(out).parent.mkdir(exist_ok=True)
+    Path(out).write_text(md)
+    typer.echo(md)
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
