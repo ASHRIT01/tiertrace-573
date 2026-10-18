@@ -1,0 +1,530 @@
+[
+ {
+  "file": "RCLRPT-15V658-6735.PDF",
+  "year": 2015,
+  "filing_date": "2015-10-09",
+  "filer": "Airstream, Inc.",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: none (block is NR)",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: nothing to name (block NR, none in narrative)",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "July 25, 2015",
+    "type": "FILER_AWARENESS",
+    "quote": "July 25, 2015 - Airstream notified of a fire in an Interstate motor home vehicle by a servicing dealer."
+   },
+   {
+    "date_text": "July 27, 2015",
+    "type": "INVESTIGATION_START",
+    "quote": "July 27, 2015 - Airstream opens investigation into the incident."
+   },
+   {
+    "date_text": "August 19, 2015",
+    "type": "OTHER",
+    "quote": "August 19, 2015 - Production line changed routing of ground wire location due to engineering update."
+   },
+   {
+    "date_text": "September 22, 2015",
+    "type": "FILER_AWARENESS",
+    "quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership due to loose cabling connections on the positive side of the electrical system."
+   },
+   {
+    "date_text": "September 22, 2015",
+    "type": "INVESTIGATION_START",
+    "quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership due to loose cabling connections on the positive side of the electrical system. Airstream opens an investigation on the issue."
+   },
+   {
+    "date_text": "October 5, 2015",
+    "type": "DECISION",
+    "quote": "October 5, 2015 - Airstream conducts a safety review of both incidents. Considering both incidents together, Airstream decides to conduct a safety recall on the entire vehicle population to insure no vehicles have any issues in the future."
+   },
+   {
+    "date_text": "October 9, 2015",
+    "type": "NHTSA_FILING",
+    "quote": "October 9, 2015 - Airstream submits a 573 to the NHTSA portal."
+   }
+  ],
+  "cause": {
+   "label": "Loose/under-torqued electrical connections and incorrectly installed interior grounding wire",
+   "status": "SUPPORTED",
+   "quote": "Electrical connections not properly torqued and the interior wire harness grounding wire installed incorrectly.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "flags": [
+   "block is NR, so no filing-named supplier to recover; excluded from the supplier-recovery set (blank block)"
+  ],
+  "note": "Two events share the Sept 22 entry (awareness, then investigation), so the second quote spans both sentences."
+ },
+ {
+  "file": "RCLRPT-16V870-6167.PDF",
+  "year": 2016,
+  "filing_date": "2016-11-28",
+  "filer": "General Motors LLC",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: ARC Automotive",
+    "status": "SUPPORTED",
+    "quote": "Name : ARC Automotive",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative names ARC Automotive (same as block supplier)",
+    "status": "SUPPORTED",
+    "quote": "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module, performed an incorrect off seam inboard weld on the inflator manifold.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 13, 2016",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On November 13, 2016, RSIAB module supplier Takata reported to GM that, during lot acceptance testing (“LAT”) of an assembled airbag module at 85C, the inflator ruptured."
+   },
+   {
+    "date_text": "November 14, 2016",
+    "type": "INVESTIGATION_START",
+    "quote": "GM opened an investigation on November 14, 2016 and immediately initiated actions to trace inflators from the same lot as the failed inflator to potentially impacted plants and vehicles."
+   },
+   {
+    "date_text": "November 16, 2016",
+    "type": "OTHER",
+    "quote": "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its manifold as the result of an incorrect off seam inboard weld"
+   },
+   {
+    "date_text": "November 18, 2016",
+    "type": "DECISION",
+    "quote": "On November 18, 2016, GM’s Safety Field Action Decision Authority (SFADA) decided to conduct a safety recall on the entire suspect lot."
+   }
+  ],
+  "cause": {
+   "label": "Incorrect off-seam inboard weld on the inflator manifold (ARC), causing inflator rupture",
+   "status": "SUPPORTED",
+   "quote": "performed an incorrect off seam inboard weld on the inflator manifold. The off seam weld caused the inflator to rupture at the manifold.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Takata"
+   ],
+   "quote": "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module",
+   "section": "cause"
+  },
+  "flags": [],
+  "note": "Takata is the module supplier above the block supplier ARC. 'Speak Up For Safety report that same day' is a date by reference only, so not an event."
+ },
+ {
+  "file": "RCLRPT-17V819-6798.PDF",
+  "year": 2017,
+  "filing_date": "2018-01-17",
+  "filer": "Mercedes-Benz USA, LLC.",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: none (block is NR)",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: nothing to name (block NR, none in narrative)",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 2016",
+    "type": "FILER_AWARENESS",
+    "quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant."
+   },
+   {
+    "date_text": "November 2016",
+    "type": "INVESTIGATION_START",
+    "quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant. Investigations were initiated to identify potentially affected vehicles."
+   },
+   {
+    "date_text": "mid-2017",
+    "type": "OTHER",
+    "quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution."
+   },
+   {
+    "date_text": "December 2017",
+    "type": "DECISION",
+    "quote": "In December 2017, DAG determined that a potential non-compliance regarding the requirements of FMVSS 108 and cannot be ruled out."
+   }
+  ],
+  "cause": {
+   "label": "C-class parameters used for headlamp adjustment on GLC-class vehicles",
+   "status": "SUPPORTED",
+   "quote": "C-class parameters were used for headlamp adjustment on GLC-class vehicles.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "flags": [
+   "block is NR, so no filing-named supplier to recover; excluded from the supplier-recovery set (blank block)"
+  ],
+  "note": "Month-only and 'mid-2017' dates kept as written. 'from start of production through November 2016' is a data range, not an event."
+ },
+ {
+  "file": "RCLRPT-18V293-6049.PDF",
+  "year": 2018,
+  "filing_date": "2018-05-03",
+  "filer": "Navistar, Inc.",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: Shield",
+    "status": "SUPPORTED",
+    "quote": "Name : Shield",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative names Shield (same as block supplier)",
+    "status": "SUPPORTED",
+    "quote": "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "03/22/2018",
+    "type": "FILER_AWARENESS",
+    "quote": "03/22/2018 – Navistar receives reports of broken seat belt D-ring bolts during the assembly process at the Springfield Assembly Plant."
+   },
+   {
+    "date_text": "03/23/2018",
+    "type": "OTHER",
+    "quote": "03/23/2018 – Navistar quarantines vehicles at the Springfield assembly plant."
+   },
+   {
+    "date_text": "03/24/2018",
+    "type": "INVESTIGATION_START",
+    "quote": "03/24/2018 – Navistar initiates metallurgical testing of suspect bolts."
+   },
+   {
+    "date_text": "03/25/2018",
+    "type": "INVESTIGATION_START",
+    "quote": "03/25/2018 – Navistar completes metallurgical testing and initiates investigation to understand the scope of the issue in manufacturing and supplier parts."
+   },
+   {
+    "date_text": "03/26/2016",
+    "type": "OTHER",
+    "quote": "03/26/2016 – Navistar contains the issue at the Springfield assembly plant and repairs quarantined vehicles."
+   },
+   {
+    "date_text": "03/27/2018",
+    "type": "OTHER",
+    "quote": "03/27/2018 – Navistar quarantines vehicles at the Escobedo assembly plant."
+   },
+   {
+    "date_text": "03/28/2018",
+    "type": "OTHER",
+    "quote": "03/28/2018 – Navistar quarantines suspect seat belt bolts at the Parts Distribution Centers."
+   },
+   {
+    "date_text": "04/02/2018",
+    "type": "OTHER",
+    "quote": "04/02/2018 – Navistar certifies seat belt bolts at the Parts distribution Centers."
+   },
+   {
+    "date_text": "04/02/2018 - 04/23/18",
+    "type": "INVESTIGATION_START",
+    "quote": "04/02/2018 - 04/23/18 – Navistar initiates investigation to understand the scope of the issue with the supplier and their sub suppliers and the impact on International products."
+   },
+   {
+    "date_text": "04/05/2018",
+    "type": "OTHER",
+    "quote": "04/05/2018 – Navistar contains the issue at the Escobedo assembly plant and repairs quarantined vehicles."
+   },
+   {
+    "date_text": "04/24/2018",
+    "type": "OTHER",
+    "quote": "04/24/2018 – Navistar finalizes the suspect population."
+   },
+   {
+    "date_text": "04/26/2018",
+    "type": "DECISION",
+    "quote": "04/26/2018 – Navistar declares a Safety Recall."
+   }
+  ],
+  "cause": {
+   "label": "Supplier pre-sourcing evaluation missed supplier quality capability and hydrogen embrittlement in D-ring bolt",
+   "status": "SUPPORTED",
+   "quote": "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "04/02/2018 - 04/23/18 – Navistar initiates investigation to understand the scope of the issue with the supplier and their sub suppliers and the impact on International products.",
+   "section": "chronology"
+  },
+  "flags": [
+   "Printed year typo '03/26/2016' kept as written (left to verifier V3)."
+  ],
+  "note": "Containment steps (quarantine, certify, repair) are typed OTHER; none is remedy mailing logistics."
+ },
+ {
+  "file": "RCLRPT-22V374-1195.PDF",
+  "year": 2022,
+  "filing_date": "2022-06-03",
+  "filer": "Daimler Trucks North America, LLC",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: Bendix Corp Heavy Vehicle Systems Group",
+    "status": "SUPPORTED",
+    "quote": "Name : Bendix Corp Heavy Vehicle Systems Group",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: block supplier Bendix is not named in cause (NR) or chronology",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "On or about May 5, 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "On or about May 5, 2022, DTNA received a notification from its Engineering group that, while testing a specific DTNA owned vehicle that had not been sold to commerce, there was a situation that resulted in an unintended brake application."
+   },
+   {
+    "date_text": "On or about May 16",
+    "type": "OTHER",
+    "quote": "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles, as listed on the prior 573 report."
+   },
+   {
+    "date_text": "On or about May 18, 2022",
+    "type": "DECISION",
+    "quote": "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution, DTNA decided to conduct a voluntary safety recall campaign"
+   }
+  ],
+  "cause": {
+   "label": "Cause not reported (NR); defect text says double check valve traps air",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "flags": [
+   "inferential: block supplier absent from narrative; any Bendix output would be an unsupported claim"
+  ],
+  "note": "Excluded: 'June 3, 2022, DTNA captured and repaired the 4 vehicles' (remedy logistics) and 'As of today' statement. 'On or about May 16' has no year, kept as written."
+ },
+ {
+  "file": "RCLRPT-17V407-6579.PDF",
+  "year": 2017,
+  "filing_date": "2017-06-28",
+  "filer": "Lance Camper Manufacturing. Corp.",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: Robert F. Chapman, Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : Robert F. Chapman, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative refers to 'the manufacturer of the recalled item' without a name",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 26, 2017",
+    "type": "FILER_AWARENESS",
+    "quote": "Lance Camper Mfg. Corp received an email of the failure, with photos, from a customer on May 26, 2017."
+   },
+   {
+    "date_text": "May 26, 2017",
+    "type": "OTHER",
+    "quote": "The item was shipped back to Lance by the customer on May 26, 2017, was inspected by Lance engineers an management on May 26, 2017 and after the review of prints a determination of safety defect was made on May 26, 2017."
+   },
+   {
+    "date_text": "May 26, 2017",
+    "type": "INVESTIGATION_START",
+    "quote": "The item was shipped back to Lance by the customer on May 26, 2017, was inspected by Lance engineers an management on May 26, 2017 and after the review of prints a determination of safety defect was made on May 26, 2017."
+   },
+   {
+    "date_text": "May 26, 2017",
+    "type": "DECISION",
+    "quote": "The item was shipped back to Lance by the customer on May 26, 2017, was inspected by Lance engineers an management on May 26, 2017 and after the review of prints a determination of safety defect was made on May 26, 2017."
+   }
+  ],
+  "cause": {
+   "label": "Manufacturer of the receiver did not follow prints (insufficient weld area), product out of spec",
+   "status": "SUPPORTED",
+   "quote": "The manufacturer of the recalled item did not follow the prints given.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The manufacturer of the recalled item did not follow the prints given.",
+   "section": "cause"
+  },
+  "flags": [
+   "inferential: block supplier absent from narrative"
+  ],
+  "note": "One sentence carries three dated events (shipping, inspection, determination), so it is quoted three times: OTHER, INVESTIGATION_START, DECISION."
+ },
+ {
+  "file": "RCLRPT-19V843-1571.PDF",
+  "year": 2019,
+  "filing_date": "2019-12-11",
+  "filer": "Harley-Davidson Motor Company",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: Robert Bosch LLC",
+    "status": "SUPPORTED",
+    "quote": "Name : Robert Bosch LLC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: Bosch not named in cause; chronology is a pointer",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "Error in the EHCU software",
+   "status": "SUPPORTED",
+   "quote": "There is an error in the electro-hydraulic control unit (EHCU) software.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See attached chronology.",
+   "section": "chronology"
+  },
+  "flags": [
+   "chronology is a pointer: no gold events, reported as NOT_REPORTED"
+  ],
+  "note": ""
+ },
+ {
+  "file": "RCLRPT-20V369-2518.PDF",
+  "year": 2020,
+  "filing_date": "2020-06-24",
+  "filer": "Toyota Motor Engineering & Manufacturing",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: DENSO CORPORATION",
+    "status": "SUPPORTED",
+    "quote": "Name : DENSO CORPORATION",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: cause NR and chronology is a pointer, nothing to settle it",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "Cause not reported (NR)",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "Please see the attached Part 573 Defect Information Report for the full chronology.",
+   "section": "chronology"
+  },
+  "flags": [
+   "chronology is a pointer: no gold events, reported as NOT_REPORTED"
+  ],
+  "note": ""
+ },
+ {
+  "file": "RCLRPT-21V020-7654.PDF",
+  "year": 2021,
+  "filing_date": "2021-02-08",
+  "filer": "Nissan North America, Inc.",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block-reported component manufacturer: none (block is NR)",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative supplier: nothing to name (block NR, cause NR, chronology pointer)",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "Cause not reported (NR)",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See attached Part 573 Report for chronology.",
+   "section": "chronology"
+  },
+  "flags": [
+   "block is NR, so no filing-named supplier to recover; excluded from the supplier-recovery set (blank block)",
+   "chronology is a pointer: no gold events, reported as NOT_REPORTED"
+  ],
+  "note": ""
+ }
+]
