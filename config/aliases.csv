@@ -1,0 +1,6 @@
+alias,parent_id,confidence,source
+ZF Group,ZF,1.0,seed-example
+ZF Friedrichshafen AG,ZF,1.0,seed-example
+Autoliv Inc,AUTOLIV,1.0,seed-example
+Yanfeng Ramos Arizpe,YANFENG,0.9,seed-example
+Yanfeng Automotive Interiors,YANFENG,1.0,seed-example

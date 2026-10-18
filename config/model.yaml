@@ -1,0 +1,4 @@
+main: qwen3.5:4b-q4_K_M
+fallback: qwen3.5:2b-q8_0
+options: {temperature: 0, num_ctx: 6144}
+keep_alive: 30m

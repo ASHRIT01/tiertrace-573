@@ -1,0 +1,18 @@
+[project]
+name = "tiertrace"
+version = "0.1.0"
+description = "TierTrace-573: evidence-backed supplier claims from NHTSA Part 573 recall filings"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.6", "pymupdf>=1.24", "typer>=0.12", "requests>=2.31", "ollama>=0.4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+tt = "tt.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["tt*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
