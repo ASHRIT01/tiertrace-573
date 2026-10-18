@@ -25,9 +25,44 @@
     "quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall (14V-731) on a recalled vehicle."
    },
    {
+    "date_text": "12/2/2014",
+    "type": "OTHER",
+    "quote": "After doing so, the stability control light illuminated.",
+    "inherited_date": true,
+    "entry_quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall (14V-731) on a recalled vehicle."
+   },
+   {
+    "date_text": "12/2/2014",
+    "type": "OTHER",
+    "quote": "The technician determined the ESC (electronic stability control) angle sensor had failed, the sensor was replaced and the sensor failed again.",
+    "inherited_date": true,
+    "entry_quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall (14V-731) on a recalled vehicle."
+   },
+   {
+    "date_text": "12/2/2014",
+    "type": "OTHER",
+    "quote": "The technican's shop supervisor contacted the District Service Manager to report the issue.",
+    "inherited_date": true,
+    "entry_quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall (14V-731) on a recalled vehicle."
+   },
+   {
+    "date_text": "12/2/2014",
+    "type": "FILER_AWARENESS",
+    "quote": "The District Service Manager contacted Peterbilt Customer Service.",
+    "inherited_date": true,
+    "entry_quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall (14V-731) on a recalled vehicle."
+   },
+   {
     "date_text": "12/3/2014",
     "type": "INVESTIGATION_START",
     "quote": "12/3/2014 - Peterbilt Customer Service notified Engineering, and Engineering initiated an investigation."
+   },
+   {
+    "date_text": "12/3/2014",
+    "type": "OTHER",
+    "quote": "The Peterbilt plant initiated containment procedures, established a clean point and produced a list of affected chassis.",
+    "inherited_date": true,
+    "entry_quote": "12/3/2014 - Peterbilt Customer Service notified Engineering, and Engineering initiated an investigation."
    },
    {
     "date_text": "12/5/2014",
@@ -35,9 +70,30 @@
     "quote": "12/5/2014 - Engineering found that the horn contact plate on the steering wheel assembly had a tab on the horn ring that is not present on the part drawing print."
    },
    {
+    "date_text": "12/5/2014",
+    "type": "OTHER",
+    "quote": "Component manufacturer VIP was contacted.",
+    "inherited_date": true,
+    "entry_quote": "12/5/2014 - Engineering found that the horn contact plate on the steering wheel assembly had a tab on the horn ring that is not present on the part drawing print."
+   },
+   {
+    "date_text": "12/5/2014",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "VIP confirmed that the steering wheels were built incorrectly because an assembler had selected the wrong horn contact plate.",
+    "inherited_date": true,
+    "entry_quote": "12/5/2014 - Engineering found that the horn contact plate on the steering wheel assembly had a tab on the horn ring that is not present on the part drawing print."
+   },
+   {
     "date_text": "12/9/2014",
     "type": "OTHER",
     "quote": "12/9/2014 Engineering tested a Pride & Class Model 389 Show Truck parked at Denton that had the ESC option."
+   },
+   {
+    "date_text": "12/9/2014",
+    "type": "OTHER",
+    "quote": "The steering wheel was removed and confirmed that the sensor was damaged.",
+    "inherited_date": true,
+    "entry_quote": "12/9/2014 Engineering tested a Pride & Class Model 389 Show Truck parked at Denton that had the ESC option."
    },
    {
     "date_text": "1/15/2015",
@@ -58,7 +114,8 @@
    ],
    "quote": "Component manufacturer VIP was contacted.",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-15V577-9823.PDF",
@@ -125,6 +182,20 @@
     "quote": "July 27, 2015 - Airstream opens investigation into the incident."
    },
    {
+    "date_text": "July 27, 2015",
+    "type": "OTHER",
+    "quote": "No conclusive determination of the cause could be arrived at due to dealer work that had be done on the vehicle earlier.",
+    "inherited_date": true,
+    "entry_quote": "July 27, 2015 - Airstream opens investigation into the incident."
+   },
+   {
+    "date_text": "July 27, 2015",
+    "type": "OTHER",
+    "quote": "It was determined that it was not a production line issue.",
+    "inherited_date": true,
+    "entry_quote": "July 27, 2015 - Airstream opens investigation into the incident."
+   },
+   {
     "date_text": "August 19, 2015",
     "type": "OTHER",
     "quote": "August 19, 2015 - Production line changed routing of ground wire location due to engineering update."
@@ -135,9 +206,30 @@
     "quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership due to loose cabling connections on the positive side of the electrical system."
    },
    {
+    "date_text": "September 22, 2015",
+    "type": "INVESTIGATION_START",
+    "quote": "Airstream opens an investigation on the issue.",
+    "inherited_date": true,
+    "entry_quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership due to loose cabling connections on the positive side of the electrical system."
+   },
+   {
+    "date_text": "September 22, 2015",
+    "type": "OTHER",
+    "quote": "Airstream examines online and inventory vehicles and determines that this is an isolated issue.",
+    "inherited_date": true,
+    "entry_quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership due to loose cabling connections on the positive side of the electrical system."
+   },
+   {
+    "date_text": "October 5, 2015",
+    "type": "OTHER",
+    "quote": "October 5, 2015 - Airstream conducts a safety review of both incidents."
+   },
+   {
     "date_text": "October 5, 2015",
     "type": "DECISION",
-    "quote": "October 5, 2015 - Airstream conducts a safety review of both incidents. Considering both incidents together, Airstream decides to conduct a safety recall on the entire vehicle population to insure no vehicles have any issues in the future."
+    "quote": "Considering both incidents together, Airstream decides to conduct a safety recall on the entire vehicle population to insure no vehicles have any issues in the future.",
+    "inherited_date": true,
+    "entry_quote": "October 5, 2015 - Airstream conducts a safety review of both incidents."
    },
    {
     "date_text": "October 9, 2015",
@@ -156,7 +248,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-15E051-1229.PDF",
@@ -254,7 +347,8 @@
    "names": [],
    "quote": "Nova Bus receives information from supplier of potential safety-related issue",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-16V123-5154.PDF",
@@ -282,9 +376,16 @@
     "quote": "Nov-2015, Pierce detected vibration of undetermined cause during manufacturing."
    },
    {
+    "date_text": "Nov-2015",
+    "type": "OTHER",
+    "quote": "Investigation identified universal cap bolts not to proper torque on trucks exhibiting vibration.",
+    "inherited_date": true,
+    "entry_quote": "Nov-2015, Pierce detected vibration of undetermined cause during manufacturing."
+   },
+   {
     "date_text": "Jan-16",
     "type": "OTHER",
-    "quote": "not properly torqued during vehicle assembly at Pierce by end of Jan-16."
+    "quote": "Further investigation determined bolts were loosened and not properly torqued during vehicle assembly at Pierce by end of Jan-16."
    }
   ],
   "cause": {
@@ -298,7 +399,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-16V648-2307.PDF",
@@ -324,11 +426,6 @@
     "date_text": "April 2016",
     "type": "SUPPLIER_NOTICE",
     "quote": "April 2016 - The supplier informed Audi of a production issue that occurred during one day of production (November 2, 2015)."
-   },
-   {
-    "date_text": "November 2, 2015",
-    "type": "OTHER",
-    "quote": "a production issue that occurred during one day of production (November 2, 2015)."
    },
    {
     "date_text": "April through August 2016",
@@ -383,6 +480,13 @@
     "quote": "On November 13, 2016, RSIAB module supplier Takata reported to GM that, during lot acceptance testing (“LAT”) of an assembled airbag module at 85C, the inflator ruptured."
    },
    {
+    "date_text": "November 13, 2016",
+    "type": "FILER_AWARENESS",
+    "quote": "a GM employee submitted a Speak Up For Safety report that same day.",
+    "inherited_date": true,
+    "entry_quote": "On November 13, 2016, RSIAB module supplier Takata reported to GM that, during lot acceptance testing (“LAT”) of an assembled airbag module at 85C, the inflator ruptured."
+   },
+   {
     "date_text": "November 14, 2016",
     "type": "INVESTIGATION_START",
     "quote": "GM opened an investigation on November 14, 2016 and immediately initiated actions to trace inflators from the same lot as the failed inflator to potentially impacted plants and vehicles."
@@ -413,7 +517,7 @@
    "quote": "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module",
    "section": "cause"
   },
-  "note": "Sub-tier: GM -> Takata (module) -> ARC (inflator). The block names the deeper supplier (ARC), not Takata. E3 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
+  "note": "Sub-tier: GM -> Takata (module) -> ARC (inflator). The block names the deeper supplier (ARC), not Takata. E4 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
  },
  {
   "file": "RCLRPT-17V804-5540.PDF",
@@ -439,6 +543,13 @@
     "date_text": "mid-August 2017",
     "type": "FILER_AWARENESS",
     "quote": "The issue was detected in mid-August 2017 in connection with a notification by the development department."
+   },
+   {
+    "date_text": "mid-August 2017",
+    "type": "OTHER",
+    "quote": "Subsequently the potentially affected vehicles as well as the production period of potentially affected vehicles were identified precisely.",
+    "inherited_date": true,
+    "entry_quote": "The issue was detected in mid-August 2017 in connection with a notification by the development department."
    }
   ],
   "cause": {
@@ -452,7 +563,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-17V268-7162.PDF",
@@ -548,9 +660,44 @@
     "quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant."
    },
    {
+    "date_text": "November 2016",
+    "type": "INVESTIGATION_START",
+    "quote": "Investigations were initiated to identify potentially affected vehicles.",
+    "inherited_date": true,
+    "entry_quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant."
+   },
+   {
+    "date_text": "November 2016",
+    "type": "OTHER",
+    "quote": "Test data from start of production through November 2016 was reviewed.",
+    "inherited_date": true,
+    "entry_quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant."
+   },
+   {
     "date_text": "mid-2017",
     "type": "OTHER",
     "quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution."
+   },
+   {
+    "date_text": "mid-2017",
+    "type": "OTHER",
+    "quote": "Further investigations showed that in the test and initialization specifications for GLC-class headlamps the values from C-class vehicles were initialized from start of production onwards.",
+    "inherited_date": true,
+    "entry_quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution."
+   },
+   {
+    "date_text": "mid-2017",
+    "type": "OTHER",
+    "quote": "Further tests were conducted to identify potential effects of incorrectly adjusted headlamps.",
+    "inherited_date": true,
+    "entry_quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution."
+   },
+   {
+    "date_text": "mid-2017",
+    "type": "OTHER",
+    "quote": "Glare of oncoming traffic was ruled out.",
+    "inherited_date": true,
+    "entry_quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution."
    },
    {
     "date_text": "December 2017",
@@ -569,7 +716,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-18V482-9392.PDF",
@@ -603,6 +751,13 @@
    },
    {
     "date_text": "7/17/2018",
+    "type": "OTHER",
+    "quote": "Production had not installed these reflectors since moving production to new plant.",
+    "inherited_date": true,
+    "entry_quote": "7/17/2018 Non-compliance was discovered by engineering during a routine audit."
+   },
+   {
+    "date_text": "7/17/2018",
     "type": "DECISION",
     "quote": "7/17/2018 The investigation ended and it was determined that there were units on dealer lots with the issue and that a recall was needed."
    }
@@ -618,7 +773,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-18V805-5341.PDF",
@@ -646,9 +802,30 @@
     "quote": "On August 30, 2018, Ford’s Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model year Expedition and Navigator second row bench center (20%) seats."
    },
    {
+    "date_text": "August 30, 2018",
+    "type": "OTHER",
+    "quote": "CCRG requested an assessment of center seat structural integrity with one or both J- bracket reinforcements missing.",
+    "inherited_date": true,
+    "entry_quote": "On August 30, 2018, Ford’s Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model year Expedition and Navigator second row bench center (20%) seats."
+   },
+   {
     "date_text": "September - October 2018",
     "type": "OTHER",
     "quote": "September - October 2018: Directional CAE analysis was conducted on a rigidized body sheet metal structure with the second row center seat in the full rear and full forward seating positions"
+   },
+   {
+    "date_text": "September - October 2018",
+    "type": "OTHER",
+    "quote": "This in-depth CAE analyses, simulating the production vehicle design, indicated that the seat track missing one or both J-channel reinforcement brackets may peel or tear when the seat is adjusted in the fully forward or near fully forward position.",
+    "inherited_date": true,
+    "entry_quote": "September - October 2018: Directional CAE analysis was conducted on a rigidized body sheet metal structure with the second row center seat in the full rear and full forward seating positions"
+   },
+   {
+    "date_text": "September - October 2018",
+    "type": "OTHER",
+    "quote": "CAE also confirmed that a seat adjusted in the full rearward seating position did not present this concern.",
+    "inherited_date": true,
+    "entry_quote": "September - October 2018: Directional CAE analysis was conducted on a rigidized body sheet metal structure with the second row center seat in the full rear and full forward seating positions"
    },
    {
     "date_text": "November 5, 2018",
@@ -668,7 +845,7 @@
    "quote": "The lower seat track components are manually assembled by the seat supplier",
    "section": "cause"
   },
-  "note": "E2 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
+  "note": "E3 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
  },
  {
   "file": "RCLRPT-18V293-6049.PDF",
@@ -839,14 +1016,56 @@
     "quote": "January 2019 The first claim of rear wheel lock was received in the Japanese market."
    },
    {
+    "date_text": "January 2019",
+    "type": "OTHER",
+    "quote": "Failed parts analysis confirmed the groove for a gear circlip on the transmission main shaft was out-of-spec.",
+    "inherited_date": true,
+    "entry_quote": "January 2019 The first claim of rear wheel lock was received in the Japanese market."
+   },
+   {
+    "date_text": "January 2019",
+    "type": "INVESTIGATION_START",
+    "quote": "Honda and the transmission main shaft supplier launched a joint investigation.",
+    "inherited_date": true,
+    "entry_quote": "January 2019 The first claim of rear wheel lock was received in the Japanese market."
+   },
+   {
     "date_text": "February 2019",
     "type": "OTHER",
     "quote": "February 2019 A review of manufacturing processes identified the lathe used to machine the transmission main shaft was programmed incorrectly, resulting in an out-of-spec groove."
    },
    {
+    "date_text": "February 2019",
+    "type": "OTHER",
+    "quote": "Further process review also revealed the jig used to mount the circlip to the transmission main shaft was inappropriate, which deformed the circlip during assembly.",
+    "inherited_date": true,
+    "entry_quote": "February 2019 A review of manufacturing processes identified the lathe used to machine the transmission main shaft was programmed incorrectly, resulting in an out-of-spec groove."
+   },
+   {
+    "date_text": "February 2019",
+    "type": "OTHER",
+    "quote": "Re-creation tests were performed with the suspect transmission main shafts assembled with a deformed circlip to determine potential consequences.",
+    "inherited_date": true,
+    "entry_quote": "February 2019 A review of manufacturing processes identified the lathe used to machine the transmission main shaft was programmed incorrectly, resulting in an out-of-spec groove."
+   },
+   {
+    "date_text": "March 2019",
+    "type": "FILER_AWARENESS",
+    "quote": "March 2019 The first claim from the U.S. market was received, which claimed the motorcycle unexpectedly moved during engine start."
+   },
+   {
     "date_text": "March 2019",
     "type": "OTHER",
-    "quote": "March 2019 The first claim from the U.S. market was received, which claimed the motorcycle unexpectedly moved during engine start."
+    "quote": "Additional investigation was performed at the transmission main shaft supplier as the motorcycle involved in the U.S. market claim was not within the suspect range of potentially affected motorcycles.",
+    "inherited_date": true,
+    "entry_quote": "March 2019 The first claim from the U.S. market was received, which claimed the motorcycle unexpectedly moved during engine start."
+   },
+   {
+    "date_text": "March 2019",
+    "type": "OTHER",
+    "quote": "A separate production period was identified where the programming for the lathe was also incorrect.",
+    "inherited_date": true,
+    "entry_quote": "March 2019 The first claim from the U.S. market was received, which claimed the motorcycle unexpectedly moved during engine start."
    },
    {
     "date_text": "April to May 2019",
@@ -938,14 +1157,49 @@
     "quote": "Nov to Dec 2017- Investigation into root cause, including discussions with our engine vendor to understand change history of parts in question, and investigations on other vehicles in our fleet to identify the population that might be affected."
    },
    {
+    "date_text": "Nov to Dec 2017",
+    "type": "OTHER",
+    "quote": "Root cause was identified as damage caused to the starter lock-out relay by a high transient voltage during start-up.",
+    "inherited_date": true,
+    "entry_quote": "Nov to Dec 2017- Investigation into root cause, including discussions with our engine vendor to understand change history of parts in question, and investigations on other vehicles in our fleet to identify the population that might be affected."
+   },
+   {
+    "date_text": "Nov to Dec 2017",
+    "type": "OTHER",
+    "quote": "The resolution was developed.",
+    "inherited_date": true,
+    "entry_quote": "Nov to Dec 2017- Investigation into root cause, including discussions with our engine vendor to understand change history of parts in question, and investigations on other vehicles in our fleet to identify the population that might be affected."
+   },
+   {
     "date_text": "Jan 2, 2018",
     "type": "DECISION",
     "quote": "Jan 2, 2018: A decision was made to recall the affected population."
    },
    {
+    "date_text": "Jan 2, 2018",
+    "type": "OTHER",
+    "quote": "A recall was issued, 18V-019.",
+    "inherited_date": true,
+    "entry_quote": "Jan 2, 2018: A decision was made to recall the affected population."
+   },
+   {
     "date_text": "August 2019",
     "type": "FILER_AWARENESS",
     "quote": "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated."
+   },
+   {
+    "date_text": "August 2019",
+    "type": "INVESTIGATION_START",
+    "quote": "Electrical Engineering began testing to determine the root cause.",
+    "inherited_date": true,
+    "entry_quote": "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated."
+   },
+   {
+    "date_text": "August 2019",
+    "type": "OTHER",
+    "quote": "When the cause was determined, Engineering worked with a supplier to develop a solid state relay and a sample relay underwent extensive testing.",
+    "inherited_date": true,
+    "entry_quote": "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated."
    },
    {
     "date_text": "9 OCT 2019",
@@ -993,9 +1247,23 @@
     "quote": "4/20/19 – Harley-Davidson’s Technical Subcommittee (TSC) is notified by our Parts and Accessories Engineering group that the current P&A Detachables Tour-Pak kits for 2014 - current Touring models have been sold without reflectors to replace the original equipment rear reflector that may be removed"
    },
    {
+    "date_text": "4/20/19",
+    "type": "INVESTIGATION_START",
+    "quote": "A preliminary investigation is initiated.",
+    "inherited_date": true,
+    "entry_quote": "4/20/19 – Harley-Davidson’s Technical Subcommittee (TSC) is notified by our Parts and Accessories Engineering group that the current P&A Detachables Tour-Pak kits for 2014 - current Touring models have been sold without reflectors to replace the original equipment rear reflector that may be removed"
+   },
+   {
     "date_text": "5/14/19",
     "type": "INVESTIGATION_START",
     "quote": "5/14/19 – Based on the preliminary investigation findings, a formal investigation is commenced."
+   },
+   {
+    "date_text": "5/14/19",
+    "type": "OTHER",
+    "quote": "Research is begun to determine the markets these kits have been shipped to and an Engineering review of each model configuration is initiated to determine if these vehicles remain compliant with the kit installed based on the location of the original equipment rear reflector.",
+    "inherited_date": true,
+    "entry_quote": "5/14/19 – Based on the preliminary investigation findings, a formal investigation is commenced."
    },
    {
     "date_text": "6/10/19",
@@ -1030,7 +1298,7 @@
    "quote": "",
    "section": "chronology"
   },
-  "note": "E1 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer). E6 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
+  "note": "E1 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer). E8 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
  },
  {
   "file": "RCLRPT-20V461-9351.PDF",
@@ -1058,6 +1326,20 @@
     "quote": "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode."
    },
    {
+    "date_text": "June 19, 2020",
+    "type": "OTHER",
+    "quote": "The button would not unlatch the trunk lid while the vehicle was in this mode.",
+    "inherited_date": true,
+    "entry_quote": "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode."
+   },
+   {
+    "date_text": "June 19, 2020",
+    "type": "FILER_AWARENESS",
+    "quote": "A GM quality manager submitted the issue to GM’s Speak Up For Safety program that day.",
+    "inherited_date": true,
+    "entry_quote": "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode."
+   },
+   {
     "date_text": "June 26, 2020",
     "type": "INVESTIGATION_START",
     "quote": "On June 26, 2020, GM opened a formal product investigation."
@@ -1066,6 +1348,13 @@
     "date_text": "July 8, 2020",
     "type": "OTHER",
     "quote": "On July 8, 2020, GM’s investigator was able to duplicate the condition on a 2020 Corvette."
+   },
+   {
+    "date_text": "July 8, 2020",
+    "type": "OTHER",
+    "quote": "GM engineers determined that, under certain conditions, the voltage generated by the button is insufficient to wake the vehicle from sleep mode, rendering the button inoperative while the vehicle is in that mode.",
+    "inherited_date": true,
+    "entry_quote": "On July 8, 2020, GM’s investigator was able to duplicate the condition on a 2020 Corvette."
    },
    {
     "date_text": "July 21",
@@ -1089,7 +1378,8 @@
    "names": [],
    "quote": "",
    "section": "chronology"
-  }
+  },
+  "note": ""
  },
  {
   "file": "RCLRPT-20E041-4869.PDF",
@@ -1117,14 +1407,16 @@
     "quote": "March 30 and 31, 2020 – Photometry testing was conducted in connection with a change in suppliers for the PCB assembly used in the subject lamps."
    },
    {
+    "date_text": "March 30 and 31, 2020",
+    "type": "OTHER",
+    "quote": "This testing showed elevated intensity levels in one of the tested lamps.",
+    "inherited_date": true,
+    "entry_quote": "March 30 and 31, 2020 – Photometry testing was conducted in connection with a change in suppliers for the PCB assembly used in the subject lamps."
+   },
+   {
     "date_text": "May – June, 2020",
     "type": "INVESTIGATION_START",
     "quote": "May – June, 2020 – The company conducted an investigation into the production and design history of the lamp, obtained additional samples for testing, and, on June 14 and 15, 2020, conducted additional photometry tests on sample lamps."
-   },
-   {
-    "date_text": "June 14 and 15, 2020",
-    "type": "OTHER",
-    "quote": "on June 14 and 15, 2020, conducted additional photometry tests on sample lamps."
    },
    {
     "date_text": "June 15, 2020",
@@ -1213,9 +1505,30 @@
     "quote": "May 2019, DTNA received a report of a vehicle pulling to the right, due to an unknown cause, during a brake event."
    },
    {
+    "date_text": "May 2019",
+    "type": "OTHER",
+    "quote": "Upon repairing the vehicle, the dealer was able to isolate the failure to the right single modulator valve.",
+    "inherited_date": true,
+    "entry_quote": "May 2019, DTNA received a report of a vehicle pulling to the right, due to an unknown cause, during a brake event."
+   },
+   {
     "date_text": "May 2019-July 2019",
     "type": "OTHER",
     "quote": "May 2019-July 2019, DTNA performed a preliminary population and warranty seek."
+   },
+   {
+    "date_text": "May 2019-July 2019",
+    "type": "OTHER",
+    "quote": "Warranty indicated 6 claims of a vehicle pull event during an external brake request, where 3 claims were from a single customer.",
+    "inherited_date": true,
+    "entry_quote": "May 2019-July 2019, DTNA performed a preliminary population and warranty seek."
+   },
+   {
+    "date_text": "May 2019-July 2019",
+    "type": "OTHER",
+    "quote": "DTNA had requested parts to be returned for further review.",
+    "inherited_date": true,
+    "entry_quote": "May 2019-July 2019, DTNA performed a preliminary population and warranty seek."
    },
    {
     "date_text": "July 2019",
@@ -1228,6 +1541,27 @@
     "quote": "August 2019, DTNA received the returned parts and began an electrical and functional test."
    },
    {
+    "date_text": "August 2019",
+    "type": "OTHER",
+    "quote": "Testing indicated parts were within specification.",
+    "inherited_date": true,
+    "entry_quote": "August 2019, DTNA received the returned parts and began an electrical and functional test."
+   },
+   {
+    "date_text": "August 2019",
+    "type": "OTHER",
+    "quote": "During a functional evaluation, a pressure differential in air release timing was observed.",
+    "inherited_date": true,
+    "entry_quote": "August 2019, DTNA received the returned parts and began an electrical and functional test."
+   },
+   {
+    "date_text": "August 2019",
+    "type": "OTHER",
+    "quote": "The parts were shipped to the supplier for component breakdown and further evaluation.",
+    "inherited_date": true,
+    "entry_quote": "August 2019, DTNA received the returned parts and began an electrical and functional test."
+   },
+   {
     "date_text": "August – September 2019",
     "type": "SUPPLIER_NOTICE",
     "quote": "August – September 2019, Supplier evaluated the returned parts and found blockage of the inlet solenoid from magnesium chloride corrosion deforming the O-ring."
@@ -1238,14 +1572,42 @@
     "quote": "October 2019, DTNA and supplier began reviewing vehicle routes and chemical wash processes, with ongoing corrosion testing with magnesium chloride and requests to the field for additional returned parts."
    },
    {
+    "date_text": "October 2019",
+    "type": "OTHER",
+    "quote": "34 valves returned for review from single customer.",
+    "inherited_date": true,
+    "entry_quote": "October 2019, DTNA and supplier began reviewing vehicle routes and chemical wash processes, with ongoing corrosion testing with magnesium chloride and requests to the field for additional returned parts."
+   },
+   {
+    "date_text": "October 2019",
+    "type": "OTHER",
+    "quote": "Failed valves appear to be isolated to only the right valve and a single route.",
+    "inherited_date": true,
+    "entry_quote": "October 2019, DTNA and supplier began reviewing vehicle routes and chemical wash processes, with ongoing corrosion testing with magnesium chloride and requests to the field for additional returned parts."
+   },
+   {
     "date_text": "November 2019",
     "type": "OTHER",
     "quote": "November 2019, DTNA shared an update of the ongoing investigation with NHTSA ODI, including the low claim rate."
    },
    {
+    "date_text": "November 2019",
+    "type": "OTHER",
+    "quote": "While the investigation continued, the modulator valves in production vehicles were spaced away from the frame rails to potentially reduce opportunity of corrosion.",
+    "inherited_date": true,
+    "entry_quote": "November 2019, DTNA shared an update of the ongoing investigation with NHTSA ODI, including the low claim rate."
+   },
+   {
     "date_text": "January 2020",
     "type": "OTHER",
     "quote": "January 2020, DTNA provided a status update to NHTSA ODI on testing to understand detectability and severity."
+   },
+   {
+    "date_text": "January 2020",
+    "type": "OTHER",
+    "quote": "corrosion testing and analysis continued by DTNA and supplier.",
+    "inherited_date": true,
+    "entry_quote": "January 2020, DTNA provided a status update to NHTSA ODI on testing to understand detectability and severity."
    }
   ],
   "cause": {
@@ -1469,6 +1831,13 @@
     "quote": "On or about May 5, 2022, DTNA received a notification from its Engineering group that, while testing a specific DTNA owned vehicle that had not been sold to commerce, there was a situation that resulted in an unintended brake application."
    },
    {
+    "date_text": "May 5, 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "DTNA promptly began an investigation into that vehicle and other vehicles like it, which were produced in only a very limited production run.",
+    "inherited_date": true,
+    "entry_quote": "On or about May 5, 2022, DTNA received a notification from its Engineering group that, while testing a specific DTNA owned vehicle that had not been sold to commerce, there was a situation that resulted in an unintended brake application."
+   },
+   {
     "date_text": "May 16",
     "type": "OTHER",
     "quote": "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles, as listed on the prior 573 report."
@@ -1477,11 +1846,6 @@
     "date_text": "May 18, 2022",
     "type": "DECISION",
     "quote": "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution"
-   },
-   {
-    "date_text": "June 3, 2022",
-    "type": "OTHER",
-    "quote": "June 3, 2022, DTNA captured and repaired the 4 vehicles at DTNA’s own expense."
    }
   ],
   "cause": {
@@ -1496,7 +1860,7 @@
    "quote": "",
    "section": "chronology"
   },
-  "note": "The block supplier (Bendix) is not named in the cause or chronology. E3 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
+  "note": "The block supplier (Bendix) is not named in the cause or chronology. E4 quote cut at a clause boundary to fit the 300-character limit (its sentence is longer)."
  },
  {
   "file": "RCLRPT-22V114-4125.PDF",
@@ -1524,9 +1888,16 @@
     "quote": "In December 2021, Proterra received a customer report of a steering gearbox failure."
    },
    {
+    "date_text": "December 2021",
+    "type": "OTHER",
+    "quote": "Proterra investigated and determined the root cause of this failure was the same as the root cause of two 2020 incidents of loose steering gearbox bolts.",
+    "inherited_date": true,
+    "entry_quote": "In December 2021, Proterra received a customer report of a steering gearbox failure."
+   },
+   {
     "date_text": "October 2020",
     "type": "DECISION",
-    "quote": "led Proterra to declare a voluntary safety recall (20V-664) in October 2020 on 169 vehicles."
+    "quote": "The 2020 incidents led Proterra to declare a voluntary safety recall (20V-664) in October 2020 on 169 vehicles."
    },
    {
     "date_text": "January 2022",
@@ -1535,8 +1906,15 @@
    },
    {
     "date_text": "February 21, 2022",
+    "type": "OTHER",
+    "quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate."
+   },
+   {
+    "date_text": "February 21, 2022",
     "type": "DECISION",
-    "quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate. The Committee decided to conduct a voluntary safety recall to address this issue."
+    "quote": "The Committee decided to conduct a voluntary safety recall to address this issue.",
+    "inherited_date": true,
+    "entry_quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate."
    }
   ],
   "cause": {
@@ -1550,6 +1928,7 @@
    "names": [],
    "quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier",
    "section": "chronology"
-  }
+  },
+  "note": ""
  }
 ]

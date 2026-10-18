@@ -35,6 +35,6 @@ class Extraction(BaseModel):
     locus: Locus
     locus_status: EvidenceStatus
     locus_evidence: Optional[Evidence] = None
-    events: list[Event] = Field(max_length=12)
+    events: list[Event] = Field(max_length=24)  # one event per chronology sentence of a dated entry can exceed 12 (max 18 in the 30 dev drafts)
     cause_reported: bool  # False when the source says NR
     abstain_reason: Optional[Literal["NOT_REPORTED", "AMBIGUOUS"]] = None

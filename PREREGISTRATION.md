@@ -73,3 +73,29 @@ the narrative cannot settle it). A supplier that only helps with the remedy is n
 - No text layer (seen: 21V248, a scanned 'Defect Notice 573 Report'): exclude from scored tasks and report such filings as a separate 'unreadable' count
   in every results table; no OCR in v1. (Alternative for the owner: OCR them and report accuracy on them separately.)
 - Excluded or fallback filings are never replaced by other filings after test results are seen.
+
+## DRAFT 2026-10-19 (NOT frozen; owner to review): event and upstream rules (these refine the 2026-10-18 event-inclusion rule)
+
+### E (T3 gold events): one event per dated sentence, date inherited from its entry
+- The chronology is read sentence by sentence. A **dated sentence** carries a date of its own. An **entry** is a dated sentence plus the undated
+  sentences that follow it, up to the next dated sentence (or, in a list, up to the next dated list item).
+- **One event per sentence.** A sentence that reports an action or occurrence is one event. It takes its own date, or, if it has none, the date of its
+  entry (the date is inherited). Each event is typed from the fixed list (SUPPLIER_NOTICE, FILER_AWARENESS, INVESTIGATION_START, DECISION,
+  NHTSA_FILING, OTHER) and carries a verbatim single-sentence quote. An inherited-date event also stores its entry sentence, and the date text must
+  appear inside that entry sentence, which must come at or before the event's sentence.
+- A sentence that holds two dates is still one event, dated by the date of its own action (the first date given), not by a date it only mentions.
+- **Not events:** descriptions with no action; statements of belief; 'as of' status statements and statements of no known incidents, complaints or
+  injuries; remedy logistics (mailings, remedy-vendor emails, repairs of the affected vehicles); a pointer or NR chronology (it has no events and is
+  reported NOT_REPORTED); a sentence under a heading with no date of its own (for example a 'Corrective Action' line).
+- Operational choices that are mine and unreviewed: what counts as 'an action or occurrence' for an undated sentence, and the type chosen for it.
+  Applying the rule to the 30 dev drafts changed 55 E labels (53 added, 2 removed; reports/rule_application_changes.md).
+- Scoring: events are matched by **date + type**, not by quote span (tt/eval/devscore.py).
+
+### U (T4): upstream involvement in the narrative (cause and chronology)
+- **NAMED** if any supplier-chain company (a supplier, sub-supplier or distributor of the filer) is named in the cause or chronology. A filer's parent,
+  affiliates, customers, regulators and internal committees are not supplier-chain companies. A supplier that only helps with the remedy is not
+  upstream and does not make U NAMED on its own.
+- **UNNAMED** if the narrative refers to a supplier, vendor or sub-supplier only generically (no company named).
+- **NONE_MENTIONED** if the narrative is present and mentions no supplier-chain party.
+- **NOT_REPORTED** if the chronology is a pointer or NR, so the narrative cannot settle it.
+- Applying the rule to the 30 dev drafts changed 0 U labels.
