@@ -36,3 +36,24 @@ def test_scorer_on_synthetic_predictions():
     # invalid JSON counts as invalid, not as a guess
     inv = score(L, [{"file": l["file"], "extraction": None} for l in L], DEV)
     assert inv["json_valid_rate"] == 0 and inv["unsupported_claim_rate"] == 0
+
+
+def test_summarize_and_bench_with_stub_model(tmp_path):
+    from types import SimpleNamespace
+    from tt.agent.run_dev import run, summarize
+    L = json.load(open(LABELS))[:3]
+    if not DEV.exists():
+        pytest.skip("run `tt dev-fetch` first")
+    calls = []
+
+    def stub(**kw):  # no model is run
+        calls.append(kw)
+        return SimpleNamespace(message=SimpleNamespace(content=json.dumps(perfect(L[len(calls) - 1]))), eval_count=100, eval_duration=2_000_000_000,
+                               prompt_eval_count=900, prompt_eval_duration=3_000_000_000)
+
+    recs = run("stub:model", [l["file"] for l in L], DEV, tmp_path / "o.jsonl", chat=stub)
+    assert all(c["think"] is False and c["options"]["temperature"] == 0 and c["options"]["presence_penalty"] == 0 for c in calls)
+    s = summarize(recs)
+    assert s["n"] == 3 and s["json_valid_rate"] == 1 and abs(s["generation_tokens_per_s"] - 50) < 1e-6 and abs(s["prompt_tokens_per_s"] - 300) < 1e-6
+    bad = summarize([{"file": "x", "extraction": None, "seconds": 2.0}, {"file": "y", "extraction": {"nope": 1}, "seconds": 4.0}])
+    assert bad["json_valid_rate"] == 0 and bad["seconds_p50_all"] == 2.0 and bad["seconds_p95_all"] == 4.0

@@ -191,6 +191,41 @@ def dev_fetch(rate: float = 1.0):
                            "downloaded": ok, "download_failed": failed, "api_requests": client.requests_made}))
 
 
+@app.command("dev-bench")
+def dev_bench(model: str = typer.Option(..., "--model", help="exact installed tag, e.g. qwen3.5:4b-q4_K_M"), ctx: int = 6144,
+              out: str = "", labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
+    """Run ONE named model over the 30 dev filings (thinking off, temperature 0 set explicitly), then print JSON-valid rate, tokens/s,
+    p50/p95 seconds per filing, and scores vs the UNREVIEWED label drafts. Never pulls a model."""
+    import json
+    from pathlib import Path
+    import ollama
+    from tt.agent.run_dev import OPTIONS, run, summarize
+    from tt.eval.devscore import score
+    try:
+        ollama.show(model)
+    except Exception as e:
+        typer.echo(f"Model {model!r} is not installed or the Ollama server is not running ({e}). Not pulling. Start `ollama serve` / check `ollama list`.")
+        raise typer.Exit(2)
+    L = json.load(open(labels))
+    outp = Path(out or f"runs/dev_bench_{model.replace(':', '_').replace('/', '_')}.jsonl")
+    outp.parent.mkdir(exist_ok=True)
+    typer.echo(f"model={model} think=False options={ {**OPTIONS, 'num_ctx': ctx} } filings={len(L)} -> {outp}")
+    recs = run(model, [l["file"] for l in L], Path(pdf_dir), outp, ctx,
+               progress=lambda i, n, r: typer.echo(f"  {i}/{n} {r['file']} {r['seconds']:.1f}s valid_json={r['extraction'] is not None}" + (f" ERROR {r['error'][:80]}" if r.get('error') else "")))
+    s = summarize(recs)
+    typer.echo("\nSPEED / VALIDITY (this machine, this run)")
+    typer.echo(f"  JSON-valid rate:        {s['json_valid_rate']:.1%}  ({s['errors']} call errors)")
+    typer.echo(f"  generation tokens/s:    {s['generation_tokens_per_s']:.1f}   prompt tokens/s: {s['prompt_tokens_per_s']:.1f}")
+    typer.echo(f"  seconds/filing p50/p95: {s['seconds_p50_all']:.1f} / {s['seconds_p95_all']:.1f}  (all 30, includes the first cold-load call of {s['first_call_seconds']:.1f}s)")
+    typer.echo(f"                          {s['seconds_p50_excl_first']:.1f} / {s['seconds_p95_excl_first']:.1f}  (excluding the first call)")
+    sc = score(L, recs, Path(pdf_dir))
+    typer.echo("\nSCORES vs UNREVIEWED drafts, not gold")
+    for k in ("json_valid_rate", "verifier_pass_rate", "s2_recovery", "unsupported_claim_rate", "event_precision", "event_recall", "event_f1", "cause_accuracy"):
+        typer.echo(f"  {k:24} {sc[k]:.3f}")
+    typer.echo(f"  (s2_recovery over {sc['s2_gold_supported']} filings with a supported S2 draft; unsupported_claim_rate over {sc['s2_not_supported_gold']})")
+    typer.echo(f"\npredictions saved: {outp}")
+
+
 @app.command("dev-score")
 def dev_score(preds: str, labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
     """Score a predictions JSONL against the dev label DRAFTS (not gold)."""

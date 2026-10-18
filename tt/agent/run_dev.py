@@ -28,20 +28,61 @@ def build_user(L_file: Path, mask_block: bool = True) -> str:
     return f"filer={h['filer']}; filing_date={h['filing_date']}\n<data>{text}</data>"
 
 
-def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144) -> None:
+OPTIONS = {"temperature": 0, "seed": 0, "presence_penalty": 0}  # explicit: the qwen3.5 Modelfile defaults to temperature 1 and presence_penalty 1.5
+
+
+def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144, chat=None, progress=None) -> list[dict]:
+    """One call per filing: thinking off, schema-constrained, options set explicitly. `chat` is injectable for tests."""
+    chat = chat or ollama.chat
+    recs = []
     with open(out, "w") as f:
-        for name in files:
+        for i, name in enumerate(files, 1):
             t0 = time.monotonic()
+            opts = {**OPTIONS, "num_ctx": ctx}
             try:
-                r = ollama.chat(model=model, think=False, keep_alive="30m",
-                                messages=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": build_user(pdf_dir / name)}],
-                                format=Extraction.model_json_schema(), options={"temperature": 0, "num_ctx": ctx})
+                r = chat(model=model, think=False, keep_alive="30m",
+                         messages=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": build_user(pdf_dir / name)}],
+                         format=Extraction.model_json_schema(), options=opts)
                 try:
                     ex = json.loads(r.message.content)
                 except Exception:
                     ex = None
-                rec = {"file": name, "extraction": ex, "seconds": time.monotonic() - t0, "model": model,
-                       "eval_count": r.eval_count, "prompt_eval_count": r.prompt_eval_count}
+                rec = {"file": name, "extraction": ex, "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False,
+                       "eval_count": r.eval_count, "eval_duration_ns": r.eval_duration,
+                       "prompt_eval_count": r.prompt_eval_count, "prompt_eval_duration_ns": r.prompt_eval_duration}
             except Exception as e:  # keep going; record the failure
-                rec = {"file": name, "extraction": None, "error": str(e), "seconds": time.monotonic() - t0, "model": model}
+                rec = {"file": name, "extraction": None, "error": str(e), "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False}
+            recs.append(rec)
             f.write(json.dumps(rec) + "\n"); f.flush()
+            if progress:
+                progress(i, len(files), rec)
+    return recs
+
+
+def _pct(xs: list[float], q: float) -> float:
+    """Nearest-rank percentile."""
+    if not xs:
+        return float("nan")
+    xs = sorted(xs)
+    import math
+    return xs[max(0, math.ceil(q * len(xs)) - 1)]
+
+
+def summarize(recs: list[dict]) -> dict:
+    """JSON-valid rate, generation tokens/s, prompt tokens/s, p50/p95 seconds per filing (all, and excluding the first cold-load call)."""
+    from pydantic import ValidationError
+    from tt.agent.schemas import Extraction as E
+    valid = 0
+    for r in recs:
+        if r.get("extraction") is not None:
+            try:
+                E.model_validate(r["extraction"]); valid += 1
+            except ValidationError:
+                pass
+    secs = [r["seconds"] for r in recs]
+    ev = sum(r.get("eval_count") or 0 for r in recs); ed = sum(r.get("eval_duration_ns") or 0 for r in recs)
+    pv = sum(r.get("prompt_eval_count") or 0 for r in recs); pd = sum(r.get("prompt_eval_duration_ns") or 0 for r in recs)
+    return {"n": len(recs), "errors": sum(1 for r in recs if r.get("error")), "json_valid_rate": valid / len(recs) if recs else float("nan"),
+            "generation_tokens_per_s": ev / (ed / 1e9) if ed else float("nan"), "prompt_tokens_per_s": pv / (pd / 1e9) if pd else float("nan"),
+            "seconds_p50_all": _pct(secs, .5), "seconds_p95_all": _pct(secs, .95),
+            "seconds_p50_excl_first": _pct(secs[1:], .5), "seconds_p95_excl_first": _pct(secs[1:], .95), "first_call_seconds": secs[0] if secs else float("nan")}
