@@ -28,3 +28,10 @@ def test_header_date_without_space_after_comma():
     from datetime import date
     t = "Manufacturer Name :  Acme\nSubmission Date : JAN 26,2015\nNHTSA Recall No. : 15V-049\n"
     assert parse_header(t)["filing_date"] == date(2015, 1, 26)
+
+
+def test_narrative_rules():
+    from tt.narrative import companies, narrative_dates
+    assert "Allison Transmission Inc." in " ".join(companies("Nova Bus receives a letter from Allison Transmission Inc. informing"))
+    d = narrative_dates("2023-02-16 Issue found. 09/06/18 letter. On 5-May-2020 a call.", set())
+    assert len(d) == 3

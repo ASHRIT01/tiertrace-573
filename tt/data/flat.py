@@ -52,3 +52,19 @@ def write_csv(rows: list[dict], path: str | Path) -> None:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
+
+
+def load_fields(zip_path: str | Path, campaigns: set[str], fields: list[str]) -> dict[str, dict]:
+    """First flat-file row per campaign (6-char id) for the requested fields. Local file only."""
+    out: dict[str, dict] = {}
+    with zipfile.ZipFile(zip_path) as z:
+        with z.open(z.namelist()[0]) as raw:
+            for line in io.TextIOWrapper(raw, encoding="utf-8", errors="replace", newline=""):
+                f = line.rstrip("\r\n").split("\t")
+                if len(f) != 29:
+                    continue
+                cid = campaign_id(f[1])
+                if cid in campaigns and cid not in out:
+                    r = dict(zip(FIELDS, f))
+                    out[cid] = {k: r[k] for k in fields}
+    return out

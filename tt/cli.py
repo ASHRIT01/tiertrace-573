@@ -72,6 +72,17 @@ def checksheet(per_year: int = 4, seed: int = 0, out: str = "reports/checksheet.
     typer.echo(f"wrote {out} ({md.count('## ')} filings)")
 
 
+@app.command("narrative-gain")
+def narrative_gain(out: str = "reports/narrative_gain.md"):
+    """How often the narrative names a company/dated event/cause the block and flat file do not."""
+    from pathlib import Path
+    from tt.narrative import run
+    md = run(Path("data/processed/sample_573.jsonl"), Path("data/audit_raw"), Path("data/flat/FLAT_RCL_POST_2010.zip"))
+    Path(out).parent.mkdir(exist_ok=True)
+    Path(out).write_text(md)
+    typer.echo(md)
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
