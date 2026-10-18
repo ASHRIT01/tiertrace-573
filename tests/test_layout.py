@@ -73,3 +73,14 @@ def test_stacked_header_block_removed_from_risk_and_keeps_filing_date():
     s = split_sections(t)
     assert s["risk"] == "A wheel may detach and injure people." and s["cause"] == "A bolt was loose."
     assert parse_header(t)["filing_date"] == date(2026, 9, 29)
+
+
+def test_component_manufacturer_kind():
+    from tt.kind import kind, load_groups
+    g = load_groups()
+    assert kind(None, "Ford Motor Company", g)[0] == "blank"
+    assert kind("Ford Motor Company", "Ford Motor Company", g)[0] == "filer_itself"
+    assert kind("Daimler Truck North America", "Daimler Trucks North America, LLC", g)[0] == "filer_itself"
+    assert kind("Mercedes-Benz AG", "Mercedes-Benz USA, LLC", g)[0] == "filer_affiliate"
+    assert kind("Hyundai Mobis Mexico", "Hyundai Motor America", g)[0] == "filer_affiliate"
+    assert kind("Eaton Corporation", "Volvo Trucks North America", g)[0] == "external"

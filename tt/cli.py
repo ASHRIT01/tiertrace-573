@@ -95,6 +95,52 @@ def mask_size(out: str = "reports/mask_recover_size.md"):
     typer.echo(md)
 
 
+@app.command("add-kind")
+def add_kind(out: str = "reports/component_manufacturer_kind.md"):
+    """Add component_manufacturer_kind to data/processed/sample_573.jsonl (+ sample_kind.csv) and report counts."""
+    import csv, json, random
+    from collections import Counter, defaultdict
+    from pathlib import Path
+    from tt.kind import kind, load_groups
+    from tt.parse.block import parse_block, raw_block
+    from tt.parse.pdf import extract_text
+    from tt.parse.sections import parse_header
+    groups = load_groups()
+    flat = {r["campaign"]: r["filer"] for r in csv.DictReader(open("data/processed/campaigns.csv"))}
+    rows = [json.loads(l) for l in open("data/processed/sample_573.jsonl")]
+    recs = []
+    for r in rows:
+        if not r["is_latest"]:
+            r["component_manufacturer_kind"] = None  # earlier versions: PDF not downloaded
+            continue
+        t = extract_text(Path("data/audit_raw") / r["url"].rsplit("/", 1)[1])[0]
+        name, filer = parse_block(raw_block(t)).name, parse_header(t)["filer"] or flat.get(r["campaign"], "")
+        k, why = kind(name, filer, groups)
+        r["component_manufacturer_kind"] = k
+        recs.append({"campaign": r["campaign"], "year": r["year"], "file": r["url"].rsplit("/", 1)[1], "filer": filer,
+                     "name": name or "", "kind": k, "why": why})
+    Path("data/processed/sample_573.jsonl").write_text("\n".join(json.dumps(r) for r in rows) + "\n")
+    with open("data/processed/sample_kind.csv", "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(recs[0])); w.writeheader(); w.writerows(recs)
+    c = Counter(x["kind"] for x in recs)
+    by = defaultdict(Counter)
+    for x in recs:
+        by[x["year"]][x["kind"]] += 1
+    ks = ["external", "filer_itself", "filer_affiliate", "blank"]
+    md = ["# component_manufacturer_kind (300 latest-version filings)", "", "Rule (also in tt/kind.py):", "```", __import__("tt.kind", fromlist=["x"]).__doc__.split("RULE")[1].strip(" (\n"), "```", "",
+          "Counts: " + ", ".join(f"{k} {c[k]}" for k in ks), "", "| year | " + " | ".join(ks) + " |", "|---|---|---|---|---|"]
+    md += [f"| {y} | " + " | ".join(str(by[y][k]) for k in ks) + " |" for y in sorted(by)]
+    rng = random.Random(0)
+    ex = []
+    for k, n in (("external", 3), ("filer_affiliate", 3), ("filer_itself", 2), ("blank", 2)):
+        pool = [x for x in recs if x["kind"] == k]; rng.shuffle(pool); ex += pool[:n]
+    md += ["", "## 10 random examples (seed 0)", ""] + [f"- **{x['file']}** ({x['year']}) filer `{x['filer']}` / block `{x['name']}` -> **{x['kind']}** {x['why']}" for x in ex]
+    aff = [x for x in recs if x["kind"] == "filer_affiliate"]
+    md += ["", f"## All {len(aff)} filer_affiliate calls (for checking)", ""] + [f"- {x['file']}: `{x['filer']}` vs `{x['name']}` ({x['why']})" for x in aff]
+    Path(out).write_text("\n".join(md))
+    typer.echo("\n".join(md))
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
