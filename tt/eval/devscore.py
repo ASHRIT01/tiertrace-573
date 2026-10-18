@@ -2,8 +2,14 @@
 Predictions: JSONL, one per filing: {"file": ..., "extraction": <Extraction dict> | null, "seconds": float}.
 Metrics: JSON validity; verifier pass rate; S2 recovery (supplier named in the narrative WITH a located quote) among filings whose
 draft S2 is SUPPORTED; unsupported-claim rate (a supplier asserted with status SUPPORTED where the draft S2 is not SUPPORTED); event date
-precision/recall/F1 (exact ISO date match after parse_date); cause-reported accuracy."""
+precision/recall/F1; cause-reported accuracy.
+
+EVENT MATCHING: an event is the pair (ISO date, type). Gold and predicted events are compared as multisets of those pairs: a predicted event is a
+true positive if a gold event has the same ISO date (after parse_date with the filing date as anchor) AND the same type; each gold event can be matched
+once. The quote span and the wording of the date text are NOT compared. Events whose date does not parse (for example 'April through August 2016')
+are left out of both sides. Month-only dates parse to the first of the month, so a month-only gold date and a day-level predicted date do not match."""
 import json
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -57,7 +63,7 @@ def score(labels: list[dict], preds: list[dict], pdf_dir: Path, aliases: AliasTa
         if ex is None:  # invalid output counts against recovery, not as an unsupported claim
             m["s2_gold_supported"] += st == "SUPPORTED"
             m["s2_not_supported_gold"] += st != "SUPPORTED"
-            m["ev_gold"] += len(_gold_dates(L, doc)); m["cause_n"] += 1
+            m["ev_gold"] += sum(_gold_events(L, doc).values()); m["cause_n"] += 1
             continue
         m["verifier_pass"] += not verify(ex, doc, aliases)
         asserted = [c for c in ex.companies if c.role in SUPPLIER_ROLES and c.status == "SUPPORTED"]
@@ -67,9 +73,9 @@ def score(labels: list[dict], preds: list[dict], pdf_dir: Path, aliases: AliasTa
         else:
             m["s2_not_supported_gold"] += 1
             m["s2_unsupported_claims"] += bool(asserted)
-        g = _gold_dates(L, doc)
-        pr = {d for d in (parse_date(e.date_text, doc.filing_date) for e in ex.events) if d}
-        m["ev_gold"] += len(g); m["ev_pred"] += len(pr); m["ev_tp"] += len(g & pr)
+        g = _gold_events(L, doc)
+        pr = Counter((d, e.type) for e in ex.events if (d := parse_date(e.date_text, doc.filing_date)))
+        m["ev_gold"] += sum(g.values()); m["ev_pred"] += sum(pr.values()); m["ev_tp"] += sum((g & pr).values())
         truth_reported = L["cause"]["status"] == "SUPPORTED"
         m["cause_n"] += 1; m["cause_ok"] += ex.cause_reported == truth_reported
     r = lambda a, b: a / b if b else float("nan")
@@ -80,5 +86,6 @@ def score(labels: list[dict], preds: list[dict], pdf_dir: Path, aliases: AliasTa
             "cause_accuracy": r(m["cause_ok"], m["cause_n"])}
 
 
-def _gold_dates(L: dict, doc: Doc) -> set[date]:
-    return {d for d in (parse_date(e["date_text"], doc.filing_date) for e in L.get("events", [])) if d}
+def _gold_events(L: dict, doc: Doc) -> Counter:
+    """Multiset of (ISO date, type) over the gold events whose date text parses."""
+    return Counter((d, e["type"]) for e in L.get("events", []) if (d := parse_date(e["date_text"], doc.filing_date)))

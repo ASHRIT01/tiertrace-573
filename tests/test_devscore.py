@@ -57,3 +57,20 @@ def test_summarize_and_bench_with_stub_model(tmp_path):
     assert s["n"] == 3 and s["json_valid_rate"] == 1 and abs(s["generation_tokens_per_s"] - 50) < 1e-6 and abs(s["prompt_tokens_per_s"] - 300) < 1e-6
     bad = summarize([{"file": "x", "extraction": None, "seconds": 2.0}, {"file": "y", "extraction": {"nope": 1}, "seconds": 4.0}])
     assert bad["json_valid_rate"] == 0 and bad["seconds_p50_all"] == 2.0 and bad["seconds_p95_all"] == 4.0
+
+
+@pytest.mark.skipif(not DEV.exists(), reason="run `tt dev-fetch` first")
+def test_events_match_on_date_and_type_not_quote_span():
+    L = [json.load(open(LABELS))[2]]  # #3: Airstream, 7 events with day-level dates
+    base = perfect(L[0])
+    # same dates and types, but different quotes: still a perfect match
+    a = json.loads(json.dumps(base))
+    for e in a["events"]:
+        e["evidence"]["quote"] = "July 25, 2015"  # not even the real span; only date + type are compared
+    assert score(L, [{"file": L[0]["file"], "extraction": a}], DEV)["event_f1"] == 1.0
+    # right dates, one wrong type: that event no longer matches
+    b = json.loads(json.dumps(base))
+    b["events"][0]["type"] = "DECISION" if b["events"][0]["type"] != "DECISION" else "OTHER"
+    sb = score(L, [{"file": L[0]["file"], "extraction": b}], DEV)
+    n = len(base["events"])
+    assert abs(sb["event_recall"] - (n - 1) / n) < 1e-9 and abs(sb["event_precision"] - (n - 1) / n) < 1e-9

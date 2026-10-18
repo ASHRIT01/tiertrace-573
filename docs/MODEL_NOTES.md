@@ -18,3 +18,9 @@ Sizes are as listed on ollama.com on 2026-10-18; confirm after pulling. Structur
 
 ## Harness (not run)
 `tt/agent/run_dev.py` writes predictions for a model over dev filings with the block masked; `tt dev-score <preds.jsonl>` scores them against the dev label DRAFTS (JSON validity, verifier pass, S2 recovery with a located quote, unsupported-claim rate, event date F1, cause accuracy). The scorer is unit-tested on synthetic predictions only. Scores against unreviewed drafts are not gold results.
+
+## Event scoring (changed 2026-10-19)
+`tt dev-score` and `tt dev-bench` match events by **(ISO date, type)** as multisets, not by quote span or date wording: a predicted event is a true positive if a gold
+event has the same parsed date and the same type, and each gold event is matched once. Unparseable dates (ranges such as 'April through August 2016') are left out of
+both sides; month-only dates parse to the first of the month. Gold events follow the DRAFT rule in PREREGISTRATION.md (one event per dated sentence, date inherited
+from its entry), so a filing can have up to 18 events; the extraction schema allows 24.
