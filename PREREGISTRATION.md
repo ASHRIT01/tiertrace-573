@@ -13,3 +13,8 @@ Wording rule: results say "named in the filing as component manufacturer", never
 
 Headline metric: error among accepted claims vs. coverage (risk-coverage curve). Abstaining on everything is never success.
 Splits and L1 labels: publish SHA-256 hashes here before any test run.
+
+## DRAFT (not frozen): filing versions
+A campaign can have several Part 573 report versions (e.g. 24V418 has three: loaded 2024-06-12, 2024-08-01, 2024-08-10).
+All versions are stored and marked original (earliest loadDate) / latest. Default evaluation uses the LATEST version.
+Note: the golden file 24V418-6316 is the middle version, not the latest.

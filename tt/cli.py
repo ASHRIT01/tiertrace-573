@@ -6,7 +6,6 @@ app = typer.Typer(no_args_is_help=True, help="TierTrace-573")
 @app.command()
 def fetch(years: str = "2015-2026", rate: float = 1.0):
     """Polite crawl (blocked on the Week 1 URL-enumeration gate)."""
-    from tt.fetch.nhtsa import candidate_urls  # noqa: F401
     raise typer.Exit("fetch not implemented: resolve the Week 1 URL-enumeration gate first")
 
 

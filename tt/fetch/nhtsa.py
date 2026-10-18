@@ -1,7 +1,6 @@
 """Polite NHTSA fetcher: ~1 req/s, robots.txt, identifying UA, on-disk cache.
-URL enumeration is the Week 1 gate: the numeric suffix in RCLRPT-<campaign>-<id>.PDF
-cannot be derived from the campaign number, so `candidate_urls` is a stub to be filled
-after inspecting how nhtsa.gov lists a recall's documents."""
+The numeric suffix in RCLRPT-<campaign>-<id>.PDF cannot be derived from the campaign number;
+URLs come from tt.fetch.api.list_573 (api.nhtsa.gov/safetyIssues/byNhtsaId)."""
 import time
 import urllib.robotparser
 from pathlib import Path
@@ -45,7 +44,3 @@ class PoliteFetcher:
             return None
         dest.write_bytes(r.content)
         return r.content
-
-
-def candidate_urls(campaign: str) -> list[str]:
-    raise NotImplementedError("Week 1 gate: determine how nhtsa.gov lists per-recall document URLs")

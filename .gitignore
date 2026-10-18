@@ -5,3 +5,4 @@ data/raw/
 runs/
 ._*
 .DS_Store
+data/api_cache/

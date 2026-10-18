@@ -35,3 +35,21 @@ class ApiClient:
 
     def safety_issues(self, nhtsa_id: str) -> dict | None:
         return self.get_json("/safetyIssues/byNhtsaId", {"name": "", "nhtsaId": nhtsa_id}, f"si_{nhtsa_id}")
+
+
+def list_573(client: ApiClient, campaign: str) -> list[dict]:
+    """All Part 573 report versions for a campaign, oldest first.
+    A document counts if its summary starts with 'Recall 573 Report' or fileName starts with RCLRPT.
+    Version rule: every version is kept; the earliest loadDate is `is_original`, the latest `is_latest`."""
+    d = client.safety_issues(campaign)
+    docs = []
+    for res in (d or {}).get("results", []):
+        for rec in res.get("recalls", []):
+            for x in rec.get("associatedDocuments", []):
+                if x.get("summary", "").startswith("Recall 573 Report") or x.get("fileName", "").upper().startswith("RCLRPT"):
+                    docs.append({"campaign": campaign, "loadDate": x["loadDate"], "summary": x["summary"],
+                                 "fileName": x["fileName"], "url": x["url"]})
+    docs.sort(key=lambda r: r["loadDate"])
+    for i, r in enumerate(docs):
+        r["is_original"], r["is_latest"] = i == 0, i == len(docs) - 1
+    return docs
