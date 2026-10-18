@@ -1,0 +1,174 @@
+{
+ "RCLRPT-15V036-1855.PDF": {
+  "The District Service Manager contacted": {
+   "type": "FILER_AWARENESS"
+  },
+  "VIP confirmed": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "Component manufacturer VIP was contacted": {
+   "type": "OTHER"
+  },
+  "During vehicle operation": {
+   "include": false,
+   "why": "descriptive (no action)"
+  },
+  "Corrective Action - VIP": {
+   "include": false,
+   "why": "heading line with no date of its own (corrective action)"
+  }
+ },
+ "RCLRPT-16V648-2307.PDF": {
+  "April through August 2016": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-16V870-6167.PDF": {
+  "a GM employee submitted": {
+   "type": "FILER_AWARENESS"
+  },
+  "On November 16, 2016": {
+   "quote": "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its manifold as the result of an incorrect off seam inboard weld"
+  }
+ },
+ "RCLRPT-18V805-5341.PDF": {
+  "On August 30, 2018": {
+   "type": "FILER_AWARENESS"
+  },
+  "This seat track assembly design contains": {
+   "include": false,
+   "why": "descriptive (design description, no action)"
+  }
+ },
+ "RCLRPT-18V293-6049.PDF": {
+  "03/22/2018": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-19V730-6964.PDF": {
+  "Sept 2017": {
+   "type": "INVESTIGATION_START"
+  },
+  "Nov to Dec 2017": {
+   "type": "INVESTIGATION_START"
+  },
+  "A recall was issued": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-19V574-9143.PDF": {
+  "A preliminary investigation": {
+   "type": "INVESTIGATION_START"
+  },
+  "5/14/19": {
+   "type": "INVESTIGATION_START"
+  },
+  "7/22/19": {
+   "type": "OTHER"
+  },
+  "7/29/19": {
+   "type": "DECISION"
+  },
+  "Research is begun": {
+   "type": "OTHER"
+  },
+  "6/10/19": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-20V461-9351.PDF": {
+  "A GM quality manager": {
+   "type": "FILER_AWARENESS"
+  },
+  "On June 19, 2020": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-20E041-4869.PDF": {
+  "May – June, 2020": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-20V390-2903.PDF": {
+  "May 2019-July 2019": {
+   "type": "OTHER"
+  },
+  "July 2019, DTNA notified": {
+   "type": "OTHER"
+  },
+  "During a functional evaluation": {
+   "type": "OTHER"
+  },
+  "August – September 2019": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "October 2019, DTNA": {
+   "type": "OTHER"
+  },
+  "August 2019, DTNA received": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-21V993-1803.PDF": {
+  "12/1-": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-21V415-8099.PDF": {
+  "6/02/21": {
+   "include": false,
+   "why": "remedy logistics (gathering customer information for mailings)"
+  },
+  "7/23/21": {
+   "include": false,
+   "why": "remedy logistics (follow-up on the letter)"
+  },
+  "8/13/21 I sent": {
+   "include": false,
+   "why": "remedy logistics (status email)"
+  },
+  "8/16/21 no \"leaks\"": {
+   "include": false,
+   "why": "status statement (no leaks reported)"
+  },
+  "Please see Dometic recall": {
+   "include": false,
+   "why": "pointer to another recall"
+  }
+ },
+ "RCLRPT-21V665-4028.PDF": {
+  "On August 19, 2021": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-22V374-1195.PDF": {
+  "At that time, DTNA believed": {
+   "include": false,
+   "why": "belief statement, not an event"
+  },
+  "June 3, 2022": {
+   "include": false,
+   "why": "remedy (repair of the 4 vehicles)"
+  },
+  "On or about May 18, 2022": {
+   "quote": "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution, DTNA decided to conduct a voluntary safety recall campaign"
+  }
+ },
+ "RCLRPT-22V114-4125.PDF": {
+  "In January 2022": {
+   "type": "INVESTIGATION_START"
+  },
+  "The 2020 incidents led": {
+   "type": "DECISION"
+  },
+  "The vehicle in the December 2021 report": {
+   "include": false,
+   "why": "descriptive (which vehicle), no action"
+  }
+ },
+ "RCLRPT-18V482-9392.PDF": {
+  "7/17/2018 The investigation ended": {
+   "type": "DECISION"
+  }
+ }
+}

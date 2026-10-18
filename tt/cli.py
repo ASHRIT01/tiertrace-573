@@ -220,7 +220,8 @@ def dev_bench(model: str = typer.Option(..., "--model", help="exact installed ta
     typer.echo(f"                          {s['seconds_p50_excl_first']:.1f} / {s['seconds_p95_excl_first']:.1f}  (excluding the first call)")
     sc = score(L, recs, Path(pdf_dir))
     typer.echo("\nSCORES vs UNREVIEWED drafts, not gold")
-    for k in ("json_valid_rate", "verifier_pass_rate", "s2_recovery", "unsupported_claim_rate", "event_precision", "event_recall", "event_f1", "cause_accuracy"):
+    for k in ("json_valid_rate", "verifier_pass_rate", "s2_recovery", "unsupported_claim_rate", "event_precision", "event_recall", "event_f1",
+              "event_other_f1", "event_fuzzy_recall", "cause_accuracy"):
         typer.echo(f"  {k:24} {sc[k]:.3f}")
     typer.echo(f"  (s2_recovery over {sc['s2_gold_supported']} filings with a supported S2 draft; unsupported_claim_rate over {sc['s2_not_supported_gold']})")
     typer.echo(f"\npredictions saved: {outp}")

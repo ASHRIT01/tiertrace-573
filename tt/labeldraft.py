@@ -39,6 +39,8 @@ def event_date_failures(labels: list[dict], pdf_dir: Path | None = None) -> list
         if pdf_dir is not None:
             chron = norm(load(pdf_dir / L["file"])["sections"].get("chronology", ""))
         for i, e in enumerate(L.get("events", []), 1):
+            if e.get("date_inferred") and not e.get("date_text"):
+                continue  # no date claimed: stored, not scored
             if e.get("inherited_date"):
                 ok = date_in_quote(e["date_text"], e.get("entry_quote", ""))
                 if ok and pdf_dir is not None:
@@ -89,11 +91,18 @@ def render(labels: list[dict], pdf_dir: Path) -> str:
         bad_ev = {(f, n) for f, n, _, _ in event_date_failures([L], pdf_dir)}
         for i, e in enumerate(L.get("events", []), 1):
             tag = "" if (L["file"], f"E{i}") not in bad_ev else "**DATE CHECK FAILED**"
+            sp = e.get("span") or {}
+            if e.get("date_inferred"):
+                tag = ("(DATE INFERRED: no date of its own in prose; stored, NOT scored) " + tag).strip()
+            elif sp.get("granularity") == "fuzzy":
+                tag = (f"(fuzzy date {sp['start']}..{sp['end']}: scored separately) " + tag).strip()
+            if sp.get("year_from_context"):
+                tag = (f"(year taken from context: {sp['start']}) " + tag).strip()
             if e.get("inherited_date"):
                 tag = (f"(date inherited from its entry; entry sentence: \"{e['entry_quote']}\") " + tag).strip()
                 total += 1
                 bad += not found(e["entry_quote"], "chronology", d)
-            line(f"E{i}", f"{e['date_text']} — {e['type']}", "SUPPORTED", e["quote"], "chronology", tag)
+            line(f"E{i}", f"{e['date_text'] or '(no date)'} — {e['type']}", "SUPPORTED", e["quote"], "chronology", tag)
         if not L.get("events"):
             out.append("- **E** dated events — **NOT_REPORTED** (no dated event in the chronology)\n  - " + REVIEW)
         c = L["cause"]
@@ -151,7 +160,7 @@ def sentence_end(c: str, e: int) -> int:
                 return j
         if ch == " ":
             m = _DATE.match(c, i + 1)
-            if m:
+            if m and not _re.search(r"\d\s*[-\u2013]\s*$|\b(?:to|through|thru|until)\s*$", c[:i]):  # not the 2nd half of a range
                 pw = _re.search(r"([A-Za-z]+)$", c[:i])
                 if not (pw and pw.group(1).lower() in _PREP):
                     return len(c[:i].rstrip(" -\u2013"))

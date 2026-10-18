@@ -69,7 +69,8 @@ class Doc:
         return c in {"nr", "n/r", "not reported", "not available", "n/a", ""}
 
 
-def split_sections(text: str) -> dict[str, str]:
+def split_sections(text: str, collapse: bool = True) -> dict[str, str]:
+    """Sections of the cleaned text. collapse=False keeps line breaks (needed to tell a dated entry/bullet from prose)."""
     text = clean(text)
     hits = []
     for key, pat in HEADINGS:
@@ -85,7 +86,7 @@ def split_sections(text: str) -> dict[str, str]:
             if k != key:
                 nxt = s
                 break
-        out[key] = re.sub(r"\s+", " ", text[end:nxt]).strip()
+        out[key] = re.sub(r"\s+", " ", text[end:nxt]).strip() if collapse else text[end:nxt].strip("\n ")
     return out
 
 

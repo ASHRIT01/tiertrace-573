@@ -1,7 +1,7 @@
 # Dev labels: DRAFT, AI-drafted, to be human-reviewed
 
-Event date check: 150 of 150 events pass the date rule (own date inside the quote, or date inherited from the entry sentence).
-Quote check: 296 of 296 quotes located by code.
+Event date check: 156 of 156 events pass the date rule (own date inside the quote, or date inherited from the entry sentence).
+Quote check: 286 of 286 quotes located by code.
 Nothing here is verified by a person. Every quote below was checked by code to appear verbatim (whitespace-normalised) in the
 named section of the filing; a line marked **QUOTE NOT FOUND** needs fixing. For each claim write yes / no / fix on the review line.
 Statuses: SUPPORTED (a passage directly supports it), INSUFFICIENT (the text does not settle it), NOT_REPORTED (the information is absent/NR).
@@ -147,7 +147,7 @@ Filer: Pierce Manufacturing  |  filing date: 2016-02-29  |  block supplier (pars
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** Nov-2015 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "Nov-2015, Pierce detected vibration of undetermined cause during manufacturing.") — "Investigation identified universal cap bolts not to proper torque on trucks exhibiting vibration." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** Jan-16 — OTHER — **SUPPORTED**  — "Further investigation determined bolts were loosened and not properly torqued during vehicle assembly at Pierce by end of Jan-16." [chronology]
+- **E3** end of Jan-16 — OTHER — **SUPPORTED** (fuzzy date 2016-01-20..2016-01-31: scored separately) — "Further investigation determined bolts were loosened and not properly torqued during vehicle assembly at Pierce by end of Jan-16." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: bolts loosened and not re-torqued — **SUPPORTED**  — "Properly torqued bolts were loosened and not re-torqued due to an improper assembly procedure" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -163,9 +163,11 @@ Filer: Volkswagen Group of America, Inc.  |  filing date: 2016-09-06  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** April 2016 — SUPPLIER_NOTICE — **SUPPORTED**  — "April 2016 - The supplier informed Audi of a production issue that occurred during one day of production (November 2, 2015)." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** April through August 2016 — INVESTIGATION_START — **SUPPORTED**  — "April through August 2016 - Audi subsequently analyzed the issue to determine possible consequences." [chronology]
+- **E2** November 2, 2015 — OTHER — **SUPPORTED**  — "April 2016 - The supplier informed Audi of a production issue that occurred during one day of production (November 2, 2015)." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** August 29, 2016 — DECISION — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined." [chronology]
+- **E3** April through August 2016 — INVESTIGATION_START — **SUPPORTED**  — "April through August 2016 - Audi subsequently analyzed the issue to determine possible consequences." [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E4** August 29, 2016 — DECISION — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: both containers filled with the same component — **SUPPORTED**  — "Due to human error both containers were filled up with cartridges containing the same component A" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -178,19 +180,19 @@ Filer: General Motors LLC  |  filing date: 2016-11-28  |  block supplier (parsed
 
 - **S1** Block reports component manufacturer: ARC Automotive — **SUPPORTED**  — "Name : ARC Automotive" [block]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **S2** Narrative (cause/chronology) names the supplier: ARC Automotive — **SUPPORTED**  — "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module" [cause]
+- **S2** Narrative (cause/chronology) names the supplier: ARC Automotive — **SUPPORTED**  — "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module, performed an incorrect off seam inboard weld on the inflator manifold." [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** November 13, 2016 — SUPPLIER_NOTICE — **SUPPORTED**  — "On November 13, 2016, RSIAB module supplier Takata reported to GM that, during lot acceptance testing (“LAT”) of an assembled airbag module at 85C, the inflator ruptured." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** November 13, 2016 — FILER_AWARENESS — **SUPPORTED** (date inherited from its entry; entry sentence: "On November 13, 2016, RSIAB module supplier Takata reported to GM that, during lot acceptance testing (“LAT”) of an assembled airbag module at 85C, the inflator ruptured.") — "a GM employee submitted a Speak Up For Safety report that same day." [chronology]
+- **E2** (no date) — FILER_AWARENESS — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "a GM employee submitted a Speak Up For Safety report that same day." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** November 14, 2016 — INVESTIGATION_START — **SUPPORTED**  — "GM opened an investigation on November 14, 2016 and immediately initiated actions to trace inflators from the same lot as the failed inflator to potentially impacted plants and vehicles." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** November 16, 2016 — OTHER — **SUPPORTED**  — "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its manifold as the result of an incorrect off seam inboard weld but that weld inspection, hydro burst testing" [chronology]
+- **E4** November 16, 2016 — OTHER — **SUPPORTED**  — "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its manifold as the result of an incorrect off seam inboard weld" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E5** November 18, 2016 — DECISION — **SUPPORTED**  — "On November 18, 2016, GM’s Safety Field Action Decision Authority (SFADA) decided to conduct a safety recall on the entire suspect lot." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **C** Cause: incorrect off-seam weld on the inflator manifold — **SUPPORTED**  — "performed an incorrect off seam inboard weld on the inflator manifold" [cause]
+- **C** Cause: incorrect off-seam weld on the inflator manifold — **SUPPORTED**  — "performed an incorrect off seam inboard weld on the inflator manifold. The off seam weld caused the inflator to rupture at the manifold." [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **U** Upstream involvement in the narrative: **NAMED** (Takata, ARC Automotive) — "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -203,9 +205,9 @@ Filer: Daimler Vans USA, LLC  |  filing date: 2018-01-26  |  block supplier (par
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: Bosch — **INSUFFICIENT**  — (no quote: none exists)
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E1** mid-August 2017 — FILER_AWARENESS — **SUPPORTED**  — "The issue was detected in mid-August 2017 in connection with a notification by the development department." [chronology]
+- **E1** mid-August 2017 — FILER_AWARENESS — **SUPPORTED** (fuzzy date 2017-08-10..2017-08-20: scored separately) — "The issue was detected in mid-August 2017 in connection with a notification by the development department." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** mid-August 2017 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "The issue was detected in mid-August 2017 in connection with a notification by the development department.") — "Subsequently the potentially affected vehicles as well as the production period of potentially affected vehicles were identified precisely." [chronology]
+- **E2** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Subsequently the potentially affected vehicles as well as the production period of potentially affected vehicles were identified precisely." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: Crosswind Assist not correctly configured — **SUPPORTED**  — "Due to a production deviation on the NAFTA 5 t vehicle variant, the Crosswind Assist function in the ESP was not correctly configured" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -251,17 +253,17 @@ Filer: Mercedes-Benz USA, LLC.  |  filing date: 2018-01-17  |  block supplier (p
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** November 2016 — FILER_AWARENESS — **SUPPORTED**  — "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** November 2016 — INVESTIGATION_START — **SUPPORTED** (date inherited from its entry; entry sentence: "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant.") — "Investigations were initiated to identify potentially affected vehicles." [chronology]
+- **E2** (no date) — INVESTIGATION_START — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Investigations were initiated to identify potentially affected vehicles." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** November 2016 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant.") — "Test data from start of production through November 2016 was reviewed." [chronology]
+- **E3** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Test data from start of production through November 2016 was reviewed." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** mid-2017 — OTHER — **SUPPORTED**  — "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution." [chronology]
+- **E4** mid-2017 — OTHER — **SUPPORTED** (fuzzy date 2017-04-01..2017-09-30: scored separately) — "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E5** mid-2017 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution.") — "Further investigations showed that in the test and initialization specifications for GLC-class headlamps the values from C-class vehicles were initialized from start of production onwards." [chronology]
+- **E5** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Further investigations showed that in the test and initialization specifications for GLC-class headlamps the values from C-class vehicles were initialized from start of production onwards." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E6** mid-2017 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution.") — "Further tests were conducted to identify potential effects of incorrectly adjusted headlamps." [chronology]
+- **E6** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Further tests were conducted to identify potential effects of incorrectly adjusted headlamps." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E7** mid-2017 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly regarding the light distribution.") — "Glare of oncoming traffic was ruled out." [chronology]
+- **E7** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Glare of oncoming traffic was ruled out." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E8** December 2017 — DECISION — **SUPPORTED**  — "In December 2017, DAG determined that a potential non-compliance regarding the requirements of FMVSS 108 and cannot be ruled out." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -299,7 +301,7 @@ Filer: Ford Motor Company  |  filing date: 2018-11-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** August 30, 2018 — FILER_AWARENESS — **SUPPORTED**  — "On August 30, 2018, Ford’s Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model year Expedition and Navigator second row bench center (20%) seats." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** August 30, 2018 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "On August 30, 2018, Ford’s Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model year Expedition and Navigator second row bench center (20%) seats.") — "CCRG requested an assessment of center seat structural integrity with one or both J- bracket reinforcements missing." [chronology]
+- **E2** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "CCRG requested an assessment of center seat structural integrity with one or both J- bracket reinforcements missing." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** September - October 2018 — OTHER — **SUPPORTED**  — "September - October 2018: Directional CAE analysis was conducted on a rigidized body sheet metal structure with the second row center seat in the full rear and full forward seating positions" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -320,7 +322,7 @@ Filer: Navistar, Inc.  |  filing date: 2018-05-03  |  block supplier (parsed): '
 
 - **S1** Block reports component manufacturer: Shield — **SUPPORTED**  — "Name : Shield" [block]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **S2** Narrative (cause/chronology) names the supplier: Shield — **SUPPORTED**  — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability" [cause]
+- **S2** Narrative (cause/chronology) names the supplier: Shield — **SUPPORTED**  — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt." [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** 03/22/2018 — FILER_AWARENESS — **SUPPORTED**  — "03/22/2018 – Navistar receives reports of broken seat belt D-ring bolts during the assembly process at the Springfield Assembly Plant." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -346,7 +348,7 @@ Filer: Navistar, Inc.  |  filing date: 2018-05-03  |  block supplier (parsed): '
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E12** 04/26/2018 — DECISION — **SUPPORTED**  — "04/26/2018 – Navistar declares a Safety Recall." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **C** Cause: supplier evaluation missed hydrogen embrittlement in the D-ring bolt — **SUPPORTED**  — "did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt" [cause]
+- **C** Cause: supplier evaluation missed hydrogen embrittlement in the D-ring bolt — **SUPPORTED**  — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt." [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **U** Upstream involvement in the narrative: **NAMED** (Shield) — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -359,7 +361,7 @@ Filer: Ferrara Fire Apparatus, Inc.  |  filing date: 2018-03-14  |  block suppli
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: Timoney Technologies (named instead of the block supplier) — **SUPPORTED**  — "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E** dated events — **NOT_REPORTED** (no dated event in the chronology)
+- **E1** (no date) — FILER_AWARENESS — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension on a non Ferrara unit." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: inconsistent machining of the spindle — **SUPPORTED**  — "Inconsistent machining operations during the manufacturing of the spindle" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -441,9 +443,9 @@ Filer: E-One Incorporated  |  filing date: 2019-10-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E7** August 2019 — FILER_AWARENESS — **SUPPORTED**  — "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E8** August 2019 — INVESTIGATION_START — **SUPPORTED** (date inherited from its entry; entry sentence: "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated.") — "Electrical Engineering began testing to determine the root cause." [chronology]
+- **E8** (no date) — INVESTIGATION_START — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Electrical Engineering began testing to determine the root cause." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E9** August 2019 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019 were beginning to have the same condition as previously stated.") — "When the cause was determined, Engineering worked with a supplier to develop a solid state relay and a sample relay underwent extensive testing." [chronology]
+- **E9** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "When the cause was determined, Engineering worked with a supplier to develop a solid state relay and a sample relay underwent extensive testing." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E10** 9 OCT 2019 — DECISION — **SUPPORTED**  — "On 9 OCT 2019, it was determined to do a new Recall to address this." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -491,17 +493,17 @@ Filer: General Motors LLC  |  filing date: 2020-08-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** June 19, 2020 — FILER_AWARENESS — **SUPPORTED**  — "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** June 19, 2020 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode.") — "The button would not unlatch the trunk lid while the vehicle was in this mode." [chronology]
+- **E2** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "The button would not unlatch the trunk lid while the vehicle was in this mode." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** June 19, 2020 — FILER_AWARENESS — **SUPPORTED** (date inherited from its entry; entry sentence: "On June 19, 2020, an auditor at GM’s Bowling Green assembly plant tested the trunk lid release button located inside the front trunk compartment in one of the affected vehicles after the vehicle had been left unattended and entered a low-power “sleep” mode.") — "A GM quality manager submitted the issue to GM’s Speak Up For Safety program that day." [chronology]
+- **E3** (no date) — FILER_AWARENESS — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "A GM quality manager submitted the issue to GM’s Speak Up For Safety program that day." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E4** June 26, 2020 — INVESTIGATION_START — **SUPPORTED**  — "On June 26, 2020, GM opened a formal product investigation." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E5** July 8, 2020 — OTHER — **SUPPORTED**  — "On July 8, 2020, GM’s investigator was able to duplicate the condition on a 2020 Corvette." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E6** July 8, 2020 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "On July 8, 2020, GM’s investigator was able to duplicate the condition on a 2020 Corvette.") — "GM engineers determined that, under certain conditions, the voltage generated by the button is insufficient to wake the vehicle from sleep mode, rendering the button inoperative while the vehicle is in that mode." [chronology]
+- **E6** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "GM engineers determined that, under certain conditions, the voltage generated by the button is insufficient to wake the vehicle from sleep mode, rendering the button inoperative while the vehicle is in that mode." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E7** July 21 — OTHER — **SUPPORTED**  — "A regulatory assessment concluded on July 21 that the condition represents a potential noncompliance condition." [chronology]
+- **E7** July 21 — OTHER — **SUPPORTED** (year taken from context: 2020-07-21) — "A regulatory assessment concluded on July 21 that the condition represents a potential noncompliance condition." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E8** July 30, 2020 — DECISION — **SUPPORTED**  — "On July 30, 2020, GM’s Safety and Field Action Decision Authority (SFADA) decided to conduct a noncompliance recall." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -523,7 +525,9 @@ Filer: ECCO Holdings Corp.  |  filing date: 2021-03-19  |  block supplier (parse
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** May – June, 2020 — INVESTIGATION_START — **SUPPORTED**  — "May – June, 2020 – The company conducted an investigation into the production and design history of the lamp, obtained additional samples for testing, and, on June 14 and 15, 2020, conducted additional photometry tests on sample lamps." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** June 15, 2020 — DECISION — **SUPPORTED**  — "June 15, 2020 – Based upon the testing and other information developed during the investigation, company management decided that a noncompliance with FMVSS 108 exists within the subject population." [chronology]
+- **E4** June 14 and 15, 2020 — OTHER — **SUPPORTED**  — "May – June, 2020 – The company conducted an investigation into the production and design history of the lamp, obtained additional samples for testing, and, on June 14 and 15, 2020, conducted additional photometry tests on sample lamps." [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E5** June 15, 2020 — DECISION — **SUPPORTED**  — "June 15, 2020 – Based upon the testing and other information developed during the investigation, company management decided that a noncompliance with FMVSS 108 exists within the subject population." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: states non-compliance, no mechanism — **INSUFFICIENT**  — "The lamps do not meet the requirements of the relevant standard" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -604,13 +608,13 @@ Filer: Cruiser RV  |  filing date: 2021-12-20  |  block supplier (parsed): None,
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: none named — **NOT_REPORTED**  — (no quote: none exists)
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E1** 11/29 — FILER_AWARENESS — **SUPPORTED**  — "11/29 - Engineering noted a discrepancy of tire sizes during an audit of our fed tags." [chronology]
+- **E1** 11/29 — FILER_AWARENESS — **SUPPORTED** (year taken from context: 2021-11-29) — "11/29 - Engineering noted a discrepancy of tire sizes during an audit of our fed tags." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** 12/1 — INVESTIGATION_START — **SUPPORTED**  — "12/1- ran reports and researched scope." [chronology]
+- **E2** 12/1 — INVESTIGATION_START — **SUPPORTED** (year taken from context: 2021-12-01) — "12/1- ran reports and researched scope." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** 12/10 — OTHER — **SUPPORTED**  — "12/10 - found 3 brands and models that listed the incorrect tire sizes." [chronology]
+- **E3** 12/10 — OTHER — **SUPPORTED** (year taken from context: 2021-12-10) — "12/10 - found 3 brands and models that listed the incorrect tire sizes." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** 12/15 — OTHER — **SUPPORTED**  — "12/15 - sent to the safety committee." [chronology]
+- **E4** 12/15 — OTHER — **SUPPORTED** (year taken from context: 2021-12-15) — "12/15 - sent to the safety committee." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: wrong tire sizes printed on placards — **SUPPORTED**  — "The tire placard and fed tags were printed with ST225/75R15E tires and actually had ST205/75R14D tires installed" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -640,7 +644,11 @@ Filer: Shenzen YouCheng Dianzishangwu Youxiangg  |  filing date: 2021-08-09  |  
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: none named — **NOT_REPORTED**  — (no quote: none exists)
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E** dated events — **NOT_REPORTED** (no dated event in the chronology)
+- **E1** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "With headlight S1-H11 installed in the assembly, and the light intensity was tested according to the standard SAE FMVSS NO.108." [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E2** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "The light intensity of the following 3 test points: 0.6D-1.3R, 0.86D-V and 1.5D-2R was lower than the specified lower limit, while the rest of test points met the requirements of the standard." [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E3** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "It can be seen that the risk of S1-H11 affecting the driver coming from the opposite car is small." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -676,11 +684,11 @@ Filer: Daimler Trucks North America, LLC  |  filing date: 2022-06-03  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** May 5, 2022 — FILER_AWARENESS — **SUPPORTED**  — "On or about May 5, 2022, DTNA received a notification from its Engineering group that, while testing a specific DTNA owned vehicle that had not been sold to commerce, there was a situation that resulted in an unintended brake application." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** May 5, 2022 — INVESTIGATION_START — **SUPPORTED** (date inherited from its entry; entry sentence: "On or about May 5, 2022, DTNA received a notification from its Engineering group that, while testing a specific DTNA owned vehicle that had not been sold to commerce, there was a situation that resulted in an unintended brake application.") — "DTNA promptly began an investigation into that vehicle and other vehicles like it, which were produced in only a very limited production run." [chronology]
+- **E2** (no date) — INVESTIGATION_START — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "DTNA promptly began an investigation into that vehicle and other vehicles like it, which were produced in only a very limited production run." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** May 16 — OTHER — **SUPPORTED**  — "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles, as listed on the prior 573 report." [chronology]
+- **E3** May 16 — OTHER — **SUPPORTED** (year taken from context: 2022-05-16) — "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles, as listed on the prior 573 report." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** May 18, 2022 — DECISION — **SUPPORTED**  — "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution" [chronology]
+- **E4** May 18, 2022 — DECISION — **SUPPORTED**  — "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution, DTNA decided to conduct a voluntary safety recall campaign" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -697,7 +705,7 @@ Filer: Proterra Operating Company, Inc.  |  filing date: 2022-04-22  |  block su
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** December 2021 — FILER_AWARENESS — **SUPPORTED**  — "In December 2021, Proterra received a customer report of a steering gearbox failure." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** December 2021 — OTHER — **SUPPORTED** (date inherited from its entry; entry sentence: "In December 2021, Proterra received a customer report of a steering gearbox failure.") — "Proterra investigated and determined the root cause of this failure was the same as the root cause of two 2020 incidents of loose steering gearbox bolts." [chronology]
+- **E2** (no date) — OTHER — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "Proterra investigated and determined the root cause of this failure was the same as the root cause of two 2020 incidents of loose steering gearbox bolts." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** October 2020 — DECISION — **SUPPORTED**  — "The 2020 incidents led Proterra to declare a voluntary safety recall (20V-664) in October 2020 on 169 vehicles." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -705,7 +713,7 @@ Filer: Proterra Operating Company, Inc.  |  filing date: 2022-04-22  |  block su
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E5** February 21, 2022 — OTHER — **SUPPORTED**  — "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E6** February 21, 2022 — DECISION — **SUPPORTED** (date inherited from its entry; entry sentence: "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate.") — "The Committee decided to conduct a voluntary safety recall to address this issue." [chronology]
+- **E6** (no date) — DECISION — **SUPPORTED** (DATE INFERRED: no date of its own in prose; stored, NOT scored) — "The Committee decided to conduct a voluntary safety recall to address this issue." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: insufficient adhesive applied in production — **SUPPORTED**  — "An insufficient amount of plexus adhesive applied between the torque plate and bus body during production" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________

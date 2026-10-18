@@ -99,3 +99,22 @@ the narrative cannot settle it). A supplier that only helps with the remedy is n
 - **NONE_MENTIONED** if the narrative is present and mentions no supplier-chain party.
 - **NOT_REPORTED** if the chronology is a pointer or NR, so the narrative cannot settle it.
 - Applying the rule to the 30 dev drafts changed 0 U labels.
+
+## DRAFT 2026-10-19, Phase 0 (NOT frozen): rule fixes a-e (these amend the event rule above)
+Labels are **silver labels: AI-made, cross-checked by independent AI passes and code checks. No label is human-verified.**
+- **a. Date inheritance only inside a dated entry or bullet.** A dated entry starts at a sentence that begins with a date (no preposition such as
+  'On'/'In' before it) or at a bullet item, and runs until the next entry or bullet or a blank line. An undated sentence inside it inherits the entry's
+  date. An undated sentence in prose is stored with `date_inferred=true` and no date; it is **not scored**. (tt/labels/events.py)
+- **b. A sentence with two distinct dates yields one event per date.** The first date takes the sentence's type; later dates are OTHER unless an
+  override says otherwise. Dates that only bound a data range (production/build windows, 'ranging from', 'start of production through') are mentions,
+  not event dates.
+- **c. Date normalisation.** Strip 'On or about', 'approximately', 'around' (and leading on/in/by/since/during). Parse to {start, end, granularity:
+  day | month | quarter | year | range | fuzzy}; 'mid-2017', 'mid-August 2017', 'early/late/end of/beginning of X' are fuzzy. A year-less date takes
+  its year from context only if unambiguous: the one year of all fully dated expressions in the chronology, or, with none, the filing year provided the
+  result is not after the filing date; otherwise `date_inferred=true`. (tt/labels/dates.py)
+- **d. Event scoring.** A predicted event matches a gold event if the types are equal and the date spans overlap after widening both to the coarser
+  granularity (day < month < quarter < year; ranges as is). Each gold event matches at most once. Fuzzy gold dates are scored separately (recall).
+  Date-inferred gold events are not scored. (tt/eval/devscore.py)
+- **e. Headline event metric** uses five types: FILER_AWARENESS, INVESTIGATION_START, DECISION, SUPPLIER_NOTICE, NHTSA_FILING. OTHER is reported
+  separately.
+- Per-filing judgment calls (exclusions with reasons, type corrections) live in config/event_overrides.json; they are AI decisions, unreviewed.
