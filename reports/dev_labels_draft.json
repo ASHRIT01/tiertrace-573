@@ -337,7 +337,7 @@
    },
    {
     "date_text": "August 29, 2016",
-    "type": "OTHER",
+    "type": "DECISION",
     "quote": "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined."
    }
   ],
@@ -355,7 +355,7 @@
    "quote": "a production failure happened in the Continental Budapest factory at the silgel dispensing station",
    "section": "cause"
   },
-  "note": "Block says NR but the cause names Continental: narrative adds a supplier the block does not give. E4 re-typed OTHER on owner instruction; the sentence itself ends 'and the presence of a defect was determined', so a reviewer may still read it as a determination."
+  "note": "Block says NR but the cause names Continental: narrative adds a supplier the block does not give."
  },
  {
   "file": "RCLRPT-16V870-6167.PDF",

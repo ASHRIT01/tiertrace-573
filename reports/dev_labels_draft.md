@@ -139,13 +139,13 @@ Filer: Volkswagen Group of America, Inc.  |  filing date: 2016-09-06  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** April through August 2016 — INVESTIGATION_START — **SUPPORTED**  — "April through August 2016 - Audi subsequently analyzed the issue to determine possible consequences." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** August 29, 2016 — OTHER — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined." [chronology]
+- **E4** August 29, 2016 — DECISION — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: both containers filled with the same component — **SUPPORTED**  — "Due to human error both containers were filled up with cartridges containing the same component A" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **U** Upstream involvement in the narrative: **NAMED** (Continental) — "a production failure happened in the Continental Budapest factory at the silgel dispensing station" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Block says NR but the cause names Continental: narrative adds a supplier the block does not give. E4 re-typed OTHER on owner instruction; the sentence itself ends 'and the presence of a defect was determined', so a reviewer may still read it as a determination.
+- note: Block says NR but the cause names Continental: narrative adds a supplier the block does not give.
 
 ## 8. RCLRPT-16V870-6167.PDF  (2016)
 Filer: General Motors LLC  |  filing date: 2016-11-28  |  block supplier (parsed): 'ARC Automotive', tier None, country 'United States'
