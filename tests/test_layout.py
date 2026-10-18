@@ -21,3 +21,10 @@ def test_layout_real(fname):
         pytest.skip("run `tt fetch-list` first")
     r = check_pdf(RAW / fname)
     assert r["layout"] == EXPECT[fname] and r["fails"] == []
+
+
+def test_header_date_without_space_after_comma():
+    from tt.parse.sections import parse_header
+    from datetime import date
+    t = "Manufacturer Name :  Acme\nSubmission Date : JAN 26,2015\nNHTSA Recall No. : 15V-049\n"
+    assert parse_header(t)["filing_date"] == date(2015, 1, 26)

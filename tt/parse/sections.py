@@ -84,7 +84,7 @@ def parse_header(text: str) -> dict:
     """Filer name, submission date and campaign number from the first page."""
     t = clean(text)
     name = re.search(r"Manufacturer Name\s*:\s*(.+?)(?=\n\s*(?:Address|Submission Date|NHTSA Recall)|\n[A-Z][\w ]+\s*:|\Z)", t, re.S)
-    sub = re.search(r"Submission Date\s*:\s*([A-Za-z]{3,9} \d{1,2}, \d{4})", t)
+    sub = re.search(r"Submission Date\s*:\s*([A-Za-z]{3,9}\s+\d{1,2},\s*\d{4})", t)
     camp = re.search(r"NHTSA Recall No\.?\s*:\s*(\d{2}[VE]-?\d{3})", t)
     filer = re.sub(r"\s+", " ", name.group(1)).strip() if name else ""
     sd = parse_date(sub.group(1), date(2100, 1, 1)) if sub else None

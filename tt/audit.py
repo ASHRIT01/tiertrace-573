@@ -34,6 +34,7 @@ def audit(sample_jsonl: Path, pdf_dir: Path) -> str:
         layouts[detect_layout(text)] += 1
         s["filer"] += bool(parse_header(text)["filer"])
         s["supplier_name"] += bool(blk.name)
+        s["block_nr"] += (not blk.name) and bool(raw_block(text).strip())
         s["tier"] += bool(blk.tier)
         s["cause"] += sec.get("cause", "").strip().lower() not in {"", "nr", "n/r", "not reported"}
         s["chronology"] += bool(sec.get("chronology"))
@@ -44,7 +45,7 @@ def audit(sample_jsonl: Path, pdf_dir: Path) -> str:
            "## Downloads and text layer", "", "| year | campaigns | several versions | downloaded | failed | text layer | needs OCR |", "|---|---|---|---|---|---|---|"]
     out += [f"| {y} | {stat[y]['campaigns']} | {stat[y]['multi']} | {stat[y]['downloaded']} | {stat[y]['download_failed'] + stat[y]['unreadable']} | {stat[y]['has_text']} | {stat[y]['needs_ocr']} |" for y in ys]
     out += ["", "## Field fill rate among downloaded filings (parser-detected; NR counts as unfilled)", "",
-            "| year | n | supplier name | tier | cause | chronology |", "|---|---|---|---|---|---|"]
-    out += [f"| {y} | {stat[y]['downloaded']} | " + " | ".join(pct(stat[y][k], stat[y]['downloaded']) for k in ("supplier_name", "tier", "cause", "chronology")) + " |" for y in ys]
+            "| year | n | supplier name | block NR/blank | tier | cause | chronology |", "|---|---|---|---|---|---|---|"]
+    out += [f"| {y} | {stat[y]['downloaded']} | " + " | ".join(pct(stat[y][k], stat[y]['downloaded']) for k in ("supplier_name", "block_nr", "tier", "cause", "chronology")) + " |" for y in ys]
     out += ["", f"Layouts detected: {dict(layouts)}"]
     return "\n".join(out)

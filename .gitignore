@@ -9,3 +9,5 @@ data/api_cache/
 data/flat/
 data/audit_raw/
 data/processed/
+data/cache/
+data/api_cache/
