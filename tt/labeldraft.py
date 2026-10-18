@@ -23,6 +23,21 @@ def found(quote: str, section: str, doc: dict) -> bool:
     return norm(quote) in norm(body)
 
 
+def date_in_quote(date_text: str, quote: str) -> bool:
+    """An event's date text must appear inside its quote (the quote spans date and event)."""
+    return norm(date_text) in norm(quote)
+
+
+def event_date_failures(labels: list[dict]) -> list[tuple[str, str, str, str]]:
+    """[(file, event number, date_text, quote)] for events whose date text is not inside the quote."""
+    out = []
+    for L in labels:
+        for i, e in enumerate(L.get("events", []), 1):
+            if not date_in_quote(e["date_text"], e["quote"]):
+                out.append((L["file"], f"E{i}", e["date_text"], e["quote"]))
+    return out
+
+
 def show(pdf: Path, maxlen: int = 2600) -> str:
     d = load(pdf)
     s, b, h = d["sections"], d["block"], d["header"]
@@ -39,7 +54,8 @@ def render(labels: list[dict], pdf_dir: Path) -> str:
            "Statuses: SUPPORTED (a passage directly supports it), INSUFFICIENT (the text does not settle it), NOT_REPORTED (the information is absent/NR).",
            "Claim layers: S1 = block-reported component manufacturer (the filing's own field). S2 = supplier named in the NARRATIVE (cause or chronology),",
            "the mask-and-recover target: SUPPORTED only with a quote, otherwise INSUFFICIENT (name absent from the narrative) or NOT_REPORTED (nothing to name).",
-           "E = dated event. C = cause. U = upstream involvement in the narrative: NAMED / UNNAMED / ABSENT.", ""]
+           "E = dated event (the date text must appear inside its quote). C = cause. U = supplier-chain involvement in the narrative: NAMED / UNNAMED /",
+           "NONE_MENTIONED (the narrative is present and mentions none) / NOT_REPORTED (chronology is a pointer or NR, so the narrative cannot settle it).", ""]
     bad = total = 0
     for n, L in enumerate(labels, 1):
         d = load(pdf_dir / L["file"])
@@ -58,16 +74,28 @@ def render(labels: list[dict], pdf_dir: Path) -> str:
         for c in L["claims"]:
             line(c["id"], c["label"], c["status"], c.get("quote", ""), c.get("section", "any"))
         for i, e in enumerate(L.get("events", []), 1):
-            line(f"E{i}", f"{e['date_text']} — {e['type']}", "SUPPORTED", e["quote"], "chronology")
+            line(f"E{i}", f"{e['date_text']} — {e['type']}", "SUPPORTED", e["quote"], "chronology",
+                 "" if date_in_quote(e["date_text"], e["quote"]) else "**DATE NOT IN QUOTE**")
         if not L.get("events"):
             out.append("- **E** dated events — **NOT_REPORTED** (no dated event in the chronology)\n  - " + REVIEW)
         c = L["cause"]
         line("C", "Cause: " + c["label"], c["status"], c.get("quote", ""), c.get("section", "cause"))
         u = L["upstream"]
-        line("U", f"Upstream involvement in narrative: {u['kind']}" + (f" ({', '.join(u['names'])})" if u.get("names") else ""),
-             "SUPPORTED" if u.get("quote") else "NOT_REPORTED", u.get("quote", ""), u.get("section", "any"))
+        names = f" ({', '.join(u['names'])})" if u.get("names") else ""
+        q = f'"{u["quote"]}" [{u.get("section", "any")}]' if u.get("quote") else "(no quote)"
+        if u.get("quote"):
+            total += 1
+            ok = found(u["quote"], u.get("section", "any"), d)
+            bad += not ok
+            q += "" if ok else "  **QUOTE NOT FOUND**"
+        out.append(f"- **U** Upstream involvement in the narrative: **{u['kind']}**{names} — {q}\n  - {REVIEW}")
+        for fl in L.get("flags", []):
+            out.append(f"- FLAG: {fl}")
         if L.get("note"):
             out.append(f"- note: {L['note']}")
         out.append("")
-    out.insert(2, f"Quote check: {total - bad} of {total} quotes located by code" + ("" if not bad else f"; **{bad} NOT FOUND**") + ".")
+    fails = event_date_failures(labels)
+    n_ev = sum(len(L.get("events", [])) for L in labels)
+    out.insert(2, f"Event date check: {n_ev - len(fails)} of {n_ev} events have the date text inside the quote" + ("" if not fails else f"; **{len(fails)} fail**") + ".")
+    out.insert(3, f"Quote check: {total - bad} of {total} quotes located by code" + ("" if not bad else f"; **{bad} NOT FOUND**") + ".")
     return "\n".join(out)

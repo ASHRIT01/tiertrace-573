@@ -1,12 +1,14 @@
 # Dev labels: DRAFT, AI-drafted, to be human-reviewed
 
-Quote check: 181 of 181 quotes located by code.
+Event date check: 98 of 98 events have the date text inside the quote.
+Quote check: 188 of 188 quotes located by code.
 Nothing here is verified by a person. Every quote below was checked by code to appear verbatim (whitespace-normalised) in the
 named section of the filing; a line marked **QUOTE NOT FOUND** needs fixing. For each claim write yes / no / fix on the review line.
 Statuses: SUPPORTED (a passage directly supports it), INSUFFICIENT (the text does not settle it), NOT_REPORTED (the information is absent/NR).
 Claim layers: S1 = block-reported component manufacturer (the filing's own field). S2 = supplier named in the NARRATIVE (cause or chronology),
 the mask-and-recover target: SUPPORTED only with a quote, otherwise INSUFFICIENT (name absent from the narrative) or NOT_REPORTED (nothing to name).
-E = dated event. C = cause. U = upstream involvement in the narrative: NAMED / UNNAMED / ABSENT.
+E = dated event (the date text must appear inside its quote). C = cause. U = supplier-chain involvement in the narrative: NAMED / UNNAMED /
+NONE_MENTIONED (the narrative is present and mentions none) / NOT_REPORTED (chronology is a pointer or NR, so the narrative cannot settle it).
 
 ## 1. RCLRPT-15V036-1855.PDF  (2015)
 Filer: PACCAR Incorporated  |  filing date: 2015-01-23  |  block supplier (parsed): 'VIP', tier None, country 'United States'
@@ -27,7 +29,7 @@ Filer: PACCAR Incorporated  |  filing date: 2015-01-23  |  block supplier (parse
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: assembler picked the wrong part — **SUPPORTED**  — "inadvertently selected the wrong horn contact plate during assembly of the steering wheel" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (VIP) — **SUPPORTED**  — "Component manufacturer VIP was contacted." [chronology]
+- **U** Upstream involvement in the narrative: **NAMED** (VIP) — "Component manufacturer VIP was contacted." [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 2. RCLRPT-15V577-9823.PDF  (2015)
@@ -41,7 +43,7 @@ Filer: Toyota Motor Engineering & Manufacturing  |  filing date: 2015-09-17  |  
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology is a pointer ('see the attached Part 573 ... for the full chronology'); nothing to label from the narrative.
 
@@ -66,13 +68,13 @@ Filer: Airstream, Inc.  |  filing date: 2015-10-09  |  block supplier (parsed): 
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: connections not torqued; ground wire installed incorrectly — **SUPPORTED**  — "Electrical connections not properly torqued and the interior wire harness grounding wire installed incorrectly" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 4. RCLRPT-15E051-1229.PDF  (2015)
 Filer: Alcoa Inc.  |  filing date: 2015-06-30  |  block supplier (parsed): 'Alcoa Wheel and Transportation Products,', tier None, country 'United States'
 
-- **S1** Block reports component manufacturer: Alcoa Wheel and Transportation Products — **SUPPORTED**  — "Name : Alcoa Wheel and Transportation Products" [block]
+- **S1** Block reports component manufacturer: Alcoa Wheel and Transportation Products — **SUPPORTED**  — "Name : Alcoa Wheel and Transportation Products," [block]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: Alcoa Wheel and Transportation Products — **INSUFFICIENT**  — "traceable to certain productions from forge die 23931 at Alcoa" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
@@ -80,9 +82,9 @@ Filer: Alcoa Inc.  |  filing date: 2015-06-30  |  block supplier (parsed): 'Alco
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: forging discontinuity from forge die 23931 — **SUPPORTED**  — "The forging discontinuity is traceable to certain productions from forge die 23931" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Block supplier is a division of the filer (kind would be filer_affiliate). Chronology is a pointer to an attached amended chronology.
+- note: Block supplier is a division of the filer (kind would be filer_affiliate). Chronology is a pointer to an attached amended chronology. The block name in the filing ends with a comma ('Products,'): the filing itself drops the legal suffix (checked on the rendered page), so this is not a parser error.
 
 ## 5. RCLRPT-16V135-9273.PDF  (2016)
 Filer: Nova Bus  |  filing date: 2016-04-06  |  block supplier (parsed): 'DOGA USA, Corp', tier None, country 'United States'
@@ -105,7 +107,7 @@ Filer: Nova Bus  |  filing date: 2016-04-06  |  block supplier (parsed): 'DOGA U
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: root cause not yet settled — **INSUFFICIENT**  — "root cause is still being evaluated" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "Nova Bus receives information from supplier of potential safety-related issue" [chronology]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "Nova Bus receives information from supplier of potential safety-related issue" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 6. RCLRPT-16V123-5154.PDF  (2016)
@@ -121,7 +123,7 @@ Filer: Pierce Manufacturing  |  filing date: 2016-02-29  |  block supplier (pars
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: bolts loosened and not re-torqued — **SUPPORTED**  — "Properly torqued bolts were loosened and not re-torqued due to an improper assembly procedure" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 7. RCLRPT-16V648-2307.PDF  (2016)
@@ -137,13 +139,13 @@ Filer: Volkswagen Group of America, Inc.  |  filing date: 2016-09-06  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** April through August 2016 — INVESTIGATION_START — **SUPPORTED**  — "April through August 2016 - Audi subsequently analyzed the issue" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** August 29, 2016 — DECISION — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi" [chronology]
+- **E4** August 29, 2016 — OTHER — **SUPPORTED**  — "August 29, 2016 - The matter was brought to Audi's product safety committee and the presence of a defect was determined" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: both containers filled with the same component — **SUPPORTED**  — "Due to human error both containers were filled up with cartridges containing the same component A" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (Continental) — **SUPPORTED**  — "a production failure happened in the Continental Budapest factory at the silgel dispensing station" [cause]
+- **U** Upstream involvement in the narrative: **NAMED** (Continental) — "a production failure happened in the Continental Budapest factory at the silgel dispensing station" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Block says NR but the cause names Continental: narrative adds a supplier the block does not give.
+- note: Block says NR but the cause names Continental: narrative adds a supplier the block does not give. E4 re-typed OTHER on owner instruction; the sentence itself ends 'and the presence of a defect was determined', so a reviewer may still read it as a determination.
 
 ## 8. RCLRPT-16V870-6167.PDF  (2016)
 Filer: General Motors LLC  |  filing date: 2016-11-28  |  block supplier (parsed): 'ARC Automotive', tier None, country 'United States'
@@ -158,11 +160,11 @@ Filer: General Motors LLC  |  filing date: 2016-11-28  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E3** November 16, 2016 — OTHER — **SUPPORTED**  — "On November 16, 2016, testing of the failed inflator by ARC" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** November 18, 2016 — DECISION — **SUPPORTED**  — "SFADA) decided to conduct a safety recall on the entire suspect lot" [chronology]
+- **E4** November 18, 2016 — DECISION — **SUPPORTED**  — "On November 18, 2016, GM’s Safety Field Action Decision Authority (SFADA) decided to conduct a safety recall on the entire suspect lot" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: incorrect off-seam weld on the inflator manifold — **SUPPORTED**  — "performed an incorrect off seam inboard weld on the inflator manifold" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (Takata, ARC Automotive) — **SUPPORTED**  — "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module" [cause]
+- **U** Upstream involvement in the narrative: **NAMED** (Takata, ARC Automotive) — "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Sub-tier: GM -> Takata (module) -> ARC (inflator). The block names the deeper supplier (ARC), not Takata.
 
@@ -177,7 +179,7 @@ Filer: Daimler Vans USA, LLC  |  filing date: 2018-01-26  |  block supplier (par
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: Crosswind Assist not correctly configured — **SUPPORTED**  — "Due to a production deviation on the NAFTA 5 t vehicle variant, the Crosswind Assist function in the ESP was not correctly configured" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 10. RCLRPT-17V268-7162.PDF  (2017)
@@ -191,7 +193,7 @@ Filer: Nissan North America, Inc.  |  filing date: 2017-08-28  |  block supplier
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology is a pointer ('See attached 573 for chronology').
 
@@ -206,7 +208,7 @@ Filer: Chrysler (FCA US LLC)  |  filing date: 2017-11-21  |  block supplier (par
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology is a pointer to an attached document; the defect section (not narrative) describes the alternator failure.
 
@@ -225,7 +227,7 @@ Filer: Mercedes-Benz USA, LLC.  |  filing date: 2018-01-17  |  block supplier (p
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: C-class parameters used for GLC headlamp adjustment — **SUPPORTED**  — "C-class parameters were used for headlamp adjustment on GLC-class vehicles" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 13. RCLRPT-18V482-9392.PDF  (2018)
@@ -239,11 +241,11 @@ Filer: Thor Motor Coach  |  filing date: 2018-07-19  |  block supplier (parsed):
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** 7/17/2018 — FILER_AWARENESS — **SUPPORTED**  — "7/17/2018 Non-compliance was discovered by engineering during a routine audit" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** 7/17/2018 — DECISION — **SUPPORTED**  — "it was determined that there were units on dealer lots with the issue and that a recall was needed" [chronology]
+- **E3** 7/17/2018 — DECISION — **SUPPORTED**  — "7/17/2018 The investigation ended and it was determined that there were units on dealer lots with the issue and that a recall was needed" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: reflectors not installed in production — **SUPPORTED**  — "The reflectors were not installed during the production process" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 14. RCLRPT-18V805-5341.PDF  (2018)
@@ -253,15 +255,15 @@ Filer: Ford Motor Company  |  filing date: 2018-11-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: Magna Seating of America Inc. — **INSUFFICIENT**  — "The lower seat track components are manually assembled by the seat supplier" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E1** August 30, 2018 — FILER_AWARENESS — **SUPPORTED**  — "CCRG) reviewed a concern regarding missing J- channel reinforcement brackets" [chronology]
+- **E1** August 30, 2018 — FILER_AWARENESS — **SUPPORTED**  — "On August 30, 2018, Ford’s Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** September - October 2018 — OTHER — **SUPPORTED**  — "September - October 2018: Directional CAE analysis was conducted" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** November 5, 2018 — DECISION — **SUPPORTED**  — "Field Review Committee reviewed the concern and approved a field action" [chronology]
+- **E3** November 5, 2018 — DECISION — **SUPPORTED**  — "On November 5, 2018, Ford’s Field Review Committee reviewed the concern and approved a field action" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: operator at the seat supplier did not install brackets; wrong laser sensor — **SUPPORTED**  — "An operator at the seat supplier did not consistently install the J-channel reinforcement brackets in the assembly" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "The lower seat track components are manually assembled by the seat supplier" [cause]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "The lower seat track components are manually assembled by the seat supplier" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 15. RCLRPT-18V293-6049.PDF  (2018)
@@ -273,17 +275,33 @@ Filer: Navistar, Inc.  |  filing date: 2018-05-03  |  block supplier (parsed): '
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** 03/22/2018 — FILER_AWARENESS — **SUPPORTED**  — "03/22/2018 – Navistar receives reports of broken seat belt D-ring bolts during the assembly process" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** 03/24/2018 — INVESTIGATION_START — **SUPPORTED**  — "03/24/2018 – Navistar initiates metallurgical testing of suspect bolts" [chronology]
+- **E2** 03/23/2018 — OTHER — **SUPPORTED**  — "03/23/2018 – Navistar quarantines vehicles at the Springfield assembly plant" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** 04/02/2018 - 04/23/18 — INVESTIGATION_START — **SUPPORTED**  — "Navistar initiates investigation to understand the scope of the issue with the supplier and their sub suppliers" [chronology]
+- **E3** 03/24/2018 — INVESTIGATION_START — **SUPPORTED**  — "03/24/2018 – Navistar initiates metallurgical testing of suspect bolts" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** 04/26/2018 — DECISION — **SUPPORTED**  — "04/26/2018 – Navistar declares a Safety Recall" [chronology]
+- **E4** 03/25/2018 — INVESTIGATION_START — **SUPPORTED**  — "03/25/2018 – Navistar completes metallurgical testing and initiates investigation to understand the scope of the issue in manufacturing and supplier parts" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E5** 03/26/2016 — OTHER — **SUPPORTED**  — "03/26/2016 – Navistar contains the issue at the Springfield assembly plant and repairs quarantined vehicles" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E6** 03/27/2018 — OTHER — **SUPPORTED**  — "03/27/2018 – Navistar quarantines vehicles at the Escobedo assembly plant" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E7** 03/28/2018 — OTHER — **SUPPORTED**  — "03/28/2018 – Navistar quarantines suspect seat belt bolts at the Parts Distribution Centers" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E8** 04/02/2018 — OTHER — **SUPPORTED**  — "04/02/2018 – Navistar certifies seat belt bolts at the Parts distribution Centers" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E9** 04/02/2018 - 04/23/18 — INVESTIGATION_START — **SUPPORTED**  — "04/02/2018 - 04/23/18 – Navistar initiates investigation to understand the scope of the issue with the supplier and their sub suppliers" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E10** 04/05/2018 — OTHER — **SUPPORTED**  — "04/05/2018 – Navistar contains the issue at the Escobedo assembly plant and repairs quarantined vehicles" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E11** 04/24/2018 — OTHER — **SUPPORTED**  — "04/24/2018 – Navistar finalizes the suspect population" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E12** 04/26/2018 — DECISION — **SUPPORTED**  — "04/26/2018 – Navistar declares a Safety Recall" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: supplier evaluation missed hydrogen embrittlement in the D-ring bolt — **SUPPORTED**  — "did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (Shield) — **SUPPORTED**  — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability" [cause]
+- **U** Upstream involvement in the narrative: **NAMED** (Shield) — "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Shield is named; 'their sub suppliers' (chronology) are referred to but not named: UNNAMED sub-tier.
+- note: Shield is named; 'their sub suppliers' (chronology) are referred to but not named: UNNAMED sub-tier. 03/26/2016 is as printed in the filing (probable typo for 2018): a V3 case.
 
 ## 16. RCLRPT-18V174-9553.pdf  (2018)
 Filer: Ferrara Fire Apparatus, Inc.  |  filing date: 2018-03-14  |  block supplier (parsed): 'Ferrara Fire Apparatus', tier None, country 'United States'
@@ -296,8 +314,9 @@ Filer: Ferrara Fire Apparatus, Inc.  |  filing date: 2018-03-14  |  block suppli
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: inconsistent machining of the spindle — **SUPPORTED**  — "Inconsistent machining operations during the manufacturing of the spindle" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (Timoney Technologies) — **SUPPORTED**  — "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension" [chronology]
+- **U** Upstream involvement in the narrative: **NAMED** (Timoney Technologies) — "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
+- FLAG: CANDIDATE CONFLICT: S1 (block) names the filer itself, Ferrara Fire Apparatus, as component manufacturer, while the narrative (S2) names Timoney Technologies as the party that notified Ferrara about the spindle. Reviewer: is the block name wrong (a possible CONTRADICTED), or is Ferrara the maker of the assembly?
 - note: Block names the filer itself; the narrative names Timoney Technologies as the party reporting the spindle problem. Reviewer: is the block name a mismatch (possible CONTRADICTED)?
 
 ## 17. RCLRPT-19V412-4986.PDF  (2019)
@@ -321,7 +340,7 @@ Filer: Honda (American Honda Motor Co.)  |  filing date: 2019-07-29  |  block su
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR in the cause field — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "Honda and the transmission main shaft supplier launched a joint investigation" [chronology]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "Honda and the transmission main shaft supplier launched a joint investigation" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Cause field is NR but the chronology gives a mechanism: 'the lathe used to machine the transmission main shaft was programmed incorrectly' (reviewer: label as cause from narrative?).
 
@@ -336,7 +355,7 @@ Filer: General Motors, LLC  |  filing date: 2021-07-01  |  block supplier (parse
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: contamination of the heating element sealing surface — **SUPPORTED**  — "Contamination of the sealing surface of the block-heater heating element during manufacturing can allow coolant leaks to develop" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology is a pointer ('see attachment for revised chronology').
 
@@ -359,8 +378,9 @@ Filer: E-One Incorporated  |  filing date: 2019-10-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: relay damaged by high-voltage transients — **SUPPORTED**  — "accumulates damage over time caused by high voltage transients emanating from the starter solenoid during startup" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "Engineering worked with a supplier to develop a solid state relay" [chronology]
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
+- note: U set to NONE_MENTIONED on owner instruction: the supplier in 'worked with a supplier to develop a solid state relay' is a remedy partner, not upstream. S2 still cites 'our engine vendor' (investigation); reviewer to decide whether that is upstream.
 
 ## 20. RCLRPT-19V574-9143.PDF  (2019)
 Filer: Harley-Davidson Motor Company  |  filing date: 2019-08-05  |  block supplier (parsed): None, tier None, country None
@@ -369,19 +389,21 @@ Filer: Harley-Davidson Motor Company  |  filing date: 2019-08-05  |  block suppl
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **S2** Narrative (cause/chronology) names the supplier: none named — **NOT_REPORTED**  — (no quote: none exists)
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E1** 4/20/19 — FILER_AWARENESS — **SUPPORTED**  — "Technical Subcommittee (TSC) is notified by our Parts and Accessories Engineering group" [chronology]
+- **E1** 4/20/19 — FILER_AWARENESS — **SUPPORTED**  — "4/20/19 – Harley-Davidson’s Technical Subcommittee (TSC) is notified by our Parts and Accessories Engineering group" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** 5/14/19 — INVESTIGATION_START — **SUPPORTED**  — "5/14/19 – Based on the preliminary investigation findings, a formal investigation is commenced" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** 7/12/19 — OTHER — **SUPPORTED**  — "7/12/19 – All investigation tasks were completed" [chronology]
+- **E3** 6/10/19 — OTHER — **SUPPORTED**  — "6/10/19 – Additional research is initiated on the rear fender tip lamp" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** 7/22/19 — OTHER — **SUPPORTED**  — "7/22/19 – A review is conducted with the full Recall Investigation Committee" [chronology]
+- **E4** 7/12/19 — OTHER — **SUPPORTED**  — "7/12/19 – All investigation tasks were completed" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E5** 7/29/19 — DECISION — **SUPPORTED**  — "executive management determined that installation of the subject kits may cause the vehicle to fail to conform to FMVSS 108" [chronology]
+- **E5** 7/22/19 — OTHER — **SUPPORTED**  — "7/22/19 – A review is conducted with the full Recall Investigation Committee" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E6** 7/29/19 — DECISION — **SUPPORTED**  — "7/29/19 – Upon review of the results of the RIC’s investigation and analysis, Harley-Davidson’s executive management determined that installation of the subject kits may cause the vehicle to fail to conform to FMVSS 108" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: engineering oversight — **SUPPORTED**  — "Engineering oversight" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 21. RCLRPT-20V461-9351.PDF  (2020)
@@ -399,11 +421,11 @@ Filer: General Motors LLC  |  filing date: 2020-08-14  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E4** July 21 — OTHER — **SUPPORTED**  — "A regulatory assessment concluded on July 21 that the condition represents a potential noncompliance condition" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E5** July 30, 2020 — DECISION — **SUPPORTED**  — "(SFADA) decided to conduct a noncompliance recall" [chronology]
+- **E5** July 30, 2020 — DECISION — **SUPPORTED**  — "On July 30, 2020, GM’s Safety and Field Action Decision Authority (SFADA) decided to conduct a noncompliance recall" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: button voltage too low to wake the vehicle — **SUPPORTED**  — "the voltage generated when depressing the trunk lid release button is not sufficient to wake the vehicle from sleep mode" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 
 ## 22. RCLRPT-20E041-4869.PDF  (2020)
@@ -417,13 +439,15 @@ Filer: ECCO Holdings Corp.  |  filing date: 2021-03-19  |  block supplier (parse
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** May – June, 2020 — INVESTIGATION_START — **SUPPORTED**  — "May – June, 2020 – The company conducted an investigation into the production and design history of the lamp" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** June 15, 2020 — DECISION — **SUPPORTED**  — "June 15, 2020 – Based upon the testing and other information developed during the investigation, company management decided that a noncompliance with FMVSS 108 exists" [chronology]
+- **E3** June 14 and 15, 2020 — OTHER — **SUPPORTED**  — "on June 14 and 15, 2020, conducted additional photometry tests on sample lamps" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **C** Cause: states non-compliance, no mechanism — **SUPPORTED**  — "The lamps do not meet the requirements of the relevant standard" [cause]
+- **E4** June 15, 2020 — DECISION — **SUPPORTED**  — "June 15, 2020 – Based upon the testing and other information developed during the investigation, company management decided that a noncompliance with FMVSS 108 exists" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "a change in suppliers for the PCB assembly used in the subject lamps" [chronology]
+- **C** Cause: states non-compliance, no mechanism — **INSUFFICIENT**  — "The lamps do not meet the requirements of the relevant standard" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Cause field states the non-compliance, not a mechanism; reviewer may prefer INSUFFICIENT.
+- **U** Upstream involvement in the narrative: **UNNAMED** — "a change in suppliers for the PCB assembly used in the subject lamps" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- note: Cause field states the non-compliance, not a mechanism: marked INSUFFICIENT on owner instruction.
 
 ## 23. RCLRPT-20E071-6421.PDF  (2020)
 Filer: Dometic Corporation  |  filing date: 2020-11-13  |  block supplier (parsed): 'Seven Universe', tier None, country 'China'
@@ -436,7 +460,7 @@ Filer: Dometic Corporation  |  filing date: 2020-11-13  |  block supplier (parse
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause not determined — **INSUFFICIENT**  — "Dometic has not determined the cause of these leaks" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NOT_REPORTED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology says it is uploaded as a separate document.
 
@@ -451,19 +475,23 @@ Filer: Daimler Trucks North America, LLC  |  filing date: 2021-04-01  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** May 2019 — FILER_AWARENESS — **SUPPORTED**  — "May 2019, DTNA received a report of a vehicle pulling to the right" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** July 2019 — OTHER — **SUPPORTED**  — "July 2019, DTNA notified NHTSA Office of Defects Investigation (ODI) of an ongoing investigation" [chronology]
+- **E2** May 2019-July 2019 — OTHER — **SUPPORTED**  — "May 2019-July 2019, DTNA performed a preliminary population and warranty seek" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** August 2019 — INVESTIGATION_START — **SUPPORTED**  — "August 2019, DTNA received the returned parts and began an electrical and functional test" [chronology]
+- **E3** July 2019 — OTHER — **SUPPORTED**  — "July 2019, DTNA notified NHTSA Office of Defects Investigation (ODI) of an ongoing investigation" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** August – September 2019 — SUPPLIER_NOTICE — **SUPPORTED**  — "Supplier evaluated the returned parts and found blockage of the inlet solenoid" [chronology]
+- **E4** August 2019 — INVESTIGATION_START — **SUPPORTED**  — "August 2019, DTNA received the returned parts and began an electrical and functional test" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E5** November 2019 — OTHER — **SUPPORTED**  — "November 2019, DTNA shared an update of the ongoing investigation with NHTSA ODI" [chronology]
+- **E5** August – September 2019 — SUPPLIER_NOTICE — **SUPPORTED**  — "August – September 2019, Supplier evaluated the returned parts and found blockage of the inlet solenoid" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E6** January 2020 — OTHER — **SUPPORTED**  — "January 2020, DTNA provided a status update to NHTSA ODI" [chronology]
+- **E6** October 2019 — OTHER — **SUPPORTED**  — "October 2019, DTNA and supplier began reviewing vehicle routes and chemical wash processes" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E7** November 2019 — OTHER — **SUPPORTED**  — "November 2019, DTNA shared an update of the ongoing investigation with NHTSA ODI" [chronology]
+  - review: [ ] yes  [ ] no  [ ] fix: ________
+- **E8** January 2020 — OTHER — **SUPPORTED**  — "January 2020, DTNA provided a status update to NHTSA ODI" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause field is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "The parts were shipped to the supplier for component breakdown and further evaluation" [chronology]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "The parts were shipped to the supplier for component breakdown and further evaluation" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Cause field is NR but the chronology states a mechanism (C2).
 
@@ -484,7 +512,7 @@ Filer: Cruiser RV  |  filing date: 2021-12-20  |  block supplier (parsed): None,
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: wrong tire sizes printed on placards — **SUPPORTED**  — "The tire placard and fed tags were printed with ST225/75R15E tires and actually had ST205/75R14D tires installed" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Event dates have no year (filing is 2021).
 
@@ -497,17 +525,11 @@ Filer: Genesis Supreme RV  |  filing date: 2023-03-16  |  block supplier (parsed
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E1** 6/01/21 — SUPPLIER_NOTICE — **SUPPORTED**  — "6/01/21 Report was sent from Dometic with part numbers for stoves effected" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E2** 6/02/21 — OTHER — **SUPPORTED**  — "6/02/21 Started process with outside company to gather all customers information" [chronology]
-  - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** 7/20/21 — OTHER — **SUPPORTED**  — "7/20/21 All custome and dealer contacts sent to" [chronology]
-  - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** 8/16/21 — OTHER — **SUPPORTED**  — "Customer(end user)Letters mailed out 8/13/21 and Dealer notifications mailed out 8/16" [chronology]
-  - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: Dometic attributes leaks to field over-tightening — **SUPPORTED**  — "Dometic believes these leaks are caused by a field adjustment when overtightening a securement bolt for the saddle valve to the manifold" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: NAMED (Dometic) — **SUPPORTED**  — "Report was sent from Dometic with part numbers for stoves effected" [chronology]
+- **U** Upstream involvement in the narrative: **NAMED** (Dometic) — "Report was sent from Dometic with part numbers for stoves effected" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- note: Chronology is mostly remedy logistics (Stericycle mailings); no decision date. Dometic filed 20E071 itself (see dev filing #23).
+- note: Chronology is mostly remedy logistics (Stericycle mailings); no decision date. Dometic filed 20E071 itself (see dev filing #23). Events 6/02/21 onward are remedy logistics (mailings to owners/dealers) and are excluded by the event-inclusion rule.
 
 ## 27. RCLRPT-21E053-4014.PDF  (2021)
 Filer: Shenzen YouCheng Dianzishangwu Youxiangg  |  filing date: 2021-08-09  |  block supplier (parsed): None, tier None, country None
@@ -520,7 +542,7 @@ Filer: Shenzen YouCheng Dianzishangwu Youxiangg  |  filing date: 2021-08-09  |  
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: Chronology describes a light-intensity test and has no dates.
 
@@ -535,14 +557,13 @@ Filer: Chrysler (FCA US, LLC)  |  filing date: 2021-08-26  |  block supplier (pa
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** July 2021 — OTHER — **SUPPORTED**  — "During the remainder of July 2021, TSRC conducted analysis of fire patterns" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** August 13, 2021 — OTHER — **SUPPORTED**  — "As of August 13, 2021, FCA US is aware of 55 customer assistance records" [chronology]
-  - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** August 19, 2021 — DECISION — **SUPPORTED**  — "On August 19, 2021, FCA US determined, through the Vehicle Regulations Committee, to conduct a voluntary safety recall" [chronology]
+- **E3** August 19, 2021 — DECISION — **SUPPORTED**  — "On August 19, 2021, FCA US determined, through the Vehicle Regulations Committee, to conduct a voluntary safety recall" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "suspect part production period identified by the supplier" [chronology]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "suspect part production period identified by the supplier" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
+- note:  'As of August 13, 2021 ...' is a status statement, not an event: excluded.
 
 ## 29. RCLRPT-22V374-1195.PDF  (2022)
 Filer: Daimler Trucks North America, LLC  |  filing date: 2022-06-03  |  block supplier (parsed): 'Bendix Corp Heavy Vehicle Systems Group', tier None, country 'United States'
@@ -555,13 +576,13 @@ Filer: Daimler Trucks North America, LLC  |  filing date: 2022-06-03  |  block s
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** May 16 — OTHER — **SUPPORTED**  — "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** May 18, 2022 — DECISION — **SUPPORTED**  — "DTNA decided to conduct a voluntary safety recall campaign for this very specific group of vehicles" [chronology]
+- **E3** May 18, 2022 — DECISION — **SUPPORTED**  — "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall and file that 573 report, out of abundance of caution, DTNA decided to conduct a voluntary safety recall campaign" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E4** June 3, 2022 — OTHER — **SUPPORTED**  — "June 3, 2022, DTNA captured and repaired the 4 vehicles at DTNA" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: cause is NR — **NOT_REPORTED**  — "NR" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: ABSENT — **NOT_REPORTED**  — (no quote: none exists)
+- **U** Upstream involvement in the narrative: **NONE_MENTIONED** — (no quote)
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - note: The block supplier (Bendix) is not named in the cause or chronology.
 
@@ -576,11 +597,11 @@ Filer: Proterra Operating Company, Inc.  |  filing date: 2022-04-22  |  block su
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **E2** October 2020 — DECISION — **SUPPORTED**  — "led Proterra to declare a voluntary safety recall (20V-664) in October 2020" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E3** January 2022 — INVESTIGATION_START — **SUPPORTED**  — "Quality Compliance Steering Committee met and determined further investigation of this issue was warranted" [chronology]
+- **E3** January 2022 — INVESTIGATION_START — **SUPPORTED**  — "In January 2022, Proterra’s Quality Compliance Steering Committee met and determined further investigation of this issue was warranted" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **E4** February 21, 2022 — DECISION — **SUPPORTED**  — "The Committee decided to conduct a voluntary safety recall to address this issue" [chronology]
+- **E4** February 21, 2022 — DECISION — **SUPPORTED**  — "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier’s production records related to the amount of plexus adhesive applied to the torque limiter plate. The Committee decided to conduct a voluntary safety recall" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
 - **C** Cause: insufficient adhesive applied in production — **SUPPORTED**  — "An insufficient amount of plexus adhesive applied between the torque plate and bus body during production" [cause]
   - review: [ ] yes  [ ] no  [ ] fix: ________
-- **U** Upstream involvement in narrative: UNNAMED — **SUPPORTED**  — "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier" [chronology]
+- **U** Upstream involvement in the narrative: **UNNAMED** — "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier" [chronology]
   - review: [ ] yes  [ ] no  [ ] fix: ________
