@@ -141,6 +141,18 @@ def add_kind(out: str = "reports/component_manufacturer_kind.md"):
     typer.echo("\n".join(md))
 
 
+@app.command("draw-splits")
+def draw_splits(seed: int = 0, dev_per_year: int = 50, testa_n: int = 1000):
+    """Draw dev and Test-A campaign id lists (IDs + SHA-256 only; no network)."""
+    from pathlib import Path
+    from tt.splits import draw, eligible, write
+    rows = eligible(Path("data/processed/campaigns.csv"), Path("data/processed/sample_573.jsonl"))
+    dev, testa, info = draw(rows, dev_per_year, testa_n, seed)
+    h = write(dev, testa, Path("data/splits"), info, seed)
+    typer.echo(f"eligible {len(rows)}; dev {len(dev)}; testA {len(testa)}; alloc {info['testA_alloc']}")
+    typer.echo(h)
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
