@@ -1,0 +1,1508 @@
+[
+ {
+  "file": "RCLRPT-15V036-1855.PDF",
+  "year": 2015,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: VIP",
+    "status": "SUPPORTED",
+    "quote": "Name : VIP",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: VIP",
+    "status": "SUPPORTED",
+    "quote": "Component manufacturer VIP was contacted.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "12/2/2014",
+    "type": "OTHER",
+    "quote": "12/2/2014 - A Peterbilt dealership technician completed steering wheel nut recall"
+   },
+   {
+    "date_text": "12/3/2014",
+    "type": "INVESTIGATION_START",
+    "quote": "12/3/2014 - Peterbilt Customer Service notified Engineering"
+   },
+   {
+    "date_text": "12/5/2014",
+    "type": "OTHER",
+    "quote": "12/5/2014 - Engineering found that the horn contact plate on the steering wheel assembly had a tab"
+   },
+   {
+    "date_text": "12/9/2014",
+    "type": "OTHER",
+    "quote": "12/9/2014 Engineering tested a Pride & Class Model 389 Show Truck"
+   },
+   {
+    "date_text": "1/15/2015",
+    "type": "DECISION",
+    "quote": "1/15/2015 - the Peterbilt Safety Committee determined that the incompatibility of the horn contact plate"
+   }
+  ],
+  "cause": {
+   "label": "assembler picked the wrong part",
+   "status": "SUPPORTED",
+   "quote": "inadvertently selected the wrong horn contact plate during assembly of the steering wheel",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "VIP"
+   ],
+   "quote": "Component manufacturer VIP was contacted.",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-15V577-9823.PDF",
+  "year": 2015,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: TG Minto Corporation",
+    "status": "SUPPORTED",
+    "quote": "Name : TG Minto Corporation",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: TG Minto Corporation",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology is a pointer ('see the attached Part 573 ... for the full chronology'); nothing to label from the narrative."
+ },
+ {
+  "file": "RCLRPT-15V658-6735.PDF",
+  "year": 2015,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "July 25, 2015",
+    "type": "FILER_AWARENESS",
+    "quote": "July 25, 2015 - Airstream notified of a fire in an Interstate motor home vehicle by a servicing dealer"
+   },
+   {
+    "date_text": "July 27, 2015",
+    "type": "INVESTIGATION_START",
+    "quote": "July 27, 2015 - Airstream opens investigation into the incident"
+   },
+   {
+    "date_text": "August 19, 2015",
+    "type": "OTHER",
+    "quote": "August 19, 2015 - Production line changed routing of ground wire location due to engineering update"
+   },
+   {
+    "date_text": "September 22, 2015",
+    "type": "FILER_AWARENESS",
+    "quote": "September 22, 2015 - Airstream notified of a vehicle inverter smoking at a servicing dealership"
+   },
+   {
+    "date_text": "October 5, 2015",
+    "type": "DECISION",
+    "quote": "October 5, 2015 - Airstream conducts a safety review of both incidents. Considering both incidents together, Airstream decides to conduct a safety recall"
+   },
+   {
+    "date_text": "October 9, 2015",
+    "type": "NHTSA_FILING",
+    "quote": "October 9, 2015 - Airstream submits a 573 to the NHTSA portal"
+   }
+  ],
+  "cause": {
+   "label": "connections not torqued; ground wire installed incorrectly",
+   "status": "SUPPORTED",
+   "quote": "Electrical connections not properly torqued and the interior wire harness grounding wire installed incorrectly",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-15E051-1229.PDF",
+  "year": 2015,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Alcoa Wheel and Transportation Products",
+    "status": "SUPPORTED",
+    "quote": "Name : Alcoa Wheel and Transportation Products",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Alcoa Wheel and Transportation Products",
+    "status": "INSUFFICIENT",
+    "quote": "traceable to certain productions from forge die 23931 at Alcoa",
+    "section": "cause"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "forging discontinuity from forge die 23931",
+   "status": "SUPPORTED",
+   "quote": "The forging discontinuity is traceable to certain productions from forge die 23931",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Block supplier is a division of the filer (kind would be filer_affiliate). Chronology is a pointer to an attached amended chronology."
+ },
+ {
+  "file": "RCLRPT-16V135-9273.PDF",
+  "year": 2016,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: DOGA USA, Corp",
+    "status": "SUPPORTED",
+    "quote": "Name : DOGA USA, Corp",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: DOGA USA, Corp",
+    "status": "INSUFFICIENT",
+    "quote": "Nova Bus receives information from supplier of potential safety-related issue",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "February 11, 2016",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "February 11, 2016 Nova Bus receives information from supplier of potential safety-related issue"
+   },
+   {
+    "date_text": "February 16, 2016",
+    "type": "OTHER",
+    "quote": "February 16, 2016 Nova Bus issues stop delivery"
+   },
+   {
+    "date_text": "February 16, 2016",
+    "type": "OTHER",
+    "quote": "February 16, 2016 Nova Bus informs Volvo Group North America Regulatory Affairs"
+   },
+   {
+    "date_text": "February 24, 2016",
+    "type": "DECISION",
+    "quote": "February 24, 2016 Product Safety Committee meets and determines that a safety-related defect exists"
+   },
+   {
+    "date_text": "March 2, 2016",
+    "type": "NHTSA_FILING",
+    "quote": "March 2, 2016 Nova Bus informs NHTSA that a voluntary safety recall will be released"
+   },
+   {
+    "date_text": "April 6, 2016",
+    "type": "OTHER",
+    "quote": "April 6, 2016 Updated information on vehicle counts"
+   }
+  ],
+  "cause": {
+   "label": "root cause not yet settled",
+   "status": "INSUFFICIENT",
+   "quote": "root cause is still being evaluated",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Nova Bus receives information from supplier of potential safety-related issue",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-16V123-5154.PDF",
+  "year": 2016,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "Nov-2015",
+    "type": "FILER_AWARENESS",
+    "quote": "Nov-2015, Pierce detected vibration of undetermined cause during manufacturing"
+   },
+   {
+    "date_text": "Jan-16",
+    "type": "OTHER",
+    "quote": "not properly torqued during vehicle assembly at Pierce by end of Jan-16"
+   }
+  ],
+  "cause": {
+   "label": "bolts loosened and not re-torqued",
+   "status": "SUPPORTED",
+   "quote": "Properly torqued bolts were loosened and not re-torqued due to an improper assembly procedure",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-16V648-2307.PDF",
+  "year": 2016,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Continental (named in the cause)",
+    "status": "SUPPORTED",
+    "quote": "a production failure happened in the Continental Budapest factory at the silgel dispensing station",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "April 2016",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "April 2016 - The supplier informed Audi of a production issue"
+   },
+   {
+    "date_text": "November 2, 2015",
+    "type": "OTHER",
+    "quote": "a production issue that occurred during one day of production (November 2, 2015)"
+   },
+   {
+    "date_text": "April through August 2016",
+    "type": "INVESTIGATION_START",
+    "quote": "April through August 2016 - Audi subsequently analyzed the issue"
+   },
+   {
+    "date_text": "August 29, 2016",
+    "type": "DECISION",
+    "quote": "August 29, 2016 - The matter was brought to Audi"
+   }
+  ],
+  "cause": {
+   "label": "both containers filled with the same component",
+   "status": "SUPPORTED",
+   "quote": "Due to human error both containers were filled up with cartridges containing the same component A",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Continental"
+   ],
+   "quote": "a production failure happened in the Continental Budapest factory at the silgel dispensing station",
+   "section": "cause"
+  },
+  "note": "Block says NR but the cause names Continental: narrative adds a supplier the block does not give."
+ },
+ {
+  "file": "RCLRPT-16V870-6167.PDF",
+  "year": 2016,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: ARC Automotive",
+    "status": "SUPPORTED",
+    "quote": "Name : ARC Automotive",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: ARC Automotive",
+    "status": "SUPPORTED",
+    "quote": "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 13, 2016",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On November 13, 2016, RSIAB module supplier Takata reported to GM"
+   },
+   {
+    "date_text": "November 14, 2016",
+    "type": "INVESTIGATION_START",
+    "quote": "GM opened an investigation on November 14, 2016"
+   },
+   {
+    "date_text": "November 16, 2016",
+    "type": "OTHER",
+    "quote": "On November 16, 2016, testing of the failed inflator by ARC"
+   },
+   {
+    "date_text": "November 18, 2016",
+    "type": "DECISION",
+    "quote": "SFADA) decided to conduct a safety recall on the entire suspect lot"
+   }
+  ],
+  "cause": {
+   "label": "incorrect off-seam weld on the inflator manifold",
+   "status": "SUPPORTED",
+   "quote": "performed an incorrect off seam inboard weld on the inflator manifold",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Takata",
+    "ARC Automotive"
+   ],
+   "quote": "ARC Automotive, the supplier of the inflator incorporated by Takata into the RSIAB module",
+   "section": "cause"
+  },
+  "note": "Sub-tier: GM -> Takata (module) -> ARC (inflator). The block names the deeper supplier (ARC), not Takata."
+ },
+ {
+  "file": "RCLRPT-17V804-5540.PDF",
+  "year": 2017,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Bosch",
+    "status": "SUPPORTED",
+    "quote": "Name : Bosch",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Bosch",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "mid-August 2017",
+    "type": "FILER_AWARENESS",
+    "quote": "The issue was detected in mid-August 2017 in connection with a notification by the development department"
+   }
+  ],
+  "cause": {
+   "label": "Crosswind Assist not correctly configured",
+   "status": "SUPPORTED",
+   "quote": "Due to a production deviation on the NAFTA 5 t vehicle variant, the Crosswind Assist function in the ESP was not correctly configured",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-17V268-7162.PDF",
+  "year": 2017,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology is a pointer ('See attached 573 for chronology')."
+ },
+ {
+  "file": "RCLRPT-17V435-7148.PDF",
+  "year": 2017,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: DENSO International America, Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : DENSO International America, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: DENSO International America, Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology is a pointer to an attached document; the defect section (not narrative) describes the alternator failure."
+ },
+ {
+  "file": "RCLRPT-17V819-6798.PDF",
+  "year": 2017,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 2016",
+    "type": "FILER_AWARENESS",
+    "quote": "In November 2016, incorrect light distribution values were detected in certain vehicles within the assembly plant"
+   },
+   {
+    "date_text": "mid-2017",
+    "type": "OTHER",
+    "quote": "In mid-2017, the review identified that the adjustment device in the assembly plant was set incorrectly"
+   },
+   {
+    "date_text": "December 2017",
+    "type": "DECISION",
+    "quote": "In December 2017, DAG determined that a potential non-compliance regarding the requirements of FMVSS 108"
+   }
+  ],
+  "cause": {
+   "label": "C-class parameters used for GLC headlamp adjustment",
+   "status": "SUPPORTED",
+   "quote": "C-class parameters were used for headlamp adjustment on GLC-class vehicles",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-18V482-9392.PDF",
+  "year": 2018,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "7/18/2017",
+    "type": "OTHER",
+    "quote": "7/18/2017 Production of the 29J Outlaw moved to a new plant"
+   },
+   {
+    "date_text": "7/17/2018",
+    "type": "FILER_AWARENESS",
+    "quote": "7/17/2018 Non-compliance was discovered by engineering during a routine audit"
+   },
+   {
+    "date_text": "7/17/2018",
+    "type": "DECISION",
+    "quote": "it was determined that there were units on dealer lots with the issue and that a recall was needed"
+   }
+  ],
+  "cause": {
+   "label": "reflectors not installed in production",
+   "status": "SUPPORTED",
+   "quote": "The reflectors were not installed during the production process",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-18V805-5341.PDF",
+  "year": 2018,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Magna Seating of America Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : Magna Seating of America Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Magna Seating of America Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "The lower seat track components are manually assembled by the seat supplier",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "August 30, 2018",
+    "type": "FILER_AWARENESS",
+    "quote": "CCRG) reviewed a concern regarding missing J- channel reinforcement brackets"
+   },
+   {
+    "date_text": "September - October 2018",
+    "type": "OTHER",
+    "quote": "September - October 2018: Directional CAE analysis was conducted"
+   },
+   {
+    "date_text": "November 5, 2018",
+    "type": "DECISION",
+    "quote": "Field Review Committee reviewed the concern and approved a field action"
+   }
+  ],
+  "cause": {
+   "label": "operator at the seat supplier did not install brackets; wrong laser sensor",
+   "status": "SUPPORTED",
+   "quote": "An operator at the seat supplier did not consistently install the J-channel reinforcement brackets in the assembly",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The lower seat track components are manually assembled by the seat supplier",
+   "section": "cause"
+  }
+ },
+ {
+  "file": "RCLRPT-18V293-6049.PDF",
+  "year": 2018,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Shield",
+    "status": "SUPPORTED",
+    "quote": "Name : Shield",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Shield",
+    "status": "SUPPORTED",
+    "quote": "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "03/22/2018",
+    "type": "FILER_AWARENESS",
+    "quote": "03/22/2018 – Navistar receives reports of broken seat belt D-ring bolts during the assembly process"
+   },
+   {
+    "date_text": "03/24/2018",
+    "type": "INVESTIGATION_START",
+    "quote": "03/24/2018 – Navistar initiates metallurgical testing of suspect bolts"
+   },
+   {
+    "date_text": "04/02/2018 - 04/23/18",
+    "type": "INVESTIGATION_START",
+    "quote": "Navistar initiates investigation to understand the scope of the issue with the supplier and their sub suppliers"
+   },
+   {
+    "date_text": "04/26/2018",
+    "type": "DECISION",
+    "quote": "04/26/2018 – Navistar declares a Safety Recall"
+   }
+  ],
+  "cause": {
+   "label": "supplier evaluation missed hydrogen embrittlement in the D-ring bolt",
+   "status": "SUPPORTED",
+   "quote": "did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Shield"
+   ],
+   "quote": "The Shield supplier pre-sourcing evaluation did not fully evaluate supplier quality capability",
+   "section": "cause"
+  },
+  "note": "Shield is named; 'their sub suppliers' (chronology) are referred to but not named: UNNAMED sub-tier."
+ },
+ {
+  "file": "RCLRPT-18V174-9553.pdf",
+  "year": 2018,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Ferrara Fire Apparatus",
+    "status": "SUPPORTED",
+    "quote": "Name : Ferrara Fire Apparatus",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Timoney Technologies (named instead of the block supplier)",
+    "status": "SUPPORTED",
+    "quote": "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "inconsistent machining of the spindle",
+   "status": "SUPPORTED",
+   "quote": "Inconsistent machining operations during the manufacturing of the spindle",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Timoney Technologies"
+   ],
+   "quote": "Ferrara Fire was notified by Timoney Technologies of a know failure on a Timoney Independent front suspension",
+   "section": "chronology"
+  },
+  "note": "Block names the filer itself; the narrative names Timoney Technologies as the party reporting the spindle problem. Reviewer: is the block name a mismatch (possible CONTRADICTED)?"
+ },
+ {
+  "file": "RCLRPT-19V412-4986.PDF",
+  "year": 2019,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Musashi Auto Parts Co., Ltd.",
+    "status": "SUPPORTED",
+    "quote": "Name : Musashi Auto Parts Co., Ltd.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Musashi Auto Parts Co., Ltd.",
+    "status": "INSUFFICIENT",
+    "quote": "Honda and the transmission main shaft supplier launched a joint investigation",
+    "section": "chronology"
+   },
+   {
+    "id": "C2",
+    "label": "Mechanism stated in the chronology (cause field is NR)",
+    "status": "SUPPORTED",
+    "quote": "the lathe used to machine the transmission main shaft was programmed incorrectly",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "January 2019",
+    "type": "FILER_AWARENESS",
+    "quote": "January 2019 The first claim of rear wheel lock was received in the Japanese market"
+   },
+   {
+    "date_text": "February 2019",
+    "type": "OTHER",
+    "quote": "February 2019 A review of manufacturing processes identified the lathe"
+   },
+   {
+    "date_text": "March 2019",
+    "type": "OTHER",
+    "quote": "March 2019 The first claim from the U.S. market was received"
+   },
+   {
+    "date_text": "April to May 2019",
+    "type": "OTHER",
+    "quote": "April to May 2019 Re-creation tests concluded"
+   },
+   {
+    "date_text": "May 28, 2019",
+    "type": "DECISION",
+    "quote": "May 28, 2019 Honda determined that a defect related to motor vehicle safety existed and decided to conduct a safety recall"
+   }
+  ],
+  "cause": {
+   "label": "cause is NR in the cause field",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Honda and the transmission main shaft supplier launched a joint investigation",
+   "section": "chronology"
+  },
+  "note": "Cause field is NR but the chronology gives a mechanism: 'the lathe used to machine the transmission main shaft was programmed incorrectly' (reviewer: label as cause from narrative?)."
+ },
+ {
+  "file": "RCLRPT-19V328-8012.PDF",
+  "year": 2019,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Electronics Components International",
+    "status": "SUPPORTED",
+    "quote": "Name : Electronics Components International",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Electronics Components International",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "contamination of the heating element sealing surface",
+   "status": "SUPPORTED",
+   "quote": "Contamination of the sealing surface of the block-heater heating element during manufacturing can allow coolant leaks to develop",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology is a pointer ('see attachment for revised chronology')."
+ },
+ {
+  "file": "RCLRPT-19V730-6964.PDF",
+  "year": 2019,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: an unnamed engine vendor / supplier",
+    "status": "INSUFFICIENT",
+    "quote": "discussions with our engine vendor to understand change history of parts in question",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "Sept 2017",
+    "type": "INVESTIGATION_START",
+    "quote": "Sept 2017 - E-ONE Electrical engineer traveled to Boston, MA then visited Aurora, IL to investigate reports of intermittent no-start conditions"
+   },
+   {
+    "date_text": "Nov to Dec 2017",
+    "type": "INVESTIGATION_START",
+    "quote": "Nov to Dec 2017- Investigation into root cause"
+   },
+   {
+    "date_text": "Jan 2, 2018",
+    "type": "DECISION",
+    "quote": "Jan 2, 2018: A decision was made to recall the affected population"
+   },
+   {
+    "date_text": "August 2019",
+    "type": "FILER_AWARENESS",
+    "quote": "In August 2019, E-ONE received reports that trucks that had been reworked under NHTSA Recall 18V-019"
+   },
+   {
+    "date_text": "9 OCT 2019",
+    "type": "DECISION",
+    "quote": "On 9 OCT 2019, it was determined to do a new Recall"
+   }
+  ],
+  "cause": {
+   "label": "relay damaged by high-voltage transients",
+   "status": "SUPPORTED",
+   "quote": "accumulates damage over time caused by high voltage transients emanating from the starter solenoid during startup",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Engineering worked with a supplier to develop a solid state relay",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-19V574-9143.PDF",
+  "year": 2019,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "4/20/19",
+    "type": "FILER_AWARENESS",
+    "quote": "Technical Subcommittee (TSC) is notified by our Parts and Accessories Engineering group"
+   },
+   {
+    "date_text": "5/14/19",
+    "type": "INVESTIGATION_START",
+    "quote": "5/14/19 – Based on the preliminary investigation findings, a formal investigation is commenced"
+   },
+   {
+    "date_text": "7/12/19",
+    "type": "OTHER",
+    "quote": "7/12/19 – All investigation tasks were completed"
+   },
+   {
+    "date_text": "7/22/19",
+    "type": "OTHER",
+    "quote": "7/22/19 – A review is conducted with the full Recall Investigation Committee"
+   },
+   {
+    "date_text": "7/29/19",
+    "type": "DECISION",
+    "quote": "executive management determined that installation of the subject kits may cause the vehicle to fail to conform to FMVSS 108"
+   }
+  ],
+  "cause": {
+   "label": "engineering oversight",
+   "status": "SUPPORTED",
+   "quote": "Engineering oversight",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-20V461-9351.PDF",
+  "year": 2020,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "June 19, 2020",
+    "type": "FILER_AWARENESS",
+    "quote": "On June 19, 2020, an auditor at GM"
+   },
+   {
+    "date_text": "June 26, 2020",
+    "type": "INVESTIGATION_START",
+    "quote": "On June 26, 2020, GM opened a formal product investigation"
+   },
+   {
+    "date_text": "July 8, 2020",
+    "type": "OTHER",
+    "quote": "On July 8, 2020, GM"
+   },
+   {
+    "date_text": "July 21",
+    "type": "OTHER",
+    "quote": "A regulatory assessment concluded on July 21 that the condition represents a potential noncompliance condition"
+   },
+   {
+    "date_text": "July 30, 2020",
+    "type": "DECISION",
+    "quote": "(SFADA) decided to conduct a noncompliance recall"
+   }
+  ],
+  "cause": {
+   "label": "button voltage too low to wake the vehicle",
+   "status": "SUPPORTED",
+   "quote": "the voltage generated when depressing the trunk lid release button is not sufficient to wake the vehicle from sleep mode",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-20E041-4869.PDF",
+  "year": 2020,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : N/A",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: an unnamed PCB assembly supplier",
+    "status": "INSUFFICIENT",
+    "quote": "a change in suppliers for the PCB assembly used in the subject lamps",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March 30 and 31, 2020",
+    "type": "OTHER",
+    "quote": "March 30 and 31, 2020 – Photometry testing was conducted"
+   },
+   {
+    "date_text": "May – June, 2020",
+    "type": "INVESTIGATION_START",
+    "quote": "May – June, 2020 – The company conducted an investigation into the production and design history of the lamp"
+   },
+   {
+    "date_text": "June 15, 2020",
+    "type": "DECISION",
+    "quote": "June 15, 2020 – Based upon the testing and other information developed during the investigation, company management decided that a noncompliance with FMVSS 108 exists"
+   }
+  ],
+  "cause": {
+   "label": "states non-compliance, no mechanism",
+   "status": "SUPPORTED",
+   "quote": "The lamps do not meet the requirements of the relevant standard",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "a change in suppliers for the PCB assembly used in the subject lamps",
+   "section": "chronology"
+  },
+  "note": "Cause field states the non-compliance, not a mechanism; reviewer may prefer INSUFFICIENT."
+ },
+ {
+  "file": "RCLRPT-20E071-6421.PDF",
+  "year": 2020,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Seven Universe",
+    "status": "SUPPORTED",
+    "quote": "Name : Seven Universe",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Seven Universe",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "cause not determined",
+   "status": "INSUFFICIENT",
+   "quote": "Dometic has not determined the cause of these leaks",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology says it is uploaded as a separate document."
+ },
+ {
+  "file": "RCLRPT-20V390-2903.PDF",
+  "year": 2020,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Wabco USA LLC",
+    "status": "SUPPORTED",
+    "quote": "Name : Wabco USA LLC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Wabco USA LLC",
+    "status": "INSUFFICIENT",
+    "quote": "The parts were shipped to the supplier for component breakdown and further evaluation",
+    "section": "chronology"
+   },
+   {
+    "id": "C2",
+    "label": "Mechanism stated in the chronology (cause field is NR)",
+    "status": "SUPPORTED",
+    "quote": "found blockage of the inlet solenoid from magnesium chloride corrosion deforming the O-ring",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 2019",
+    "type": "FILER_AWARENESS",
+    "quote": "May 2019, DTNA received a report of a vehicle pulling to the right"
+   },
+   {
+    "date_text": "July 2019",
+    "type": "OTHER",
+    "quote": "July 2019, DTNA notified NHTSA Office of Defects Investigation (ODI) of an ongoing investigation"
+   },
+   {
+    "date_text": "August 2019",
+    "type": "INVESTIGATION_START",
+    "quote": "August 2019, DTNA received the returned parts and began an electrical and functional test"
+   },
+   {
+    "date_text": "August – September 2019",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "Supplier evaluated the returned parts and found blockage of the inlet solenoid"
+   },
+   {
+    "date_text": "November 2019",
+    "type": "OTHER",
+    "quote": "November 2019, DTNA shared an update of the ongoing investigation with NHTSA ODI"
+   },
+   {
+    "date_text": "January 2020",
+    "type": "OTHER",
+    "quote": "January 2020, DTNA provided a status update to NHTSA ODI"
+   }
+  ],
+  "cause": {
+   "label": "cause field is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The parts were shipped to the supplier for component breakdown and further evaluation",
+   "section": "chronology"
+  },
+  "note": "Cause field is NR but the chronology states a mechanism (C2)."
+ },
+ {
+  "file": "RCLRPT-21V993-1803.PDF",
+  "year": 2021,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "11/29",
+    "type": "FILER_AWARENESS",
+    "quote": "11/29 - Engineering noted a discrepancy of tire sizes during an audit of our fed tags"
+   },
+   {
+    "date_text": "12/1",
+    "type": "INVESTIGATION_START",
+    "quote": "12/1- ran reports and researched scope"
+   },
+   {
+    "date_text": "12/10",
+    "type": "OTHER",
+    "quote": "12/10 - found 3 brands and models that listed the incorrect tire sizes"
+   },
+   {
+    "date_text": "12/15",
+    "type": "OTHER",
+    "quote": "12/15 - sent to the safety committee"
+   }
+  ],
+  "cause": {
+   "label": "wrong tire sizes printed on placards",
+   "status": "SUPPORTED",
+   "quote": "The tire placard and fed tags were printed with ST225/75R15E tires and actually had ST205/75R14D tires installed",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Event dates have no year (filing is 2021)."
+ },
+ {
+  "file": "RCLRPT-21V415-8099.PDF",
+  "year": 2021,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Dometic",
+    "status": "SUPPORTED",
+    "quote": "Name : Dometic",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Dometic",
+    "status": "SUPPORTED",
+    "quote": "Please see Dometic recall 20E71 6/01/21 Report was sent from Dometic with part numbers for stoves effected",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "6/01/21",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "6/01/21 Report was sent from Dometic with part numbers for stoves effected"
+   },
+   {
+    "date_text": "6/02/21",
+    "type": "OTHER",
+    "quote": "6/02/21 Started process with outside company to gather all customers information"
+   },
+   {
+    "date_text": "7/20/21",
+    "type": "OTHER",
+    "quote": "7/20/21 All custome and dealer contacts sent to"
+   },
+   {
+    "date_text": "8/16/21",
+    "type": "OTHER",
+    "quote": "Customer(end user)Letters mailed out 8/13/21 and Dealer notifications mailed out 8/16"
+   }
+  ],
+  "cause": {
+   "label": "Dometic attributes leaks to field over-tightening",
+   "status": "SUPPORTED",
+   "quote": "Dometic believes these leaks are caused by a field adjustment when overtightening a securement bolt for the saddle valve to the manifold",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Dometic"
+   ],
+   "quote": "Report was sent from Dometic with part numbers for stoves effected",
+   "section": "chronology"
+  },
+  "note": "Chronology is mostly remedy logistics (Stericycle mailings); no decision date. Dometic filed 20E071 itself (see dev filing #23)."
+ },
+ {
+  "file": "RCLRPT-21E053-4014.PDF",
+  "year": 2021,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "Chronology describes a light-intensity test and has no dates."
+ },
+ {
+  "file": "RCLRPT-21V665-4028.PDF",
+  "year": 2021,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: TI Ashley",
+    "status": "SUPPORTED",
+    "quote": "Name : TI Ashley",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: TI Ashley",
+    "status": "INSUFFICIENT",
+    "quote": "suspect part production period identified by the supplier",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "July 19, 2021",
+    "type": "INVESTIGATION_START",
+    "quote": "On July 19, 2021 FCA US LLC (\"FCA US\") Technical Safety and Regulatory Compliance (\"TSRC\") organization opened an investigation"
+   },
+   {
+    "date_text": "July 2021",
+    "type": "OTHER",
+    "quote": "During the remainder of July 2021, TSRC conducted analysis of fire patterns"
+   },
+   {
+    "date_text": "August 13, 2021",
+    "type": "OTHER",
+    "quote": "As of August 13, 2021, FCA US is aware of 55 customer assistance records"
+   },
+   {
+    "date_text": "August 19, 2021",
+    "type": "DECISION",
+    "quote": "On August 19, 2021, FCA US determined, through the Vehicle Regulations Committee, to conduct a voluntary safety recall"
+   }
+  ],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "suspect part production period identified by the supplier",
+   "section": "chronology"
+  }
+ },
+ {
+  "file": "RCLRPT-22V374-1195.PDF",
+  "year": 2022,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Bendix Corp Heavy Vehicle Systems Group",
+    "status": "SUPPORTED",
+    "quote": "Name : Bendix Corp Heavy Vehicle Systems Group",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Bendix Corp Heavy Vehicle Systems Group",
+    "status": "INSUFFICIENT",
+    "quote": "",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 5, 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "On or about May 5, 2022, DTNA received a notification from its Engineering group"
+   },
+   {
+    "date_text": "May 16",
+    "type": "OTHER",
+    "quote": "On or about May 16, DTNA determined that the occurrence could occur on a population of 4 vehicles"
+   },
+   {
+    "date_text": "May 18, 2022",
+    "type": "DECISION",
+    "quote": "DTNA decided to conduct a voluntary safety recall campaign for this very specific group of vehicles"
+   },
+   {
+    "date_text": "June 3, 2022",
+    "type": "OTHER",
+    "quote": "June 3, 2022, DTNA captured and repaired the 4 vehicles at DTNA"
+   }
+  ],
+  "cause": {
+   "label": "cause is NR",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "ABSENT",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "note": "The block supplier (Bendix) is not named in the cause or chronology."
+ },
+ {
+  "file": "RCLRPT-22V114-4125.PDF",
+  "year": 2022,
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: TPI Composites, Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : TPI Composites, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: TPI Composites, Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "December 2021",
+    "type": "FILER_AWARENESS",
+    "quote": "In December 2021, Proterra received a customer report of a steering gearbox failure"
+   },
+   {
+    "date_text": "October 2020",
+    "type": "DECISION",
+    "quote": "led Proterra to declare a voluntary safety recall (20V-664) in October 2020"
+   },
+   {
+    "date_text": "January 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "Quality Compliance Steering Committee met and determined further investigation of this issue was warranted"
+   },
+   {
+    "date_text": "February 21, 2022",
+    "type": "DECISION",
+    "quote": "The Committee decided to conduct a voluntary safety recall to address this issue"
+   }
+  ],
+  "cause": {
+   "label": "insufficient adhesive applied in production",
+   "status": "SUPPORTED",
+   "quote": "An insufficient amount of plexus adhesive applied between the torque plate and bus body during production",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "On February 21, 2022, the Committee reviewed the investigation findings, including the supplier",
+   "section": "chronology"
+  }
+ }
+]
