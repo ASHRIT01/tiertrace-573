@@ -191,6 +191,17 @@ def dev_fetch(rate: float = 1.0):
                            "downloaded": ok, "download_failed": failed, "api_requests": client.requests_made}))
 
 
+@app.command("dev-score")
+def dev_score(preds: str, labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
+    """Score a predictions JSONL against the dev label DRAFTS (not gold)."""
+    import json
+    from pathlib import Path
+    from tt.eval.devscore import score
+    L = json.load(open(labels))
+    P = [json.loads(l) for l in open(preds)]
+    typer.echo(json.dumps(score(L, P, Path(pdf_dir)), indent=1))
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
