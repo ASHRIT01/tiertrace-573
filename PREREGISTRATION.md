@@ -51,3 +51,25 @@ left for the owner to set before freezing; none are invented here.
 - H1 and H4 need restating in these terms (recovered-with-quote rate on extractive cases; unsupported-claim rate on inferential cases;
   NAMED/UNNAMED/ABSENT agreement). The owner sets the thresholds.
 - Versions: the LATEST 573 version is the default evaluation document (see the earlier draft section).
+
+## DRAFT 2026-10-18 (NOT frozen; owner to review): event inclusion and parse-failure handling
+
+### Event-inclusion rule (T3 gold events)
+- Gold events = **every dated event in the chronology**, each typed from the fixed list SUPPLIER_NOTICE, FILER_AWARENESS, INVESTIGATION_START,
+  DECISION, NHTSA_FILING, OTHER, and each carrying a verbatim quote in which **the date text appears inside the quote** (the quote spans date and event).
+- **Excluded:** remedy logistics (mailings to owners or dealers, remedy-vendor follow-ups, planned notification dates), and 'as of <date>' status
+  statements (counts of claims or incidents as of a date). A date given only by reference ('that day') is not a dated event unless the date text
+  is in the quote. Dates with no year are kept as written (the filing date gives the year); printed typos are kept as written and left to verifier V3.
+- A chronology that is a pointer ('see attached ...') or NR has no gold events and is reported as NOT_REPORTED, not as zero events.
+- Applied to the 30 dev label drafts: 98 events (was 90 before the rule and the date-in-quote check); 8 of 30 filings have no events.
+
+### Upstream involvement (T4) status values
+NAMED / UNNAMED / NONE_MENTIONED (the narrative is present and mentions no supplier-chain party) / NOT_REPORTED (the chronology is a pointer or NR, so
+the narrative cannot settle it). A supplier that only helps with the remedy is not upstream.
+
+### Parse-failure handling (DRAFT proposal; owner decides)
+- Latest version empty or unreadable (seen: 18V155, Amendment 3 has 0 pages): fall back to the most recent earlier version that parses, and record the
+  fallback in the ledger.
+- No text layer (seen: 21V248, a scanned 'Defect Notice 573 Report'): exclude from scored tasks and report such filings as a separate 'unreadable' count
+  in every results table; no OCR in v1. (Alternative for the owner: OCR them and report accuracy on them separately.)
+- Excluded or fallback filings are never replaced by other filings after test results are seen.
