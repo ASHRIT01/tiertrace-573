@@ -153,6 +153,44 @@ def draw_splits(seed: int = 0, dev_per_year: int = 50, testa_n: int = 1000):
     typer.echo(h)
 
 
+@app.command("dev-fetch")
+def dev_fetch(rate: float = 1.0):
+    """List 573 versions for the DEV ids only, then download the latest version of each (1 req/s; stops on 401/403/429).
+    Reads data/splits/dev_ids.txt only; never touches the Test-A list."""
+    import csv, json
+    from pathlib import Path
+    from tt.fetch.api import ApiClient, list_573
+    from tt.fetch.nhtsa import Blocked, PoliteFetcher
+    ids = Path("data/splits/dev_ids.txt").read_text().split()
+    meta = {r["campaign"]: r for r in csv.DictReader(open("data/processed/campaigns.csv"))}
+    client, rows, no573 = ApiClient(rate_s=rate), [], []
+    try:
+        for i, cid in enumerate(ids, 1):
+            docs = list_573(client, cid)
+            if not docs:
+                no573.append(cid)
+            for d in docs:
+                rows.append({**d, "year": int(meta[cid]["year"]), "type": meta[cid]["type"], "n_versions": len(docs)})
+            if i % 50 == 0:
+                typer.echo(f"listed {i}/{len(ids)}")
+        Path("data/processed/dev_573.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+        latest = [r for r in rows if r["is_latest"]]
+        f = PoliteFetcher(Path("data/cache"), rate)
+        out = Path("data/dev_raw"); out.mkdir(parents=True, exist_ok=True)
+        ok = failed = 0
+        for r in latest:
+            b = f.get(r["url"])
+            if b:
+                (out / r["url"].rsplit("/", 1)[1]).write_bytes(b); ok += 1
+            else:
+                failed += 1; typer.echo(f"FAILED {r['url']}")
+    except Blocked as e:
+        typer.echo(f"BLOCKED: {e}. Not retrying.")
+        raise typer.Exit(2)
+    typer.echo(json.dumps({"dev_ids": len(ids), "with_573": len(latest), "no_573": len(no573), "multi_version": sum(1 for r in latest if r["n_versions"] > 1),
+                           "downloaded": ok, "download_failed": failed, "api_requests": client.requests_made}))
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
