@@ -17,11 +17,27 @@ def fetch_list(url_file: str = "config/golden_urls.txt", out: str = "data/raw", 
     from tt.fetch.nhtsa import PoliteFetcher
     f = PoliteFetcher(Path("data/cache"), rate)
     Path(out).mkdir(parents=True, exist_ok=True)
+    from tt.fetch.nhtsa import Blocked
     for u in Path(url_file).read_text().split():
-        b = f.get(u)
+        try:
+            b = f.get(u)
+        except Blocked as e:
+            typer.echo(f"BLOCKED: {e}. Not retrying.")
+            raise typer.Exit(2)
         typer.echo(f"{u.rsplit('/', 1)[1]}: {'ok' if b else 'FAILED'}")
         if b:
             (Path(out) / u.rsplit("/", 1)[1]).write_bytes(b)
+
+
+@app.command("parse-report")
+def parse_report_cmd(folder: str = "data/raw", out: str = "reports/parse_report.md"):
+    """Parse every PDF in a folder; report failures grouped by layout."""
+    from pathlib import Path
+    from tt.parse.report import build_report
+    md = build_report(Path(folder))
+    Path(out).parent.mkdir(exist_ok=True)
+    Path(out).write_text(md)
+    typer.echo(md)
 
 
 @app.command()

@@ -11,6 +11,10 @@ UA = "TierTrace-573 research crawler (contact: ashrit0104@gmail.com)"
 BASE = "https://static.nhtsa.gov"
 
 
+class Blocked(RuntimeError):
+    """Server refused us (401/403/429). Per project rules: stop, do not retry or evade."""
+
+
 class PoliteFetcher:
     def __init__(self, cache: Path, rate_s: float = 1.0):
         self.cache, self.rate_s, self._last = Path(cache), rate_s, 0.0
@@ -35,6 +39,8 @@ class PoliteFetcher:
             time.sleep(wait)
         self._last = time.monotonic()
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        if r.status_code in (401, 403, 429):
+            raise Blocked(f"{r.status_code} from {url}; stopping")
         if r.status_code != 200:
             return None
         dest.write_bytes(r.content)
