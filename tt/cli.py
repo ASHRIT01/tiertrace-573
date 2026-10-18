@@ -238,6 +238,20 @@ def compare_labels_cmd(a: str = "reports/dev_labels_draft.json", b: str = "repor
     typer.echo("\n".join(md.split("\n")[:20]))
 
 
+@app.command("adjudication")
+def adjudication_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports/blind_labels_ai.json", out: str = "reports/adjudication.md",
+                     a_commit: str = "", pdf_dir: str = "data/dev_raw", n_agree: int = 10, seed: int = 0):
+    """Build the adjudication sheet (nothing marked). With --a-commit, A is read from that git commit."""
+    import json, subprocess
+    from pathlib import Path
+    from tt.eval.adjudication import build
+    A = json.loads(subprocess.run(["git", "show", f"{a_commit}:{a}"], capture_output=True, text=True, check=True).stdout) if a_commit else json.load(open(a))
+    B = json.load(open(b))
+    name = f"{a} at commit {a_commit}" if a_commit else a
+    Path(out).write_text(build(A, B, Path(pdf_dir), name, b, n_agree, seed))
+    typer.echo(f"wrote {out}")
+
+
 @app.command("dev-score")
 def dev_score(preds: str, labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
     """Score a predictions JSONL against the dev label DRAFTS (not gold)."""
