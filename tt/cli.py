@@ -226,6 +226,18 @@ def dev_bench(model: str = typer.Option(..., "--model", help="exact installed ta
     typer.echo(f"\npredictions saved: {outp}")
 
 
+@app.command("compare-labels")
+def compare_labels_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports/blind_labels_ai.json", out: str = "reports/ai_vs_ai_agreement.md"):
+    """AI-vs-AI agreement between two label sets (not human verification)."""
+    import json
+    from pathlib import Path
+    from tt.eval.compare_labels import compare, render_markdown
+    A, B = json.load(open(a)), json.load(open(b))
+    md = render_markdown(compare(A, B), A, a, b)
+    Path(out).write_text(md)
+    typer.echo("\n".join(md.split("\n")[:20]))
+
+
 @app.command("dev-score")
 def dev_score(preds: str, labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
     """Score a predictions JSONL against the dev label DRAFTS (not gold)."""
