@@ -1,0 +1,606 @@
+{
+ "seed": 0,
+ "method": "30 existing drafts + 70 drawn from the 397 dev latest-version filings with a text layer (excluding 18V155 empty, 21V248 scanned), per-year targets 13/13/13/13/12/12/12/12 for 2015-2022, shuffled with random.Random(0) on sorted filenames, preferring filers not yet selected (cap 1, then 2, then 3)",
+ "filings": [
+  {
+   "file": "RCLRPT-15V036-1855.PDF",
+   "year": 2015,
+   "filer": "PACCAR Incorporated",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-15V577-9823.PDF",
+   "year": 2015,
+   "filer": "Toyota Motor Engineering & Manufacturing",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-15V658-6735.PDF",
+   "year": 2015,
+   "filer": "Airstream, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-15E051-1229.PDF",
+   "year": 2015,
+   "filer": "Alcoa Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-16V135-9273.PDF",
+   "year": 2016,
+   "filer": "Nova Bus",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-16V123-5154.PDF",
+   "year": 2016,
+   "filer": "Pierce Manufacturing",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-16V648-2307.PDF",
+   "year": 2016,
+   "filer": "Volkswagen Group of America, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-16V870-6167.PDF",
+   "year": 2016,
+   "filer": "General Motors LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-17V804-5540.PDF",
+   "year": 2017,
+   "filer": "Daimler Vans USA, LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-17V268-7162.PDF",
+   "year": 2017,
+   "filer": "Nissan North America, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-17V435-7148.PDF",
+   "year": 2017,
+   "filer": "Chrysler (FCA US LLC)",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-17V819-6798.PDF",
+   "year": 2017,
+   "filer": "Mercedes-Benz USA, LLC.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-18V482-9392.PDF",
+   "year": 2018,
+   "filer": "Thor Motor Coach",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-18V805-5341.PDF",
+   "year": 2018,
+   "filer": "Ford Motor Company",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-18V293-6049.PDF",
+   "year": 2018,
+   "filer": "Navistar, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-18V174-9553.pdf",
+   "year": 2018,
+   "filer": "Ferrara Fire Apparatus, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-19V412-4986.PDF",
+   "year": 2019,
+   "filer": "Honda (American Honda Motor Co.)",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-19V328-8012.PDF",
+   "year": 2019,
+   "filer": "General Motors, LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-19V730-6964.PDF",
+   "year": 2019,
+   "filer": "E-One Incorporated",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-19V574-9143.PDF",
+   "year": 2019,
+   "filer": "Harley-Davidson Motor Company",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-20V461-9351.PDF",
+   "year": 2020,
+   "filer": "General Motors LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-20E041-4869.PDF",
+   "year": 2020,
+   "filer": "ECCO Holdings Corp.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-20E071-6421.PDF",
+   "year": 2020,
+   "filer": "Dometic Corporation",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-20V390-2903.PDF",
+   "year": 2020,
+   "filer": "Daimler Trucks North America, LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-21V993-1803.PDF",
+   "year": 2021,
+   "filer": "Cruiser RV",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-21V415-8099.PDF",
+   "year": 2021,
+   "filer": "Genesis Supreme RV",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-21E053-4014.PDF",
+   "year": 2021,
+   "filer": "Shenzen YouCheng Dianzishangwu Youxiangg",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-21V665-4028.PDF",
+   "year": 2021,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-22V374-1195.PDF",
+   "year": 2022,
+   "filer": "Daimler Trucks North America, LLC",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-22V114-4125.PDF",
+   "year": 2022,
+   "filer": "Proterra Operating Company, Inc.",
+   "origin": "draft30"
+  },
+  {
+   "file": "RCLRPT-15V669-5115.PDF",
+   "year": 2015,
+   "filer": "Starcraft RV",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V838-2799.PDF",
+   "year": 2015,
+   "filer": "Charmac Trailers Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V366-1020.PDF",
+   "year": 2015,
+   "filer": "Subaru of America, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V334-0095.PDF",
+   "year": 2015,
+   "filer": "Accubuilt, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V275-6870.PDF",
+   "year": 2015,
+   "filer": "Mack Trucks, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V182-0495.PDF",
+   "year": 2015,
+   "filer": "Daimler Trucks North America LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V163-1033.PDF",
+   "year": 2015,
+   "filer": "Terex South Dakota, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V130-1770.PDF",
+   "year": 2015,
+   "filer": "Forest River, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-15V871-0380.PDF",
+   "year": 2015,
+   "filer": "Hyundai Motor America",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V928-5679.PDF",
+   "year": 2016,
+   "filer": "Volvo Trucks North America",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V294-1915.PDF",
+   "year": 2016,
+   "filer": "Kovatch Mobile Equipment Corp.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V886-8721.PDF",
+   "year": 2016,
+   "filer": "Corp. Micro Bird Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V200-2264.PDF",
+   "year": 2016,
+   "filer": "Bugatti",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V650-4914.PDF",
+   "year": 2016,
+   "filer": "Pleasant Valley Teardrop Trailers LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16E057-7792.PDF",
+   "year": 2016,
+   "filer": "Triumph Motorcycles America, LTD",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V798-6461.PDF",
+   "year": 2016,
+   "filer": "Volvo Car USA LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V228-2473.PDF",
+   "year": 2016,
+   "filer": "Gulf States Toyota, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-16V748-6368.PDF",
+   "year": 2016,
+   "filer": "Jayco, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V606-3827.PDF",
+   "year": 2017,
+   "filer": "Silver Eagle Manufacturing Company",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V561-2470.PDF",
+   "year": 2017,
+   "filer": "Highland Ridge RV",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V786-2511.PDF",
+   "year": 2017,
+   "filer": "Midwest Automotive Designs, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17E043-9243.PDF",
+   "year": 2017,
+   "filer": "VMAC Global Technology Inc",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V407-6579.PDF",
+   "year": 2017,
+   "filer": "Lance Camper Manufacturing. Corp.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V763-5775.pdf",
+   "year": 2017,
+   "filer": "Southeast Toyota Distributors, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V584-2241.PDF",
+   "year": 2017,
+   "filer": "REV Recreation Group",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V755-2048.PDF",
+   "year": 2017,
+   "filer": "Keystone RV Company",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-17V194-5119.PDF",
+   "year": 2017,
+   "filer": "KTM North America, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V553-9951.PDF",
+   "year": 2018,
+   "filer": "Altec Industries Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V338-3176.pdf",
+   "year": 2018,
+   "filer": "Kia Motors America",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V540-2160.pdf",
+   "year": 2018,
+   "filer": "KZRV, L.P.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V418-8280.PDF",
+   "year": 2018,
+   "filer": "Gillig LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V341-1012.PDF",
+   "year": 2018,
+   "filer": "Tiffin Motorhomes, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V426-9049.pdf",
+   "year": 2018,
+   "filer": "Mazda North American Operations",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V489-3626.PDF",
+   "year": 2018,
+   "filer": "Braun Corporation",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18V590-2139.PDF",
+   "year": 2018,
+   "filer": "Fabform Industries, INC.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-18E105-9385.PDF",
+   "year": 2018,
+   "filer": "Iowa Mold Tooling Co., Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V793-7352.PDF",
+   "year": 2019,
+   "filer": "Conel, LLC dba McElrath Trailers",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V811-5724.PDF",
+   "year": 2019,
+   "filer": "Winnebago Industries, Inc",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19E037-6972.PDF",
+   "year": 2019,
+   "filer": "Seats Incorporated",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V265-2336.PDF",
+   "year": 2019,
+   "filer": "Entegra Coach",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19E009-4588.PDF",
+   "year": 2019,
+   "filer": "ASA Electronics, LLC.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V477-7611.PDF",
+   "year": 2019,
+   "filer": "Spartan Motors USA",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V144-3025.PDF",
+   "year": 2019,
+   "filer": "FOUR GUYS STAINLESS TANK & EQUIP., INC.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-19V850-1377.PDF",
+   "year": 2019,
+   "filer": "BMW of North America, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20V202-4602.PDF",
+   "year": 2020,
+   "filer": "Great Dane Trailers",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20E044-6457.PDF",
+   "year": 2020,
+   "filer": "Tenneco Automotive",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20V646-3671.PDF",
+   "year": 2020,
+   "filer": "Mitsubishi Fuso Truck of America, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20V493-8882.PDF",
+   "year": 2020,
+   "filer": "Foretravel, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20E065-6078.PDF",
+   "year": 2020,
+   "filer": "Horizon Global",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20E026-9188.PDF",
+   "year": 2020,
+   "filer": "DENSO International America, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20V455-1120.PDF",
+   "year": 2020,
+   "filer": "Blue Bird Body Company",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-20V530-7586.PDF",
+   "year": 2020,
+   "filer": "Shyft Group",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21E060-9563.PDF",
+   "year": 2021,
+   "filer": "Cummins, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21E073-6262.PDF",
+   "year": 2021,
+   "filer": "S&S Truck Parts",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21V400-3797.PDF",
+   "year": 2021,
+   "filer": "Triple E Recreational Vehicles",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21E026-4426.PDF",
+   "year": 2021,
+   "filer": "BorgWarner",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21V486-9519.PDF",
+   "year": 2021,
+   "filer": "Porsche Cars North America, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21E104-5996.PDF",
+   "year": 2021,
+   "filer": "Crysteel Manufacturing Inc",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21V399-4785.PDF",
+   "year": 2021,
+   "filer": "Temsa",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-21V806-6676.PDF",
+   "year": 2021,
+   "filer": "Yamaha Motor Corporation, USA",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V954-9792.PDF",
+   "year": 2022,
+   "filer": "Mercedes-Benz USA, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22E080-7242.PDF",
+   "year": 2022,
+   "filer": "Dexter Axle Company",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V744-5844.PDF",
+   "year": 2022,
+   "filer": "Rivian Automotive, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V235-1744.PDF",
+   "year": 2022,
+   "filer": "Tesla, Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V039-4349.PDF",
+   "year": 2022,
+   "filer": "Grand Design RV, LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22E081-1945.PDF",
+   "year": 2022,
+   "filer": "Haldex Commercial Vehicle Systems",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22E022-1646.PDF",
+   "year": 2022,
+   "filer": "Midwest Motorsports LLC",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V175-9063.PDF",
+   "year": 2022,
+   "filer": "Arcimoto Inc",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22V021-2421.PDF",
+   "year": 2022,
+   "filer": "Hino Motors Sales U.S.A., Inc.",
+   "origin": "new70"
+  },
+  {
+   "file": "RCLRPT-22E082-8620.PDF",
+   "year": 2022,
+   "filer": "MANCHESTER TANK & EQUIPMENT CO",
+   "origin": "new70"
+  }
+ ]
+}

@@ -253,6 +253,21 @@ def adjudication_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports
     typer.echo(f"wrote {out}")
 
 
+@app.command("pass-a")
+def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json"):
+    """Build Pass A (AI drafter, code-assisted) for the labelled dev set."""
+    import json
+    from pathlib import Path
+    from tt.labels.draft import build_pass_a
+    from tt.labels.events import load_overrides
+    S = json.load(open(selection))["filings"]
+    co = json.load(open("config/claim_overrides.json"))
+    recs = build_pass_a(S, json.load(open(drafts)), Path("data/dev_raw"), load_overrides(), co)
+    Path(out).parent.mkdir(parents=True, exist_ok=True)
+    Path(out).write_text(json.dumps(recs, indent=1, ensure_ascii=False))
+    typer.echo(f"{len(recs)} filings -> {out}")
+
+
 @app.command("dev-score")
 def dev_score(preds: str, labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
     """Score a predictions JSONL against the dev label DRAFTS (not gold)."""

@@ -49,7 +49,7 @@ _NOISE = [
 
 
 def clean(text: str) -> str:
-    text = _HEADER_BLOCK.sub("\n", text)
+    text = _HEADER_BLOCK.sub("\n", text.replace("\x00", " "))
     for pat in _NOISE:
         text = re.sub(pat, "", text, flags=re.M | re.I)
     return re.sub(r"\n{3,}", "\n\n", text)

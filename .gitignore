@@ -12,3 +12,4 @@ data/processed/
 data/cache/
 data/api_cache/
 data/dev_raw/
+data/labels/texts/

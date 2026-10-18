@@ -19,41 +19,56 @@ from tt.labeldraft import sentence_end
 from tt.labels.dates import parse_span
 
 MONC = (r"(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sept?(?:ember)?|Oct(?:ober)?|Nov(?:ember)?|"
-        r"Dec(?:ember)?|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEPT?|OCT|NOV|DEC)\.?")
-_D = rf"(?:{MONC}\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s*\d{{4}}|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}|\d{{4}}-\d{{2}}-\d{{2}}|\d{{1,2}}\s+{MONC},?\s+\d{{4}})"
-_MO = rf"(?:{MONC},?[\s-]+\d{{4}}|{MONC}-\d{{2}}(?!\d))"
+        r"Dec(?:ember)?|JANUARY|FEBRUARY|MARCH|APRIL|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEPT?|OCT|NOV|DEC)\.?")
+_D = rf"(?:{MONC}\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s*\d{{4}}|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}|(?<![\w-])\d{{1,2}}-\d{{1,2}}-\s?(?:\d{{4}}|\d{{2}})(?![\w-])|\d{{4}}-\d{{2}}-\d{{2}}|\d{{1,2}}\s+{MONC},?\s+\d{{4}})"
+_MO = rf"(?:(?<![\d/])\d{{1,2}}/\d{{4}}(?![\d/])|{MONC}\s+of\s+\d{{4}}|{MONC},?[\s-]+\d{{4}}|{MONC}-\d{{2}}(?!\d))"
 DATE_FIND = re.compile(
     rf"(?<![\w/])(?:"
-    rf"{MONC}\s+\d{{1,2}}\s*(?:-|–|and|to|through)\s*\d{{1,2}},?\s*\d{{4}}"                       # March 30 and 31, 2020
-    rf"|(?:{_D}|{_MO}|{MONC})\s*(?:-|–|—|through|thru|to|until)\s*(?:{_D}|{_MO})"                   # ranges
+    rf"{MONC}\s+\d{{1,2}}\s*(?:-|–|and|to|through|,)\s*\d{{1,2}},?\s*\d{{4}}"                     # March 30 and 31, 2020; April 16, 17, 2015
+    rf"|{MONC}\s+\d{{1,2}}(?:st|nd|rd|th)?\s*(?:-|–|through|to)\s*(?:{_D})"                          # April 18 - May 27, 2015
+    rf"|(?:{_D}|{_MO}|{MONC})\s*(?:-|–|—|～|~|through|thru|to|until)\s*(?:{_D}|{_MO})"                   # ranges
     rf"|(?:early|mid|late|end of|beginning of)[\s-]*(?:{_MO}|\d{{4}})"                               # fuzzy
-    rf"|{_D}|{_MO}|Q[1-4]\s*\d{{4}}"
+    rf"|{MONC}\s+\d{{1,2}}/\d{{4}}|{_D}|{_MO}|Q[1-4]\s*\d{{4}}"
     rf"|{MONC}\s+\d{{1,2}}(?:st|nd|rd|th)?(?!\d)(?!\s*,?\s*\d{{4}})"                                 # year-less day
     rf"|(?<![\d.])\d{{1,2}}/\d{{1,2}}(?![\d/])"
     rf"|(?<=\b[Ii]n\s)\d{{4}}(?![\d-])"                                                              # 'in 2015'
+    rf"|(?:(?<=\b[Ii]n\s)|(?<=\b[Dd]uring\s)){MONC}(?![\s,.-]*\d)"                                     # 'In August,' (year-less month)
     rf")(?![\w/])")
-STATUS = re.compile(r"\bnot aware\b|\bno known\b|\bno identified\b|\bno (?:reports|crashes|reported)\b|^\s*as of\b|\bas of (?:today|this date)\b|\bto date\b|\bknows of no\b|\bno change\b|\bis aware of\b", re.I)
-REMEDY = re.compile(r"mailed|stericycle|letters? |dealer notification|owner notification|customer\(end user\)|docusign", re.I)
-MENTION_CUE = re.compile(r"(?:production|produced|built|manufactured|model year|ranging from|between|start of production through|data from|through)\s*$", re.I)
+STATUS = re.compile(r"\bnot aware\b|\bno known\b|\bno identified\b|\bno (?:warranty |field )?(?:reports|crashes|reported|claims|complaints|injuries|accidents|incidents)\b|"
+                    r"^\s*as of\b|\bas of (?:today|this date)\b|^\s*to date\b|\bknows of no\b|\bno change\b|\bis aware of\b|has not received any (?:reports|claims)|"
+                    r"\bno (?:additional |further )?(?:reported )?(?:incidents|failures)\b|\bno additional (?:warranty |field )?(?:claims|reports)\b|^\s*no (?:damage|injuries|accidents)\b", re.I)
+REMEDY = re.compile(r"mailed|stericycle|owner (?:notification )?letters?|dealer (?:notification|letters?)|customer(?:\(end user\))? ?letters|notification letters|letters? (?:were|was) (?:delivered|sent|returned)|failed letters|undeliverable|mailings", re.I)
+MENTION_CUE = re.compile(r"(?:(?:production|produced|built|manufactured|mfd\.?|model year)(?:\s+(?:after|before|between|from|through|on|in|until|prior to|before after))?|ranging from|between|start of production through|data from|through)\s*$", re.I)
+POINTER_SENT = re.compile(r"please (?:see|refer to)|^refer to|see (?:the )?(?:attached|chronology|supplement|separate)", re.I)
 POINTER = re.compile(r"see (?:the )?(?:attach|file|separate|uploaded)|attached (?:document|chronology|573|part 573)|separate document|uploaded to|is too long|see attachment|please find", re.I)
 
 
-def typ(s: str) -> str:
+def typ(s: str, suppliers: tuple = ()) -> str:
+    """Heuristic event type; reviewed and corrected by overrides. `suppliers` = names of the block supplier (and short forms)."""
     t = s.lower()
-    if re.search(r"inform\w* nhtsa that|submit\w* .*(573|report).*nhtsa|nhtsa portal|573 report submitted|submitted to the national highway|files? (?:a )?(?:573|part 573)", t):
+    sup = "|".join(re.escape(x.lower()) for x in suppliers if x and len(x) >= 3)
+    if re.search(r"inform\w* nhtsa that|submit\w* .*(573|report).*nhtsa|nhtsa portal|573 report submitted|submitted to the national highway|files? (?:a )?(?:573|part 573)|"
+                 r"nhtsa (?:was )?notified that", t):
         return "NHTSA_FILING"
-    if re.search(r"\bdecid\w+|\bdeclare\w*|determin\w+,? (?:through [^,]+, )?(?:that )?(?:a |an )?(?:safety|defect|noncompliance|non-compliance|potential non|to conduct)|"
-                 r"approved a field action|a recall was needed|determined to (?:do|conduct|issue) a (?:new )?recall|constitutes a defect|decision was made|presence of a defect was determined|recall should be initiated", t):
+    if re.search(r"decid\w+ (?:to )?(?:\w+ ){0,6}?(?:recall|campaign|field action|noncompliance|non-compliance)|\bdeclare\w* (?:a )?(?:voluntary )?(?:safety )?recall|"
+                 r"determination (?:is|was) made to (?:issue|conduct|initiate) a (?:\w+ )?recall|"
+                 r"(?:determin\w+|conclu\w+|confirm\w+)[^.]{0,80}(?:safety[- ]related defect|defect|noncompliance|non-compliance|safety recall|recall (?:is|was) (?:required|needed|warranted))|"
+                 r"approved a field action|a recall was needed|decision to (?:initiate|conduct|issue|do|launch) (?:a )?(?:\w+ ){0,2}recall|determined to (?:do|conduct|issue|perform) a (?:new )?recall|constitutes a defect|decision was made|"
+                 r"presence of a defect was determined|recall should be initiated|determination to proceed|proceed with a (?:safety )?recall|will (?:perform|conduct) a (?:safety |voluntary )?recall|"
+                 r"defect determination|made a (?:safety[- ])?defect", t):
         return "DECISION"
     if re.search(r"(?:supplier|vendor)\b.{0,60}\b(?:inform\w*|notif\w*|report\w*|provid\w*|advis\w*|confirm\w*)|notice from|letter from|report was sent from|"
-                 r"supplier informed|information from (?:the |a |its )?supplier|informed of a .{0,30}recall|recall notice from|received (?:a |an )?(?:recall )?(?:notice|notification|letter) from (?!its)", t):
+                 r"supplier informed|information from (?:the |a |its )?supplier|from the supplier|(?:supplier|manufacturer) (?:reported|confirmed) |informed of a .{0,30}recall|recall notice from|"
+                 r"received (?:a |an )?(?:recall )?(?:notice|notification|letter) from (?!its)", t) or \
+       (sup and re.search(rf"(?:\b(?:{sup})\b[^.]{{0,40}}\b(?:inform\w*|notif\w*|alert\w*|advis\w*|report\w*|sent|provid\w*))|(?:(?:from|by)\s+(?:{sup})\b)", t)):
         return "SUPPLIER_NOTICE"
-    if re.search(r"\b(?:open\w*|initiat\w*|began|begin|begun|commenc\w+|launch\w*|start\w*)\b.{0,70}(?:investigat|analys|root cause|testing)|"
-                 r"investigations? (?:was|were|is) (?:initiated|begun|opened|launched|commenced)|product investigation", t):
+    if re.search(r"\b(?:open\w*|initiat\w*|began|begin|begun|commenc\w+|launch\w*|start\w*|prompted)\b.{0,70}(?:investigat|analys|root cause|testing)|"
+                 r"investigations? (?:was |were |is )?(?:initiated|begun|opened|launched|commenced|started)|product investigation|conducted (?:an? )?(?:internal )?investigation", t):
         return "INVESTIGATION_START"
-    if re.search(r"\breceiv\w+ (?:a |an |the |\d+ )?(?:\w+ ){0,2}?(?:report|notification|complaint|claim|field report|warranty)|first claim|notified of|was notified|is notified|"
-                 r"discovered|detected|noted a discrepancy|was informed|became aware|was made aware|brought to|experienced a|reviewed a concern|"
-                 r"concern .{0,40}(?:review group|ccrg)", t):
+    if re.search(r"\breceiv\w+ (?:a |an |the |\d+ )?(?:\w+ ){0,2}?(?:report|notification|complaint|claim|field report|warranty|information)|first claim|first information|"
+                 r"notified of|was notified|is notified|discovered|detected|noted a discrepancy|was informed|became aware|was made aware|brought to|experienced a|"
+                 r"reviewed a concern|concern .{0,40}(?:review group|ccrg)|recogni[sz]ed|was noticed|\bnoticed\b|reported to|contacted \w+ (?:that|about|regarding)|"
+                 r"it was observed|informed us|contacted by a customer|was contacted by|is informed of|was informed of", t):
         return "FILER_AWARENESS"
     return "OTHER"
 
@@ -121,21 +136,27 @@ def _override(ov: dict, s: str) -> dict:
     return {}
 
 
-def build(raw_chron: str, filing: date | None, overrides: dict | None = None) -> tuple[list[dict], list[tuple[str, str]]]:
+def build(raw_chron: str, filing: date | None, overrides: dict | None = None, suppliers: tuple = ()) -> tuple[list[dict], list[tuple[str, str]]]:
     """-> (events, excluded[(sentence, reason)])"""
     overrides = overrides or {}
     sents = sentences(raw_chron)
     flat = " ".join(x["text"] for x in sents)
+    if flat.strip().lower().rstrip(".") in {"nr", "n/a", "na", "none", "not reported"}:
+        return [], [(x["text"], "NR chronology") for x in sents]
     if not sents or (POINTER.search(flat) and len(flat) < 260):
         return [], [(x["text"], "pointer chronology") for x in sents]
     # years of fully dated expressions (context for year-less dates)
     years = set()
-    for x in sents:
+    m_all = re.search(r"all dates (?:are )?(?:in )?(\d{4})", flat, re.I)   # 'All dates 2020': explicit context year
+    for x in ([] if m_all else sents):
         for d, _ in find_dates(x["text"]):
             sp = parse_span(d)
             if sp and not sp.inferred and not sp.year_from_context:
                 years.update({sp.start.year, sp.end.year} if sp.granularity != "range" else {sp.end.year})
+    if m_all:
+        years = {int(m_all[1])}
     events, excluded = [], []
+    seen_sent = set()
     cur = None           # (date_text, entry sentence, in_entry)
     for x in sents:
         s = x["text"]
@@ -153,10 +174,16 @@ def build(raw_chron: str, filing: date | None, overrides: dict | None = None) ->
             cur = None
         if o.get("include") is False:
             excluded.append((s, o.get("why", "override"))); continue
+        if not o.get("include") and POINTER_SENT.search(s) and len(s) < 140:
+            excluded.append((s, "pointer to another document")); continue
         if not o.get("include") and (STATUS.search(s) or REMEDY.search(s)):
             excluded.append((s, "status/no-incident statement" if STATUS.search(s) else "remedy logistics")); continue
-        t0 = o.get("type") or typ(s)
+        t0 = o.get("type") or typ(s, suppliers)
         quote_base = o.get("quote") or s
+        dkey = re.sub(r"\W+", " ", s.lower()).strip()
+        if dkey in seen_sent:   # a filing that repeats part of its own chronology: count the event once
+            excluded.append((s, "duplicate of an earlier sentence in the same chronology")); continue
+        seen_sent.add(dkey)
         if dates:
             seen = []
             for k, (dt, _) in enumerate(dates):

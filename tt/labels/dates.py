@@ -17,7 +17,7 @@ _M = {m.lower(): i for i, m in enumerate(calendar.month_name) if m}
 _M.update({m.lower(): i for i, m in enumerate(calendar.month_abbr) if m})
 _M["sept"] = 9
 MON = r"(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?"
-SEP = r"\s*(?:-|–|—|through|thru|to|until|and)\s*"
+SEP = r"\s*(?:-|–|—|～|~|through|thru|to|until|and)\s*"
 
 
 @dataclass
@@ -57,10 +57,22 @@ def strip_prefix(t: str) -> str:
 def _point(t: str):
     """A single date expression -> (start, end, granularity, has_year) or None."""
     t = t.strip(" ,.")
+    if m := re.fullmatch(rf"{MON}\s+(\d{{1,2}})/(\d{{4}})", t, re.I):          # 'APRIL 24/2021'
+        d = date(int(m[3]), _mon(m[1]), int(m[2])); return d, d, "day", True
     if m := re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", t):
         d = date(int(m[1]), int(m[2]), int(m[3])); return d, d, "day", True
-    if m := re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{2,4})", t):
+    if m := re.fullmatch(r"(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})", t):
+        if not (1 <= int(m[1]) <= 12 and 1 <= int(m[2]) <= 31):
+            return None
         d = date(_y(m[3]), int(m[1]), int(m[2])); return d, d, "day", True
+    if m := re.fullmatch(r"(\d{1,2})/(\d{4})", t):
+        y, mo = int(m[2]), int(m[1])
+        if 1 <= mo <= 12:
+            return date(y, mo, 1), _last(y, mo), "month", True
+    if m := re.fullmatch(r"(\d{1,2})-(\d{1,2})-?", t):                      # '11-13-' (year missing)
+        return (int(m[1]), int(m[2])), None, "day", False
+    if m := re.fullmatch(MON, t, re.I):                                     # 'August' (year-less month, e.g. 'In August,')
+        return ("month", _mon(m[1])), None, "month", False
     if m := re.fullmatch(r"(\d{1,2})/(\d{1,2})", t):
         return (int(m[1]), int(m[2])), None, "day", False
     if m := re.fullmatch(rf"{MON}\s+(\d{{1,2}})(?:st|nd|rd|th)?,?\s*(\d{{4}})", t, re.I):
@@ -69,6 +81,8 @@ def _point(t: str):
         d = date(_y(m[3]), _mon(m[2]), int(m[1])); return d, d, "day", True
     if m := re.fullmatch(rf"{MON}\s+(\d{{1,2}})(?:st|nd|rd|th)?", t, re.I):
         return (_mon(m[1]), int(m[2])), None, "day", False
+    if m := re.fullmatch(rf"{MON}\s+of\s+(\d{{4}})", t, re.I):
+        y, mo = int(m[2]), _mon(m[1]); return date(y, mo, 1), _last(y, mo), "month", True
     if m := re.fullmatch(rf"{MON},?[\s-]+(\d{{4}}|\d{{2}})", t, re.I):
         y, mo = _y(m[2]), _mon(m[1]); return date(y, mo, 1), _last(y, mo), "month", True
     if m := re.fullmatch(r"(?:q([1-4])|(first|second|third|fourth) quarter(?: of)?)\s*(\d{4})", t, re.I):
@@ -83,7 +97,7 @@ _FUZZ = {"early": (1, 10, 1, 4), "beginning of": (1, 10, 1, 4), "mid": (10, 20, 
 
 
 def parse_span(text: str, years: set | None = None, filing: date | None = None) -> Span | None:
-    t = strip_prefix(text)
+    t = re.sub(r"(?<=\d)\s*([/-])\s*(?=\d)", r"\1", strip_prefix(text))
     if not t:
         return None
     # fuzzy: early/mid/late/end of/beginning of + month-year or year
@@ -96,9 +110,12 @@ def parse_span(text: str, years: set | None = None, filing: date | None = None) 
         if p and p[2] == "year":
             y = p[0].year; return Span(date(y, mlo, 1), _last(y, mhi), "fuzzy")
         return None
-    # day range inside one month: 'March 30 and 31, 2020', 'June 14 and 15, 2020'
-    if m := re.fullmatch(rf"{MON}\s+(\d{{1,2}})\s*(?:-|–|and|to|through)\s*(\d{{1,2}}),?\s*(\d{{4}})", t, re.I):
+    # day range inside one month: 'March 30 and 31, 2020', 'June 14 and 15, 2020', 'April 16, 17, 2015'
+    if m := re.fullmatch(rf"{MON}\s+(\d{{1,2}})\s*(?:-|–|and|to|through|,)\s*(\d{{1,2}}),?\s*(\d{{4}})", t, re.I):
         y, mo = int(m[4]), _mon(m[1]); return Span(date(y, mo, int(m[2])), date(y, mo, int(m[3])), "range")
+    # 'm-d thru d-yy': '10-25 thru 28 -19'
+    if m := re.fullmatch(r"(\d{1,2})-(\d{1,2})\s*(?:thru|through|to|-)\s*(\d{1,2})-(\d{2,4})", t, re.I):
+        y, mo = _y(m[4]), int(m[1]); return Span(date(y, mo, int(m[2])), date(y, mo, int(m[3])), "range")
     p = _point(t)
     # range of two expressions (only if the whole text is not already a single date such as 'Nov-2015')
     parts = re.split(SEP, t, maxsplit=1, flags=re.I) if p is None else []
@@ -106,14 +123,24 @@ def parse_span(text: str, years: set | None = None, filing: date | None = None) 
         a, b = parts[0].strip(" ,"), parts[1].strip(" ,")
         pb = _point(b)
         pa = _point(a)
-        if pa is None and pb and pb[3] and re.fullmatch(MON, a, re.I):          # 'April through August 2016'
+        if pb and pb[3] and (pa is None or (not pa[3] and pa[0][0] == "month")) and re.fullmatch(MON, a, re.I):   # 'April through August 2016'
             pa = (date(pb[0].year, _mon(a), 1), _last(pb[0].year, _mon(a)), "month", True)
+        if pa and not pa[3] and pb and pb[3]:                                    # 'April 18 - May 27, 2015'
+            d0 = date(pb[0].year, pa[0][0], pa[0][1]); pa = (d0, d0, "day", True)
         if pa and pb and pa[3] and pb[3]:
             return Span(min(pa[0], pb[0]), max(pa[1], pb[1]), "range")
     if p is None:
         return None
     if p[3]:
         return Span(p[0], p[1], p[2])
+    # year-less month ('In August,'): same context rule as year-less days
+    if p[0][0] == "month":
+        mo = p[0][1]
+        if years and len(years) == 1:
+            y = next(iter(years)); return Span(date(y, mo, 1), _last(y, mo), "month", year_from_context=True)
+        if not years and filing is not None and date(filing.year, mo, 1) <= filing:
+            return Span(date(filing.year, mo, 1), _last(filing.year, mo), "month", year_from_context=True)
+        return Span(date(1900, mo, 1), _last(1900, mo), "month", inferred=True)
     # year-less day: (month, day)
     mo, dd = p[0]
     if years and len(years) == 1:

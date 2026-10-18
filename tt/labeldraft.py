@@ -132,11 +132,13 @@ def render(labels: list[dict], pdf_dir: Path) -> str:
 import re as _re
 
 _ABBR = {"u.s", "no", "inc", "corp", "co", "ltd", "mr", "mrs", "dr", "st", "vs", "a.m", "p.m", "e.g", "i.e", "jan", "feb", "mar", "apr", "jun",
-         "jul", "aug", "sep", "sept", "oct", "nov", "dec", "approx", "dept", "mfg", "mgr", "eng", "fig"}
+         "jul", "aug", "sep", "sept", "oct", "nov", "dec", "approx", "dept", "mfg", "mfd", "mgr", "eng", "fig"}
 _PREP = {"on", "in", "of", "by", "from", "to", "since", "until", "through", "and", "between", "as", "or", "about", "before", "after", "at",
-         "than", "during", "within", "the", "with", "for", "that"}
+         "than", "during", "within", "the", "with", "for", "that", "mfd", "built", "produced", "manufactured", "dated", "effective", "early", "mid", "late"}
 _MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?"
-_DATE = _re.compile(rf"(?:{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s+\d{{4}}|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}|\d{{4}}-\d{{2}}-\d{{2}})")
+_DATE = _re.compile(rf"(?:{_MON}\s+\d{{1,2}},\s*\d{{1,2}},?\s*\d{{4}}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s*\d{{4}}|\d{{1,2}}/\d{{1,2}}(?:/\d{{2,4}})?|\d{{1,2}}-\d{{1,2}}-\d{{2,4}}|\d{{4}}-\d{{2}}-\d{{2}}"
+                    rf"|{_MON}(?:\s+of)?[\s-]+\d{{4}}|{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?)(?![\d/])(?=\s*(?:[-–:]|,?\s+[A-Z(]))")
+# a date starts a new entry only if followed by a separator or a capitalised word (so 'was received Jan 5 2015.' is not split)
 
 
 def sentence_end(c: str, e: int) -> int:
@@ -150,6 +152,8 @@ def sentence_end(c: str, e: int) -> int:
         ch = c[i]
         if ch == "\u2022":
             return len(c[:i].rstrip(" -\u2013"))
+        if ch == "." and i + 1 < len(c) and c[i + 1].isdigit() and _DATE.match(c, i + 1) and _re.search(r"[A-Za-z]{2,}$", c[:i]):
+            return i + 1  # 'matter.9/11/17: ...': a dated entry glued to the previous sentence
         if ch in ".!?" and (i + 1 >= len(c) or c[i + 1] in " \u201d\")'"):
             w = _re.search(r"([A-Za-z.]+)$", c[:i])
             tok = (w.group(1) if w else "").lower().strip(".")
@@ -160,9 +164,10 @@ def sentence_end(c: str, e: int) -> int:
                 return j
         if ch == " ":
             m = _DATE.match(c, i + 1)
-            if m and not _re.search(r"\d\s*[-\u2013]\s*$|\b(?:to|through|thru|until)\s*$", c[:i]):  # not the 2nd half of a range
-                pw = _re.search(r"([A-Za-z]+)$", c[:i])
-                if not (pw and pw.group(1).lower() in _PREP):
+            if m and not _re.search(r"(?:\d|\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?)\s*[-\u2013]\s*$|\b(?:to|through|thru|until)\s*$",
+                                    c[:i], _re.I):  # not the 2nd half of a range
+                pw = _re.search(r"([A-Za-z]+)\.?$", c[:i])
+                if not (pw and pw.group(1).lower() in _PREP) and not _re.search(r"[’']s\s*$|\d,\s*$", c[:i]):  # not after a possessive or inside a list of dates
                     return len(c[:i].rstrip(" -\u2013"))
         i += 1
     return len(c)
