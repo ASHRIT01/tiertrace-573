@@ -6,3 +6,6 @@ runs/
 ._*
 .DS_Store
 data/api_cache/
+data/flat/
+data/audit_raw/
+data/processed/
