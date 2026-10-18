@@ -99,3 +99,51 @@ def render(labels: list[dict], pdf_dir: Path) -> str:
     out.insert(2, f"Event date check: {n_ev - len(fails)} of {n_ev} events have the date text inside the quote" + ("" if not fails else f"; **{len(fails)} fail**") + ".")
     out.insert(3, f"Quote check: {total - bad} of {total} quotes located by code" + ("" if not bad else f"; **{bad} NOT FOUND**") + ".")
     return "\n".join(out)
+
+
+# ---- sentence-end logic used to extend event quotes (chronology text is whitespace-collapsed)
+import re as _re
+
+_ABBR = {"u.s", "no", "inc", "corp", "co", "ltd", "mr", "mrs", "dr", "st", "vs", "a.m", "p.m", "e.g", "i.e", "jan", "feb", "mar", "apr", "jun",
+         "jul", "aug", "sep", "sept", "oct", "nov", "dec", "approx", "dept", "mfg", "mgr", "eng", "fig"}
+_PREP = {"on", "in", "of", "by", "from", "to", "since", "until", "through", "and", "between", "as", "or", "about", "before", "after", "at",
+         "than", "during", "within", "the", "with", "for", "that"}
+_MON = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?"
+_DATE = _re.compile(rf"(?:{_MON}\s+\d{{1,2}}(?:st|nd|rd|th)?,?\s+\d{{4}}|\d{{1,2}}/\d{{1,2}}/\d{{2,4}}|\d{{4}}-\d{{2}}-\d{{2}})")
+
+
+def sentence_end(c: str, e: int) -> int:
+    """Index just past the end of the sentence (or, in a list with no periods, the entry) containing position e-1 of `c`."""
+    if e >= len(c):
+        return len(c)
+    if c[e - 1] in ".!?" or (c[e - 1] in "\u201d\")" and e >= 2 and c[e - 2] in ".!?"):
+        return e
+    i = e
+    while i < len(c):
+        ch = c[i]
+        if ch == "\u2022":
+            return len(c[:i].rstrip(" -\u2013"))
+        if ch in ".!?" and (i + 1 >= len(c) or c[i + 1] in " \u201d\")'"):
+            w = _re.search(r"([A-Za-z.]+)$", c[:i])
+            tok = (w.group(1) if w else "").lower().strip(".")
+            if tok not in _ABBR and not (tok.isdigit() and i + 1 < len(c) and c[i + 1:i + 3].strip().isdigit()):
+                j = i + 1
+                while j < len(c) and c[j] in "\u201d\")'":
+                    j += 1
+                return j
+        if ch == " ":
+            m = _DATE.match(c, i + 1)
+            if m:
+                pw = _re.search(r"([A-Za-z]+)$", c[:i])
+                if not (pw and pw.group(1).lower() in _PREP):
+                    return len(c[:i].rstrip(" -\u2013"))
+        i += 1
+    return len(c)
+
+
+def ends_at_sentence_end(quote: str, chronology: str) -> bool:
+    """True if the quote (located in the chronology) already ends where its sentence/entry ends."""
+    c = _re.sub(r"\s+", " ", chronology).strip()
+    q = _re.sub(r"\s+", " ", quote).strip()
+    s = c.lower().find(q.lower())
+    return s >= 0 and sentence_end(c, s + len(q)) == s + len(q)
