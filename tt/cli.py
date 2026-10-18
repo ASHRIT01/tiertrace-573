@@ -60,6 +60,18 @@ def sample(per_year: int = 25, max_try: int = 40, seed: int = 0, rate: float = 1
     typer.echo(json.dumps({**st, "api_requests": client.requests_made}))
 
 
+@app.command()
+def checksheet(per_year: int = 4, seed: int = 0, out: str = "reports/checksheet.md"):
+    """Parsed fields next to verbatim source text for a seeded sample, for hand-checking."""
+    from pathlib import Path
+    from tt.checksheet import build
+    md = build(Path("data/processed/sample_573.jsonl"), Path("data/audit_raw"),
+               Path("config/checksheet_exclude.txt"), per_year, seed)
+    Path(out).parent.mkdir(exist_ok=True)
+    Path(out).write_text(md)
+    typer.echo(f"wrote {out} ({md.count('## ')} filings)")
+
+
 @app.command("audit")
 def audit_cmd(pdf_dir: str = "data/audit_raw", out: str = "reports/audit.md"):
     """Download/text-layer/fill-rate audit of the sampled filings."""
