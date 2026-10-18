@@ -1,8 +1,8 @@
 # AI-vs-AI agreement, not human verification
 
 Set A = reports/dev_labels_draft.json (reference); set B = reports/blind_labels_ai.json. Both were produced by AI. Agreement here shows consistency between two AI passes, not correctness.
-Filings compared: 5 (#3 15V658-6735., #8 16V870-6167., #12 17V819-6798., #15 18V293-6049., #29 22V374-1195.).
-Filings in B with no counterpart in A (not compared): 17V407-6579., 19V843-1571., 20V369-2518., 21V020-7654..
+Filings compared: 5 (#3 15V658-6735, #8 16V870-6167, #12 17V819-6798, #15 18V293-6049, #29 22V374-1195).
+Filings in B with no counterpart in A (not compared): 17V407-6579, 19V843-1571, 20V369-2518, 21V020-7654.
 
 Classes: **same** (all compared fields equal) / **detail** (agree on status, kind or event type; quote span, names list or date_text differs: 'fix') /
 **substance** (status, kind or event type differs, or an event exists on one side only: 'no'). Rules: tt/eval/compare_labels.py.

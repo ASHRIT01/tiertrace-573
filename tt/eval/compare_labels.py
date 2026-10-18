@@ -106,8 +106,8 @@ def render_markdown(res: dict, a_labels: list[dict], a_name: str, b_name: str) -
     files = sorted({r[1] for r in res["rows"]}, key=lambda f: dn[f])
     out = ["# AI-vs-AI agreement, not human verification", "",
            f"Set A = {a_name} (reference); set B = {b_name}. Both were produced by AI. Agreement here shows consistency between two AI passes, not correctness.",
-           f"Filings compared: {len(files)} ({', '.join('#%d %s' % (dn[f], f[7:19]) for f in files)}).",
-           f"Filings in B with no counterpart in A (not compared): {', '.join(x[7:19] for x in res['only_in_b']) or 'none'}.", "",
+           f"Filings compared: {len(files)} ({', '.join('#%d %s' % (dn[f], f[7:18]) for f in files)}).",
+           f"Filings in B with no counterpart in A (not compared): {', '.join(x[7:18] for x in res['only_in_b']) or 'none'}.", "",
            "Classes: **same** (all compared fields equal) / **detail** (agree on status, kind or event type; quote span, names list or date_text differs: 'fix') /",
            "**substance** (status, kind or event type differs, or an event exists on one side only: 'no'). Rules: tt/eval/compare_labels.py.", "",
            "| claim | units | same | differs in detail (fix) | differs in substance (no) |", "|---|---|---|---|---|"]
