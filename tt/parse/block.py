@@ -1,17 +1,11 @@
-"""Deterministic parse of the Component Manufacturer block (L0 labels).
-Label-driven and tolerant of 'Label: value' on one line or value on the next.
-UNTESTED against real PDFs; Week 1/2 gate."""
+"""Deterministic parse of the Component Manufacturer block (L0 labels)."""
 import re
 from dataclasses import dataclass, asdict
 
 NR = {"nr", "n/r", "not reported", "n/a", "none", ""}
-LABELS = {
-    "name": r"(?:component )?manufacturer name",
-    "tier": r"tier of supplier|supplier tier",
-    "type": r"supplier type|type of supplier",
-    "address": r"address",
-    "country": r"country",
-}
+_LABEL = re.compile(r"^\s*(Tier of Supplier|Supplier Type|Name|Address|Country)\s*:\s*(.*)$", re.I)
+_KEY = {"tier of supplier": "tier", "supplier type": "type", "name": "name",
+        "address": "address", "country": "country"}
 
 
 @dataclass
@@ -26,19 +20,34 @@ class Block:
 
 
 def _clean(v: str | None) -> str | None:
-    if v is None:
-        return None
-    v = re.sub(r"\s+", " ", v).strip(" :\t")
+    v = re.sub(r"\s+", " ", v or "").strip(" :\t")
     return None if v.lower() in NR else v
 
 
 def parse_block(text: str) -> Block:
-    all_labels = "|".join(f"(?:{p})" for p in LABELS.values())
-    found = {}
-    for key, pat in LABELS.items():
-        m = re.search(rf"(?is)\b(?:{pat})\s*:?\s*(.*?)(?=\b(?:{all_labels})\s*:|\Z)", text)
-        found[key] = _clean(m.group(1)) if m else None
-    return Block(found["name"], found["tier"], found["type"], found["country"])
+    """`text` must keep its line breaks (use the raw cleaned block, see parse_block_from_doc)."""
+    fields: dict[str, list[str]] = {}
+    cur = None
+    for line in text.splitlines():
+        m = _LABEL.match(line)
+        if m:
+            cur = _KEY[m[1].lower()]
+            fields.setdefault(cur, []).append(m[2])
+        elif cur:
+            fields[cur].append(line)
+    g = lambda k: _clean(" ".join(fields.get(k, [])))
+    return Block(g("name"), g("tier"), g("type"), g("country"))
+
+
+def raw_block(full_text: str) -> str:
+    """Block text with line breaks preserved, from 'Component Manufacturer' to the next section."""
+    from tt.parse.sections import clean
+    t = clean(full_text)
+    m = re.search(r"(?im)^[ \t]*(?:supplier identification[ \t]*:?[ \t]*\n[ \t]*)?component manufacturer[ \t]*:?[ \t]*\n", t)
+    if not m:
+        return ""
+    end = re.search(r"(?im)^[ \t]*(?:involved components|chronology|description of (?:the )?remedy)\b", t[m.end():])
+    return t[m.end(): m.end() + end.start()] if end else t[m.end():]
 
 
 def mask_text(text: str, name: str | None) -> str:

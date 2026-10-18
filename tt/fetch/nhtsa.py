@@ -15,11 +15,14 @@ class PoliteFetcher:
     def __init__(self, cache: Path, rate_s: float = 1.0):
         self.cache, self.rate_s, self._last = Path(cache), rate_s, 0.0
         self.cache.mkdir(parents=True, exist_ok=True)
-        self.robots = urllib.robotparser.RobotFileParser(f"{BASE}/robots.txt")
-        try:
-            self.robots.read()
-        except Exception:
-            self.robots = None
+        self.robots = urllib.robotparser.RobotFileParser()
+        r = requests.get(f"{BASE}/robots.txt", headers={"User-Agent": UA}, timeout=30)
+        if r.status_code == 200:
+            self.robots.parse(r.text.splitlines())
+        elif r.status_code in (404, 410):
+            self.robots.parse([])  # no robots.txt: nothing disallowed
+        else:
+            raise RuntimeError(f"robots.txt returned {r.status_code}; not crawling")
 
     def get(self, url: str) -> bytes | None:
         dest = self.cache / url.replace("https://", "").replace("/", "_")

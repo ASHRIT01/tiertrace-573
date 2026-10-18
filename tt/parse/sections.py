@@ -1,12 +1,12 @@
-"""Split Part 573 text into sections.
-
-NOTE: heading regexes follow the section list in the PRD and are UNTESTED against
-real PDFs (Week 1 gate). Adjust HEADINGS once real text is available.
-"""
+"""Split Part 573 text into sections. Two layouts seen in real filings (2023-2026):
+ old: 'Label : value' on one line; new: 'Label:' then value on the next line.
+Tuned on the six reference filings (data/raw, tests/test_golden.py)."""
 import re
 import unicodedata
 from dataclasses import dataclass, field
 from datetime import date
+
+from tt.verify.dates import parse_date
 
 
 def norm(s: str) -> str:
@@ -14,16 +14,36 @@ def norm(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip().lower()
 
 
-HEADINGS = {
-    "defect": r"(?:description of the defect|defect description)",
-    "risk": r"(?:safety risk|description of the safety risk)",
-    "cause": r"(?:description of the cause|cause of the defect)",
-    "block": r"(?:component manufacturer|supplier identification)",
-    "components": r"(?:involved components|identification of (?:any )?involved components)",
-    "chronology": r"(?:chronology|description of (?:the )?chronology)",
-    "related": r"(?:related recall|identification of any warranty)",
-    "remedy": r"(?:description of the remedy|remedy program|recall remedy)",
-}
+# Boundary headings (line-anchored). Several names may share a section key; a section
+# runs until the next heading of a *different* key.
+HEADINGS = [
+    ("defect", r"description of the defect(?: or noncompliance)?"),
+    ("fmvss", r"fmvss\s*1"),
+    ("risk", r"description of the safety risk[^:\n]*"),
+    ("cause", r"description of the cause"),
+    ("warning", r"identification of any warning"),
+    ("block", r"supplier identification"),
+    ("block", r"component manufacturer"),
+    ("components", r"involved components"),
+    ("chronology", r"chronology"),
+    ("related", r"related nhtsa recall number"),
+    ("remedy", r"description of (?:the )?remedy"),
+]
+
+_NOISE = [
+    r"^\s*OMB Control No\.?\s*:?\s*\S*\s*$",
+    r"^\s*Part 573 Safety Recall Report\s*$",
+    r"^\s*\d{2}[VEvEe]-?\d{3}\s*$",
+    r"^\s*The information contained in this report was submitted pursuant to.*$",
+    r"^\s*Page \d+( of \d+)?\s*$",
+    r"^\s*\* NR - Not Reported\s*$",
+]
+
+
+def clean(text: str) -> str:
+    for pat in _NOISE:
+        text = re.sub(pat, "", text, flags=re.M | re.I)
+    return re.sub(r"\n{3,}", "\n\n", text)
 
 
 @dataclass
@@ -41,14 +61,31 @@ class Doc:
 
 
 def split_sections(text: str) -> dict[str, str]:
-    """Return {name: body}. A heading is a line that starts with the pattern."""
+    text = clean(text)
     hits = []
-    for name, pat in HEADINGS.items():
-        for m in re.finditer(rf"(?im)^\s*(?:\d+[.)]?\s*)?{pat}\b[^\n]*:?\s*$|^\s*(?:\d+[.)]?\s*)?{pat}\b[^\n]*:\s*", text):
-            hits.append((m.start(), m.end(), name))
+    for key, pat in HEADINGS:
+        for m in re.finditer(rf"(?im)^[ \t]*(?:{pat})[ \t]*:?[ \t]*", text):
+            hits.append((m.start(), m.end(), key))
     hits.sort()
     out: dict[str, str] = {}
-    for i, (_, end, name) in enumerate(hits):
-        nxt = hits[i + 1][0] if i + 1 < len(hits) else len(text)
-        out.setdefault(name, text[end:nxt].strip())
+    for i, (_, end, key) in enumerate(hits):
+        if key in out:
+            continue
+        nxt = len(text)
+        for s, _, k in hits[i + 1:]:
+            if k != key:
+                nxt = s
+                break
+        out[key] = re.sub(r"\s+", " ", text[end:nxt]).strip()
     return out
+
+
+def parse_header(text: str) -> dict:
+    """Filer name, submission date and campaign number from the first page."""
+    t = clean(text)
+    name = re.search(r"Manufacturer Name\s*:\s*(.+?)(?=\n\s*(?:Address|Submission Date|NHTSA Recall)|\n[A-Z][\w ]+\s*:|\Z)", t, re.S)
+    sub = re.search(r"Submission Date\s*:\s*([A-Za-z]{3,9} \d{1,2}, \d{4})", t)
+    camp = re.search(r"NHTSA Recall No\.?\s*:\s*(\d{2}[VE]-?\d{3})", t)
+    filer = re.sub(r"\s+", " ", name.group(1)).strip() if name else ""
+    sd = parse_date(sub.group(1), date(2100, 1, 1)) if sub else None
+    return {"filer": filer, "filing_date": sd, "campaign": camp.group(1).replace("-", "") if camp else ""}

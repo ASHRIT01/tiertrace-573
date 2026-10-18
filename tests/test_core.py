@@ -19,7 +19,7 @@ def test_dates():
 
 
 def test_block_and_mask():
-    t = "Component Manufacturer Name: ZF Group\nTier of Supplier: NR\nSupplier Type: Manufacturer\nCountry: Germany"
+    t = "Name: ZF Group\nTier of Supplier:\nNR\nSupplier Type:\nManufacturer\nCountry:\nGermany"
     b = parse_block(t)
     assert (b.name, b.tier, b.type, b.country) == ("ZF Group", None, "Manufacturer", "Germany")
     assert "ZF Group" not in mask_text("ZF Group notified GM", b.name)

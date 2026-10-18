@@ -30,7 +30,7 @@ def main():
     ap.add_argument("--ctx", type=int, default=6144)
     ap.add_argument("--out", default="reports/hw_report.md")
     a = ap.parse_args()
-    files = sorted(p for p in Path(a.folder).iterdir() if p.suffix.lower() in {".pdf", ".txt"})
+    files = sorted(p for p in Path(a.folder).iterdir() if p.suffix.lower() in {".pdf", ".txt"} and not p.name.startswith("."))
     rows = []
     for model in a.models:
         for f in files:
