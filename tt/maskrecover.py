@@ -4,7 +4,9 @@ narrative (cause + chronology)?  Rules (deterministic):
  M2 squash  : the name with corporate suffixes and punctuation removed (e.g. 'zf', 'allison transmission') occurs
               as whole words in the narrative squashed the same way (>= 2 chars).
  M3 alias   : any alias-table alias with the same parent id occurs as in M2.
- SELF       : (checked first) the block supplier is the filer itself (same after squashing); excluded from the task.
+ SELF       : (checked first) component_manufacturer_kind == filer_itself (tt/kind.py: equal after squashing and singularising);
+              excluded from the task. Foreign-parent / regional / group-member names (kind == filer_affiliate) STAY in the
+              task and are reported separately.
  M4 partial : (reported separately) only the first significant word of the squashed name (>= 4 chars) occurs
               as a whole word, e.g. 'Allison' for 'Allison Transmission Inc.'.
 EXTRACTIVE = M1 or M2 or M3. PARTIAL-ONLY = M4 and not EXTRACTIVE. The rest are INFERENTIAL (name absent).
@@ -15,6 +17,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
+from tt.kind import kind as ckind, load_groups
 from tt.norm.aliases import AliasTable, squash
 from tt.parse.block import parse_block, raw_block
 from tt.parse.pdf import extract_text
@@ -45,6 +48,7 @@ def classify(name: str, narrative: str, aliases: AliasTable) -> tuple[str, str]:
 
 def run(sample_jsonl: Path, pdf_dir: Path, aliases: AliasTable, n_examples: int = 10, seed: int = 0) -> str:
     rows = [json.loads(l) for l in sample_jsonl.read_text().splitlines() if '"is_latest": true' in l]
+    groups = load_groups()
     res = []
     for r in rows:
         f = r["url"].rsplit("/", 1)[1]
@@ -55,13 +59,13 @@ def run(sample_jsonl: Path, pdf_dir: Path, aliases: AliasTable, n_examples: int 
             continue
         narr = sec.get("cause", "") + " . " + sec.get("chronology", "")
         filer = parse_header(text)["filer"]
-        a, b = squash(blk.name), squash(filer)
-        if a and b and (a == b or a in b or b in a):
-            res.append({"year": r["year"], "file": f, "cls": "SELF", "name": blk.name})
+        ck, why = ckind(blk.name, filer, groups)
+        if ck == "filer_itself":
+            res.append({"year": r["year"], "file": f, "cls": "SELF", "name": blk.name, "filer": filer})
             continue
         cls, hit = classify(blk.name, narr, aliases)
         i = norm(narr).find(norm(hit)) if hit else -1
-        res.append({"year": r["year"], "file": f, "cls": cls, "name": blk.name, "hit": hit,
+        res.append({"year": r["year"], "file": f, "cls": cls, "name": blk.name, "hit": hit, "kind": ck, "why": why, "filer": filer,
                     "ctx": norm(narr)[max(0, i - 70): i + len(hit) + 70] if i >= 0 else "",
                     "in_defect": bool(hit) and norm(hit) in norm(sec.get("defect", ""))})
     by = defaultdict(lambda: defaultdict(int))
@@ -80,6 +84,25 @@ def run(sample_jsonl: Path, pdf_dir: Path, aliases: AliasTable, n_examples: int 
            "| year | filings | no block name | block = filer | extractive (M1-M3) | partial only | inferential |", "|---|---|---|---|---|---|---|"]
     for y, v in sorted(by.items()):
         out.append(f"| {y} | {v['n']} | {v['NO_NAME']} | {v['SELF']} | {v['M1'] + v['M2'] + v['M3']} | {v['PARTIAL']} | {v['INFERENTIAL']} |")
+    ext_k = [x for x in named if x["kind"] == "external"]
+    aff_k = [x for x in named if x["kind"] == "filer_affiliate"]
+    split = lambda xs: (sum(ext(x["cls"]) for x in xs), sum(x["cls"] == "PARTIAL" for x in xs), sum(x["cls"] == "INFERENTIAL" for x in xs))
+    out += ["", "By kind (extractive / partial-only / inferential):", "",
+            f"- external ({len(ext_k)}): {split(ext_k)[0]} / {split(ext_k)[1]} / {split(ext_k)[2]}",
+            f"- filer_affiliate ({len(aff_k)}): {split(aff_k)[0]} / {split(aff_k)[1]} / {split(aff_k)[2]}"]
+    # reconcile with the earlier looser rule (containment on un-singularised squashed names)
+    withnames = [x for x in res if x["cls"] != "NO_NAME"]
+    contains = lambda x: (lambda a, b: bool(a and b and (a == b or a in b or b in a)))(squash(x["name"]), squash(x["filer"]))
+    old_self = [x for x in withnames if contains(x)]
+    moved_out = [x for x in old_self if x["cls"] != "SELF"]
+    moved_in = [x for x in withnames if x["cls"] == "SELF" and not contains(x)]
+    out += ["", f"## Reconciliation: earlier report said {len(old_self)} 'block = filer'; now {sum(x['cls'] == 'SELF' for x in res)}", "",
+            f"Earlier rule: squashed name contained in / containing the filer name. Now: equal after squashing and singularising tokens. {len(old_self)} - {len(moved_out)} + {len(moved_in)} = {sum(x['cls'] == 'SELF' for x in res)}.", "",
+            f"Moved OUT of 'filer itself' (kind = filer_affiliate; they stay in the task): {len(moved_out)}"]
+    out += [f"- {x['file']}: filer `{x['filer']}` vs block `{x['name']}` ({x['why']})" for x in moved_out]
+    out += ["", "Of these, 7 are a foreign parent / regional entity (Volvo Car Corporation, Volkswagen AG, Mercedes-Benz AG x4, Jaguar Land Rover Limited) and 1 (Blue Bird) is probably the same entity (known miss of the containment rule).",
+            "", f"Moved IN to 'filer itself' (singular/plural variant): {len(moved_in)}"]
+    out += [f"- {x['file']}: filer `{x['filer']}` vs block `{x['name']}`" for x in moved_in]
     pool = [x for x in named if x["cls"] != "INFERENTIAL"]
     random.Random(seed).shuffle(pool)
     out += ["", f"## {n_examples} random examples of the name ALSO appearing in the narrative (seed {seed})", ""]
