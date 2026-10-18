@@ -44,3 +44,32 @@ def test_mask_classify():
     assert classify("Hale Products Inc", "notice from Hale Products received", al)[0] in ("M1", "M2")
     assert classify("Bendix Commercial Vehicle Systems, LLC", "email from Bendix says", al)[0] == "PARTIAL"
     assert classify("Acme Corp", "the supplier shipped bad steel", al)[0] == "INFERENTIAL"
+
+
+def test_page_break_marker_removed_from_cause():
+    from tt.parse.sections import split_sections
+    t = ("Description of the Cause : A spacer lacks clearance and forces the shaft key out of \n\nPage \n2\n\n"
+         "position. The gear may move.\nIdentification of Any Warning that can Occur : none\nChronology :\nOn May 1, 2015 it began.\n")
+    s = split_sections(t)
+    assert "Page" not in s["cause"] and "key out of position. The gear may move." in s["cause"]
+
+
+def test_page_x_of_y_and_inline_marker_removed():
+    from tt.parse.sections import clean
+    assert "Page" not in clean("alpha\nPage 2 of 4\nbeta\nPage 3\ngamma\n")
+
+
+def test_stacked_header_block_removed_from_risk_and_keeps_filing_date():
+    from tt.parse.sections import split_sections, parse_header
+    from datetime import date
+    t = ("U.S. Department\nof Transportation\nNational Highway\nTraffic Safety\nAdministration\n"
+         "Part 573 Safety Recall Report\n26V622\nManufacturer Name: Chrysler (FCA US, LLC)\nSubmission Date: Sep 29, 2026\n"
+         "NHTSA Recall No.: 26V622\nManufacturer Recall No.: 94D\nThe information contained in this report was submitted pursuant to 49 CFR § 573\n"
+         "OMB Control No.:2127-0004\n\nDescription of the safety risk:\nA wheel may detach\n"
+         "U.S. Department\nof Transportation\nNational Highway\nTraffic Safety\nAdministration\nPart 573 Safety Recall Report\n26V622\n"
+         "Manufacturer Name: Chrysler (FCA US, LLC)\nSubmission Date: Sep 29, 2026\nNHTSA Recall No.: 26V622\nManufacturer Recall No.: 94D\n"
+         "The information contained in this report was submitted pursuant to 49 CFR § 573\nOMB Control No.:2127-0004\n\nand injure people.\n"
+         "Description of the cause:\nA bolt was loose.\nIdentification of any warning that can occur:\nNone\n")
+    s = split_sections(t)
+    assert s["risk"] == "A wheel may detach and injure people." and s["cause"] == "A bolt was loose."
+    assert parse_header(t)["filing_date"] == date(2026, 9, 29)
