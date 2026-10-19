@@ -17,7 +17,9 @@ RUN1 = os.environ.get("TT_RUN1", "runs/dev_bench_4b_silver_v2.jsonl")
 RUN2 = os.environ.get("TT_RUN2", "runs/dev_bench_4b_silver_v2_run2.jsonl")
 
 
-def run():
+def agent_items():
+    """-> (items {S2/E/C: [(correct, score, filer)]}, unlabelled_excluded, reason_count, run2_valid). Score >= 3 = accepted. Run 1 supplies every claim;
+    run 2 only enters through the agreement term of the score."""
     gold, docs, raw, blocks = D.load_world()
     P1, P2 = D.load_preds(RUN1), D.load_preds(RUN2)
     ex1 = {f: Extraction.model_validate(p["extraction"]) for f, p in P1.items()}
@@ -36,7 +38,12 @@ def run():
         return key[(f, kind, id(claim) if claim is not None else None)]["score"]
 
     items, unl = items_for(gold, docs, ex1, score_fn)
-    R = {"unlabelled_excluded": unl, "reason_counts": {f"{k}:{r}": v for (k, r), v in sorted(reason_count.items())}, "run2_valid": sum(v is not None for v in ex2.values())}
+    return items, unl, reason_count, sum(v is not None for v in ex2.values())
+
+
+def run():
+    items, unl, reason_count, run2_valid = agent_items()
+    R = {"unlabelled_excluded": unl, "reason_counts": {f"{k}:{r}": v for (k, r), v in sorted(reason_count.items())}, "run2_valid": run2_valid}
     err = lambda it: sum(not x[0] for x in it) / len(it) if it else float("nan")
     for t, its in items.items():
         row = {"candidates": len(its)}

@@ -7,7 +7,7 @@ from pathlib import Path
 
 from tt.labels import protocol, schema
 from tt.labels.blind import assert_blind
-from tt.labels.agree import compare
+from tt.labels.agree import compare, wilson
 from tt.labels.texts import export
 
 
@@ -53,5 +53,20 @@ def finalize(pass_a: list[dict], items: list[dict], decision_dirs: list[Path], p
     fails = schema.check(recs, pdf_dir)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(recs, indent=1, ensure_ascii=False))
-    return {"decisions": counts, "check_failures": fails, "sha256": hashlib.sha256(out.read_bytes()).hexdigest(),
+    return {"decisions": counts, "pass_c_agreement": c_agreement(items, dec, counts), "check_failures": fails, "sha256": hashlib.sha256(out.read_bytes()).hexdigest(),
             "contested": sum(len(r["contested"]) for r in recs), "events": sum(len(r["events"]) for r in recs)}
+
+
+def c_agreement(items: list[dict], decisions: list[dict], counts: dict) -> dict:
+    """How often Pass C sided with Pass A and with Pass B, reported separately (counts, rate, Wilson 95%), over all compared items and over
+    the items it decided (not CONTESTED or missing). Also how often it picked the version shown as X vs Y: with a seeded random order, a
+    position preference would show here (an unbiased adjudicator picks X about as often as Y among A/B choices)."""
+    n = len(items)
+    dec = n - counts["CONTESTED"] - counts["missing"]
+    out = {"items": n, "decided": dec, "contested_or_missing": counts["CONTESTED"] + counts["missing"], "neither": counts["NEITHER"]}
+    for k in ("A", "B"):
+        out[f"with_{k}"] = {"k": counts[k], "rate_of_items": counts[k] / n if n else None, "wilson95_of_items": wilson(counts[k], n),
+                            "rate_of_decided": counts[k] / dec if dec else None, "wilson95_of_decided": wilson(counts[k], dec)}
+    xy = [d.get("decision") for d in decisions]
+    out["position"] = {"chose_X": xy.count("X"), "chose_Y": xy.count("Y"), "x_is_A": sum(1 for it in items if it.get("x_is") == "A")}
+    return out

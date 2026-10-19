@@ -30,7 +30,7 @@ FILES = ["data/labels/dev_silver_v1.json", "data/labels/passA_v1.json", "data/la
          "tt/agent/inject.py", "tt/baselines/rules.py", "tt/eval/riskcov.py", "tt/eval/phase3.py", "tt/eval/phase4.py", "tt/eval/diagnose.py",
          "tt/eval/devscore.py", "tt/labels/dates.py", "tt/labels/events.py", "tt/labels/agree.py", "tt/labels/protocol.py", "tt/labels/schema.py",
          "tt/labels/pipeline.py", "tt/labels/draft.py", "tt/labels/texts.py", "tt/labels/blind.py", "tt/labeldraft.py", "tt/cli.py",
-         "tt/leakcheck.py", "scripts/freeze.py", "reports/PREREGISTRATION_PROPOSED_FINAL.md"]
+         "tt/eval/endpoints.py", "tt/leakcheck.py", "scripts/freeze.py", "reports/PREREGISTRATION_PROPOSED_FINAL.md"]
 SPLITS = ["data/splits/dev_ids.txt", "data/splits/testA_ids.txt"]
 PROPOSED = ["testA_labelled_ids.txt", "testB_ids.txt", "unseen_filer_ids.txt"]
 VERIFIER = ["tt/verify/verifier.py", "tt/verify/extra.py"]
@@ -141,7 +141,7 @@ def gather() -> tuple[dict, list[str], list[str]]:
     elif th["endpoints"][th["primary_endpoint"]]["claim"].startswith("cause_reported"):
         problems.append("primary_endpoint is the cause_reported (NR-or-not) claim, which measures NR detection only and cannot be the primary endpoint")
     man["primary_endpoint"] = th.get("primary_endpoint")
-    L.append(f"  thresholds status {th.get('status')}; primary endpoint {th.get('primary_endpoint')} (proposed by the assistant: {th.get('proposed_primary')})")
+    L.append(f"  thresholds status {th.get('status')}; primary endpoint {th.get('primary_endpoint')} (chosen by the owner)")
     # 3. models
     rs = json.loads((ROOT / "config/run_settings.json").read_text())
     man["ollama_version"] = subprocess.run(["ollama", "--version"], capture_output=True, text=True).stdout.strip() or "unknown"
@@ -172,6 +172,9 @@ def gather() -> tuple[dict, list[str], list[str]]:
     for r in LABEL_ROLES:
         if not re.fullmatch(r"claude-[A-Za-z0-9.\-]+", str(lm.get("test", {}).get(r, ""))):
             problems.append(f"config/labelling_model.json: test.{r} must be an exact Claude model ID (got {lm.get('test', {}).get(r)!r})")
+    pc = (ROOT / "docs/PASS_C_PROMPT.txt").read_text()
+    if "version_X" not in pc or "version_A" in pc or '"A"' in pc:
+        problems.append("docs/PASS_C_PROMPT.txt must use the blind X/Y wording (version_X, version_Y) and never name pass A or B")
     man["labelling"] = {"claude_models_test": {r: lm["test"].get(r) for r in LABEL_ROLES}, "claude_models_dev_not_recorded": lm.get("dev"), "alias_note": lm.get("note"), "sha256": {Path(f).name: sha(ROOT / f) for f in LABEL_PROMPTS},
                         "blind_to_runs": "tt/labels/blind.py refuses any path in runs/ (sha256 " + sha(ROOT / "tt/labels/blind.py") + ")"}
     L += ["", "  labelling:"] + [f"    Claude model, test {r}: {lm['test'].get(r)!r}" for r in LABEL_ROLES]

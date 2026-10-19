@@ -3,6 +3,7 @@ apply Pass C decisions. Final labels start from Pass A; each disagreement is res
 label) or CONTESTED (excluded from scoring and counted)."""
 import copy
 import json
+import random
 import shutil
 from pathlib import Path
 
@@ -37,8 +38,20 @@ def number_items(items: list[dict]) -> list[dict]:
     return items
 
 
-def package_for_c(items: list[dict], texts_dir: Path, rules: Path, out_root: Path, per_batch: int = 25) -> list[Path]:
-    """One directory per batch: texts of the filings involved, the rules, and items.json (both versions per item)."""
+PASS_C_SEED = 0
+
+
+def x_is(item_id: str, seed: int = PASS_C_SEED) -> str:
+    """Which pass is shown as version X for this item: 'A' or 'B', by a seeded coin flip per item (reproducible, independent of order)."""
+    return "A" if random.Random(f"passC:{seed}:{item_id}").random() < 0.5 else "B"
+
+
+def package_for_c(items: list[dict], texts_dir: Path, rules: Path, out_root: Path, per_batch: int = 25, seed: int = PASS_C_SEED) -> list[Path]:
+    """One directory per batch: texts of the filings involved, the rules, and items.json with the two candidate answers as version_X and
+    version_Y in seeded random order. The batch never says which pass made which. The mapping is stored on each item as `x_is`
+    (in the master items list written by the caller, never in a batch directory) and is applied by apply_c."""
+    for it in items:
+        it["x_is"] = x_is(it["item_id"], seed)
     by_file = {}
     for it in items:
         by_file.setdefault(it["file"], []).append(it)
@@ -59,8 +72,9 @@ def package_for_c(items: list[dict], texts_dir: Path, rules: Path, out_root: Pat
         for f in fs:
             shutil.copy(texts_dir / (f.rsplit(".", 1)[0] + ".txt"), d / "texts")
             for it in by_file[f]:
-                its.append({"item_id": it["item_id"], "file": f, "claim": it["claim"], "what_differs": it.get("kind", "status/kind differs"),
-                            "version_A": it["A"], "version_B": it["B"]})
+                vx, vy = (it["A"], it["B"]) if it["x_is"] == "A" else (it["B"], it["A"])
+                what = "only in X" if vy is None else "only in Y" if vx is None else it.get("kind", "status/kind differs")
+                its.append({"item_id": it["item_id"], "file": f, "claim": it["claim"], "what_differs": what, "version_X": vx, "version_Y": vy})
         (d / "items.json").write_text(json.dumps(its, indent=1, ensure_ascii=False))
         dirs.append(d)
     return dirs
@@ -84,6 +98,9 @@ def apply_c(A: list[dict], items: list[dict], decisions: list[dict]) -> tuple[li
         r = recs[it["file"]]
         r.setdefault("contested", [])
         choice = (d or {}).get("decision", "missing")
+        if "x_is" in it:   # blind X/Y packaging: translate back to A/B; A/B is not a valid answer then
+            other = {"A": "B", "B": "A"}
+            choice = {"X": it["x_is"], "Y": other[it["x_is"]]}.get(choice, choice if choice in ("NEITHER", "CONTESTED") else "missing")
         counts[choice if choice in counts else "missing"] += 1
         if choice in ("CONTESTED", "missing"):
             r["contested"].append({"item_id": it["item_id"], "claim": it["claim"], "reason": (d or {}).get("reason", "no decision")})

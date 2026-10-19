@@ -22,7 +22,9 @@ PY
 python -m tt.cli label-export data/labels/work/testA/files.json data/labels/work/testA/passB --pdf-dir data/testA_raw
 #   Pass B: one blind subagent per batch dir, prompt docs/PASS_B_PROMPT.txt ({DIR} = the batch dir); check each files_seen.txt
 python -m tt.cli label-compare data/labels/testA_passA.json data/labels/work/testA/passB data/labels/work/testA/cmp --pdf-dir data/testA_raw
-#   Pass C: one subagent per data/labels/work/testA/cmp/passC/batch_N, prompt docs/PASS_C_PROMPT.txt
+#   Pass C: one subagent per data/labels/work/testA/cmp/passC/batch_N, prompt docs/PASS_C_PROMPT.txt. The batches show the two candidate answers as
+#   version_X / version_Y in seeded random order and never say which pass made which; the mapping (x_is) is only in cmp/items.json, which the subagents never see.
+#   Decisions are X / Y / NEITHER / CONTESTED. label-final prints pass_c_agreement (agreement with A and with B separately, X vs Y position counts).
 python -m tt.cli label-final data/labels/testA_passA.json data/labels/work/testA/cmp/items.json data/labels/work/testA/cmp/passC data/labels/testA_silver.json --pdf-dir data/testA_raw
 shasum -a 256 data/labels/testA_silver.json    # record in reports/phase_6_labels.md, then: git add data/labels && git commit
 
@@ -34,6 +36,7 @@ python -u -m tt.cli dev-bench --model qwen3.5:4b-q4_K_M --labels data/labels/tes
 export TT_PDF=data/testA_raw TT_GOLD=data/labels/testA_silver.json TT_CACHE=runs/testA_cache.pkl
 TT_B2="B2_4b_v2=runs/testA_4b_v2_run1.jsonl" python -m tt.eval.phase3 reports/phase_6_testA_phase3.json
 TT_RUN1=runs/testA_4b_v2_run1.jsonl TT_RUN2=runs/testA_4b_v2_run2.jsonl python -m tt.eval.phase4 reports/phase_6_testA_phase4.json
+TT_INJ_REPORT=reports/phase_6_injection.json python -m tt.eval.endpoints reports/phase_6_testA_endpoints.json   # after step 5; H1, H2, H5, H4 (+ Clopper-Pearson bound), exploratory agent-vs-B1 with coverage
 
 # 5. held-out injection (30 attacks, two runs, then score)
 export TT_ATTACKS=config/injection_heldout_v1.json TT_INJ_TAG=testA_inject TT_INJ_REPORT=reports/phase_6_injection.json
