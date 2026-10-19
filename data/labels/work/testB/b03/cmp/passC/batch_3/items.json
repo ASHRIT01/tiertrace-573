@@ -1,0 +1,581 @@
+[
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Valeo CDA (Thailand) Ltd.",
+   "status": "SUPPORTED",
+   "quote": "The investigation confirmed that JATCO Mexico was exclusive in utilizing the affected inhibitor switch manufactured at Valeo Thailand.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Valeo Thailand",
+   "quote": "The investigation confirmed that JATCO Mexico was exclusive in utilizing the affected inhibitor switch manufactured at Valeo Thailand.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2026",
+   "type": "OTHER",
+   "quote": "Initial findings indicated a lack of electrical contact between Terminal Block SW#2 within the inhibitor switch of the transmission control valve assembly.",
+   "inherited_date": true,
+   "entry_quote": "February 2026 - The supplier conducted an initial teardown and evaluation of the suspect control valve assembly.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-01",
+    "end": "2026-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "February 2026 - The supplier conducted an initial teardown and evaluation of the suspect control valve assembly.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "Throughout this month the supplier collected and analyzed a total of five (5) failed parts returned from the field and three (3) failed parts returned from the plant.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Throughout this month the supplier collected and analyzed a total of five (5) failed parts returned from the field and three (3) failed parts returned from the plant.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D044",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2026",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "JATCO determined that all verified failed components were manufactured from October 17, 2025 to October 18, 2025.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "JATCO determined that all verified failed components were manufactured from October 17, 2025 to October 18, 2025.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D045",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "A review of the sub-supplier’s manufacturing process for the inhibitor switch found that a locator pin may have broken on the production line on October 17, 2025.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D046",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "A broken locator pin in service at the riveting stage may contribute to misalignment and result in a terminal height variation within the inhibitor switch housing.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D047",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "This condition may contribute to the electrical continuity concern.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D048",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "In response, part sorting and yard audits were initiated based on the affected date code.",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D049",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "JATCO conducted traceability analysis to identify control valve assemblies containing suspect inhibitor switches (produced October 17–18, 2025) and link them to specific continuously variable transmissions (CVTs).",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D050",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "March 2026",
+   "type": "OTHER",
+   "quote": "The supplier part audit and Smyrna plant vehicle audit identified 76 suspect parts (42 vehicles and 3 CVTs at Nissan North America Smyrna Plant, and 31 control valve assemblies at JATCO Mexico).",
+   "inherited_date": true,
+   "entry_quote": "March 2026 – Nissan initiated a targeted warranty return parts collection.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D051",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "January 13, 2026",
+   "type": "OTHER",
+   "quote": "Traceability data confirmed that the first vehicle built using a transmission made during the identified manufacturing window occurred on January 13, 2026.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-13",
+    "end": "2026-01-13",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D052",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 17, 2025",
+   "type": "OTHER",
+   "quote": "A review of the sub-supplier’s manufacturing process for the inhibitor switch found that a locator pin may have broken on the production line on October 17, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D053",
+  "file": "RCLRPT-26V419-3539.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 2026 through May 2026",
+   "type": "OTHER",
+   "quote": "Traceability data confirmed that the first vehicle built using a transmission made during the identified manufacturing window occurred on January 13, 2026.",
+   "inherited_date": true,
+   "entry_quote": "April 2026 through May 2026 - Nissan conducted a horizontal confirmation audit to determine the scope of potentially affected vehicles, including export markets and other vehicle lines.",
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D054",
+  "file": "RCLRPT-26V421-6272.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 2026 through May 2026",
+   "type": "OTHER",
+   "quote": "From April 2026 through May 2026, FCA US TSRC conducted an analysis of field records and customer assistance records to understand potential customer consequences.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-05-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 2026 through May 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "From April 2026 through May 2026, FCA US TSRC conducted an analysis of field records and customer assistance records to understand potential customer consequences.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D055",
+  "file": "RCLRPT-26V421-6272.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 10, 2026",
+   "type": "OTHER",
+   "quote": "On June 10, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to premium headlamp assemblies, potentially resulting in a noncompliance with FMVSS No. 108.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June 10, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On June 10, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to premium headlamp assemblies, potentially resulting in a noncompliance with FMVSS No. 108.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-10",
+    "end": "2026-06-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D056",
+  "file": "RCLRPT-26V428-5975.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2026-06-17",
+   "type": "OTHER",
+   "quote": "An investigation occurred and determined that the bolt may contact the fuel line.",
+   "inherited_date": true,
+   "entry_quote": "2026-06-17 A production technician brought it to the attention of the Engineering team that a bolt was protruding from the underside of the floor that is above the fuel tank.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-17",
+    "end": "2026-06-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2026-06-17",
+   "type": "INVESTIGATION_START",
+   "quote": "An investigation occurred and determined that the bolt may contact the fuel line.",
+   "inherited_date": true,
+   "entry_quote": "2026-06-17 A production technician brought it to the attention of the Engineering team that a bolt was protruding from the underside of the floor that is above the fuel tank.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D057",
+  "file": "RCLRPT-26V428-5975.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2026-06-18",
+   "type": "OTHER",
+   "quote": "2026-06-18 An analysis of all our ambulance models was conducted, and it was determined that only this model was affected.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-18",
+    "end": "2026-06-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2026-06-18",
+   "type": "INVESTIGATION_START",
+   "quote": "2026-06-18 An analysis of all our ambulance models was conducted, and it was determined that only this model was affected.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D058",
+  "file": "RCLRPT-26V449-4273.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2nd",
+   "type": "INVESTIGATION_START",
+   "quote": "July 2nd, a search was completed for all vehicles equipped with the effected models of liftgates all four were matched to vehicles that were delivered to customers between 2024 and 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 2nd",
+   "type": "OTHER",
+   "quote": "July 2nd, a search was completed for all vehicles equipped with the effected models of liftgates all four were matched to vehicles that were delivered to customers between 2024 and 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-02",
+    "end": "2026-07-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D059",
+  "file": "RCLRPT-26V455-3228.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Nissan Shatai Kyusyu Co., Ltd.",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Nissan Shatai Kyusyu Co., Ltd.",
+   "status": "SUPPORTED",
+   "quote": "In May 2025, During the development phase of a new vehicle model, Nissan identified a discrepancy between the regulatory language specified in FMVSS 110 and the corresponding NHTSA Test Procedure.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D060",
+  "file": "RCLRPT-26V455-3228.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 2026 through May 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "April 2026 through May 2026, Nissan initiated a horizontal evaluation to identify the scope of potentially affected vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April 2026 through May 2026",
+   "type": "OTHER",
+   "quote": "April 2026 through May 2026, Nissan initiated a horizontal evaluation to identify the scope of potentially affected vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-05-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D061",
+  "file": "RCLRPT-26V478-7478.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025 and April 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Between November 2025 and April 2026, the investigation continued, and was focused on analysis of the wear process of the contact pin.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April 2026",
+   "type": "OTHER",
+   "quote": "Between November 2025 and April 2026, the investigation continued, and was focused on analysis of the wear process of the contact pin.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D062",
+  "file": "RCLRPT-26V478-7478.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 2026",
+   "type": "OTHER",
+   "quote": "In April 2026, a detailed analysis involving field data, and statistical forecasting, was initiated.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "In April 2026, a detailed analysis involving field data, and statistical forecasting, was initiated.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D063",
+  "file": "RCLRPT-26V501-8521.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 12, 2026",
+   "type": "OTHER",
+   "quote": "May 12, 2026, through July 10, 2026, the investigation continued.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-12",
+    "end": "2026-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 12, 2026, through July 10, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "May 12, 2026, through July 10, 2026, the investigation continued.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D064",
+  "file": "RCLRPT-26V503-1662.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 28, 2026",
+   "type": "OTHER",
+   "quote": "On July 28, 2026, OCC and the plant discovered that some vehicles may have been shipped.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 28, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On July 28, 2026, OCC and the plant discovered that some vehicles may have been shipped.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-28",
+    "end": "2026-07-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

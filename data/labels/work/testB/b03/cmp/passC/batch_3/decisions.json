@@ -1,0 +1,167 @@
+[
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "The investigation confirmed that JATCO Mexico was exclusive in utilizing the affected inhibitor switch manufactured at Valeo Thailand.",
+  "reason": "Both SUPPORTED with same quote; Y gives the required 'name' field with the name as the narrative writes it (Valeo Thailand); X lacks the name field."
+ },
+ {
+  "item_id": "D042",
+  "decision": "CONTESTED",
+  "quote": "February 2026 - The supplier conducted an initial teardown and evaluation of the suspect control valve assembly. Initial findings indicated a lack of electrical contact between Terminal Block SW#2 within the inhibitor switch of the transmission control valve assembly.",
+  "reason": "The two versions describe different sentences of the same February 2026 entry: the teardown (correctly INVESTIGATION_START) and the inherited-date findings sentence (correctly OTHER, test result). Each is a valid event in its own right; the pairing cannot be resolved as one right/one wrong."
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "Throughout this month the supplier collected and analyzed a total of five (5) failed parts returned from the field and three (3) failed parts returned from the plant.",
+  "reason": "Analysis of failed parts conducted to find the cause is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D044",
+  "decision": "X",
+  "quote": "JATCO determined that all verified failed components were manufactured from October 17, 2025 to October 18, 2025.",
+  "reason": "JATCO is the transmission supplier reporting a finding on the problem; rules list 'the supplier confirmed ...' as SUPPLIER_NOTICE. The Oct 17-18 dates bound a production window and are ignored."
+ },
+ {
+  "item_id": "D045",
+  "decision": "X",
+  "quote": "A review of the sub-supplier’s manufacturing process for the inhibitor switch found that a locator pin may have broken on the production line on October 17, 2025.",
+  "reason": "This sentence starts a new paragraph after a blank line, so it is outside the March 2026 entry; it carries its own date (October 17, 2025) and is captured by D052. A March-inherited event is wrong."
+ },
+ {
+  "item_id": "D046",
+  "decision": "Y",
+  "quote": "A broken locator pin in service at the riveting stage may contribute to misalignment and result in a terminal height variation within the inhibitor switch housing.",
+  "reason": "Description of a possible mechanism, no action or occurrence; not an event."
+ },
+ {
+  "item_id": "D047",
+  "decision": "X",
+  "quote": "This condition may contribute to the electrical continuity concern.",
+  "reason": "Description/assumption with no action; not an event."
+ },
+ {
+  "item_id": "D048",
+  "decision": "NEITHER",
+  "quote": "In response, part sorting and yard audits were initiated based on the affected date code.",
+  "reason": "Containment action is an event (OTHER), but it is in a new paragraph after a blank line, outside the March 2026 entry, with no date of its own: undated prose, date_inferred.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "In response, part sorting and yard audits were initiated based on the affected date code.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D049",
+  "decision": "NEITHER",
+  "quote": "JATCO conducted traceability analysis to identify control valve assemblies containing suspect inhibitor switches (produced October 17–18, 2025) and link them to specific continuously variable transmissions (CVTs).",
+  "reason": "Event exists but is outside the March entry (after a blank line) and the Oct 17-18 dates only bound a production window, so it is undated prose (date_inferred). Traceability analysis to determine scope is INVESTIGATION_START.",
+  "corrected": {
+   "date_text": "",
+   "type": "INVESTIGATION_START",
+   "quote": "JATCO conducted traceability analysis to identify control valve assemblies containing suspect inhibitor switches (produced October 17–18, 2025) and link them to specific continuously variable transmissions (CVTs).",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D050",
+  "decision": "NEITHER",
+  "quote": "The supplier part audit and Smyrna plant vehicle audit identified 76 suspect parts (42 vehicles and 3 CVTs at Nissan North America Smyrna Plant, and 31 control valve assemblies at JATCO Mexico).",
+  "reason": "Audit result is an event (OTHER), but it sits in the paragraph after the blank line, outside the March 2026 entry, with no own date: undated prose, date_inferred.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "The supplier part audit and Smyrna plant vehicle audit identified 76 suspect parts (42 vehicles and 3 CVTs at Nissan North America Smyrna Plant, and 31 control valve assemblies at JATCO Mexico).",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D051",
+  "decision": "Y",
+  "quote": "Traceability data confirmed that the first vehicle built using a transmission made during the identified manufacturing window occurred on January 13, 2026.",
+  "reason": "January 13, 2026 only bounds the affected production window (first build date), so it is not an event date; the sentence's event inherits the April-May 2026 entry date (D053)."
+ },
+ {
+  "item_id": "D052",
+  "decision": "X",
+  "quote": "A review of the sub-supplier’s manufacturing process for the inhibitor switch found that a locator pin may have broken on the production line on October 17, 2025.",
+  "reason": "Sentence is outside any dated entry and has its own date October 17, 2025; finding of the review is an event (OTHER)."
+ },
+ {
+  "item_id": "D053",
+  "decision": "X",
+  "quote": "April 2026 through May 2026 - Nissan conducted a horizontal confirmation audit to determine the scope of potentially affected vehicles, including export markets and other vehicle lines.",
+  "reason": "The traceability finding is inside the April-May 2026 dated entry (no blank line before it); its own Jan 13 date is a production-window bound, so it inherits the entry date."
+ },
+ {
+  "item_id": "D054",
+  "decision": "X",
+  "quote": "From April 2026 through May 2026, FCA US TSRC conducted an analysis of field records and customer assistance records to understand potential customer consequences.",
+  "reason": "Analysis aimed at customer consequences, not at cause or scope (the investigation was already opened April 16); OTHER under the rules."
+ },
+ {
+  "item_id": "D055",
+  "decision": "Y",
+  "quote": "On June 10, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to premium headlamp assemblies, potentially resulting in a noncompliance with FMVSS No. 108.",
+  "reason": "Filer becomes aware/recognizes a problem exists; FILER_AWARENESS covers later awareness. Not yet the decision (June 25)."
+ },
+ {
+  "item_id": "D056",
+  "decision": "Y",
+  "quote": "An investigation occurred and determined that the bolt may contact the fuel line.",
+  "reason": "An investigation conducted to find the cause is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D057",
+  "decision": "Y",
+  "quote": "2026-06-18 An analysis of all our ambulance models was conducted, and it was determined that only this model was affected.",
+  "reason": "Analysis conducted to determine scope is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D058",
+  "decision": "X",
+  "quote": "July 2nd, a search was completed for all vehicles equipped with the effected models of liftgates all four were matched to vehicles that were delivered to customers between 2024 and 2025.",
+  "reason": "Search conducted to determine scope of affected vehicles is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D059",
+  "decision": "X",
+  "quote": "Nissan initiated an investigation into this potential concern.",
+  "reason": "Narrative only names Nissan (the filer); it never names Nissan Shatai Kyusyu as supplier. Block name is not a name in narrative, so INSUFFICIENT with the block Name line; Y's quote does not name the supplier."
+ },
+ {
+  "item_id": "D060",
+  "decision": "X",
+  "quote": "April 2026 through May 2026, Nissan initiated a horizontal evaluation to identify the scope of potentially affected vehicles.",
+  "reason": "Evaluation started to identify scope is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D061",
+  "decision": "X",
+  "quote": "Between November 2025 and April 2026, the investigation continued, and was focused on analysis of the wear process of the contact pin.",
+  "reason": "Range is one period as written (Y truncates to April 2026); investigation conducted on cause (wear process) fits INVESTIGATION_START."
+ },
+ {
+  "item_id": "D062",
+  "decision": "Y",
+  "quote": "In April 2026, a detailed analysis involving field data, and statistical forecasting, was initiated.",
+  "reason": "An analysis was initiated: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D063",
+  "decision": "Y",
+  "quote": "May 12, 2026, through July 10, 2026, the investigation continued.",
+  "reason": "date_text should be the full range as written; investigation conducted is INVESTIGATION_START (X truncates the date)."
+ },
+ {
+  "item_id": "D064",
+  "decision": "Y",
+  "quote": "On July 28, 2026, OCC and the plant discovered that some vehicles may have been shipped.",
+  "reason": "Filer 'discovered' that affected vehicles reached the field; rules list 'discovered' as FILER_AWARENESS."
+ }
+]

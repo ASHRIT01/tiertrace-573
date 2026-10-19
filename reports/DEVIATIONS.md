@@ -51,3 +51,13 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Pass C D016/D017 (Ford 26V236): CONTESTED because X and Y label different sentences (event-matching artefact, not a true disagreement). Rules unchanged.
 - Rule ambiguity: date taken from a "Month(s):" section header vs. from the sentence itself (D036, D039, D040); Pass C resolved to the sentence. Rules not changed.
 - Rule ambiguity: Ford CCRG referral typed INVESTIGATION_START vs FILER_AWARENESS (26V236); consistent within the batch only.
+
+## Test-B batch 3 (b03)
+- Pass B (opus) isolation: printing all texts at once made the tool save the output to a file outside the batch directory; the agent did not open it and re-printed in smaller groups.
+- Rule problem: date ranges written "March and April 2026", "From November 2025, through June 2026", "5/5-6/2026" are split by the frozen code into two events (26V415, 26V405, 26V413); Pass B keeps one event with the full range. Pass C said the rules do not settle it. Not fixed. (26V405 handled with a dates override.)
+- Rule problem: "built on or after <date>" production-window dates read as event dates (26V397, 26V419 Jan 13, 2026); Pass C treated them as window bounds.
+- Rule problem: sentences after a blank line inside a dated entry (26V419) - inherit or undated; Pass C ruled undated.
+- Rule problem: a block Name field that is only a pointer to an attachment (26V510 "See - Seat Belt Assembly Supplier.pdf"): S1 NOT_REPORTED (Pass B, Pass C) vs SUPPORTED (Pass A code). Pass A not changed; Pass C decided.
+- Rule problem: cause stating a mechanism plus "still under investigation" (26V415): SUPPORTED vs INSUFFICIENT; Pass C CONTESTED.
+- Pass C CONTESTED D002/D008/D014 (Ford/IMC, 26V369-26V374 + 26V397) and D042 (26V419) are event pairing artefacts (different sentences paired).
+- Multi-supplier block 26V416: joined names; manual S1/S2 quote override (D-T3).

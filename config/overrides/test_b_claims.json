@@ -263,5 +263,164 @@
   "S1": {
    "quote": "Name: Q'Straint"
   }
+ },
+ "RCLRPT-26V409-2533.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec Industries Inc"
+  }
+ },
+ "RCLRPT-26V413-6519.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: FCA US"
+  }
+ },
+ "RCLRPT-26V436-4136.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Subaru of America, Inc."
+  }
+ },
+ "RCLRPT-26V455-3228.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Nissan Shatai Kyusyu Co., Ltd."
+  }
+ },
+ "RCLRPT-26V501-8521.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Autocar"
+  }
+ },
+ "RCLRPT-26V369-8635.pdf": {
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V370-0555.pdf": {
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V374-8779.pdf": {
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V395-0079.pdf": {
+  "S1": {
+   "quote": "Name: AKRON BRASS COMPANY"
+  }
+ },
+ "RCLRPT-26V397-4460.pdf": {
+  "S1": {
+   "quote": "Name: Indian Motorcycle Company LLC"
+  }
+ },
+ "RCLRPT-26V407-5609.pdf": {
+  "S1": {
+   "quote": "Name: Daimler Truck North America"
+  },
+  "S2": {
+   "quote": "Name: Daimler Truck North America"
+  }
+ },
+ "RCLRPT-26V415-6798.pdf": {
+  "S1": {
+   "quote": "Name: Harman International"
+  },
+  "S2": {
+   "quote": "Name: Harman International"
+  }
+ },
+ "RCLRPT-26V416-1095.pdf": {
+  "S1": {
+   "quote": "Name: GLOBAL LINK DISTRIBUTION,CORP."
+  },
+  "S2": {
+   "quote": "Name: GLOBAL LINK DISTRIBUTION,CORP."
+  }
+ },
+ "RCLRPT-26V419-3539.pdf": {
+  "S1": {
+   "quote": "Name: Valeo CDA (Thailand) Ltd."
+  }
+ },
+ "RCLRPT-26V421-6272.pdf": {
+  "S1": {
+   "quote": "Name: Marelli North America"
+  },
+  "S2": {
+   "quote": "Name: Marelli North America"
+  }
+ },
+ "RCLRPT-26V449-4273.pdf": {
+  "S1": {
+   "quote": "Name: Hiab USA Inc."
+  }
+ },
+ "RCLRPT-26V474-5478.pdf": {
+  "S1": {
+   "quote": "Name: HH Technologies"
+  },
+  "S2": {
+   "quote": "Name: HH Technologies"
+  }
+ },
+ "RCLRPT-26V478-7478.pdf": {
+  "S1": {
+   "quote": "Name: GKS GmbH Schliess Systems"
+  },
+  "S2": {
+   "quote": "Name: GKS GmbH Schliess Systems"
+  }
+ },
+ "RCLRPT-26V496-1031.pdf": {
+  "S1": {
+   "quote": "Name: Topy America Inc."
+  }
+ },
+ "RCLRPT-26V510-6191.pdf": {
+  "S1": {
+   "quote": "Name: See - Seat Belt Assembly Supplier.pdf"
+  },
+  "S2": {
+   "quote": "Name: See - Seat Belt Assembly Supplier.pdf"
+  }
+ },
+ "RCLRPT-26V517-1639.pdf": {
+  "S1": {
+   "quote": "Name: Hiab USA Inc."
+  },
+  "S2": {
+   "quote": "Name: Hiab USA Inc."
+  }
  }
 }

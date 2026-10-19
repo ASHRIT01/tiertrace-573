@@ -1,0 +1,140 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+  "reason": "Ford is the filer (and the block's OEM); the filer's own committees are not supply-chain parties, and no supplier is mentioned, so NONE_MENTIONED."
+ },
+ {
+  "item_id": "D002",
+  "decision": "CONTESTED",
+  "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+  "reason": "The two versions are different sentences (December 2024 team formation vs December 19, 2024 NHTSA contact) paired by alignment; each is a separate valid event with a defensible type (team formed to audit = INVESTIGATION_START; informing NHTSA of a concern, not a 573 filing = OTHER), so neither side is wrong for one shared event."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+  "reason": "Discrepancies identified in an internal audit = internal audit finding reaching the filer -> FILER_AWARENESS."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+  "reason": "Approval of a harvest program to assess remedy success = analysis/testing opened to determine scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+  "reason": "Presenting the matter to an internal committee is a meeting, not a new report reaching the filer -> OTHER."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "On July 7, 2026, Ford’s Field Review Committee reviewed the concern and approved an amendment to the population of the field action.",
+  "reason": "Approving an amendment to the recall population is the decision to recall the added (territory) vehicles covered by this filing -> DECISION."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+  "reason": "Ford is the filer (and the block's OEM); the filer's own committees are not supply-chain parties, and no supplier is mentioned, so NONE_MENTIONED."
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+  "reason": "The two versions are different sentences (December 2024 team formation vs December 19, 2024 NHTSA contact) paired by alignment; each is a separate valid event with a defensible type (team formed to audit = INVESTIGATION_START; informing NHTSA of a concern, not a 573 filing = OTHER), so neither side is wrong for one shared event."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+  "reason": "Discrepancies identified in an internal audit = internal audit finding reaching the filer -> FILER_AWARENESS."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+  "reason": "Approval of a harvest program to assess remedy success = analysis/testing opened to determine scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+  "reason": "Presenting the matter to an internal committee is a meeting, not a new report reaching the filer -> OTHER."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "The power window system configuration may exceed the regulatory requirement for remote actuation closing force, increasing the risk of injury.",
+  "reason": "The cause field only restates that a regulatory requirement may not be met, without a mechanism -> INSUFFICIENT."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+  "reason": "Ford is the filer (and the block's OEM); the filer's own committees are not supply-chain parties, and no supplier is mentioned, so NONE_MENTIONED."
+ },
+ {
+  "item_id": "D014",
+  "decision": "CONTESTED",
+  "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+  "reason": "The two versions are different sentences (December 2024 team formation vs December 19, 2024 NHTSA contact) paired by alignment; each is a separate valid event with a defensible type (team formed to audit = INVESTIGATION_START; informing NHTSA of a concern, not a 573 filing = OTHER), so neither side is wrong for one shared event."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+  "reason": "Discrepancies identified in an internal audit = internal audit finding reaching the filer -> FILER_AWARENESS."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+  "reason": "Approval of a harvest program to assess remedy success = analysis/testing opened to determine scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+  "reason": "Presenting the matter to an internal committee is a meeting, not a new report reaching the filer -> OTHER."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "Not disclosed by the manufacturer.",
+  "reason": "The field is not NR/empty but states no cause; the cause is withheld/unsettled, so INSUFFICIENT, not SUPPORTED."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+  "reason": "Both are SUPPORTED (IMC is the acronym of the block company); Y follows the output format with a name field giving the name as it appears in the narrative, X has a non-schema label key and no name."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+  "reason": "IMC is the filer itself (Indian Motorcycle Company); the filer is not a supply-chain party, and no other supplier is mentioned -> NONE_MENTIONED."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+  "reason": "Discrepancy found in an internal audit = internal audit finding -> FILER_AWARENESS."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "Vehicles built on or after May 20, 2026 were produced with corrected VIN labels and in conjunction, IMC started an investigation.",
+  "reason": "May 20, 2026 only bounds a production window ('built on or after') and is not an event date; the sentence has no own date, so no May 20 event exists (it inherits May 19 instead, see D023)."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "May 19, 2026 an update was made to the manufacturing documentation system updating the VIN Labels.",
+  "reason": "Entry begins with a bare date, so the following undated sentence (May 20 is a production-window bound) inherits May 19, 2026; its action 'IMC started an investigation' -> INVESTIGATION_START."
+ }
+]

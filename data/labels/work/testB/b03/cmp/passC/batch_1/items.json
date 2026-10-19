@@ -1,0 +1,550 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "Ford Motor Company"
+   ],
+   "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 19, 2024",
+   "type": "OTHER",
+   "quote": "On December 19, 2024, Ford informed NHTSA of this concern -- the service tool data confirmed that the software state on the service tool at the time of installation matches the FSA software release for most vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-19",
+    "end": "2024-12-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2025",
+   "type": "OTHER",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 16, 2026",
+   "type": "OTHER",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April 16, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-16",
+    "end": "2026-04-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-26V369-8635.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 7, 2026",
+   "type": "OTHER",
+   "quote": "On July 7, 2026, Ford’s Field Review Committee reviewed the concern and approved an amendment to the population of the field action.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-07",
+    "end": "2026-07-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 7, 2026",
+   "type": "DECISION",
+   "quote": "On July 7, 2026, Ford’s Field Review Committee reviewed the concern and approved an amendment to the population of the field action.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-26V370-0555.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NAMED",
+   "names": [
+    "Ford Motor Company"
+   ],
+   "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-26V370-0555.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 19, 2024",
+   "type": "OTHER",
+   "quote": "On December 19, 2024, Ford informed NHTSA of this concern -- the service tool data confirmed that the software state on the service tool at the time of installation matches the FSA software release for most vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-19",
+    "end": "2024-12-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-26V370-0555.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 2025",
+   "type": "OTHER",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-26V370-0555.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-26V370-0555.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 16, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-16",
+    "end": "2026-04-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 16, 2026",
+   "type": "OTHER",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The power window system configuration may exceed the regulatory requirement for remote actuation closing force, increasing the risk of injury.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "INSUFFICIENT",
+   "quote": "The power window system configuration may exceed the regulatory requirement for remote actuation closing force, increasing the risk of injury.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "Ford Motor Company"
+   ],
+   "quote": "On November 26, 2024, an issue pertaining to incomplete software recall remedies was brought to Ford’s Critical Concern Group (CCRG) for review.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 19, 2024",
+   "type": "OTHER",
+   "quote": "On December 19, 2024, Ford informed NHTSA of this concern -- the service tool data confirmed that the software state on the service tool at the time of installation matches the FSA software release for most vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-19",
+    "end": "2024-12-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2025",
+   "type": "OTHER",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "In March 2025, during a comprehensive audit of software-related FSAs dating back to 2017, discrepancies were identified during the transition between the legacy field service tool, known as IDS, and the new FDRS service tool.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In November 2025, a harvest program was approved to assess the success of remedies applied using the IDS tool for programs administered during this transition period.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-26V374-8779.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 16, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-16",
+    "end": "2026-04-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 16, 2026",
+   "type": "OTHER",
+   "quote": "On April 16, 2026, the matter was presented to the Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-26V395-0079.pdf",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Not disclosed by the manufacturer.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "INSUFFICIENT",
+   "quote": "Not disclosed by the manufacturer.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-26V397-4460.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Indian Motorcycle Company LLC",
+   "status": "SUPPORTED",
+   "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "IMC",
+   "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-26V397-4460.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NAMED",
+   "names": [
+    "Indian Motorcycle Company LLC"
+   ],
+   "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-26V397-4460.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 18, 2026",
+   "type": "OTHER",
+   "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-18",
+    "end": "2026-05-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 18, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On May 18, 2026, in an audit for information documentation, IMC found a discrepancy on the VIN Label for Indian Chief Vintage models.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-26V397-4460.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 20, 2026",
+   "type": "OTHER",
+   "quote": "Vehicles built on or after May 20, 2026 were produced with corrected VIN labels and in conjunction, IMC started an investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-20",
+    "end": "2026-05-20",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-26V397-4460.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 19, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Vehicles built on or after May 20, 2026 were produced with corrected VIN labels and in conjunction, IMC started an investigation.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2026 an update was made to the manufacturing documentation system updating the VIN Labels.",
+   "date_inferred": false
+  }
+ }
+]

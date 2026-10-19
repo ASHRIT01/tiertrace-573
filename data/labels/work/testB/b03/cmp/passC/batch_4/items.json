@@ -1,0 +1,135 @@
+[
+ {
+  "item_id": "D065",
+  "file": "RCLRPT-26V510-6191.pdf",
+  "claim": "S1",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S1",
+   "status": "NOT_REPORTED",
+   "quote": "Name: See - Seat Belt Assembly Supplier.pdf",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S1",
+   "label": "Block reports component manufacturer: See - Seat Belt Assembly Supplier.pdf",
+   "status": "SUPPORTED",
+   "quote": "Name: See - Seat Belt Assembly Supplier.pdf",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D066",
+  "file": "RCLRPT-26V510-6191.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: See - Seat Belt Assembly Supplier.pdf",
+   "status": "INSUFFICIENT",
+   "quote": "Name: See - Seat Belt Assembly Supplier.pdf",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D067",
+  "file": "RCLRPT-26V510-6191.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 2026 to June 2026",
+   "type": "OTHER",
+   "quote": "From May 2026 to June 2026, Stellantis Europe Engineering reviewed information related to those claims and looked into the previous topics known in Europe.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-01",
+    "end": "2026-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 2026 to June 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "From May 2026 to June 2026, Stellantis Europe Engineering reviewed information related to those claims and looked into the previous topics known in Europe.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D068",
+  "file": "RCLRPT-26V510-6191.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 1, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On July 1, 2026, Stellantis Europe S.p.A organization recognized that the defect may occur on particular conditions due to a weakness in the design.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-01",
+    "end": "2026-07-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 1, 2026",
+   "type": "OTHER",
+   "quote": "On July 1, 2026, Stellantis Europe S.p.A organization recognized that the defect may occur on particular conditions due to a weakness in the design.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D069",
+  "file": "RCLRPT-26V517-1639.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Waltco Liftgates (Haib USA, Inc.)",
+   "quote": "U. S. Truck Body was advised on 5/18/2026 via email by Waltco Liftgates (Haib USA, Inc.) that the hydraulic liftgates were defective.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Hiab USA Inc.",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Hiab USA Inc.",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D070",
+  "file": "RCLRPT-26V517-1639.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NAMED",
+   "names": [
+    "Waltco Liftgates",
+    "Haib USA, Inc."
+   ],
+   "quote": "U. S. Truck Body was advised on 5/18/2026 via email by Waltco Liftgates (Haib USA, Inc.) that the hydraulic liftgates were defective.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ }
+]

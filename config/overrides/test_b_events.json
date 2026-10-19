@@ -257,5 +257,157 @@
   "22-May-2026: ARBOC holds": {
    "type": "DECISION"
   }
+ },
+ "RCLRPT-26V369-8635.pdf": {
+  "On June 12, 2026, following": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V397-4460.pdf": {
+  "Vehicles built on or after May 20": {
+   "type": "OTHER"
+  },
+  "June 15, 2026 the IMC": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V405-2481.pdf": {
+  "9/16/2025: Steering gear": {
+   "type": "FILER_AWARENESS"
+  },
+  "5/4/2026: A customer": {
+   "type": "FILER_AWARENESS"
+  },
+  "5/5-6/2026:": {
+   "dates": [
+    {
+     "date_text": "5/5-6/2026",
+     "type": "INVESTIGATION_START"
+    }
+   ]
+  },
+  "6/17/2026: Harbinger": {
+   "type": "DECISION"
+  },
+  "9/10/2026: Harbinger": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V407-5609.pdf": {
+  "Following feedback from a dealer": {
+   "type": "FILER_AWARENESS"
+  },
+  "From June 2 to June 16, 2026": {
+   "type": "INVESTIGATION_START"
+  },
+  "From June 15 to June 22, 2026": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-26V409-2533.pdf": {
+  "In May 2026, Altec identified": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V416-1095.pdf": {
+  "6/5/26: Jayco engineering": {
+   "type": "FILER_AWARENESS"
+  },
+  "6/25/26: The Safety Steering": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V419-3539.pdf": {
+  "On January 26, 2026, during": {
+   "type": "FILER_AWARENESS"
+  },
+  "April 2026 through May 2026 - Nissan": {
+   "type": "INVESTIGATION_START"
+  },
+  "Traceability data confirmed": {
+   "type": "OTHER"
+  },
+  "A review of the sub-supplier": {
+   "ignore_dates": true
+  },
+  "Nissan has identified forty-eight": {
+   "include": false,
+   "why": "status count, not an event"
+  }
+ },
+ "RCLRPT-26V420-2030.pdf": {
+  "=1.": {
+   "include": false,
+   "why": "splitter fragment (list number)"
+  },
+  "=2.": {
+   "include": false,
+   "why": "splitter fragment (list number)"
+  },
+  "=3.": {
+   "include": false,
+   "why": "splitter fragment (list number)"
+  },
+  "On June 18, 2026, during": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V428-5975.pdf": {
+  "2026-06-17 A production": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V455-3228.pdf": {
+  "In May 2025, During": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V474-5478.pdf": {
+  "In March of 2026, Heil": {
+   "type": "FILER_AWARENESS"
+  },
+  "Furthermore, the consensus": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V415-6798.pdf": {
+  "On July 21, 2026, Ford’s Field": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V496-1031.pdf": {
+  "On April 9, 2026, a GM engineer": {
+   "type": "FILER_AWARENESS"
+  },
+  "GM’s investigation identified": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-26V501-8521.pdf": {
+  "April 20, 2026, during a routine": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V503-1662.pdf": {
+  "On August 3, 2026, Forest": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V517-1639.pdf": {
+  "=U.": {
+   "include": false,
+   "why": "splitter fragment (U.S.)"
+  },
+  "=S.": {
+   "include": false,
+   "why": "splitter fragment (U.S.)"
+  },
+  "U.S. Truck Body has no knowledge": {
+   "include": false,
+   "why": "statement of no knowledge"
+  },
+  "Truck Body was advised on 5/18/2026": {
+   "type": "SUPPLIER_NOTICE"
+  }
  }
 }

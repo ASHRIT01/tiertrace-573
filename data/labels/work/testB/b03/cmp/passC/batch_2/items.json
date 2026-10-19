@@ -1,0 +1,438 @@
+[
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/17/2026",
+   "type": "FILER_AWARENESS",
+   "quote": "Subsequent to the original Part 573 submission, three (3) vehicles outside the initially identified population presented related conditions.",
+   "inherited_date": true,
+   "entry_quote": "6/17/2026: Harbinger’s Vehicle Safety Committee met on 6/17/26 and determined this condition could pose an unreasonable risk to public safety in violation of the Safety Act",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "6/17/2026",
+   "type": "OTHER",
+   "quote": "Subsequent to the original Part 573 submission, three (3) vehicles outside the initially identified population presented related conditions.",
+   "inherited_date": true,
+   "entry_quote": "6/17/2026: Harbinger’s Vehicle Safety Committee met on 6/17/26 and determined this condition could pose an unreasonable risk to public safety in violation of the Safety Act and that a Part 573 recall should commence to appropriately address the condition.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-17",
+    "end": "2026-06-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/17/2026",
+   "type": "OTHER",
+   "quote": "Although none of these vehicles had received the initial recall remedy, Harbinger elected out of an abundance of caution to expand the population of potentially affected vehicles and to revise the remedy.",
+   "inherited_date": true,
+   "entry_quote": "6/17/2026: Harbinger’s Vehicle Safety Committee met on 6/17/26 and determined this condition could pose an unreasonable risk to public safety in violation of the Safety Act and that a Part 573 recall should commence to appropriately address the condition.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-17",
+    "end": "2026-06-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "6/17/2026",
+   "type": "DECISION",
+   "quote": "Although none of these vehicles had received the initial recall remedy, Harbinger elected out of an abundance of caution to expand the population of potentially affected vehicles and to revise the remedy.",
+   "inherited_date": true,
+   "entry_quote": "6/17/2026: Harbinger’s Vehicle Safety Committee met on 6/17/26 and determined this condition could pose an unreasonable risk to public safety in violation of the Safety Act",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "7/28/2026",
+   "type": "OTHER",
+   "quote": "The truck was repaired.",
+   "inherited_date": true,
+   "entry_quote": "7/28/2026: Customer 1 brought a truck to the dealer for an unrelated repair; during inspection the dealer found a missing ERCB bolt.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-28",
+    "end": "2026-07-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "7/28/2026",
+   "type": "FILER_AWARENESS",
+   "quote": "7/28/2026: Customer 1 brought a truck to the dealer for an unrelated repair; during inspection the dealer found a missing ERCB bolt.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "7/30/2026",
+   "type": "OTHER",
+   "quote": "7/30/2026: Customer 2 complained of steering play, and dealer inspection of the vehicle found 3 missing ERCB bolts.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-30",
+    "end": "2026-07-30",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "7/30/2026",
+   "type": "FILER_AWARENESS",
+   "quote": "7/30/2026: Customer 2 complained of steering play, and dealer inspection of the vehicle found 3 missing ERCB bolts.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "8/24/2026",
+   "type": "FILER_AWARENESS",
+   "quote": "8/24/2026: Customer 3 complained of alignment issues, and dealer inspection found 2 missing ERCB bolts.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "8/24/2026",
+   "type": "OTHER",
+   "quote": "8/24/2026: Customer 3 complained of alignment issues, and dealer inspection found 2 missing ERCB bolts.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-08-24",
+    "end": "2026-08-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "7/28/2026 - 9/10/2026",
+   "type": "INVESTIGATION_START",
+   "quote": "7/28/2026 - 9/10/2026: Harbinger Engineering evaluated whether the cause of the missing ERCB bolts was the same underlying condition as seen in the initial recalled vehicles, and determined that it was likely the result of the same condition.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "7/28/2026 - 9/10/2026",
+   "type": "OTHER",
+   "quote": "7/28/2026 - 9/10/2026: Harbinger Engineering evaluated whether the cause of the missing ERCB bolts was the same underlying condition as seen in the initial recalled vehicles, and determined that it was likely the result of the same condition.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-28",
+    "end": "2026-09-10",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-26V405-2481.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "7/28/2026 - 9/10/2026",
+   "type": "OTHER",
+   "quote": "To better repair the condition, Harbinger developed and validated a new remedy that increases the friction between the ERCB and the mounting member and changes the torque procedure to torque to angle for higher accuracy.",
+   "inherited_date": true,
+   "entry_quote": "7/28/2026 - 9/10/2026: Harbinger Engineering evaluated whether the cause of the missing ERCB bolts was the same underlying condition as seen in the initial recalled vehicles, and determined that it was likely the result of the same condition.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-28",
+    "end": "2026-09-10",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-26V407-5609.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Daimler Truck North America",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Daimler Truck North America",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "DTNA",
+   "quote": "On June 24, 2026, DTNA determined that a defect related to motor vehicle safety may exist.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-26V407-5609.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 27, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Following feedback from a dealer about a potential issue with the entrance door, on May 27, 2026, DTNA initiated a review of the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "May 27, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "Following feedback from a dealer about a potential issue with the entrance door, on May 27, 2026, DTNA initiated a review of the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-27",
+    "end": "2026-05-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-26V407-5609.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 30, 2026",
+   "type": "NHTSA_FILING",
+   "quote": "On July 30, 2026, DTNA updated its Defect Information Report to include a description of the recall remedy.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 30, 2026",
+   "type": "OTHER",
+   "quote": "On July 30, 2026, DTNA updated its Defect Information Report to include a description of the recall remedy.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-30",
+    "end": "2026-07-30",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-26V407-5609.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 25, 2026",
+   "type": "OTHER",
+   "quote": "On August 25, 2026, DTNA further amended the Defect Information report by updating the description of the recall remedy, listing the planned interim owner notification dates, and updating the planned final owner notification dates.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-08-25",
+    "end": "2026-08-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "August 25, 2026",
+   "type": "NHTSA_FILING",
+   "quote": "On August 25, 2026, DTNA further amended the Defect Information report by updating the description of the recall remedy, listing the planned interim owner notification dates, and updating the planned final owner notification dates.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-26V409-2533.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 19, 2026",
+   "type": "OTHER",
+   "quote": "After identifying the specific jobs that could have been shipped with incorrect ratings, on June 19, 2026, Altec determined that a field action was needed to communicate the risk that, while using the pole rack at full capacity",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-19",
+    "end": "2026-06-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 19, 2026",
+   "type": "DECISION",
+   "quote": "After identifying the specific jobs that could have been shipped with incorrect ratings, on June 19, 2026, Altec determined that a field action was needed to communicate the risk",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-26V413-6519.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025, through June 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "From November 2025, through June 2026, FCA US TSRC reviewed warranty data, field records, and customer assistance records to understand potential customer consequence and vehicle scope.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "From November 2025, through June 2026, FCA US TSRC held regular meetings with FCA US Engineering, Manufacturing, and Supplier Operations to understand all potential failure modes related to the shifter module display performance.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-26V413-6519.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 10, 2026",
+   "type": "OTHER",
+   "quote": "On June 10, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a shifter module display not indicating the gear positions and the relationship to each other, potentially resulting in a noncompliance with FMVSS No.102.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June 10, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On June 10, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a shifter module display not indicating the gear positions and the relationship to each other, potentially resulting in a noncompliance with FMVSS No.102.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-10",
+    "end": "2026-06-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-26V415-6798.pdf",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "status": "SUPPORTED",
+   "quote": "Loss of Pedestrian Alert function can occur due a software issue within the DSP module or an additional non-DSP related causal factor that is still under investigation.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "Loss of Pedestrian Alert function can occur due a software issue within the DSP module or an additional non-DSP related causal factor that is still under investigation.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-26V415-6798.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 2026",
+   "type": "OTHER",
+   "quote": "In March and April 2026, CCRG analyzed warranty claims and began its technical investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March and April 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "In March and April 2026, CCRG analyzed warranty claims and began its technical investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-26V415-6798.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "July 2026",
+   "type": "OTHER",
+   "quote": "By late June and July 2026, Ford’s Audio and IVI teams determined that the additional PAS system concern is related to a transient interaction between the ACM and the Accessory Protocol Interface Module (APIM) rather than a persistent hardware defect.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-01",
+    "end": "2026-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]
