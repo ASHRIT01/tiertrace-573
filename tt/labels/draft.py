@@ -121,6 +121,16 @@ def build_pass_a(selection: list[dict], drafts30: list[dict], pdf_dir: Path, ev_
             rec["note"] = d.get("note", "")
             if f in claim_overrides:
                 rec = apply_claim_overrides(rec, claim_overrides[f])
+        # normalise older drafts to the current rules: extra claims (e.g. 'C2' mechanism notes) go to the note;
+        # an INSUFFICIENT S2 with no narrative reference quotes the block's Name line
+        extra = [c for c in rec["claims"] if c["id"] not in ("S1", "S2")]
+        if extra:
+            rec["claims"] = [c for c in rec["claims"] if c["id"] in ("S1", "S2")]
+            rec["note"] = (rec.get("note", "") + " " + " ".join(f"[{c['id']}: {c.get('label', '')}: \"{c.get('quote', '')}\"]" for c in extra)).strip()
+        s1 = next(c for c in rec["claims"] if c["id"] == "S1")
+        s2 = next(c for c in rec["claims"] if c["id"] == "S2")
+        if s2["status"] == "INSUFFICIENT" and not s2.get("quote") and s1["status"] == "SUPPORTED":
+            s2["quote"], s2["section"] = s1["quote"], "block"
         rec.update({"year": s["year"], "origin": s["origin"]})
         out.append(rec)
     return out

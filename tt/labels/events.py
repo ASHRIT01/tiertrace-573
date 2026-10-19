@@ -145,16 +145,7 @@ def build(raw_chron: str, filing: date | None, overrides: dict | None = None, su
         return [], [(x["text"], "NR chronology") for x in sents]
     if not sents or (POINTER.search(flat) and len(flat) < 260):
         return [], [(x["text"], "pointer chronology") for x in sents]
-    # years of fully dated expressions (context for year-less dates)
-    years = set()
-    m_all = re.search(r"all dates (?:are )?(?:in )?(\d{4})", flat, re.I)   # 'All dates 2020': explicit context year
-    for x in ([] if m_all else sents):
-        for d, _ in find_dates(x["text"]):
-            sp = parse_span(d)
-            if sp and not sp.inferred and not sp.year_from_context:
-                years.update({sp.start.year, sp.end.year} if sp.granularity != "range" else {sp.end.year})
-    if m_all:
-        years = {int(m_all[1])}
+    years = _years(sents, flat)
     events, excluded = [], []
     seen_sent = set()
     cur = None           # (date_text, entry sentence, in_entry)
@@ -203,6 +194,25 @@ def build(raw_chron: str, filing: date | None, overrides: dict | None = None, su
             events.append({"date_text": "", "type": t0, "quote": _cut(quote_base, None), "inherited_date": False, "date_inferred": True,
                            "date_inferred_from": cur[0] if cur else None, "span": None})
     return events, excluded
+
+
+def _years(sents: list[dict], flat: str) -> set:
+    """Years of the fully dated expressions in a chronology (context for year-less dates); 'All dates 2020' overrides."""
+    m_all = re.search(r"all dates (?:are )?(?:in )?(\d{4})", flat, re.I)
+    if m_all:
+        return {int(m_all[1])}
+    years = set()
+    for x in sents:
+        for d, _ in find_dates(x["text"]):
+            sp = parse_span(d)
+            if sp and not sp.inferred and not sp.year_from_context:
+                years.update({sp.start.year, sp.end.year} if sp.granularity != "range" else {sp.end.year})
+    return years
+
+
+def chronology_years(raw_chron: str) -> set:
+    sents = sentences(raw_chron)
+    return _years(sents, " ".join(x["text"] for x in sents))
 
 
 def load_overrides(path: str | Path = "config/event_overrides.json") -> dict:

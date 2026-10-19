@@ -49,7 +49,9 @@ def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144,
                     ex = None
                 rec = {"file": name, "extraction": ex, "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False,
                        "eval_count": r.eval_count, "eval_duration_ns": r.eval_duration,
-                       "prompt_eval_count": r.prompt_eval_count, "prompt_eval_duration_ns": r.prompt_eval_duration}
+                       "prompt_eval_count": r.prompt_eval_count, "prompt_eval_duration_ns": r.prompt_eval_duration,
+                       "done_reason": getattr(r, "done_reason", None), "total_duration_ns": getattr(r, "total_duration", None),
+                       "raw": r.message.content if ex is None else None}
             except Exception as e:  # keep going; record the failure
                 rec = {"file": name, "extraction": None, "error": str(e), "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False}
             recs.append(rec)
