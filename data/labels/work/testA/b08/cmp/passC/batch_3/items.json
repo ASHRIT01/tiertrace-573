@@ -1,0 +1,613 @@
+[
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2024",
+   "type": "OTHER",
+   "quote": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-01",
+    "end": "2024-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In June 2025, the supplier conducted a CT analysis of the cell modules from 3 of the 4 thermal events referenced above and was unable to find a root cause within the battery cell module.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June 2025",
+   "type": "OTHER",
+   "quote": "In June 2025, the supplier conducted a CT analysis of the cell modules from 3 of the 4 thermal events referenced above and was unable to find a root cause within the battery cell module.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-01",
+    "end": "2025-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June-July 2025",
+   "type": "OTHER",
+   "quote": "In June-July 2025, after the supplier’s inconclusive CT Results, VW and the supplier investigated other potential causes/influences within the vehicle but outside of the HV battery.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-01",
+    "end": "2025-07-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June-July 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In June-July 2025, after the supplier’s inconclusive CT Results, VW and the supplier investigated other potential causes/influences within the vehicle but outside of the HV battery.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "In November 2025, the supplier identified the specific modules with the shifted electrode condition, and based on that, the vehicle population was identified.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "In November 2025, the supplier identified the specific modules with the shifted electrode condition, and based on that, the vehicle population was identified.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 26, 2025",
+   "type": "OTHER",
+   "quote": "On November 26, 2025, this topic was presented to the Volkswagen Product Safety Committee and a recall for vehicles built with affected HV battery cell modules was decided.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 26, 2025",
+   "type": "DECISION",
+   "quote": "On November 26, 2025, this topic was presented to the Volkswagen Product Safety Committee and a recall for vehicles built with affected HV battery cell modules was decided.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D044",
+  "file": "RCLRPT-25V836-1434.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 10, 2025",
+   "type": "DECISION",
+   "quote": "On December 10, 2025, the new information from the supplier was presented to the Volkswagen Product Safety Committee and a recall for additional vehicles built with the additional HV battery cell modules was decided.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 10, 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "On December 10, 2025, the new information from the supplier was presented to the Volkswagen Product Safety Committee and a recall for additional vehicles built with the additional HV battery cell modules was decided.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-10",
+    "end": "2025-12-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D045",
+  "file": "RCLRPT-25V870-2680.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Q’Straint",
+   "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Qstraint Q'Straint",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Qstraint",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D046",
+  "file": "RCLRPT-25V870-2680.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "American Seating",
+    "Q’Straint"
+   ],
+   "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D047",
+  "file": "RCLRPT-25V870-2680.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "11/03/2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "11/03/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-03",
+    "end": "2025-11-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D048",
+  "file": "RCLRPT-25V870-2680.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "12/12/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "12/12/2025 GILLIG completed population analysis and identified four (4) vehicles potentially affected.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "12/12/2025",
+   "type": "OTHER",
+   "quote": "12/12/2025 GILLIG completed population analysis and identified four (4) vehicles potentially affected.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-12",
+    "end": "2025-12-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D049",
+  "file": "RCLRPT-25V870-2680.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "11/03/2025",
+   "type": "OTHER",
+   "quote": "American Seating supplies GILLIG with the securement device assembly that includes the defect Q’Straint parts.",
+   "inherited_date": true,
+   "entry_quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-03",
+    "end": "2025-11-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D050",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "Field Service Action decision confirmed by Volvo Car Corporation",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 B.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2025-12-26",
+   "type": "DECISION",
+   "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-12-26",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D051",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "2025-12-26 C.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 26th, 2025",
+   "type": "DECISION",
+   "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall as it was judged as an increased risk towards motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D052",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 2025",
+   "type": "OTHER",
+   "quote": "Implementation date of Field Service Action 2025-12-26 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-01",
+    "end": "2025-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D053",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-12-26",
+   "type": "FILER_AWARENESS",
+   "quote": "Condition detected by?",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D054",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "(Market VR**, internal, inspection, testing) Market VR D.",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D055",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-12-26",
+   "type": "FILER_AWARENESS",
+   "quote": "Number of VR with the condition, reported to Volvo Cars from NSC?",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D056",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "0 E.",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D057",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "Total number of cars included in VRs concerning the condition?",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D058",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-12-26",
+   "type": "OTHER",
+   "quote": "0 F.",
+   "inherited_date": true,
+   "entry_quote": "2025-12-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D059",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-12-26",
+   "type": "FILER_AWARENESS",
+   "quote": "Implementation date of Field Service Action 2025-12-26 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D060",
+  "file": "RCLRPT-26V001-4623.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "December 26th, 2025",
+   "type": "OTHER",
+   "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall as it was judged as an increased risk towards motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-26",
+    "end": "2025-12-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D061",
+  "file": "RCLRPT-26V007-7238.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 21, 2025",
+   "type": "OTHER",
+   "quote": "Reference: REPORT NUMBER 223-2401438-TEST",
+   "inherited_date": true,
+   "entry_quote": "October 21, 2025 – NHTSA notified East of failed test.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-21",
+    "end": "2025-10-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D062",
+  "file": "RCLRPT-26V018-6626.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "Through its investigation of this issue, Lucid determined that in October 2025 Lucid engineers observed a software test vehicle with a blank rearview image when it was put in reverse.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Through its investigation of this issue, Lucid determined that in October 2025 Lucid engineers observed a software test vehicle with a blank rearview image when it was put in reverse.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D063",
+  "file": "RCLRPT-26V018-6626.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 10, 2025",
+   "type": "OTHER",
+   "quote": "A stop sale was issued on December 10, 2025, while Lucid investigated if other vehicles in the field had the same issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-10",
+    "end": "2025-12-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "By December 2025, the Lucid Quality Team was able to verify other customer cases with the rearview image issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

@@ -1,0 +1,393 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-25V702-0345.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "08/15/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "International begins a limited inspection of other bus chassis to determine if the same issue is present.",
+   "inherited_date": true,
+   "entry_quote": "08/15/2025 A bus chassis that would not shift into reverse is identified at the Tulsa Bus Plant.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "08/15/2025",
+   "type": "OTHER",
+   "quote": "International begins a limited inspection of other bus chassis to determine if the same issue is present.",
+   "inherited_date": true,
+   "entry_quote": "08/15/2025 A bus chassis that would not shift into reverse is identified at the Tulsa Bus Plant.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-15",
+    "end": "2025-08-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-25V702-0345.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "08/19/2025-09/17/2025",
+   "type": "OTHER",
+   "quote": "08/19/2025-09/17/2025 Curtiss-Wright completes its inspection of 10 suspect shift actuators returned by International, finding there was unexpected variation in the neutral set point of the actuator that could contribute to a vehicle not being able to shift into reverse.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-19",
+    "end": "2025-09-17",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "08/19/2025-09/17/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "08/19/2025-09/17/2025 Curtiss-Wright completes its inspection of 10 suspect shift actuators returned by International, finding there was unexpected variation in the neutral set point of the actuator that could contribute to a vehicle not being able to shift into reverse.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-25V702-0345.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "09/18/2025-10/02/2025",
+   "type": "OTHER",
+   "quote": "09/18/2025-10/02/2025 Curtiss-Wright continues its investigation into the issue and determines that the actuator’s input shaft was updated from powdered metal to cut steel which allowed a backlash to occur during the calibration process.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-18",
+    "end": "2025-10-02",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "09/18/2025-10/02/2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "09/18/2025-10/02/2025 Curtiss-Wright continues its investigation into the issue and determines that the actuator’s input shaft was updated from powdered metal to cut steel which allowed a backlash to occur during the calibration process.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-25V706-1572.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: TriMark Corporation Spartan Fire LLC",
+   "status": "INSUFFICIENT",
+   "quote": "May 5, 2025 – Spartan notified supplier of issue.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Spartan Fire Chassis",
+   "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-25V706-1572.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NAMED",
+   "names": [
+    "Spartan Fire Chassis"
+   ],
+   "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "May 5, 2025 – Spartan notified supplier of issue.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-25V706-1572.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 1, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 1, 2025",
+   "type": "OTHER",
+   "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-25V706-1572.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 14, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "October 14, 2025 - Alexis Fire Equipment was notified by Spartan about the recall and provided with the recall population",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-14",
+    "end": "2025-10-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 14, 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "October 14, 2025 - Alexis Fire Equipment was notified by Spartan about the recall and provided with the recall population",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-25V744-2593.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2024 - October 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 2024 - October 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "For (1), the testing and analysis found that, if the vehicle is shifted into reverse within 0.7 to 2.6 seconds after ignition on, a vehicle speed is detected during the first image frame process, and the first image frame process occurs within 1.1 to 1.4 seconds after shifting into reverse",
+   "inherited_date": true,
+   "entry_quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-01",
+    "end": "2025-10-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-25V744-2593.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "December 2024 - October 2025",
+   "type": "DECISION",
+   "quote": "As a result, Toyota decided to conduct a recall.",
+   "inherited_date": true,
+   "entry_quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-25V749-9037.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 31, 2024",
+   "type": "OTHER",
+   "quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 31, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-08-31",
+    "end": "2024-08-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-25V749-9037.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September 12 – November 13, 2024",
+   "type": "OTHER",
+   "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+   "inherited_date": true,
+   "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-12",
+    "end": "2024-11-13",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-25V749-9037.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 31, 2024",
+   "type": "OTHER",
+   "quote": "Arrangements were made to obtain the valves for analysis.",
+   "inherited_date": true,
+   "entry_quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-25V770-7340.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 24, 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-24",
+    "end": "2025-10-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-25V770-7340.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September 10, 2025",
+   "type": "OTHER",
+   "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-10",
+    "end": "2025-09-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-25V770-7340.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 24, 2025",
+   "type": "DECISION",
+   "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+   "inherited_date": true,
+   "entry_quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-24",
+    "end": "2025-10-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-25V770-7340.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 27, 2025",
+   "type": "OTHER",
+   "quote": "On Monday, October 27, 2025, a meeting was called to advise strategic Micro Bird personnel that a recall notification was received from its provider and that a recall campaign would be launched.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-27",
+    "end": "2025-10-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-25V807-4146.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 2025 through September 2025",
+   "type": "OTHER",
+   "quote": "The trapped air may create a separation between the components, resulting in a bubble appearance.",
+   "inherited_date": true,
+   "entry_quote": "August 2025 through September 2025 – Nissan and the supplier conducted duplication testing and discovered the bubble type delamination was potentially caused by foreign particles trapped between the glass sheets and the PVB film.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-01",
+    "end": "2025-09-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ }
+]

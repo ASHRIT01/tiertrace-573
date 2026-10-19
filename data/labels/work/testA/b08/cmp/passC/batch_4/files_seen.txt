@@ -1,0 +1,9 @@
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/LABELING_RULES.md
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/items.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/texts/RCLRPT-26V059-8421.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/texts/RCLRPT-26V062-8099.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/texts/RCLRPT-26V068-2387.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/texts/RCLRPT-26V110-5688.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/make_decisions.py
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/verify.py
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b08/cmp/passC/batch_4/decisions.json

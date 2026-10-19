@@ -118,6 +118,14 @@ def merge(split):
                 recs += json.loads((d / fn).read_text())
         (out / f"{split}_{name}.json").write_text(json.dumps(recs, indent=1, ensure_ascii=False))
         print(name, len(recs))
+    dec, its = [], []
+    for d in sorted((ROOT / f"data/labels/work/{split}").glob("b*")):
+        for f in sorted((d / "cmp/passC").glob("batch_*/decisions.json")):
+            dec += [{**x, "batch": d.name} for x in json.loads(f.read_text())]
+        if (d / "cmp/items.json").exists():
+            its += [{**x, "batch": d.name} for x in json.loads((d / "cmp/items.json").read_text())]
+    (out / f"{split}_passC_decisions.json").write_text(json.dumps(dec, indent=1, ensure_ascii=False)); print("passC decisions", len(dec))
+    (out / f"{split}_passC_items.json").write_text(json.dumps(its, indent=1, ensure_ascii=False)); print("passC items", len(its))
     pb = []
     for d in sorted((ROOT / f"data/labels/work/{split}").glob("b*")):
         for f in sorted((d / "passB").glob("batch_*/passB.json")):

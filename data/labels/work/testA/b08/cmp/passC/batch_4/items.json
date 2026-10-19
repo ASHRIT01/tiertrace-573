@@ -1,0 +1,322 @@
+[
+ {
+  "item_id": "D064",
+  "file": "RCLRPT-26V059-8421.pdf",
+  "claim": "S1",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S1",
+   "status": "NOT_REPORTED",
+   "quote": "Name: See -Tow Module Supplier Information.pdf",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S1",
+   "label": "Block reports component manufacturer: See -Tow Module Supplier Information.pdf",
+   "status": "SUPPORTED",
+   "quote": "Name: See -Tow Module Supplier Information.pdf",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D065",
+  "file": "RCLRPT-26V059-8421.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: See -Tow Module Supplier Information.pdf",
+   "status": "INSUFFICIENT",
+   "quote": "Name: See -Tow Module Supplier Information.pdf",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D066",
+  "file": "RCLRPT-26V062-8099.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 4, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On December 4, 2025, the topic was introduced to Ford’s Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-04",
+    "end": "2025-12-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 4, 2025",
+   "type": "OTHER",
+   "quote": "On December 4, 2025, the topic was introduced to Ford’s Critical Concern Review Group (CCRG).",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D067",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Mobis North America Electrified (\"MNAe\")",
+   "status": "INSUFFICIENT",
+   "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "MNAe",
+   "quote": "On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D068",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "MNAe"
+   ],
+   "quote": "On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D069",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+   "inherited_date": true,
+   "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 18, 2025",
+   "type": "OTHER",
+   "quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-18",
+    "end": "2025-11-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D070",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+   "inherited_date": true,
+   "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+   "inherited_date": true,
+   "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D071",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "NASO continued its investigation in coordination with HMC and MNAe.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "NASO continued its investigation in coordination with HMC and MNAe.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D072",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "MNAe’s report confirmed that the issue could occur when BSAs were removed from the assembly line for rework and were subsequently reintroduced at a later stage allowing certain torque confirmation processes to be bypassed.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "During this period, NASO requested and reviewed additional information regarding the BSA manufacturing process, torque application at the relevant assembly stations, process data, rework flow procedures, and quality inspection practices.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D073",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "MNAe’s report confirmed that the issue could occur when BSAs were removed from the assembly line for rework and were subsequently reintroduced at a later stage allowing certain torque confirmation processes to be bypassed.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D074",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "November 2025",
+   "type": "OTHER",
+   "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+   "inherited_date": true,
+   "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D075",
+  "file": "RCLRPT-26V068-2387.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D076",
+  "file": "RCLRPT-26V110-5688.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 19, 2026",
+   "type": "DECISION",
+   "quote": "Based on this information, Toyota determined on February 19, 2026 that the vehicles identified in Section 3 above were sold with headlamp assemblies that may not meet the requirements of FMVSS No. 108, paragraph S10.18.5.1.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "February 19, 2026",
+   "type": "OTHER",
+   "quote": "Based on this information, Toyota determined on February 19, 2026 that the vehicles identified in Section 3 above were sold with headlamp assemblies that may not meet the requirements of FMVSS No. 108, paragraph S10.18.5.1.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-19",
+    "end": "2026-02-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

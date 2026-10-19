@@ -527,5 +527,127 @@
   "S1": {
    "quote": "Name: Aptiv"
   }
+ },
+ "RCLRPT-25V906-7035.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: BMW AG"
+  }
+ },
+ "RCLRPT-25V690-8658.pdf": {
+  "S1": {
+   "quote": "Name: Sistemas Mecatrónicos InTiCa S.A.P.I."
+  },
+  "S2": {
+   "quote": "Name: Sistemas Mecatrónicos InTiCa S.A.P.I."
+  }
+ },
+ "RCLRPT-25V702-0345.pdf": {
+  "S1": {
+   "quote": "Name: Curtiss-Wright"
+  }
+ },
+ "RCLRPT-25V706-1572.pdf": {
+  "S1": {
+   "quote": "Name: TriMark Corporation"
+  }
+ },
+ "RCLRPT-25V744-2593.pdf": {
+  "S1": {
+   "quote": "Name: DENSO International America, Inc."
+  },
+  "S2": {
+   "quote": "Name: DENSO International America, Inc."
+  }
+ },
+ "RCLRPT-25V749-9037.pdf": {
+  "S1": {
+   "quote": "Name: OMB-Saleri S.P.A."
+  }
+ },
+ "RCLRPT-25V770-7340.pdf": {
+  "S1": {
+   "quote": "Name: Q'STRAINT"
+  }
+ },
+ "RCLRPT-25V801-2150.pdf": {
+  "S1": {
+   "quote": "Name: Nova Industries/Mayco International, LLC"
+  },
+  "S2": {
+   "quote": "Name: Nova Industries/Mayco International, LLC"
+  }
+ },
+ "RCLRPT-25V807-4146.pdf": {
+  "S1": {
+   "quote": "Name: VITRO"
+  }
+ },
+ "RCLRPT-25V818-2172.pdf": {
+  "S1": {
+   "quote": "Name: Adient"
+  }
+ },
+ "RCLRPT-25V832-9661.pdf": {
+  "S1": {
+   "quote": "Name: Virnig Manufacturing"
+  },
+  "S2": {
+   "quote": "Name: Virnig Manufacturing"
+  }
+ },
+ "RCLRPT-25V834-3517.pdf": {
+  "S1": {
+   "quote": "Name: DANA TM4 Italia S.r.l."
+  }
+ },
+ "RCLRPT-25V836-1434.pdf": {
+  "S1": {
+   "quote": "Name: SK Battery America Inc."
+  }
+ },
+ "RCLRPT-25V870-2680.pdf": {
+  "S1": {
+   "quote": "Name: Qstraint"
+  },
+  "S2": {
+   "quote": "Name: Qstraint"
+  }
+ },
+ "RCLRPT-26V001-4623.pdf": {
+  "S1": {
+   "quote": "Name: Shandong Geely Sunwoda Power Battery Co."
+  },
+  "S2": {
+   "quote": "Name: Shandong Geely Sunwoda Power Battery Co."
+  }
+ },
+ "RCLRPT-26V059-8421.pdf": {
+  "S1": {
+   "quote": "Name: See -Tow Module Supplier Information.pdf"
+  },
+  "S2": {
+   "quote": "Name: See -Tow Module Supplier Information.pdf"
+  }
+ },
+ "RCLRPT-26V062-8099.pdf": {
+  "S1": {
+   "quote": "Name: Brugola Industriale USA INC"
+  }
+ },
+ "RCLRPT-26V068-2387.pdf": {
+  "S1": {
+   "quote": "Name: Mobis North America Electrified (\"MNAe\")"
+  }
+ },
+ "RCLRPT-26V110-5688.pdf": {
+  "S1": {
+   "quote": "Name: North American Lighting [“NAL”]"
+  }
  }
 }

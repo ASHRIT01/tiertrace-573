@@ -1,0 +1,111 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "International begins a limited inspection of other bus chassis to determine if the same issue is present.",
+  "reason": "Inspection opened to determine whether other chassis have the issue (scope) = INVESTIGATION_START."
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "Curtiss-Wright completes its inspection of 10 suspect shift actuators returned by International, finding there was unexpected variation in the neutral set point",
+  "reason": "Completion of supplier inspection with a finding is a test result (OTHER), not the start of an investigation."
+ },
+ {
+  "item_id": "D003",
+  "decision": "X",
+  "quote": "Curtiss-Wright continues its investigation into the issue and determines that the actuator’s input shaft was updated from powdered metal to cut steel",
+  "reason": "Supplier's continuing investigation/result; text does not say the supplier informed the filer, so OTHER (test result) rather than SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "Narrative names Spartan Fire Chassis, a short form/brand of block company Spartan Fire LLC; rule says this counts as SUPPORTED."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "Spartan is the filer's chassis maker/block-listed supplier, a supply-chain company named in the chronology = NAMED."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "The claim reached Spartan (supplier), not the filer Alexis; FILER_AWARENESS is for reports reaching the filer, so OTHER."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "October 14, 2025 - Alexis Fire Equipment was notified by Spartan about the recall and provided with the recall population",
+  "reason": "Supplier/chassis maker Spartan tells the filer about its recall = SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle",
+  "reason": "Dated entry sentence reports testing conducted to find scope = INVESTIGATION_START with own date; Y's paired sentence is a test result (would be OTHER), not FILER_AWARENESS."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "As a result, Toyota decided to conduct a recall.",
+  "reason": "Decision to recall is an event (DECISION). No blank line/new entry follows the 'December 2024 - October 2025' entry ('On October 24' starts with 'On'), so per rules it inherits that entry date."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+  "reason": "Filer is The Heil Co.; the report reached Agility (a supplier), not the filer, so OTHER rather than FILER_AWARENESS."
+ },
+ {
+  "item_id": "D011",
+  "decision": "X",
+  "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+  "reason": "An action (recommendation to escalate) inside the dated 'September 12 – November 13, 2024:' entry; valid OTHER event with inherited date."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "Arrangements were made to obtain the valves for analysis.",
+  "reason": "An action inside the 'August 31, 2024:' entry; not remedy logistics or status, so it is an event (OTHER) with inherited date."
+ },
+ {
+  "item_id": "D013",
+  "decision": "Y",
+  "quote": "On Friday, October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint)",
+  "reason": "Receipt of the supplier's recall notice = SUPPLIER_NOTICE event on its own date; Y has it, X omits it."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+  "reason": "September 10, 2025 only bounds a shipment data window; not an event date, so no event."
+ },
+ {
+  "item_id": "D015",
+  "decision": "NEITHER",
+  "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+  "reason": "Event exists, but the preceding sentence starts with 'On', so it is not a dated entry: undated prose gets date_inferred true and empty date_text. It is an internal finding (FILER_AWARENESS), not a defect/recall DECISION.",
+  "corrected": {
+   "date_text": "",
+   "type": "FILER_AWARENESS",
+   "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D016",
+  "decision": "X",
+  "quote": "On Monday, October 27, 2025, a meeting was called to advise strategic Micro Bird personnel that a recall notification was received from its provider",
+  "reason": "A dated meeting is an action/occurrence = OTHER event; Y wrongly omits it."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "The trapped air may create a separation between the components, resulting in a bubble appearance.",
+  "reason": "Explanatory description with no action; not an event."
+ }
+]

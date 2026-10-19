@@ -1,0 +1,3861 @@
+[
+ {
+  "file": "RCLRPT-25V690-8658.pdf",
+  "filer": "Tesla, Inc.",
+  "filing_date": "2025-10-21",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Sistemas Mecatrónicos InTiCa S.A.P.I. SongChuan",
+    "status": "SUPPORTED",
+    "quote": "Name: Sistemas Mecatrónicos InTiCa S.A.P.I.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Sistemas Mecatrónicos InTiCa S.A.P.I. SongChuan",
+    "status": "INSUFFICIENT",
+    "quote": "Name: Sistemas Mecatrónicos InTiCa S.A.P.I.",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "August 8, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "On August 8, 2025, Tesla’s Field Reliability team began investigating incidents identified through service records in which Tesla vehicles were unable to enter drive from a park condition and high coil resistance was found on the pack contactors resulting in contactor replacements.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-08",
+     "end": "2025-08-08",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 8, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "From August 8, 2025, through September 26, 2025, Tesla recovered pack contactors from the field and completed a detailed failure analysis.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-08",
+     "end": "2025-08-08",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 29, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "From September 29, 2025, through October 2, 2025, Tesla reviewed the failure analysis results, repair, and production records.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-29",
+     "end": "2025-09-29",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 3, 2025",
+    "type": "DECISION",
+    "quote": "On October 3, 2025, having completed the investigation and identified the scope of affected vehicles, Tesla made a determination to voluntarily recall the affected vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-03",
+     "end": "2025-10-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of October 7, 2025, Tesla has identified 36 warranty claims and 26 field reports related to this condition.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "Tesla is not aware of any collisions, injuries, or fatalities related to the condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V702-0345.pdf",
+  "filer": "International Motors, LLC",
+  "filing_date": "2025-10-15",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Curtiss-Wright",
+    "status": "SUPPORTED",
+    "quote": "Name: Curtiss-Wright",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Curtiss-Wright",
+    "status": "SUPPORTED",
+    "quote": "08/18/2025 After identifying additional bus chassis that would not shift into reverse, International notifies Curtiss-Wright of the issue.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "08/15/2025",
+    "type": "FILER_AWARENESS",
+    "quote": "08/15/2025 A bus chassis that would not shift into reverse is identified at the Tulsa Bus Plant.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-15",
+     "end": "2025-08-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "08/15/2025",
+    "type": "OTHER",
+    "quote": "International begins a limited inspection of other bus chassis to determine if the same issue is present.",
+    "inherited_date": true,
+    "entry_quote": "08/15/2025 A bus chassis that would not shift into reverse is identified at the Tulsa Bus Plant.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-15",
+     "end": "2025-08-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "08/18/2025",
+    "type": "OTHER",
+    "quote": "08/18/2025 After identifying additional bus chassis that would not shift into reverse, International notifies Curtiss-Wright of the issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-18",
+     "end": "2025-08-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "08/18/2025",
+    "type": "OTHER",
+    "quote": "Curtiss-Wright requests the suspect shift actuators be returned to them for further investigation.",
+    "inherited_date": true,
+    "entry_quote": "08/18/2025 After identifying additional bus chassis that would not shift into reverse, International notifies Curtiss-Wright of the issue.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-18",
+     "end": "2025-08-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "08/19/2025-09/17/2025",
+    "type": "OTHER",
+    "quote": "08/19/2025-09/17/2025 Curtiss-Wright completes its inspection of 10 suspect shift actuators returned by International, finding there was unexpected variation in the neutral set point of the actuator that could contribute to a vehicle not being able to shift into reverse.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-19",
+     "end": "2025-09-17",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "09/18/2025",
+    "type": "OTHER",
+    "quote": "09/18/2025 International initiates a delivery stop at the Tulsa Bus Plant, establishing the clean point.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-09-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "09/18/2025-10/02/2025",
+    "type": "OTHER",
+    "quote": "09/18/2025-10/02/2025 Curtiss-Wright continues its investigation into the issue and determines that the actuator’s input shaft was updated from powdered metal to cut steel which allowed a backlash to occur during the calibration process.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-10-02",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "10/09/2025",
+    "type": "OTHER",
+    "quote": "10/09/2025 – International finalizes the suspect population.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-09",
+     "end": "2025-10-09",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "10/09/2025",
+    "type": "DECISION",
+    "quote": "10/09/2025 – International declares a safety recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-09",
+     "end": "2025-10-09",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Curtiss-Wright"
+   ],
+   "quote": "08/18/2025 After identifying additional bus chassis that would not shift into reverse, International notifies Curtiss-Wright of the issue.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V706-1572.pdf",
+  "filer": "Alexis Fire Equipment Company",
+  "filing_date": "2025-11-18",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: TriMark Corporation Spartan Fire LLC",
+    "status": "SUPPORTED",
+    "quote": "Name: TriMark Corporation",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: TriMark Corporation Spartan Fire LLC",
+    "status": "INSUFFICIENT",
+    "quote": "May 5, 2025 – Spartan notified supplier of issue.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 1, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-05-01",
+     "end": "2025-05-01",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May 5, 2025",
+    "type": "OTHER",
+    "quote": "May 5, 2025 – Spartan notified supplier of issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-05-05",
+     "end": "2025-05-05",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May 19, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "May 19, 2025 – Spartan received parts from field and started internal investigation with Engineering and Supplier.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-05-19",
+     "end": "2025-05-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "June 19, 2025",
+    "type": "OTHER",
+    "quote": "June 19, 2025 – Spartan shipped returned parts back to Supplier.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-06-19",
+     "end": "2025-06-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "June 24, 2025",
+    "type": "OTHER",
+    "quote": "June 24, 2025 – Supplier received parts from Spartan.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-06-24",
+     "end": "2025-06-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 1 – August 8, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "July 1 – August 8, 2025 – Supplier started corrective action request to determine root cause, started cycle testing on door frames, and contained internal inventory.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-07-01",
+     "end": "2025-08-08",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 1 – August 8, 2025",
+    "type": "OTHER",
+    "quote": "Spartan opened PSR, issued SCAR with Supplier, reviewed chassis cab production inventory and identified potential population.",
+    "inherited_date": true,
+    "entry_quote": "July 1 – August 8, 2025 – Supplier started corrective action request to determine root cause, started cycle testing on door frames, and contained internal inventory.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-07-01",
+     "end": "2025-08-08",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 13, 2025",
+    "type": "OTHER",
+    "quote": "August 13, 2025 – Supplier was onsite at Spartan Fire Chassis production to review application of the product, confirmation of the test results, and product inspection procedures.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-13",
+     "end": "2025-08-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 20, 2025",
+    "type": "OTHER",
+    "quote": "August 20, 2025 – Spartan conducted risk assessment and stop ship issued.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-20",
+     "end": "2025-08-20",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 21, 2025",
+    "type": "OTHER",
+    "quote": "August 21, 2025 – Spartan escalated the issue to REV Group Management.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-21",
+     "end": "2025-08-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 29, 2025",
+    "type": "DECISION",
+    "quote": "August 29, 2025 – REV’s senior leadership approved a voluntary recall for this issue",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-29",
+     "end": "2025-08-29",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 5, 2025",
+    "type": "OTHER",
+    "quote": "September 5, 2025 - Spartan determined final population.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-05",
+     "end": "2025-09-05",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 14, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "October 14, 2025 - Alexis Fire Equipment was notified by Spartan about the recall and provided with the recall population",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-14",
+     "end": "2025-10-14",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The cause of the potential failure was a progressive die made the incorrect length of lever arm.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "May 5, 2025 – Spartan notified supplier of issue.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V737-6790.pdf",
+  "filer": "Mazda North American Operations",
+  "filing_date": "2025-11-26",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "September 17, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "September 17, 2025: Mazda received a field report that a 2025 Mazda CX-50 experienced wheel and component detachment.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-17",
+     "end": "2025-09-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 17, 2025",
+    "type": "OTHER",
+    "quote": "After the dealer inspected the vehicle, the bolt that secures the lower control arm ball joint to the steering knuckle was found to be missing on the passenger-side.",
+    "inherited_date": true,
+    "entry_quote": "September 17, 2025: Mazda received a field report that a 2025 Mazda CX-50 experienced wheel and component detachment.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-17",
+     "end": "2025-09-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 17, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "Mazda initiated an investigation.",
+    "inherited_date": true,
+    "entry_quote": "September 17, 2025: Mazda received a field report that a 2025 Mazda CX-50 experienced wheel and component detachment.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-17",
+     "end": "2025-09-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 18 through October 6, 2025",
+    "type": "OTHER",
+    "quote": "September 18 through October 6, 2025: This vehicle has been confirmed as a subject unit for in-plant repair.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-10-06",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 18 through October 6, 2025",
+    "type": "OTHER",
+    "quote": "A review of the in-plant repair records shows that no tightening torque value was recorded for the bolt securing the lower control arm ball joint to the steering knuckle.",
+    "inherited_date": true,
+    "entry_quote": "September 18 through October 6, 2025: This vehicle has been confirmed as a subject unit for in-plant repair.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-10-06",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 18 through October 6, 2025",
+    "type": "OTHER",
+    "quote": "Further investigation confirmed that for some units, repair records were missing or torque entries were not recorded for the bolts removed and reinstalled during the repair process.",
+    "inherited_date": true,
+    "entry_quote": "September 18 through October 6, 2025: This vehicle has been confirmed as a subject unit for in-plant repair.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-10-06",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 18 through October 6, 2025",
+    "type": "OTHER",
+    "quote": "The investigation concluded that operators did not follow in- plant repair procedures.",
+    "inherited_date": true,
+    "entry_quote": "September 18 through October 6, 2025: This vehicle has been confirmed as a subject unit for in-plant repair.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-18",
+     "end": "2025-10-06",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 19 through October 10, 2025",
+    "type": "OTHER",
+    "quote": "September 19 through October 10, 2025: In-plant processes were corrected to ensure that proper repair procedures are followed, and that related documentation is recorded and retained.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-19",
+     "end": "2025-10-10",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 7 through 22, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "October 7 through 22, 2025: Mazda assessed the potential risk associated with this issue, including its impact on vehicle operation and customer safety.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-07",
+     "end": "2025-10-22",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 7 through 22, 2025",
+    "type": "OTHER",
+    "quote": "To better understand the overall extent of the concern, the scope of the affected range was also identified.",
+    "inherited_date": true,
+    "entry_quote": "October 7 through 22, 2025: Mazda assessed the potential risk associated with this issue, including its impact on vehicle operation and customer safety.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-07",
+     "end": "2025-10-22",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 23, 2025",
+    "type": "DECISION",
+    "quote": "October 23, 2025: Mazda held a Quality Audit Committee meeting to review all available information to date and approved a field action for affected MY 2025 CX-50 vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-23",
+     "end": "2025-10-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 26, 2025",
+    "type": "NHTSA_FILING",
+    "quote": "November 26, 2025: This first amendment is being filed to revise the description of the safety risk.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of October 23, 2025, Mazda is aware of one field report and no warranty claims related to this issue in the U.S. and Territories.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "No accidents or injuries have been reported in connection with this concern.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Improper torque application to bolts securing suspension components may result in bolt loosening or detachment, potentially causing separation of the affected components.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V744-2593.pdf",
+  "filer": "Toyota Motor Engineering & Manufacturing",
+  "filing_date": "2025-10-30",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: DENSO International America, Inc. DENSO CORPORATION",
+    "status": "SUPPORTED",
+    "quote": "Name: DENSO International America, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: DENSO International America, Inc. DENSO CORPORATION",
+    "status": "INSUFFICIENT",
+    "quote": "Name: DENSO International America, Inc.",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "April 2024 - December 2024",
+    "type": "INVESTIGATION_START",
+    "quote": "April 2024 - December 2024 Toyota conducted a review of the Japan spec PVM system software programming as a part of a different activity and began bench testing to investigate possibility of (1) rearview image freezing and (2) rearview image not displaying, due to field reports in Japan.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-04-01",
+     "end": "2024-12-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 2024 - December 2024",
+    "type": "OTHER",
+    "quote": "During bench testing, Toyota found (1) if interruptions occurred during the image drawing process, the rearview image could freeze, and (2) if the camera optical alignment data became abnormal during the data writing process due to the Parking Assist ECU power down",
+    "inherited_date": true,
+    "entry_quote": "April 2024 - December 2024 Toyota conducted a review of the Japan spec PVM system software programming as a part of a different activity and began bench testing to investigate possibility of (1) rearview image freezing and (2) rearview image not displaying, due to field reports in Japan.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-04-01",
+     "end": "2024-12-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 2024 - December 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "Additionally, it was discovered during the software programming review that, the possible errors could affect to the global spec PVM systems, including those sold in the U.S.",
+    "inherited_date": true,
+    "entry_quote": "April 2024 - December 2024 Toyota conducted a review of the Japan spec PVM system software programming as a part of a different activity and began bench testing to investigate possibility of (1) rearview image freezing and (2) rearview image not displaying, due to field reports in Japan.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-04-01",
+     "end": "2024-12-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2024 - October 2025",
+    "type": "OTHER",
+    "quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-12-01",
+     "end": "2025-10-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2024 - October 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "For (1), the testing and analysis found that, if the vehicle is shifted into reverse within 0.7 to 2.6 seconds after ignition on, a vehicle speed is detected during the first image frame process, and the first image frame process occurs within 1.1 to 1.4 seconds after shifting into reverse",
+    "inherited_date": true,
+    "entry_quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-12-01",
+     "end": "2025-10-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2024 - October 2025",
+    "type": "OTHER",
+    "quote": "For (2), the testing and analysis found that two 23 millisecond camera optical alignment data writing processes occur randomly during the first 12.5 seconds after ignition on and if the Parking Assist ECU powers off during either of these two data writing processes",
+    "inherited_date": true,
+    "entry_quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle during actual customer usage, and what the phenomenon was if the conditions occurred.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-12-01",
+     "end": "2025-10-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 24, 2025",
+    "type": "DECISION",
+    "quote": "On October 24, 2025, Toyota determined that it is possible that the involved vehicles could experience the conditions above and may not meet the requirements of FMVSS No. 111 S5.5.5, S5.5.6, S6.2.5 and/or S6.2.6.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-24",
+     "end": "2025-10-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "DECISION",
+    "quote": "As a result, Toyota decided to conduct a recall.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 24, 2025",
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V749-9037.pdf",
+  "filer": "The Heil Co.",
+  "filing_date": "2025-10-31",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: OMB-Saleri S.P.A.",
+    "status": "SUPPORTED",
+    "quote": "Name: OMB-Saleri S.P.A.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: OMB-Saleri S.P.A.",
+    "status": "SUPPORTED",
+    "quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "From Agility Fuel Systems Recall 24E-099:",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "August 31, 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-08-31",
+     "end": "2024-08-31",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "6/19/2024",
+    "type": "OTHER",
+    "quote": "A review of service records revealed two additional failure reports (failure dates 6/19/2024 and 8/19/2024).",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-06-19",
+     "end": "2024-06-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "8/19/2024",
+    "type": "OTHER",
+    "quote": "A review of service records revealed two additional failure reports (failure dates 6/19/2024 and 8/19/2024).",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-08-19",
+     "end": "2024-08-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Arrangements were made to obtain the valves for analysis.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "6/19/2024",
+    "span": null
+   },
+   {
+    "date_text": "September 12 – November 13, 2024",
+    "type": "INVESTIGATION_START",
+    "quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-09-12",
+     "end": "2024-11-13",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 12 – November 13, 2024",
+    "type": "OTHER",
+    "quote": "(“OMB”); review of internal Fourier transform infrared (FTIR) results of failed valve; review of OMB’s manufacturing processes; three failed valves were to OMB for analysis; review of preliminary findings from OMB",
+    "inherited_date": true,
+    "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-09-12",
+     "end": "2024-11-13",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 12 – November 13, 2024",
+    "type": "OTHER",
+    "quote": "During this period, three additional valve failures were reported.",
+    "inherited_date": true,
+    "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-09-12",
+     "end": "2024-11-13",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 12 – November 13, 2024",
+    "type": "OTHER",
+    "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+    "inherited_date": true,
+    "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+    "date_inferred": false,
+    "span": {
+     "start": "2024-09-12",
+     "end": "2024-11-13",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 13, 2024",
+    "type": "DECISION",
+    "quote": "November 13, 2024: Agility’s Safety Committee decided to initiate a safety recall to address this condition.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-11-13",
+     "end": "2024-11-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "To date, there have been no reports of accidents, injuries or fires related to this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "From Agility Fuel Systems Recall 24E-099: The root cause of the stress corrosion cracking is still under investigation.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "OMB-Saleri S.P.A."
+   ],
+   "quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB- Saleri S.P.A.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V754-7812.pdf",
+  "filer": "McNeilus Truck & Manufacturing, Inc.",
+  "filing_date": "2025-11-03",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "September 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "In September 2025, in the course of considering a separate and unrelated issue, it came to McNeilus' attention that a Volterra model vehicle was not equipped with amber reflex reflectors at the middle of the refuse body.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-01",
+     "end": "2025-09-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "McNeilus initiated an analysis of the issue including whether the individual vehicle was representative of broader vehicle production and whether the reflectors are required equipment under",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "September 2025",
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "During manufacturing of the refuse body, the intermediate amber reflex reflectors were not installed.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V770-7340.pdf",
+  "filer": "Micro Bird USA LLC",
+  "filing_date": "2025-11-28",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Q'STRAINT",
+    "status": "SUPPORTED",
+    "quote": "Name: Q'STRAINT",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Q'STRAINT",
+    "status": "SUPPORTED",
+    "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "On Friday,",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "October 24, 2025",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-24",
+     "end": "2025-10-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 10, 2025",
+    "type": "OTHER",
+    "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-10",
+     "end": "2025-09-10",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 24, 2025",
+    "type": "DECISION",
+    "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+    "inherited_date": true,
+    "entry_quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-24",
+     "end": "2025-10-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 27, 2025",
+    "type": "OTHER",
+    "quote": "On Monday, October 27, 2025, a meeting was called to advise strategic Micro Bird personnel that a recall notification was received from its provider and that a recall campaign would be launched.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-27",
+     "end": "2025-10-27",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "Micro Bird is not aware of any other claim or complaints or any incidents regarding this defect.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Q'STRAINT"
+   ],
+   "quote": "October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint) that certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V778-6749.pdf",
+  "filer": "Yamaha Motor Corporation, USA",
+  "filing_date": "2025-11-12",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Due to insufficient consideration of the mounting structure of the retainer plate that secures the camshaft, the retainer bolt tightening force may be insufficient.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V801-2150.pdf",
+  "filer": "Mack Trucks, Inc.",
+  "filing_date": "2025-12-11",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Nova Industries/Mayco International, LLC",
+    "status": "SUPPORTED",
+    "quote": "Name: Nova Industries/Mayco International, LLC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Nova Industries/Mayco International, LLC",
+    "status": "INSUFFICIENT",
+    "quote": "Name: Nova Industries/Mayco International, LLC",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "August 06, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "August 06, 2025: Repeat customer complaints drive creation of Quality Review case.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-06",
+     "end": "2025-08-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 04, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "September 04, 2025: Review determines need for corrective action and Safety Office opens product safety investigation.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-04",
+     "end": "2025-09-04",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 03, 2025",
+    "type": "OTHER",
+    "quote": "November 03, 2025: Product Safety Evaluation Committee review, recommends escalation to Product Safety Committee",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-03",
+     "end": "2025-11-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 13, 2025",
+    "type": "DECISION",
+    "quote": "November 13, 2025: Product Safety Committee determines that a product safety defect exists and decides to initiate a recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-13",
+     "end": "2025-11-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "There have been no field reports, warranty claims, accidents or injuries reported with this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Component design inadequate for application",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V807-4146.pdf",
+  "filer": "Nissan North America, Inc.",
+  "filing_date": "2025-11-20",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: VITRO",
+    "status": "SUPPORTED",
+    "quote": "Name: VITRO",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: VITRO",
+    "status": "INSUFFICIENT",
+    "quote": "Nissan quarantined the vehicle and initiated an investigation together with the supplier.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "August 25, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "On August 25, 2025, during a routine yard audit at the Nissan Aguas II plant, a technician identified air bubbles trapped between the two sheets of glass and the Polyvinyl Butyral (PVB) film of the front windshield assembly on a Model Year 2025 Nissan Sentra vehicle.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-25",
+     "end": "2025-08-25",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "Nissan quarantined the vehicle and initiated an investigation together with the supplier.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "August 25, 2025",
+    "span": null
+   },
+   {
+    "date_text": "August 2025 through September 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "August 2025 through September 2025 – Nissan and the supplier conducted duplication testing and discovered the bubble type delamination was potentially caused by foreign particles trapped between the glass sheets and the PVB film.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-01",
+     "end": "2025-09-30",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 2025 through September 2025",
+    "type": "OTHER",
+    "quote": "The trapped air may create a separation between the components, resulting in a bubble appearance.",
+    "inherited_date": true,
+    "entry_quote": "August 2025 through September 2025 – Nissan and the supplier conducted duplication testing and discovered the bubble type delamination was potentially caused by foreign particles trapped between the glass sheets and the PVB film.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-01",
+     "end": "2025-09-30",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 2025",
+    "type": "OTHER",
+    "quote": "October 2025 – Investigation of the supplier’s assembly process determined that the root cause of the delamination was potentially caused by misaligned locator pins within the front windshield glass molds.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-01",
+     "end": "2025-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Misalignment can result in uneven pressure distribution at the upper section of the windshield, which can impede proper air evacuation during assembly.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Nissan assessed the subject windshield and determined that the condition may not comply with certain FMVSS requirements.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 2025",
+    "span": null
+   },
+   {
+    "date_text": "November 13, 2025",
+    "type": "DECISION",
+    "quote": "November 13, 2025 - Nissan decided to conduct a voluntary recall campaign to remedy the potentially affected vehicles in the U.S. market.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-13",
+     "end": "2025-11-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "Nissan is not aware of any warranty claims, accident or injuries related to the subject condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Nissan quarantined the vehicle and initiated an investigation together with the supplier.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V818-2172.pdf",
+  "filer": "Volvo Car USA, LLC",
+  "filing_date": "2025-11-25",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Adient",
+    "status": "SUPPORTED",
+    "quote": "Name: Adient",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Adient",
+    "status": "INSUFFICIENT",
+    "quote": "The root cause is due to maintenance or interruptions in the supplier manufacturing line, resulting in the abort timer starting before the tightening sequence was ready.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "A.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Considered as a critical concern by CCMT*",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "2025-11-19",
+    "type": "OTHER",
+    "quote": "2025-11-19 B.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-19",
+     "end": "2025-11-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-19",
+    "type": "OTHER",
+    "quote": "Field Service Action decision confirmed by Volvo Car Corporation",
+    "inherited_date": true,
+    "entry_quote": "2025-11-19 B.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-19",
+     "end": "2025-11-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "OTHER",
+    "quote": "2025-11-26 C.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "FILER_AWARENESS",
+    "quote": "Condition detected by?",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "OTHER",
+    "quote": "(Market VR**, internal, inspection, testing) Supplier production D.",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "FILER_AWARENESS",
+    "quote": "Number of VR with the condition, reported to Volvo Cars from NSC?",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "OTHER",
+    "quote": "0 E.",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "OTHER",
+    "quote": "Total number of cars included in VRs concerning the condition?",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-26",
+    "type": "OTHER",
+    "quote": "0 F.",
+    "inherited_date": true,
+    "entry_quote": "2025-11-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-11-27",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "Implementation date of Field Service Action 2025-11-27 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-27",
+     "end": "2025-11-27",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 2025",
+    "type": "OTHER",
+    "quote": "Implementation date of Field Service Action 2025-11-27 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-01",
+     "end": "2025-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Based on production records, the supplier identified a number of seats at risk.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-11-27",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The factory cross-checked these findings against vehicle production records and confirmed the affected vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-11-27",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "During the initial investigation the symptom was also verified in a vehicle.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-11-27",
+    "span": null
+   },
+   {
+    "date_text": "November 12, 2025",
+    "type": "OTHER",
+    "quote": "On November 12, 2025, the concern was escalated to the Critical Concern Management Team (CCMT), which ordered a formal investigation including to conduct a risk assessment.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-12",
+     "end": "2025-11-12",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 19, 2025",
+    "type": "OTHER",
+    "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-19",
+     "end": "2025-11-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The root cause is due to maintenance or interruptions in the supplier manufacturing line, resulting in the abort timer starting before the tightening sequence was ready.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The root cause is due to maintenance or interruptions in the supplier manufacturing line, resulting in the abort timer starting before the tightening sequence was ready.",
+   "section": "cause"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V832-9661.pdf",
+  "filer": "Virnig Manufacturing Inc.",
+  "filing_date": "2025-12-01",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Virnig Manufacturing",
+    "status": "SUPPORTED",
+    "quote": "Name: Virnig Manufacturing",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Virnig Manufacturing",
+    "status": "INSUFFICIENT",
+    "quote": "Name: Virnig Manufacturing",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "1) Customer reached out to our Warranty/Service department with an issue regarding the trailer bearings (heard and felt vibrations).",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "FILER_AWARENESS",
+    "quote": "2) Plant Manager was informed of the issue.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Plant Manager then informed the Director of Operations, who then informed top management (company VPs and president).",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "3) Meeting was held with Product Engineering Manager, Manufacturing Engineering Manager, VP of Operations and Engineering, Plant Manager, and Production Specialist.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "FILER_AWARENESS",
+    "quote": "It was brought to light that the problem might be from over torquing the spindle nut.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Determined there could have been discrepancies in the torquing value as well as the procedure.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "4) Additional information was gathered from the customer who initially had reached out with the issue.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "There was a phone call with the members listed above, as well as someone from Sales and another from the Service/Warranty department.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "5) Made the decision to halt shipping additional units until root cause of the issue was determined and any remaining units at the plant could be checked.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "6) After all evidence had been gathered, it was determined that the cause was improper torquing of the spindle nut.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "August 19th",
+    "type": "OTHER",
+    "quote": "7) Once the determination of the root cause, emails went out to all dealers with affected units on August 19th inform them of the defect.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-19",
+     "end": "2025-08-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "August 22nd",
+    "type": "OTHER",
+    "quote": "8) A resolution email was sent August 22nd with details regarding the resolution of the defect to all dealers with affected units.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-22",
+     "end": "2025-08-22",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "August 25th",
+    "type": "OTHER",
+    "quote": "9) Replacement parts were shipped out August 25th.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-25",
+     "end": "2025-08-25",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "October 9th",
+    "type": "OTHER",
+    "quote": "10) Follow up emails were sent out to all dealers with defective trailers on October 9th.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-09",
+     "end": "2025-10-09",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "At that time 30% of re-work had been completed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 9th",
+    "span": null
+   },
+   {
+    "date_text": "October 28th, 2025",
+    "type": "OTHER",
+    "quote": "11) Confirmation of last open recalled trailer was completed as of October 28th, 2025.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-28",
+     "end": "2025-10-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "100% of recalled trailers have been confirmed as re-worked and back in operational condition.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 28th, 2025",
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Improper assembly procedures.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V834-3517.pdf",
+  "filer": "Zero Motorcycles Inc.",
+  "filing_date": "2025-12-02",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: DANA TM4 Italia S.r.l.",
+    "status": "SUPPORTED",
+    "quote": "Name: DANA TM4 Italia S.r.l.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: DANA TM4 Italia S.r.l.",
+    "status": "SUPPORTED",
+    "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "September 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-01",
+     "end": "2025-09-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 2025",
+    "type": "OTHER",
+    "quote": "No related injuries or crashes were reported.",
+    "inherited_date": true,
+    "entry_quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-01",
+     "end": "2025-09-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 7–9, 2025",
+    "type": "OTHER",
+    "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-07",
+     "end": "2025-10-09",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 7–9, 2025",
+    "type": "OTHER",
+    "quote": "Loose high power fasteners, caused by the use of non phosphate coated fasteners were identified as a likely contributor.",
+    "inherited_date": true,
+    "entry_quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-07",
+     "end": "2025-10-09",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 21, 2025",
+    "type": "OTHER",
+    "quote": "October 21, 2025: Zero convened a Product Integrity Team Zero (PITZ) review and determined that escalation was warranted.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-21",
+     "end": "2025-10-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 23, 2025",
+    "type": "OTHER",
+    "quote": "October 23, 2025: Zero notified Dana of its preliminary root cause assessment, shared supporting test results, and requested supplier validation.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-23",
+     "end": "2025-10-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 28, 2025",
+    "type": "OTHER",
+    "quote": "October 28, 2025: Zero initiated direct engagement with Dana’s Global Warranty leadership to expedite alignment and advance remedy planning.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-28",
+     "end": "2025-10-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 28, 2025",
+    "type": "OTHER",
+    "quote": "Zero and Dana are in full alignment on the root cause as being the use of non phosphate coated fasteners in the controller, and are jointly progressing the corrective action plan.",
+    "inherited_date": true,
+    "entry_quote": "October 28, 2025: Zero initiated direct engagement with Dana’s Global Warranty leadership to expedite alignment and advance remedy planning.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-28",
+     "end": "2025-10-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Non coated fasteners were introduced under a supplier deviation due to material shortage.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "DANA TM4 Italia S.r.l."
+   ],
+   "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+   "section": "chronology"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V836-1434.pdf",
+  "filer": "Volkswagen Group of America, Inc.",
+  "filing_date": "2025-12-15",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: SK Battery America Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name: SK Battery America Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: SK Battery America Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "A quality deviation at the supplier was identified within a certain production period.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "January 18, 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "On January 18, 2024, Volkswagen was informed of a thermal event in Illinois, involving a vehicle that was charging at a Level 3 DC charger.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-01-18",
+     "end": "2024-01-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 30, 2024",
+    "type": "INVESTIGATION_START",
+    "quote": "An on-site investigation into the vehicle and the charging apparatus was carried out by Volkswagen on January 30, 2024, and the area of origin was determined to be within the HV battery.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-01-30",
+     "end": "2024-01-30",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The battery was shipped to Chattanooga for further analysis.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "January 30, 2024",
+    "span": null
+   },
+   {
+    "date_text": "July 2, 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "On July 2, 2024, Volkswagen was notified about a thermal event in California, involving a parked vehicle that was not charging.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-07-02",
+     "end": "2024-07-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Volkswagen attempted to inspect the vehicle, but the inspection was delayed until permission was granted to have access to the vehicle.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "July 2, 2024",
+    "span": null
+   },
+   {
+    "date_text": "December 2024",
+    "type": "OTHER",
+    "quote": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-12-01",
+     "end": "2024-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Various components of the battery assembly were sent to Chattanooga for analysis, which revealed no shortcomings, and the HV battery cell modules were sent to the supplier for analysis.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 2024",
+    "span": null
+   },
+   {
+    "date_text": "October 6, 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "On October 6, 2024, Volkswagen was notified about a thermal event in California, involving a parked vehicle that was not charging.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-10-06",
+     "end": "2024-10-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Volkswagen and the supplier have not yet been able to complete the final analysis of the battery, but the vehicle contained cell modules identified by the supplier to have shifted electrodes.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 2024",
+    "span": null
+   },
+   {
+    "date_text": "December 6, 2024",
+    "type": "FILER_AWARENESS",
+    "quote": "On December 6, 2024, Volkswagen was notified about a thermal event in Utah, involving a vehicle while driving.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-12-06",
+     "end": "2024-12-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 5, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "The vehicle was inspected by Volkswagen on February 5, 2025, and the area of origin was determined to be within the HV battery.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-02-05",
+     "end": "2025-02-05",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Up to this point, due to the differing nature of these events, and the condition of the batteries, neither Volkswagen nor the supplier had been able to determine a root cause for these events.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 5, 2025",
+    "span": null
+   },
+   {
+    "date_text": "June 2025",
+    "type": "OTHER",
+    "quote": "In June 2025, the supplier conducted a CT analysis of the cell modules from 3 of the 4 thermal events referenced above and was unable to find a root cause within the battery cell module.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-06-01",
+     "end": "2025-06-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "June-July 2025",
+    "type": "OTHER",
+    "quote": "In June-July 2025, after the supplier’s inconclusive CT Results, VW and the supplier investigated other potential causes/influences within the vehicle but outside of the HV battery.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-06-01",
+     "end": "2025-07-31",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "This investigation found no evidence of other potential causes, so the investigation refocused on the HV battery.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "June-July 2025",
+    "span": null
+   },
+   {
+    "date_text": "August 15, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "On August 15, 2025, Volkswagen was informed of a thermal event in Colorado involving a vehicle charging at a Level 3 DC charger.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-15",
+     "end": "2025-08-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 23, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "The vehicle was inspected by Volkswagen on September 23, 2025, and the area of origin was determined to be the HV battery.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-23",
+     "end": "2025-09-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "late September 2025",
+    "type": "OTHER",
+    "quote": "After regular back and forth discussions between Volkswagen and the supplier to try to identify the cause of these events, in late September 2025, the supplier performed Tear-Down Analysis of the other damaged cell modules which revealed the “shifted” electrode condition.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-09-20",
+     "end": "2025-09-30",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The supplier then compared this to the previous CT Images and was able to recognize the shifted cathode in the CT images.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "late September 2025",
+    "span": null
+   },
+   {
+    "date_text": "October 2025",
+    "type": "OTHER",
+    "quote": "In October 2025, Volkswagen voluntarily brought the topic of these thermal incidents to ODI during its quarterly meeting and discussed that it was working with its supplier to finalize root cause, risk assessment, affected population, and countermeasures.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-01",
+     "end": "2025-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2025",
+    "type": "OTHER",
+    "quote": "In November 2025, the supplier identified the specific modules with the shifted electrode condition, and based on that, the vehicle population was identified.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 26, 2025",
+    "type": "OTHER",
+    "quote": "On November 26, 2025, this topic was presented to the Volkswagen Product Safety Committee and a recall for vehicles built with affected HV battery cell modules was decided.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-26",
+     "end": "2025-11-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 09, 2025",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On December 09, 2025, the supplier provided updated results of its investigation, which found additional HV battery cell modules that were potentially produced with shifted electrodes.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-09",
+     "end": "2025-12-09",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 10, 2025",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On December 10, 2025, the new information from the supplier was presented to the Volkswagen Product Safety Committee and a recall for additional vehicles built with the additional HV battery cell modules was decided.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-10",
+     "end": "2025-12-10",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+    "reason": "duplicate of an earlier sentence in the same chronology"
+   },
+   {
+    "sentence": "Volkswagen and the supplier have not yet been able to complete the final analysis of the battery, but the vehicle contained cell modules identified by the supplier to have shifted electrodes.",
+    "reason": "duplicate of an earlier sentence in the same chronology"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "A quality deviation at the supplier was identified within a certain production period.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "A quality deviation at the supplier was identified within a certain production period.",
+   "section": "cause"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V870-2680.pdf",
+  "filer": "Gillig, LLC",
+  "filing_date": "2025-12-18",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Qstraint Q'Straint",
+    "status": "SUPPORTED",
+    "quote": "Name: Qstraint",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Qstraint Q'Straint",
+    "status": "INSUFFICIENT",
+    "quote": "Name: Qstraint",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "11/03/2025",
+    "type": "FILER_AWARENESS",
+    "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-03",
+     "end": "2025-11-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "11/03/2025",
+    "type": "OTHER",
+    "quote": "American Seating supplies GILLIG with the securement device assembly that includes the defect Q’Straint parts.",
+    "inherited_date": true,
+    "entry_quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-03",
+     "end": "2025-11-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "12/12/2025",
+    "type": "OTHER",
+    "quote": "12/12/2025 GILLIG completed population analysis and identified four (4) vehicles potentially affected.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-12",
+     "end": "2025-12-12",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "12/12/2025",
+    "type": "DECISION",
+    "quote": "12/12/2025 The GILLIG Safety Committee reviewed the issue and decided to file a safety recall with NHTSA.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-12",
+     "end": "2025-12-12",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-25V906-7035.pdf",
+  "filer": "BMW of North America, LLC",
+  "filing_date": "2025-12-23",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: BMW AG",
+    "status": "SUPPORTED",
+    "quote": "Name: BMW AG",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: BMW AG",
+    "status": "SUPPORTED",
+    "quote": "In mid-October 2025, a field incident involving a Model Year 2025 BMW i4 was noted in which vehicle stalling had recently occurred several times.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "mid-October 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "In mid-October 2025, a field incident involving a Model Year 2025 BMW i4 was noted in which vehicle stalling had recently occurred several times.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-10",
+     "end": "2025-10-20",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Eventually, a restart was not possible.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "mid-October 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "In early November, an engineering investigation was initiated.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "mid-October 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "An analysis of the field vehicle, including electrical plug connections, wiring and cables, and vehicle charging connections was performed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "mid-October 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Diagnostics, including a review of fault codes, was conducted.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "mid-October 2025",
+    "span": null
+   },
+   {
+    "date_text": "December",
+    "type": "OTHER",
+    "quote": "In December, the analyses indicated that, on the field incident vehicle, the positive battery cable connection to the rear power distributor may not have been performed to specifications.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "As a result, information from the vehicle assembly plant was requested and further analyses were performed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "This led to the finding that, on a small number of vehicles, it was possible that the positive battery cable connection to the rear power distributor may not have been performed to specifications.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Vehicle assembly information was reviewed to determine the number and production dates of potentially affected vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December",
+    "span": null
+   },
+   {
+    "date_text": "December 18, 2025",
+    "type": "DECISION",
+    "quote": "On December 18, 2025, BMW decided to conduct a voluntary safety recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-18",
+     "end": "2025-12-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "BMW has not received any reports, nor is BMW otherwise aware, of any accidents or injuries related to this issue",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2025,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V001-4623.pdf",
+  "filer": "Volvo Car USA, LLC",
+  "filing_date": "2026-03-16",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Shandong Geely Sunwoda Power Battery Co.",
+    "status": "SUPPORTED",
+    "quote": "Name: Shandong Geely Sunwoda Power Battery Co.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Shandong Geely Sunwoda Power Battery Co.",
+    "status": "INSUFFICIENT",
+    "quote": "Name: Shandong Geely Sunwoda Power Battery Co.",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "A.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Considered as a critical concern by CCMT*",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "2025-12-26 B.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "Field Service Action decision confirmed by Volvo Car Corporation",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 B.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "2025-12-26 C.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "FILER_AWARENESS",
+    "quote": "Condition detected by?",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "(Market VR**, internal, inspection, testing) Market VR D.",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "FILER_AWARENESS",
+    "quote": "Number of VR with the condition, reported to Volvo Cars from NSC?",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "0 E.",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "Total number of cars included in VRs concerning the condition?",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "OTHER",
+    "quote": "0 F.",
+    "inherited_date": true,
+    "entry_quote": "2025-12-26 C.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2025-12-26",
+    "type": "FILER_AWARENESS",
+    "quote": "Implementation date of Field Service Action 2025-12-26 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 2025",
+    "type": "OTHER",
+    "quote": "Implementation date of Field Service Action 2025-12-26 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-07-01",
+     "end": "2025-07-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "An investigation was initiated to review the customer symptom and a possible root cause.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-12-26",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The investigation was escalated to the Critical Concern Action Process (CCAP).",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-12-26",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "The issue was concluded as potentially critical and the Critical Concern Management Team (CCMT) initiated a technical investigation to conclude customer symptom, risk assessment and root cause.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-12-26",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Decision to start preparation and release and monitor was taken at the same time and a safety notice was released.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2025-12-26",
+    "span": null
+   },
+   {
+    "date_text": "December 26th, 2025",
+    "type": "OTHER",
+    "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall as it was judged as an increased risk towards motor vehicle safety.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-26",
+     "end": "2025-12-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "Volvo Cars can confirm there are no warranty claims or field or service reports, related to this defect in the US.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "A process deviation that may result in the formation of lithium plating growth that could also lead to an internal cell short.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V007-7238.pdf",
+  "filer": "East Trailers LLC",
+  "filing_date": "2026-04-02",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 1, 2024",
+    "type": "OTHER",
+    "quote": "November 1, 2024 - Start of under ride guards being robotically welded.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2024-11-01",
+     "end": "2024-11-01",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 2025",
+    "type": "OTHER",
+    "quote": "March 2025 - Program updated for robotic weld cell.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-03-01",
+     "end": "2025-03-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 14, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "July 14, 2025 - Customer reports bumper horizonal became dislodged.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-07-14",
+     "end": "2025-07-14",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 21, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "October 21, 2025 – NHTSA notified East of failed test.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-21",
+     "end": "2025-10-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 21, 2025",
+    "type": "OTHER",
+    "quote": "Reference: REPORT NUMBER 223-2401438-TEST",
+    "inherited_date": true,
+    "entry_quote": "October 21, 2025 – NHTSA notified East of failed test.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-21",
+     "end": "2025-10-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Improper weld penetration at the bumper horizontal to the bumper verticals.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V018-6626.pdf",
+  "filer": "Lucid USA, Inc.",
+  "filing_date": "2026-01-16",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Lucid conducted testing for compliance with FMVSS 111 before the start of production of the Lucid Gravity and before the release of each software upgrade that Lucid understood would affect the rearview image.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "At the time of certification of the vehicles, Lucid had not identified software issues that could result in non-compliance with FMVSS 111.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "After the sale of certified vehicles, Lucid determined that certain model year 2025–2026 Lucid Gravity vehicles operating on software versions prior to version 3.3.20 (the “Remedy Version”) may experience a blank rear view monitor screen or a blank screen with a warning when shifting to reverse",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": null,
+    "span": null
+   },
+   {
+    "date_text": "October 2025",
+    "type": "OTHER",
+    "quote": "Through its investigation of this issue, Lucid determined that in October 2025 Lucid engineers observed a software test vehicle with a blank rearview image when it was put in reverse.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-10-01",
+     "end": "2025-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "INVESTIGATION_START",
+    "quote": "Lucid launched an internal investigation to determine possible root causes for the issue.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "October 2025",
+    "span": null
+   },
+   {
+    "date_text": "November 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "In November 2025, another engineering vehicle was discovered with a similar issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 12, 2025",
+    "type": "OTHER",
+    "quote": "On November 12, 2025, Lucid issued a new OTA software release.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-12",
+     "end": "2025-11-12",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November",
+    "type": "OTHER",
+    "quote": "Later in November, a customer reported camera image issues using the new release.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "span": {
+     "start": "1900-11-01",
+     "end": "1900-11-30",
+     "granularity": "month",
+     "inferred": true,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "By December 2025, the Lucid Quality Team was able to verify other customer cases with the rearview image issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "A future software revision, to be included in version 3.3.20, was identified as a potential mitigation for the rearview image issues.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 2025",
+    "span": null
+   },
+   {
+    "date_text": "December 5",
+    "type": "OTHER",
+    "quote": "On December 5, Lucid’s Product Safety Working Group (PSWG) met to receive an update on rearview camera issues.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "span": {
+     "start": "1900-12-05",
+     "end": "1900-12-05",
+     "granularity": "day",
+     "inferred": true,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 10, 2025",
+    "type": "OTHER",
+    "quote": "A stop sale was issued on December 10, 2025, while Lucid investigated if other vehicles in the field had the same issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-10",
+     "end": "2025-12-10",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Root causes were identified as signal handling issues related to vehicle power state and camera views along with fault recovery in the lower-level camera pipeline.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 10, 2025",
+    "span": null
+   },
+   {
+    "date_text": "December 11, 2025",
+    "type": "OTHER",
+    "quote": "On December 11, 2025, software version 3.3.20 was released to customers.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-11",
+     "end": "2025-12-11",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "By the end of December, Lucid had found 9 similar customer issues and the PSWG decided to refer the issue to the Product Safety Executive Council (PSEC) for consideration.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 11, 2025",
+    "span": null
+   },
+   {
+    "date_text": "January 9, 2026",
+    "type": "DECISION",
+    "quote": "On January 9, 2026, the PSEC met and determined that a noncompliance with FMVSS 111 existed in vehicles operating on software versions older than 3.3.20.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2026-01-09",
+     "end": "2026-01-09",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Earlier versions of software could cause the intermittent delivery of vehicle power state and view signals to the camera system, causing the rearview image to fail to display.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V059-8421.pdf",
+  "filer": "Chrysler (FCA US, LLC)",
+  "filing_date": "2026-02-02",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: See -Tow Module Supplier Information.pdf",
+    "status": "SUPPORTED",
+    "quote": "Name: See -Tow Module Supplier Information.pdf",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: See -Tow Module Supplier Information.pdf",
+    "status": "INSUFFICIENT",
+    "quote": "Name: See -Tow Module Supplier Information.pdf",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "August 28, 2025",
+    "type": "INVESTIGATION_START",
+    "quote": "On August 28, 2025, the FCA US LLC (\"FCA US\") Technical Safety and Regulatory Compliance (\"TSRC\") organization opened an investigation into some 2025-2026 MY Ram 1500/2500/3500, 2025-2026 MY RAM 3500/4500/5500 Cab Chassis, 2024-2026 MY Jeep Wagoneer S",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-08-28",
+     "end": "2025-08-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 26, 2026",
+    "type": "DECISION",
+    "quote": "On January 26, 2026, FCA US determined, through the Vehicle Regulations Committee, that a safety defect exists in certain vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2026-01-26",
+     "end": "2026-01-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of January 15, 2026, FCA US is aware of 108 customer assistance records, 107 warranty claims, 101 field reports, and 285 repair orders potentially relating to this issue for all markets with dates of receipt ranging from November 20, 2023, to January 12, 2026.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "As of January 15, 2026, FCA US is not aware of any accidents or injuries potentially related to this issue for all markets.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V062-8099.pdf",
+  "filer": "Ford Motor Company",
+  "filing_date": "2026-02-11",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Brugola Industriale USA INC",
+    "status": "SUPPORTED",
+    "quote": "Name: Brugola Industriale USA INC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Brugola Industriale USA INC",
+    "status": "INSUFFICIENT",
+    "quote": "A supplier sorting error failed to detect the absence of washers during production.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 18, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "On November 18, 2025, during the assembly of BEV-H high voltage (HV) battery pack bus bars at the Rawsonville Component Plant (RCP), an assembly line operator identified two threaded fasteners missing conical washers.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-18",
+     "end": "2025-11-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The subject fastener is an M6 bolt and washer assembly utilized in multiple locations within the BEV-H battery pack to secure high voltage bus bar connections.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 18, 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The M6 bolts with conical washers are required to ensure proper bearing stress and to eliminate conditions that could lead to improper clamp load and joint tension.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 18, 2025",
+    "span": null
+   },
+   {
+    "date_text": "December 2, 2025",
+    "type": "OTHER",
+    "quote": "On December 2, 2025, a Stop Ship was declared.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-02",
+     "end": "2025-12-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 4, 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "On December 4, 2025, the topic was introduced to Ford’s Critical Concern Review Group (CCRG).",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-04",
+     "end": "2025-12-04",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The CCRG investigation reviewed the HV battery assembly process at RCP and determined that the potential exists for battery packs to have been built with fasteners missing the conical washers.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 4, 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Following this discovery, Kansas City Assembly Plant (KCAP) and RCP initiated a tracing campaign.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 4, 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "It was determined through a review of supplier plant records that the subject population of vehicles in the field has the potential to contain BEV-H battery packs assembled with one or more non-conforming fasteners.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 4, 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The CCRG investigation confirmed that insufficient clamp load of a HV bus bar can result in increased joint electrical resistance.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 4, 2025",
+    "span": null
+   },
+   {
+    "date_text": "January 27, 2026",
+    "type": "DECISION",
+    "quote": "On January 27, 2026, Ford’s Field Review Committee reviewed the concern and approved a field action.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2026-01-27",
+     "end": "2026-01-27",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of January 21, 2026, Ford is not aware of any warranty claims or field reports related to this issue.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "Ford is not aware of any reports of accident or injury related to this condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "A supplier sorting error failed to detect the absence of washers during production.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "A supplier sorting error failed to detect the absence of washers during production.",
+   "section": "cause"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V068-2387.pdf",
+  "filer": "Hyundai Motor America",
+  "filing_date": "2026-02-27",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Mobis North America Electrified (\"MNAe\")",
+    "status": "SUPPORTED",
+    "quote": "Name: Mobis North America Electrified (\"MNAe\")",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Mobis North America Electrified (\"MNAe\")",
+    "status": "INSUFFICIENT",
+    "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 18, 2025",
+    "type": "OTHER",
+    "quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-18",
+     "end": "2025-11-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2025",
+    "type": "OTHER",
+    "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+    "inherited_date": true,
+    "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2025",
+    "type": "OTHER",
+    "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+    "inherited_date": true,
+    "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 18, 2025",
+    "type": "OTHER",
+    "quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-18",
+     "end": "2025-12-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "NASO continued its investigation in coordination with HMC and MNAe.",
+    "inherited_date": true,
+    "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "During this period, NASO requested and reviewed additional information regarding the BSA manufacturing process, torque application at the relevant assembly stations, process data, rework flow procedures, and quality inspection practices.",
+    "inherited_date": true,
+    "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "MNAe’s report confirmed that the issue could occur when BSAs were removed from the assembly line for rework and were subsequently reintroduced at a later stage allowing certain torque confirmation processes to be bypassed.",
+    "inherited_date": true,
+    "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2025",
+    "type": "OTHER",
+    "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+    "inherited_date": true,
+    "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+    "date_inferred": false,
+    "span": {
+     "start": "2025-12-01",
+     "end": "2025-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 29, 2026",
+    "type": "DECISION",
+    "quote": "January 29, 2026 NASO reviewed the supplier’s technical findings, traceability and test results and convened its North America Safety Decision Authority (“NASDA”), deciding to conduct a safety recall of the affected model year 2025–2026 Hyundai IONIQ 5 and 2026 IONIQ 9 vehicles in the U.S. market.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2026-01-29",
+     "end": "2026-01-29",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of the date of this filing, Hyundai has not received any reports of field incidents, crashes, injuries, fatalities, or fires related to the condition in the affected vehicles.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "BSAs may have been reworked without confirmation of automated torque verification processes.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production, prompting further inspection which identified potentially under torqued busbar bolts.",
+   "section": "chronology"
+  },
+  "year": 2026,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-26V110-5688.pdf",
+  "filer": "Toyota Motor Engineering & Manufacturing",
+  "filing_date": "2026-02-25",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: North American Lighting [“NAL”]",
+    "status": "SUPPORTED",
+    "quote": "Name: North American Lighting [“NAL”]",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: North American Lighting [“NAL”]",
+    "status": "INSUFFICIENT",
+    "quote": "Toyota identified that the supplier recently underwent a tooling change and the new tooling was missing the optical axis marking.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 2025",
+    "type": "FILER_AWARENESS",
+    "quote": "In November 2025, during a vehicle audit the vehicle manufacturing plant observed that a vehicle’s headlamps were missing the optical axis marking.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2025-11-01",
+     "end": "2025-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Toyota identified that the supplier recently underwent a tooling change and the new tooling was missing the optical axis marking.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Toyota issued a vehicle hold and repair activity at vehicle processing facilities for vehicles which may have been equipped with headlamps produced with this tooling.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2025",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Toyota identified certain vehicles had flowed out of the vehicle processing facilities to the market.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2025",
+    "span": null
+   },
+   {
+    "date_text": "February 19, 2026",
+    "type": "OTHER",
+    "quote": "Based on this information, Toyota determined on February 19, 2026 that the vehicles identified in Section 3 above were sold with headlamp assemblies that may not meet the requirements of FMVSS No. 108, paragraph S10.18.5.1.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2026-02-19",
+     "end": "2026-02-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Toyota identified that the supplier recently underwent a tooling change and the new tooling was missing the optical axis marking.",
+   "section": "chronology"
+  },
+  "year": 2026,
+  "origin": "test"
+ }
+]

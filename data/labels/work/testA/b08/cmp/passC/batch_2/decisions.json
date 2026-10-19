@@ -1,0 +1,142 @@
+[
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+  "reason": "Y's sentence has its own date and records the conclusion that a safety risk exists (DECISION). X's FSA decision belongs to table row B, which is dated 2025-11-26 and not 2025-11-19, and a recall decision is DECISION, not OTHER."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-11-26",
+  "reason": "Row B gives the date 2025-11-26 for the confirmed decision to run a field service action (recall), so the type is DECISION. X's quote '2025-11-26 C.' does not report an action."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+  "reason": "The supplier tells the filer about the problem, which is SUPPLIER_NOTICE. X's quote also runs in table text from another row."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "On November 12, 2025, the concern was escalated to the Critical Concern Management Team (CCMT), which ordered a formal investigation including to conduct a risk assessment.",
+  "reason": "A formal investigation was ordered, which is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing)",
+  "reason": "This is a form-field question, not a reported action or occurrence, so there is no event."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "(Market VR**, internal, inspection, testing) Supplier production",
+  "reason": "This is a form-field answer that describes the detection source. It reports no dated action, so there is no event."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "D. Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "This is a form-field count (a status statement, with value 0), not an event."
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "A bare count value is a status, not an event."
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0",
+  "reason": "This is a form-field count (a status statement), not an event."
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "Total number of cars included in VRs concerning the condition? 0",
+  "reason": "A bare count value is a status, not an event."
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "F. Implementation date of Field Service Action 2025-11-27",
+  "reason": "2025-11-27 is the date the remedy is implemented, which is remedy logistics and not an event. The supplier notice in the quote is dated October 2025, not 2025-11-27."
+ },
+ {
+  "item_id": "D029",
+  "decision": "NEITHER",
+  "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+  "reason": "The sentence is an event with its own date, so X (null) is wrong. Its conclusion that the issue is a safety risk makes it DECISION, not OTHER (consistent with D018).",
+  "corrected": {
+   "date_text": "November 19, 2025",
+   "type": "DECISION",
+   "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "7) Once the determination of the root cause, emails went out to all dealers with affected units on August 19th inform them of the defect.",
+  "reason": "Dealer notification emails are remedy logistics, which are excluded from events."
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "8) A resolution email was sent August 22nd with details regarding the resolution of the defect to all dealers with affected units.",
+  "reason": "A resolution email to dealers is remedy logistics, which is excluded."
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "9) Replacement parts were shipped out August 25th.",
+  "reason": "Shipping replacement parts is remedy logistics (repair), which is excluded."
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "10) Follow up emails were sent out to all dealers with defective trailers on October 9th.",
+  "reason": "Follow-up dealer emails are remedy logistics, which are excluded."
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "11) Confirmation of last open recalled trailer was completed as of October 28th, 2025.",
+  "reason": "Confirming that the recalled trailers were re-worked is repair of affected vehicles (remedy logistics, plus an 'as of' status), so there is no event."
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+  "reason": "Y correctly types the entry's dated sentence (a meeting to evaluate causes) as INVESTIGATION_START. Note: X's sentence is a separate inherited-date event (a finding, OTHER) and is valid in its own right. The two were mismatched as one pair."
+ },
+ {
+  "item_id": "D036",
+  "decision": "NEITHER",
+  "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+  "reason": "The event exists: Zero's internal review found the failure pattern (FILER_AWARENESS), so X (null) is wrong. Y drops 'Late', but the rules say to keep words like 'late' in date_text.",
+  "corrected": {
+   "date_text": "Late September 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "No related injuries or crashes were reported.",
+  "reason": "A no-reports status statement is not an event."
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "Zero and Dana are in full alignment on the root cause as being the use of non phosphate coated fasteners in the controller, and are jointly progressing the corrective action plan.",
+  "reason": "This is a status statement ('are in full alignment', 'are jointly progressing'), not an action, and it follows a blank line outside the Oct 28 entry. There is no event."
+ }
+]

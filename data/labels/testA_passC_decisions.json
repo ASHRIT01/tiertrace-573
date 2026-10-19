@@ -1,0 +1,3174 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "NEITHER",
+  "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+  "reason": "Reviewing records/supplier data to understand the condition is analysis conducted to find the cause -> INVESTIGATION_START (X's type). But a range gives one event per distinct date, so this event's date_text is 'September 2022' (Y's date), not the whole range.",
+  "corrected": {
+   "date_text": "September 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b01"
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "On January 18, 2023, FCA US TSRC recognized that the TRSCM may fail internally resulting in the rearview camera image not displaying during a backing event",
+  "reason": "The filer recognizing (becoming aware of) the potential noncompliance is FILER_AWARENESS, not OTHER.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "No known warranty claims, field or service reports, or any vehicle crashes/injuries. Only two internal failures at the manufacturing facility in Lyons Station, PA",
+  "reason": "Status statement summarising failures, not an action/occurrence; not an event.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "On February 6, 2023, Outfitter Manufacturing contacted all 78 consumers affected by the Suburban Manufacturing recall notice.",
+  "reason": "Contacting affected owners is remedy logistics (owner notification), excluded from events.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident",
+  "reason": "A customer report reaching the filer is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "This new information led Autocar to believe the January 2019 incident may have been related to the recalled condition.",
+  "reason": "Belief statement; rules exclude beliefs and assumptions from events.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "January 31, 2020, Autocar was contacted by NHTSA regarding potential plumbing attached to the exhaust port of any PP1 park brake valves and inquired as to any reported roll-away events. Autocar researched the potential condition on its vehicles",
+  "reason": "The entry begins with a date (no 'On'), so the following undated research sentence inherits January 31, 2020; researching the condition is INVESTIGATION_START.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+  "reason": "Reviewing records as part of the investigation is investigation/analysis conducted -> INVESTIGATION_START; Y's quote also spans another entry.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top",
+  "reason": "The dated October 2022 sentence is a consumer report reaching the filer -> FILER_AWARENESS. Y's version is a different sentence (attempted part return), which is a separate OTHER event, not this one.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "In or about January 2023, Winnebago continued to search for and analyzed any claim or complaint concerning SDS2 cooktops;",
+  "reason": "Analysis of claims conducted to determine scope -> INVESTIGATION_START; Y's quote merges two entries.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035",
+  "reason": "The sentence's dated occurrence is the supplier telling the filer about its recall -> SUPPLIER_NOTICE (the decision follows from it); X's quote also spills into the next entry ('February 2, 2023'), so it is not a clean one-sentence quote.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "February 2, 2023, after working with Suburban Manufacturing Company to determine scope of impacted units, Winnebago filed a notice of defect with NHTSA.",
+  "reason": "Filing the defect notice with NHTSA is NHTSA_FILING; X's quote is the wrong sentence.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV;",
+  "reason": "A supplier issuing its own recall is an occurrence (OTHER: a supplier's own filing); it is an event.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "A machine that is not forming the roof bow supports correctly is currently under investigation for root cause.",
+  "reason": "The cause field states a mechanism (machine not forming roof bow supports correctly); only the deeper root cause of the machine fault is open, so SUPPORTED.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+  "reason": "Auditing the processes to find the cause is investigation/analysis conducted -> INVESTIGATION_START.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+  "reason": "Same as D015: process audit is INVESTIGATION_START.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D017",
+  "decision": "X",
+  "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+  "reason": "The narrative refers to the lever supplier only generically; 'BMW' in the narrative is the filer acting, not a naming of the supplier -> INSUFFICIENT.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+  "reason": "This is a finding of BMW's own review, not the supplier telling the filer; a review result is OTHER, not SUPPLIER_NOTICE.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D019",
+  "decision": "X",
+  "quote": "On February 14, 2023, an issue pertaining to 2023 model year Ford Maverick trailer tow taillamp function was brought to Ford’s Critical Concern Review Group for review.",
+  "reason": "A report of the issue reaching the filer's review group is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "In March 2023, Ford notified Jayco that remedy parts are available.",
+  "reason": "Notice of remedy part availability is not a notice about the problem/finding/recall; it is an OTHER occurrence.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "on June 23, 2023, DTNA updated the description of the remedy section of its Defect Information Report.",
+  "reason": "Updating the Defect Information Report is amending the Part 573 report -> NHTSA_FILING.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D022",
+  "decision": "NEITHER",
+  "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+  "reason": "The event exists (Y's null is wrong), but date_text must keep 'Mid' as written: 'Mid-February 2023', not 'February 2023'.",
+  "corrected": {
+   "date_text": "Mid-February 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b01"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "On May 26, 2023, DTNA amended the Defect Information Report to clarify and consolidate the model listing",
+  "reason": "Amending the Part 573 report is an NHTSA_FILING event.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D024",
+  "decision": "CONTESTED",
+  "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+  "reason": "One sentence holds both an investigation start (undated) and a dated supplier contact (OTHER); rules give one event per sentence but do not settle which action sets the type.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D025",
+  "decision": "NEITHER",
+  "quote": "Between January 2020 and June 2022, Super Products learned of 4 more incidents of tank strap tie rod weld failures for the affected vehicle population.",
+  "reason": "'learned of 4 more incidents' is a report reaching the filer -> FILER_AWARENESS (X's OTHER is wrong); Y's date_text joins two dates, which the rules split into one event per date, so the June 2022 event keeps date_text 'June 2022'.",
+  "corrected": {
+   "date_text": "June 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "Between January 2020 and June 2022, Super Products learned of 4 more incidents of tank strap tie rod weld failures for the affected vehicle population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b01"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "After the May 2022 incident, Super Products conducted metallurgical tests on the tank tie rod and the connected square tabbed washer to confirm the cause as insufficient rod penetration and weld size.",
+  "reason": "Testing conducted to establish the cause is INVESTIGATION_START by rule.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "In October 2022, during the course of the investigation a customer reported another disengaged tank tie rod.",
+  "reason": "A customer report reaching the filer is FILER_AWARENESS (a later one counts too).",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "On April 3, 2023, the chassis manufacturer added a riser tube.",
+  "reason": "Block is NR, but the narrative refers generically to the chassis manufacturer (the maker of the chassis/tube assembly), so it is a generic supplier reference: INSUFFICIENT, not NOT_REPORTED.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "On April 3, 2023, the chassis manufacturer added a riser tube.",
+  "reason": "A chassis maker is a supply-chain party under the rules, and it is mentioned only generically, so UNNAMED rather than NONE_MENTIONED.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "On March 21, 2023, Columbus inspected a vehicle of the same model and found that there wasn’t the appropriate clearance",
+  "reason": "Inspecting another vehicle of the same model to check the condition is testing/analysis conducted to find the scope: INVESTIGATION_START.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "April 10, 2023 Mack Manufacturing reports that they have discovered that we have vehicles where the vehicle horns are inoperative and an investigation is opened.",
+  "reason": "The main action is the first report/discovery of the problem reaching the filer (FILER_AWARENESS); the investigation opening follows from it in the same sentence.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "On March 15, 2023, E-ONE was contacted and told the inclination sensor stopped working during training on truck SO 144708 in Sarnia, Canada.",
+  "reason": "A notice of the problem reaching the filer is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "On April 17, 2023, E-ONE was contacted that the Aerial device contacted the cab during training on another truck in Marion, Illinois, truck SO 144814.",
+  "reason": "A later report of the problem reaching the filer is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "On April 28, 2023, research was performed to identify the population of the affected trucks",
+  "reason": "Research to identify the affected population is analysis conducted to find the scope (INVESTIGATION_START); X's quote also runs on into the separate May 8 sentence.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "REV Recreation Group would immediately conduct a recall out of an abundance of caution on behalf of the hitch supplier.",
+  "reason": "The sentence states the filer's decision to recall: DECISION.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "A review of warranty history revealed no other reported failures of this part as of this time.",
+  "reason": "A warranty-history review is an analysis conducted to find the scope: INVESTIGATION_START. It sits inside the July 2022 bullet, so the inherited date is right.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "In November 2022, REV Recreation Group received notice of a second reported failure of this hitch.",
+  "reason": "X's sentence is a notice of failure reaching the filer (FILER_AWARENESS). Y's version quotes a different sentence (parts returned to Lippert), so it is not this event.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+  "reason": "A customer report reaching the filer is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "Further evaluations were conducted and remain underway.",
+  "reason": "X's 'Field data now shows that there are a total of 5 similar reports' is a status statement (count of reports), not an event. Evaluations conducted within the April 3, 2023 bullet are INVESTIGATION_START.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D040",
+  "decision": "NEITHER",
+  "quote": "Further evaluations were conducted and remain underway.",
+  "reason": "The event exists (an action inside the April 3, 2023 bullet), but evaluations conducted are INVESTIGATION_START, not OTHER.",
+  "corrected": {
+   "date_text": "April 3, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Further evaluations were conducted and remain underway.",
+   "inherited_date": true,
+   "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "date_inferred": false
+  },
+  "batch": "b01"
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "On May 18, 2022, during a routine PDI Inspection, it was found that the cooktop may be pulling the cooktop flame down/inverted.",
+  "reason": "An internal inspection/audit finding of the problem is FILER_AWARENESS.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "3/6/23, Noticed weld issue with robotic weld program on first shift.",
+  "reason": "'Entered concern response to bring awareness to product safety team.' is an undated action inside the dated 3/6/23 entry, so it is an event with an inherited date. It is an internal escalation, so OTHER.",
+  "batch": "b01"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "On November 29, 2021, a subframe was pulled from inventory and the welds inspected which also showed inadequate weld penetration attaching the insert tubes into the subframe.",
+  "reason": "Pulling an inventory subframe and inspecting its welds is testing conducted to establish cause/scope (INVESTIGATION_START: 'analysis or testing is ... conducted to find the cause or scope').",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "In October 2022, MBAG launched initial investigations based on an isolated field report indicating a malfunction of the electrical drivetrain possibly referring to a loss of propulsion.",
+  "reason": "Block Name is Mercedes-Benz AG; 'MBAG' is its acronym, and the S2 rule says an acronym or short form of the block company counts as SUPPORTED.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "These analyses, including related tests, continued until December 2022.",
+  "reason": "The sentence reports analyses and tests being conducted (through December 2022); INVESTIGATION_START covers analysis/testing 'opened, started or conducted' to find the cause.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "Tesla began to deploy the software remedy to the vehicle fleet as an over-the-air software update.",
+  "reason": "Deploying the remedy to the fleet is repair of the affected vehicles, i.e. remedy logistics, which the rules exclude from events.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Honda identified an incorrect certification label during a quality inspection and began to investigate the issue.",
+  "reason": "Block Name is American Honda Motor Co., Inc.; 'Honda' is a short form/brand of that block company, which the S2 rule counts as SUPPORTED.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "Honda identified an incorrect certification label during a quality inspection and began to investigate the issue.",
+  "reason": "This is the first report of the problem reaching the filer via an internal quality inspection finding ('discovered'), which is FILER_AWARENESS; one event per sentence.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "Upon receipt of this list, we reviewed our receiving log and entered the dates that we received the generator and cross referenced those dates to our internal production tracking software.",
+  "reason": "Cross-referencing receiving logs and production tracking is analysis conducted to determine the scope of affected units (INVESTIGATION_START); inherited 7/13/2023 entry date is correct in both.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "It was noted that the manufacturing plant had received three complaints between May 2023 and July 2023 indicating that the awning leg was touching the vehicle entry door.",
+  "reason": "The sentence can be read as a complaint-count status statement over a date window (not an event) or as complaint receipt (FILER_AWARENESS) with distinct May/July 2023 dates; the rules do not settle which.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+  "reason": "The sentence has its own date August 10, 2023 (the 'August 2023' header is separated by a blank line, so Y's month date is wrong); bringing the issue to a review group for review opens the investigation.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+  "reason": "One event per sentence: this sentence already yields one August 10, 2023 event; Y's extra OTHER event duplicates it.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D011",
+  "decision": "NEITHER",
+  "quote": "These failures were identified by Kentucky Truck Plant through monitoring of warranty claims.",
+  "reason": "Event exists (problem identified via warranty claims = FILER_AWARENESS), but it is not inside a dated entry: the 'August 2023' header entry ends at the blank line and the next sentence begins with 'On', so it is undated prose (date_inferred, empty date_text).",
+  "corrected": {
+   "date_text": "",
+   "type": "FILER_AWARENESS",
+   "quote": "These failures were identified by Kentucky Truck Plant through monitoring of warranty claims.",
+   "inherited_date": false,
+   "date_inferred": true
+  },
+  "batch": "b02"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "On August 16, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to a condition that can lead to the lack of rearview visibility and rearview lamps",
+  "reason": "This is an internal conclusion/finding of the review (first notice was April 24), not a report reaching the filer, and not a defect/recall decision; OTHER fits.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "From April 25, 2023, through August 11, 2023, FCA US TSRC met with FCA US engineering to review the issue, understand part design and failure mode, and to determine the suspect population.",
+  "reason": "Two distinct dates in one sentence give one event per date; the review to determine failure mode and population is investigation conducted, so an August 11, 2023 INVESTIGATION_START event exists.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "See attached document titled “2023MY Forte Right Front Lower Control Arm Chronology.”",
+  "reason": "Chronology is only a pointer, so U is NOT_REPORTED; the only exception is when the cause names a supply-chain company, and the cause says only 'supplier' generically.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "HMA’s Data Review Committee (“DRC”) and Technical Review Committee (“TRC”) conducted assessments of frequency and risk regarding the potential defect condition from August 30, 2023 through September 15, 2023.",
+  "reason": "Two distinct dates in one sentence give one event per date; assessments conducted of the defect are investigation, so a September 15, 2023 INVESTIGATION_START event exists.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D016",
+  "decision": "CONTESTED",
+  "quote": "6/16/23: Engineer talked with design engineering to understand the history of the parts involved.",
+  "reason": "A conversation with design engineering is both a meeting (OTHER) and an inquiry conducted to find the cause (INVESTIGATION_START); the rules do not settle which.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D017",
+  "decision": "CONTESTED",
+  "quote": "6/17/23: Engineer visited manufacturing to understand the process of installation. Engineer received plant process document.",
+  "reason": "The versions label different sentences of the 6/17 entry. Each is defensible: receiving a document is OTHER, and the visit to understand installation is plausibly INVESTIGATION_START. Because the pairing is misaligned, neither can be chosen over the other.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "6/26/23: Warranty search completed. Found 7 warranty claims stating checked U-bolt hitting the fuel tank.",
+  "reason": "Y types the warranty search as INVESTIGATION_START, an analysis conducted to find the scope, which is correct. X types the warranty-claim finding as OTHER, but warranty claims reaching the filer are FILER_AWARENESS.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "Found 7 warranty claims stating checked U-bolt hitting the fuel tank.",
+  "reason": "Warranty claims found by the filer are a report of the problem reaching it, so FILER_AWARENESS is right. X's OTHER label for 'Reassembled and checked clearances' is a different sentence and does not address this event's type.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D020",
+  "decision": "X",
+  "quote": "7/13/23: Reached out to PTC about testing and communicated the dynamic gap study requested",
+  "reason": "This is a communication to arrange testing that had already been requested on 7/11. It does not open the testing itself (parts only arrived on 7/25), so OTHER.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D021",
+  "decision": "X",
+  "quote": "8/22/23: Initial test was completed, and the data was collected.",
+  "reason": "Completing a test and collecting its data is a test result or occurrence, which is OTHER. It does not open or start an investigation.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "9/1/23: Population was scanned for errors.",
+  "reason": "Scanning the population is an analysis conducted to find the scope, so INVESTIGATION_START.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "9/1/23: Population was scanned for errors. No errors found. Final Warranty Search",
+  "reason": "'Final Warranty Search' is a search conducted to find the scope, so INVESTIGATION_START (consistent with the 6/26 warranty search). 'No errors found' is a negative status or result with no action, not a separate event.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "Reassembled and checked clearances. No further issues were found.",
+  "reason": "'No further issues were found' is a negative status statement with no action (like 'no reports of ...'), so it is not an event.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "6/27/23: Presented investigation to safety committee. Needed further information to make decision.",
+  "reason": "'Needed further information to make decision' states a need or status and reports no action, so it is not an event.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D026",
+  "decision": "NEITHER",
+  "quote": "9/1/23: Population was scanned for errors. No errors found. Final Warranty Search",
+  "reason": "The 'Final Warranty Search' event exists (Y has it, matched in D023), but as a warranty search conducted to find the scope it is INVESTIGATION_START, not OTHER.",
+  "corrected": {
+   "date_text": "9/1/23",
+   "type": "INVESTIGATION_START",
+   "quote": "Final Warranty Search",
+   "inherited_date": true,
+   "entry_quote": "9/1/23: Population was scanned for errors.",
+   "date_inferred": false
+  },
+  "batch": "b02"
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "June 5, 2023, during an internal audit, it was determined that a steering column pinch bolt was not properly secured, and an internal investigation was initiated.",
+  "reason": "The rules list an internal audit finding explicitly under FILER_AWARENESS, and it is the sentence's main clause. Opening the investigation is secondary to it. One event per sentence.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "June 27, 2023, through August 31, 2023, Autocar inspected 176 additional units and zero defects were found.",
+  "reason": "The sentence has two distinct dates bounding an activity, not a production data window, so the rules give one event per date. The August 31 event exists, and inspecting units to find the scope is INVESTIGATION_START.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "September 18, 2023  Volvo Product Safety Office receives a report of a potential issue in our factory with a critical joint and a formal investigation is opened.",
+  "reason": "The main clause is that the filer receives a report of the issue, which is FILER_AWARENESS. One event per sentence. Opening the investigation follows from that report.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "PSRI 23-069 Castle Nut Under-torqued.",
+  "reason": "This is a reference title or label with no action or occurrence, so it is not an event.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "September 12, 2023, during an internal inspection, Autocar personnel identified three units equipped with the suspect pressure switch, not included in recall 23V400 suspect population and began investigation.",
+  "reason": "An internal inspection finding of the issue is FILER_AWARENESS (internal audit finding). It is the primary clause, and beginning the investigation is secondary. One event per sentence.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D032",
+  "decision": "Y",
+  "quote": "On August 1, 2023, a Lucid Air customer experienced charring of a rear seat.",
+  "reason": "The sentence reports the field incident itself, not a report or notice reaching Lucid, so it is OTHER (an occurrence).",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "Lucid Engineering briefed Lucid’s Product Safety Working Group (PSWG) about the issue on August 3, after which, Engineering continued its analysis of the risk of harm from the issue.",
+  "reason": "An internal briefing between Lucid groups is a meeting, which is OTHER. It is not a report reaching the filer from outside, because Lucid already knew of the issue.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "Lucid released the Remedy S/W Version for customer vehicles to download starting on October 10.",
+  "reason": "Releasing the remedy software for owners' vehicles is remedy logistics (repair of the affected vehicles), so it is not an event.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D035",
+  "decision": "X",
+  "quote": "As of October 4, Affected S/W Versions are no longer being installed on or transmitted to any vehicles.",
+  "reason": "An 'As of <date>' status statement is excluded from events.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D036",
+  "decision": "CONTESTED",
+  "quote": "From October 2022, through January 2023, FCA US TSRC analyzed warranty claims, customer records, and vehicle history to identify incidents of third-row seat belt buckles being damaged during assembly. In parallel,",
+  "reason": "The versions label different sentences. Each is correct for its own sentence: the warranty analysis is INVESTIGATION_START, and the meetings sentence that inherits October 2022 from the bullet is OTHER. Because the pairing is misaligned, neither can be chosen.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D037",
+  "decision": "CONTESTED",
+  "quote": "From June 2023, through September 2023, FCA US TSRC finalized discussions with FCA US Restraints Engineering, Interior Engineering, and Manufacturing and determined the suspect population.",
+  "reason": "The versions label different events. X's September 2023 end date of the June-September range is a valid OTHER event. Y's September 27 recognition is a valid FILER_AWARENESS event. Because the pairing is misaligned, neither can be chosen.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "From October 2022, through January 2023, FCA US TSRC analyzed warranty claims, customer records, and vehicle history to identify incidents of third-row seat belt buckles being damaged during assembly.",
+  "reason": "The sentence has two distinct dates bounding an activity (not a production window), so there is one event per date. The January 2023 event exists, and the analysis is INVESTIGATION_START.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "From June 2023, through September 2023, FCA US TSRC finalized discussions with FCA US Restraints Engineering, Interior Engineering, and Manufacturing and determined the suspect population.",
+  "reason": "There is one event per distinct date. The June 2023 start of this activity is an event, and finalizing discussions and determining the population is OTHER.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D040",
+  "decision": "NEITHER",
+  "quote": "On September 27, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to third-row seat belt buckles being inaccessible or damaged, potentially resulting in a noncompliance",
+  "reason": "The September 27 event exists, but the filer recognizing that the issue exists is FILER_AWARENESS, not OTHER. It is not yet a DECISION, because it says 'potentially' and the recall decision came on October 19.",
+  "corrected": {
+   "date_text": "September 27, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On September 27, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to third-row seat belt buckles being inaccessible or damaged, potentially resulting in a noncompliance with FMVSS No. 208 Occupant Crash Protection",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b02"
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "In February 2020, MBAG after sales department was first made aware through internal analyses for quality assurance that the inspection gauge for checking the wear of the brake pads on the rear axle",
+  "reason": "MBAG (filer's parent) was 'first made aware through internal analyses' = internal audit finding reaching the filer, i.e. FILER_AWARENESS, not OTHER.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "The root cause is currently not known.",
+  "reason": "Cause field says the cause is not yet known, which the rules map to INSUFFICIENT.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "May 2023: internal CoP tests (Conformity of Production) resulted in not OK tests.",
+  "reason": "Internal test/audit finding that first reveals the problem to the filer = FILER_AWARENESS; the sentence reports a result, not the opening of an investigation.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D044",
+  "decision": "Y",
+  "quote": "June - August 2023: Intensive testing conducted. Analysis together with supplier and other laboratories. Due to Inconsistent test results no root cause identified.",
+  "reason": "Versions cover different sentences. Y's event (outcome of testing, OTHER, inheriting the entry date 'June - August 2023') is correct. X's date_text 'August 2023' truncates the entry's date as written ('June - August 2023'), so X is wrong.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D045",
+  "decision": "Y",
+  "quote": "June - August 2023: Intensive testing conducted. Analysis together with supplier and other laboratories. Due to Inconsistent test results no root cause identified. Test setup discussed.",
+  "reason": "Y's event 'Test setup discussed.' is a meeting/discussion = OTHER with correct inherited date 'June - August 2023'. X uses date_text 'June', which is not the entry's date as written.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D046",
+  "decision": "X",
+  "quote": "The Committee issued a task for additional technical clarification and evaluation of options.",
+  "reason": "Undated sentence inside the dated 'September 08, 2023:' entry reporting an action (task issued) -> event, OTHER, inherited date; it is not a status, belief or repeat.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D047",
+  "decision": "X",
+  "quote": "August 30, 2023 – The supplier identified quench cracking on the outer diameter of the outer race during magnetic particle inspection. The supplier’s initial findings indicated that there had been no outflow to Subaru.",
+  "reason": "X's event (supplier's finding of no outflow, OTHER, inherited Aug 30) is correct. Y labels the supplier's own internal detection as FILER_AWARENESS, but nothing reached Subaru on Aug 30 (Subaru was informed Sept 14); that sentence is OTHER.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D048",
+  "decision": "X",
+  "quote": "October 2023 – The supplier presented their findings of the scope of affected parts shipments. Subaru worked with the part supplier to trace the affected parts based on the lot number information.",
+  "reason": "X: tracing affected parts is analysis of scope = INVESTIGATION_START with inherited Oct 2023 date, correct. Y's sentence is the supplier presenting findings to the filer, which is SUPPLIER_NOTICE, not OTHER.",
+  "batch": "b02"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+  "reason": "Disassembling the HV battery packs is analysis conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D002",
+  "decision": "NEITHER",
+  "quote": "From May 2023, to September 2023, FCA US received five additional reports of 2021-2022 MY Jeep Wrangler PHEVs with fires originating from the HV battery and requested buybacks of these vehicles for further analysis.",
+  "reason": "Dated bullet reporting receipt of field reports is an event; receipt of reports is FILER_AWARENESS, and the date as written is the May-September 2023 range, not just September.",
+  "corrected": {
+   "date_text": "May 2023, to September 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "From May 2023, to September 2023, FCA US received five additional reports of 2021-2022 MY Jeep Wrangler PHEVs with fires originating from the HV battery and requested buybacks of these vehicles for further analysis.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b03"
+ },
+ {
+  "item_id": "D003",
+  "decision": "NEITHER",
+  "quote": "The modules and cells are undergoing additional analysis.",
+  "reason": "Undated sentence inside the October 2023 bullet entry, so it inherits the date; it reports analysis being conducted to find the cause, which is INVESTIGATION_START rather than OTHER.",
+  "corrected": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "The modules and cells are undergoing additional analysis.",
+   "inherited_date": true,
+   "entry_quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+   "date_inferred": false
+  },
+  "batch": "b03"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "On November 9, 2023, an issue pertaining to the persistence of user-selected drive modes, including ESC status, between ignition cycles on certain 2022 and 2023 model year Ford Lightning vehicles was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+  "reason": "Bringing the issue to the CCRG for review opens the review/investigation (later called 'The CCRG investigation'): INVESTIGATION_START. X's quote also includes the heading text.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D005",
+  "decision": "Y",
+  "quote": "The carry over of drive modes between ignition cycles was first identified during the weekend of October 27, 2023, when Ford personnel noticed that the last selected drive mode began to carry over",
+  "reason": "The sentence has its own date and reports Ford first identifying the problem: a FILER_AWARENESS event exists.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "On October 24, 2023, Weldon decided to conduct a safety recall to address the issue.",
+  "reason": "Weldon is the supplier (block Name); its own recall decision is not the filer's DECISION (KME/REV approved its recall on Nov 29). A supplier's own recall action is OTHER.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "On January 12, 2024 – The KME population of 20 vehicles was removed from recall 23V808 and added to recall 23V818 after completing audit of build location.",
+  "reason": "Moving the population between recall reports amends the Part 573 filings: NHTSA_FILING.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "On November 21, 2023, Ford’s Critical Concern Review group reviewed an issue pertaining to the rear turn signal outage notification strategy on 2022 – 2024 model year Maverick vehicles.",
+  "reason": "The CCRG review is a review/investigation of the issue (the discovery is reported separately by the Systems Engineering team): INVESTIGATION_START.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "In June 2020, MBAG received isolated cases from the field describing instances in which the front roof panel forward of the panoramic sunroof had allegedly detached from the vehicle.",
+  "reason": "MBAG is the acronym of the block company Mercedes-Benz AG and names it. Y's quote names only 'Mercedes-Benz workshops' (repair shops), which is not the supplier.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "The investigation took place from August to December 2023.",
+  "reason": "The sentence reports an investigation conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "In looking back in its claim data and after reanalysis, BRP evaluates that in the United States, 132 cases could be potentially related to this situation",
+  "reason": "This is a status count of cases, and October 30, 2023 only bounds a data window, so it is not an event date. No event.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "Undetermined.",
+  "reason": "The cause field says the cause is not known: INSUFFICIENT.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "One (1) vehicle produced for Dubai market was captured with a Nissan port modification activity.",
+  "reason": "The two versions quote different sentences. X's sentence is a containment action, correctly OTHER. Y's sentence is an investigation result from supplier data, not a supplier notifying Nissan of the problem, so SUPPLIER_NOTICE does not fit.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "Carrier is still investigating the root cause of this issue.",
+  "reason": "The cause is still being investigated: INSUFFICIENT.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "On February 4, 2024, Carrier was advised of a third report involving a UG genset unit that belonged to a different customer.",
+  "reason": "A further report of the problem reaching the filer is FILER_AWARENESS.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies",
+  "reason": "Both are SUPPORTED with the same quote. Y gives the 'name' field as the narrative writes it ('RH Sheppard'), as the output format requires. X has no name field.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "Suspect process control faults by vendor within an unknown number of the two 6.35” black zinc coated tapered stud bolts in each kit resulting in suspected inclusions and hydrogen embrittelment.",
+  "reason": "The field states a mechanism (vendor process faults leading to inclusions and hydrogen embrittlement). It does not say the cause is unknown: SUPPORTED.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D018",
+  "decision": "NEITHER",
+  "quote": "In the months leading up to July 2024, SPL received field reports of the identified 6.35” black zinc coated cap bolts breaking during initial installation and torquing.",
+  "reason": "Receiving field reports is a FILER_AWARENESS event. Its date as written (minus the leading 'In') is 'the months leading up to July 2024', not 'July 2024'.",
+  "corrected": {
+   "date_text": "the months leading up to July 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "In the months leading up to July 2024, SPL received field reports of the identified 6.35” black zinc coated cap bolts breaking during initial installation and torquing.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b03"
+ },
+ {
+  "item_id": "D019",
+  "decision": "NEITHER",
+  "quote": "Investigation and sampling of inventory during June and July 2024 indicated a hydrogen embrittlement failure mode different than the suspected fatigue mode addressed in SPL service bulletin/manufacturer communication SB-23-01 (filed 8.2.23)",
+  "reason": "An investigation result (OTHER) dated as written 'June and July 2024'. X's quote is also cut mid-word ('1,00'), not at a clause boundary.",
+  "corrected": {
+   "date_text": "June and July 2024",
+   "type": "OTHER",
+   "quote": "Investigation and sampling of inventory during June and July 2024 indicated a hydrogen embrittlement failure mode different than the suspected fatigue mode addressed in SPL service bulletin/manufacturer communication SB-23-01 (filed 8.2.23)",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b03"
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "GE Appliances incorporated the ICM870-16A-BH5400 soft start into multiple models of its recreational vehicle air conditioning units without a reported thermal incident until May 15, 2024.",
+  "reason": "The dated occurrence is the first reported thermal incident reaching GE Appliances on May 15, 2024: FILER_AWARENESS.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "GE Appliances first contacted ICM Controls on June 3, 2024 to report the incident",
+  "reason": "Here the filer contacts the supplier; the supplier is not notifying the filer, so this is not SUPPLIER_NOTICE. It is OTHER.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "On June 18, 2024, ICM Controls responded, indicating that it had not previously received any report of any such thermal event in this type of application.",
+  "reason": "The component maker tells the filer a finding: SUPPLIER_NOTICE.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "Additionally, GE Appliances received insurance claims on July 17, 2024 and July 23, 2024 alleging RV property damage from fires originating in an GE Appliances RVAC unit",
+  "reason": "Receiving insurance claims (reports of the problem) is FILER_AWARENESS. Y's quote is cut at the semicolon.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D024",
+  "decision": "Y",
+  "quote": "On September 18, 2024, the FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a condition that can lead to a detached driver side heated trailer tow mirror glass",
+  "reason": "TSRC 'recognized' (discovered) a build issue; the noncompliance is only 'potential' and the recall decision comes on Oct 3. This fits FILER_AWARENESS better than OTHER.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "On September 27, 2024, the Stellantis Europe S.p.A Customer Experience (\"CX\") department opened an investigation",
+  "reason": "Block Name is 'Manufactured by Stellantis Europe'; the chronology names Stellantis Europe S.p.A (same company), so S2 is SUPPORTED, not INSUFFICIENT.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "On October 9, 2024, Stellantis Europe S.p.A determined, through the Vehicle Regulations Committee, to add additional vehicles to the suspect population.",
+  "reason": "Expanding the suspect population is neither the defect determination nor the recall decision (that was October 2); it falls under OTHER.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D027",
+  "decision": "X",
+  "quote": "From October 2024, through November 2024, Stellantis Europe S.p.A reviewed service part sales records to determine if any suspect parts were sold in the United States market.",
+  "reason": "This is a dated action, a review conducted to determine scope, so it is an event (INVESTIGATION_START). Omitting it is wrong.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "However, based on the timeline, it was likely that this mount originated from the same January 2022 batch of three.",
+  "reason": "This is an inference/belief ('it was likely') that repeats the earlier January 2022 batch reference. It reports no action, so it is not an event.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "During this period, three additional valve failures were reported.",
+  "reason": "Reports of further failures reaching the filer count as FILER_AWARENESS. X's entry_quote is also a verbatim part of the dated entry.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D030",
+  "decision": "Y",
+  "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+  "reason": "This is an undated action sentence inside the dated 'September 12 – November 13, 2024:' entry, so it is an event with an inherited date (OTHER).",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "Arrangements were made to obtain the valves for analysis.",
+  "reason": "This is an action sentence inside the dated 'August 31, 2024:' entry, so it is an event with an inherited date.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "The first submission occurred November 14, 2023.",
+  "reason": "The first dealership warranty submission is a report of the problem reaching the filer, so FILER_AWARENESS.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "On January 24, 2024, the manufacturing plant was reviewing the installation of the furnace cold air return and number of heat ducts being used due to an internal Pre-Delivery Inspection (\"PDI\") inspection.",
+  "reason": "The issue surfaced through an internal inspection (an internal audit finding), which is the filer's first awareness. FILER_AWARENESS fits better than OTHER.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "On January 25, 2024, the manufacturing plant contacted Forest River's Office of Corporate Compliance (\"OCC\") and a research item was opened.",
+  "reason": "A research item was opened, which is an investigation being opened, so INVESTIGATION_START.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "See attached document titled “2024MY Telluride Engine Valve Spring Chronology.”",
+  "reason": "The chronology is only a pointer, which makes U NOT_REPORTED. The only exception is a cause that names a supply-chain company, and here the cause says only 'the supplier' (unnamed).",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "Chronology is provided as an attachment.",
+  "reason": "The chronology is only a pointer, and the cause refers only generically to 'supplier manufacture' without naming a company. The NAMED exception does not apply, so NOT_REPORTED.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D037",
+  "decision": "CONTESTED",
+  "quote": "01/18/2024 – R. H. Sheppard communicates to Navistar of finding a steering gear sector shaft with less than the required hardness during shot peen operation.",
+  "reason": "This is a pairing artifact: X and Y are two different 01/18/2024 bullet events, and each is typed correctly (supplier communication = SUPPLIER_NOTICE; ship hold/containment = OTHER). Neither is wrong, and the item cannot be settled as one event.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D038",
+  "decision": "CONTESTED",
+  "quote": "01/18/2024 through 02/20/2024 – Navistar conducts a search of manufacturing records to identify vehicles built with a suspect steering gear serial number.",
+  "reason": "This is a pairing artifact: X (the records search to identify scope = INVESTIGATION_START) and Y (the 02/07/2024 meeting = OTHER) are different bullet events, and each is typed acceptably. It cannot be settled as one event.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "02/09/2024 – Navistar receives R.H. Sheppard’s 573 defect report for 24E-010.",
+  "reason": "This is one bullet sentence, and X's split at the 'R.H.' abbreviation is wrong. Receiving the supplier's 573 recall report is a SUPPLIER_NOTICE.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "02/07/2024 – Navistar Product Safety, Engineering, and supplier quality meet with R. H. Sheppard to review and discuss the failure mode, root cause, lot code and steering gear serial number data collected by R. H. Sheppard.",
+  "reason": "Y's fragment comes from wrongly splitting the 02/07/2024 bullet at the 'R.' abbreviation. It belongs to the same sentence as the meeting event, so it is not a separate event.",
+  "batch": "b03"
+ },
+ {
+  "item_id": "D001",
+  "decision": "Y",
+  "quote": "may have been built with a suspect SABIC inflator that may rupture",
+  "reason": "Chronology names SABIC, the inflator maker (a supply-chain company), so U is NAMED.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D002",
+  "decision": "NEITHER",
+  "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+  "reason": "Chronology is prose; the preceding sentence starts 'Therefore ... on 6 December 2023', not with a date, so no dated entry exists. Undated prose sentence: event with date_inferred true, empty date; investigation conducted.",
+  "corrected": {
+   "date_text": "",
+   "type": "INVESTIGATION_START",
+   "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+   "inherited_date": false,
+   "date_inferred": true
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D003",
+  "decision": "NEITHER",
+  "quote": "With this additional investigation and analyses, on 13 March 2024 Porsche determined that a safety-related defect exists in additional vehicles identified via data analytics and hardware analyses.",
+  "reason": "X's quote is a fragment and its date is inherited from a non-entry; the sentence has its own date 13 March 2024 and reports a defect determination (DECISION).",
+  "corrected": {
+   "date_text": "13 March 2024",
+   "type": "DECISION",
+   "quote": "With this additional investigation and analyses, on 13 March 2024 Porsche determined that a safety-related defect exists in additional vehicles identified via data analytics and hardware analyses.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D004",
+  "decision": "NEITHER",
+  "quote": "As there are different batches of potentially affected Porsche Taycan vehicles which require different remedies, Porsche decided to conduct two different recalls on 13 March 2024",
+  "reason": "X quotes a mid-sentence fragment with a truncated date; the actual sentence is a recall decision dated 13 March 2024.",
+  "corrected": {
+   "date_text": "13 March 2024",
+   "type": "DECISION",
+   "quote": "As there are different batches of potentially affected Porsche Taycan vehicles which require different remedies, Porsche decided to conduct two different recalls on 13 March 2024",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "ARA5 applies to a vehicle population where Porsche does not or not yet have access to sufficient vehicle battery data.",
+  "reason": "Description of a recall population with no action; not an event.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "In parallel, as part of its ongoing assessment of the condition, Tesla Engineering performed tests to characterize and recreate the condition.",
+  "reason": "Testing conducted to characterize the condition is INVESTIGATION_START; date inherited from the April 3 bullet.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D007",
+  "decision": "X",
+  "quote": "On April 8, 2024, Tesla Engineering received and reviewed images associated with the first customer claim, which confirmed the presence of the condition.",
+  "reason": "Dated sentence reporting an action (review/analysis of images); it is an event, so the null version is wrong.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "Chronology is provided as an attachment.",
+  "reason": "Chronology is only a pointer; the cause refers to the supplier only generically ('roof supplier facility'), and the only exception to NOT_REPORTED is a named company in the cause.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D009",
+  "decision": "NEITHER",
+  "quote": "During the course of the investigation, Winnebago identified 66 claims from 06/07/2018 – 01/11/2024 related to Supplemental Restraint Systems (SRS) alerts.",
+  "reason": "The date range only bounds a data window, so it is not an event date; the sentence is an undated prose action (claims identified), so it is an event with date_inferred true.",
+  "corrected": {
+   "date_text": "",
+   "type": "FILER_AWARENESS",
+   "quote": "During the course of the investigation, Winnebago identified 66 claims from 06/07/2018 – 01/11/2024 related to Supplemental Restraint Systems (SRS) alerts.",
+   "inherited_date": false,
+   "date_inferred": true
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On 11/3/2023, testing of the system shows that if power is disconnected from the leveling controller while squeezing the unit control enable trigger, the platform may dump.",
+  "reason": "Sentence reports a test result, which the rules list under OTHER.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "In February 2024, Mercedes-Benz AG identified an additional case outside the US, which showed similarities with the above-mentioned deviation.",
+  "reason": "A later field case reaching the filer's parent is a report of the problem: FILER_AWARENESS.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "In the course of 2022 MBAG received two individual and presumably unrelated field cases from outside the US.",
+  "reason": "Dated sentence reporting receipt of field cases: FILER_AWARENESS event dated 2022.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+  "reason": "Narrative names HSM, a short form of block company HSM Transportation Solutions: SUPPORTED.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+  "reason": "Narrative names the seat supplier HSM: NAMED.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D015",
+  "decision": "CONTESTED",
+  "quote": "On June 20,2024, Polestar decided the condition as critical concern.",
+  "reason": "Classifying the condition as a 'critical concern' is neither clearly a defect/noncompliance determination nor a recall decision (that comes on June 25); rules do not settle DECISION vs OTHER.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D016",
+  "decision": "X",
+  "quote": "On July 1, 2024, the updated software is available in VIDA.",
+  "reason": "Availability of the remedy software in the dealer tool is remedy logistics, which is not an event.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D017",
+  "decision": "NEITHER",
+  "quote": "August 2023: NHTSA inquiry regarding the rearview camera in 2022 model year Volkswagen Golf vehicles.",
+  "reason": "Event exists, but its own date is August 2023 (2022 is a model year); a notice from NHTSA is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "August 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "August 2023: NHTSA inquiry regarding the rearview camera in 2022 model year Volkswagen Golf vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D018",
+  "decision": "NEITHER",
+  "quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+  "reason": "Event exists with own date October 2023 (2022 is a model year); a meeting presentation is OTHER.",
+  "corrected": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D019",
+  "decision": "NEITHER",
+  "quote": "CW49/2023: Priority Customer Complaint submitted for 2024 model year Volkswagen Atlas regarding various rearview image complaints.",
+  "reason": "Entry begins with its own date (calendar week CW49/2023), so it starts a new dated entry rather than inheriting October 2023; a customer complaint is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "CW49/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "CW49/2023: Priority Customer Complaint submitted for 2024 model year Volkswagen Atlas regarding various rearview image complaints.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D020",
+  "decision": "NEITHER",
+  "quote": "CW50/2023: Software 1969 for MB3 Optional Infotainment (OI) was developed for various robustness improvements to the system generally.",
+  "reason": "Entry has its own date CW50/2023, not inherited October 2023; software development is OTHER.",
+  "corrected": {
+   "date_text": "CW50/2023",
+   "type": "OTHER",
+   "quote": "CW50/2023: Software 1969 for MB3 Optional Infotainment (OI) was developed for various robustness improvements to the system generally.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D021",
+  "decision": "NEITHER",
+  "quote": "CW05/24: Publication of the TPI for SW1969 OI.",
+  "reason": "Entry has its own date CW05/24, not inherited October 2023; publication is OTHER.",
+  "corrected": {
+   "date_text": "CW05/24",
+   "type": "OTHER",
+   "quote": "CW05/24: Publication of the TPI for SW1969 OI.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D022",
+  "decision": "NEITHER",
+  "quote": "April 2024: NHTSA inquiry regarding the rearview camera in 2023 model year Volkswagen Golf 8 vehicles.",
+  "reason": "Event exists with own date April 2024 (2023 is a model year); a notice from NHTSA is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "April 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "April 2024: NHTSA inquiry regarding the rearview camera in 2023 model year Volkswagen Golf 8 vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D023",
+  "decision": "CONTESTED",
+  "quote": "Ongoing analysis is focused on the infotainment system software.",
+  "reason": "Could be a status statement about the current focus (not an event) or an ongoing analysis (event, likely INVESTIGATION_START rather than OTHER); the rules do not settle it.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "In February 2024, during inspection of the rear emergency door, in three (3) occasions, the handle broke.",
+  "reason": "Breakage found during the filer's own inspection is an internal finding of the problem: FILER_AWARENESS.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "On May 9, 2024, an issue pertaining to windshield adhesion on certain F-150 vehicles was brought to Ford’s Critical Concerns Review Group (CCRG) for review.",
+  "reason": "Issue brought to the CCRG for review is the opening of a review/analysis (INVESTIGATION_START); X's quote also wrongly glues the separate 'May – June 2024' header line onto the sentence.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D026",
+  "decision": "X",
+  "quote": "On May 2, 2024, personnel at Ford’s Kansas City Assembly Plant (KCAP) identified visible urethane sealer on the interior passenger side A-pillar that was off location relative to the windshield and flange.",
+  "reason": "Dated sentence reporting an internal finding of the problem by filer personnel; it is an event of type FILER_AWARENESS.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D027",
+  "decision": "NEITHER",
+  "quote": "March 19-21, all in-house units were quarantined and inspected, and a clean point established for production.",
+  "reason": "Containment event (OTHER) exists, but date_text must be the date exactly as written: 'March 19-21', not 'March 19'.",
+  "corrected": {
+   "date_text": "March 19-21",
+   "type": "OTHER",
+   "quote": "March 19-21, all in-house units were quarantined and inspected, and a clean point established for production.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "07/08/2024 – Meritor communicates to Navistar findings that certain Meritor steer axle assemblies built with USK International’s tie rod ball studs were manufactured with less than the required hardness.",
+  "reason": "Narrative names Meritor, the maker of the defective steer axle assemblies (the block's Cummins Drivetrain and Braking Systems at Meritor's Troy address); the narrative names the supplier, so SUPPORTED, not INSUFFICIENT.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D029",
+  "decision": "CONTESTED",
+  "quote": "09/03/2024- Revised recall schedule due to holiday.",
+  "reason": "Unclear whether revising the recall schedule is an amendment of the Part 573 report (NHTSA_FILING) or a remedy-logistics/other change; the text does not say it was submitted to NHTSA.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "Navistar Supplier Quality reviews the records of the 40 units and determines that they were not placed on hold.",
+  "reason": "Records review conducted to establish scope of affected units is an analysis conducted to find scope (INVESTIGATION_START).",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "9/5/2024 – Navistar approved to extend the population for 24511.",
+  "reason": "Approval to extend the recall population is a decision to recall additional vehicles (DECISION).",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "Relevant chronology dates for this revision are below.",
+  "reason": "Pointer sentence with no action; pointers are not events.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D033",
+  "decision": "NEITHER",
+  "quote": "Between November 2023 and June 2024, further reviews were conducted in an attempt to identify potentially affected vehicles with possible suspect replacement parts.",
+  "reason": "Sentence has two distinct dates, so a June 2024 event exists; reviews conducted to identify affected vehicles are analysis to find scope, so type INVESTIGATION_START rather than OTHER.",
+  "corrected": {
+   "date_text": "June 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "Between November 2023 and June 2024, further reviews were conducted in an attempt to identify potentially affected vehicles with possible suspect replacement parts.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b04"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "6/18/2024 REV RV received information regarding a 2024 Model Year Admiral motor home, serial number 655NR4440572 that the front overhead cabinet under the HappiJac drop down bed started to detach from the mounting surface.",
+  "reason": "'REV RV' is a short form/brand of the block company REV Recreation Group (RRG), and the rules count short forms/brands as naming it.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "7/02 Manufacturing leaders inspected the unit and reviewed the prints.",
+  "reason": "Inspection of the unit and print review is analysis conducted to find the cause (INVESTIGATION_START).",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "Claim data analyzed.",
+  "reason": "Analysis of claim data conducted to find scope/cause is INVESTIGATION_START; inherited 7/08 entry date is correct in both.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "7/11 Stress testing was performed on an overhead cabinet from manufacturing.",
+  "reason": "Testing conducted to find the cause is INVESTIGATION_START.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "7/25 Safety committee met to discuss engineering investigation results and sent recommendation to declare a voluntary safety recall",
+  "reason": "Committee meeting forwarding a recommendation to leadership for consideration is not itself the decision to recall; it is a meeting (OTHER).",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D039",
+  "decision": "X",
+  "quote": "6/20 The manufacturing plant was notified of the issue with the front overhead cabinet coming loose.",
+  "reason": "Dated notice of the problem reaching the filer's plant is an event (FILER_AWARENESS, later notice).",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "7/15 Customer unit repaired.",
+  "reason": "Repair of an affected vehicle is remedy logistics, which the rules exclude from events.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "S5.5.3(b): Emergency Exit Identification: Concise operating instructions describing the motions necessary to unlatch and open the emergency exit shall be located within 15 centimeters of the release mechanism on the inside surface of the bus.",
+  "reason": "The cause field only restates the FMVSS requirement and gives no cause or mechanism, so INSUFFICIENT.",
+  "batch": "b04"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "In March 2024, the supplier identified a deviation in the production process of the welding material was causing the observed deviation",
+  "reason": "The welding-material supplier reports its finding (root cause and affected batch) to MBAG: a supplier finding = SUPPLIER_NOTICE.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "Based on this determination from April through August 2024, MBAG analyzed the potential effects of the suspect welding material on the integral carrier. These analyses included thorough material testing and simulations.",
+  "reason": "Analysis/testing conducted to determine effects and scope = INVESTIGATION_START.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "GM’s investigation identified 272 potentially related field complaints, which were received by GM between May 5, 2024, and August 15, 2024.",
+  "reason": "May 5-Aug 15 only bounds the data window of complaints; it is not an event date, so no Aug 15-dated event.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D004",
+  "decision": "NEITHER",
+  "quote": "On September 17, 2024, a driver delivering a completed unit to a customer experienced a thermal event during the trip.",
+  "reason": "The dated sentence reports an occurrence, so the event exists (null is wrong); but the sentence itself does not report a notice reaching the filer (that is the next, undated sentence), so the type is OTHER.",
+  "corrected": {
+   "date_text": "September 17, 2024",
+   "type": "OTHER",
+   "quote": "On September 17, 2024, a driver delivering a completed unit to a customer experienced a thermal event during the trip.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b05"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "On October 9, 2024, during a routine Standards Manager Inspection of the plant, the Standards Manager found the manufacturing plant had more than the single unit affected.",
+  "reason": "Internal inspection/audit finding reaching the filer = FILER_AWARENESS.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D006",
+  "decision": "X",
+  "quote": "On October 15, 2024, it was discovered that manufacturing had been installing the washer prep without the anti-siphon vent consistently.",
+  "reason": "Rules list 'discovered' as FILER_AWARENESS.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "On October 18, 2024. Forest River's Corporate Committee voted to recall.",
+  "reason": "The dated fragment alone reports no action; the dated item is the vote to recall = DECISION.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "09-24-24: Cummins’ 573 filed with NHTSA; copy provided to Kenworth S&C.",
+  "reason": "Rules list 'a supplier's own filing' as OTHER but also 'received a recall notice from X'/supplier tells filer of its own recall as SUPPLIER_NOTICE; this sentence reports both.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "The cause of the issue is currently under continued investigation.",
+  "reason": "Cause not yet known = INSUFFICIENT.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "Two cases were reported as accidents with the loss of the respective wheels but without any deaths or injuries (Sept. 23rd & Oct. 15th).",
+  "reason": "Reports of incidents reaching Porsche = FILER_AWARENESS.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "Two cases were reported as accidents with the loss of the respective wheels but without any deaths or injuries (Sept. 23rd & Oct. 15th).",
+  "reason": "Reports of incidents reaching Porsche = FILER_AWARENESS.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "March 2020 – January 2021 Honda received quality reports of the issue and began to investigate.",
+  "reason": "The sentence first reports receipt of quality reports (first awareness); investigating follows from it. FILER_AWARENESS is the primary action.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "February 2022 – August 2022 Honda received additional reports and began to reanalyze and investigate the issue",
+  "reason": "Receipt of additional reports = later FILER_AWARENESS; kept consistent with D012 (primary action is receipt).",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "Honda continued to investigate the issue.",
+  "reason": "Investigation conducted (continued) counts as INVESTIGATION_START ('opened, started or conducted').",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "In October of 2024, the instrument panel engineering team conducted a read-across for label releases, which revealed that the release issue started with the 2020MY Explorer and Aviator launch",
+  "reason": "Read-across analysis conducted to determine scope = INVESTIGATION_START; Y's quote is cut at an ' and ' clause boundary.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "Concern was related to a crease in the pad, that caused a short circuit.",
+  "reason": "Description of the concern with no action or occurrence; not an event.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D017",
+  "decision": "NEITHER",
+  "quote": "From August 2023 throughout November 2023, after various discussions and testing performed by the software supplier, the supplier itself stated that",
+  "reason": "Supplier stating its finding to the filer is an event of type SUPPLIER_NOTICE (not OTHER); date is the written range.",
+  "corrected": {
+   "date_text": "August 2023 throughout November 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "From August 2023 throughout November 2023, after various discussions and testing performed by the software supplier, the supplier itself stated that “although Maserati Grecale and Granturismo software contains the deviation",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b05"
+ },
+ {
+  "item_id": "D018",
+  "decision": "X",
+  "quote": "On November 22, 2023, at Vehicle Regulation Committee (VRC), Maserati spA decided, based on supplier’s statement to put the investigation in monitoring status",
+  "reason": "Dated action (committee decision to monitor, not a recall decision) is an event of type OTHER.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "FCA US TSRC held regular meetings with FCA US Engineering and Supplier Quality to understand all potential failure modes",
+  "reason": "'Supplier Quality' is an internal FCA US department, not a supply-chain party; narrative names no supplier, cause is NR.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D020",
+  "decision": "X",
+  "quote": "On October 09, 2024, the FCA US TSRC organization recognized a front seat SAB squib connector issue existed on certain vehicles related to improper securement of the connectors",
+  "reason": "Filer recognizing/becoming aware of the specific squib connector issue = FILER_AWARENESS (decision to recall came later).",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D021",
+  "decision": "NEITHER",
+  "quote": "From October 2023, through September 2024, FCA US TSRC held regular meetings with FCA US Engineering and Supplier Quality to understand all potential failure modes of the issue and determine the suspect population.",
+  "reason": "Event exists and is an investigation of cause/scope (INVESTIGATION_START), but date_text should be the written range, not just its start.",
+  "corrected": {
+   "date_text": "October 2023, through September 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "From October 2023, through September 2024, FCA US TSRC held regular meetings with FCA US Engineering and Supplier Quality to understand all potential failure modes of the issue and determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b05"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "11/25/2024 – Keystone Safety Committee reviewed the information and concluded that the data reviewed indicated a unanimous vote for a voluntary recall.",
+  "reason": "Committee vote for recall = DECISION.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "Investigation called for to determine affected unit range.",
+  "reason": "Investigation opened to determine scope = INVESTIGATION_START.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "While the vehicle is in motion, passengers wearing the seat belts may experience the seat belt is delayed in retracting.",
+  "reason": "Cause field describes only the symptom, no cause or mechanism; not SUPPORTED.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D025",
+  "decision": "CONTESTED",
+  "quote": "The customer reported that at 639 miles they experienced intermittent vibration while driving at highway speed before the vehicle suddenly made an uncommanded left turn into a side rail.",
+  "reason": "The sentence describes what the customer reported in the Sept 12 GCQIS incident report already logged as an event, so it is unclear whether it counts as a separate event. If it does, the rules do not settle its date: the 'September – November 2024' header line could start a dated entry, giving an inherited date, or the sentence could be undated prose after 'On September 12, 2024', giving date_inferred. The type is also unclear: OTHER, or FILER_AWARENESS as a customer report.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "CCRG was able to determine that certain vehicles built between November 6, 2023 and February 12, 2024, may have failed to achieve the required torque",
+  "reason": "February 12, 2024 only bounds a production data window ('vehicles built between ...'), so under the rules it is not an event date. No event should carry this date.",
+  "batch": "b05"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "JSS continued its investigation into the issue and thereafter concluded that parts from the entire inflator production run may be affected.",
+  "reason": "'JSS' is the acronym of the block company Joyson Safety System(s); a short form counts, so the narrative names the supplier (SUPPORTED).",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "JSS continues to investigate root cause but has found elevated moisture in the propellant and reduced propellant densities in parts from the affected production lot.",
+  "reason": "The cause field states a concrete mechanism (elevated moisture, reduced propellant density), not merely that the cause is unknown; SUPPORTED.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "the issue was reviewed by the Cummins Product Safety Defect Board (PSDB) and, based upon information available to date, the PSDB authorized this defect notification",
+  "reason": "The PSDB authorizing the defect notification is the decision that a defect exists / to recall: DECISION.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "The new Number Potentially Involved is 107.",
+  "reason": "Status statement of the population count, no action or occurrence; not an event.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Stellantis Europe CX and Stellantis Europe Supplier Quality conducted tests to reproduce the issue",
+  "reason": "'Stellantis Europe Supplier Quality' is the filer group's internal function, not a generic supplier reference; cause is empty and the chronology mentions no supply-chain party: NONE_MENTIONED.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D006",
+  "decision": "X",
+  "quote": "From July 2025, through September 2025, Stellantis Europe CX held regular meetings with Stellantis Europe Engineering and Stellantis Europe Supplier Quality to review manufacturing and quality control processes, part design, and production records to understand the scope of the investigation.",
+  "reason": "The meetings are conducted to review records and processes to understand scope, i.e. an analysis conducted to find cause/scope: INVESTIGATION_START.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D007",
+  "decision": "X",
+  "quote": "On September 25, 2025, Stellantis Europe CX organization recognized a vehicle build issue existed on certain vehicles",
+  "reason": "The filer's organization recognizing/discovering the issue is filer awareness; the noncompliance decision comes later on September 30.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "August 7, 2024 Honda conducted a check of units in US inventory and determined all wheels had the lug seat inserts present.",
+  "reason": "The two versions label different sentences (the August 7 inventory check vs the August - October continued investigation); both are valid events in their own right, so the pairing cannot be settled as one being correct.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "The Recall Committee convened on 24th December 2024 and determined that: a. a non-compliance could occur in the relevant vehicle population;",
+  "reason": "date_text must be the date as written ('24th December 2024'), and the committee's determination of non-compliance is a DECISION.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "The software fault was identified as part of software updates adopted in production from March 2024 and as part of a service campaign launched in October 2024.",
+  "reason": "The sentence reports an action (fault identified; update adopted in production) and carries its own dates; the March 2024 production adoption is an event (OTHER).",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "DAG (MBAG) determined that this noncompliance was inconsequential as it relates to motor vehicle safety, and submitted a petition for inconsequential noncompliance on March 27, 2019.",
+  "reason": "An inconsequentiality determination and petition is neither a decision that a noncompliance must be recalled nor a Part 573 filing; OTHER.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "On December 7, 2022, NHTSA notified MBAG that it intended to deny MBAG’s petition for inconsequentiality.",
+  "reason": "A notice from NHTSA about the noncompliance reaching the filer (a later notice) is FILER_AWARENESS per the type list.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "Consequently, MBAG is submitting a new Noncompliance Information Report on January 17, 2025.",
+  "reason": "Submitting a Noncompliance Information Report (Part 573) is NHTSA_FILING.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "On June 24, 2024, through June 28, 2024, the manufacturing plant and OCC continued to research the concern.",
+  "reason": "Research conducted into the concern is an investigation conducted to find cause/scope: INVESTIGATION_START.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "On January 14, 2025, Forest River noticed a clerical error in the data.",
+  "reason": "A clerical error in recall scope data is not a report or notice of the safety problem; it is another occurrence (OTHER).",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "On January 22, 2025, Forest River filed a new recall for the amended population.",
+  "reason": "Filing a new recall with NHTSA is NHTSA_FILING; X's quote also wrongly merges a fragment of the previous paragraph.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "On March 19, 2025, Forest River noticed a clerical error in the data.",
+  "reason": "A clerical error in recall scope data is not notice of the safety problem; OTHER.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "The single Dealer will be notified on or before March 21, 2025.",
+  "reason": "Dealer notification is remedy logistics and future tense; not an event.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D019",
+  "decision": "X",
+  "quote": "Beginning in March 2024, dealers in several countries overseas began to notice some trucks arrive from the manufacturer with condensation on the fuse box cover.",
+  "reason": "Dealers noticing condensation is not yet a report reaching the filer (reports to MFTBC are the next sentence); OTHER occurrence.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "Between March and July, dealers had submitted a total of 15 product quality reports to MFTBC.",
+  "reason": "Dealers submitting product quality reports to the manufacturer is a report reaching the filer side: an occurrence typed FILER_AWARENESS, dated by its own date as written.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "Additional information sought regarding root cause of the thermal cases, the influence of the engine cover, the effects of pre-damage to the engine cover, and the influence of vehicle service.",
+  "reason": "Seeking information on root cause and influences is an investigation/analysis to find the cause: INVESTIGATION_START.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "The supplier conducted an inspection of battery inventory with manufacturing dates before June 2024 when the assembly inspection process was implemented.",
+  "reason": "'June 2024' bounds the inventory window inspected (manufacturing dates before June 2024); a window-bound date is not an event date.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "The terminal of the drive battery connector was found to be caved in.",
+  "reason": "Undated finding inside the March 2024 bullet: an occurrence (finding) with inherited date March 2024.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "This inspection uncovered one additional battery with a terminal that could cave in due to the lack of an anchor.",
+  "reason": "Undated finding inside the August 2024 bullet: an event (test/inspection result) with inherited date August 2024.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "January 30, 2025 - February 5, 2025 – Mor-Ryde inspected Grand Design units online and in dealer storage lot.",
+  "reason": "Inspecting units to find the scope of the issue is an investigation conducted: INVESTIGATION_START; the start date of the range is the event date.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+  "reason": "The two versions are different sentences. Y is a valid event: forming a team to audit FSAs is an investigation (INVESTIGATION_START). X's Dec 19 sentence only informs NHTSA of a concern. It is not a Part 573 submission or a notice of recall, so NHTSA_FILING does not fit.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "On February 21, 2025, Ford’s Field Review Committee reviewed the concern and approved a field action",
+  "reason": "Approving a field action is the decision to recall, so this is a DECISION event with its own date.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "As of February 21, 2025, Ford is aware of five (5) warranty reports, received February 6, February 8, February",
+  "reason": "This is a status statement ('As of <date> ... N claims'), which the rules exclude from events. Even if counted, the type would not be OTHER.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "As of February 21, 2025, Ford is aware of five (5) warranty reports, received February 6, February 8, February",
+  "reason": "This is a status statement ('As of <date> ... N claims'), which the rules exclude from events.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "As of February 21, 2025, Ford is aware of five (5) warranty reports, received February 6, February 8, February",
+  "reason": "This is a status statement ('As of <date> ... N claims'), which the rules exclude from events.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "As of February 21, 2025, Ford is aware of five (5) warranty reports, received February 6, February 8, February",
+  "reason": "This is a status statement ('As of <date> ... N claims'), which the rules exclude from events. Y (null) is correct.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "As of February 21, 2025, Ford is aware of five (5) warranty reports, received February 6, February 8, February",
+  "reason": "This is a status statement ('As of <date> ... N claims'), which the rules exclude from events.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "Although Isuzu has not definitively identified the root cause, it believes, based on its investigation, that the Valvoline Zerex Dex Cool coolant in these vehicles may react with additives in the Valvoline G40 coolant and components within the EV drive motor cooling system,",
+  "reason": "The cause field says the root cause is not settled ('has not definitively identified'), which matches INSUFFICIENT. Y's quote describes the coolant prefill, not a cause.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+  "reason": "The filer finding broken U-bolts in its own yard is an internal finding of the problem reaching the filer, so FILER_AWARENESS.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+  "reason": "The filer finding broken U-bolts in its own yard is an internal finding of the problem reaching the filer, so FILER_AWARENESS.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "On April 30, 2025, out of an abundance of caution, DTNA decided to conduct a recall for this issue.",
+  "reason": "The block names Daimler Truck North America, and the narrative uses its acronym DTNA. The rules say an acronym of the block company counts, so this is SUPPORTED.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "On June 23, 2025 DTNA amended its Part 573 Report to provide a description of the final remedy for this recall.",
+  "reason": "Amending a Part 573 report is NHTSA_FILING by definition.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "On July 7, 2025 DTNA resubmitted the earlier-submitted dates.",
+  "reason": "Resubmitting the dates on the NHTSA portal amends or submits the Part 573 report, so NHTSA_FILING.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "From March 2025, through April 2025, FCA US TSRC met with FCA US engineering and supplier quality to review the issue,",
+  "reason": "'Supplier quality' here is an internal FCA US function that the filer met with, not a reference to a supplier party. No supply-chain party is mentioned, so NONE_MENTIONED.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D040",
+  "decision": "Y",
+  "quote": "From March 2025, through April 2025, FCA US TSRC met with FCA US engineering and supplier quality to review the issue, understand the failure mode, and to determine the suspect population.",
+  "reason": "Reviewing the issue to understand the failure mode and set the population is analysis conducted to find the cause and scope, so INVESTIGATION_START.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D041",
+  "decision": "X",
+  "quote": "On April 16, 2025, the FCA US TSRC organization recognized a vehicle build issue exists on certain vehicles related to a delay in the PRND in the 3.5\" cluster display,",
+  "reason": "TSRC recognizing that a build issue exists is an internal finding of the problem reaching the filer (a later one is allowed), so FILER_AWARENESS. It is not yet the recall decision.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs. built with 7600 lbs. safety chains specific to the Starcraft Autumn Ridge 26BHS Travel Trailers.",
+  "reason": "X's quote is a fragment of the dated entry sentence, split wrongly at 'lbs.'. It is not a separate sentence, so no event.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D043",
+  "decision": "NEITHER",
+  "quote": "Jayco Inc. engineering determined that the 7600 lbs. safety chains are underrated on these specific trailers and need to be replaced with the 11,700 lbs. safety chains.",
+  "reason": "There is a real inherited-date event here, but X cut the sentence at 'lbs.'. The corrected label uses the full sentence (an engineering finding, so OTHER), dated by the 5/12/2025 entry.",
+  "corrected": {
+   "date_text": "5/12/2025",
+   "type": "OTHER",
+   "quote": "Jayco Inc. engineering determined that the 7600 lbs. safety chains are underrated on these specific trailers and need to be replaced with the 11,700 lbs. safety chains.",
+   "inherited_date": true,
+   "entry_quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs. built with 7600 lbs. safety chains specific to the Starcraft Autumn Ridge 26BHS Travel Trailers.",
+   "date_inferred": false
+  },
+  "batch": "b06"
+ },
+ {
+  "item_id": "D044",
+  "decision": "X",
+  "quote": "Jayco Inc. engineering determined that the 7600 lbs. safety chains are underrated on these specific trailers and need to be replaced with the 11,700 lbs. safety chains.",
+  "reason": "Y's quote is the second half of the 'Jayco Inc. engineering determined...' sentence, split wrongly at 'lbs.'. That sentence is one event (see D043), so this is not a separate event.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D045",
+  "decision": "X",
+  "quote": "need to be replaced with the 11,700 lbs. safety chains.",
+  "reason": "'safety chains.' is a fragment from splitting at 'lbs.', not a separate sentence or event.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D046",
+  "decision": "Y",
+  "quote": "Honda found a fuel leak in a CR-V Hybrid during a production quality inspection and began to investigate.",
+  "reason": "The main occurrence is the filer discovering the leak in its own inspection, so FILER_AWARENESS. Only one event per sentence is allowed, and the investigation follows from the finding.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D047",
+  "decision": "X",
+  "quote": "Starting May 30th, we dispatched representatives from our service and quality teams to dealer network lots to inspect previously built inventory.",
+  "reason": "Inspecting previously built inventory is testing conducted to find the scope; it led to the June 3rd finding of the window of effect. So INVESTIGATION_START.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D048",
+  "decision": "X",
+  "quote": "it was determined on June 3rd that the window of effect was from January 6, 2025 through May 29, 2025",
+  "reason": "'January 6, 2025 through May 29, 2025' only bounds the affected production window, which the rules say is not an event date. This sentence's event date is June 3rd.",
+  "batch": "b06"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+  "reason": "Sentence has its own date (April 15, 2025); internal discovery of the problem is FILER_AWARENESS, not OTHER.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "CCRG reviewed field and warranty data, and potential for occurrence at higher mileages in the future via statistical projections.",
+  "reason": "Undated sentence inside the 'April – June 2025' entry inherits that date; review of field/warranty data and projections is analysis of scope (INVESTIGATION_START). X types the April 15 discovery as OTHER, which is wrong.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "On April 22, 2025, this issue was brought to Ford’s CCRG for review.",
+  "reason": "Issue already known to Ford; bringing it to the review group opens a review/investigation (INVESTIGATION_START) rather than a new report reaching the filer.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "Throughout May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment",
+  "reason": "Y's quote is verbatim (X drops 'Throughout'); work to understand the factors leading to detachment is cause analysis (INVESTIGATION_START).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Supplier process improvement actions were reviewed by Ford’s Supplier Technical Assistance team to assist in determining suspect population scoping.",
+  "reason": "Review conducted to determine population scope is INVESTIGATION_START; the entry is 'April – June 2025' (the 'Throughout May 2025' sentence does not begin with a date, so it does not start a new entry). Y uses a May 2025 entry and OTHER.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "The investigation also included a new assessment of the risk factors that considered recent road hazard safety recalls",
+  "reason": "Undated sentence in the 'April – June 2025' entry; risk assessment conducted as part of the investigation is INVESTIGATION_START. X uses a non-existent May 2025 entry and OTHER.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "This conclusion was based on the assessment that the involved parts did not represent a significant risk while falling to the ground",
+  "reason": "Explains the basis of an earlier conclusion; a description/rationale with no new action, so not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D008",
+  "decision": "NEITHER",
+  "quote": "The investigation also included a new assessment of the risk factors that considered recent road hazard safety recalls",
+  "reason": "The event exists, but it inherits the 'April – June 2025' entry date (no entry begins with 'May 2025'; the sentence reads 'Throughout May 2025') and is INVESTIGATION_START.",
+  "corrected": {
+   "date_text": "April – June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "The investigation also included a new assessment of the risk factors that considered recent road hazard safety recalls and continued discussions with NHTSA on road hazard risks.",
+   "inherited_date": true,
+   "entry_quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "These warranty claims were received between June 17, 2020, and April 14, 2025.",
+  "reason": "Status/data-window statement that bounds the warranty claim count, not an action; no event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On October 6, 2023, Ford’s Field Review Committee approved field action 23V687 (23S56)",
+  "reason": "Approval of a field action is the decision to recall (DECISION).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "The original 23S56/23V687 recall population erroneously used a population cutoff point of May 24th, 2022.",
+  "reason": "Production cutoff date bounding the population; a description, not an action, so no event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "These claims were received between October 6, 2022 and February 17, 2025.",
+  "reason": "Data window for a status count of claims; not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "Oshkosh begins to evaluate this condition to understand whether the wrinkling is limited to the vehicles observed at the Oshkosh facility or may exist in other vehicles",
+  "reason": "Start of an evaluation to determine scope is INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+  "reason": "Main action is the start of focused analysis of the labels to find the cause (INVESTIGATION_START).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "Attention is given to their ability to remain permanently attached to the sun visor after installment.",
+  "reason": "Analysis conducted as part of the investigation into the cause; INVESTIGATION_START (opened or conducted).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "all labels present on the sun visor including the rollover warning label and electric shock warning label present on the BEV version of the vehicles, and their placement, are evaluated.",
+  "reason": "Evaluation of labels and placement is analysis conducted to determine cause/scope (INVESTIGATION_START).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D017",
+  "decision": "X",
+  "quote": "In October 2023, a test program was initiated in order to determine the specific parameters of the assembly process for possible revision",
+  "reason": "Stated purpose is to define revised assembly parameters (a production/process change), not to find the cause or scope; OTHER.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "As part of this process, in January 2024, information from field vehicles would start to be collected and analyzed on a continual basis.",
+  "reason": "Field data collection and analysis to evaluate module performance (scope/risk) is analysis started, INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "The process would continue for all modules produced up to June 2024, as updated parameters would not be defined until that time.",
+  "reason": "June 2024 bounds a production window; the sentence describes the scope of a process, no action on that date; not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "MBAG investigated and evaluated each reported incident to determine the cause and its impact until February 2024.",
+  "reason": "Investigation conducted to determine the cause is INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "From August 2024, a risk assessment and a detailed temperature simulation were carried out in cooperation with the supplier",
+  "reason": "The filer and supplier jointly carried out analysis; the supplier is not telling the filer about the problem, so INVESTIGATION_START, not SUPPLIER_NOTICE.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "Starting in February 2025, further failure mechanisms were evaluated",
+  "reason": "Evaluation of failure mechanisms is analysis to determine cause/consequence (INVESTIGATION_START).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "during April 2025, MBAG analyzed the sequence of events that could lead to driving impairments resulting from unsuitable screws.",
+  "reason": "Analysis conducted (INVESTIGATION_START).",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "During 2023, MBAG received isolated reports of complaints in the field regarding different allegations (e.g., warning messages).",
+  "reason": "Field complaint reports reaching the filer, with its own date 2023: a FILER_AWARENESS event exists.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "From January to April 2024, MMC continued investigating the returned tailgate gas spring, confirming that the cylinder of the tailgate gas spring was severely corroded.",
+  "reason": "Investigation conducted to find the cause; rules count analysis 'opened, started or conducted' as INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "From February to April 2025, MMC continued to analyze the second tailgate gas spring failure, including a replication test to attempt to identify the root cause of water penetration into the tailgate gas spring.",
+  "reason": "Analysis/testing conducted to identify root cause = INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D027",
+  "decision": "CONTESTED",
+  "quote": "July 3, 2025 a concern related to vehicle oversteer guidance is brought to the Product Safety organization and an investigation is opened.",
+  "reason": "One sentence carries both a first report reaching the filer (FILER_AWARENESS) and an investigation opening (INVESTIGATION_START); rules give no priority.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "July 21, 2025 Product Safety Evaluation Committee is informed of early results of the investigation and that additional testing is requested.",
+  "reason": "Internal committee briefing on results is a meeting/test-results occurrence (OTHER), not a new report of the problem reaching the filer.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "MBAG is currently aware of one warranty claim received on August 26, 2024 in the USA.",
+  "reason": "Status statement ('is currently aware of' N claims); rules exclude status statements as events.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "The root cause of rear brake hose leaks has not been fully determined to date.",
+  "reason": "Cause field says root cause not determined -> INSUFFICIENT.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "On October 3, 2024, NHTSA opened a Preliminary Evaluation (PE24-027) to",
+  "reason": "A notice from NHTSA reaching the filer is listed under FILER_AWARENESS; the investigation is NHTSA's, not the filer's cause investigation.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "alleging rear brake jounce hose leaks in 2015 – 2017 Edge vehicles.",
+  "reason": "'2015' is a model-year range bounding the affected population, not an event date.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "On July 11, 2025, a non-conforming crimp was found during production.",
+  "reason": "Filer discovered the problem (internal finding) -> FILER_AWARENESS.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "July 31- The harness manufacture (APC Manufacturing in Mexico) supplier of the harness had provided a generic brand 35-amp fuse, rather than the Bussman fuse specified on the harness drawing.",
+  "reason": "Sentence reports the filer's finding about the supplied fuse; it does not say the supplier informed the filer (the supplier's confirmation is the Aug 1 entry). FILER_AWARENESS.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "a REV RV battery control center review of the macerator fuse of earlier built model year units revealed that the installation orientation of the fuse blocks by RRG employees may not match the fuse block diagram key.",
+  "reason": "Internal review finding a new problem = internal audit finding -> FILER_AWARENESS.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "This could cause confusion and possibly cause a fuse of a certain rating to be installed that maybe over or under rated for the designated circuit or component.",
+  "reason": "Consequence description with no action; not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D037",
+  "decision": "NEITHER",
+  "quote": "August 14 – Update to the investigation: The generic 35-amp fuse provided by APC Manufacturing, installed to protect the macerator circuit can create a subpar connection and create heat, allowing the plastic housing to melt.",
+  "reason": "Dated entry reporting the filer's investigation finding (a result) -> event of type OTHER; APC is only the subject, it did not notify the filer, so not SUPPLIER_NOTICE.",
+  "corrected": {
+   "date_text": "August 14",
+   "type": "OTHER",
+   "quote": "August 14 – Update to the investigation: The generic 35-amp fuse provided by APC Manufacturing, installed to protect the macerator circuit can create a subpar connection and create heat, allowing the plastic housing to melt.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "This may cause confusion and a fuse installed in the wrong location based upon the diagram key with risk of over or under protection of a circuit.",
+  "reason": "Consequence description with no action; not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D039",
+  "decision": "CONTESTED",
+  "quote": "Inspection of field motor home to be performed.",
+  "reason": "Planned future action, not yet done; rules neither include nor exclude planned actions explicitly.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "August 18 – All units in inventory with 8/14/2025 manufacture date or newer were remedied.",
+  "reason": "8/14/2025 bounds a production window ('manufacture date or newer'), so it is not an event date.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "August 1 – APC Manufacturing confirmed this fuse was substituted in their harness, but no reports of similar issues.",
+  "reason": "Supplier confirms a finding to the filer -> SUPPLIER_NOTICE event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "On August 28, 2025, FCA US determined, through the Vehicle Regulations Committee, a noncompliance with FVMSS No. 114 exists on all affected vehicles.",
+  "reason": "Block company is FCA US LLC; narrative names it by short form 'FCA US' -> SUPPORTED.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "During July 2025, FCA US TSRC met with FCA US engineering and manufacturing to review the issue, understand the failure mode, review customer records and determine the suspect population.",
+  "reason": "Analysis conducted to find failure mode and scope (suspect population) -> INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D044",
+  "decision": "NEITHER",
+  "quote": "20. Jan 2023: Start of KTM internal investigation.",
+  "reason": "Event exists (investigation started) as Y says, but date_text must be '20. Jan 2023'. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "20. Jan 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "20. Jan 2023: Start of KTM internal investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D045",
+  "decision": "NEITHER",
+  "quote": "Coordination, root cause analysis & testing with manufacturer and supplier",
+  "reason": "Undated sentence inside the 20. Jan 2023 entry: an event. Root cause analysis & testing is INVESTIGATION_START, not OTHER; quote must not include the next line's '01.'; entry date is '20. Jan 2023'.",
+  "corrected": {
+   "date_text": "20. Jan 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Coordination, root cause analysis & testing with manufacturer and supplier",
+   "inherited_date": true,
+   "date_inferred": false,
+   "entry_quote": "20. Jan 2023: Start of KTM internal investigation."
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D046",
+  "decision": "NEITHER",
+  "quote": "01. Jan 2024: 100% camera base inspection to check PCBA after conformal coating",
+  "reason": "Production/containment action is an OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "01. Jan 2024",
+   "type": "OTHER",
+   "quote": "01. Jan 2024: 100% camera base inspection to check PCBA after conformal coating",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D047",
+  "decision": "NEITHER",
+  "quote": "01. Feb 2024: Automatic Cleaning of circuit board after PCBA & wire terminal soldering",
+  "reason": "Production change is an OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "01. Feb 2024",
+   "type": "OTHER",
+   "quote": "01. Feb 2024: Automatic Cleaning of circuit board after PCBA & wire terminal soldering",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D048",
+  "decision": "NEITHER",
+  "quote": "18. Sept 2024: First contact of Transport Canada regarding consumer report to TC",
+  "reason": "Regulator contacting KTM about a consumer report is a notice of the problem reaching the filer: FILER_AWARENESS, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "18. Sept 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "18. Sept 2024: First contact of Transport Canada regarding consumer report to TC",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D049",
+  "decision": "NEITHER",
+  "quote": "25. Sept 2024: Vehicle inspection of reported vehicle",
+  "reason": "Inspection of the reported vehicle is testing conducted to find the cause: INVESTIGATION_START, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "25. Sept 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "25. Sept 2024: Vehicle inspection of reported vehicle",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D050",
+  "decision": "NEITHER",
+  "quote": "03. Oct 2024: Transport Canada starts investigation",
+  "reason": "An investigation is opened: INVESTIGATION_START (X right on existence and type); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "03. Oct 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "03. Oct 2024: Transport Canada starts investigation",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D051",
+  "decision": "NEITHER",
+  "quote": "10. Feb 2025: Transport Canada informs KTM about two additional reports",
+  "reason": "Later reports reaching the filer are FILER_AWARENESS, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "10. Feb 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "10. Feb 2025: Transport Canada informs KTM about two additional reports",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D052",
+  "decision": "NEITHER",
+  "quote": "11. Feb 2025: Transport Canada request warranty claim data.",
+  "reason": "Regulator request is an OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "11. Feb 2025",
+   "type": "OTHER",
+   "quote": "11. Feb 2025: Transport Canada request warranty claim data.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D053",
+  "decision": "X",
+  "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+  "reason": "'13.' is the day of the next line's date (13. Feb 2025), not a sentence; no event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D054",
+  "decision": "NEITHER",
+  "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+  "reason": "Meeting is an OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "13. Feb 2025",
+   "type": "OTHER",
+   "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D055",
+  "decision": "NEITHER",
+  "quote": "06. Mar 2025: Data shared with Transport Canada",
+  "reason": "Action, OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "06. Mar 2025",
+   "type": "OTHER",
+   "quote": "06. Mar 2025: Data shared with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D056",
+  "decision": "NEITHER",
+  "quote": "07. July 2025: Meeting request from Transport Canada",
+  "reason": "Occurrence, OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "07. July 2025",
+   "type": "OTHER",
+   "quote": "07. July 2025: Meeting request from Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D057",
+  "decision": "NEITHER",
+  "quote": "02. Sept 2025: Meeting KTM HQ with Transport Canada",
+  "reason": "Meeting, OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "02. Sept 2025",
+   "type": "OTHER",
+   "quote": "02. Sept 2025: Meeting KTM HQ with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D058",
+  "decision": "NEITHER",
+  "quote": "03. Sept 2025: KTM HQ determination that a recall is needed",
+  "reason": "Decision to recall: DECISION (Y right on existence and type); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "03. Sept 2025",
+   "type": "DECISION",
+   "quote": "03. Sept 2025: KTM HQ determination that a recall is needed",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D059",
+  "decision": "NEITHER",
+  "quote": "05. Sept 2025: Notice of Defect filed with Transport Canada",
+  "reason": "Filing with Transport Canada is not a Part 573 NHTSA filing; OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "05. Sept 2025",
+   "type": "OTHER",
+   "quote": "05. Sept 2025: Notice of Defect filed with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b07"
+ },
+ {
+  "item_id": "D060",
+  "decision": "X",
+  "quote": "On September 4, 2025 DTNA decided to conduct a safety recall to address affected vehicles.",
+  "reason": "Rules: an acronym of the block company counts ('DTNA' for 'Daimler Trucks North America'); narrative names DTNA, so SUPPORTED.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D061",
+  "decision": "CONTESTED",
+  "quote": "09/15/2025      International places a quality hold on all suspect wiper modules at its Parts Distribution Centers",
+  "reason": "The two versions are different chronology entries (09/15 quality hold = OTHER; 09/05-09/17 inspection finding suspect modules = scope inspection). Each is reasonably typed for its own entry; the paired comparison is not settled by the rules.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D062",
+  "decision": "Y",
+  "quote": "03/17/2025      Initial analysis did not indicate a specific trend.",
+  "reason": "Reports an initial analysis conducted to find the cause/scope: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D063",
+  "decision": "Y",
+  "quote": "International again reviewed the content of the field service report and conducted further assessment of the issue.",
+  "reason": "Further assessment conducted to find cause/scope: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D064",
+  "decision": "X",
+  "quote": "08/26/2025     A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+  "reason": "Warranty claims found by the filer are a later report of the problem reaching it: FILER_AWARENESS.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D065",
+  "decision": "X",
+  "quote": "Vehicles referenced in the field service report were repaired.",
+  "reason": "Repair of affected vehicles is remedy logistics, not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D066",
+  "decision": "Y",
+  "quote": "Some claims mentioned audible air leaks.",
+  "reason": "Description of claim content with no action; not an event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D067",
+  "decision": "CONTESTED",
+  "quote": "Rubbing of an air line was noted on the tire and fender.",
+  "reason": "'was noted' could be a finding (event) or a description of the warranty claims' content (not an event); rules do not settle it.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D068",
+  "decision": "X",
+  "quote": "Production variances due to quality control at supplier including thinner than nominal wiring gauge.",
+  "reason": "Chronology is a pointer, but the cause (part of the narrative) refers to the supplier generically: UNNAMED.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D069",
+  "decision": "X",
+  "quote": "May to June 2025 – NASO reviewed HMMA installation standard for the terminal cover.",
+  "reason": "Block Name is Hyundai Motor Manufacturing Alabama; narrative names its acronym HMMA. Y's quote (HATCI sentence) does not name the block company.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D070",
+  "decision": "X",
+  "quote": "January 21, 2025 – HATCI and HMC performed a joint inspection of the test vehicle at the test site, Calspan.",
+  "reason": "A joint inspection of the test vehicle is an investigation/analysis conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D071",
+  "decision": "X",
+  "quote": "February 17, 2025 – HMC performed an examination of parts recovered from the test vehicle.",
+  "reason": "Examination of recovered parts is analysis conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D072",
+  "decision": "Y",
+  "quote": "During an in- person meeting in Korea, HMC reviewed its investigation findings with NASO and indicated a potential shorting condition created with the starter motor and adjacent componentry within the engine compartment.",
+  "reason": "Versions cover different sentences. Y's sentence is a meeting reporting findings, which is OTHER, so Y is correct. X's sentence (continued review and discussion) is ongoing discussion, not opening or conducting new testing, so INVESTIGATION_START is doubtful.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D073",
+  "decision": "X",
+  "quote": "An in-house testing plan, mirroring the NCAP test conditions, was developed to test various conditions of the starter motor and contact made with components in the engine compartment.",
+  "reason": "A testing plan set up to find the cause opens testing: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D074",
+  "decision": "CONTESTED",
+  "quote": "The survey results revealed a number of vehicles exhibited partial or no coverage of the terminal.",
+  "reason": "Versions label different sentences of the April 24 entry, and both are correct for their sentence: X's survey results are OTHER (test results) and Y's FIR survey is INVESTIGATION_START. The disagreement comes from how the sentences were aligned.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D075",
+  "decision": "Y",
+  "quote": "Based on this information, Hyundai began reviewing HMMA manufacturing records pertaining to the terminal cover installation process.",
+  "reason": "Starting a review of manufacturing records to find the cause or scope is an investigation started: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D076",
+  "decision": "X",
+  "quote": "May to June 2025 – NASO reviewed HMMA installation standard for the terminal cover.",
+  "reason": "Reviewing the installation standard is analysis conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D077",
+  "decision": "Y",
+  "quote": "NASO conducted an on-site review of the assembly process and observed their current production condition noting no issues with the work standard.",
+  "reason": "An on-site review of the assembly process is an investigation conducted to find the cause: INVESTIGATION_START.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D078",
+  "decision": "Y",
+  "quote": "July to August 2025 – NASO coordinated additional surveys of port inventory and followed-up with HMMA on their associated assembly processes after NASOs visit.",
+  "reason": "Y's sentence (surveys to find scope) is correctly INVESTIGATION_START. X labels the durability-test sentence as OTHER, but that is testing conducted to find the cause, so X's type is wrong.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D079",
+  "decision": "CONTESTED",
+  "quote": "The test results revealed that a correctly installed terminal cover will remain in place.",
+  "reason": "Versions label different sentences, and both are correct for their sentence: test results are OTHER (X) and the durability tests are INVESTIGATION_START (Y). The disagreement comes from how the sentences were aligned.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D080",
+  "decision": "Y",
+  "quote": "Altec informed the engine manufacturer, who investigated the incident and determined that the cause of the fire on the auxiliary engine remained inconclusive.",
+  "reason": "The narrative refers to a component maker ('the engine manufacturer') only generically: UNNAMED.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D081",
+  "decision": "X",
+  "quote": "On September 15, 2025, an additional incident was reported of a thermal event on an unattended vehicle that had self-extinguished.",
+  "reason": "A further incident report reaching the filer is FILER_AWARENESS.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D082",
+  "decision": "Y",
+  "quote": "In July 2025, Altec was notified of two additional incidents similar to the one that occurred in October 2024.",
+  "reason": "'October 2024' only refers back to the incident already reported as an event ('In October 2024, Altec was notified...'). It adds no new action, and a near repeat is not a new event, so there is no separate event.",
+  "batch": "b07"
+ },
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "International begins a limited inspection of other bus chassis to determine if the same issue is present.",
+  "reason": "Inspection opened to determine whether other chassis have the issue (scope) = INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "Curtiss-Wright completes its inspection of 10 suspect shift actuators returned by International, finding there was unexpected variation in the neutral set point",
+  "reason": "Completion of supplier inspection with a finding is a test result (OTHER), not the start of an investigation.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D003",
+  "decision": "X",
+  "quote": "Curtiss-Wright continues its investigation into the issue and determines that the actuator’s input shaft was updated from powdered metal to cut steel",
+  "reason": "Supplier's continuing investigation/result; text does not say the supplier informed the filer, so OTHER (test result) rather than SUPPLIER_NOTICE.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "Narrative names Spartan Fire Chassis, a short form/brand of block company Spartan Fire LLC; rule says this counts as SUPPORTED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "Spartan is the filer's chassis maker/block-listed supplier, a supply-chain company named in the chronology = NAMED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "May 1, 2025 – Spartan Fire Chassis (Spartan) received claim of a cab door latch logic issue.",
+  "reason": "The claim reached Spartan (supplier), not the filer Alexis; FILER_AWARENESS is for reports reaching the filer, so OTHER.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "October 14, 2025 - Alexis Fire Equipment was notified by Spartan about the recall and provided with the recall population",
+  "reason": "Supplier/chassis maker Spartan tells the filer about its recall = SUPPLIER_NOTICE.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "December 2024 - October 2025 Toyota conducted vehicle testing to confirm if (1) the interruptions, or (2) the abnormal camera optical alignment data could occur on a vehicle",
+  "reason": "Dated entry sentence reports testing conducted to find scope = INVESTIGATION_START with own date; Y's paired sentence is a test result (would be OTHER), not FILER_AWARENESS.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "As a result, Toyota decided to conduct a recall.",
+  "reason": "Decision to recall is an event (DECISION). No blank line/new entry follows the 'December 2024 - October 2025' entry ('On October 24' starts with 'On'), so per rules it inherits that entry date.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+  "reason": "Filer is The Heil Co.; the report reached Agility (a supplier), not the filer, so OTHER rather than FILER_AWARENESS.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D011",
+  "decision": "X",
+  "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+  "reason": "An action (recommendation to escalate) inside the dated 'September 12 – November 13, 2024:' entry; valid OTHER event with inherited date.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "Arrangements were made to obtain the valves for analysis.",
+  "reason": "An action inside the 'August 31, 2024:' entry; not remedy logistics or status, so it is an event (OTHER) with inherited date.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D013",
+  "decision": "Y",
+  "quote": "On Friday, October 24, 2025, Micro Bird received a notification letter of a recall (NHTSA #25E063) from its provider (Q’Straint)",
+  "reason": "Receipt of the supplier's recall notice = SUPPLIER_NOTICE event on its own date; Y has it, X omits it.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "certain wheelchair securement kits shipped between May 7, 2025, and September 10, 2025, may contain a defective retractor.",
+  "reason": "September 10, 2025 only bounds a shipment data window; not an event date, so no event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D015",
+  "decision": "NEITHER",
+  "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+  "reason": "Event exists, but the preceding sentence starts with 'On', so it is not a dated entry: undated prose gets date_inferred true and empty date_text. It is an internal finding (FILER_AWARENESS), not a defect/recall DECISION.",
+  "corrected": {
+   "date_text": "",
+   "type": "FILER_AWARENESS",
+   "quote": "Internal reviews of our recent orders and stock quickly determined that Micro Bird had been provided with potentially defective parts.",
+   "inherited_date": false,
+   "date_inferred": true
+  },
+  "batch": "b08"
+ },
+ {
+  "item_id": "D016",
+  "decision": "X",
+  "quote": "On Monday, October 27, 2025, a meeting was called to advise strategic Micro Bird personnel that a recall notification was received from its provider",
+  "reason": "A dated meeting is an action/occurrence = OTHER event; Y wrongly omits it.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "The trapped air may create a separation between the components, resulting in a bubble appearance.",
+  "reason": "Explanatory description with no action; not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+  "reason": "Y's sentence has its own date and records the conclusion that a safety risk exists (DECISION). X's FSA decision belongs to table row B, which is dated 2025-11-26 and not 2025-11-19, and a recall decision is DECISION, not OTHER.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-11-26",
+  "reason": "Row B gives the date 2025-11-26 for the confirmed decision to run a field service action (recall), so the type is DECISION. X's quote '2025-11-26 C.' does not report an action.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+  "reason": "The supplier tells the filer about the problem, which is SUPPLIER_NOTICE. X's quote also runs in table text from another row.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "On November 12, 2025, the concern was escalated to the Critical Concern Management Team (CCMT), which ordered a formal investigation including to conduct a risk assessment.",
+  "reason": "A formal investigation was ordered, which is INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing)",
+  "reason": "This is a form-field question, not a reported action or occurrence, so there is no event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "(Market VR**, internal, inspection, testing) Supplier production",
+  "reason": "This is a form-field answer that describes the detection source. It reports no dated action, so there is no event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "D. Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "This is a form-field count (a status statement, with value 0), not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "A bare count value is a status, not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0",
+  "reason": "This is a form-field count (a status statement), not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "Total number of cars included in VRs concerning the condition? 0",
+  "reason": "A bare count value is a status, not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D028",
+  "decision": "X",
+  "quote": "F. Implementation date of Field Service Action 2025-11-27",
+  "reason": "2025-11-27 is the date the remedy is implemented, which is remedy logistics and not an event. The supplier notice in the quote is dated October 2025, not 2025-11-27.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D029",
+  "decision": "NEITHER",
+  "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+  "reason": "The sentence is an event with its own date, so X (null) is wrong. Its conclusion that the issue is a safety risk makes it DECISION, not OTHER (consistent with D018).",
+  "corrected": {
+   "date_text": "November 19, 2025",
+   "type": "DECISION",
+   "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b08"
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "7) Once the determination of the root cause, emails went out to all dealers with affected units on August 19th inform them of the defect.",
+  "reason": "Dealer notification emails are remedy logistics, which are excluded from events.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "8) A resolution email was sent August 22nd with details regarding the resolution of the defect to all dealers with affected units.",
+  "reason": "A resolution email to dealers is remedy logistics, which is excluded.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D032",
+  "decision": "X",
+  "quote": "9) Replacement parts were shipped out August 25th.",
+  "reason": "Shipping replacement parts is remedy logistics (repair), which is excluded.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "10) Follow up emails were sent out to all dealers with defective trailers on October 9th.",
+  "reason": "Follow-up dealer emails are remedy logistics, which are excluded.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "11) Confirmation of last open recalled trailer was completed as of October 28th, 2025.",
+  "reason": "Confirming that the recalled trailers were re-worked is repair of affected vehicles (remedy logistics, plus an 'as of' status), so there is no event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+  "reason": "Y correctly types the entry's dated sentence (a meeting to evaluate causes) as INVESTIGATION_START. Note: X's sentence is a separate inherited-date event (a finding, OTHER) and is valid in its own right. The two were mismatched as one pair.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D036",
+  "decision": "NEITHER",
+  "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+  "reason": "The event exists: Zero's internal review found the failure pattern (FILER_AWARENESS), so X (null) is wrong. Y drops 'Late', but the rules say to keep words like 'late' in date_text.",
+  "corrected": {
+   "date_text": "Late September 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "batch": "b08"
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "No related injuries or crashes were reported.",
+  "reason": "A no-reports status statement is not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "Zero and Dana are in full alignment on the root cause as being the use of non phosphate coated fasteners in the controller, and are jointly progressing the corrective action plan.",
+  "reason": "This is a status statement ('are in full alignment', 'are jointly progressing'), not an action, and it follows a blank line outside the Oct 28 entry. There is no event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+  "reason": "Inspection conducted to find the area of origin/cause is an investigation conducted -> INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "In June 2025, the supplier conducted a CT analysis of the cell modules from 3 of the 4 thermal events referenced above",
+  "reason": "Analysis conducted to find the root cause -> INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "VW and the supplier investigated other potential causes/influences within the vehicle but outside of the HV battery.",
+  "reason": "Investigation conducted to find the cause -> INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D042",
+  "decision": "X",
+  "quote": "In November 2025, the supplier identified the specific modules with the shifted electrode condition, and based on that, the vehicle population was identified.",
+  "reason": "A finding/scope result; the sentence does not say the supplier informed the filer, so not SUPPLIER_NOTICE -> OTHER.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "a recall for vehicles built with affected HV battery cell modules was decided.",
+  "reason": "Decision to recall -> DECISION.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D044",
+  "decision": "X",
+  "quote": "a recall for additional vehicles built with the additional HV battery cell modules was decided.",
+  "reason": "Decision to recall; the supplier's notice is the separate Dec 09 sentence -> DECISION.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D045",
+  "decision": "X",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+  "reason": "Narrative names the component maker Q’Straint (block company Qstraint/Q'Straint) -> SUPPORTED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D046",
+  "decision": "Y",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+  "reason": "Chronology names supplier American Seating and sub-supplier Q’Straint -> NAMED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D047",
+  "decision": "X",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue",
+  "reason": "American Seating supplies the assembly; a supplier telling the filer of the problem -> SUPPLIER_NOTICE.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D048",
+  "decision": "X",
+  "quote": "12/12/2025 GILLIG completed population analysis and identified four (4) vehicles potentially affected.",
+  "reason": "Analysis conducted to determine the scope -> INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D049",
+  "decision": "X",
+  "quote": "American Seating supplies GILLIG with the securement device assembly that includes the defect Q’Straint parts.",
+  "reason": "Description of the supply relationship with no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D050",
+  "decision": "Y",
+  "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-12-26",
+  "reason": "Item B carries its own date (2025-12-26 follows it, not an entry it belongs to); confirming the field service action decision is a recall decision -> DECISION.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D051",
+  "decision": "Y",
+  "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall",
+  "reason": "X's '2025-12-26 C.' is a date fragment, not an action; the Dec 26th sentence is the decision to recall -> DECISION.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D052",
+  "decision": "X",
+  "quote": "In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+  "reason": "First report reaching the filer -> FILER_AWARENESS; X's quote is the clean sentence.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D053",
+  "decision": "X",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing)",
+  "reason": "Form field question, no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D054",
+  "decision": "Y",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing) Market VR",
+  "reason": "Form field answer, no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D055",
+  "decision": "X",
+  "quote": "D. Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "Form field count (status), no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D056",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0",
+  "reason": "Form field count, no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D057",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition?",
+  "reason": "Form field question/status, no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D058",
+  "decision": "X",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0 F.",
+  "reason": "Fragment of a form field count, no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D059",
+  "decision": "X",
+  "quote": "F. Implementation date of Field Service Action 2025-12-26",
+  "reason": "Form field for remedy implementation date (remedy logistics), not a filer-awareness event; the July 2025 report is already a separate event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D060",
+  "decision": "X",
+  "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall",
+  "reason": "This sentence is one DECISION event (covered in D051); an additional OTHER event for the same sentence violates one-event-per-sentence.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D061",
+  "decision": "X",
+  "quote": "Reference: REPORT NUMBER 223-2401438-TEST",
+  "reason": "A reference pointer with no action -> not an event.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D062",
+  "decision": "Y",
+  "quote": "Lucid engineers observed a software test vehicle with a blank rearview image when it was put in reverse.",
+  "reason": "Internal discovery of the problem by filer engineers -> FILER_AWARENESS.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D063",
+  "decision": "CONTESTED",
+  "quote": "A stop sale was issued on December 10, 2025, while Lucid investigated if other vehicles in the field had the same issue.",
+  "reason": "The versions label two different sentences, each correctly (stop sale = OTHER; 'By December 2025 ... verify other customer cases' = FILER_AWARENESS); the pairing, not the label, is at issue.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D064",
+  "decision": "X",
+  "quote": "Name: See -Tow Module Supplier Information.pdf",
+  "reason": "Name field is only a pointer to an attachment, not a company; S1 SUPPORTED requires the Name field to give a company, so NOT_REPORTED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D065",
+  "decision": "X",
+  "quote": "Name: See -Tow Module Supplier Information.pdf",
+  "reason": "Block gives no company (attachment pointer) and the chronology/cause mention no supplier at all, so NOT_REPORTED; INSUFFICIENT needs a block-named supplier or a generic narrative reference.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D066",
+  "decision": "Y",
+  "quote": "On December 4, 2025, the topic was introduced to Ford’s Critical Concern Review Group (CCRG).",
+  "reason": "Filer was already aware (Nov 18 operator finding); introducing the topic to an internal review group is a meeting/internal step, i.e. OTHER, not a report reaching the filer.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D067",
+  "decision": "Y",
+  "quote": "On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+  "reason": "Narrative names the block supplier by its acronym MNAe, so S2 is SUPPORTED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D068",
+  "decision": "Y",
+  "quote": "On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+  "reason": "Chronology names the supplier MNAe, so U is NAMED.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D069",
+  "decision": "X",
+  "quote": "According to the supplier, the issue was identified after a BSA unit failed an automated quality test during production",
+  "reason": "X's event (supplier relaying its finding, inherited Nov 2025) is a valid SUPPLIER_NOTICE; Y's Nov 18 event is a notice of the problem reaching the filer, which should be FILER_AWARENESS, not OTHER.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D070",
+  "decision": "X",
+  "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+  "reason": "Initiating information gathering to understand scope is INVESTIGATION_START; Y's OTHER labels a different (supplier-finding) sentence.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D071",
+  "decision": "X",
+  "quote": "NASO continued its investigation in coordination with HMC and MNAe.",
+  "reason": "Rules type an investigation that is opened, started or conducted as INVESTIGATION_START.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D072",
+  "decision": "X",
+  "quote": "MNAe’s report confirmed that the issue could occur when BSAs were removed from the assembly line for rework",
+  "reason": "The supplier's report confirming the mechanism is a SUPPLIER_NOTICE ('the supplier confirmed ...'); Y's OTHER for the NASO review sentence is a less fitting type (that is investigation activity).",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D073",
+  "decision": "X",
+  "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+  "reason": "Component maker reporting a finding to the filer is SUPPLIER_NOTICE; Y types the MNAe report sentence as OTHER, which is wrong.",
+  "batch": "b08"
+ },
+ {
+  "item_id": "D074",
+  "decision": "NEITHER",
+  "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+  "reason": "The sentence is a real event in the Nov 2025 entry so null is wrong, but its type is INVESTIGATION_START, not OTHER.",
+  "corrected": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Following notification, NASO initiated information gathering to understand the scope of the condition, the affected production processes, and potential flow out to the U.S. market.",
+   "inherited_date": true,
+   "entry_quote": "November 2025 On November 18, 2025, HMGMA notified NASO of a potential condition involving high voltage busbar bolts within certain BSA units supplied by MNAe.",
+   "date_inferred": false
+  },
+  "batch": "b08"
+ },
+ {
+  "item_id": "D075",
+  "decision": "NEITHER",
+  "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+  "reason": "Real event in the Dec 2025 entry so null is wrong, but a supplier finding conveyed to the filer is SUPPLIER_NOTICE, not OTHER.",
+  "corrected": {
+   "date_text": "December 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "MNAe further identified that the affected condition was limited to specific BSAs produced on one assembly line.",
+   "inherited_date": true,
+   "entry_quote": "December 2025 On December 18, 2025, HMGMA provided NASO with a list of potentially affected VINs.",
+   "date_inferred": false
+  },
+  "batch": "b08"
+ },
+ {
+  "item_id": "D076",
+  "decision": "X",
+  "quote": "Toyota determined on February 19, 2026 that the vehicles identified in Section 3 above were sold with headlamp assemblies that may not meet the requirements of FMVSS No. 108",
+  "reason": "Determination that vehicles may not meet FMVSS 108 is the noncompliance decision: DECISION.",
+  "batch": "b08"
+ }
+]

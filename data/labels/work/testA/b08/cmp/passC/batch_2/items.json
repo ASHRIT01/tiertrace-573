@@ -1,0 +1,483 @@
+[
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2025-11-19",
+   "type": "OTHER",
+   "quote": "Field Service Action decision confirmed by Volvo Car Corporation",
+   "inherited_date": true,
+   "entry_quote": "2025-11-19 B.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-19",
+    "end": "2025-11-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 19, 2025",
+   "type": "DECISION",
+   "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "OTHER",
+   "quote": "2025-11-26 C.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2025-11-26",
+   "type": "DECISION",
+   "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-11-26",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "Implementation date of Field Service Action 2025-11-27 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 12, 2025",
+   "type": "OTHER",
+   "quote": "On November 12, 2025, the concern was escalated to the Critical Concern Management Team (CCMT), which ordered a formal investigation including to conduct a risk assessment.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-12",
+    "end": "2025-11-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 12, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "On November 12, 2025, the concern was escalated to the Critical Concern Management Team (CCMT), which ordered a formal investigation including to conduct a risk assessment.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "FILER_AWARENESS",
+   "quote": "Condition detected by?",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "OTHER",
+   "quote": "(Market VR**, internal, inspection, testing) Supplier production D.",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-11-26",
+   "type": "FILER_AWARENESS",
+   "quote": "Number of VR with the condition, reported to Volvo Cars from NSC?",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "OTHER",
+   "quote": "0 E.",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "OTHER",
+   "quote": "Total number of cars included in VRs concerning the condition?",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2025-11-26",
+   "type": "OTHER",
+   "quote": "0 F.",
+   "inherited_date": true,
+   "entry_quote": "2025-11-26 C.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-26",
+    "end": "2025-11-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-11-27",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "Implementation date of Field Service Action 2025-11-27 *Critical Concern Management Team, ** vehicle reports Extended Chronology of event: In October 2025, the supplier informed Volvo Cars’ Torslanda factory about a potential issue involving improperly torqued bolts in seat assemblies.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-27",
+    "end": "2025-11-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-25V818-2172.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "November 19, 2025",
+   "type": "OTHER",
+   "quote": "This assessment was completed on November 19, 2025, and concluded that the issue posed an increased risk to motor vehicle safety.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-19",
+    "end": "2025-11-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-25V832-9661.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 19th",
+   "type": "OTHER",
+   "quote": "7) Once the determination of the root cause, emails went out to all dealers with affected units on August 19th inform them of the defect.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-19",
+    "end": "2025-08-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-25V832-9661.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 22nd",
+   "type": "OTHER",
+   "quote": "8) A resolution email was sent August 22nd with details regarding the resolution of the defect to all dealers with affected units.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-22",
+    "end": "2025-08-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-25V832-9661.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 25th",
+   "type": "OTHER",
+   "quote": "9) Replacement parts were shipped out August 25th.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-25",
+    "end": "2025-08-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-25V832-9661.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 9th",
+   "type": "OTHER",
+   "quote": "10) Follow up emails were sent out to all dealers with defective trailers on October 9th.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-09",
+    "end": "2025-10-09",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-25V832-9661.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 28th, 2025",
+   "type": "OTHER",
+   "quote": "11) Confirmation of last open recalled trailer was completed as of October 28th, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-28",
+    "end": "2025-10-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-25V834-3517.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 7–9, 2025",
+   "type": "OTHER",
+   "quote": "Loose high power fasteners, caused by the use of non phosphate coated fasteners were identified as a likely contributor.",
+   "inherited_date": true,
+   "entry_quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-07",
+    "end": "2025-10-09",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 7–9, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "October 7–9, 2025: Zero engineering staff met onsite with Dana in Italy to evaluate potential causes.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-25V834-3517.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "September 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-01",
+    "end": "2025-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-25V834-3517.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "September 2025",
+   "type": "OTHER",
+   "quote": "No related injuries or crashes were reported.",
+   "inherited_date": true,
+   "entry_quote": "Late September 2025: Zero proactively reviewed all 'quits while running' cases and identified a pattern of controller failures consistent with overvoltage events.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-01",
+    "end": "2025-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-25V834-3517.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 28, 2025",
+   "type": "OTHER",
+   "quote": "Zero and Dana are in full alignment on the root cause as being the use of non phosphate coated fasteners in the controller, and are jointly progressing the corrective action plan.",
+   "inherited_date": true,
+   "entry_quote": "October 28, 2025: Zero initiated direct engagement with Dana’s Global Warranty leadership to expedite alignment and advance remedy planning.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-28",
+    "end": "2025-10-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

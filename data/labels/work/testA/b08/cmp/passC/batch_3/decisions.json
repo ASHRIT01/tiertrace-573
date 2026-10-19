@@ -1,0 +1,152 @@
+[
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "The vehicle was inspected by Volkswagen in December 2024, and the area of origin was determined to be within the HV battery.",
+  "reason": "Inspection conducted to find the area of origin/cause is an investigation conducted -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "In June 2025, the supplier conducted a CT analysis of the cell modules from 3 of the 4 thermal events referenced above",
+  "reason": "Analysis conducted to find the root cause -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "VW and the supplier investigated other potential causes/influences within the vehicle but outside of the HV battery.",
+  "reason": "Investigation conducted to find the cause -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D042",
+  "decision": "X",
+  "quote": "In November 2025, the supplier identified the specific modules with the shifted electrode condition, and based on that, the vehicle population was identified.",
+  "reason": "A finding/scope result; the sentence does not say the supplier informed the filer, so not SUPPLIER_NOTICE -> OTHER."
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "a recall for vehicles built with affected HV battery cell modules was decided.",
+  "reason": "Decision to recall -> DECISION."
+ },
+ {
+  "item_id": "D044",
+  "decision": "X",
+  "quote": "a recall for additional vehicles built with the additional HV battery cell modules was decided.",
+  "reason": "Decision to recall; the supplier's notice is the separate Dec 09 sentence -> DECISION."
+ },
+ {
+  "item_id": "D045",
+  "decision": "X",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+  "reason": "Narrative names the component maker Q’Straint (block company Qstraint/Q'Straint) -> SUPPORTED."
+ },
+ {
+  "item_id": "D046",
+  "decision": "Y",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue affecting wheelchair locking retractors manufactured by Q’Straint.",
+  "reason": "Chronology names supplier American Seating and sub-supplier Q’Straint -> NAMED."
+ },
+ {
+  "item_id": "D047",
+  "decision": "X",
+  "quote": "11/03/2025 GILLIG was notified by company American Seating of a safety issue",
+  "reason": "American Seating supplies the assembly; a supplier telling the filer of the problem -> SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D048",
+  "decision": "X",
+  "quote": "12/12/2025 GILLIG completed population analysis and identified four (4) vehicles potentially affected.",
+  "reason": "Analysis conducted to determine the scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D049",
+  "decision": "X",
+  "quote": "American Seating supplies GILLIG with the securement device assembly that includes the defect Q’Straint parts.",
+  "reason": "Description of the supply relationship with no action -> not an event."
+ },
+ {
+  "item_id": "D050",
+  "decision": "Y",
+  "quote": "B. Field Service Action decision confirmed by Volvo Car Corporation 2025-12-26",
+  "reason": "Item B carries its own date (2025-12-26 follows it, not an entry it belongs to); confirming the field service action decision is a recall decision -> DECISION."
+ },
+ {
+  "item_id": "D051",
+  "decision": "Y",
+  "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall",
+  "reason": "X's '2025-12-26 C.' is a date fragment, not an action; the Dec 26th sentence is the decision to recall -> DECISION."
+ },
+ {
+  "item_id": "D052",
+  "decision": "X",
+  "quote": "In July 2025 Volvo Cars received the first report indicating potential overheating of HV-battery cell outside the USA.",
+  "reason": "First report reaching the filer -> FILER_AWARENESS; X's quote is the clean sentence."
+ },
+ {
+  "item_id": "D053",
+  "decision": "X",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing)",
+  "reason": "Form field question, no action -> not an event."
+ },
+ {
+  "item_id": "D054",
+  "decision": "Y",
+  "quote": "C. Condition detected by? (Market VR**, internal, inspection, testing) Market VR",
+  "reason": "Form field answer, no action -> not an event."
+ },
+ {
+  "item_id": "D055",
+  "decision": "X",
+  "quote": "D. Number of VR with the condition, reported to Volvo Cars from NSC? 0",
+  "reason": "Form field count (status), no action -> not an event."
+ },
+ {
+  "item_id": "D056",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0",
+  "reason": "Form field count, no action -> not an event."
+ },
+ {
+  "item_id": "D057",
+  "decision": "Y",
+  "quote": "E. Total number of cars included in VRs concerning the condition?",
+  "reason": "Form field question/status, no action -> not an event."
+ },
+ {
+  "item_id": "D058",
+  "decision": "X",
+  "quote": "E. Total number of cars included in VRs concerning the condition? 0 F.",
+  "reason": "Fragment of a form field count, no action -> not an event."
+ },
+ {
+  "item_id": "D059",
+  "decision": "X",
+  "quote": "F. Implementation date of Field Service Action 2025-12-26",
+  "reason": "Form field for remedy implementation date (remedy logistics), not a filer-awareness event; the July 2025 report is already a separate event."
+ },
+ {
+  "item_id": "D060",
+  "decision": "X",
+  "quote": "On the December 26th, 2025, the CCMT team took the decision to release a safety notification recall",
+  "reason": "This sentence is one DECISION event (covered in D051); an additional OTHER event for the same sentence violates one-event-per-sentence."
+ },
+ {
+  "item_id": "D061",
+  "decision": "X",
+  "quote": "Reference: REPORT NUMBER 223-2401438-TEST",
+  "reason": "A reference pointer with no action -> not an event."
+ },
+ {
+  "item_id": "D062",
+  "decision": "Y",
+  "quote": "Lucid engineers observed a software test vehicle with a blank rearview image when it was put in reverse.",
+  "reason": "Internal discovery of the problem by filer engineers -> FILER_AWARENESS."
+ },
+ {
+  "item_id": "D063",
+  "decision": "CONTESTED",
+  "quote": "A stop sale was issued on December 10, 2025, while Lucid investigated if other vehicles in the field had the same issue.",
+  "reason": "The versions label two different sentences, each correctly (stop sale = OTHER; 'By December 2025 ... verify other customer cases' = FILER_AWARENESS); the pairing, not the label, is at issue."
+ }
+]
