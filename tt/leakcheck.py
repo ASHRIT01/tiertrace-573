@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SCAN = ("data", "runs", "reports")
-EXCLUDED = ("data/flat/", "data/processed/campaigns.csv", "data/splits/")
+EXCLUDED = ("data/flat/", "data/processed/campaigns.csv", "data/splits/", "reports/PREREGISTRATION_PROPOSED_FINAL.md")   # last: its disclosure names IDs
 SPLIT_FILES = {"Test-A": "testA_ids.txt", "Test-A labelled": "testA_labelled_ids.txt", "Test-B": "testB_ids.txt", "Unseen-filer": "unseen_filer_ids.txt"}
 # 23V002, 23V-002, 23V002000 (campaign id with a 3-digit suffix); not part of a longer alphanumeric token
 ID_RX = re.compile(rb"(?<![0-9A-Za-z])(\d{2}[CEPV])-?(\d{3})(?:\d{3})?(?![0-9A-Za-z])")
