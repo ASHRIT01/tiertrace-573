@@ -28,7 +28,7 @@ The Test-A, Test-B and unseen-filer filings have not been downloaded or read. Si
 Only the latest Part 573 version of each campaign is evaluated. Unreadable (no text layer) or empty filings are excluded and counted in every table; no replacement filings are drawn after results are seen.
 
 ## 3. Hypotheses (thresholds are PROPOSALS for the owner to set; dev values are shown for reference only)
-Old H1-H6 are superseded as follows: old H1 (masked-block parent-supplier recovery) becomes the report-only supplier-claim analysis (dev has 24 recoverable cases; 20% of filings name the supplier in the narrative); old H2 becomes H1 and H4; old H3 becomes the event reporting in H1/H2; old H4 (tier/locus) is cut; old H5 (4-bit vs full precision) is not tested (no full-precision model fits the 8 GB machine); old H6 is cut.
+Old H1-H6 are superseded as follows: old H1 (masked-block parent-supplier recovery) becomes the report-only supplier-claim analysis (dev has 24 recoverable cases; in the 300-filing audit only about 20% of externally named block suppliers appear in the cause or chronology); old H2 becomes H1 and H4; old H3 becomes the event reporting in H1/H2; old H4 (tier/locus) is cut; old H5 (4-bit vs full precision) is not tested (no full-precision model fits the 8 GB machine); old H6 is cut.
 | ID | Hypothesis | Proposed threshold | Dev reference |
 |---|---|---|---|
 | H1 (headline) | On Test-A labelled, the error among accepted **event** claims (verifiers + two-run agreement) is lower than the error among all event claims from the single pass (B2) | paired difference B2 minus agent >= 0.05, 95% filer-cluster bootstrap interval above 0 | 0.100 (0.035 to 0.172) |
