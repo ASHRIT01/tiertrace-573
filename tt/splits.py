@@ -56,3 +56,23 @@ def write(dev: list[dict], testa: list[dict], out: Path, info: dict, seed: int) 
         "V and E campaigns only. SHA-256 of each file is in SHA256SUMS. No Test-A filing has been downloaded or read.\n\n```\n%s\n```\n"
         % (seed, info["dev_per_year"], json.dumps(info, indent=1)))
     return hashes
+
+
+# ---- Phase 6 evaluation subsets (IDs only, from the local flat-file index; no filing is downloaded or read) ------------------
+def phase6_subsets(campaigns_csv: Path, sample_jsonl: Path, dev_ids: list[str], testA_ids: list[str],
+                   a_n: int = 200, b_n: int = 100, unseen_n: int = 100, seed: int = 0) -> dict:
+    """Test-A labelled set (a_n random Test-A campaigns); Test-B = V/E campaigns with RCDATE on or after 2026-03-01 ("likely after the
+    model training cutoff"; the cutoff itself is not known: UNVERIFIED), b_n drawn at random; unseen-filer set = Test-A campaigns whose
+    filer (squashed name) has no campaign in dev, unseen_n drawn at random and disjoint from the Test-A labelled set."""
+    from tt.norm.aliases import squash
+    rows = {r["campaign"]: r for r in csv.DictReader(open(campaigns_csv))}
+    audit = {json.loads(l)["campaign"] for l in sample_jsonl.read_text().splitlines()}
+    rng = random.Random(seed)
+    a_set = sorted(rng.sample(sorted(testA_ids), a_n))
+    dev_filers = {squash(rows[c]["filer"]) for c in dev_ids}
+    unseen_pool = sorted(c for c in testA_ids if squash(rows[c]["filer"]) not in dev_filers and c not in set(a_set))
+    unseen = sorted(rng.sample(unseen_pool, min(unseen_n, len(unseen_pool))))
+    b_pool = sorted(c for c, r in rows.items() if r["type"] in ("V", "E") and c not in audit and r["rcdate"] >= "20260301")
+    b_set = sorted(rng.sample(b_pool, min(b_n, len(b_pool))))
+    return {"testA_labelled": a_set, "testB": b_set, "unseen_filer": unseen,
+            "sizes": {"testA_pool": len(testA_ids), "testB_pool": len(b_pool), "unseen_filer_pool": len(unseen_pool)}}

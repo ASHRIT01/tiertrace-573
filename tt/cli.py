@@ -273,6 +273,47 @@ def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "rep
     typer.echo(f"{len(recs)} filings -> {out}")
 
 
+@app.command("phase6-subsets")
+def phase6_subsets_cmd(out_dir: str = "data/splits/proposed", a_n: int = 200, b_n: int = 100, unseen_n: int = 100, seed: int = 0):
+    """PROPOSE the Phase 6 evaluation subsets (IDs only; no filing downloaded). Written under data/splits/proposed/, not frozen."""
+    import json
+    from pathlib import Path
+    from tt.splits import phase6_subsets
+    r = phase6_subsets(Path("data/processed/campaigns.csv"), Path("data/processed/sample_573.jsonl"), Path("data/splits/dev_ids.txt").read_text().split(),
+                       Path("data/splits/testA_ids.txt").read_text().split(), a_n, b_n, unseen_n, seed)
+    out = Path(out_dir); out.mkdir(parents=True, exist_ok=True)
+    for k in ("testA_labelled", "testB", "unseen_filer"):
+        (out / f"{k}_ids.txt").write_text("\n".join(r[k]) + "\n")
+    typer.echo(json.dumps({k: len(r[k]) for k in ("testA_labelled", "testB", "unseen_filer")} | r["sizes"]))
+
+
+@app.command("label-select")
+def label_select_cmd(raw_dir: str, ids_file: str, out: str):
+    """List the downloaded filings of the campaigns in ids_file that have a text layer, as a Pass A selection file."""
+    import csv, json
+    from pathlib import Path
+    from tt.parse.pdf import extract_text
+    from tt.parse.sections import parse_header
+    ids = set(Path(ids_file).read_text().split())
+    meta = {r["campaign"]: r for r in csv.DictReader(open("data/processed/campaigns.csv"))}
+    sel, unreadable = [], []
+    for p in sorted(Path(raw_dir).glob("*")):
+        if p.suffix.lower() != ".pdf" or p.name.startswith("._"):
+            continue
+        try:
+            t, _ = extract_text(p)
+        except Exception:
+            unreadable.append(p.name); continue
+        h = parse_header(t)
+        if h.get("campaign") not in ids:
+            continue
+        if len(t.strip()) < 200:
+            unreadable.append(p.name); continue
+        sel.append({"file": p.name, "year": int(meta[h["campaign"]]["year"]), "filer": h["filer"], "origin": "test"})
+    Path(out).write_text(json.dumps({"filings": sel, "unreadable": unreadable}, indent=1))
+    typer.echo(f"{len(sel)} readable, {len(unreadable)} unreadable -> {out}")
+
+
 @app.command("label-export")
 def label_export_cmd(files_json: str, out_root: str, pdf_dir: str = "data/dev_raw", rules: str = "docs/LABELING_RULES.md", per_batch: int = 20):
     """Export Pass B batches (texts + rules, 20 filings each) for blind subagents. files_json: a JSON list of file names."""

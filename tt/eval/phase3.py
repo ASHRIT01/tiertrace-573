@@ -21,7 +21,9 @@ LEVELS = (0.5, 0.7, 0.9)
 
 def predictions(gold, docs, blocks):
     from collections import Counter
-    maj = Counter(l["cause"]["status"] == "SUPPORTED" for l in gold).most_common(1)[0][0]
+    # B0 majority comes from the DEV silver labels in every run, never from the split being scored
+    dev = json.load(open("data/labels/dev_silver_v1.json"))
+    maj = Counter(l["cause"]["status"] == "SUPPORTED" for l in dev).most_common(1)[0][0]
     out = {"B0": {}, "B1": {}}
     for l in gold:
         d = docs[l["file"]]

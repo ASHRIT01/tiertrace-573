@@ -44,6 +44,9 @@ def run():
             acc = [x for x in its if x[2] is not None and x[1] >= thr]
             row[name] = {"accepted": len(acc), "coverage": len(acc) / len(its) if its else None, "error": cluster_bootstrap(acc, err) if acc else None,
                          "right_claims": sum(x[0] for x in acc)}
+        # paired: error among ALL candidate claims (B2) minus error among accepted claims (agent), same filer-cluster resamples
+        diff = lambda it: (err(it) - err([x for x in it if x[1] >= 3])) if any(x[1] >= 3 for x in it) else float("nan")
+        row["B2_minus_agent_error"] = cluster_bootstrap(its, diff)
         row["ranked"] = summarise(its)
         R[t] = row
     return R
@@ -57,5 +60,6 @@ if __name__ == "__main__":
         print(t, "candidates", R[t]["candidates"])
         for k, v in R[t].items():
             if isinstance(v, dict) and "accepted" in v: print("  ", k, "accepted", v["accepted"], "cov", None if v["coverage"] is None else round(v["coverage"], 3), "err", f(v["error"]), "right", v["right_claims"])
+        print("   B2 - agent error (paired)", f(R[t]["B2_minus_agent_error"]))
         s = R[t]["ranked"]; print("   ranked AURC", f(s["AURC"]), "risk@90/70/50", [round(s[f"risk@{c}%"][0], 3) for c in (90, 70, 50)])
     print(R["reason_counts"])
