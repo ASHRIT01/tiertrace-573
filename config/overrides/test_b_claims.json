@@ -1,0 +1,122 @@
+{
+ "RCLRPT-26V150-4696.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec Industries Inc."
+  }
+ },
+ "RCLRPT-26V153-3088.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Orange EV"
+  }
+ },
+ "RCLRPT-26V170-5531.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: ALTEC"
+  }
+ },
+ "RCLRPT-26E009-2878.pdf": {
+  "S1": {
+   "quote": "Name: Samsung SDI Co., Ltd."
+  }
+ },
+ "RCLRPT-26E010-2338.pdf": {
+  "S1": {
+   "quote": "Name: Seojin Vietnam Co., Ltd."
+  }
+ },
+ "RCLRPT-26E020-6137.pdf": {
+  "S1": {
+   "quote": "Name: Enovation Controls"
+  }
+ },
+ "RCLRPT-26E022-4329.pdf": {
+  "S1": {
+   "quote": "Name: Red Wood Enterprise CO, LTD"
+  }
+ },
+ "RCLRPT-26E025-2942.pdf": {
+  "S1": {
+   "quote": "Name: Dupont Specialty Products"
+  }
+ },
+ "RCLRPT-26E033-7019.pdf": {
+  "S1": {
+   "quote": "Name: Cummins Clean Fuel Technologies"
+  },
+  "S2": {
+   "quote": "Name: Cummins Clean Fuel Technologies"
+  }
+ },
+ "RCLRPT-26E046-1566.pdf": {
+  "S1": {
+   "quote": "Name: Horizon Global, Inc."
+  },
+  "S2": {
+   "quote": "Name: Horizon Global, Inc."
+  }
+ },
+ "RCLRPT-26E056-7471.pdf": {
+  "S1": {
+   "quote": "Name: Webasto Thermo & Comfort NA, INC"
+  }
+ },
+ "RCLRPT-26E066-0581.pdf": {
+  "S1": {
+   "quote": "Name: HydraPower Dynamics Limited"
+  },
+  "S2": {
+   "quote": "Name: HydraPower Dynamics Limited"
+  }
+ },
+ "RCLRPT-26V119-2340.pdf": {
+  "S1": {
+   "quote": "Name: Dana Incorporated"
+  }
+ },
+ "RCLRPT-26V126-1137.pdf": {
+  "S1": {
+   "quote": "Name: Mitsubishi Fuso Truck & Bus Corporation"
+  },
+  "S2": {
+   "quote": "Name: Mitsubishi Fuso Truck & Bus Corporation"
+  }
+ },
+ "RCLRPT-26V127-9048.pdf": {
+  "S1": {
+   "quote": "Name: International Motors, LLC"
+  }
+ },
+ "RCLRPT-26V136-5856.pdf": {
+  "S1": {
+   "quote": "Name: Lear Automotive Morocco SARL (X87), Keni"
+  }
+ },
+ "RCLRPT-26V172-3940.pdf": {
+  "S1": {
+   "quote": "Name: Lear Corporation GmbH"
+  }
+ },
+ "RCLRPT-26V175-7571.pdf": {
+  "S1": {
+   "quote": "Name: Saturn Printing"
+  }
+ }
+}

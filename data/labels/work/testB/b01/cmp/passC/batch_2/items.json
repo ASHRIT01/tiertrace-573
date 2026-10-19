@@ -1,0 +1,247 @@
+[
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-26E059-0404.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 26, 2026",
+   "type": "OTHER",
+   "quote": "On June 26, 2026, NHTSA issued Information Request (IR) PE26003-01, seeking further information on the 21 incidents and any others related to a set of “subject behaviors,” which included “changing lanes",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-06-26",
+    "end": "2026-06-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 26, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On June 26, 2026, NHTSA issued Information Request (IR) PE26003-01, seeking further information on the 21 incidents and any others related to a set of “subject behaviors,”",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-26E059-0404.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 2026",
+   "type": "OTHER",
+   "quote": "On May 6, 2026, NHTSA opened a Preliminary Evaluation (PE26003) into Avride’s automated driving system (ADS), citing 21 incidents reported between December 2025 and April 2026 by Avride under Standing General Order 2021-01.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-26V119-2340.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 8, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On January 8, 2026, this issue was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "January 8, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On January 8, 2026, this issue was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-08",
+    "end": "2026-01-08",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-26V119-2340.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 24, 2026",
+   "type": "OTHER",
+   "quote": "These reports were received between January 14, 2026, and February 24, 2026, and represent six unique VINs.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-24",
+    "end": "2026-02-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-26V126-1137.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "MFTBC",
+   "quote": "SoC 0% issue was fixed with VCU and ICUC update, released as Recall to US from MFTBC on 2024.Feb.6 (C10126) for 173 units.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Mitsubishi Fuso Truck & Bus Corporation",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Mitsubishi Fuso Truck & Bus Corporation",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-26V127-9048.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 7, 2026",
+   "type": "OTHER",
+   "quote": "On January 7, 2026, International Motors identified a broken roller on the wheel alignment fixture in their assembly plant as the cause of the tire damage.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-07",
+    "end": "2026-01-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 7, 2026",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "On January 7, 2026, International Motors identified a broken roller on the wheel alignment fixture in their assembly plant as the cause of the tire damage.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-26V127-9048.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 10, 2026",
+   "type": "OTHER",
+   "quote": "An analysis of field data completed on February 10, 2026, identified 37 complaints potentially related to this condition.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "February 10, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "An analysis of field data completed on February 10, 2026, identified 37 complaints potentially related to this condition.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-10",
+    "end": "2026-02-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-26V127-9048.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "January 16, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "GM received these reports between December 18, 2025, and January 16, 2026.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-16",
+    "end": "2026-01-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-26V133-7407.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 24, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On February 24, 2026, the Pebble Safety Committee convened to assess the issue and review the root cause analysis performed by the Pebble Engineering team.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-24",
+    "end": "2026-02-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 24, 2026",
+   "type": "OTHER",
+   "quote": "On February 24, 2026, the Pebble Safety Committee convened to assess the issue and review the root cause analysis performed by the Pebble Engineering team.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-26V147-8112.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2, 2026",
+   "type": "OTHER",
+   "quote": "On March 2, 2026 during a demonstration on the use of the wheelchair tie-downs with a new employee, an engineer couldn’t lock the tie-down in the anchor.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-02",
+    "end": "2026-03-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March 2, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On March 2, 2026 during a demonstration on the use of the wheelchair tie-downs with a new employee, an engineer couldn’t lock the tie-down in the anchor.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]
