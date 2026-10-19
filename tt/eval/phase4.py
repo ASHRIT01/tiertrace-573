@@ -48,6 +48,7 @@ def run():
 
 
 if __name__ == "__main__":
+    A.STRICT_E1 = len(sys.argv) > 2 and sys.argv[2] == "strict"
     R = run(); json.dump(R, open(sys.argv[1], "w"), indent=1, default=str)
     f = lambda x: "n/a" if not x else f"{x[0]:.3f} [{x[1]:.3f},{x[2]:.3f}]"
     for t in ("S2", "E", "C"):

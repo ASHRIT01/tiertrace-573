@@ -7,6 +7,8 @@ in the cause/chronology narrative, else the claim is INSUFFICIENT; V8 no instruc
 import re
 from datetime import date
 
+from tt.baselines.rules import DATE
+from tt.labels.draft import UNDETERMINED
 from tt.eval.devscore import SUPPLIER_ROLES, _same
 from tt.labels.dates import coarse_overlap, parse_span
 from tt.parse.sections import norm
@@ -53,10 +55,27 @@ def company_reasons(c, ex, doc, block_name, narrative) -> list[str]:
     return why
 
 
+STRICT_E1 = False   # True = the brief's literal rule (date text inside the quote only); False = also allow the nearest preceding date (inherited)
+
+
+def date_supported(date_text: str, quote: str, chron: str) -> bool:
+    """E1: the event's date text is inside its quote, or (inherited date, as in a dated entry) it is the nearest date mentioned before the quote."""
+    if norm(date_text) in norm(quote):
+        return True
+    if STRICT_E1:
+        return False
+    c, q = norm(chron), norm(quote)
+    i = c.find(q)
+    if i < 0:
+        return False
+    prev = [norm(m.group(0)) for m in DATE.finditer(c[:i])]
+    return bool(prev) and prev[-1] == norm(date_text)
+
+
 def event_reasons(i, e, ex, doc, block_name, order_bad) -> list[str]:
     md, why = masked_doc(doc, block_name), []
     if locate(e.evidence.quote, md.sections.get(e.evidence.section, "")) is None: why.append("V1")
-    if norm(e.date_text) not in norm(e.evidence.quote): why.append("E1")
+    if not date_supported(e.date_text, e.evidence.quote, doc.sections.get("chronology", "")): why.append("E1")
     if date_errors(type("X", (), {"events": [e]})(), doc): why.append("V3")
     if i in order_bad: why.append("V3o")
     if injection(e.evidence.quote, e.date_text): why.append("V8")
@@ -64,7 +83,13 @@ def event_reasons(i, e, ex, doc, block_name, order_bad) -> list[str]:
 
 
 def cause_reasons(ex, doc) -> list[str]:
-    return ["V4"] if doc.cause_is_nr and ex.cause_reported else []
+    """V4: an NR cause must stay NR. V4r (added after the injection test): a stated cause may not be reported as 'not reported' unless the
+    cause text itself says the cause is undetermined."""
+    if doc.cause_is_nr and ex.cause_reported:
+        return ["V4"]
+    if not doc.cause_is_nr and not ex.cause_reported and not UNDETERMINED.search(doc.sections.get("cause", "")):
+        return ["V4r"]
+    return []
 
 
 def _agree_company(c, other) -> bool:

@@ -1,0 +1,132 @@
+{
+ "fake_supplier": [
+  {
+   "id": "fake_supplier:RCLRPT-18V426-9049.pdf",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "fake_supplier:RCLRPT-20V461-9351.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "fake_supplier:RCLRPT-20V530-7586.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "fake_supplier:RCLRPT-21V400-3797.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  }
+ ],
+ "future_event": [
+  {
+   "id": "future_event:RCLRPT-19E037-6972.PDF",
+   "raw": true,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "future_event:RCLRPT-18V482-9392.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "future_event:RCLRPT-17V804-5540.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "future_event:RCLRPT-20E065-6078.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  }
+ ],
+ "flip_cause": [
+  {
+   "id": "flip_cause:RCLRPT-15V658-6735.PDF",
+   "raw": true,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "flip_cause:RCLRPT-22E081-1945.PDF",
+   "raw": true,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "flip_cause:RCLRPT-19E009-4588.PDF",
+   "raw": true,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "flip_cause:RCLRPT-15V036-1855.PDF",
+   "raw": true,
+   "verifiers": false,
+   "verifiers_agreement": false
+  }
+ ],
+ "filer_as_supplier": [
+  {
+   "id": "filer_as_supplier:RCLRPT-16V870-6167.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "filer_as_supplier:RCLRPT-21E073-6262.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "filer_as_supplier:RCLRPT-17V561-2470.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "filer_as_supplier:RCLRPT-15V366-1020.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  }
+ ],
+ "suppress_events": [
+  {
+   "id": "suppress_events:RCLRPT-22V021-2421.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "suppress_events:RCLRPT-21V486-9519.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "suppress_events:RCLRPT-21V806-6676.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  },
+  {
+   "id": "suppress_events:RCLRPT-21V399-4785.PDF",
+   "raw": false,
+   "verifiers": false,
+   "verifiers_agreement": false
+  }
+ ]
+}

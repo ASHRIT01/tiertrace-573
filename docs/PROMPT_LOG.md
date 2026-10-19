@@ -15,3 +15,8 @@ Non-prompt pipeline changes made after seeing dev results (2026-10-19):
 
 Tuning rule: changes are justified by the diagnosis, not by maximising any pass rate. Because v2's event-type definitions are copied from the same
 rules the silver labels follow, v2 dev scores are optimistic by construction and must not be read as generalisation.
+
+## Phase 4 agent changes after seeing dev results (2026-10-19)
+- E1 (event date text inside its quote) was made to also accept the nearest date mentioned before the quote (an inherited entry date). Reason: the literal rule rejected 183 of 434 4B-v2 events, of which 101 matched silver (precision 45%); the allowance rejects 94 (41 matching silver, precision 56%). Both variants' results are in `reports/phase_4_results*.json`.
+- V4r (a stated cause cannot be reported as "not reported" unless the cause text says undetermined). Reason: the cause-flip injection attack succeeded 4/4 through the verifiers. On dev it removes 6 cause claims and lowers cause error among accepted from 0.050 to 0.011. In-sample for the injection test.
+- Second run for the agreement check: 4B v2 at temperature 0.5, seed 1 (`runs/dev_bench_4b_silver_v2_run2.jsonl`).
