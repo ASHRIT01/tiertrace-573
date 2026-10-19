@@ -1,0 +1,1 @@
+Approved by Ashrit on 2026-10-19. Primary endpoint H1. Reviewed config/thresholds.json and reports/PREREGISTRATION_PROPOSED_FINAL.md. File written by Claude Code on the owner's explicit instruction.

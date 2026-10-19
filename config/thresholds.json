@@ -1,5 +1,5 @@
 {
- "status": "PROPOSED_NOT_APPROVED",
+ "status": "OWNER_APPROVED",
  "primary_endpoint": "H1",
  "bootstrap": {
   "resamples": 2000,
