@@ -10,9 +10,9 @@ Real Ollama path fixed and exercised (raw output, `done_reason`, truncation flag
 ## Numbers (dev-bench, 100 filings, thinking off, temperature 0)
 | | JSON-valid | gen tok/s | prompt tok/s | p50 / p95 s (all 100) | p95 excluding first call | truncated outputs |
 |---|---|---|---|---|---|---|
-| 4B q4_K_M v1 | 100% | 12.4 | 199.9 | 40.4 / 130.9 | 130.9 | 0 flagged (flag added after 62 of the rows; those rows have none: UNVERIFIED for them, `done_reason` was "stop" for all 62) |
-| 2B q8_0 v1 | 100% | 14.1 | 379.1 | 53.2 / 119.9 | 126.1 | 0 |
-| 4B q4_K_M v2 | 100% | 16.6 | 168.2 | 40.4 / 100.2 | 114.0 | 0 |
+| 4B q4_K_M v1 | 100% | 12.4 | 199.9 | 40.4 / 130.9 | 130.9 | 0 (no flag in this run's code; `done_reason` was "stop" for all 100 and prompt+output tokens peaked at 2383 of 6144) |
+| 2B q8_0 v1 | 100% | 14.1 | 379.1 | 53.2 / 119.9 | 126.1 | 0 (flag false for all 100; max tokens 3467 of 6144) |
+| 4B q4_K_M v2 | 100% | 16.6 | 168.2 | 40.4 / 100.2 | 114.0 | 0 (flag false for all 100; max tokens 3177 of 6144) |
 
 Peak memory from `ollama ps`: 4B 3.2 GB and 2B 2.5 GB, 100% GPU, context 6144. `memory_pressure` free: 12-17%. Swap used 4-14 GB (macOS resizes it); before-run snapshots are in `runs/mem_before_*.txt`.
 Gates (JSON-valid >= 95% and p95 <= 120 s): both models pass JSON; 4B v1 fails p95; 2B passes or fails p95 depending on whether the first call is counted; 4B v2 passes. No model fails both, so none is dropped and no other model is pulled.
