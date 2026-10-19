@@ -255,8 +255,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: TG Minto Corporation",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : TG Minto Corporation",
+    "section": "block"
    }
   ],
   "events": [],
@@ -948,8 +948,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: Bosch",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : Bosch",
+    "section": "block"
    }
   ],
   "events": [
@@ -1058,8 +1058,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: DENSO International America, Inc.",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : DENSO International America, Inc.",
+    "section": "block"
    }
   ],
   "events": [],
@@ -1713,13 +1713,6 @@
     "status": "INSUFFICIENT",
     "quote": "Honda and the transmission main shaft supplier launched a joint investigation",
     "section": "chronology"
-   },
-   {
-    "id": "C2",
-    "label": "Mechanism stated in the chronology (cause field is NR)",
-    "status": "SUPPORTED",
-    "quote": "the lathe used to machine the transmission main shaft was programmed incorrectly",
-    "section": "chronology"
    }
   ],
   "events": [
@@ -1902,7 +1895,7 @@
    "quote": "Honda and the transmission main shaft supplier launched a joint investigation",
    "section": "chronology"
   },
-  "note": "Cause field is NR but the chronology gives a mechanism: 'the lathe used to machine the transmission main shaft was programmed incorrectly' (reviewer: label as cause from narrative?).",
+  "note": "Cause field is NR but the chronology gives a mechanism: 'the lathe used to machine the transmission main shaft was programmed incorrectly' (reviewer: label as cause from narrative?). [C2: Mechanism stated in the chronology (cause field is NR): \"the lathe used to machine the transmission main shaft was programmed incorrectly\"]",
   "year": 2019,
   "origin": "draft30"
  },
@@ -1922,8 +1915,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: Electronics Components International",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : Electronics Components International",
+    "section": "block"
    }
   ],
   "events": [],
@@ -2551,8 +2544,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: Seven Universe",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : Seven Universe",
+    "section": "block"
    }
   ],
   "events": [],
@@ -2599,13 +2592,6 @@
     "label": "Narrative (cause/chronology) names the supplier: Wabco USA LLC",
     "status": "INSUFFICIENT",
     "quote": "The parts were shipped to the supplier for component breakdown and further evaluation",
-    "section": "chronology"
-   },
-   {
-    "id": "C2",
-    "label": "Mechanism stated in the chronology (cause field is NR)",
-    "status": "SUPPORTED",
-    "quote": "found blockage of the inlet solenoid from magnesium chloride corrosion deforming the O-ring",
     "section": "chronology"
    }
   ],
@@ -2886,7 +2872,7 @@
    "quote": "The parts were shipped to the supplier for component breakdown and further evaluation",
    "section": "chronology"
   },
-  "note": "Cause field is NR but the chronology states a mechanism (C2).",
+  "note": "Cause field is NR but the chronology states a mechanism (C2). [C2: Mechanism stated in the chronology (cause field is NR): \"found blockage of the inlet solenoid from magnesium chloride corrosion deforming the O-ring\"]",
   "year": 2020,
   "origin": "draft30"
  },
@@ -3277,8 +3263,8 @@
     "id": "S2",
     "label": "Narrative (cause/chronology) names the supplier: Bendix Corp Heavy Vehicle Systems Group",
     "status": "INSUFFICIENT",
-    "quote": "",
-    "section": "chronology"
+    "quote": "Name : Bendix Corp Heavy Vehicle Systems Group",
+    "section": "block"
    }
   ],
   "events": [

@@ -76,6 +76,8 @@ def apply_c(A: list[dict], items: list[dict], decisions: list[dict]) -> tuple[li
     """Final labels from Pass A + Pass C decisions. Returns (records, counts)."""
     dec = {d["item_id"]: d for d in decisions}
     recs = {a["file"]: copy.deepcopy(a) for a in A}
+    for r in recs.values():
+        r.setdefault("contested", [])
     counts = {"A": 0, "B": 0, "NEITHER": 0, "CONTESTED": 0, "missing": 0}
     for it in items:
         d = dec.get(it["item_id"])
