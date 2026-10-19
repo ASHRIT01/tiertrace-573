@@ -1,0 +1,30 @@
+import json
+D=[
+("D001","X","Root cause is not confirmed; however, supplier deviation in the manufacturing of the safety plug’s Female-Female terminal is suspected.","Cause field says root cause is not confirmed (only suspected): not settled -> INSUFFICIENT."),
+("D002","Y","See Karma Automotive Supplemental Report to 24-0023809-31063-10 uploaded June 5, 2024.","Chronology is only a pointer and the cause names no supply-chain company -> NOT_REPORTED."),
+("D003","Y","Inspection of vehicles in the state of Maine.","Inspection inside the investigation entry is investigation/testing conducted to find the cause -> INVESTIGATION_START; start date of the entry range is a reasonable entry date."),
+("D004","Y","Recall proposal approved by Lion Electric's safety committee.","Y's event (recall approval) is correctly a DECISION; X types the defect-determination sentence as OTHER, but a decision that a defect exists is DECISION, so X is wrong."),
+("D005","CONTESTED","June 2024: Field survey results were analyzed by Volvo Bus Product Safety Office.","The two versions are different sentences; X's analysis event (INVESTIGATION_START) and Y's committee-meeting event (OTHER) are each correctly typed, so the pairing cannot be settled."),
+("D006","Y","Volvo Bus opted to initiate a new recall instead of expending the recall scope of 24V083.","Choosing to initiate a new recall is the decision to recall -> DECISION."),
+("D007","X","Decision made to raise the potential safety issue to Volvo Product Safety Committee (PSC) for review and determination.","Undated action sentence inside the dated 2024-06-25 entry: an event (escalation to committee, OTHER) with inherited date."),
+("D008","X","During this field survey, improperly torqued castle nuts were identified on certain vehicles, but no missing cotter pins were identified.","Reports an occurrence (a finding from the filer's own survey) inside the dated March 2024 entry, so it is an event; internal audit finding fits FILER_AWARENESS."),
+("D009","X","June 18, 2024: Survey to confirm seat models potentially affected was completed.","A survey conducted to confirm affected scope is investigation/analysis to find scope -> INVESTIGATION_START."),
+("D010","X","However, reinforcements to the lower cylinder mount were added to new production in October 2020 to reinforce this area.","An action with its own date (production change) -> OTHER event; not a status or remedy logistics."),
+("D011","Y","The customer reported a loss of propulsion while driving.","A customer report reaching the filer is FILER_AWARENESS."),
+("D012","Y","9/27/2024: Motiv field technicians conducted an inspection of the affected vehicle.","Conducting an inspection to find the cause is INVESTIGATION_START; X's typing of the inspection result as FILER_AWARENESS does not fit (a test result is OTHER)."),
+("D013","CONTESTED","9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.","Versions are different sentences of the same entry; X's analysis event (INVESTIGATION_START) and Y's finding event (OTHER) are each correctly typed."),
+("D014","X","9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.","Sentence has two distinct dates (9/27 and 10/10/2024) that are not a production data window; rules give one event per distinct date, so a 10/10/2024 event exists."),
+("D015","Y","The loss of 12-volt control power to the batteries was responsible for the loss of vehicle propulsion.","Explanatory causal statement with no action, largely restating the preceding finding -> not an event."),
+("D016","Y","The corresponding BRV recall is being initiated on 11/22/24.","Initiating the recall is the decision to recall -> DECISION."),
+("D017","Y","after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop","Block is NR but the narrative refers generically to the maker of the defective hose -> INSUFFICIENT, not NOT_REPORTED."),
+("D018","Y","after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop","Generic reference to the component manufacturer -> UNNAMED."),
+("D019","Y","NHTSA then sent an inquiry to VinFast on July 10th, 2024, seeking an explanation of this anomaly.","A notice from NHTSA reaching the filer is FILER_AWARENESS."),
+("D020","Y","Field Service Action decision confirmed by Polestar 2024-12-18","Confirmation of the field service action (recall) decision is DECISION; list items are separate sentences so Y's narrower quote is right."),
+("D021","Y","The investigation was escalated through the Critical Concern Action Process (CCAP).","Escalating the investigation into the CCAP opens the filer's investigation process -> INVESTIGATION_START."),
+("D022","Y","Field Service Action decision confirmed by Polestar 2024-12-18","Confirmation of the field service action (recall) decision is DECISION."),
+("D023","CONTESTED","We connected customer symptoms reported from the market with the diagnostic trouble codes identified by our supplier.","Versions are different sentences of the 2024-12-04 entry; X's analysis-result event (OTHER) and Y's escalation event (INVESTIGATION_START) are each defensible."),
+("D024","X","See Miscellaneous Document","Chronology is only a pointer and cause is NR -> NOT_REPORTED."),
+("D025","Y","Additional samples were pulled for evaluation.","Pulling samples for evaluation is testing conducted to find the cause -> INVESTIGATION_START."),
+]
+out=[{"item_id":a,"decision":b,"quote":c,"reason":d} for a,b,c,d in D]
+json.dump(out,open("decisions.json","w"),ensure_ascii=False,indent=1)

@@ -1,0 +1,606 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-24V358-2557.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "status": "INSUFFICIENT",
+   "quote": "Root cause is not confirmed; however, supplier deviation in the manufacturing of the safety plug’s Female-Female terminal is suspected.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Root cause is not confirmed; however, supplier deviation in the manufacturing of the safety plug’s Female-Female terminal is suspected.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-24V379-7287.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See Karma Automotive Supplemental Report to 24-0023809-31063-10 uploaded June 5, 2024.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-24V460-2667.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 11, 2024 to June 2024",
+   "type": "OTHER",
+   "quote": "Inspection of vehicles in the state of Maine.",
+   "inherited_date": true,
+   "entry_quote": "January 11, 2024 to June 2024: Investigation into potential causes of loss of high-voltage distribution.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-11",
+    "end": "2024-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 11, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "Inspection of vehicles in the state of Maine.",
+   "inherited_date": true,
+   "entry_quote": "January 11, 2024 to June 2024: Investigation into potential causes of loss of high-voltage distribution.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-24V460-2667.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 14, 2024",
+   "type": "OTHER",
+   "quote": "June 14, 2024: Confirmation that the misalignment of the CAN connector increases the risk of water infiltration into the CAN connector and represents a defect with respect to the Motor Vehicle Safety Regulations.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-14",
+    "end": "2024-06-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 14, 2024",
+   "type": "DECISION",
+   "quote": "Recall proposal approved by Lion Electric's safety committee.",
+   "inherited_date": true,
+   "entry_quote": "June 14, 2024: Confirmation that the misalignment of the CAN connector increases the risk of water infiltration into the CAN connector and represents a defect with respect to the Motor Vehicle Safety Regulations.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-24V524-5942.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "June 2024: Field survey results were analyzed by Volvo Bus Product Safety Office.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "2024-06-25",
+   "type": "OTHER",
+   "quote": "2024-06-25 Case was presented on Volvo Product Safety Evaluation Committee (PSEC) to evaluate if there is a potential safety-related issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-25",
+    "end": "2024-06-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-24V524-5942.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2024-07-04",
+   "type": "OTHER",
+   "quote": "Given that an improperly torqued castle nut secured by a cotter pin poses a different safety risk compared to an improperly torqued caste nut without a cotter pin, Volvo Bus opted to initiate a new recall instead of expending the recall scope of 24V083.",
+   "inherited_date": true,
+   "entry_quote": "2024-07-04 Case was presented to Volvo Product Safety Committee (PSC).",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-04",
+    "end": "2024-07-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2024-07-04",
+   "type": "DECISION",
+   "quote": "Given that an improperly torqued castle nut secured by a cotter pin poses a different safety risk compared to an improperly torqued caste nut without a cotter pin, Volvo Bus opted to initiate a new recall instead of expending the recall scope of 24V083.",
+   "inherited_date": true,
+   "entry_quote": "2024-07-04 Case was presented to Volvo Product Safety Committee (PSC).",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-24V524-5942.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2024-06-25",
+   "type": "OTHER",
+   "quote": "Decision made to raise the potential safety issue to Volvo Product Safety Committee (PSC) for review and determination.",
+   "inherited_date": true,
+   "entry_quote": "2024-06-25 Case was presented on Volvo Product Safety Evaluation Committee (PSEC) to evaluate if there is a potential safety-related issue.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-25",
+    "end": "2024-06-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-24V524-5942.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "March 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "During this field survey, improperly torqued castle nuts were identified on certain vehicles, but no missing cotter pins were identified.",
+   "inherited_date": true,
+   "entry_quote": "March 2024 to June 2024: Volvo Bus initiated a field survey in Mexico on vehicles outside the recall 24V083 population to further corroborate its scope.",
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-24V647-3002.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 18, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "June 18, 2024: Survey to confirm seat models potentially affected was completed.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June 18, 2024",
+   "type": "OTHER",
+   "quote": "June 18, 2024: Survey to confirm seat models potentially affected was completed.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-18",
+    "end": "2024-06-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-24V670-1290.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2020",
+   "type": "OTHER",
+   "quote": "However, reinforcements to the lower cylinder mount were added to new production in October 2020 to reinforce this area.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-24V781-6389.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "9/25/2024",
+   "type": "OTHER",
+   "quote": "The customer reported a loss of propulsion while driving.",
+   "inherited_date": true,
+   "entry_quote": "9/25/2024: Motiv received a customer report alleging a loss of power on a Motiv Motiv EPIC4 E-450 vehicle.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-25",
+    "end": "2024-09-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "9/25/2024",
+   "type": "FILER_AWARENESS",
+   "quote": "The customer reported a loss of propulsion while driving.",
+   "inherited_date": true,
+   "entry_quote": "9/25/2024: Motiv received a customer report alleging a loss of power on a Motiv Motiv EPIC4 E-450 vehicle.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-24V781-6389.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "9/27/2024",
+   "type": "FILER_AWARENESS",
+   "quote": "That inspection determined the vehicle had experienced a temporary loss of 12-volt control power to the High Voltage (HV) batteries.",
+   "inherited_date": true,
+   "entry_quote": "9/27/2024: Motiv field technicians conducted an inspection of the affected vehicle.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-27",
+    "end": "2024-09-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "9/27/2024",
+   "type": "INVESTIGATION_START",
+   "quote": "9/27/2024: Motiv field technicians conducted an inspection of the affected vehicle.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-24V781-6389.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "9/27",
+   "type": "INVESTIGATION_START",
+   "quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "9/27",
+   "type": "OTHER",
+   "quote": "The investigation determined that a cable assembly failure caused by a partially collapsed grid on the connector’s socket that in turn resulted in a temporary loss of connection – interrupting 12-volt control power to the HV batteries.",
+   "inherited_date": true,
+   "entry_quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-27",
+    "end": "2024-09-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-24V781-6389.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "10/10/2024",
+   "type": "OTHER",
+   "quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-10-10",
+    "end": "2024-10-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-24V781-6389.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "9/27",
+   "type": "OTHER",
+   "quote": "The loss of 12-volt control power to the batteries was responsible for the loss of vehicle propulsion.",
+   "inherited_date": true,
+   "entry_quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-27",
+    "end": "2024-09-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-24V885-4062.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "11/22/24",
+   "type": "OTHER",
+   "quote": "The corresponding BRV recall is being initiated on 11/22/24.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-11-22",
+    "end": "2024-11-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "11/22/24",
+   "type": "DECISION",
+   "quote": "The corresponding BRV recall is being initiated on 11/22/24.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-24V931-9261.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: none named",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "INSUFFICIENT",
+   "quote": "We found that other RV manufacturers were using a rubber hose in that area also but after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-24V931-9261.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "We found that other RV manufacturers were using a rubber hose in that area also but after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-24V933-4637.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 10th, 2024",
+   "type": "OTHER",
+   "quote": "NHTSA then sent an inquiry to VinFast on July 10th, 2024, seeking an explanation of this anomaly.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-10",
+    "end": "2024-07-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 10th, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "NHTSA then sent an inquiry to VinFast on July 10th, 2024, seeking an explanation of this anomaly.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-24V939-5483.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2024-12-18",
+   "type": "OTHER",
+   "quote": "Condition considered as a critical concern by Critical Concern Management Team 2024-12-13; Field Service Action decision confirmed by Polestar 2024-12-18; Condition detected by Supplier Information; Number of **TR with the condition 0",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-18",
+    "end": "2024-12-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2024-12-18",
+   "type": "DECISION",
+   "quote": "Field Service Action decision confirmed by Polestar 2024-12-18",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-24V939-5483.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2024-12-05",
+   "type": "OTHER",
+   "quote": "The investigation was escalated through the Critical Concern Action Process (CCAP).",
+   "inherited_date": true,
+   "entry_quote": "2024-12-05 Polestar was notified by its supplier that they had found a potentially critical issue with the far- side airbag (FSAB).",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-05",
+    "end": "2024-12-05",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2024-12-05",
+   "type": "INVESTIGATION_START",
+   "quote": "The investigation was escalated through the Critical Concern Action Process (CCAP).",
+   "inherited_date": true,
+   "entry_quote": "2024-12-05 Polestar was notified by its supplier that they had found a potentially critical issue with the far- side airbag (FSAB).",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-24V940-8922.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2024-12-18",
+   "type": "OTHER",
+   "quote": "Condition considered as a critical concern by Critical Concern Management Team 2024-12-16; Field Service Action decision confirmed by Polestar 2024-12-18; Condition detected by Supplier Information; Number of **TR with the condition 4",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-18",
+    "end": "2024-12-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2024-12-18",
+   "type": "DECISION",
+   "quote": "Field Service Action decision confirmed by Polestar 2024-12-18",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-24V940-8922.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "2024-12-04",
+   "type": "OTHER",
+   "quote": "We connected customer symptoms reported from the market with the diagnostic trouble codes identified by our supplier.",
+   "inherited_date": true,
+   "entry_quote": "2024-12-04 Polestar was notified by its supplier that they had found 6 (in the US) vehicles with diagnostic trouble codes set indicating that the high to low voltage converter module (HLCM) is not working properly.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-04",
+    "end": "2024-12-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "2024-12-04",
+   "type": "INVESTIGATION_START",
+   "quote": "The investigation was escalated through the Critical Concern Action Process (CCAP).",
+   "inherited_date": true,
+   "entry_quote": "2024-12-04 Polestar was notified by its supplier that they had found 6 (in the US) vehicles with diagnostic trouble codes set indicating that the high to low voltage converter module (HLCM) is not working properly.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-25E024-9877.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See Miscellaneous Document",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-25E036-8756.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "3/12/25",
+   "type": "OTHER",
+   "quote": "Additional samples were pulled for evaluation.",
+   "inherited_date": true,
+   "entry_quote": "3/12/25: A new customer complaint was received, and a Quality Audit Request was initiated.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-12",
+    "end": "2025-03-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "3/12/25",
+   "type": "INVESTIGATION_START",
+   "quote": "Additional samples were pulled for evaluation.",
+   "inherited_date": true,
+   "entry_quote": "3/12/25: A new customer complaint was received, and a Quality Audit Request was initiated.",
+   "date_inferred": false
+  }
+ }
+]

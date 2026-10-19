@@ -92,3 +92,11 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: record/inventory reviews to find the affected population - INVESTIGATION_START per Pass C (D008, D011, D015, D017, D024) but OTHER in Pass A in places.
 - Rule problem: typo date "March12, 2024" (24V203) handled by a dates override.
 - Rule problem: block names the filer while the narrative names the real maker (23V530 Chinook / Cummins, D004).
+
+## Unseen-filer batch 3 (b03)
+- Pass B and Pass C: no outside reads reported; `._` files ignored.
+- Rule problem: "between X and Y" ranges (24V781 "9/27 - 10/10/2024", 25E037 "Between May 13 and May 21") - Pass C splits into one event per date (D014, D028, D029, D032) while Pass B/Pass A keep ranges or split inconsistently.
+- Rule problem: Standing General Order incident reports to NHTSA are not Part 573 filings (25E037; D026 OTHER).
+- Rule problem: deploying a software update to affected vehicles - remedy logistics vs occurrence (25E037, D030).
+- Pass C CONTESTED D005, D013, D023 (24V524 etc.): pairing artefacts (different sentences paired as one event).
+- Rule problem: header junk "Condition considered as a critical concern ... 2024-12-13;" in Polestar filings (24V939, 24V940) read as dated events.

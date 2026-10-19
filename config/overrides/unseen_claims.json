@@ -115,5 +115,34 @@
    "quote": "05/25/24: Hendrickson received letter from its supplier, USK Internacional S.A.",
    "section": "chronology"
   }
+ },
+ "RCLRPT-24V670-1290.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-25E009-8553.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V647-3002.pdf": {
+  "S1": {
+   "quote": "Name: RECARO Automotive North America, Inc."
+  },
+  "S2": {
+   "quote": "Name: RECARO Automotive North America, Inc."
+  }
+ },
+ "RCLRPT-25E036-8756.pdf": {
+  "S1": {
+   "quote": "Name: Accauto Co., LTD"
+  }
  }
 }

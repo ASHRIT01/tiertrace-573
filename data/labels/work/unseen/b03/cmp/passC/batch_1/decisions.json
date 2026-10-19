@@ -1,0 +1,152 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "Root cause is not confirmed; however, supplier deviation in the manufacturing of the safety plug’s Female-Female terminal is suspected.",
+  "reason": "Cause field says root cause is not confirmed (only suspected): not settled -> INSUFFICIENT."
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "See Karma Automotive Supplemental Report to 24-0023809-31063-10 uploaded June 5, 2024.",
+  "reason": "Chronology is only a pointer and the cause names no supply-chain company -> NOT_REPORTED."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "Inspection of vehicles in the state of Maine.",
+  "reason": "Inspection inside the investigation entry is investigation/testing conducted to find the cause -> INVESTIGATION_START; start date of the entry range is a reasonable entry date."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "Recall proposal approved by Lion Electric's safety committee.",
+  "reason": "Y's event (recall approval) is correctly a DECISION; X types the defect-determination sentence as OTHER, but a decision that a defect exists is DECISION, so X is wrong."
+ },
+ {
+  "item_id": "D005",
+  "decision": "CONTESTED",
+  "quote": "June 2024: Field survey results were analyzed by Volvo Bus Product Safety Office.",
+  "reason": "The two versions are different sentences; X's analysis event (INVESTIGATION_START) and Y's committee-meeting event (OTHER) are each correctly typed, so the pairing cannot be settled."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "Volvo Bus opted to initiate a new recall instead of expending the recall scope of 24V083.",
+  "reason": "Choosing to initiate a new recall is the decision to recall -> DECISION."
+ },
+ {
+  "item_id": "D007",
+  "decision": "X",
+  "quote": "Decision made to raise the potential safety issue to Volvo Product Safety Committee (PSC) for review and determination.",
+  "reason": "Undated action sentence inside the dated 2024-06-25 entry: an event (escalation to committee, OTHER) with inherited date."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "During this field survey, improperly torqued castle nuts were identified on certain vehicles, but no missing cotter pins were identified.",
+  "reason": "Reports an occurrence (a finding from the filer's own survey) inside the dated March 2024 entry, so it is an event; internal audit finding fits FILER_AWARENESS."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "June 18, 2024: Survey to confirm seat models potentially affected was completed.",
+  "reason": "A survey conducted to confirm affected scope is investigation/analysis to find scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "However, reinforcements to the lower cylinder mount were added to new production in October 2020 to reinforce this area.",
+  "reason": "An action with its own date (production change) -> OTHER event; not a status or remedy logistics."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "The customer reported a loss of propulsion while driving.",
+  "reason": "A customer report reaching the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "9/27/2024: Motiv field technicians conducted an inspection of the affected vehicle.",
+  "reason": "Conducting an inspection to find the cause is INVESTIGATION_START; X's typing of the inspection result as FILER_AWARENESS does not fit (a test result is OTHER)."
+ },
+ {
+  "item_id": "D013",
+  "decision": "CONTESTED",
+  "quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+  "reason": "Versions are different sentences of the same entry; X's analysis event (INVESTIGATION_START) and Y's finding event (OTHER) are each correctly typed."
+ },
+ {
+  "item_id": "D014",
+  "decision": "X",
+  "quote": "9/27 – 10/10/2024: Motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion.",
+  "reason": "Sentence has two distinct dates (9/27 and 10/10/2024) that are not a production data window; rules give one event per distinct date, so a 10/10/2024 event exists."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "The loss of 12-volt control power to the batteries was responsible for the loss of vehicle propulsion.",
+  "reason": "Explanatory causal statement with no action, largely restating the preceding finding -> not an event."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "The corresponding BRV recall is being initiated on 11/22/24.",
+  "reason": "Initiating the recall is the decision to recall -> DECISION."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop",
+  "reason": "Block is NR but the narrative refers generically to the maker of the defective hose -> INSUFFICIENT, not NOT_REPORTED."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop",
+  "reason": "Generic reference to the component manufacturer -> UNNAMED."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "NHTSA then sent an inquiry to VinFast on July 10th, 2024, seeking an explanation of this anomaly.",
+  "reason": "A notice from NHTSA reaching the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "Field Service Action decision confirmed by Polestar 2024-12-18",
+  "reason": "Confirmation of the field service action (recall) decision is DECISION; list items are separate sentences so Y's narrower quote is right."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "The investigation was escalated through the Critical Concern Action Process (CCAP).",
+  "reason": "Escalating the investigation into the CCAP opens the filer's investigation process -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "Field Service Action decision confirmed by Polestar 2024-12-18",
+  "reason": "Confirmation of the field service action (recall) decision is DECISION."
+ },
+ {
+  "item_id": "D023",
+  "decision": "CONTESTED",
+  "quote": "We connected customer symptoms reported from the market with the diagnostic trouble codes identified by our supplier.",
+  "reason": "Versions are different sentences of the 2024-12-04 entry; X's analysis-result event (OTHER) and Y's escalation event (INVESTIGATION_START) are each defensible."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "See Miscellaneous Document",
+  "reason": "Chronology is only a pointer and cause is NR -> NOT_REPORTED."
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "Additional samples were pulled for evaluation.",
+  "reason": "Pulling samples for evaluation is testing conducted to find the cause -> INVESTIGATION_START."
+ }
+]

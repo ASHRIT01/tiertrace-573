@@ -1,0 +1,147 @@
+[
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 9, 2025",
+   "type": "NHTSA_FILING",
+   "quote": "On May 9, 2025, Zoox reported the incident to NHTSA in accordance with the Standing General Order (SGO Report 30610-10711) and offered a heads-up call to NHTSA.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-09",
+    "end": "2025-05-09",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 9, 2025",
+   "type": "OTHER",
+   "quote": "On May 9, 2025, Zoox reported the incident to NHTSA in accordance with the Standing General Order (SGO Report 30610-10711) and offered a heads-up call to NHTSA.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 19 and 21, 2025",
+   "type": "DECISION",
+   "quote": "The Zoox Safety Committee met on May 19 and 21, 2025 and after final analysis and review of all the facts, made a determination to voluntarily and proactively submit this Part 573 notification for the remedied software.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-21",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 19",
+   "type": "OTHER",
+   "quote": "The Zoox Safety Committee met on May 19 and 21, 2025 and after final analysis and review of all the facts, made a determination to voluntarily and proactively submit this Part 573 notification for the remedied software.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 21, 2025",
+   "type": "OTHER",
+   "quote": "Zoox met several times with NHTSA to discuss the SGO submission and answered additional questions between May 13, 2025 and May 21, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-21",
+    "end": "2025-05-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 20, 2025",
+   "type": "OTHER",
+   "quote": "Between May 15, 2025 and May 20, 2025, Zoox verified the software update through the safety clearance process.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-20",
+    "end": "2025-05-20",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 21, 2025",
+   "type": "OTHER",
+   "quote": "On May 21, 2025, updated software was deployed to all impacted Zoox vehicles in use for public road operation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-21",
+    "end": "2025-05-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 8, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Between May 8, 2025 and May 15, 2025, Zoox confirmed the root cause, implemented a software update, and conducted simulation and testing with both robotaxis and drivered, retrofitted test vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-25E037-4912.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 13, 2025",
+   "type": "OTHER",
+   "quote": "Zoox met several times with NHTSA to discuss the SGO submission and answered additional questions between May 13, 2025 and May 21, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ }
+]

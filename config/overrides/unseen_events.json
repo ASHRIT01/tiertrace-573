@@ -283,5 +283,165 @@
   "On January 26, 2024, the Product Safety": {
    "type": "DECISION"
   }
+ },
+ "RCLRPT-24V347-4177.PDF": {
+  "In early October 2023, Weldon was notified": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-24V379-7287.PDF": {
+  "See Karma Automotive": {
+   "include": false,
+   "why": "pointer to another document"
+  }
+ },
+ "RCLRPT-24V389-8924.PDF": {
+  "The remedy for the defect": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "The remedy will be done": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "Repairs made prior": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "Host will notify": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "Host will file": {
+   "include": false,
+   "why": "remedy logistics"
+  }
+ },
+ "RCLRPT-24V460-2667.PDF": {
+  "January 11, 2024: Reported loss": {
+   "type": "FILER_AWARENESS"
+  },
+  "January 11, 2024 to June 2024: Investigation": {
+   "type": "INVESTIGATION_START"
+  },
+  "Recall proposal approved": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V495-3479.PDF": {
+  "HVCH used in Lucid vehicles can be grouped": {
+   "ignore_dates": true
+  },
+  "Based on recommendation of the PSWG": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V524-5942.PDF": {
+  "March 2024 to June 2024: Volvo Bus initiated": {
+   "type": "INVESTIGATION_START"
+  },
+  "2024-07-09 Defect Information": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-24V620-8075.PDF": {
+  "Thus, leading to the decision": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V701-1046.PDF": {
+  "On August 28th during": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-24V781-6389.PDF": {
+  "Motiv is currently aware of 1 field report": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-24V844-7354.PDF": {
+  "On September 23, 2024 the Nikola Campaign Committee identified": {
+   "dates": [
+    {
+     "date_text": "September 23, 2024",
+     "type": "FILER_AWARENESS"
+    }
+   ]
+  },
+  "On October 31, 2024 Nikola": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V885-4062.PDF": {
+  "On 11/14/24, Brinkley RV (BRV) was notified": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-24V933-4637.PDF": {
+  "VinFast conducted an investigation": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V939-5483.PDF": {
+  "Condition considered as a critical concern": {
+   "type": "OTHER"
+  },
+  "Critical Concern Management Team, **technical": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "2024-12-05 Polestar was notified": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "On 2024-12-13 the technical": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V940-8922.PDF": {
+  "Condition considered as a critical concern": {
+   "type": "OTHER"
+  },
+  "Critical Concern Management Team, **technical": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "2024-12-04 Polestar was notified": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "On 2024-12-16 the technical": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25E009-8553.PDF": {
+  "Jan 30 Internal testing": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25E024-9877.PDF": {
+  "See Miscellaneous Document": {
+   "include": false,
+   "why": "pointer to another document"
+  }
+ },
+ "RCLRPT-25E036-8756.pdf": {
+  "3/12/25: A new customer complaint": {
+   "type": "FILER_AWARENESS"
+  },
+  "2/10/25:": {
+   "include": true,
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25E037-4912.pdf": {
+  "On May 8, 2025, in San Francisco": {
+   "type": "FILER_AWARENESS"
+  },
+  "On May 9, 2025, Zoox reported": {
+   "type": "NHTSA_FILING"
+  },
+  "The Zoox Safety Committee met": {
+   "type": "DECISION"
+  }
  }
 }

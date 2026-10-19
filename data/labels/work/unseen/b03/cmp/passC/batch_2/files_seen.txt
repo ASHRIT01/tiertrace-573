@@ -1,0 +1,3 @@
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b03/cmp/passC/batch_2/LABELING_RULES.md
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b03/cmp/passC/batch_2/items.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b03/cmp/passC/batch_2/texts/RCLRPT-25E037-4912.txt
