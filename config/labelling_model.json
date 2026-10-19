@@ -1,0 +1,8 @@
+{
+ "status": "UNSET",
+ "note": "The owner fills the exact Claude model ID used for each role before approving (e.g. claude-sonnet-5-5), and every Agent call in Phase 6 must pass that model explicitly. scripts/freeze.py refuses empty values or an UNSET status.",
+ "pass_a_drafter": "",
+ "pass_b_labeller": "",
+ "pass_c_adjudicator": "",
+ "heldout_attack_author": ""
+}

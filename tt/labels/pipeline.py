@@ -6,11 +6,13 @@ import shutil
 from pathlib import Path
 
 from tt.labels import protocol, schema
+from tt.labels.blind import assert_blind
 from tt.labels.agree import compare
 from tt.labels.texts import export
 
 
 def export_pass_b(files: list[str], pdf_dir: Path, rules: Path, out_root: Path, per_batch: int = 20) -> dict:
+    assert_blind(pdf_dir, rules, out_root)
     manifest = {}
     for k in range(0, len(files), per_batch):
         d = out_root / f"batch_{k // per_batch + 1}"
@@ -22,6 +24,7 @@ def export_pass_b(files: list[str], pdf_dir: Path, rules: Path, out_root: Path, 
 
 
 def compare_and_package(pass_a: list[dict], pass_b_dirs: list[Path], pdf_dir: Path, rules: Path, out_dir: Path) -> dict:
+    assert_blind(*pass_b_dirs, pdf_dir, rules, out_dir)
     B = protocol.load_pass(pass_b_dirs)
     fails_b = schema.check(B, pdf_dir)
     ctx = protocol.context([a["file"] for a in pass_a], pdf_dir)
@@ -42,6 +45,7 @@ def compare_and_package(pass_a: list[dict], pass_b_dirs: list[Path], pdf_dir: Pa
 
 
 def finalize(pass_a: list[dict], items: list[dict], decision_dirs: list[Path], pdf_dir: Path, out: Path) -> dict:
+    assert_blind(*decision_dirs, pdf_dir, out)
     dec = []
     for d in decision_dirs:
         dec += json.loads((d / "decisions.json").read_text())

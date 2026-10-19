@@ -33,3 +33,5 @@ Campaign ids drawn by tt/splits.py from the local flat-file index; seed 0. Dev: 
  }
 }
 ```
+
+**Correction (leak check, 2026-10-19):** the sentence "No Test-A filing has been downloaded or read" is wrong for one campaign: 24V284 (in the Test-A list, not in the 200 labelled) was downloaded earlier as a parser golden file (`config/golden_urls.txt`, `tests/test_golden.py`). See reports/PREREGISTRATION_PROPOSED_FINAL.md section 7.

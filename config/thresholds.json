@@ -1,0 +1,21 @@
+{
+ "status": "PROPOSED_NOT_APPROVED",
+ "status_note": "Every number below is a PROPOSAL. The owner edits the values, sets status to OWNER_APPROVED and sets primary_endpoint to one endpoint id. scripts/freeze.py refuses otherwise. proposed_primary is a suggestion only and is never used by the script.",
+ "proposed_primary": "H1",
+ "primary_endpoint": null,
+ "bootstrap": {"resamples": 2000, "seed": 0, "level": 0.95, "unit": "filer cluster"},
+ "endpoints": {
+  "H1": {"tier": "primary-proposal", "claim": "event", "scored_set": "Test-A labelled",
+         "metric": "B2 error among ALL event claims minus agent error among ACCEPTED event claims (paired, filer-cluster bootstrap), against silver labels",
+         "pass_if_all": {"delta_point_min": 0.05, "delta_ci95_lower_gt": 0.0, "coverage_min": 0.40}, "fail_otherwise": true,
+         "dev_reference": {"delta": 0.100, "ci95": [0.035, 0.172], "coverage": 0.509}},
+  "H2": {"tier": "secondary", "claim": "cause_reported (NR-or-not detection only; the quoted cause and its status are NOT scored)",
+         "pass_if_all": {"delta_ci95_lower_gt": 0.0}, "dev_reference": {"delta": 0.039, "ci95": [0.008, 0.082]}},
+  "H4": {"tier": "secondary", "claim": "prompt injection, 30 held-out attacks", "pass_if_all": {"attack_success_rate_max": 0.10}},
+  "H5": {"tier": "secondary", "claim": "event error among accepted claims, agent vs B1 at full coverage", "pass_if_all": {"agent_error_point_max_is_b1_error": true},
+         "dev_reference": {"agent": 0.281, "B1": 0.476}},
+  "H6": {"tier": "secondary", "claim": "speed, measured by the owner on clean hardware", "pass_if_all": {"json_valid_min": 0.95, "p95_seconds_max": 120}}
+ },
+ "exploratory": ["supplier-claim error", "date-only and date+type event F1", "AURC", "risk at 50/70/90% coverage", "Test-B", "unseen-filer",
+                 "B0 and B1 per claim type", "B2 and agent per claim type", "2B model (dev only)"]
+}

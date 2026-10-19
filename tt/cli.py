@@ -261,6 +261,8 @@ def adjudication_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports
 @app.command("pass-a")
 def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json", pdf_dir: str = "data/dev_raw"):
     """Build Pass A (AI drafter, code-assisted) for the labelled dev set."""
+    from tt.labels.blind import assert_blind
+    assert_blind(selection, drafts, out, pdf_dir)
     import json
     from pathlib import Path
     from tt.labels.draft import build_pass_a
@@ -290,6 +292,8 @@ def phase6_subsets_cmd(out_dir: str = "data/splits/proposed", a_n: int = 200, b_
 @app.command("label-select")
 def label_select_cmd(raw_dir: str, ids_file: str, out: str):
     """List the downloaded filings of the campaigns in ids_file that have a text layer, as a Pass A selection file."""
+    from tt.labels.blind import assert_blind
+    assert_blind(raw_dir, ids_file, out)
     import csv, json
     from pathlib import Path
     from tt.parse.pdf import extract_text
@@ -317,6 +321,8 @@ def label_select_cmd(raw_dir: str, ids_file: str, out: str):
 @app.command("label-export")
 def label_export_cmd(files_json: str, out_root: str, pdf_dir: str = "data/dev_raw", rules: str = "docs/LABELING_RULES.md", per_batch: int = 20):
     """Export Pass B batches (texts + rules, 20 filings each) for blind subagents. files_json: a JSON list of file names."""
+    from tt.labels.blind import assert_blind
+    assert_blind(files_json, out_root, pdf_dir, rules)
     import json
     from pathlib import Path
     from tt.labels.pipeline import export_pass_b
@@ -327,6 +333,8 @@ def label_export_cmd(files_json: str, out_root: str, pdf_dir: str = "data/dev_ra
 @app.command("label-compare")
 def label_compare_cmd(pass_a: str, pass_b_root: str, out_dir: str, pdf_dir: str = "data/dev_raw", rules: str = "docs/LABELING_RULES.md"):
     """Check Pass B, compare with Pass A (Wilson 95%), number disagreements and package the Pass C batches."""
+    from tt.labels.blind import assert_blind
+    assert_blind(pass_a, pass_b_root, out_dir, pdf_dir, rules)
     import json
     from pathlib import Path
     from tt.labels.pipeline import compare_and_package
@@ -338,6 +346,8 @@ def label_compare_cmd(pass_a: str, pass_b_root: str, out_dir: str, pdf_dir: str 
 @app.command("label-final")
 def label_final_cmd(pass_a: str, items_json: str, pass_c_root: str, out: str, pdf_dir: str = "data/dev_raw"):
     """Apply Pass C decisions to Pass A, run the code checks, write the final silver labels and print their SHA-256."""
+    from tt.labels.blind import assert_blind
+    assert_blind(pass_a, items_json, pass_c_root, out, pdf_dir)
     import json
     from pathlib import Path
     from tt.labels.pipeline import finalize

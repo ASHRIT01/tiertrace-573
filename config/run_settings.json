@@ -1,0 +1,12 @@
+{
+ "agent_model": "qwen3.5:4b-q4_K_M",
+ "dev_only_model": "qwen3.5:2b-q8_0",
+ "prompt": "v2",
+ "think": false,
+ "run1": {"temperature": 0.0, "seed": 0, "presence_penalty": 0, "num_ctx": 6144},
+ "run2": {"temperature": 0.5, "seed": 1, "presence_penalty": 0, "num_ctx": 6144},
+ "bootstrap": {"resamples": 2000, "seed": 0},
+ "split_seed": 0,
+ "subset_sizes": {"testA_labelled": 200, "testB": 100, "unseen_filer": 100},
+ "injection_fixture_seed": 0
+}
