@@ -1,0 +1,605 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-26E009-2878.pdf",
+   "year": 2026,
+   "filer": "Webasto Thermo & Comfort NA, INC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E010-2338.pdf",
+   "year": 2026,
+   "filer": "Vision Wheel, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E011-5568.pdf",
+   "year": 2026,
+   "filer": "Cummins, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E013-6412.pdf",
+   "year": 2026,
+   "filer": "Lippert",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E020-6137.pdf",
+   "year": 2026,
+   "filer": "Weldon Division of Akron Brass",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E022-4329.pdf",
+   "year": 2026,
+   "filer": "Q'Straint",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E025-2942.pdf",
+   "year": 2026,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E026-6527.pdf",
+   "year": 2026,
+   "filer": "Waymo LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E032-5214.pdf",
+   "year": 2026,
+   "filer": "Lippert",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E033-7019.pdf",
+   "year": 2026,
+   "filer": "Natural Gas Fuel Systems, LLC dba CCFT",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E046-1566.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E056-7471.pdf",
+   "year": 2026,
+   "filer": "Odyne Systems, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E059-0404.pdf",
+   "year": 2026,
+   "filer": "Avride Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E066-0581.pdf",
+   "year": 2026,
+   "filer": "Cummins, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V119-2340.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V126-1137.pdf",
+   "year": 2026,
+   "filer": "Mitsubishi Fuso Truck of America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V127-9048.pdf",
+   "year": 2026,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V133-7407.pdf",
+   "year": 2026,
+   "filer": "Pebble Mobility Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V136-5856.pdf",
+   "year": 2026,
+   "filer": "Volvo Car USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V147-8112.pdf",
+   "year": 2026,
+   "filer": "Corp. Micro Bird, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V150-4696.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V153-3088.pdf",
+   "year": 2026,
+   "filer": "Orange EV",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V170-5531.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V172-3940.pdf",
+   "year": 2026,
+   "filer": "Mercedes-Benz USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V175-7571.pdf",
+   "year": 2026,
+   "filer": "Hino Motors Sales U.S.A., Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V193-7461.pdf",
+   "year": 2026,
+   "filer": "Lucid USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V203-3945.pdf",
+   "year": 2026,
+   "filer": "Toyota Motor Engineering & Manufacturing",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V204-7221.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V205-4042.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V213-6780.pdf",
+   "year": 2026,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V215-9936.pdf",
+   "year": 2026,
+   "filer": "Autocar, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V236-1914.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V238-6269.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V245-1061.pdf",
+   "year": 2026,
+   "filer": "Blue Bird Body Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V253-0939.pdf",
+   "year": 2026,
+   "filer": "Hexagon Purus Systems USA LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V262-9341.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V263-6693.pdf",
+   "year": 2026,
+   "filer": "Jaguar Land Rover North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V268-9028.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V271-4869.pdf",
+   "year": 2026,
+   "filer": "Roadtrek Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V272-8617.pdf",
+   "year": 2026,
+   "filer": "Newmar Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V279-2878.pdf",
+   "year": 2026,
+   "filer": "New Flyer of America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V295-7913.pdf",
+   "year": 2026,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V307-4656.pdf",
+   "year": 2026,
+   "filer": "Hyundai Motor America",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V310-8416.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V313-6868.pdf",
+   "year": 2026,
+   "filer": "Keystone RV Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V323-5712.pdf",
+   "year": 2026,
+   "filer": "Wabash National Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V325-1775.pdf",
+   "year": 2026,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V333-4875.pdf",
+   "year": 2026,
+   "filer": "Coach and Equipment Mfg. Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V347-0355.pdf",
+   "year": 2026,
+   "filer": "Forest River Bus, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V349-0404.pdf",
+   "year": 2026,
+   "filer": "ARBOC Specialty Vehicles, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V369-8635.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V370-0555.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V374-8779.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V395-0079.pdf",
+   "year": 2026,
+   "filer": "Farber Specialty Vehicles",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V397-4460.pdf",
+   "year": 2026,
+   "filer": "Indian Motorcycle Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V405-2481.pdf",
+   "year": 2026,
+   "filer": "Harbinger Motors Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V407-5609.pdf",
+   "year": 2026,
+   "filer": "Daimler Trucks North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V409-2533.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V413-6519.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V415-6798.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V416-1095.pdf",
+   "year": 2026,
+   "filer": "Jayco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V419-3539.pdf",
+   "year": 2026,
+   "filer": "Nissan North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V420-2030.pdf",
+   "year": 2026,
+   "filer": "TEKO, INC.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V421-6272.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V428-5975.pdf",
+   "year": 2026,
+   "filer": "Crestline Coach Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V436-4136.pdf",
+   "year": 2026,
+   "filer": "Subaru of America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V449-4273.pdf",
+   "year": 2026,
+   "filer": "Wabash National Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V455-3228.pdf",
+   "year": 2026,
+   "filer": "Nissan North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V474-5478.pdf",
+   "year": 2026,
+   "filer": "The Heil Co.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V478-7478.pdf",
+   "year": 2026,
+   "filer": "BMW of North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V496-1031.pdf",
+   "year": 2026,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V501-8521.pdf",
+   "year": 2026,
+   "filer": "Autocar, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V503-1662.pdf",
+   "year": 2026,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V510-6191.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V517-1639.pdf",
+   "year": 2026,
+   "filer": "US Truck Body Co., Inc",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V518-5347.pdf",
+   "year": 2026,
+   "filer": "Jayco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V520-6158.pdf",
+   "year": 2026,
+   "filer": "Blue Bird Body Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V521-9708.pdf",
+   "year": 2026,
+   "filer": "Marion Body Works Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V527-2982.pdf",
+   "year": 2026,
+   "filer": "Jaguar Land Rover North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V528-8235.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V529-9405.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V531-6260.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V535-7741.pdf",
+   "year": 2026,
+   "filer": "The Heil Co.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V541-1703.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V552-4130.pdf",
+   "year": 2026,
+   "filer": "Jayco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V553-8526.pdf",
+   "year": 2026,
+   "filer": "Magic Tilt Trailers, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V554-9708.pdf",
+   "year": 2026,
+   "filer": "Jayco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V558-7885.pdf",
+   "year": 2026,
+   "filer": "Tesla, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V561-7630.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V563-6702.pdf",
+   "year": 2026,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V568-9693.pdf",
+   "year": 2026,
+   "filer": "Marathon Industries Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V577-7489.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V581-3933.pdf",
+   "year": 2026,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V598-8506.pdf",
+   "year": 2026,
+   "filer": "Toyota Motor Engineering & Manufacturing",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V607-0797.pdf",
+   "year": 2026,
+   "filer": "Jaguar Land Rover North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V617-0141.pdf",
+   "year": 2026,
+   "filer": "Altec Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V638-9238.pdf",
+   "year": 2026,
+   "filer": "Mercedes-Benz USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V644-1013.pdf",
+   "year": 2026,
+   "filer": "New Flyer of America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V651-6989.pdf",
+   "year": 2026,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V671-6336.pdf",
+   "year": 2026,
+   "filer": "Volvo Car USA, LLC",
+   "origin": "test"
+  }
+ ],
+ "unreadable": []
+}
