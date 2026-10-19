@@ -1,8 +1,8 @@
 {
  "status": "DECLARED",
- "note": "Test roles are a declared plan: every Phase 6 Agent call passes the model named here explicitly. The mapping from a model alias to an exact model version cannot be proven from inside a subagent, so these are aliases as passed, not verified versions. Dev roles are recorded as they are; they were not logged at the time.",
+ "note": "Test roles are a declared plan: every Phase 6 Agent call passes the model named here explicitly. The mapping from a model alias to an exact model version cannot be proven from inside a subagent, so these are aliases as passed, not verified versions. Dev roles are recorded as they are; they were not logged at the time. Pass A has no prompt text: it is the code plus per-split override files (config/overrides/test_<split>_*.json), written blind to runs/ and hashed and committed when labelling finishes.",
  "test": {
-  "pass_a_drafter": "claude-sonnet-5-5",
+  "pass_a_drafter": "code (tt/labels/draft.py, events.py, dates.py) + per-filing overrides written by the Claude Code session (claude-sonnet-5-5 for test)",
   "pass_b_labeller": "claude-opus-5-5",
   "pass_c_adjudicator": "claude-opus-5-5"
  },

@@ -14,7 +14,10 @@ python -m tt.cli parse-report --folder data/testA_raw --out reports/parse_report
 python -m tt.cli label-select data/testA_raw data/splits/testA_labelled_ids.txt config/testA_selection.json
 
 # 2. silver labels (same three-pass protocol as dev)
-python -m tt.cli pass-a --selection config/testA_selection.json --drafts "" --pdf-dir data/testA_raw --out data/labels/testA_passA.json
+# Test overrides go in separate per-split files (config/overrides/test_a_events.json, test_a_claims.json), written by the Claude Code session blind to runs/
+# (the guard refuses runs/), and hashed + committed when labelling finishes (record the hashes next to the labels hash in reports/phase_6_labels.md).
+# The dev override files are NOT passed for test.
+python -m tt.cli pass-a --selection config/testA_selection.json --drafts "" --pdf-dir data/testA_raw --out data/labels/testA_passA.json --event-overrides config/overrides/test_a_events.json --claim-overrides config/overrides/test_a_claims.json
 mkdir -p data/labels/work/testA
 python - <<'PY'
 import json; json.dump([f["file"] for f in json.load(open("config/testA_selection.json"))["filings"]], open("data/labels/work/testA/files.json","w"))

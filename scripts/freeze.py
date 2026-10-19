@@ -197,8 +197,9 @@ def gather() -> tuple[dict, list[str], list[str]]:
     # 5. labelling
     lm = json.loads((ROOT / "config/labelling_model.json").read_text())
     for r in LABEL_ROLES:
-        if not re.fullmatch(r"claude-[A-Za-z0-9.\-]+", str(lm.get("test", {}).get(r, ""))):
-            problems.append(f"config/labelling_model.json: test.{r} must be an exact Claude model ID (got {lm.get('test', {}).get(r)!r})")
+        v = str(lm.get("test", {}).get(r, ""))
+        if not (re.search(r"claude-[A-Za-z0-9.\-]+", v) and "tt/labels/draft.py" in v if r == "pass_a_drafter" else re.fullmatch(r"claude-[A-Za-z0-9.\-]+", v)):
+            problems.append(f"config/labelling_model.json: test.{r} must be an exact Claude model ID (Pass A: the code description naming the model) (got {lm.get('test', {}).get(r)!r})")
     pc = (ROOT / "docs/PASS_C_PROMPT.txt").read_text()
     if "version_X" not in pc or "version_A" in pc or '"A"' in pc:
         problems.append("docs/PASS_C_PROMPT.txt must use the blind X/Y wording (version_X, version_Y) and never name pass A or B")

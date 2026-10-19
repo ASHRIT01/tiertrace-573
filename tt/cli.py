@@ -259,17 +259,18 @@ def adjudication_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports
 
 
 @app.command("pass-a")
-def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json", pdf_dir: str = "data/dev_raw"):
+def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json", pdf_dir: str = "data/dev_raw",
+               event_overrides: str = "config/event_overrides.json", claim_overrides: str = "config/claim_overrides.json"):
     """Build Pass A (AI drafter, code-assisted) for the labelled dev set."""
     from tt.labels.blind import assert_blind
-    assert_blind(selection, drafts, out, pdf_dir)
+    assert_blind(selection, drafts, out, pdf_dir, event_overrides, claim_overrides)
     import json
     from pathlib import Path
     from tt.labels.draft import build_pass_a
     from tt.labels.events import load_overrides
     S = json.load(open(selection))["filings"]
-    co = json.load(open("config/claim_overrides.json"))
-    recs = build_pass_a(S, json.load(open(drafts)) if drafts else [], Path(pdf_dir), load_overrides(), co)
+    co = json.load(open(claim_overrides)) if Path(claim_overrides).exists() else {}
+    recs = build_pass_a(S, json.load(open(drafts)) if drafts else [], Path(pdf_dir), load_overrides(event_overrides), co)
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     Path(out).write_text(json.dumps(recs, indent=1, ensure_ascii=False))
     typer.echo(f"{len(recs)} filings -> {out}")
