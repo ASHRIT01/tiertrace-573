@@ -1,0 +1,154 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-23E009-8284.PDF",
+   "year": 2023,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E044-2601.PDF",
+   "year": 2023,
+   "filer": "East Penn Manufacturing Company, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E062-2246.PDF",
+   "year": 2023,
+   "filer": "Outfitter Manufacturing",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V023-3785.PDF",
+   "year": 2023,
+   "filer": "Autocar, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V043-5517.PDF",
+   "year": 2023,
+   "filer": "General Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V049-3369.PDF",
+   "year": 2023,
+   "filer": "Winnebago Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V065-2221.PDF",
+   "year": 2023,
+   "filer": "Navistar, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V105-3926.PDF",
+   "year": 2023,
+   "filer": "Daimler Trucks North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V112-8018.PDF",
+   "year": 2023,
+   "filer": "Roadtrek Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V123-8136.PDF",
+   "year": 2023,
+   "filer": "BMW of North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V160-2575.PDF",
+   "year": 2023,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V181-8031.PDF",
+   "year": 2023,
+   "filer": "Hyundai Motor America",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V186-7351.PDF",
+   "year": 2023,
+   "filer": "Kentucky Trailer Manufacturing",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V217-6513.PDF",
+   "year": 2023,
+   "filer": "Jayco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V221-8304.PDF",
+   "year": 2023,
+   "filer": "Jaguar Land Rover North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V229-8645.PDF",
+   "year": 2023,
+   "filer": "Honda (American Honda Motor Co.)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V238-8204.PDF",
+   "year": 2023,
+   "filer": "Daimler Trucks North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V253-4361.PDF",
+   "year": 2023,
+   "filer": "BMW of North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V256-5237.PDF",
+   "year": 2023,
+   "filer": "Alamo Group Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V289-4389.PDF",
+   "year": 2023,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V310-1286.PDF",
+   "year": 2023,
+   "filer": "Mack Trucks, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V332-7382.PDF",
+   "year": 2023,
+   "filer": "E-One Incorporated",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V351-3281.PDF",
+   "year": 2023,
+   "filer": "REV Recreation Group",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V375-6379.PDF",
+   "year": 2023,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V383-8713.PDF",
+   "year": 2023,
+   "filer": "Wabash National Corporation",
+   "origin": "test"
+  }
+ ]
+}

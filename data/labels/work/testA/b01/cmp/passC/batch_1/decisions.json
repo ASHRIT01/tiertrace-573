@@ -1,0 +1,160 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "NEITHER",
+  "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+  "reason": "Reviewing records/supplier data to understand the condition is analysis conducted to find the cause -> INVESTIGATION_START (X's type). But a range gives one event per distinct date, so this event's date_text is 'September 2022' (Y's date), not the whole range.",
+  "corrected": {
+   "date_text": "September 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "On January 18, 2023, FCA US TSRC recognized that the TRSCM may fail internally resulting in the rearview camera image not displaying during a backing event",
+  "reason": "The filer recognizing (becoming aware of) the potential noncompliance is FILER_AWARENESS, not OTHER."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "No known warranty claims, field or service reports, or any vehicle crashes/injuries. Only two internal failures at the manufacturing facility in Lyons Station, PA",
+  "reason": "Status statement summarising failures, not an action/occurrence; not an event."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "On February 6, 2023, Outfitter Manufacturing contacted all 78 consumers affected by the Suburban Manufacturing recall notice.",
+  "reason": "Contacting affected owners is remedy logistics (owner notification), excluded from events."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident",
+  "reason": "A customer report reaching the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "This new information led Autocar to believe the January 2019 incident may have been related to the recalled condition.",
+  "reason": "Belief statement; rules exclude beliefs and assumptions from events."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "January 31, 2020, Autocar was contacted by NHTSA regarding potential plumbing attached to the exhaust port of any PP1 park brake valves and inquired as to any reported roll-away events. Autocar researched the potential condition on its vehicles",
+  "reason": "The entry begins with a date (no 'On'), so the following undated research sentence inherits January 31, 2020; researching the condition is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+  "reason": "Reviewing records as part of the investigation is investigation/analysis conducted -> INVESTIGATION_START; Y's quote also spans another entry."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top",
+  "reason": "The dated October 2022 sentence is a consumer report reaching the filer -> FILER_AWARENESS. Y's version is a different sentence (attempted part return), which is a separate OTHER event, not this one."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "In or about January 2023, Winnebago continued to search for and analyzed any claim or complaint concerning SDS2 cooktops;",
+  "reason": "Analysis of claims conducted to determine scope -> INVESTIGATION_START; Y's quote merges two entries."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035",
+  "reason": "The sentence's dated occurrence is the supplier telling the filer about its recall -> SUPPLIER_NOTICE (the decision follows from it); X's quote also spills into the next entry ('February 2, 2023'), so it is not a clean one-sentence quote."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "February 2, 2023, after working with Suburban Manufacturing Company to determine scope of impacted units, Winnebago filed a notice of defect with NHTSA.",
+  "reason": "Filing the defect notice with NHTSA is NHTSA_FILING; X's quote is the wrong sentence."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV;",
+  "reason": "A supplier issuing its own recall is an occurrence (OTHER: a supplier's own filing); it is an event."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "A machine that is not forming the roof bow supports correctly is currently under investigation for root cause.",
+  "reason": "The cause field states a mechanism (machine not forming roof bow supports correctly); only the deeper root cause of the machine fault is open, so SUPPORTED."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+  "reason": "Auditing the processes to find the cause is investigation/analysis conducted -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+  "reason": "Same as D015: process audit is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D017",
+  "decision": "X",
+  "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+  "reason": "The narrative refers to the lever supplier only generically; 'BMW' in the narrative is the filer acting, not a naming of the supplier -> INSUFFICIENT."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+  "reason": "This is a finding of BMW's own review, not the supplier telling the filer; a review result is OTHER, not SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D019",
+  "decision": "X",
+  "quote": "On February 14, 2023, an issue pertaining to 2023 model year Ford Maverick trailer tow taillamp function was brought to Ford’s Critical Concern Review Group for review.",
+  "reason": "A report of the issue reaching the filer's review group is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "In March 2023, Ford notified Jayco that remedy parts are available.",
+  "reason": "Notice of remedy part availability is not a notice about the problem/finding/recall; it is an OTHER occurrence."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "on June 23, 2023, DTNA updated the description of the remedy section of its Defect Information Report.",
+  "reason": "Updating the Defect Information Report is amending the Part 573 report -> NHTSA_FILING."
+ },
+ {
+  "item_id": "D022",
+  "decision": "NEITHER",
+  "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+  "reason": "The event exists (Y's null is wrong), but date_text must keep 'Mid' as written: 'Mid-February 2023', not 'February 2023'.",
+  "corrected": {
+   "date_text": "Mid-February 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "On May 26, 2023, DTNA amended the Defect Information Report to clarify and consolidate the model listing",
+  "reason": "Amending the Part 573 report is an NHTSA_FILING event."
+ },
+ {
+  "item_id": "D024",
+  "decision": "CONTESTED",
+  "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+  "reason": "One sentence holds both an investigation start (undated) and a dated supplier contact (OTHER); rules give one event per sentence but do not settle which action sets the type."
+ }
+]

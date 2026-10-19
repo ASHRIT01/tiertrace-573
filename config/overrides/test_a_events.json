@@ -1,0 +1,72 @@
+{
+ "RCLRPT-23E009-8284.PDF": {
+  "• From September 2022, through January 2023": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23E044-2601.PDF": {
+  "5/15/23 - Teardown": {
+   "type": "INVESTIGATION_START"
+  },
+  "5/16/23 through 5/26/23": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V023-3785.PDF": {
+  "=March 10.": {
+   "include": false,
+   "why": "sentence-splitter fragment of 'March 10. 2020' (printed typo)"
+  }
+ },
+ "RCLRPT-23V186-7351.PDF": {
+  "On March 13, 2023, Kentucky Trailer received": {
+   "type": "FILER_AWARENESS"
+  },
+  "On March 20, 2023, Kentucky Trailer notified NHTSA": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-23V217-6513.PDF": {
+  "On March 23, 2023 SSC voted": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V253-4361.PDF": {
+  "An engineering review was initiated": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V289-4389.PDF": {
+  "On April 21, 2023, the Corporate Recall Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V310-1286.PDF": {
+  "April 17, 2023 Product Safety Working Group": {
+   "type": "OTHER"
+  },
+  "April 27, 2023 The Product Safety Committee": {
+   "type": "DECISION"
+  },
+  "May2, 2023 573 Report": {
+   "include": true,
+   "dates": [
+    {
+     "date_text": "May2, 2023",
+     "type": "NHTSA_FILING"
+    }
+   ],
+   "quote": "May2, 2023 573 Report filed with NHTSA"
+  }
+ },
+ "RCLRPT-23V375-6379.PDF": {
+  "On May 26, 2023, the Corporate Recall Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V383-8713.PDF": {
+  "5/22/23, Safety committee voted": {
+   "type": "DECISION"
+  }
+ }
+}

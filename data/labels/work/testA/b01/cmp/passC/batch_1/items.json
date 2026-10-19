@@ -1,0 +1,573 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-23E009-8284.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 2022, through January 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "September 2022",
+   "type": "OTHER",
+   "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-09-01",
+    "end": "2022-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-23E009-8284.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 18, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On January 18, 2023, FCA US TSRC recognized that the TRSCM may fail internally resulting in the rearview camera image not displaying during a backing event under certain circumstance, potentially not in compliance with FMVSS No. 111.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-18",
+    "end": "2023-01-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 18, 2023",
+   "type": "OTHER",
+   "quote": "On January 18, 2023, FCA US TSRC recognized that the TRSCM may fail internally resulting in the rearview camera image not displaying during a backing event under certain circumstance, potentially not in compliance with FMVSS No. 111.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-23E044-2601.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "5/23/23",
+   "type": "OTHER",
+   "quote": "Only two internal failures at the manufacturing facility in Lyons Station, PA",
+   "inherited_date": true,
+   "entry_quote": "5/23/23 - Notification of second affected datecode to distribution network for sorting efforts.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-05-23",
+    "end": "2023-05-23",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-23E062-2246.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "February 6, 2023",
+   "type": "OTHER",
+   "quote": "On February 6, 2023, Outfitter Manufacturing contacted all 78 consumers affected by the Suburban Manufacturing recall notice.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-06",
+    "end": "2023-02-06",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-23V023-3785.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 15, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident which was the subject of a NHTSA inquiry.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 15, 2023",
+   "type": "OTHER",
+   "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident which was the subject of a NHTSA inquiry.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-15",
+    "end": "2023-03-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-23V023-3785.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "January 2019",
+   "type": "OTHER",
+   "quote": "This new information led Autocar to believe the January 2019 incident may have been related to the recalled condition.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2019-01-01",
+    "end": "2019-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-23V023-3785.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "January 31, 2020",
+   "type": "INVESTIGATION_START",
+   "quote": "Autocar researched the potential condition on its vehicles and found no failures, no reports, and no events.",
+   "inherited_date": true,
+   "entry_quote": "January 31, 2020, Autocar was contacted by NHTSA regarding potential plumbing attached to the exhaust port of any PP1 park brake valves and inquired as to any reported roll-away events.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 2022",
+   "type": "OTHER",
+   "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV; Winnebago was not notified of this recall; In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-08-01",
+    "end": "2022-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top which appeared to be consistent with issue described in 22E-035 recall.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "October 2022",
+   "type": "OTHER",
+   "quote": "Winnebago attempted to get the suspect part returned, but was not able to do so.",
+   "inherited_date": true,
+   "entry_quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top which appeared to be consistent with issue described in 22E-035 recall.",
+   "date_inferred": false,
+   "span": {
+    "start": "2022-10-01",
+    "end": "2022-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "In or about January 2023, Winnebago continued to search for and analyzed any claim or complaint concerning SDS2 cooktops;",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "January 2023",
+   "type": "OTHER",
+   "quote": "; In or about January 2023, Winnebago continued to search for and analyzed any claim or complaint concerning SDS2 cooktops; In or about the middle of January 2023, a new data analysis was completed and five (5) total potentially related claims were identified.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 26, 2023",
+   "type": "DECISION",
+   "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035 and Winnebago made a decision to file a recall for the Suburban Recall 23E-0020 as that appeared to be the correct recall number.; February 2, 2023",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-26",
+    "end": "2023-01-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 26, 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035 and Winnebago made a decision to file a recall for the Suburban Recall 23E-0020 as that appeared to be the correct recall number.;",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2, 2023",
+   "type": "OTHER",
+   "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035 and Winnebago made a decision to file a recall for the Suburban Recall 23E-0020 as that appeared to be the correct recall number.; February 2, 2023",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-02",
+    "end": "2023-02-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2, 2023",
+   "type": "NHTSA_FILING",
+   "quote": "February 2, 2023, after working with Suburban Manufacturing Company to determine scope of impacted units, Winnebago filed a notice of defect with NHTSA.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-23V049-3369.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 28, 2022",
+   "type": "OTHER",
+   "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV; Winnebago was not notified of this recall;",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-23V065-2221.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "A machine that is not forming the roof bow supports correctly is currently under investigation for root cause.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "SUPPORTED",
+   "quote": "A machine that is not forming the roof bow supports correctly is currently under investigation for root cause.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-23V065-2221.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "01/19/2023",
+   "type": "OTHER",
+   "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-19",
+    "end": "2023-01-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "01/19/2023",
+   "type": "INVESTIGATION_START",
+   "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-23V065-2221.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "01/20/2023",
+   "type": "OTHER",
+   "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-20",
+    "end": "2023-01-20",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "01/20/2023",
+   "type": "INVESTIGATION_START",
+   "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-23V123-8136.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: BMW AG",
+   "status": "INSUFFICIENT",
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "BMW",
+   "quote": "On February 16, 2023, BMW decided to conduct a voluntary safety recall.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-23V123-8136.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 2023",
+   "type": "OTHER",
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-23V160-2575.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 14, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On February 14, 2023, an issue pertaining to 2023 model year Ford Maverick trailer tow taillamp function was brought to Ford’s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-14",
+    "end": "2023-02-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 14, 2023",
+   "type": "OTHER",
+   "quote": "On February 14, 2023, an issue pertaining to 2023 model year Ford Maverick trailer tow taillamp function was brought to Ford’s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-23V217-6513.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "In March 2023, Ford notified Jayco that remedy parts are available.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-01",
+    "end": "2023-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "March 2023",
+   "type": "OTHER",
+   "quote": "In March 2023, Ford notified Jayco that remedy parts are available.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-23V238-8204.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 23, 2023",
+   "type": "OTHER",
+   "quote": "DTNA developed a final remedy for this issue and on June 23, 2023, DTNA updated the description of the remedy section of its Defect Information Report.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-23",
+    "end": "2023-06-23",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 23, 2023",
+   "type": "NHTSA_FILING",
+   "quote": "DTNA developed a final remedy for this issue and on June 23, 2023, DTNA updated the description of the remedy section of its Defect Information Report.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-23V238-8204.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "February 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-01",
+    "end": "2023-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-23V238-8204.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 26, 2023",
+   "type": "NHTSA_FILING",
+   "quote": "On May 26, 2023, DTNA amended the Defect Information Report to clarify and consolidate the model listing (to facilitate reading comprehension with no change to the population).",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-23V253-4361.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 21st",
+   "type": "OTHER",
+   "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 21st",
+   "type": "INVESTIGATION_START",
+   "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-21",
+    "end": "2023-03-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ }
+]

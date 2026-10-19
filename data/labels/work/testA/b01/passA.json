@@ -1,0 +1,3357 @@
+[
+ {
+  "file": "RCLRPT-23E009-8284.PDF",
+  "filer": "Chrysler (FCA US, LLC)",
+  "filing_date": "2023-02-09",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: CONTINENTAL AUTONOMOUS MOBILITY US",
+    "status": "SUPPORTED",
+    "quote": "Name : CONTINENTAL AUTONOMOUS MOBILITY US",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: CONTINENTAL AUTONOMOUS MOBILITY US",
+    "status": "INSUFFICIENT",
+    "quote": "• From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "September 1, 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "On September 1, 2022, FCA US LLC (\"FCA US\") Technical Safety and Regulatory Compliance (\"TSRC\") organization opened an investigation into 2021-2023 MY Ram 1500 vehicles and 2023 MY Ram 2500 vehicles for the rearview camera being inoperative.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-09-01",
+     "end": "2022-09-01",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "September 2022",
+    "type": "OTHER",
+    "quote": "From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-09-01",
+     "end": "2022-09-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 18, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On January 18, 2023, FCA US TSRC recognized that the TRSCM may fail internally resulting in the rearview camera image not displaying during a backing event under certain circumstance, potentially not in compliance with FMVSS No. 111.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-18",
+     "end": "2023-01-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 2, 2023",
+    "type": "DECISION",
+    "quote": "On February 2, 2023, FCA US determined, through the Vehicle Regulations Committee, to conduct a voluntary safety recall of the affected units.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-02",
+     "end": "2023-02-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "• From September 2022, through January 2023, FCA US TSRC reviewed vehicle records and met with FCA US engineering to review supplier data to understand the condition.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23E044-2601.PDF",
+  "filer": "East Penn Manufacturing Company, Inc.",
+  "filing_date": "2023-08-16",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: East Penn Manufacturing Co.",
+    "status": "SUPPORTED",
+    "quote": "Name : East Penn Manufacturing Co.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: East Penn Manufacturing Co.",
+    "status": "INSUFFICIENT",
+    "quote": "Name : East Penn Manufacturing Co.",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "5/13/23",
+    "type": "FILER_AWARENESS",
+    "quote": "5/13/23 - Breached battery detected in the forming manufacturing process.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-13",
+     "end": "2023-05-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/15/23",
+    "type": "INVESTIGATION_START",
+    "quote": "5/15/23 - Teardown was performed on breached batteries and capped terminal burn was identified as the root cause of the breach.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-15",
+     "end": "2023-05-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/15/23",
+    "type": "OTHER",
+    "quote": "5/15/23 - Quarantine process for suspect product began.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-15",
+     "end": "2023-05-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/16/23 through 5/26/23",
+    "type": "INVESTIGATION_START",
+    "quote": "5/16/23 through 5/26/23 - Destructive product analysis on quarantined product to isolate affected lots.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-16",
+     "end": "2023-05-26",
+     "granularity": "range",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/19/23",
+    "type": "OTHER",
+    "quote": "5/19/23 - Confirmation of field exposure and notification to distribution network of quarantine expectations and stop shipment decision.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-19",
+     "end": "2023-05-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/23/23",
+    "type": "OTHER",
+    "quote": "5/23/23 - Notification of second affected datecode to distribution network for sorting efforts.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-23",
+     "end": "2023-05-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/23/23",
+    "type": "OTHER",
+    "quote": "Only two internal failures at the manufacturing facility in Lyons Station, PA",
+    "inherited_date": true,
+    "entry_quote": "5/23/23 - Notification of second affected datecode to distribution network for sorting efforts.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-23",
+     "end": "2023-05-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "No known warranty claims, field or service reports, or any vehicle crashes/injuries.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Improper welding technique",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23E062-2246.PDF",
+  "filer": "Outfitter Manufacturing",
+  "filing_date": "2023-08-21",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Suburban Manufacturing Co",
+    "status": "SUPPORTED",
+    "quote": "Name : Suburban Manufacturing Co",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Suburban Manufacturing Co",
+    "status": "SUPPORTED",
+    "quote": "On February 3, 2023, Outfitter Manufacturing was made aware of a notice of recall from the supplier (Suburban Manufacturing).",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "February 3, 2023",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On February 3, 2023, Outfitter Manufacturing was made aware of a notice of recall from the supplier (Suburban Manufacturing).",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-03",
+     "end": "2023-02-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Outfitter opened a research item the same day.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 3, 2023",
+    "span": null
+   },
+   {
+    "date_text": "February 6, 2023",
+    "type": "OTHER",
+    "quote": "On February 6, 2023, Outfitter Manufacturing contacted all 78 consumers affected by the Suburban Manufacturing recall notice.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-06",
+     "end": "2023-02-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "Unknown",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Suburban Manufacturing Co"
+   ],
+   "quote": "On February 3, 2023, Outfitter Manufacturing was made aware of a notice of recall from the supplier (Suburban Manufacturing).",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V023-3785.PDF",
+  "filer": "Autocar, LLC",
+  "filing_date": "2023-03-31",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Autocar LLC",
+    "status": "SUPPORTED",
+    "quote": "Name : Autocar LLC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Autocar LLC",
+    "status": "SUPPORTED",
+    "quote": "January 31, 2020, Autocar was contacted by NHTSA regarding potential plumbing attached to the exhaust port of any PP1 park brake valves and inquired as to any reported roll-away events.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "January 31, 2020",
+    "type": "FILER_AWARENESS",
+    "quote": "January 31, 2020, Autocar was contacted by NHTSA regarding potential plumbing attached to the exhaust port of any PP1 park brake valves and inquired as to any reported roll-away events.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2020-01-31",
+     "end": "2020-01-31",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 10",
+    "type": "OTHER",
+    "quote": "2020, Autocar changed the process for manufacturing and eliminated the exhaust port plumbing.",
+    "inherited_date": true,
+    "entry_quote": "March 10.",
+    "date_inferred": true,
+    "span": {
+     "start": "1900-03-10",
+     "end": "1900-03-10",
+     "granularity": "day",
+     "inferred": true,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 11, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "January 11, 2023, Autocar was contacted by NHTSA regarding the potential condition when plumbing is attached to the exhaust port of any PP1 valve and advised that a pro-active campaign with reportability would be expected.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-11",
+     "end": "2023-01-11",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 13, 2023",
+    "type": "DECISION",
+    "quote": "January 13, 2023, Autocar management team was presented with the information and out of an abundance of caution Autocar decided to perform a voluntary safety recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-13",
+     "end": "2023-01-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 15, 2023",
+    "type": "OTHER",
+    "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident which was the subject of a NHTSA inquiry.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-15",
+     "end": "2023-03-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 2019",
+    "type": "OTHER",
+    "quote": "On March 15, 2023, Autocar obtained new information from the operator-customer regarding a January 2019 incident which was the subject of a NHTSA inquiry.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2019-01-01",
+     "end": "2019-01-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 2019",
+    "type": "OTHER",
+    "quote": "This new information led Autocar to believe the January 2019 incident may have been related to the recalled condition.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2019-01-01",
+     "end": "2019-01-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "Autocar researched the potential condition on its vehicles and found no failures, no reports, and no events.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "March 10.",
+    "reason": "sentence-splitter fragment of 'March 10. 2020' (printed typo)"
+   },
+   {
+    "sentence": "As of January 13, 2023, Autocar had not determined that any incident in the field had been caused by the recalled condition.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "This is the only incident potentially related to the recalled condition that Autocar is aware of.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The internal leak volume from a worn valve could exceed the vent line capacity and result in back pressure.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V043-5517.PDF",
+  "filer": "General Motors, LLC",
+  "filing_date": "2023-02-02",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Nexteer Automotive",
+    "status": "SUPPORTED",
+    "quote": "Name : Nexteer Automotive",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Nexteer Automotive",
+    "status": "INSUFFICIENT",
+    "quote": "The half-shaft supplier used an incorrect cutting tool to machine a groove that seats the half-shaft’s retaining snap-ring.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "December 13, 2022",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On December 13, 2022, a GM design engineer submitted a report to GM’s Speak Up for Safety (SUFS) program following notification from the supplier of a potential quality spill on right-front half-shafts produced for certain 2023 Cadillac XT5 and GMC Acadia vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-13",
+     "end": "2022-12-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The supplier indicated that it may have used an incorrect cutting tool to machine a groove that seats the half-shaft’s retaining snap-ring, potentially resulting in a reduction in retention force of the half-shaft to the transmission.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 13, 2022",
+    "span": null
+   },
+   {
+    "date_text": "December 16, 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "GM opened a product investigation on December 16, 2022.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-16",
+     "end": "2022-12-16",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "GM’s investigator retrieved and reviewed field data and worked with the supplier to define the nature of the condition, its potential effects on half-shaft retention, and the affected population.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 16, 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Preliminary testing by the supplier indicated that the condition may reduce half- shaft retention substantially below the performance of half-shafts that were correctly manufactured, and in some cases below GM’s minimum retention targets.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 16, 2022",
+    "span": null
+   },
+   {
+    "date_text": "January 26, 2023",
+    "type": "DECISION",
+    "quote": "On January 26, 2023, GM’s Safety and Field Action Decision Authority decided to conduct a safety recall for vehicles that received suspect passenger side half-shaft assemblies.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-26",
+     "end": "2023-01-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "No field incidents were identified that related to this condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The half-shaft supplier used an incorrect cutting tool to machine a groove that seats the half-shaft’s retaining snap-ring.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The half-shaft supplier used an incorrect cutting tool to machine a groove that seats the half-shaft’s retaining snap-ring.",
+   "section": "cause"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V049-3369.PDF",
+  "filer": "Winnebago Industries, Inc.",
+  "filing_date": "2023-02-08",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Suburban Manufacturing Company",
+    "status": "SUPPORTED",
+    "quote": "Name : Suburban Manufacturing Company",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Suburban Manufacturing Company",
+    "status": "SUPPORTED",
+    "quote": "According to Suburban Manufacturing Company, “the gas manifold at the control knobs can become loose over time due to excessive vibration.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March, 2022",
+    "type": "OTHER",
+    "quote": "In or about March, 2022, Thor’s VSRC Office contacted Winnebago to request information concerning any “high volume or irregular pattern of warranty claims” with the SDS2 cooktop.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-03-01",
+     "end": "2022-03-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "Winnebago reviewed warranty data and did not identify any high volume or irregular patterns with SDS2 warranty claims; this was reported back to Thor’s VSRC Office; In or about April 2022, Winnebago identified social media posts from a customer referring to a cooktop concern",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-04-01",
+     "end": "2022-04-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "As part of the investigation a new data analysis was initiated.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "April 2022",
+    "span": null
+   },
+   {
+    "date_text": "April 2022",
+    "type": "OTHER",
+    "quote": "The April 2022 investigation did not find any unreasonable risk to safety:",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-04-01",
+     "end": "2022-04-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 28, 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV; Winnebago was not notified of this recall; In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-04-28",
+     "end": "2022-04-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 2022",
+    "type": "OTHER",
+    "quote": "April 28, 2022, Suburban Manufacturing Co. issued recall 22E-035 specifically for Escape RV; Winnebago was not notified of this recall; In or about August 2022, investigation reviews installation records from Winnebago assembly technicians and found no concern;",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-08-01",
+     "end": "2022-08-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 2022",
+    "type": "OTHER",
+    "quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top which appeared to be consistent with issue described in 22E-035 recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-10-01",
+     "end": "2022-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 2022",
+    "type": "OTHER",
+    "quote": "Winnebago attempted to get the suspect part returned, but was not able to do so.",
+    "inherited_date": true,
+    "entry_quote": "October 2022, Winnebago identified a social media post where a consumer had identified a propane gas leak on a Suburban SDS2 cook top which appeared to be consistent with issue described in 22E-035 recall.",
+    "date_inferred": false,
+    "span": {
+     "start": "2022-10-01",
+     "end": "2022-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 2023",
+    "type": "OTHER",
+    "quote": "; In or about January 2023, Winnebago continued to search for and analyzed any claim or complaint concerning SDS2 cooktops; In or about the middle of January 2023, a new data analysis was completed and five (5) total potentially related claims were identified.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-01",
+     "end": "2023-01-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "late November 2020",
+    "type": "OTHER",
+    "quote": "The claims ranged from late November 2020 to early April 2022.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2020-11-20",
+     "end": "2020-11-30",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "early April 2022",
+    "type": "OTHER",
+    "quote": "The claims ranged from late November 2020 to early April 2022.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-04-01",
+     "end": "2022-04-10",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 18, 2022",
+    "type": "OTHER",
+    "quote": "These claims were sent to Suburban for their review on January 18, 2022.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-01-18",
+     "end": "2022-01-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 26, 2023",
+    "type": "DECISION",
+    "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035 and Winnebago made a decision to file a recall for the Suburban Recall 23E-0020 as that appeared to be the correct recall number.; February 2, 2023",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-26",
+     "end": "2023-01-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 2, 2023",
+    "type": "OTHER",
+    "quote": "January 26, 2023 Suburban sent Winnebago notice that Winnebago was impacted by 22E-035 and Winnebago made a decision to file a recall for the Suburban Recall 23E-0020 as that appeared to be the correct recall number.; February 2, 2023",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-02",
+     "end": "2023-02-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "According to Suburban Manufacturing Company, “the gas manifold at the control knobs can become loose over time due to excessive vibration.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Suburban Manufacturing Company"
+   ],
+   "quote": "According to Suburban Manufacturing Company, “the gas manifold at the control knobs can become loose over time due to excessive vibration.",
+   "section": "cause"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V065-2221.PDF",
+  "filer": "Navistar, Inc.",
+  "filing_date": "2023-02-09",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "01/19/2023",
+    "type": "INVESTIGATION_START",
+    "quote": "01/19/2023 – Navistar Manufacturing initiated an investigation of a leaking roof at water test and noticed insufficient overlap of the roof sheeting.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-19",
+     "end": "2023-01-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "01/19/2023",
+    "type": "OTHER",
+    "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-19",
+     "end": "2023-01-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "01/20/2023",
+    "type": "OTHER",
+    "quote": "01/19/2023 and 01/20/2023 – Navistar Manufacturing audits the processes from bow former through topping sheet installation.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-20",
+     "end": "2023-01-20",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "01/24/2023",
+    "type": "OTHER",
+    "quote": "01/24/2023 – Navistar Manufacturing quarantines buses at the assembly plant and contains the issue in manufacturing.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-24",
+     "end": "2023-01-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "1/25/2023",
+    "type": "OTHER",
+    "quote": "1/25/2023 When testing compliance to FMVSS 221, Navistar pull tests of three suspect roof joints did not meet the 6,241 pound pull test requirement.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-25",
+     "end": "2023-01-25",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "1/25/2023",
+    "type": "OTHER",
+    "quote": "Joints separated at 5,645 and 5,026 pounds.",
+    "inherited_date": true,
+    "entry_quote": "1/25/2023 When testing compliance to FMVSS 221, Navistar pull tests of three suspect roof joints did not meet the 6,241 pound pull test requirement.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-25",
+     "end": "2023-01-25",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "01/31/2023",
+    "type": "INVESTIGATION_START",
+    "quote": "01/31/2023 – Navistar Manufacturing meets with Compliance to review pull test results and initiate investigation to determine the impact to IC buses.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-31",
+     "end": "2023-01-31",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "02/02/2023",
+    "type": "DECISION",
+    "quote": "02/02/2023 – Navistar determines the suspect population and declares a Non-compliance recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-02",
+     "end": "2023-02-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "A machine that is not forming the roof bow supports correctly is currently under investigation for root cause.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V105-3926.PDF",
+  "filer": "Daimler Trucks North America, LLC",
+  "filing_date": "2023-02-24",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "September 2021",
+    "type": "INVESTIGATION_START",
+    "quote": "In or about September 2021, DTNA initiated an investigation on a specific population of vehicles that ultimately had 11 separations of drag link joints.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2021-09-01",
+     "end": "2021-09-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "This led to DTNA issuing recall (21V-689) in order to remedy certain populations of vehicles subject to possible steering link separations.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "September 2021",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "In tandem, DTNA actively screened and investigated this second population that did not experience separations and was different from the first population based on the manufacturing location of these vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "September 2021",
+    "span": null
+   },
+   {
+    "date_text": "February 2022",
+    "type": "OTHER",
+    "quote": "Starting in or about February 2022, DTNA and NHTSA had multiple discussions regarding both of these populations within SEL and specific off ramp meetings.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-02-01",
+     "end": "2022-02-28",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2022",
+    "type": "OTHER",
+    "quote": "In December 2022 DTNA, while in communication with NHTSA, DTNA determined the second population out of an abundance of caution, be fixed via a Service Campaign.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-01",
+     "end": "2022-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The Service Campaign, SF660A was initiated for the population of vehicles manufactured at a specific plant within a specific date range separate from recall 21V-689.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "In SF660A Service Campaign materials, due to some clerical oversight, DTNA unartfully worded the circumstances as to draglink symptom characteristics for this population of vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "December 2022",
+    "span": null
+   },
+   {
+    "date_text": "January",
+    "type": "OTHER",
+    "quote": "In January and February 2023 discussions with NHTSA regarding SF660A continued, and understandably there were mutual concerns despite improbable risk regarding the language of the field action being performed as a Service Campaign.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "span": {
+     "start": "1900-01-01",
+     "end": "1900-01-31",
+     "granularity": "month",
+     "inferred": true,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 2023",
+    "type": "OTHER",
+    "quote": "In January and February 2023 discussions with NHTSA regarding SF660A continued, and understandably there were mutual concerns despite improbable risk regarding the language of the field action being performed as a Service Campaign.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-01",
+     "end": "2023-02-28",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "As such DTNA agreed with NHTSA that regardless of the lack of known separations in the field or awareness of any injuries or deaths that may be related to such conditions, the potential risk of this situation leading to a steering separation cannot be ruled out",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "January",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "DECISION",
+    "quote": "Out of an abundance of caution, DTNA has made the determination to issue a safety recall to remedy the potential risk.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "January",
+    "span": null
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "This, in good faith and with reasonable engineering judgement was for a perceived quality issue as there were no separations and no injuries or deaths.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V112-8018.PDF",
+  "filer": "Roadtrek Inc.",
+  "filing_date": "2023-06-14",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Suburban Manufacturing/Aircel",
+    "status": "SUPPORTED",
+    "quote": "Name : Suburban Manufacturing/Aircel",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Suburban Manufacturing/Aircel",
+    "status": "SUPPORTED",
+    "quote": "On February 14, 2023 we received notification from our Suburban Manufacturing distributor that Suburban Manufacturing has issued NHTSA Recall 23E-002 for their model SDS2 - 2 burner propane cooktops.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "February 14, 2023",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "On February 14, 2023 we received notification from our Suburban Manufacturing distributor that Suburban Manufacturing has issued NHTSA Recall 23E-002 for their model SDS2 - 2 burner propane cooktops.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-14",
+     "end": "2023-02-14",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "DECISION",
+    "quote": "Our inventory was purged of the effected product and we initiated a search of our manufactured vehicle log to determine which vehicles contained the defective products.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 14, 2023",
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "manufacturing defect",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Suburban Manufacturing/Aircel"
+   ],
+   "quote": "On February 14, 2023 we received notification from our Suburban Manufacturing distributor that Suburban Manufacturing has issued NHTSA Recall 23E-002 for their model SDS2 - 2 burner propane cooktops.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V123-8136.PDF",
+  "filer": "BMW of North America, LLC",
+  "filing_date": "2023-02-24",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: BMW AG",
+    "status": "SUPPORTED",
+    "quote": "Name : BMW AG",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: BMW AG",
+    "status": "INSUFFICIENT",
+    "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "November 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "In November 2022, during functional checks and tests in preparation for an event, BMW became aware of two 2023 BMW M 1000 R motorcycles with unusual hand brake lever movement.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-11-01",
+     "end": "2022-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The unusual movement corresponded with varying brake lever pressure.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "An engineering review was initiated.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Various analyses and tests were performed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "A review of the engineering specifications of components of the braking system, including the hand brake lever, was conducted.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Additional motorcycle models with similar design configurations were identified, including hand brake levers which were available as standard equipment, factory option, and/or aftermarket accessory.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "November 2022",
+    "span": null
+   },
+   {
+    "date_text": "January 2023",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-01",
+     "end": "2023-01-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "Motorcycle assembly information, supplier production records, parts supply chain and aftersales information were reviewed to determine the number and production dates of potentially affected motorcycles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "January 2023",
+    "span": null
+   },
+   {
+    "date_text": "February 16, 2023",
+    "type": "DECISION",
+    "quote": "On February 16, 2023, BMW decided to conduct a voluntary safety recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-16",
+     "end": "2023-02-16",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "BMW has not received any reports, nor is BMW otherwise aware, of any accidents or injuries that may be related to this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V160-2575.PDF",
+  "filer": "Ford Motor Company",
+  "filing_date": "2023-03-10",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Yazaki North America Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : Yazaki North America Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Yazaki North America Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "Name : Yazaki North America Inc.",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "February 14, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On February 14, 2023, an issue pertaining to 2023 model year Ford Maverick trailer tow taillamp function was brought to Ford’s Critical Concern Review Group for review.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-14",
+     "end": "2023-02-14",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 3rd, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On February 3rd, 2023, the Ford Hermosillo assembly plant was made aware of a warranty claim on a 2023MY Ford Maverick with a customer indicating that the trailer taillamps were not functioning when the trailer was attached to vehicle.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-03",
+     "end": "2023-02-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Dealer inspection found a missing circuit in the engine bay electrical harness.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 3rd, 2023",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Further investigation by the assembly plant and engineering revealed that a revised engine bay wire harness released for the 2023 model year did not include a circuit for the class II trailer tow (7+4 connector).",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 3rd, 2023",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "All 2023 model year vehicles with Class II trailer tow are affected.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 3rd, 2023",
+    "span": null
+   },
+   {
+    "date_text": "February 8th, 2023",
+    "type": "OTHER",
+    "quote": "A stop ship was issued on February 8th, 2023, by Ford Hermosillo assembly plant.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-08",
+     "end": "2023-02-08",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 3, 2023",
+    "type": "DECISION",
+    "quote": "On March 3, 2023, Ford’s Field Review Committee reviewed the concern and approved a field action.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-03",
+     "end": "2023-03-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of March 3, 2023, there are (4) known warranty reports related to this concern.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "Ford is not aware of any reports of accident or injury related to this condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Missing electrical circuit in engine bay wiring harness.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V181-8031.PDF",
+  "filer": "Hyundai Motor America",
+  "filing_date": "2023-05-12",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: SEGI Korea",
+    "status": "SUPPORTED",
+    "quote": "Name : SEGI Korea",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: SEGI Korea",
+    "status": "INSUFFICIENT",
+    "quote": "Name : SEGI Korea",
+    "section": "block"
+   }
+  ],
+  "events": [],
+  "events_excluded": [
+   {
+    "sentence": "Please see Attachment A for the requested chronology.",
+    "reason": "pointer chronology"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Water ingress into the tow hitch harness module through the 4-pin tow hitch harness connector.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V186-7351.PDF",
+  "filer": "Kentucky Trailer Manufacturing",
+  "filing_date": "2023-05-04",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Warn Industries, Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : Warn Industries, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Warn Industries, Inc.",
+    "status": "SUPPORTED",
+    "quote": "On March 13, 2023, Kentucky Trailer received an email from NHTSA notifying Kentucky Trailer of a recall (NHTSA Recall No. 22E101) that was initiated by WARN Industries, Inc. related to a defect in the handheld remote-control device that was sold with certain WARN VR EVO winches.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March 13, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On March 13, 2023, Kentucky Trailer received an email from NHTSA notifying Kentucky Trailer of a recall (NHTSA Recall No. 22E101) that was initiated by WARN Industries, Inc. related to a defect in the handheld remote-control device that was sold with certain WARN VR EVO winches.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-13",
+     "end": "2023-03-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Kentucky Trailer immediately put a \"quality hold\" on all WARN winches in its inventory that are the subject of this recall.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 13, 2023",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Kentucky Trailer then investigated all trailers that it sold equipped with winches that are the subject of this recall.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 13, 2023",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Kentucky Trailer determined that it has manufactured and sold five (5) trailers equipped with winches that are the subject of this recall.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 13, 2023",
+    "span": null
+   },
+   {
+    "date_text": "March 20, 2023",
+    "type": "NHTSA_FILING",
+    "quote": "On March 20, 2023, Kentucky Trailer notified NHTSA and initiated a safety recall with respect to the affected trailers.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-20",
+     "end": "2023-03-20",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Getting the remote control wet, resulting in water ingress and corrosion inside the remote control.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Warn Industries, Inc."
+   ],
+   "quote": "On March 13, 2023, Kentucky Trailer received an email from NHTSA notifying Kentucky Trailer of a recall (NHTSA Recall No. 22E101) that was initiated by WARN Industries, Inc. related to a defect in the handheld remote-control device that was sold with certain WARN VR EVO winches.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V217-6513.PDF",
+  "filer": "Jayco, Inc.",
+  "filing_date": "2023-03-30",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Ford Motor Company",
+    "status": "SUPPORTED",
+    "quote": "Name : Ford Motor Company",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Ford Motor Company",
+    "status": "SUPPORTED",
+    "quote": "Please refer to Ford’s chronology on 22v-731.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "October 31, 2022",
+    "type": "OTHER",
+    "quote": "October 31, 2022 Jayco’s Warranty Incident Review Committee (WIRC) reviewed the incident and elevated it to CPAC.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-10-31",
+     "end": "2022-10-31",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2, 2022",
+    "type": "OTHER",
+    "quote": "On November 2, 2022 The Corrective Preventive Action Committee (CPAC) decided to elevate the incident to the Safety Steering Committee (SSC) once the remedy was available and the Ford recall became active.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-11-02",
+     "end": "2022-11-02",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 2023",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "In March 2023, Ford notified Jayco that remedy parts are available.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-01",
+     "end": "2023-03-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 23, 2023",
+    "type": "DECISION",
+    "quote": "On March 23, 2023 SSC voted to proceed with a pass through chassis recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-23",
+     "end": "2023-03-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "Please refer to Ford’s chronology on 22v-731.",
+    "reason": "pointer to another document"
+   },
+   {
+    "sentence": "Ford is not aware of any reports of accident or injury related to this condition.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Describe the cause: The rear stabilizer bar attachment bracket weld-nuts may not be capable of supporting the required joint torque for this application and may have been damaged during the assembly process.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Ford Motor Company"
+   ],
+   "quote": "Please refer to Ford’s chronology on 22v-731.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V221-8304.PDF",
+  "filer": "Jaguar Land Rover North America, LLC",
+  "filing_date": "2023-04-10",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: AKWEL SA",
+    "status": "SUPPORTED",
+    "quote": "Name : AKWEL SA",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: AKWEL SA",
+    "status": "INSUFFICIENT",
+    "quote": "Name : AKWEL SA",
+    "section": "block"
+   }
+  ],
+  "events": [],
+  "events_excluded": [
+   {
+    "sentence": "See File \"Recall N785 Chronology\".",
+    "reason": "pointer chronology"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V229-8645.PDF",
+  "filer": "Honda (American Honda Motor Co.)",
+  "filing_date": "2023-03-30",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: TS TECH Co., Ltd.",
+    "status": "SUPPORTED",
+    "quote": "Name : TS TECH Co., Ltd.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: TS TECH Co., Ltd.",
+    "status": "INSUFFICIENT",
+    "quote": "July 18, 2022 Honda’s supplier conducted a welding robot teaching procedure to set new target weld coordinates.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "July 18, 2022",
+    "type": "OTHER",
+    "quote": "July 18, 2022 Honda’s supplier conducted a welding robot teaching procedure to set new target weld coordinates.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-07-18",
+     "end": "2022-07-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "August 3, 2022",
+    "type": "OTHER",
+    "quote": "August 3, 2022 Honda began mass production of the 2023 Civic Type R.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-08-03",
+     "end": "2022-08-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "October 13, 2022",
+    "type": "OTHER",
+    "quote": "October 13, 2022 Honda’s supplier conducted a welding robot teaching procedure to set new target weld coordinates.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-10-13",
+     "end": "2022-10-13",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 24, 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "November 24, 2022 Honda received the first report of driver front seat rattling.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-11-24",
+     "end": "2022-11-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 1, 2022",
+    "type": "OTHER",
+    "quote": "December 1, 2022 Honda’s supplier implemented new quality procedures to improve weld quality.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-01",
+     "end": "2022-12-01",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 19, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "January 19, 2023 Honda received the first report of driver front seat noise.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-19",
+     "end": "2023-01-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 24, 2023",
+    "type": "OTHER",
+    "quote": "January 24, 2023 Honda received an affected seat and verified the seat rattling issue due to the seat frame’s insufficient weld.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-24",
+     "end": "2023-01-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "January 24, 2023",
+    "type": "INVESTIGATION_START",
+    "quote": "Honda launched an investigation.",
+    "inherited_date": true,
+    "entry_quote": "January 24, 2023 Honda received an affected seat and verified the seat rattling issue due to the seat frame’s insufficient weld.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-01-24",
+     "end": "2023-01-24",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 17, 2023",
+    "type": "OTHER",
+    "quote": "February 17, 2023 Honda received an affected seat and verified the seat noise issue due to the seat frame’s insufficient weld.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-17",
+     "end": "2023-02-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 17, 2023",
+    "type": "OTHER",
+    "quote": "Honda confirmed that the insufficient weld caused both the seat rattling and seat noise issues.",
+    "inherited_date": true,
+    "entry_quote": "February 17, 2023 Honda received an affected seat and verified the seat noise issue due to the seat frame’s insufficient weld.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-17",
+     "end": "2023-02-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "February 21, 2023",
+    "type": "OTHER",
+    "quote": "February 21, 2023 Honda identified an issue in the supplier’s welding robot teaching procedure.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-21",
+     "end": "2023-02-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 23, 2023",
+    "type": "DECISION",
+    "quote": "March 23, 2023 Honda determined that a defect related to motor vehicle safety and a FMVSS noncompliance existed and decided to conduct a safety and noncompliance recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-23",
+     "end": "2023-03-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of March 23, 2023, Honda has received 4 warranty claims related to the issue and no reports of injuries or deaths related to this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "During a welding robot teaching procedure, the weld area coordinates were set incorrectly, resulting in insufficient weld penetration in the seat’s cushion frame.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "July 18, 2022 Honda’s supplier conducted a welding robot teaching procedure to set new target weld coordinates.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V238-8204.PDF",
+  "filer": "Daimler Trucks North America, LLC",
+  "filing_date": "2023-06-23",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Detroit Diesel Corp",
+    "status": "SUPPORTED",
+    "quote": "Name : Detroit Diesel Corp",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Detroit Diesel Corp",
+    "status": "INSUFFICIENT",
+    "quote": "Name : Detroit Diesel Corp",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "February 2023",
+    "type": "INVESTIGATION_START",
+    "quote": "Mid-February 2023, DTNA received a report on an incident involving failed tie rod assembly and opened a preliminary investigation.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-01",
+     "end": "2023-02-28",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Upon returned failed part analysis, it was determined that the driver’s side tie rod disengaged from the steering arm during low speed maneuvering.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "February 2023",
+    "span": null
+   },
+   {
+    "date_text": "late February 2023",
+    "type": "OTHER",
+    "quote": "Around late February 2023 through early March 2023, DTNA identified that the subject vehicle experiencing the failure, was re-worked at a different station due to certain requirements, and was not manufactured through standard process involving multiple inspection points.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-20",
+     "end": "2023-02-28",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "mid-March 2023",
+    "type": "OTHER",
+    "quote": "In about mid-March 2023, DTNA identified a population of certain axles, that were manufactured at a rework station.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-10",
+     "end": "2023-03-20",
+     "granularity": "fuzzy",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 29, 2023",
+    "type": "DECISION",
+    "quote": "DTNA opened an official investigation immediately following receiving this notice of a possible presence of a defect, and on March 29, 2023, out of an abundance of caution, DTNA decided to initiate a new voluntary safety recall to campaign all the listed vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-29",
+     "end": "2023-03-29",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 7 2023",
+    "type": "OTHER",
+    "quote": "On April 7 2023, DTNA finalized the affected population after further determining precise vocational application of the vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-07",
+     "end": "2023-04-07",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "June 23, 2023",
+    "type": "OTHER",
+    "quote": "DTNA developed a final remedy for this issue and on June 23, 2023, DTNA updated the description of the remedy section of its Defect Information Report.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-06-23",
+     "end": "2023-06-23",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of March 31st 2023, DTNA is aware of 1 field report and 0 warranty claims related to missing front steer axle tie rod castle nut cotter pin.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "DTNA is not aware of any accidents or injuries due to this defect condition.",
+    "reason": "status/no-incident statement"
+   },
+   {
+    "sentence": "On May 26, 2023, DTNA amended the Defect Information Report to clarify and consolidate the model listing (to facilitate reading comprehension with no change to the population).",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Re-worked at a different station due to certain requirements, and was not manufactured through standard process involving multiple inspection points.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V253-4361.PDF",
+  "filer": "BMW of North America, LLC",
+  "filing_date": "2023-04-06",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Magna Seating South Carolina",
+    "status": "SUPPORTED",
+    "quote": "Name : Magna Seating South Carolina",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Magna Seating South Carolina",
+    "status": "INSUFFICIENT",
+    "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March 20, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On March 20, 2023, during a quality check at a vehicle assembly plant, it was noticed that a second row seat head restraint on a Model Year 2023 BMW X5 had difficulty locking in position.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-20",
+     "end": "2023-03-20",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 21st",
+    "type": "INVESTIGATION_START",
+    "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-21",
+     "end": "2023-03-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": true
+    }
+   },
+   {
+    "date_text": "",
+    "type": "SUPPLIER_NOTICE",
+    "quote": "A review of supplier production and process information was performed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "It was found that, due to a production control system issue, the End-of-Line (EOL) validation process needed to be bypassed for a limited time period.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "As a result, seats may have been assembled with suspect head restraint guide sleeves during this time period.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Further reviews were conducted involving images captured during the seat production and assembly process, and other production and assembly quality information.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "A containment action was performed, and head restraints were also physically examined.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Quality checks of other vehicles with various build configurations and option packages were also performed.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "An analysis of the information identified potentially affected seats, and also confirmed that potentially affected seats were only those equipped with head restraint guide sleeves during the production process deviation time period.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Vehicle assembly information and supplier production and process records were reviewed to determine the number, and production dates, of potentially affected vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21st",
+    "span": null
+   },
+   {
+    "date_text": "March 30, 2023",
+    "type": "DECISION",
+    "quote": "On March 30, 2023, BMW determined that affected vehicles may not conform to FMVSS 202a Section 4.2.6, and decided to conduct a voluntary non-compliance recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-30",
+     "end": "2023-03-30",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "BMW has not received any reports, nor is BMW otherwise aware, of any accidents or injuries related to this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause not reported",
+   "status": "NOT_REPORTED",
+   "quote": "NR",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "An engineering review was initiated and, on March 21st, the seat supplier was contacted.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V256-5237.PDF",
+  "filer": "Alamo Group Inc.",
+  "filing_date": "2023-05-03",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Fabri-Tech, Inc.",
+    "status": "SUPPORTED",
+    "quote": "Name : Fabri-Tech, Inc.",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Fabri-Tech, Inc.",
+    "status": "INSUFFICIENT",
+    "quote": "The rod penetration through the washer and weld size of the tank tie rod at that attachment point that were received from a vendor were not sufficient to keep the tank tie rod and water tank strap secure.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 2018",
+    "type": "FILER_AWARENESS",
+    "quote": "In May 2018, Super Products was notified by a customer that a tank strap tie rod had disengaged from the top of a Mud Dog vehicle, and the water tank strap had fallen down.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2018-05-01",
+     "end": "2018-05-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 2019",
+    "type": "FILER_AWARENESS",
+    "quote": "In July 2019, Super Products received a similar report from a customer for a Camel vehicle.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2019-07-01",
+     "end": "2019-07-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The Mud Dog and the Camel are the only two Super Product models that use this tank tie rod part.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "July 2019",
+    "span": null
+   },
+   {
+    "date_text": "August 1, 2019",
+    "type": "OTHER",
+    "quote": "Super Products instituted a design change on August 1, 2019, to increase rod penetration and weld size for the tank strap tie rod on both models.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2019-08-01",
+     "end": "2019-08-01",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "June 2022",
+    "type": "OTHER",
+    "quote": "Between January 2020 and June 2022, Super Products learned of 4 more incidents of tank strap tie rod weld failures for the affected vehicle population.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-06-01",
+     "end": "2022-06-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May 2022",
+    "type": "OTHER",
+    "quote": "The last of these incidents occurred in May 2022 while the Camel vehicle was operating on a public road and the tank strap fell and came into contact with the back window of another vehicle.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-05-01",
+     "end": "2022-05-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "This caused property damage to the other vehicle, but no accident or injury.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "May 2022",
+    "type": "OTHER",
+    "quote": "After the May 2022 incident, Super Products conducted metallurgical tests on the tank tie rod and the connected square tabbed washer to confirm the cause as insufficient rod penetration and weld size.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-05-01",
+     "end": "2022-05-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Super Products then examined other Camel and Mud Dog vehicles that were manufactured around the same time period as the 6 reported cases.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Super Products examined 129 additional tank tie rods on 32 vehicles.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "As a result of the investigation, one additional vehicle was identified on which the tank tie rod had been replaced with a threaded rod, but Super Products could not confirm if the original tank tie rod had disengaged before the repair with the threaded rod was made.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "FILER_AWARENESS",
+    "quote": "Also, through the course of the investigation, Super Products discovered cracked welds on 9 tank tie rods, but none of the rods were disengaged.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "All 9 cracked tank tie rods were replaced.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 2022",
+    "span": null
+   },
+   {
+    "date_text": "October 2022",
+    "type": "OTHER",
+    "quote": "In October 2022, during the course of the investigation a customer reported another disengaged tank tie rod.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-10-01",
+     "end": "2022-10-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 31, 2023",
+    "type": "DECISION",
+    "quote": "On March 31, 2023, Alamo decided to declare a voluntary safety recall to remedy this issue.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-31",
+     "end": "2023-03-31",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The rod penetration through the washer and weld size of the tank tie rod at that attachment point that were received from a vendor were not sufficient to keep the tank tie rod and water tank strap secure.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "The rod penetration through the washer and weld size of the tank tie rod at that attachment point that were received from a vendor were not sufficient to keep the tank tie rod and water tank strap secure.",
+   "section": "cause"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V289-4389.PDF",
+  "filer": "Forest River, Inc.",
+  "filing_date": "2023-04-24",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March 20, 2023",
+    "type": "FILER_AWARENESS",
+    "quote": "On March 20, 2023, Forest River’s Columbus manufacturing division received a single complaint of the tire allegedly rubbing on the slideout adjustment bolt.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-20",
+     "end": "2023-03-20",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "March 21, 2023",
+    "type": "OTHER",
+    "quote": "On March 21, 2023, Columbus inspected a vehicle of the same model and found that there wasn’t the appropriate clearance of the slideout adjustment bolt and the tire.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-21",
+     "end": "2023-03-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The same day Columbus began researching the concern.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 21, 2023",
+    "span": null
+   },
+   {
+    "date_text": "April 3, 2023",
+    "type": "OTHER",
+    "quote": "On April 3, 2023, the chassis manufacturer added a riser tube.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-03",
+     "end": "2023-04-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 17, 2023",
+    "type": "OTHER",
+    "quote": "On April 17, 2023, Columbus concluded their research and concluded that other vehicles of this same model may have the same concern.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-17",
+     "end": "2023-04-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The same day, Columbus notified Forest River’s Office of Corporate Compliance (“OCC”) of the findings.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "April 17, 2023",
+    "span": null
+   },
+   {
+    "date_text": "April 21, 2023",
+    "type": "DECISION",
+    "quote": "On April 21, 2023, the Corporate Recall Committee voted to recall the affected vehicles.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-21",
+     "end": "2023-04-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The 2\" tube that mounts between the axle hangers and the I-Beam was mistakenly removed.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V310-1286.PDF",
+  "filer": "Mack Trucks, Inc.",
+  "filing_date": "2023-07-13",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Volvo",
+    "status": "SUPPORTED",
+    "quote": "Name : Volvo",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Volvo",
+    "status": "INSUFFICIENT",
+    "quote": "Name : Volvo",
+    "section": "block"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "April 10, 2023",
+    "type": "INVESTIGATION_START",
+    "quote": "April 10, 2023 Mack Manufacturing reports that they have discovered that we have vehicles where the vehicle horns are inoperative and an investigation is opened.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-10",
+     "end": "2023-04-10",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 17, 2023",
+    "type": "OTHER",
+    "quote": "April 17, 2023 Product Safety Working Group reviews product safety investigation results and recommends that this be brought to Product Safety Committee as a potential product safety defect.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-17",
+     "end": "2023-04-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 27, 2023",
+    "type": "DECISION",
+    "quote": "April 27, 2023 The Product Safety Committee meets and decides that a product safety defect exists.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-27",
+     "end": "2023-04-27",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May2, 2023",
+    "type": "NHTSA_FILING",
+    "quote": "May2, 2023 573 Report filed with NHTSA",
+    "inherited_date": false,
+    "date_inferred": true,
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Engineering review of harness changes failed to detect the missing circuit.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V332-7382.PDF",
+  "filer": "E-One Incorporated",
+  "filing_date": "2023-07-11",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Joral LLC",
+    "status": "SUPPORTED",
+    "quote": "Name : Joral LLC",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Joral LLC",
+    "status": "SUPPORTED",
+    "quote": "On April 12, 2023, the Engineering team and questions were sent to and discussions were had with the Manufacturer, Joral LLC, regarding the issues found.",
+    "section": "chronology"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "March 15, 2023",
+    "type": "OTHER",
+    "quote": "On March 15, 2023, E-ONE was contacted and told the inclination sensor stopped working during training on truck SO 144708 in Sarnia, Canada.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-15",
+     "end": "2023-03-15",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The E-ONE Service team investigated the specific customer issue and communicated the findings to Engineering.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "March 15, 2023",
+    "span": null
+   },
+   {
+    "date_text": "April 12, 2023",
+    "type": "OTHER",
+    "quote": "On April 12, 2023, the Engineering team and questions were sent to and discussions were had with the Manufacturer, Joral LLC, regarding the issues found.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-12",
+     "end": "2023-04-12",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 17, 2023",
+    "type": "OTHER",
+    "quote": "On April 17, 2023, E-ONE was contacted that the Aerial device contacted the cab during training on another truck in Marion, Illinois, truck SO 144814.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-17",
+     "end": "2023-04-17",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The Engineering team continued to investigate and collect more data and information and to quarantine the sensors in the E-ONE inventory.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "April 17, 2023",
+    "span": null
+   },
+   {
+    "date_text": "April 27, 2023",
+    "type": "DECISION",
+    "quote": "On April 27, 2023, the issue was addressed in the Product Performance Meeting and it was determined that a Recall should be initiated.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-27",
+     "end": "2023-04-27",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 28, 2023",
+    "type": "OTHER",
+    "quote": "On April 28, 2023, research was performed to identify the population of the affected trucks On May 8, 2023 E-ONE submitted the request to issue a Recall to REV Group.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-28",
+     "end": "2023-04-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May 8, 2023",
+    "type": "OTHER",
+    "quote": "On April 28, 2023, research was performed to identify the population of the affected trucks On May 8, 2023 E-ONE submitted the request to issue a Recall to REV Group.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-08",
+     "end": "2023-05-08",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Received approval from REV Group to perform a Recall.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "April 28, 2023",
+    "span": null
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "The E-ONE Service team investigated the specific customer issue and communicated the findings to Engineering.",
+    "reason": "duplicate of an earlier sentence in the same chronology"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The cause is a result of a parts substitution due to shortage conditions.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Joral LLC"
+   ],
+   "quote": "On April 12, 2023, the Engineering team and questions were sent to and discussions were had with the Manufacturer, Joral LLC, regarding the issues found.",
+   "section": "chronology"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V351-3281.PDF",
+  "filer": "REV Recreation Group",
+  "filing_date": "2023-05-18",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports component manufacturer: Lippert",
+    "status": "SUPPORTED",
+    "quote": "Name : Lippert",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: Lippert",
+    "status": "SUPPORTED",
+    "quote": "Lippert Engineering has determined the failure is caused by stress on the hitch from impact with the ground or leverage from customer added drop hitch attachments which may increase the stresses on the hitch receiver.",
+    "section": "cause"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May of 2023",
+    "type": "OTHER",
+    "quote": "In May of 2023, REV Recreation Group notified Lippert that a risk to safety may occur on certain Lippert manufactured hitches and that REV Recreation Group would immediately conduct a recall out of an abundance of caution on behalf of the hitch supplier.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-01",
+     "end": "2023-05-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 2022",
+    "type": "FILER_AWARENESS",
+    "quote": "In July 2022, REV Recreation Group received notification that a Lippert manufactured hitch had welds that broke while in use.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-07-01",
+     "end": "2022-07-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "July 2022",
+    "type": "OTHER",
+    "quote": "A review of warranty history revealed no other reported failures of this part as of this time.",
+    "inherited_date": true,
+    "entry_quote": "In July 2022, REV Recreation Group received notification that a Lippert manufactured hitch had welds that broke while in use.",
+    "date_inferred": false,
+    "span": {
+     "start": "2022-07-01",
+     "end": "2022-07-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2022",
+    "type": "OTHER",
+    "quote": "In November 2022, REV Recreation Group received notice of a second reported failure of this hitch.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-11-01",
+     "end": "2022-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "November 2022",
+    "type": "OTHER",
+    "quote": "The parts were returned to Lippert, the hitch manufacturer and it was determined that in each case involving a reported hitch failure, an approximate 6” customer added drop hitch was being utilized to facilitate flat towing of an SUV.",
+    "inherited_date": true,
+    "entry_quote": "In November 2022, REV Recreation Group received notice of a second reported failure of this hitch.",
+    "date_inferred": false,
+    "span": {
+     "start": "2022-11-01",
+     "end": "2022-11-30",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "December 2022",
+    "type": "OTHER",
+    "quote": "December 2022, REV Recreation Group conducted a follow up meeting with Lippert and the assessment at that point indicated the failures were potentially related to use of aftermarket equipment contacting the ground during use or by stress added by leverage by consumer added drop hitches.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-01",
+     "end": "2022-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "Dec 2022",
+    "type": "INVESTIGATION_START",
+    "quote": "Dec 2022 and ongoing, REV Recreation Group and Lippert started an investigation and reviewed testing data to determine the effect of consumers adding an aftermarket drop hitch.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-12-01",
+     "end": "2022-12-31",
+     "granularity": "month",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 3, 2023",
+    "type": "OTHER",
+    "quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-03",
+     "end": "2023-04-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 3, 2023",
+    "type": "OTHER",
+    "quote": "Field data now shows that there are a total of 5 similar reports with the specific subject part number.",
+    "inherited_date": true,
+    "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-03",
+     "end": "2023-04-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "April 3, 2023",
+    "type": "OTHER",
+    "quote": "Further evaluations were conducted and remain underway.",
+    "inherited_date": true,
+    "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-03",
+     "end": "2023-04-03",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "REV leadership and engineers met and discussed the specifications of the units with the failure and concluded that their safety committees should consider a campaign to replace the specific hitch with a redesigned, more robust part in the interest of customer safety.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "April 3, 2023",
+    "span": null
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Lippert Engineering has determined the failure is caused by stress on the hitch from impact with the ground or leverage from customer added drop hitch attachments which may increase the stresses on the hitch receiver.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Lippert"
+   ],
+   "quote": "Lippert Engineering has determined the failure is caused by stress on the hitch from impact with the ground or leverage from customer added drop hitch attachments which may increase the stresses on the hitch receiver.",
+   "section": "cause"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V375-6379.PDF",
+  "filer": "Forest River, Inc.",
+  "filing_date": "2023-05-26",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "May 18, 2022",
+    "type": "OTHER",
+    "quote": "On May 18, 2022, during a routine PDI Inspection, it was found that the cooktop may be pulling the cooktop flame down/inverted.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-05-18",
+     "end": "2022-05-18",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "The PDI facility communicated with the manufacturing plant and their assigned Corporate Standards Manager.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 18, 2022",
+    "span": null
+   },
+   {
+    "date_text": "May 19, 2022",
+    "type": "OTHER",
+    "quote": "On May 19, 2022, the Corporate Standards Manager for the manufacturing plant communicated to Forest Rivers Office of Corporate Compliance (“OCC”) of the concern.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2022-05-19",
+     "end": "2022-05-19",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "OCC opened a research item the same day.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "May 19, 2022",
+    "span": null
+   },
+   {
+    "date_text": "May 22, 2023",
+    "type": "OTHER",
+    "quote": "On May 22, 2023, confirmed the makes and models of vehicles which the furnace was incorrectly installed since model(s) inception.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-22",
+     "end": "2023-05-22",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "May 26, 2023",
+    "type": "DECISION",
+    "quote": "On May 26, 2023, the Corporate Recall Committee voted to recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-26",
+     "end": "2023-05-26",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Manufacturing error.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ },
+ {
+  "file": "RCLRPT-23V383-8713.PDF",
+  "filer": "Wabash National Corporation",
+  "filing_date": "2023-07-12",
+  "claims": [
+   {
+    "id": "S1",
+    "label": "Block reports a component manufacturer",
+    "status": "NOT_REPORTED",
+    "quote": "Name : NR",
+    "section": "block"
+   },
+   {
+    "id": "S2",
+    "label": "Narrative (cause/chronology) names the supplier: none named",
+    "status": "NOT_REPORTED",
+    "quote": "",
+    "section": "any"
+   }
+  ],
+  "events": [
+   {
+    "date_text": "3/6/23",
+    "type": "FILER_AWARENESS",
+    "quote": "3/6/23, Noticed weld issue with robotic weld program on first shift.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-06",
+     "end": "2023-03-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/6/23",
+    "type": "OTHER",
+    "quote": "Removed suspect couplers from production.",
+    "inherited_date": true,
+    "entry_quote": "3/6/23, Noticed weld issue with robotic weld program on first shift.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-06",
+     "end": "2023-03-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/6/23",
+    "type": "OTHER",
+    "quote": "Edited and repaired computer program.",
+    "inherited_date": true,
+    "entry_quote": "3/6/23, Noticed weld issue with robotic weld program on first shift.",
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-06",
+     "end": "2023-03-06",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "2/21/23",
+    "type": "OTHER",
+    "quote": "Investigate last known change to computer program which was 2/21/23.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-02-21",
+     "end": "2023-02-21",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "",
+    "type": "OTHER",
+    "quote": "Entered concern response to bring awareness to product safety team.",
+    "inherited_date": false,
+    "date_inferred": true,
+    "date_inferred_from": "2/21/23",
+    "span": null
+   },
+   {
+    "date_text": "3/7/23",
+    "type": "OTHER",
+    "quote": "3/7/23, Safety team met, engineering determined this was not an immediate safety concern but should be addressed.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-07",
+     "end": "2023-03-07",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/14/23",
+    "type": "OTHER",
+    "quote": "3/14/23, Safet Team determined to continue to investigate and meet with lead engineer.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-14",
+     "end": "2023-03-14",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/16/23",
+    "type": "OTHER",
+    "quote": "3/16/23, Met with lead engineer.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-16",
+     "end": "2023-03-16",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/28/23",
+    "type": "OTHER",
+    "quote": "3/28/23, Safety Team voted to discuss with outside counsel to determine what to escalate to the Safety committee.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-28",
+     "end": "2023-03-28",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "3/29/23",
+    "type": "OTHER",
+    "quote": "3/29/23, Met with outside counsel, determined to escalate from a durability standpoint.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-03-29",
+     "end": "2023-03-29",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "4/11/23",
+    "type": "OTHER",
+    "quote": "4/11/23, Safety team voted to escalate durability issue to the safety committee.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-04-11",
+     "end": "2023-04-11",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   },
+   {
+    "date_text": "5/22/23",
+    "type": "DECISION",
+    "quote": "5/22/23, Safety committee voted to issue a voluntary safety recall.",
+    "inherited_date": false,
+    "date_inferred": false,
+    "span": {
+     "start": "2023-05-22",
+     "end": "2023-05-22",
+     "granularity": "day",
+     "inferred": false,
+     "year_from_context": false
+    }
+   }
+  ],
+  "events_excluded": [
+   {
+    "sentence": "As of 5/22/23, Wabash knows of no warranty claims and no field or service reports related to this issue.",
+    "reason": "status/no-incident statement"
+   }
+  ],
+  "cause": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "a computer program had the same start and stop points which omitted one weld from the robotic sequence.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "year": 2023,
+  "origin": "test"
+ }
+]

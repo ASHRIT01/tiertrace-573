@@ -1,0 +1,459 @@
+[
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-23V256-5237.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2022",
+   "type": "OTHER",
+   "quote": "Between January 2020 and June 2022, Super Products learned of 4 more incidents of tank strap tie rod weld failures for the affected vehicle population.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-06-01",
+    "end": "2022-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 2020 and June 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "Between January 2020 and June 2022, Super Products learned of 4 more incidents of tank strap tie rod weld failures for the affected vehicle population.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-23V256-5237.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 2022",
+   "type": "OTHER",
+   "quote": "After the May 2022 incident, Super Products conducted metallurgical tests on the tank tie rod and the connected square tabbed washer to confirm the cause as insufficient rod penetration and weld size.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-05-01",
+    "end": "2022-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "After the May 2022 incident, Super Products conducted metallurgical tests on the tank tie rod and the connected square tabbed washer to confirm the cause as insufficient rod penetration and weld size.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-23V256-5237.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2022",
+   "type": "OTHER",
+   "quote": "In October 2022, during the course of the investigation a customer reported another disengaged tank tie rod.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-10-01",
+    "end": "2022-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "In October 2022, during the course of the investigation a customer reported another disengaged tank tie rod.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-23V289-4389.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "INSUFFICIENT",
+   "quote": "On April 3, 2023, the chassis manufacturer added a riser tube.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: none named",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-23V289-4389.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "On April 3, 2023, the chassis manufacturer added a riser tube.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-23V289-4389.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 21, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On March 21, 2023, Columbus inspected a vehicle of the same model and found that there wasn’t the appropriate clearance of the slideout adjustment bolt and the tire.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 21, 2023",
+   "type": "OTHER",
+   "quote": "On March 21, 2023, Columbus inspected a vehicle of the same model and found that there wasn’t the appropriate clearance of the slideout adjustment bolt and the tire.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-21",
+    "end": "2023-03-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-23V310-1286.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 10, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "April 10, 2023 Mack Manufacturing reports that they have discovered that we have vehicles where the vehicle horns are inoperative and an investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-10",
+    "end": "2023-04-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 10, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "April 10, 2023 Mack Manufacturing reports that they have discovered that we have vehicles where the vehicle horns are inoperative and an investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-23V332-7382.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 15, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On March 15, 2023, E-ONE was contacted and told the inclination sensor stopped working during training on truck SO 144708 in Sarnia, Canada.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 15, 2023",
+   "type": "OTHER",
+   "quote": "On March 15, 2023, E-ONE was contacted and told the inclination sensor stopped working during training on truck SO 144708 in Sarnia, Canada.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-15",
+    "end": "2023-03-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-23V332-7382.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 17, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 17, 2023, E-ONE was contacted that the Aerial device contacted the cab during training on another truck in Marion, Illinois, truck SO 144814.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April 17, 2023",
+   "type": "OTHER",
+   "quote": "On April 17, 2023, E-ONE was contacted that the Aerial device contacted the cab during training on another truck in Marion, Illinois, truck SO 144814.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-17",
+    "end": "2023-04-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-23V332-7382.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 28, 2023",
+   "type": "OTHER",
+   "quote": "On April 28, 2023, research was performed to identify the population of the affected trucks On May 8, 2023 E-ONE submitted the request to issue a Recall to REV Group.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-28",
+    "end": "2023-04-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 28, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On April 28, 2023, research was performed to identify the population of the affected trucks",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May of 2023",
+   "type": "OTHER",
+   "quote": "In May of 2023, REV Recreation Group notified Lippert that a risk to safety may occur on certain Lippert manufactured hitches and that REV Recreation Group would immediately conduct a recall out of an abundance of caution on behalf of the hitch supplier.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-05-01",
+    "end": "2023-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May of 2023",
+   "type": "DECISION",
+   "quote": "In May of 2023, REV Recreation Group notified Lippert that a risk to safety may occur on certain Lippert manufactured hitches and that REV Recreation Group would immediately conduct a recall out of an abundance of caution on behalf of the hitch supplier.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "A review of warranty history revealed no other reported failures of this part as of this time.",
+   "inherited_date": true,
+   "entry_quote": "In July 2022, REV Recreation Group received notification that a Lippert manufactured hitch had welds that broke while in use.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 2022",
+   "type": "OTHER",
+   "quote": "A review of warranty history revealed no other reported failures of this part as of this time.",
+   "inherited_date": true,
+   "entry_quote": "In July 2022, REV Recreation Group received notification that a Lippert manufactured hitch had welds that broke while in use.",
+   "date_inferred": false,
+   "span": {
+    "start": "2022-07-01",
+    "end": "2022-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "In November 2022, REV Recreation Group received notice of a second reported failure of this hitch.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 2022",
+   "type": "OTHER",
+   "quote": "The parts were returned to Lippert, the hitch manufacturer and it was determined that in each case involving a reported hitch failure, an approximate 6” customer added drop hitch was being utilized to facilitate flat towing of an SUV.",
+   "inherited_date": true,
+   "entry_quote": "In November 2022, REV Recreation Group received notice of a second reported failure of this hitch.",
+   "date_inferred": false,
+   "span": {
+    "start": "2022-11-01",
+    "end": "2022-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 3, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April 3, 2023",
+   "type": "OTHER",
+   "quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-03",
+    "end": "2023-04-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 3, 2023",
+   "type": "OTHER",
+   "quote": "Field data now shows that there are a total of 5 similar reports with the specific subject part number.",
+   "inherited_date": true,
+   "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-03",
+    "end": "2023-04-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 3, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Further evaluations were conducted and remain underway.",
+   "inherited_date": true,
+   "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-23V351-3281.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "April 3, 2023",
+   "type": "OTHER",
+   "quote": "Further evaluations were conducted and remain underway.",
+   "inherited_date": true,
+   "entry_quote": "April 3, 2023 - A customer with REV Recreation Group gas motor home reported their Lippert hitch welds had a failure.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-03",
+    "end": "2023-04-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-23V375-6379.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 18, 2022",
+   "type": "OTHER",
+   "quote": "On May 18, 2022, during a routine PDI Inspection, it was found that the cooktop may be pulling the cooktop flame down/inverted.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-05-18",
+    "end": "2022-05-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 18, 2022",
+   "type": "FILER_AWARENESS",
+   "quote": "On May 18, 2022, during a routine PDI Inspection, it was found that the cooktop may be pulling the cooktop flame down/inverted.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-23V383-8713.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "3/6/23",
+   "type": "OTHER",
+   "quote": "Entered concern response to bring awareness to product safety team.",
+   "inherited_date": true,
+   "entry_quote": "3/6/23, Noticed weld issue with robotic weld program on first shift.",
+   "date_inferred": false
+  }
+ }
+]

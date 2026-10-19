@@ -1,0 +1,23 @@
+{
+ "RCLRPT-23V023-3785.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-23V123-8136.PDF": {
+  "S2": {
+   "status": "INSUFFICIENT",
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "section": "chronology"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "In January 2023, the review indicated that the supplier of the hand brake lever involved in the subject recall was provided with specifications which were insufficient.",
+   "section": "chronology"
+  }
+ }
+}
