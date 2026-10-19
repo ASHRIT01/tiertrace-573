@@ -1,0 +1,146 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "June 2023: KML inspected the vehicle which reported this 2nd incident of starting problems and found that the alternator rotor and the alternator rotor bolt were loose.",
+  "reason": "Inspection conducted to find the cause of the starting problem; fits INVESTIGATION_START (testing/inspection conducted to find cause)."
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "KML Quality Assurance Division started an investigation of the cause.",
+  "reason": "Undated sentence inside the April 2023 bullet entry reporting an action; event with inherited date, INVESTIGATION_START."
+ },
+ {
+  "item_id": "D003",
+  "decision": "X",
+  "quote": "Loosening of the wiper arm nuts may cause the wiper arm actuator to spin within the wiper arm attachment, preventing proper wiper arm operation.",
+  "reason": "Cause field states a mechanism (nut loosening); rules make that SUPPORTED even though deeper root cause is still investigated."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+  "reason": "The block names the filer itself; the narrative names Cummins as maker of the recalled Onan generator, i.e. the supplier of the defective component. Chinook is the filer, not the supplier."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+  "reason": "Cummins, a component maker/supplier of the filer, is named in the chronology, so U is NAMED."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "Then notified by Cummins that they will be performing the recall.",
+  "reason": "Supplier telling the filer about its own recall is SUPPLIER_NOTICE; date inherited from the entry, using the entry's first date as in a per-date reading of the range."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "05/12/2023 - Cummins came to Chinook and checked fuel hose lines and correct any if needed.",
+  "reason": "Checking and correcting fuel hoses on affected units is repair of affected vehicles (remedy logistics), not an event."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "04/18/2023 - 05/22/2023 - Chinook reviewed its records and identified affected Bayside models",
+  "reason": "Record review to identify affected models is analysis of scope, an event (INVESTIGATION_START) dated at the entry's first date."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "Chronology uploaded separately.",
+  "reason": "Chronology is only a pointer and the cause names no supply-chain company, so U is NOT_REPORTED."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "A design change was made to this trailer.",
+  "reason": "The field states no cause or mechanism (the design change is the remedy released per chronology); closest status is INSUFFICIENT."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "September 21, 2023 through filtering Work Orders in our ERP system Pelsue determined there were 117 Pelsue Tradesman Fiberlite POD trailers & 47 Pelsue Tradesman Fiberlite XL trailers potentially affected",
+  "reason": "Analysis of work orders to determine the affected population is analysis to find scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "March 21, 2023 the first batch of Corner Caps for the field fix on affected trailers were sent to customer Lumen.",
+  "reason": "Shipping field-fix parts to a customer is remedy logistics, not an event."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+  "reason": "Block is NR but the narrative names Ford, maker of the recalled base vehicle/component; SUPPORTED."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+  "reason": "Ford (base-vehicle maker) is named in the chronology and Valeo in the cause; U is NAMED."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "Chinook reviewed its records to determine which Ford Transit Vans are affected by this recall.",
+  "reason": "Record review to determine affected population is scope analysis: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "Alexis Fire Equipment was notified by Spartan Fire LLC of the possible safety defect along with the list of chassis/vehicles sold to Alexis Fire Equipment",
+  "reason": "Spartan Fire LLC is the chassis maker supplying the filer; a named supply-chain company, so NAMED."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "October 10, 2023: Nova Bus performs and inspection in the field to further understand the fault frequency.",
+  "reason": "Field inspection conducted to understand fault frequency/scope is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "December 5, 2023: Nova Bus corrected errors in the model and production dates in vehicle information.",
+  "reason": "Correcting vehicle information on the filing date is an amendment of the Part 573 report: NHTSA_FILING."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "September 14, 2023: Nova Bus opens a formal potential safety related issue investigation.",
+  "reason": "Near-exact repeat of the September 07 sentence; repeats are not events."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "Warranty experience with one customer shows a failure rate of 9 percent.",
+  "reason": "Status statement, not an action or occurrence; not an event."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "There are three claims associated with this defect.",
+  "reason": "Status statement of claim count; not an event."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "for more information.",
+  "reason": "Chronology is only a truncated pointer to more information; cause names no supply-chain company, so NOT_REPORTED."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "REV Ambulance Gorup Orlando, Inc. (REVO) warranty department received a Technical Service Bulletin (TSB), regarding Equipment recall 23E-084. REVO was notified on December 13th, 2023.",
+  "reason": "The notice concerns the component maker's equipment recall 23E-084 (Weldon's instructions); a supplier recall notice is SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "REVO conducted an inventory inspection on December 14th and determined that 235 units were affected.",
+  "reason": "Inventory inspection to determine affected units is scope analysis: INVESTIGATION_START."
+ }
+]

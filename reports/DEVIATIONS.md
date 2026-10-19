@@ -83,3 +83,12 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: routine quality-control test vs investigation (3M, 23E033; D005) - OTHER.
 - Rule problem: cause "Defective part." - INSUFFICIENT (23V161, D021).
 - Pass C CONTESTED D033 (23V481): pairing artefact (two sentences of one entry).
+
+## Unseen-filer batch 2 (b02)
+- Environment: macOS AppleDouble `._*` files appear next to the texts on the external drive; Pass B hit a non-UTF-8 `._` file in texts/, did not open it, and filtered it out. Pass C was told to ignore `._` files. No label content affected.
+- Rule problem: a Pass A S2/U quote can be empty when the supplier is named in a sentence the splitter cut (24E051, USK Internacional "S.A. de C.V."); manual quote override.
+- Rule problem: date ranges with "through" (24E024, "From February 17, 2023, through February 20, 2024") - one event or two (Pass C: two, D027); "a second date inside a data-supply sentence" (24E067 "data Cruise provided in 2023", D032).
+- Rule problem: sentence after a dated entry line ("On Friday 5/31/2024 ...") is prose, not inherited (24E043, D029 NEITHER).
+- Rule problem: record/inventory reviews to find the affected population - INVESTIGATION_START per Pass C (D008, D011, D015, D017, D024) but OTHER in Pass A in places.
+- Rule problem: typo date "March12, 2024" (24V203) handled by a dates override.
+- Rule problem: block names the filer while the narrative names the real maker (23V530 Chinook / Cummins, D004).

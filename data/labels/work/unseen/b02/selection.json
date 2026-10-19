@@ -1,0 +1,154 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-23V515-4321.PDF",
+   "year": 2023,
+   "filer": "Kawasaki Motors Corp., U.S.A.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V521-1631.PDF",
+   "year": 2023,
+   "filer": "Lucid USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V530-7086.PDF",
+   "year": 2023,
+   "filer": "Chinook Motor Coach, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V564-3664.PDF",
+   "year": 2023,
+   "filer": "Isuzu Motors Limited",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V582-4641.PDF",
+   "year": 2023,
+   "filer": "Indian Motorcycle Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V684-9960.PDF",
+   "year": 2023,
+   "filer": "T.A. Pelsue",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V729-6413.PDF",
+   "year": 2023,
+   "filer": "Chinook Motor Coach, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V748-7343.PDF",
+   "year": 2023,
+   "filer": "Alexis Fire Equipment Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V781-9407.PDF",
+   "year": 2023,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V796-1556.PDF",
+   "year": 2023,
+   "filer": "McLaren Automotive Incorporated",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V859-1885.PDF",
+   "year": 2023,
+   "filer": "Doosan Portable Power",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V873-6101.PDF",
+   "year": 2023,
+   "filer": "REV Ambulance Group Orlando, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E024-4323.PDF",
+   "year": 2024,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E026-6783.PDF",
+   "year": 2024,
+   "filer": "Freedman Seating Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E043-6603.PDF",
+   "year": 2024,
+   "filer": "Firefly Integrations, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E051-6147.PDF",
+   "year": 2024,
+   "filer": "Hendrickson USA. L.L.C.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E067-1013.PDF",
+   "year": 2024,
+   "filer": "Cruise LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E092-3134.PDF",
+   "year": 2024,
+   "filer": "Continental Automotive Systems, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V038-8261.PDF",
+   "year": 2024,
+   "filer": "Suzuki Motor USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V057-9009.PDF",
+   "year": 2024,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V149-8136.PDF",
+   "year": 2024,
+   "filer": "LIVEWIRE EV, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V203-1211.PDF",
+   "year": 2024,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V219-6791.PDF",
+   "year": 2024,
+   "filer": "Lamborghini (Automobili Lamborghini)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V247-4988.PDF",
+   "year": 2024,
+   "filer": "Winnebago Towable",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V285-9407.PDF",
+   "year": 2024,
+   "filer": "Winnebago Towable",
+   "origin": "test"
+  }
+ ]
+}

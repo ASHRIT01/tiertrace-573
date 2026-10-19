@@ -1,0 +1,11 @@
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/LABELING_RULES.md
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/items.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24E024-4323.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24E043-6603.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24E051-6147.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24E067-1013.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24E092-3134.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24V149-8136.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24V203-1211.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24V247-4988.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/unseen/b02/cmp/passC/batch_2/texts/RCLRPT-24V285-9407.txt

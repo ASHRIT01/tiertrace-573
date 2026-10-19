@@ -38,5 +38,82 @@
    "quote": "",
    "section": "any"
   }
+ },
+ "RCLRPT-23V515-4321.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-23V530-7086.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-23V781-9407.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24E067-1013.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24E092-3134.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V149-8136.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V203-1211.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V247-4988.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24E051-6147.PDF": {
+  "S2": {
+   "quote": "05/25/24: Hendrickson received letter from its supplier, USK Internacional S.A."
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "USK Internacional S.A. de C.V."
+   ],
+   "quote": "05/25/24: Hendrickson received letter from its supplier, USK Internacional S.A.",
+   "section": "chronology"
+  }
  }
 }

@@ -1,0 +1,391 @@
+[
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "• From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing that may cause internal corrosion over time and potentially lea",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "SABIC"
+   ],
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 17, 2023",
+   "type": "OTHER",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing that may cause internal corrosion over time",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-17",
+    "end": "2023-02-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 17, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 20, 2024",
+   "type": "OTHER",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-24E043-6603.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "5/31/2024",
+   "type": "FILER_AWARENESS",
+   "quote": "5/31/2024 Firefly Integrations learned that there were 13 affected units that had not been part of the original recall in 2020.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-24E043-6603.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "5/31/2024",
+   "type": "OTHER",
+   "quote": "Firefly Integrations first verified the information with Foretravel Motorcoach and then determined that a recall for the remaining units was needed.",
+   "inherited_date": true,
+   "entry_quote": "5/31/2024 Firefly Integrations learned that there were 13 affected units that had not been part of the original recall in 2020.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-24E051-6147.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "05/25/24",
+   "type": "OTHER",
+   "quote": "USK identified the applicable manufacturing date codes for the suspect tie rod assemblies.",
+   "inherited_date": true,
+   "entry_quote": "05/25/24: Hendrickson received letter from its supplier, USK Internacional S.A.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-25",
+    "end": "2024-05-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-24E067-1013.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 12, 2022",
+   "type": "OTHER",
+   "quote": "On December 12, 2022, NHTSA opened PE22-014 to investigate allegations of hard braking during certain events that Cruise reported to NHTSA under Standing General Order 2021-01.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-12-12",
+    "end": "2022-12-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 12, 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "On December 12, 2022, NHTSA opened PE22-014 to investigate allegations of hard braking during certain events that Cruise reported to NHTSA under Standing General Order 2021-01.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-24E067-1013.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2023",
+   "type": "OTHER",
+   "quote": "On January 29, 2024, Cruise met with NHTSA to discuss the status of PE22-014, including NHTSA’s preliminary review of the materials and data Cruise provided in 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-24E092-3134.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2024",
+   "type": "OTHER",
+   "quote": "Other possible affected customers were informed.",
+   "inherited_date": true,
+   "entry_quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 2024",
+   "type": "DECISION",
+   "quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-01",
+    "end": "2024-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-24V149-8136.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "01/23/2024 - 02/01/2024",
+   "type": "OTHER",
+   "quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-23",
+    "end": "2024-02-01",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "01/23/2024",
+   "type": "INVESTIGATION_START",
+   "quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-24V149-8136.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "01/23/2024 - 02/01/2024",
+   "type": "OTHER",
+   "quote": "(None of the reported incidents involved reports of a crash or injuries.)",
+   "inherited_date": true,
+   "entry_quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-23",
+    "end": "2024-02-01",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-24V203-1211.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 04, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "January 04, 2024: A preliminary inspection of additional buses was performed.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "January 04, 2024",
+   "type": "OTHER",
+   "quote": "January 04, 2024: A preliminary inspection of additional buses was performed.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-04",
+    "end": "2024-01-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-24V247-4988.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "The first submission occurred February 2, 2024.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "February 2, 2024",
+   "type": "OTHER",
+   "quote": "The first submission occurred February 2, 2024.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-02",
+    "end": "2024-02-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "9/8/2022",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "6/15/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "6/23/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "9/7/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "10/6/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "1/9/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

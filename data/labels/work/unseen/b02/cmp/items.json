@@ -1,0 +1,951 @@
+[
+ {
+  "file": "RCLRPT-23V515-4321.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "June 2023",
+   "type": "OTHER",
+   "quote": "・June 2023: KML inspected the vehicle which reported this 2nd incident of starting problems and found that the alternator rotor and the alternator rotor bolt were loose.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-01",
+    "end": "2023-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "June 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "June 2023: KML inspected the vehicle which reported this 2nd incident of starting problems and found that the alternator rotor and the alternator rotor bolt were loose.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D001",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V515-4321.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "April 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "KML Quality Assurance Division started an investigation of the cause.",
+   "inherited_date": true,
+   "entry_quote": "April 2023: Kawasaki Motors, Ltd (KML) received a report from Kawasaki Motors Corp., U.S.A. (KMC) that one of these vehicles had problems starting.",
+   "date_inferred": false
+  },
+  "item_id": "D002",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V521-1631.PDF",
+  "claim": "C",
+  "A": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Loosening of the wiper arm nuts may cause the wiper arm actuator to spin within the wiper arm attachment, preventing proper wiper arm operation.",
+   "section": "cause"
+  },
+  "B": {
+   "status": "INSUFFICIENT",
+   "quote": "Lucid is continuing to investigate the cause of the loosening of wiper arm nuts.",
+   "section": "cause"
+  },
+  "item_id": "D003",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V530-7086.PDF",
+  "claim": "S2",
+  "A": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Chinook Motor Coach",
+   "status": "SUPPORTED",
+   "quote": "04/13/2023 - 04/18/2023 - Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+   "section": "chronology"
+  },
+  "B": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Cummins",
+   "quote": "04/13/2023 - 04/18/2023 - Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+   "section": "chronology"
+  },
+  "item_id": "D004",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V530-7086.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "Cummins"
+   ],
+   "quote": "04/13/2023 - 04/18/2023 - Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+   "section": "chronology"
+  },
+  "item_id": "D005",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V530-7086.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "04/13/2023 - 04/18/2023",
+   "type": "OTHER",
+   "quote": "Then notified by Cummins that they will be performing the recall.",
+   "inherited_date": true,
+   "entry_quote": "04/13/2023 - 04/18/2023 - Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-04-13",
+    "end": "2023-04-18",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "04/13/2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "Then notified by Cummins that they will be performing the recall.",
+   "inherited_date": true,
+   "entry_quote": "04/13/2023 - 04/18/2023 - Chinook received an important safety recall from Cummins about the Onan QG 2800i being recalled.",
+   "date_inferred": false
+  },
+  "item_id": "D006",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V530-7086.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "05/12/2023",
+   "type": "OTHER",
+   "quote": "05/12/2023 - Cummins came to Chinook and checked fuel hose lines and correct any if needed.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-05-12",
+    "end": "2023-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D007",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V530-7086.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "04/18/2023",
+   "type": "INVESTIGATION_START",
+   "quote": "04/18/2023 - 05/22/2023 - Chinook reviewed its records and identified affected Bayside models, then provided the information to Cummins to perform the recall and send out owner notification letters.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D008",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V564-3664.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "Chronology uploaded separately.",
+   "section": "chronology"
+  },
+  "item_id": "D009",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V684-9960.PDF",
+  "claim": "C",
+  "A": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "A design change was made to this trailer.",
+   "section": "cause"
+  },
+  "B": {
+   "status": "INSUFFICIENT",
+   "quote": "A design change was made to this trailer.",
+   "section": "cause"
+  },
+  "item_id": "D010",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V684-9960.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "September 21, 2023",
+   "type": "OTHER",
+   "quote": "September 21, 2023 through filtering Work Orders in our ERP system Pelsue determined there were 117 Pelsue Tradesman Fiberlite POD trailers & 47 Pelsue Tradesman Fiberlite XL trailers potentially affected (total 117 + 47 = 164 trailers).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-21",
+    "end": "2023-09-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 21, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 21, 2023 through filtering Work Orders in our ERP system Pelsue determined there were 117 Pelsue Tradesman Fiberlite POD trailers & 47 Pelsue Tradesman Fiberlite XL trailers potentially affected",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D011",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V684-9960.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "March 21, 2023",
+   "type": "OTHER",
+   "quote": "March 21, 2023 the first batch of Corner Caps for the field fix on affected trailers were sent to customer Lumen.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-03-21",
+    "end": "2023-03-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D012",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V729-6413.PDF",
+  "claim": "S2",
+  "A": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: none named",
+   "status": "NOT_REPORTED",
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Ford Motor Company",
+   "quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+   "section": "chronology"
+  },
+  "item_id": "D013",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-23V729-6413.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "Ford Motor Company",
+    "Valeo"
+   ],
+   "quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+   "section": "chronology"
+  },
+  "item_id": "D014",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V729-6413.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "Chinook reviewed its records to determine which Ford Transit Vans are affected by this recall.",
+   "inherited_date": true,
+   "entry_quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Chinook reviewed its records to determine which Ford Transit Vans are affected by this recall.",
+   "inherited_date": true,
+   "entry_quote": "October 2023 - Chinook Motor Coach received Safety Recall Notice 22S48/NHTSA Recall 23V598 from Ford Motor Company.",
+   "date_inferred": false
+  },
+  "item_id": "D015",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V748-7343.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "Spartan Fire LLC"
+   ],
+   "quote": "Alexis Fire Equipment was notified by Spartan Fire LLC of the possible safety defect along with the list of chassis/vehicles sold to Alexis Fire Equipment that could have the possible safety defect.",
+   "section": "chronology"
+  },
+  "item_id": "D016",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V781-9407.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "October 10, 2023",
+   "type": "OTHER",
+   "quote": "October 10, 2023: Nova Bus performs and inspection in the field to further understand the fault frequency.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-10",
+    "end": "2023-10-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "October 10, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "October 10, 2023: Nova Bus performs and inspection in the field to further understand the fault frequency.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D017",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V781-9407.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 5, 2023",
+   "type": "OTHER",
+   "quote": "December 5, 2023: Nova Bus corrected errors in the model and production dates in vehicle information.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-05",
+    "end": "2023-12-05",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "December 5, 2023",
+   "type": "NHTSA_FILING",
+   "quote": "December 5, 2023: Nova Bus corrected errors in the model and production dates in vehicle information.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D018",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V781-9407.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "September 14, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 14, 2023: Nova Bus opens a formal potential safety related issue investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-14",
+    "end": "2023-09-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D019",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V781-9407.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "December 5, 2023",
+   "type": "OTHER",
+   "quote": "Warranty experience with one customer shows a failure rate of 9 percent.",
+   "inherited_date": true,
+   "entry_quote": "December 5, 2023: Nova Bus corrected errors in the model and production dates in vehicle information.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-05",
+    "end": "2023-12-05",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D020",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V781-9407.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "December 5, 2023",
+   "type": "OTHER",
+   "quote": "There are three claims associated with this defect.",
+   "inherited_date": true,
+   "entry_quote": "December 5, 2023: Nova Bus corrected errors in the model and production dates in vehicle information.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-05",
+    "end": "2023-12-05",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D021",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V796-1556.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "for more information.",
+   "section": "chronology"
+  },
+  "item_id": "D022",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V873-6101.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 13th, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "REVO was notified on December 13th, 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-13",
+    "end": "2023-12-13",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "December 13th, 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "REVO was notified on December 13th, 2023.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D023",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-23V873-6101.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 14th",
+   "type": "OTHER",
+   "quote": "REVO conducted an inventory inspection on December 14th and determined that 235 units were affected.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-14",
+    "end": "2023-12-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "B": {
+   "date_text": "December 14th",
+   "type": "INVESTIGATION_START",
+   "quote": "REVO conducted an inventory inspection on December 14th and determined that 235 units were affected.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D024",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "U",
+  "A": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "• From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing that may cause internal corrosion over time and potentially lea",
+   "section": "chronology"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "SABIC"
+   ],
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "section": "chronology"
+  },
+  "item_id": "D025",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 17, 2023",
+   "type": "OTHER",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing that may cause internal corrosion over time",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-02-17",
+    "end": "2023-02-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "February 17, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D026",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24E024-4323.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "February 20, 2024",
+   "type": "OTHER",
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D027",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24E043-6603.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "5/31/2024",
+   "type": "FILER_AWARENESS",
+   "quote": "5/31/2024 Firefly Integrations learned that there were 13 affected units that had not been part of the original recall in 2020.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D028",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24E043-6603.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "5/31/2024",
+   "type": "OTHER",
+   "quote": "Firefly Integrations first verified the information with Foretravel Motorcoach and then determined that a recall for the remaining units was needed.",
+   "inherited_date": true,
+   "entry_quote": "5/31/2024 Firefly Integrations learned that there were 13 affected units that had not been part of the original recall in 2020.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D029",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24E051-6147.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "05/25/24",
+   "type": "OTHER",
+   "quote": "USK identified the applicable manufacturing date codes for the suspect tie rod assemblies.",
+   "inherited_date": true,
+   "entry_quote": "05/25/24: Hendrickson received letter from its supplier, USK Internacional S.A.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-25",
+    "end": "2024-05-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D030",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24E067-1013.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 12, 2022",
+   "type": "OTHER",
+   "quote": "On December 12, 2022, NHTSA opened PE22-014 to investigate allegations of hard braking during certain events that Cruise reported to NHTSA under Standing General Order 2021-01.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-12-12",
+    "end": "2022-12-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "December 12, 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "On December 12, 2022, NHTSA opened PE22-014 to investigate allegations of hard braking during certain events that Cruise reported to NHTSA under Standing General Order 2021-01.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D031",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24E067-1013.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "2023",
+   "type": "OTHER",
+   "quote": "On January 29, 2024, Cruise met with NHTSA to discuss the status of PE22-014, including NHTSA’s preliminary review of the materials and data Cruise provided in 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D032",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24E092-3134.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "July 2024",
+   "type": "DECISION",
+   "quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-01",
+    "end": "2024-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "July 2024",
+   "type": "OTHER",
+   "quote": "Other possible affected customers were informed.",
+   "inherited_date": true,
+   "entry_quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+   "date_inferred": false
+  },
+  "item_id": "D033",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24V149-8136.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "01/23/2024 - 02/01/2024",
+   "type": "OTHER",
+   "quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-23",
+    "end": "2024-02-01",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "01/23/2024",
+   "type": "INVESTIGATION_START",
+   "quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D034",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24V149-8136.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "01/23/2024 - 02/01/2024",
+   "type": "OTHER",
+   "quote": "(None of the reported incidents involved reports of a crash or injuries.)",
+   "inherited_date": true,
+   "entry_quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review, which identified two additional reports of a loss of propulsion that appeared to be potentially related to the Vehicle Supervisory Controller (VSC).",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-23",
+    "end": "2024-02-01",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D035",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24V203-1211.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "January 04, 2024",
+   "type": "OTHER",
+   "quote": "January 04, 2024: A preliminary inspection of additional buses was performed.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-04",
+    "end": "2024-01-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January 04, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "January 04, 2024: A preliminary inspection of additional buses was performed.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D036",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24V247-4988.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 2, 2024",
+   "type": "OTHER",
+   "quote": "The first submission occurred February 2, 2024.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-02",
+    "end": "2024-02-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "February 2, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "The first submission occurred February 2, 2024.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D037",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "9/8/2022",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D038",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "6/15/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D039",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "6/23/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D040",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "9/7/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D041",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "10/6/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D042",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-24V285-9407.PDF",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "1/9/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D043",
+  "x_is": "A"
+ }
+]

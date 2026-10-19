@@ -95,5 +95,193 @@
   "April 13, 2023 the official recall": {
    "type": "OTHER"
   }
+ },
+ "RCLRPT-23V515-4321.PDF": {
+  "(KMC) that one": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "Kawasaki Motors Corp., U.S.A.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "has not received any warranty": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-23V521-1631.PDF": {
+  "In December 2022, Lucid received": {
+   "type": "FILER_AWARENESS"
+  },
+  "Lucid began investigating": {
+   "ignore_dates": true,
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V530-7086.PDF": {
+  "04/13/2023 - 04/18/2023 - Chinook received": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "There are no records of warranty": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-23V582-4641.PDF": {
+  "In June 2023, Indian Motorcycle identified": {
+   "type": "FILER_AWARENESS"
+  },
+  "Indian motorcycle has not identified": {
+   "include": false,
+   "why": "status/no-incident statement"
+  },
+  "On August 8, 2023, Indian Motorcycle": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V684-9960.PDF": {
+  "January 13, 2023 customer": {
+   "type": "FILER_AWARENESS"
+  },
+  "August 23, 2023 the second incident": {
+   "type": "FILER_AWARENESS"
+  },
+  "October 12, 2023 Pelsue submitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-23V729-6413.PDF": {
+  "October 2023 - Chinook Motor Coach received": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "Chinook then filed": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-23V796-1556.PDF": {
+  "=for more information.": {
+   "include": false,
+   "why": "splitter fragment"
+  }
+ },
+ "RCLRPT-23V859-1885.PDF": {
+  "Based on the field report": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V873-6101.PDF": {
+  "REV Ambulance Gorup": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "All units in-house": {
+   "include": false,
+   "why": "remedy logistics"
+  }
+ },
+ "RCLRPT-24E026-6783.PDF": {
+  "During an FMVSS 207/210 test": {
+   "type": "FILER_AWARENESS"
+  },
+  "Investigation of the production": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24E043-6603.PDF": {
+  "Original Recall (20E058)": {
+   "type": "OTHER"
+  },
+  "On Friday": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "5/31/2024 Firefly Integrations learned": {
+   "dates": [
+    {
+     "date_text": "5/31/2024",
+     "type": "FILER_AWARENESS"
+    }
+   ]
+  }
+ },
+ "RCLRPT-24E051-6147.PDF": {
+  "de C.V.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "015537-2000 and": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "Hendrickson has not received": {
+   "include": false,
+   "why": "status/no-incident statement"
+  },
+  "06/06/24: Hendrickson located": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-24E067-1013.PDF": {
+  "On December 12, 2022, NHTSA opened": {
+   "type": "OTHER"
+  },
+  "[continued on attached": {
+   "include": false,
+   "why": "continuation marker"
+  }
+ },
+ "RCLRPT-24E092-3134.PDF": {
+  "Continental Automotive Systems, Inc. is providing": {
+   "type": "OTHER"
+  },
+  "July 2024 - Continental determined": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V149-8136.PDF": {
+  "02/16/2024 – Based upon": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V203-1211.PDF": {
+  "March12, 2024": {
+   "dates": [
+    {
+     "date_text": "March12, 2024",
+     "type": "DECISION"
+    }
+   ]
+  },
+  "March 17, 2024: Nova Bus files": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-24V219-6791.PDF": {
+  "On February 15, 2024 a report": {
+   "type": "FILER_AWARENESS"
+  },
+  "An investigation was immediately": {
+   "type": "INVESTIGATION_START"
+  },
+  "Lamborghini has not received": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-24V247-4988.PDF": {
+  "In early March 2024, Winnebago Product Safety": {
+   "type": "FILER_AWARENESS"
+  },
+  "On March 28,2024 the Product": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V285-9407.PDF": {
+  "An investigation was opened": {
+   "type": "INVESTIGATION_START"
+  },
+  "On January 26, 2024, the Product Safety": {
+   "type": "DECISION"
+  }
  }
 }

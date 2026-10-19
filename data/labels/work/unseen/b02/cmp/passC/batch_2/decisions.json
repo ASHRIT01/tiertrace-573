@@ -1,0 +1,130 @@
+[
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "conducted an analysis of SABIC inflator ruptures",
+  "reason": "The chronology names SABIC as maker of the suspect inflator (a supply-chain company), so U is NAMED, not UNNAMED."
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures",
+  "reason": "An analysis conducted to find the cause is INVESTIGATION_START, not OTHER."
+ },
+ {
+  "item_id": "D027",
+  "decision": "Y",
+  "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced",
+  "reason": "The sentence has two distinct dates for an action, not a data-window bound. Rules give one event per distinct date, so a February 20, 2024 event exists (the analysis ends with a finding, typed OTHER)."
+ },
+ {
+  "item_id": "D028",
+  "decision": "Y",
+  "quote": "On Friday 5/31/2024 Firefly Integrations learned that there were 13 affected units that had not been part of the original recall in 2020.",
+  "reason": "The filer learning of more affected units is a dated FILER_AWARENESS event. Omitting it (X null) is wrong."
+ },
+ {
+  "item_id": "D029",
+  "decision": "NEITHER",
+  "quote": "Firefly Integrations first verified the information with Foretravel Motorcoach and then determined that a recall for the remaining units was needed.",
+  "reason": "The event exists, but the prior sentence starts with 'On Friday 5/31/2024', so it is prose, not a dated entry; the undated sentence therefore gets date_inferred with an empty date_text, not an inherited date. Deciding a recall is needed is a DECISION.",
+  "corrected": {
+   "date_text": "",
+   "type": "DECISION",
+   "quote": "Firefly Integrations first verified the information with Foretravel Motorcoach and then determined that a recall for the remaining units was needed.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D030",
+  "decision": "Y",
+  "quote": "USK identified the applicable manufacturing date codes for the suspect tie rod assemblies.",
+  "reason": "This is an action sentence inside the entry that starts '05/25/24:', so it is an event with an inherited date (OTHER). Minor note: Y's entry_quote is cut at 'S.A.'; the full dated sentence runs to 'heat treatment process.'"
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "On December 12, 2022, NHTSA opened PE22-014 to investigate allegations of hard braking",
+  "reason": "Opening an investigation is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D032",
+  "decision": "Y",
+  "quote": "NHTSA’s preliminary review of the materials and data Cruise provided in 2023.",
+  "reason": "'Cruise provided in 2023' is a second, distinct date for an action (not a data window), so it gets its own event (OTHER)."
+ },
+ {
+  "item_id": "D033",
+  "decision": "NEITHER",
+  "quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+  "reason": "Y pairs the dated sentence, but finding a production-plant issue is a root-cause finding, not a decision that a defect exists or to recall; the defect determinations were VW's and Volvo's. So it is OTHER. X's sentence ('Other possible affected customers were informed.', inherited July 2024, OTHER) is a separate valid event.",
+  "corrected": {
+   "date_text": "July 2024",
+   "type": "OTHER",
+   "quote": "July 2024 - Continental determined there was an issue in the production plant during the specified dates.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "01/23/2024 - 02/01/2024 - The TSC conducted a warranty/field service review",
+  "reason": "Two distinct dates give one event per date, so the event takes date_text 01/23/2024. A review conducted to find scope is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "(None of the reported incidents involved reports of a crash or injuries.)",
+  "reason": "This is a status statement ('no reports of'), not an event."
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "January 04, 2024: A preliminary inspection of additional buses was performed.",
+  "reason": "Inspecting more buses is checking conducted to find scope, so it is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "The defect was found through dealership warranty submissions.",
+  "reason": "The first dealership warranty submission reaching the filer is a report of the problem, so it is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D038",
+  "decision": "X",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists."
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists."
+ },
+ {
+  "item_id": "D040",
+  "decision": "X",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists."
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists."
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists."
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "Winnebago has received claims/notices regarding these incidents on the following dates: 9/8/2022, 6/15/2023, 6/23/2023, 9/7/2023, 10/6/2023, and 1/9/2023",
+  "reason": "Sentence reports the filer receiving claims/notices on several distinct dates; rules give one event per distinct date, typed FILER_AWARENESS. This date's event exists. Date kept as written (1/9/2023)."
+ }
+]

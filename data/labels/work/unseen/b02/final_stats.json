@@ -1,0 +1,50 @@
+{
+ "decisions": {
+  "A": 4,
+  "B": 37,
+  "NEITHER": 2,
+  "CONTESTED": 0,
+  "missing": 0
+ },
+ "pass_c_agreement": {
+  "items": 43,
+  "decided": 43,
+  "contested_or_missing": 0,
+  "neither": 2,
+  "with_A": {
+   "k": 4,
+   "rate_of_items": 0.09302325581395349,
+   "wilson95_of_items": [
+    0.036771045103346514,
+    0.2160298839853268
+   ],
+   "rate_of_decided": 0.09302325581395349,
+   "wilson95_of_decided": [
+    0.036771045103346514,
+    0.2160298839853268
+   ]
+  },
+  "with_B": {
+   "k": 37,
+   "rate_of_items": 0.8604651162790697,
+   "wilson95_of_items": [
+    0.7273612340557432,
+    0.9344436573228605
+   ],
+   "rate_of_decided": 0.8604651162790697,
+   "wilson95_of_decided": [
+    0.7273612340557432,
+    0.9344436573228605
+   ]
+  },
+  "position": {
+   "chose_X": 12,
+   "chose_Y": 29,
+   "x_is_A": 27
+  }
+ },
+ "check_failures": [],
+ "sha256": "3b599f957e036e878e8f804004de8e45a560c1a8fd37cebc719eb620a703b6f1",
+ "contested": 0,
+ "events": 138
+}
