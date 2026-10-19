@@ -638,5 +638,188 @@
   "On October 17, 2024, a GM engineer": {
    "type": "FILER_AWARENESS"
   }
+ },
+ "RCLRPT-25E013-1210.PDF": {
+  "On February 13, 2025, JSS's Product Safety Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25E064-2115.pdf": {
+  "From May 2025, through June 2025": {
+   "type": "INVESTIGATION_START"
+  },
+  "From June 2025, through July 2025": {
+   "type": "INVESTIGATION_START"
+  },
+  "From July 2025, through September 2025": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25E071-3446.pdf": {
+  "August 7, 2024 Honda conducted": {
+   "type": "INVESTIGATION_START"
+  },
+  "August – October 2024": {
+   "type": "INVESTIGATION_START"
+  },
+  "January – April 2025": {
+   "type": "INVESTIGATION_START"
+  },
+  "June 4, 2025 Honda began to analyze": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V027-7244.PDF": {
+  "On June 17, 2024, Forest River's": {
+   "type": "FILER_AWARENESS"
+  },
+  "On June 20, 2024, OCC opened": {
+   "type": "INVESTIGATION_START"
+  },
+  "On July 2, 2024, during an emergency meeting": {
+   "type": "DECISION"
+  },
+  "On January 21, 2025, Forest River received": {
+   "type": "FILER_AWARENESS"
+  },
+  "On September 11, 2024, Forest River amended": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V032-4431.PDF": {
+  "October 23, 2024 Honda discovered": {
+   "type": "FILER_AWARENESS"
+  },
+  "December 19, 2024 Honda analyzed": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V100-5055.PDF": {
+  "October 3, 2023: First": {
+   "type": "FILER_AWARENESS"
+  },
+  "July – August 2024: Five": {
+   "type": "FILER_AWARENESS"
+  },
+  "October – November 2024:": {
+   "type": "FILER_AWARENESS"
+  },
+  "December 4, 2024 – January 15, 2025": {
+   "type": "INVESTIGATION_START"
+  },
+  "Based on the thermal events in the field": {
+   "type": "DECISION"
+  },
+  "October 2023, June 2024, July 2024": {
+   "include": false,
+   "why": "list of case dates restating earlier events"
+  },
+  "=These occurred": {
+   "include": false,
+   "why": "splitter fragment"
+  }
+ },
+ "RCLRPT-25V102-4724.PDF": {
+  "February 18, 2025 573 filed": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V112-9017.PDF": {
+  "On February 14, 2025, Forest River's Office": {
+   "type": "FILER_AWARENESS"
+  },
+  "On February 21, 2025, Forest River's Corporate": {
+   "type": "DECISION"
+  },
+  "A Stop Sale Notice is being issued": {
+   "include": false,
+   "why": "remedy logistics"
+  }
+ },
+ "RCLRPT-25V118-5335.PDF": {
+  "・March 2024": {
+   "type": "FILER_AWARENESS"
+  },
+  "・April 2024": {
+   "type": "INVESTIGATION_START"
+  },
+  "・May 2024": {
+   "type": "INVESTIGATION_START"
+  },
+  "・August 2024": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V119-7599.PDF": {
+  "January 28, 2025 - Grand Design Dealer": {
+   "type": "FILER_AWARENESS"
+  },
+  "February 20, 2025 - Grand Design Safety Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V132-5563.pdf": {
+  "On December 19, 2024, Ford informed NHTSA": {
+   "type": "NHTSA_FILING"
+  },
+  "On December 11, 2025, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V217-8601.pdf": {
+  "On January 23, 2025, Isuzu received": {
+   "type": "FILER_AWARENESS"
+  },
+  "In February, Isuzu continued": {
+   "type": "INVESTIGATION_START"
+  },
+  "In March, Isuzu focused": {
+   "type": "INVESTIGATION_START"
+  },
+  "On April 1, 2025, Isuzu made a decision": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V222-7359.pdf": {
+  "Even though the source cause": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V295-2205.PDF": {
+  "On June 23, 2025 DTNA amended": {
+   "type": "NHTSA_FILING"
+  },
+  "On July 7, 2025 DTNA resubmitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V297-4164.PDF": {
+  "From March 2025, through April 2025": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V307-4487.PDF": {
+  "On May 9, 2025, Forest River's Corporate": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V377-7112.pdf": {
+  "5/12/2025 A Starcraft RV dealer": {
+   "type": "FILER_AWARENESS"
+  },
+  "5/30/2025 The Safety Steering Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V378-0084.pdf": {
+  "May 5-8, 2025 Honda inspected": {
+   "type": "INVESTIGATION_START"
+  },
+  "May 14, 2025 Honda continued": {
+   "type": "INVESTIGATION_START"
+  },
+  "May 16, 2025 Honda investigated": {
+   "type": "INVESTIGATION_START"
+  }
  }
 }

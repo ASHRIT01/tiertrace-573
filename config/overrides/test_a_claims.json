@@ -272,5 +272,97 @@
    "quote": "",
    "section": "any"
   }
+ },
+ "RCLRPT-25V102-4724.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-25V132-5563.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-25V164-5067.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-25E071-3446.pdf": {
+  "S2": {
+   "status": "INSUFFICIENT",
+   "quote": "At the supplier’s factory in Italy, a separation fence used to separate finished products from unfinished products was removed during the installation of new equipment.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "At the supplier’s factory in Italy, a separation fence used to separate finished products from unfinished products was removed during the installation of new equipment.",
+   "section": "cause"
+  },
+  "S1": {
+   "quote": "Name: Honda Access Europe"
+  }
+ },
+ "RCLRPT-25V217-8601.pdf": {
+  "S2": {
+   "status": "INSUFFICIENT",
+   "quote": "In the Isuzu EVs, the electric drive motor manufacturer prefills the EV drive motor cooling circuit with Valvoline G40 coolant.",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Valvoline"
+   ],
+   "quote": "In the Isuzu EVs, the electric drive motor manufacturer prefills the EV drive motor cooling circuit with Valvoline G40 coolant.",
+   "section": "cause"
+  },
+  "S1": {
+   "quote": "Name: Aisin Corporation"
+  }
+ },
+ "RCLRPT-25E018-7359.pdf": {
+  "S1": {
+   "quote": "Name: BorgWarner"
+  }
+ },
+ "RCLRPT-25E064-2115.pdf": {
+  "S1": {
+   "quote": "Name: Marelli"
+  }
+ },
+ "RCLRPT-25V222-7359.pdf": {
+  "S1": {
+   "quote": "Name: IMT Standens"
+  }
+ },
+ "RCLRPT-25V295-2205.pdf": {
+  "S1": {
+   "quote": "Name: Daimler Truck North America"
+  },
+  "S2": {
+   "quote": "Name: Daimler Truck North America"
+  }
+ },
+ "RCLRPT-25V381-4395.pdf": {
+  "S1": {
+   "quote": "Name: Q'Straint"
+  },
+  "S2": {
+   "quote": "Name: Q'Straint"
+  }
  }
 }

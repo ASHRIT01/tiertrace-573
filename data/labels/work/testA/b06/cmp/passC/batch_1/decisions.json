@@ -1,0 +1,152 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "JSS continued its investigation into the issue and thereafter concluded that parts from the entire inflator production run may be affected.",
+  "reason": "'JSS' is the acronym of the block company Joyson Safety System(s); a short form counts, so the narrative names the supplier (SUPPORTED)."
+ },
+ {
+  "item_id": "D002",
+  "decision": "X",
+  "quote": "JSS continues to investigate root cause but has found elevated moisture in the propellant and reduced propellant densities in parts from the affected production lot.",
+  "reason": "The cause field states a concrete mechanism (elevated moisture, reduced propellant density), not merely that the cause is unknown; SUPPORTED."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "the issue was reviewed by the Cummins Product Safety Defect Board (PSDB) and, based upon information available to date, the PSDB authorized this defect notification",
+  "reason": "The PSDB authorizing the defect notification is the decision that a defect exists / to recall: DECISION."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "The new Number Potentially Involved is 107.",
+  "reason": "Status statement of the population count, no action or occurrence; not an event."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Stellantis Europe CX and Stellantis Europe Supplier Quality conducted tests to reproduce the issue",
+  "reason": "'Stellantis Europe Supplier Quality' is the filer group's internal function, not a generic supplier reference; cause is empty and the chronology mentions no supply-chain party: NONE_MENTIONED."
+ },
+ {
+  "item_id": "D006",
+  "decision": "X",
+  "quote": "From July 2025, through September 2025, Stellantis Europe CX held regular meetings with Stellantis Europe Engineering and Stellantis Europe Supplier Quality to review manufacturing and quality control processes, part design, and production records to understand the scope of the investigation.",
+  "reason": "The meetings are conducted to review records and processes to understand scope, i.e. an analysis conducted to find cause/scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D007",
+  "decision": "X",
+  "quote": "On September 25, 2025, Stellantis Europe CX organization recognized a vehicle build issue existed on certain vehicles",
+  "reason": "The filer's organization recognizing/discovering the issue is filer awareness; the noncompliance decision comes later on September 30."
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "August 7, 2024 Honda conducted a check of units in US inventory and determined all wheels had the lug seat inserts present.",
+  "reason": "The two versions label different sentences (the August 7 inventory check vs the August - October continued investigation); both are valid events in their own right, so the pairing cannot be settled as one being correct."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "The Recall Committee convened on 24th December 2024 and determined that: a. a non-compliance could occur in the relevant vehicle population;",
+  "reason": "date_text must be the date as written ('24th December 2024'), and the committee's determination of non-compliance is a DECISION."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "The software fault was identified as part of software updates adopted in production from March 2024 and as part of a service campaign launched in October 2024.",
+  "reason": "The sentence reports an action (fault identified; update adopted in production) and carries its own dates; the March 2024 production adoption is an event (OTHER)."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "DAG (MBAG) determined that this noncompliance was inconsequential as it relates to motor vehicle safety, and submitted a petition for inconsequential noncompliance on March 27, 2019.",
+  "reason": "An inconsequentiality determination and petition is neither a decision that a noncompliance must be recalled nor a Part 573 filing; OTHER."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "On December 7, 2022, NHTSA notified MBAG that it intended to deny MBAG’s petition for inconsequentiality.",
+  "reason": "A notice from NHTSA about the noncompliance reaching the filer (a later notice) is FILER_AWARENESS per the type list."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "Consequently, MBAG is submitting a new Noncompliance Information Report on January 17, 2025.",
+  "reason": "Submitting a Noncompliance Information Report (Part 573) is NHTSA_FILING."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "On June 24, 2024, through June 28, 2024, the manufacturing plant and OCC continued to research the concern.",
+  "reason": "Research conducted into the concern is an investigation conducted to find cause/scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "On January 14, 2025, Forest River noticed a clerical error in the data.",
+  "reason": "A clerical error in recall scope data is not a report or notice of the safety problem; it is another occurrence (OTHER)."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "On January 22, 2025, Forest River filed a new recall for the amended population.",
+  "reason": "Filing a new recall with NHTSA is NHTSA_FILING; X's quote also wrongly merges a fragment of the previous paragraph."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "On March 19, 2025, Forest River noticed a clerical error in the data.",
+  "reason": "A clerical error in recall scope data is not notice of the safety problem; OTHER."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "The single Dealer will be notified on or before March 21, 2025.",
+  "reason": "Dealer notification is remedy logistics and future tense; not an event."
+ },
+ {
+  "item_id": "D019",
+  "decision": "X",
+  "quote": "Beginning in March 2024, dealers in several countries overseas began to notice some trucks arrive from the manufacturer with condensation on the fuse box cover.",
+  "reason": "Dealers noticing condensation is not yet a report reaching the filer (reports to MFTBC are the next sentence); OTHER occurrence."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "Between March and July, dealers had submitted a total of 15 product quality reports to MFTBC.",
+  "reason": "Dealers submitting product quality reports to the manufacturer is a report reaching the filer side: an occurrence typed FILER_AWARENESS, dated by its own date as written."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "Additional information sought regarding root cause of the thermal cases, the influence of the engine cover, the effects of pre-damage to the engine cover, and the influence of vehicle service.",
+  "reason": "Seeking information on root cause and influences is an investigation/analysis to find the cause: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "The supplier conducted an inspection of battery inventory with manufacturing dates before June 2024 when the assembly inspection process was implemented.",
+  "reason": "'June 2024' bounds the inventory window inspected (manufacturing dates before June 2024); a window-bound date is not an event date."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "The terminal of the drive battery connector was found to be caved in.",
+  "reason": "Undated finding inside the March 2024 bullet: an occurrence (finding) with inherited date March 2024."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "This inspection uncovered one additional battery with a terminal that could cave in due to the lack of an anchor.",
+  "reason": "Undated finding inside the August 2024 bullet: an event (test/inspection result) with inherited date August 2024."
+ },
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "January 30, 2025 - February 5, 2025 – Mor-Ryde inspected Grand Design units online and in dealer storage lot.",
+  "reason": "Inspecting units to find the scope of the issue is an investigation conducted: INVESTIGATION_START; the start date of the range is the event date."
+ }
+]

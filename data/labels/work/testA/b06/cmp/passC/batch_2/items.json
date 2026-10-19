@@ -1,0 +1,528 @@
+[
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-25V132-5563.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 19, 2024",
+   "type": "NHTSA_FILING",
+   "quote": "On December 19, 2024, Ford informed NHTSA of this concern -- the service tool data confirmed that the software state on the service tool at the time of installation matches the FSA software release for most vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-19",
+    "end": "2024-12-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "In December 2024, a cross-functional team was formed to audit all software FSAs that used the FDRS service tool, with its first focus being on safety and compliance FSAs.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-25V132-5563.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 21, 2025",
+   "type": "DECISION",
+   "quote": "On February 21, 2025, Ford’s Field Review Committee reviewed the concern and approved a field action",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-25V164-5067.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 6",
+   "type": "OTHER",
+   "quote": "February 6, February 8, February 10, February 12, and February 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-06",
+    "end": "2025-02-06",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-25V164-5067.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 8",
+   "type": "OTHER",
+   "quote": "February 6, February 8, February 10, February 12, and February 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-08",
+    "end": "2025-02-08",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-25V164-5067.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 10",
+   "type": "OTHER",
+   "quote": "February 6, February 8, February 10, February 12, and February 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-10",
+    "end": "2025-02-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-25V164-5067.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "February 12",
+   "type": "OTHER",
+   "quote": "February 6, February 8, February 10, February 12, and February 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-12",
+    "end": "2025-02-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-25V164-5067.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "February 18, 2025",
+   "type": "OTHER",
+   "quote": "February 6, February 8, February 10, February 12, and February 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-18",
+    "end": "2025-02-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-25V217-8601.pdf",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "status": "INSUFFICIENT",
+   "quote": "Although Isuzu has not definitively identified the root cause, it believes, based on its investigation, that the Valvoline Zerex Dex Cool coolant in these vehicles may react with additives in the Valvoline G40 coolant and components within the EV drive motor cooling system,",
+   "section": "cause"
+  },
+  "version_Y": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "In the Isuzu EVs, the electric drive motor manufacturer prefills the EV drive motor cooling circuit with Valvoline G40 coolant.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-25V222-7359.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 27",
+   "type": "OTHER",
+   "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-01-27",
+    "end": "2025-01-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": {
+   "date_text": "January 27",
+   "type": "FILER_AWARENESS",
+   "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-25V222-7359.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 12, 2025",
+   "type": "OTHER",
+   "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-12",
+    "end": "2025-02-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 12, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "During two separate instances of vehicle preparation before delivery (January 27 and February 12, 2025), GM vehicles that have been equipped with supplemental suspension blades were found in the yard with a broken U-bolt.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-25V295-2205.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "DTNA",
+   "quote": "On April 30, 2025, out of an abundance of caution, DTNA decided to conduct a recall for this issue.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Daimler Truck North America",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Daimler Truck North America",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-25V295-2205.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 23, 2025",
+   "type": "NHTSA_FILING",
+   "quote": "On June 23, 2025 DTNA amended its Part 573 Report to provide a description of the final remedy for this recall.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June 23, 2025",
+   "type": "OTHER",
+   "quote": "On June 23, 2025 DTNA amended its Part 573 Report to provide a description of the final remedy for this recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-23",
+    "end": "2025-06-23",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-25V295-2205.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 7, 2025",
+   "type": "NHTSA_FILING",
+   "quote": "On July 7, 2025 DTNA resubmitted the earlier-submitted dates.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 7, 2025",
+   "type": "OTHER",
+   "quote": "On July 7, 2025 DTNA resubmitted the earlier-submitted dates.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-07",
+    "end": "2025-07-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-25V297-4164.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "From March 2025, through April 2025, FCA US TSRC met with FCA US engineering and supplier quality to review the issue, understand the failure mode, and to determine the suspect population.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-25V297-4164.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2025",
+   "type": "OTHER",
+   "quote": "From March 2025, through April 2025, FCA US TSRC met with FCA US engineering and supplier quality to review the issue, understand the failure mode, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "From March 2025, through April 2025, FCA US TSRC met with FCA US engineering and supplier quality to review the issue, understand the failure mode, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-25V297-4164.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 16, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 16, 2025, the FCA US TSRC organization recognized a vehicle build issue exists on certain vehicles related to a delay in the PRND in the 3.5\" cluster display, potentially resulting in a non-compliance with FMVSS 101.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-16",
+    "end": "2025-04-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 16, 2025",
+   "type": "OTHER",
+   "quote": "On April 16, 2025, the FCA US TSRC organization recognized a vehicle build issue exists on certain vehicles related to a delay in the PRND in the 3.5\" cluster display, potentially resulting in a non-compliance with FMVSS 101.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-25V377-7112.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "5/12/2025",
+   "type": "OTHER",
+   "quote": "safety chains specific to the Starcraft Autumn Ridge 26BHS Travel Trailers.",
+   "inherited_date": true,
+   "entry_quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-25V377-7112.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "5/12/2025",
+   "type": "OTHER",
+   "quote": "Jayco Inc. engineering determined that the 7600 lbs.",
+   "inherited_date": true,
+   "entry_quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D044",
+  "file": "RCLRPT-25V377-7112.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "5/12/2025",
+   "type": "OTHER",
+   "quote": "safety chains are underrated on these specific trailers and need to be replaced with the 11,700 lbs.",
+   "inherited_date": true,
+   "entry_quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D045",
+  "file": "RCLRPT-25V377-7112.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "5/12/2025",
+   "type": "OTHER",
+   "quote": "safety chains.",
+   "inherited_date": true,
+   "entry_quote": "5/12/2025 A Starcraft RV dealer sent an email regarding two lot units that had a GVWR listed at 7995 lbs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-12",
+    "end": "2025-05-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D046",
+  "file": "RCLRPT-25V378-0084.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 4, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "May 4, 2025 Honda found a fuel leak in a CR-V Hybrid during a production quality inspection and began to investigate.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-04",
+    "end": "2025-05-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 4, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "May 4, 2025 Honda found a fuel leak in a CR-V Hybrid during a production quality inspection and began to investigate.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D047",
+  "file": "RCLRPT-25V381-4395.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 30th",
+   "type": "INVESTIGATION_START",
+   "quote": "Starting May 30th, we dispatched representatives from our service and quality teams to dealer network lots to inspect previously built inventory.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "May 30th",
+   "type": "OTHER",
+   "quote": "Starting May 30th, we dispatched representatives from our service and quality teams to dealer network lots to inspect previously built inventory.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-30",
+    "end": "2025-05-30",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D048",
+  "file": "RCLRPT-25V381-4395.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "January 6, 2025 through May 29, 2025",
+   "type": "OTHER",
+   "quote": "Through the inspection of unsold units, it was determined on June 3rd that the window of effect was from January 6, 2025 through May 29, 2025",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-01-06",
+    "end": "2025-05-29",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]
