@@ -41,7 +41,7 @@ B1 provenance: its regexes and keyword lists (`tt/baselines/rules.py`) were writ
 
 ## 3. Verifier audit (v1 outputs, vs silver; `tt/verify/verifier.py` unchanged)
 Claim = company or event. *wrong* = no matching silver content (company: not a silver S1/S2/U name, and is the filer/affiliate or absent from the text; event: no silver event with an overlapping date, or a different type). *right* = matches silver. *unlabelled* = company named in the text that silver has no claim on. Precision = true rejects / (true + false rejects); recall = true rejects / all wrong claims (not caught by type errors, etc.).
-V4 fired 0 times; V5 (path member not among companies) is per path member and has no silver label (4B 34, 2B 13); V6 does not exist in `verifier.py` (V1-V5 only). V7 and the extra verifiers are Phase 4.
+V4 fired 0 times for the 4B; V5 (path member not among companies) is per path member and has no silver label (4B 34, 2B 13); V6 does not exist in `verifier.py` (V1-V5 only). V7 and the extra verifiers are Phase 4.
 
 | verifier | model | failed | true rejects | false rejects | unlabelled | precision | recall |
 |---|---|---|---|---|---|---|---|
