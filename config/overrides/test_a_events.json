@@ -366,5 +366,150 @@
   "4/8/2024 -- Updated recall schedule": {
    "type": "NHTSA_FILING"
   }
+ },
+ "RCLRPT-24V198-2281.PDF": {
+  "From February 17, 2023, through": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24V276-7026.PDF": {
+  "On March 31, 2024, Tesla received": {
+   "type": "FILER_AWARENESS"
+  },
+  "On April 2, 2024, Tesla Engineering reviewed": {
+   "type": "INVESTIGATION_START"
+  },
+  "On April 3, 2024, Tesla received": {
+   "type": "FILER_AWARENESS"
+  },
+  "On April 8, 2024, Tesla Engineering received": {
+   "type": "INVESTIGATION_START"
+  },
+  "On April 12, 2024, having completed": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V294-3024.PDF": {
+  "Chronology is provided as an attachment": {
+   "include": false,
+   "why": "pointer to attachment"
+  }
+ },
+ "RCLRPT-24V352-8650.PDF": {
+  "On May 13th, 2024 we were notified": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-24V369-1153.PDF": {
+  "On May 22, 2024, following": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V438-1492.PDF": {
+  "On 11/3/2023, testing": {
+   "type": "INVESTIGATION_START"
+  },
+  "The affected unit list was finalized": {
+   "dates": [
+    {
+     "date_text": "6/5/2024",
+     "type": "OTHER"
+    },
+    {
+     "date_text": "6/10/2024",
+     "type": "DECISION"
+    }
+   ]
+  }
+ },
+ "RCLRPT-24V448-4950.PDF": {
+  "In the end, it was determined": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V476-9574.PDF": {
+  "On 5/3/24, through standard": {
+   "type": "FILER_AWARENESS"
+  },
+  "A formal recall is being initiated": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V477-8229.PDF": {
+  "On May 14, 2024, Polestar received": {
+   "type": "FILER_AWARENESS"
+  },
+  "On May 15, 2024, Polestar performed": {
+   "type": "INVESTIGATION_START"
+  },
+  "On July 1, 2024, the updated software": {
+   "include": false,
+   "why": "remedy availability (logistics)"
+  }
+ },
+ "RCLRPT-24V480-8563.PDF": {
+  "August 2023: NHTSA inquiry": {
+   "type": "FILER_AWARENESS"
+  },
+  "April 2024: NHTSA inquiry": {
+   "type": "FILER_AWARENESS"
+  },
+  "September 2023: Analysis": {
+   "type": "INVESTIGATION_START"
+  },
+  "Analysis of rearview camera system": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24V486-3579.PDF": {
+  "On May 2, 2024, personnel": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-24V515-2399.PDF": {
+  "March 14, 2024, Autocar personnel": {
+   "type": "FILER_AWARENESS"
+  },
+  "March 21-June 21, 2024": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24V526-6201.PDF": {
+  "On March 19, 2024 there was a report": {
+   "type": "FILER_AWARENESS"
+  },
+  "On July 10, 2024 the decision to recall": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V556-5723.PDF": {
+  "07/08/2024 – Meritor communicates": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "09/03/2024- Revised": {
+   "type": "NHTSA_FILING"
+  },
+  "09/12/2024- Revised": {
+   "type": "NHTSA_FILING"
+  },
+  "8/23/2024 – Axle supplier": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-24V607-1671.PDF": {
+  "08/09 DIR Approval": {
+   "type": "DECISION"
+  },
+  "Investigation began to review field data": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24V631-8870.PDF": {
+  "Reporting took place from NHTSA": {
+   "type": "FILER_AWARENESS"
+  },
+  "Investigation of the reported failure was conducted": {
+   "type": "DECISION"
+  }
  }
 }

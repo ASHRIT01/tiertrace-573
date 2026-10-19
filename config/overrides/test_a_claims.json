@@ -155,5 +155,71 @@
   "S1": {
    "quote": "Name: ICM Controls"
   }
+ },
+ "RCLRPT-24V446-1426.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V486-3579.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V515-2399.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V477-8229.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V198-2281.PDF": {
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "SABIC"
+   ],
+   "quote": "may have been built with a suspect SABIC inflator that may rupture",
+   "section": "chronology"
+  }
+ },
+ "RCLRPT-24V217-5008.PDF": {
+  "S2": {
+   "status": "INSUFFICIENT",
+   "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+   "section": "chronology"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+   "section": "chronology"
+  }
+ },
+ "RCLRPT-24V556-5723.PDF": {
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "Meritor",
+    "USK International"
+   ],
+   "quote": "07/08/2024 – Meritor communicates to Navistar findings that certain Meritor steer axle assemblies built with USK International’s tie rod ball studs were manufactured with less than the required hardness.",
+   "section": "chronology"
+  }
  }
 }

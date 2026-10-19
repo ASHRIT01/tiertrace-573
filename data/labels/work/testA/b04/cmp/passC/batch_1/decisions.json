@@ -1,0 +1,216 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "Y",
+  "quote": "may have been built with a suspect SABIC inflator that may rupture",
+  "reason": "Chronology names SABIC, the inflator maker (a supply-chain company), so U is NAMED."
+ },
+ {
+  "item_id": "D002",
+  "decision": "NEITHER",
+  "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+  "reason": "Chronology is prose; the preceding sentence starts 'Therefore ... on 6 December 2023', not with a date, so no dated entry exists. Undated prose sentence: event with date_inferred true, empty date; investigation conducted.",
+  "corrected": {
+   "date_text": "",
+   "type": "INVESTIGATION_START",
+   "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D003",
+  "decision": "NEITHER",
+  "quote": "With this additional investigation and analyses, on 13 March 2024 Porsche determined that a safety-related defect exists in additional vehicles identified via data analytics and hardware analyses.",
+  "reason": "X's quote is a fragment and its date is inherited from a non-entry; the sentence has its own date 13 March 2024 and reports a defect determination (DECISION).",
+  "corrected": {
+   "date_text": "13 March 2024",
+   "type": "DECISION",
+   "quote": "With this additional investigation and analyses, on 13 March 2024 Porsche determined that a safety-related defect exists in additional vehicles identified via data analytics and hardware analyses.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "decision": "NEITHER",
+  "quote": "As there are different batches of potentially affected Porsche Taycan vehicles which require different remedies, Porsche decided to conduct two different recalls on 13 March 2024",
+  "reason": "X quotes a mid-sentence fragment with a truncated date; the actual sentence is a recall decision dated 13 March 2024.",
+  "corrected": {
+   "date_text": "13 March 2024",
+   "type": "DECISION",
+   "quote": "As there are different batches of potentially affected Porsche Taycan vehicles which require different remedies, Porsche decided to conduct two different recalls on 13 March 2024",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "ARA5 applies to a vehicle population where Porsche does not or not yet have access to sufficient vehicle battery data.",
+  "reason": "Description of a recall population with no action; not an event."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "In parallel, as part of its ongoing assessment of the condition, Tesla Engineering performed tests to characterize and recreate the condition.",
+  "reason": "Testing conducted to characterize the condition is INVESTIGATION_START; date inherited from the April 3 bullet."
+ },
+ {
+  "item_id": "D007",
+  "decision": "X",
+  "quote": "On April 8, 2024, Tesla Engineering received and reviewed images associated with the first customer claim, which confirmed the presence of the condition.",
+  "reason": "Dated sentence reporting an action (review/analysis of images); it is an event, so the null version is wrong."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "Chronology is provided as an attachment.",
+  "reason": "Chronology is only a pointer; the cause refers to the supplier only generically ('roof supplier facility'), and the only exception to NOT_REPORTED is a named company in the cause."
+ },
+ {
+  "item_id": "D009",
+  "decision": "NEITHER",
+  "quote": "During the course of the investigation, Winnebago identified 66 claims from 06/07/2018 – 01/11/2024 related to Supplemental Restraint Systems (SRS) alerts.",
+  "reason": "The date range only bounds a data window, so it is not an event date; the sentence is an undated prose action (claims identified), so it is an event with date_inferred true.",
+  "corrected": {
+   "date_text": "",
+   "type": "FILER_AWARENESS",
+   "quote": "During the course of the investigation, Winnebago identified 66 claims from 06/07/2018 – 01/11/2024 related to Supplemental Restraint Systems (SRS) alerts.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On 11/3/2023, testing of the system shows that if power is disconnected from the leveling controller while squeezing the unit control enable trigger, the platform may dump.",
+  "reason": "Sentence reports a test result, which the rules list under OTHER."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "In February 2024, Mercedes-Benz AG identified an additional case outside the US, which showed similarities with the above-mentioned deviation.",
+  "reason": "A later field case reaching the filer's parent is a report of the problem: FILER_AWARENESS."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "In the course of 2022 MBAG received two individual and presumably unrelated field cases from outside the US.",
+  "reason": "Dated sentence reporting receipt of field cases: FILER_AWARENESS event dated 2022."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+  "reason": "Narrative names HSM, a short form of block company HSM Transportation Solutions: SUPPORTED."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+  "reason": "Narrative names the seat supplier HSM: NAMED."
+ },
+ {
+  "item_id": "D015",
+  "decision": "CONTESTED",
+  "quote": "On June 20,2024, Polestar decided the condition as critical concern.",
+  "reason": "Classifying the condition as a 'critical concern' is neither clearly a defect/noncompliance determination nor a recall decision (that comes on June 25); rules do not settle DECISION vs OTHER."
+ },
+ {
+  "item_id": "D016",
+  "decision": "X",
+  "quote": "On July 1, 2024, the updated software is available in VIDA.",
+  "reason": "Availability of the remedy software in the dealer tool is remedy logistics, which is not an event."
+ },
+ {
+  "item_id": "D017",
+  "decision": "NEITHER",
+  "quote": "August 2023: NHTSA inquiry regarding the rearview camera in 2022 model year Volkswagen Golf vehicles.",
+  "reason": "Event exists, but its own date is August 2023 (2022 is a model year); a notice from NHTSA is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "August 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "August 2023: NHTSA inquiry regarding the rearview camera in 2022 model year Volkswagen Golf vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D018",
+  "decision": "NEITHER",
+  "quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+  "reason": "Event exists with own date October 2023 (2022 is a model year); a meeting presentation is OTHER.",
+  "corrected": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "decision": "NEITHER",
+  "quote": "CW49/2023: Priority Customer Complaint submitted for 2024 model year Volkswagen Atlas regarding various rearview image complaints.",
+  "reason": "Entry begins with its own date (calendar week CW49/2023), so it starts a new dated entry rather than inheriting October 2023; a customer complaint is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "CW49/2023",
+   "type": "FILER_AWARENESS",
+   "quote": "CW49/2023: Priority Customer Complaint submitted for 2024 model year Volkswagen Atlas regarding various rearview image complaints.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "decision": "NEITHER",
+  "quote": "CW50/2023: Software 1969 for MB3 Optional Infotainment (OI) was developed for various robustness improvements to the system generally.",
+  "reason": "Entry has its own date CW50/2023, not inherited October 2023; software development is OTHER.",
+  "corrected": {
+   "date_text": "CW50/2023",
+   "type": "OTHER",
+   "quote": "CW50/2023: Software 1969 for MB3 Optional Infotainment (OI) was developed for various robustness improvements to the system generally.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "decision": "NEITHER",
+  "quote": "CW05/24: Publication of the TPI for SW1969 OI.",
+  "reason": "Entry has its own date CW05/24, not inherited October 2023; publication is OTHER.",
+  "corrected": {
+   "date_text": "CW05/24",
+   "type": "OTHER",
+   "quote": "CW05/24: Publication of the TPI for SW1969 OI.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "decision": "NEITHER",
+  "quote": "April 2024: NHTSA inquiry regarding the rearview camera in 2023 model year Volkswagen Golf 8 vehicles.",
+  "reason": "Event exists with own date April 2024 (2023 is a model year); a notice from NHTSA is FILER_AWARENESS.",
+  "corrected": {
+   "date_text": "April 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "April 2024: NHTSA inquiry regarding the rearview camera in 2023 model year Volkswagen Golf 8 vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "decision": "CONTESTED",
+  "quote": "Ongoing analysis is focused on the infotainment system software.",
+  "reason": "Could be a status statement about the current focus (not an event) or an ongoing analysis (event, likely INVESTIGATION_START rather than OTHER); the rules do not settle it."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "In February 2024, during inspection of the rear emergency door, in three (3) occasions, the handle broke.",
+  "reason": "Breakage found during the filer's own inspection is an internal finding of the problem: FILER_AWARENESS."
+ }
+]

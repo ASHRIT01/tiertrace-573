@@ -1,0 +1,12 @@
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/LABELING_RULES.md
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/items.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V486-3579.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V515-2399.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V556-5723.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V588-9241.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V607-1671.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/texts/RCLRPT-24V631-8870.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/make_decisions.py
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/verify.py
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b04/cmp/passC/batch_2/decisions.json
+/Users/ashritk/.claude/projects/-Volumes-ASHI-P1/fe8e199e-c664-4779-bfaa-a311fbebc40a/tool-results/bs9j1p856.txt (tool output spill of the cat of the files above)

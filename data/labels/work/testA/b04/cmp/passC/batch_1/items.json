@@ -1,0 +1,525 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-24V198-2281.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "From February 17, 2023, through February 20, 2024, FCA US TSRC conducted an analysis of SABIC inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "SABIC"
+   ],
+   "quote": "may have been built with a suspect SABIC inflator that may rupture",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-24V217-5008.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "December 2023",
+   "type": "OTHER",
+   "quote": "Porsche continued investigating this issue together with the battery cell/module manufacturer, using in particular data analytics and hardware analyses.",
+   "inherited_date": true,
+   "entry_quote": "December 2023 Porsche determined that a safety-related defect exists in the identified vehicles (manufacturer recall identification code APB5).",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-01",
+    "end": "2023-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-24V217-5008.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "December 2023",
+   "type": "OTHER",
+   "quote": "With this additional investigation and analyses, on 13",
+   "inherited_date": true,
+   "entry_quote": "December 2023 Porsche determined that a safety-related defect exists in the identified vehicles (manufacturer recall identification code APB5).",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-12-01",
+    "end": "2023-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-24V217-5008.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "March 2024",
+   "type": "OTHER",
+   "quote": "March 2024 (manufacturer recall identification code ARA4 and ARA5): ARA4 applies to a vehicle population where Porsche has sufficient vehicle battery data.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-03-01",
+    "end": "2024-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-24V217-5008.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "March 2024",
+   "type": "OTHER",
+   "quote": "ARA5 applies to a vehicle population where Porsche does not or not yet have access to sufficient vehicle battery data.",
+   "inherited_date": true,
+   "entry_quote": "March 2024 (manufacturer recall identification code ARA4 and ARA5): ARA4 applies to a vehicle population where Porsche has sufficient vehicle battery data.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-03-01",
+    "end": "2024-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-24V276-7026.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 3, 2024",
+   "type": "OTHER",
+   "quote": "In parallel, as part of its ongoing assessment of the condition, Tesla Engineering performed tests to characterize and recreate the condition.",
+   "inherited_date": true,
+   "entry_quote": "On April 3, 2024, Tesla received notice of a second customer claim of the condition present on an affected vehicle.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-04-03",
+    "end": "2024-04-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 3, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "In parallel, as part of its ongoing assessment of the condition, Tesla Engineering performed tests to characterize and recreate the condition.",
+   "inherited_date": true,
+   "entry_quote": "On April 3, 2024, Tesla received notice of a second customer claim of the condition present on an affected vehicle.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-24V276-7026.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 8, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "On April 8, 2024, Tesla Engineering received and reviewed images associated with the first customer claim, which confirmed the presence of the condition.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-04-08",
+    "end": "2024-04-08",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-24V294-3024.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "Chronology is provided as an attachment.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Contamination may have been present on the glass surface during primer application at the roof supplier facility.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-24V318-2050.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "06/07/2018 – 01/11/2024",
+   "type": "OTHER",
+   "quote": "During the course of the investigation, Winnebago identified 66 claims from 06/07/2018 – 01/11/2024 related to Supplemental Restraint Systems (SRS) alerts.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2018-06-07",
+    "end": "2024-01-11",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-24V438-1492.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "11/3/2023",
+   "type": "OTHER",
+   "quote": "On 11/3/2023, testing of the system shows that if power is disconnected from the leveling controller while squeezing the unit control enable trigger, the platform may dump.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "11/3/2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On 11/3/2023, testing of the system shows that if power is disconnected from the leveling controller while squeezing the unit control enable trigger, the platform may dump.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-03",
+    "end": "2023-11-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-24V446-1426.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2024",
+   "type": "OTHER",
+   "quote": "In February 2024, Mercedes-Benz AG identified an additional case outside the US, which showed similarities with the above-mentioned deviation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-01",
+    "end": "2024-02-29",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "In February 2024, Mercedes-Benz AG identified an additional case outside the US, which showed similarities with the above-mentioned deviation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-24V446-1426.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2022",
+   "type": "FILER_AWARENESS",
+   "quote": "In the course of 2022 MBAG received two individual and presumably unrelated field cases from outside the US.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-24V448-4950.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "HSM",
+   "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: HSM Transportation Solutions",
+   "status": "INSUFFICIENT",
+   "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-24V448-4950.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "HSM"
+   ],
+   "quote": "But since HSM, the seats supplier, had conducted the same test with success, further investigation was required.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-24V477-8229.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 20,2024",
+   "type": "OTHER",
+   "quote": "On June 20,2024, Polestar decided the condition as critical concern.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-20",
+    "end": "2024-06-20",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 20,2024",
+   "type": "DECISION",
+   "quote": "On June 20,2024, Polestar decided the condition as critical concern.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-24V477-8229.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "July 1, 2024",
+   "type": "OTHER",
+   "quote": "On July 1, 2024, the updated software is available in VIDA.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2022",
+   "type": "OTHER",
+   "quote": "August 2023: NHTSA inquiry regarding the rearview camera in 2022 model year Volkswagen Golf vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-01-01",
+    "end": "2022-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2022",
+   "type": "OTHER",
+   "quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-01-01",
+    "end": "2022-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "CW49/2023: Priority Customer Complaint submitted for 2024 model year Volkswagen Atlas regarding various rearview image complaints.",
+   "inherited_date": true,
+   "entry_quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "CW50/2023: Software 1969 for MB3 Optional Infotainment (OI) was developed for various robustness improvements to the system generally.",
+   "inherited_date": true,
+   "entry_quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "CW05/24: Publication of the TPI for SW1969 OI.",
+   "inherited_date": true,
+   "entry_quote": "October 2023: Presentation of the analysis results of the rearview camera in 2022 model year Volkswagen Golf vehicles at the NHTSA quarterly meeting.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2023",
+   "type": "OTHER",
+   "quote": "April 2024: NHTSA inquiry regarding the rearview camera in 2023 model year Volkswagen Golf 8 vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-24V480-8563.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "June 2024",
+   "type": "OTHER",
+   "quote": "Ongoing analysis is focused on the infotainment system software.",
+   "inherited_date": true,
+   "entry_quote": "June 2024: Analysis found no systematic issue in the rearview camera components.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-01",
+    "end": "2024-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-24V485-4954.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "In February 2024, during inspection of the rear emergency door, in three (3) occasions, the handle broke.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "February 2024",
+   "type": "OTHER",
+   "quote": "In February 2024, during inspection of the rear emergency door, in three (3) occasions, the handle broke.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-01",
+    "end": "2024-02-29",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

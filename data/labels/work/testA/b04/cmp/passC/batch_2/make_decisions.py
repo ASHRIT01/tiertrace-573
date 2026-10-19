@@ -1,0 +1,26 @@
+import json
+D=[
+("D025","Y","On May 9, 2024, an issue pertaining to windshield adhesion on certain F-150 vehicles was brought to Ford’s Critical Concerns Review Group (CCRG) for review.","Issue brought to the CCRG for review is the opening of a review/analysis (INVESTIGATION_START); X's quote also wrongly glues the separate 'May – June 2024' header line onto the sentence.",None),
+("D026","X","On May 2, 2024, personnel at Ford’s Kansas City Assembly Plant (KCAP) identified visible urethane sealer on the interior passenger side A-pillar that was off location relative to the windshield and flange.","Dated sentence reporting an internal finding of the problem by filer personnel; it is an event of type FILER_AWARENESS.",None),
+("D027","NEITHER","March 19-21, all in-house units were quarantined and inspected, and a clean point established for production.","Containment event (OTHER) exists, but date_text must be the date exactly as written: 'March 19-21', not 'March 19'.",{"date_text":"March 19-21","type":"OTHER","quote":"March 19-21, all in-house units were quarantined and inspected, and a clean point established for production.","inherited_date":False,"date_inferred":False}),
+("D028","X","07/08/2024 – Meritor communicates to Navistar findings that certain Meritor steer axle assemblies built with USK International’s tie rod ball studs were manufactured with less than the required hardness.","Narrative names Meritor, the maker of the defective steer axle assemblies (the block's Cummins Drivetrain and Braking Systems at Meritor's Troy address); the narrative names the supplier, so SUPPORTED, not INSUFFICIENT.",None),
+("D029","CONTESTED","09/03/2024- Revised recall schedule due to holiday.","Unclear whether revising the recall schedule is an amendment of the Part 573 report (NHTSA_FILING) or a remedy-logistics/other change; the text does not say it was submitted to NHTSA.",None),
+("D030","X","Navistar Supplier Quality reviews the records of the 40 units and determines that they were not placed on hold.","Records review conducted to establish scope of affected units is an analysis conducted to find scope (INVESTIGATION_START).",None),
+("D031","Y","9/5/2024 – Navistar approved to extend the population for 24511.","Approval to extend the recall population is a decision to recall additional vehicles (DECISION).",None),
+("D032","X","Relevant chronology dates for this revision are below.","Pointer sentence with no action; pointers are not events.",None),
+("D033","NEITHER","Between November 2023 and June 2024, further reviews were conducted in an attempt to identify potentially affected vehicles with possible suspect replacement parts.","Sentence has two distinct dates, so a June 2024 event exists; reviews conducted to identify affected vehicles are analysis to find scope, so type INVESTIGATION_START rather than OTHER.",{"date_text":"June 2024","type":"INVESTIGATION_START","quote":"Between November 2023 and June 2024, further reviews were conducted in an attempt to identify potentially affected vehicles with possible suspect replacement parts.","inherited_date":False,"date_inferred":False}),
+("D034","Y","6/18/2024 REV RV received information regarding a 2024 Model Year Admiral motor home, serial number 655NR4440572 that the front overhead cabinet under the HappiJac drop down bed started to detach from the mounting surface.","'REV RV' is a short form/brand of the block company REV Recreation Group (RRG), and the rules count short forms/brands as naming it.",None),
+("D035","Y","7/02 Manufacturing leaders inspected the unit and reviewed the prints.","Inspection of the unit and print review is analysis conducted to find the cause (INVESTIGATION_START).",None),
+("D036","X","Claim data analyzed.","Analysis of claim data conducted to find scope/cause is INVESTIGATION_START; inherited 7/08 entry date is correct in both.",None),
+("D037","X","7/11 Stress testing was performed on an overhead cabinet from manufacturing.","Testing conducted to find the cause is INVESTIGATION_START.",None),
+("D038","X","7/25 Safety committee met to discuss engineering investigation results and sent recommendation to declare a voluntary safety recall","Committee meeting forwarding a recommendation to leadership for consideration is not itself the decision to recall; it is a meeting (OTHER).",None),
+("D039","X","6/20 The manufacturing plant was notified of the issue with the front overhead cabinet coming loose.","Dated notice of the problem reaching the filer's plant is an event (FILER_AWARENESS, later notice).",None),
+("D040","X","7/15 Customer unit repaired.","Repair of an affected vehicle is remedy logistics, which the rules exclude from events.",None),
+("D041","Y","S5.5.3(b): Emergency Exit Identification: Concise operating instructions describing the motions necessary to unlatch and open the emergency exit shall be located within 15 centimeters of the release mechanism on the inside surface of the bus.","The cause field only restates the FMVSS requirement and gives no cause or mechanism, so INSUFFICIENT.",None),
+]
+out=[]
+for i,d,q,r,c in D:
+    o={"item_id":i,"decision":d,"quote":q,"reason":r}
+    if c is not None: o["corrected"]=c
+    out.append(o)
+json.dump(out,open("decisions.json","w"),ensure_ascii=False,indent=1)
