@@ -14,7 +14,7 @@ _orig = D.parse_span
 def parse_span(text, years=None, filing=None):
     try:
         return _orig(text, years=years, filing=filing)
-    except AttributeError:
+    except (AttributeError, ValueError):
         return None
 
 

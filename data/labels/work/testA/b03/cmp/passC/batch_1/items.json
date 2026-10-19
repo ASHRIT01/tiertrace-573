@@ -1,0 +1,573 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-23V787-5200.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-23V787-5200.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September 2023",
+   "type": "OTHER",
+   "quote": "From May 2023, to September 2023, FCA US received five additional reports of 2021-2022 MY Jeep Wrangler PHEVs with fires originating from the HV battery and requested buybacks of these vehicles for further analysis.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-23V787-5200.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "The modules and cells are undergoing additional analysis.",
+   "inherited_date": true,
+   "entry_quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-23V801-2565.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 9, 2023",
+   "type": "OTHER",
+   "quote": "October-November 2023 On November 9, 2023, an issue pertaining to the persistence of user-selected drive modes, including ESC status, between ignition cycles on certain 2022 and 2023 model year Ford Lightning vehicles was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-09",
+    "end": "2023-11-09",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "November 9, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On November 9, 2023, an issue pertaining to the persistence of user-selected drive modes, including ESC status, between ignition cycles on certain 2022 and 2023 model year Ford Lightning vehicles was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-23V801-2565.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 27, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "The carry over of drive modes between ignition cycles was first identified during the weekend of October 27, 2023, when Ford personnel noticed that the last selected drive mode began to carry over between ignition cycles after receiving Over-the-Air (OTA) software update 6.3.0 (SYNC version 1.9.4).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-27",
+    "end": "2023-10-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-23V818-7970.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 24, 2023",
+   "type": "DECISION",
+   "quote": "On October 24, 2023, Weldon decided to conduct a safety recall to address the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-24",
+    "end": "2023-10-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 24, 2023",
+   "type": "OTHER",
+   "quote": "On October 24, 2023, Weldon decided to conduct a safety recall to address the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-23V818-7970.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 12, 2024",
+   "type": "OTHER",
+   "quote": "On January 12, 2024 – The KME population of 20 vehicles was removed from recall 23V808 and added to recall 23V818 after completing audit of build location.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-12",
+    "end": "2024-01-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 12, 2024",
+   "type": "NHTSA_FILING",
+   "quote": "On January 12, 2024 – The KME population of 20 vehicles was removed from recall 23V808 and added to recall 23V818 after completing audit of build location.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-23V848-6524.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 21, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On November 21, 2023, Ford’s Critical Concern Review group reviewed an issue pertaining to the rear turn signal outage notification strategy on 2022 – 2024 model year Maverick vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 21, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On November 21, 2023, Ford’s Critical Concern Review group reviewed an issue pertaining to the rear turn signal outage notification strategy on 2022 – 2024 model year Maverick vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-21",
+    "end": "2023-11-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-23V854-1196.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "MBAG",
+   "quote": "In June 2020, MBAG received isolated cases from the field describing instances in which the front roof panel forward of the panoramic sunroof had allegedly detached from the vehicle.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Mercedes-Benz AG",
+   "status": "SUPPORTED",
+   "quote": "Sample roof panels were also returned from the field and analyzed which indicated how the pre-treatment, cleaning and primer application were actually being applied by Mercedes- Benz workshops and any third-party sublets and confirmed that there were deviations from the repair procedures.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-23V855-3267.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August to December 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "The investigation took place from August to December 2023.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August to December 2023",
+   "type": "OTHER",
+   "quote": "The investigation took place from August to December 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-01",
+    "end": "2023-12-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-23V855-3267.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 30, 2023",
+   "type": "OTHER",
+   "quote": "In looking back in its claim data and after reanalysis, BRP evaluates that in the United States, 132 cases could be potentially related to this situation from which 43 occurring while riding with a reported failure date after the cut off date of March, 6, 2021 to October 30, 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-30",
+    "end": "2023-10-30",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-23V877-5210.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Undetermined.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "INSUFFICIENT",
+   "quote": "Undetermined.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-23V882-8764.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2023 through December 2023",
+   "type": "OTHER",
+   "quote": "One (1) vehicle produced for Dubai market was captured with a Nissan port modification activity.",
+   "inherited_date": true,
+   "entry_quote": "November 2023 through December 2023 - Nissan began an internal investigation into the issue together with the supplier.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 2023 through December 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "Based on supplier provided data, a suspect window was identified concerning the tool that produced the potentially affected subject steering gear assemblies.",
+   "inherited_date": true,
+   "entry_quote": "November 2023 through December 2023 - Nissan began an internal investigation into the issue together with the supplier.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-01",
+    "end": "2023-12-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-24E012-8633.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "Carrier is still investigating the root cause of this issue.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "INSUFFICIENT",
+   "quote": "Carrier is still investigating the root cause of this issue.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-24E012-8633.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 4, 2024",
+   "type": "OTHER",
+   "quote": "On February 4, 2024, Carrier was advised of a third report involving a UG genset unit that belonged to a different customer.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-04",
+    "end": "2024-02-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 4, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "On February 4, 2024, Carrier was advised of a third report involving a UG genset unit that belonged to a different customer.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-24E041-7047.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: R.H. Sheppard Co., Inc.",
+   "status": "SUPPORTED",
+   "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies, Oshkosh conducted a recall of vehicles equipped with potentially defective parts (22E-073).",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "RH Sheppard",
+   "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies, Oshkosh conducted a recall of vehicles equipped with potentially defective parts (22E-073).",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-24E068-9308.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause not settled",
+   "status": "INSUFFICIENT",
+   "quote": "Suspect process control faults by vendor within an unknown number of the two 6.35” black zinc coated tapered stud bolts in each kit resulting in suspected inclusions and hydrogen embrittelment.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "SUPPORTED",
+   "quote": "Suspect process control faults by vendor within an unknown number of the two 6.35” black zinc coated tapered stud bolts in each kit resulting in suspected inclusions and hydrogen embrittelment.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-24E068-9308.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "July 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "In the months leading up to July 2024, SPL received field reports of the identified 6.35” black zinc coated cap bolts breaking during initial installation and torquing.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-01",
+    "end": "2024-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-24E068-9308.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "July 2024",
+   "type": "OTHER",
+   "quote": "Investigation and sampling of inventory during June and July 2024 indicated a hydrogen embrittlement failure mode different than the suspected fatigue mode addressed in SPL service bulletin/manufacturer communication SB-23-01 (filed 8.2.23) with the suspect parts coming from a discrete batch of 1,00",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-01",
+    "end": "2024-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-24E071-6470.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 15, 2024",
+   "type": "OTHER",
+   "quote": "GE Appliances incorporated the ICM870-16A-BH5400 soft start into multiple models of its recreational vehicle air conditioning units without a reported thermal incident until May 15, 2024.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-15",
+    "end": "2024-05-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 15, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "GE Appliances incorporated the ICM870-16A-BH5400 soft start into multiple models of its recreational vehicle air conditioning units without a reported thermal incident until May 15, 2024.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-24E071-6470.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 3, 2024",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "GE Appliances first contacted ICM Controls on June 3, 2024 to report the incident and to solicit information from ICM Controls regarding thermal events ICM Controls had previously observed in the ICM870-16A-BH5400 units.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-03",
+    "end": "2024-06-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 3, 2024",
+   "type": "OTHER",
+   "quote": "GE Appliances first contacted ICM Controls on June 3, 2024 to report the incident",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-24E071-6470.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 18, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "On June 18, 2024, ICM Controls responded, indicating that it had not previously received any report of any such thermal event in this type of application.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-18",
+    "end": "2024-06-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 18, 2024",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "On June 18, 2024, ICM Controls responded, indicating that it had not previously received any report of any such thermal event in this type of application.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-24E071-6470.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 23, 2024",
+   "type": "OTHER",
+   "quote": "Additionally, GE Appliances received insurance claims on July 17, 2024 and July 23, 2024 alleging RV property damage from fires originating in an GE Appliances RVAC unit; no further information on these claims is known at this time, including whether they contained a soft start unit.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-23",
+    "end": "2024-07-23",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 23, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "Additionally, GE Appliances received insurance claims on July 17, 2024 and July 23, 2024 alleging RV property damage from fires originating in an GE Appliances RVAC unit",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-24E083-7160.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 18, 2024",
+   "type": "OTHER",
+   "quote": "On September 18, 2024, the FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a condition that can lead to a detached driver side heated trailer tow mirror glass, potentially resulting in a noncompliance with FMVSS No. 111.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "September 18, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "On September 18, 2024, the FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a condition that can lead to a detached driver side heated trailer tow mirror glass, potentially resulting in a noncompliance with FMVSS No. 111.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-18",
+    "end": "2024-09-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

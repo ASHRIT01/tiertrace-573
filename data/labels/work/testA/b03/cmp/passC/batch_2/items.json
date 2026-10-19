@@ -1,0 +1,378 @@
+[
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-24E095-2052.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Manufactured by Stellantis Europe",
+   "status": "INSUFFICIENT",
+   "quote": "A CX organization reviewed supplier data, warranty records, and determined the suspect period on affected vehicles.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Stellantis Europe S.p.A",
+   "quote": "On September 27, 2024, the Stellantis Europe S.p.A Customer Experience (\"CX\") department opened an investigation as a result of warranty cases related to brake pedal assemblies collapsing during normal driving.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-24E095-2052.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 9, 2024",
+   "type": "DECISION",
+   "quote": "On October 9, 2024, Stellantis Europe S.p.A determined, through the Vehicle Regulations Committee, to add additional vehicles to the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-10-09",
+    "end": "2024-10-09",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 9, 2024",
+   "type": "OTHER",
+   "quote": "On October 9, 2024, Stellantis Europe S.p.A determined, through the Vehicle Regulations Committee, to add additional vehicles to the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-24E095-2052.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "From October 2024, through November 2024, Stellantis Europe S.p.A reviewed service part sales records to determine if any suspect parts were sold in the United States market.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-10-01",
+    "end": "2024-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-24E097-7957.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "January 2022",
+   "type": "OTHER",
+   "quote": "However, based on the timeline, it was likely that this mount originated from the same January 2022 batch of three.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-01-01",
+    "end": "2022-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-24E099-7080.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 12 – November 13, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "During this period, three additional valve failures were reported.",
+   "inherited_date": true,
+   "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB-Saleri S.P.A. (“OMB”);",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "September 12 – November 13, 2024",
+   "type": "OTHER",
+   "quote": "During this period, three additional valve failures were reported.",
+   "inherited_date": true,
+   "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB-Saleri S.P.A.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-12",
+    "end": "2024-11-13",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-24E099-7080.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "September 12 – November 13, 2024",
+   "type": "OTHER",
+   "quote": "Based upon the results of the investigation to date, Agility’s engineering team recommended that the matter be escalated to Agility’s Safety Committee for consideration.",
+   "inherited_date": true,
+   "entry_quote": "September 12 – November 13, 2024: Valves were sent to Agility engineering and a root cause investigation was initiated, which included the following activities: review of high magnification photos and analysis from engineering teams; regular meetings with the supplier, OMB-Saleri S.P.A.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-12",
+    "end": "2024-11-13",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-24E099-7080.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 31, 2024",
+   "type": "OTHER",
+   "quote": "Arrangements were made to obtain the valves for analysis.",
+   "inherited_date": true,
+   "entry_quote": "August 31, 2024: Agility’s engineering team was advised of a report from a customer that the manual cylinder valve on a CNG fuel system experienced a leak.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-24V046-1641.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 14, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "The first submission occurred November 14, 2023.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 14, 2023",
+   "type": "OTHER",
+   "quote": "The first submission occurred November 14, 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-14",
+    "end": "2023-11-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-24V047-5176.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 24, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "On January 24, 2024, the manufacturing plant was reviewing the installation of the furnace cold air return and number of heat ducts being used due to an internal Pre-Delivery Inspection (\"PDI\") inspection.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "January 24, 2024",
+   "type": "OTHER",
+   "quote": "On January 24, 2024, the manufacturing plant was reviewing the installation of the furnace cold air return and number of heat ducts being used due to an internal Pre-Delivery Inspection (\"PDI\") inspection.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-24",
+    "end": "2024-01-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-24V047-5176.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 25, 2024",
+   "type": "OTHER",
+   "quote": "On January 25, 2024, the manufacturing plant contacted Forest River's Office of Corporate Compliance (\"OCC\") and a research item was opened.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-25",
+    "end": "2024-01-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 25, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "On January 25, 2024, the manufacturing plant contacted Forest River's Office of Corporate Compliance (\"OCC\") and a research item was opened.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-24V077-1532.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Fatigue cracking due to damage to the valve spring during manufacture by the supplier.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See attached document titled “2024MY Telluride Engine Valve Spring Chronology.”",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-24V143-7520.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "Chronology is provided as an attachment.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Weld locations of mounting brackets and length of parking brake control rods were out of specification during supplier manufacture of floor-mounted mechanical brake assemblies.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-24V164-6230.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "01/18/2024",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "01/18/2024 – R. H. Sheppard communicates to Navistar of finding a steering gear sector shaft with less than the required hardness during shot peen operation.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "01/18/2024",
+   "type": "OTHER",
+   "quote": "01/18/2024 – Navistar initiates ship hold of all loose steering gears and vehicles at the assembly plants, finding 785 suspect gears out of 1,037 suspect gears, and established clean point at the Escobedo and San Antonio assembly plants.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-18",
+    "end": "2024-01-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-24V164-6230.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "01/18/2024 through 02/20/2024",
+   "type": "INVESTIGATION_START",
+   "quote": "01/18/2024 through 02/20/2024 – Navistar conducts a search of manufacturing records to identify vehicles built with a suspect steering gear serial number.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "02/07/2024",
+   "type": "OTHER",
+   "quote": "02/07/2024 – Navistar Product Safety, Engineering, and supplier quality meet with R.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-07",
+    "end": "2024-02-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-24V164-6230.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "02/09/2024",
+   "type": "OTHER",
+   "quote": "Sheppard’s 573 defect report for 24E-010.",
+   "inherited_date": true,
+   "entry_quote": "02/09/2024 – Navistar receives R.H.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-09",
+    "end": "2024-02-09",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "02/09/2024",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "02/09/2024 – Navistar receives R.H. Sheppard’s 573 defect report for 24E-010.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-24V164-6230.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "02/07/2024",
+   "type": "OTHER",
+   "quote": "Sheppard to review and discuss the failure mode, root cause, lot code and steering gear serial number data collected by R.",
+   "inherited_date": true,
+   "entry_quote": "02/07/2024 – Navistar Product Safety, Engineering, and supplier quality meet with R.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-07",
+    "end": "2024-02-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

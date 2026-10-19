@@ -232,5 +232,139 @@
   "Subaru and the supplier initiated a joint study": {
    "type": "INVESTIGATION_START"
   }
+ },
+ "RCLRPT-23V818-7970.PDF": {
+  "In early October 2023, Weldon was notified": {
+   "type": "OTHER"
+  },
+  "November 29, 2023 – REV": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V854-1196.PDF": {
+  "In June 2020, MBAG received": {
+   "type": "FILER_AWARENESS"
+  },
+  "MBAG’s technical analysis was carried out": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24E012-8633.PDF": {
+  "After internal meetings of all safety": {
+   "type": "DECISION"
+  },
+  "Carrier now files this 573": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-24E030-1138.PDF": {
+  "=A.": {
+   "include": false,
+   "why": "list label fragment"
+  },
+  "=Starting": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "=Beginning": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "On January 30, 2024, a potential": {
+   "type": "FILER_AWARENESS"
+  },
+  "Eberspaecher Climate Control Systems International GmbH (Eberspaecher) conducted": {
+   "type": "INVESTIGATION_START"
+  },
+  "Subsequently, Eberspaecher submitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-24E041-7047.PDF": {
+  "In October 2022, following": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-24E068-9308.PDF": {
+  "Investigation and sampling of inventory": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24E071-6470.PDF": {
+  "GE Appliances incorporated": {
+   "include": false,
+   "why": "description of past use, no action event"
+  },
+  "On June 18, 2024, ICM Controls responded": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-24E083-7160.PDF": {
+  "From July 2023, through September 2024": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24E095-2052.PDF": {
+  "From September 27, 2024, through October 1": {
+   "type": "INVESTIGATION_START"
+  },
+  "On October 9, 2024": {
+   "type": "DECISION"
+  },
+  "From October 2024, through November 2024": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-24E097-7957.PDF": {
+  "On August 31, 2023, we received notice": {
+   "type": "FILER_AWARENESS"
+  },
+  "On October 30, 2024, we received notice": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-24V046-1641.PDF": {
+  "In January 2024, Winnebago Product Safety found": {
+   "type": "FILER_AWARENESS"
+  },
+  "On January 26, 2024 the Product Safety Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-24V047-5176.PDF": {
+  "On January 26, 2024, Forest River's Corporate": {
+   "type": "DECISION"
+  },
+  "A Stop Sale Notice will be issued": {
+   "include": false,
+   "why": "planned remedy logistics"
+  }
+ },
+ "RCLRPT-24V143-7520.PDF": {
+  "Chronology is provided as an attachment": {
+   "include": false,
+   "why": "pointer to attachment"
+  }
+ },
+ "RCLRPT-24V164-6230.PDF": {
+  "=01/18/2024 – R.": {
+   "include": false,
+   "why": "splitter fragment of 'R. H. Sheppard'"
+  },
+  "=H.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "=Sheppard.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "02/09/2024 – Navistar receives R.H.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "4/8/2024 -- Updated recall schedule": {
+   "type": "NHTSA_FILING"
+  }
  }
 }

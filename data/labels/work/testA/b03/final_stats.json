@@ -1,0 +1,56 @@
+{
+ "decisions": {
+  "A": 4,
+  "B": 30,
+  "NEITHER": 4,
+  "CONTESTED": 2,
+  "missing": 0
+ },
+ "pass_c_agreement": {
+  "items": 40,
+  "decided": 38,
+  "contested_or_missing": 2,
+  "neither": 4,
+  "with_A": {
+   "k": 4,
+   "rate_of_items": 0.1,
+   "wilson95_of_items": [
+    0.03957888759557486,
+    0.23052074380473897
+   ],
+   "rate_of_decided": 0.10526315789473684,
+   "wilson95_of_decided": [
+    0.041701897932665793,
+    0.24130831200194466
+   ]
+  },
+  "with_B": {
+   "k": 30,
+   "rate_of_items": 0.75,
+   "wilson95_of_items": [
+    0.598057409330299,
+    0.8581303210445048
+   ],
+   "rate_of_decided": 0.7894736842105263,
+   "wilson95_of_decided": [
+    0.6365391162355784,
+    0.8892533964790407
+   ]
+  },
+  "position": {
+   "chose_X": 12,
+   "chose_Y": 22,
+   "x_is_A": 24
+  }
+ },
+ "check_failures": [
+  [
+   "RCLRPT-24E071-6470.pdf",
+   "Q1",
+   "S1 quote not in block: 'Name : ICM Controls'"
+  ]
+ ],
+ "sha256": "59b2ca3d602c0dd2dca040a4ea6f1cd3e257d49b5a7b0ce5d82c32e599e5e2d9",
+ "contested": 2,
+ "events": 158
+}

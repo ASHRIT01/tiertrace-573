@@ -1,0 +1,175 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+  "reason": "Disassembling the HV battery packs is analysis conducted to find the cause: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D002",
+  "decision": "NEITHER",
+  "quote": "From May 2023, to September 2023, FCA US received five additional reports of 2021-2022 MY Jeep Wrangler PHEVs with fires originating from the HV battery and requested buybacks of these vehicles for further analysis.",
+  "reason": "Dated bullet reporting receipt of field reports is an event; receipt of reports is FILER_AWARENESS, and the date as written is the May-September 2023 range, not just September.",
+  "corrected": {
+   "date_text": "May 2023, to September 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "From May 2023, to September 2023, FCA US received five additional reports of 2021-2022 MY Jeep Wrangler PHEVs with fires originating from the HV battery and requested buybacks of these vehicles for further analysis.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D003",
+  "decision": "NEITHER",
+  "quote": "The modules and cells are undergoing additional analysis.",
+  "reason": "Undated sentence inside the October 2023 bullet entry, so it inherits the date; it reports analysis being conducted to find the cause, which is INVESTIGATION_START rather than OTHER.",
+  "corrected": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "The modules and cells are undergoing additional analysis.",
+   "inherited_date": true,
+   "entry_quote": "In October 2023, FCA US received two vehicle buybacks and have disassembled the HV battery packs.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "On November 9, 2023, an issue pertaining to the persistence of user-selected drive modes, including ESC status, between ignition cycles on certain 2022 and 2023 model year Ford Lightning vehicles was brought to Ford’s Critical Concern Review Group (CCRG) for review.",
+  "reason": "Bringing the issue to the CCRG for review opens the review/investigation (later called 'The CCRG investigation'): INVESTIGATION_START. X's quote also includes the heading text."
+ },
+ {
+  "item_id": "D005",
+  "decision": "Y",
+  "quote": "The carry over of drive modes between ignition cycles was first identified during the weekend of October 27, 2023, when Ford personnel noticed that the last selected drive mode began to carry over",
+  "reason": "The sentence has its own date and reports Ford first identifying the problem: a FILER_AWARENESS event exists."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "On October 24, 2023, Weldon decided to conduct a safety recall to address the issue.",
+  "reason": "Weldon is the supplier (block Name); its own recall decision is not the filer's DECISION (KME/REV approved its recall on Nov 29). A supplier's own recall action is OTHER."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "On January 12, 2024 – The KME population of 20 vehicles was removed from recall 23V808 and added to recall 23V818 after completing audit of build location.",
+  "reason": "Moving the population between recall reports amends the Part 573 filings: NHTSA_FILING."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "On November 21, 2023, Ford’s Critical Concern Review group reviewed an issue pertaining to the rear turn signal outage notification strategy on 2022 – 2024 model year Maverick vehicles.",
+  "reason": "The CCRG review is a review/investigation of the issue (the discovery is reported separately by the Systems Engineering team): INVESTIGATION_START."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "In June 2020, MBAG received isolated cases from the field describing instances in which the front roof panel forward of the panoramic sunroof had allegedly detached from the vehicle.",
+  "reason": "MBAG is the acronym of the block company Mercedes-Benz AG and names it. Y's quote names only 'Mercedes-Benz workshops' (repair shops), which is not the supplier."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "The investigation took place from August to December 2023.",
+  "reason": "The sentence reports an investigation conducted to find the cause: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "In looking back in its claim data and after reanalysis, BRP evaluates that in the United States, 132 cases could be potentially related to this situation",
+  "reason": "This is a status count of cases, and October 30, 2023 only bounds a data window, so it is not an event date. No event."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "Undetermined.",
+  "reason": "The cause field says the cause is not known: INSUFFICIENT."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "One (1) vehicle produced for Dubai market was captured with a Nissan port modification activity.",
+  "reason": "The two versions quote different sentences. X's sentence is a containment action, correctly OTHER. Y's sentence is an investigation result from supplier data, not a supplier notifying Nissan of the problem, so SUPPLIER_NOTICE does not fit."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "Carrier is still investigating the root cause of this issue.",
+  "reason": "The cause is still being investigated: INSUFFICIENT."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "On February 4, 2024, Carrier was advised of a third report involving a UG genset unit that belonged to a different customer.",
+  "reason": "A further report of the problem reaching the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies",
+  "reason": "Both are SUPPORTED with the same quote. Y gives the 'name' field as the narrative writes it ('RH Sheppard'), as the output format requires. X has no name field."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "Suspect process control faults by vendor within an unknown number of the two 6.35” black zinc coated tapered stud bolts in each kit resulting in suspected inclusions and hydrogen embrittelment.",
+  "reason": "The field states a mechanism (vendor process faults leading to inclusions and hydrogen embrittlement). It does not say the cause is unknown: SUPPORTED."
+ },
+ {
+  "item_id": "D018",
+  "decision": "NEITHER",
+  "quote": "In the months leading up to July 2024, SPL received field reports of the identified 6.35” black zinc coated cap bolts breaking during initial installation and torquing.",
+  "reason": "Receiving field reports is a FILER_AWARENESS event. Its date as written (minus the leading 'In') is 'the months leading up to July 2024', not 'July 2024'.",
+  "corrected": {
+   "date_text": "the months leading up to July 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "In the months leading up to July 2024, SPL received field reports of the identified 6.35” black zinc coated cap bolts breaking during initial installation and torquing.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "decision": "NEITHER",
+  "quote": "Investigation and sampling of inventory during June and July 2024 indicated a hydrogen embrittlement failure mode different than the suspected fatigue mode addressed in SPL service bulletin/manufacturer communication SB-23-01 (filed 8.2.23)",
+  "reason": "An investigation result (OTHER) dated as written 'June and July 2024'. X's quote is also cut mid-word ('1,00'), not at a clause boundary.",
+  "corrected": {
+   "date_text": "June and July 2024",
+   "type": "OTHER",
+   "quote": "Investigation and sampling of inventory during June and July 2024 indicated a hydrogen embrittlement failure mode different than the suspected fatigue mode addressed in SPL service bulletin/manufacturer communication SB-23-01 (filed 8.2.23)",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "GE Appliances incorporated the ICM870-16A-BH5400 soft start into multiple models of its recreational vehicle air conditioning units without a reported thermal incident until May 15, 2024.",
+  "reason": "The dated occurrence is the first reported thermal incident reaching GE Appliances on May 15, 2024: FILER_AWARENESS."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "GE Appliances first contacted ICM Controls on June 3, 2024 to report the incident",
+  "reason": "Here the filer contacts the supplier; the supplier is not notifying the filer, so this is not SUPPLIER_NOTICE. It is OTHER."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "On June 18, 2024, ICM Controls responded, indicating that it had not previously received any report of any such thermal event in this type of application.",
+  "reason": "The component maker tells the filer a finding: SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "Additionally, GE Appliances received insurance claims on July 17, 2024 and July 23, 2024 alleging RV property damage from fires originating in an GE Appliances RVAC unit",
+  "reason": "Receiving insurance claims (reports of the problem) is FILER_AWARENESS. Y's quote is cut at the semicolon."
+ },
+ {
+  "item_id": "D024",
+  "decision": "Y",
+  "quote": "On September 18, 2024, the FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to a condition that can lead to a detached driver side heated trailer tow mirror glass",
+  "reason": "TSRC 'recognized' (discovered) a build issue; the noncompliance is only 'potential' and the recall decision comes on Oct 3. This fits FILER_AWARENESS better than OTHER."
+ }
+]

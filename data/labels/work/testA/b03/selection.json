@@ -1,0 +1,154 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-23V787-5200.PDF",
+   "year": 2023,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V798-4906.PDF",
+   "year": 2023,
+   "filer": "Kovatch Mobile Equipment Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V801-2565.PDF",
+   "year": 2023,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V818-7970.PDF",
+   "year": 2023,
+   "filer": "Kovatch Mobile Equipment Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V848-6524.PDF",
+   "year": 2023,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V854-1196.PDF",
+   "year": 2023,
+   "filer": "Mercedes-Benz USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V855-3267.PDF",
+   "year": 2023,
+   "filer": "Bombardier Recreational Products, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V877-5210.PDF",
+   "year": 2023,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V882-8764.PDF",
+   "year": 2023,
+   "filer": "Nissan North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E012-8633.PDF",
+   "year": 2024,
+   "filer": "Carrier Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E029-4277.PDF",
+   "year": 2024,
+   "filer": "BMW of North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E030-1138.PDF",
+   "year": 2024,
+   "filer": "Eberspaecher Climate Cntrl Syst Intl",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E041-7047.PDF",
+   "year": 2024,
+   "filer": "Oshkosh Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E068-9308.PDF",
+   "year": 2024,
+   "filer": "SPL Parts Inc",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E071-6470.pdf",
+   "year": 2024,
+   "filer": "GE Appliances, a Haier Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E083-7160.PDF",
+   "year": 2024,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E095-2052.PDF",
+   "year": 2024,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E097-7957.PDF",
+   "year": 2024,
+   "filer": "Limitless Van",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E099-7080.PDF",
+   "year": 2024,
+   "filer": "Agility Fuel Solutions",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V039-2530.PDF",
+   "year": 2024,
+   "filer": "BMW of North America, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V046-1641.PDF",
+   "year": 2024,
+   "filer": "Winnebago Towable",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V047-5176.PDF",
+   "year": 2024,
+   "filer": "Forest River, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V077-1532.PDF",
+   "year": 2024,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V143-7520.PDF",
+   "year": 2024,
+   "filer": "Ford Motor Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V164-6230.PDF",
+   "year": 2024,
+   "filer": "Navistar, Inc.",
+   "origin": "test"
+  }
+ ]
+}

@@ -83,5 +83,72 @@
    "quote": "",
    "section": "any"
   }
+ },
+ "RCLRPT-23V848-6524.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-23V854-1196.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24V046-1641.PDF": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ "RCLRPT-24E041-7047.PDF": {
+  "S2": {
+   "status": "SUPPORTED",
+   "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies, Oshkosh conducted a recall of vehicles equipped with potentially defective parts (22E-073).",
+   "section": "chronology"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "R.H. Sheppard Co., Inc."
+   ],
+   "quote": "In October 2022, following a notification by RH Sheppard that it had determined a defect existed in certain steering gear assemblies, Oshkosh conducted a recall of vehicles equipped with potentially defective parts (22E-073).",
+   "section": "chronology"
+  }
+ },
+ "RCLRPT-24E097-7957.PDF": {
+  "S2": {
+   "status": "INSUFFICIENT",
+   "quote": "Based on photos of the failed tire mount, our manufacturing partner concluded that the interim weld technician had likely used tubing that did not meet our specifications.",
+   "section": "chronology"
+  },
+  "upstream": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Based on photos of the failed tire mount, our manufacturing partner concluded that the interim weld technician had likely used tubing that did not meet our specifications.",
+   "section": "chronology"
+  }
+ },
+ "RCLRPT-24V164-6230.PDF": {
+  "S2": {
+   "status": "SUPPORTED",
+   "quote": "As reported by R. H. Sheppard in recall 24E-010",
+   "section": "cause"
+  },
+  "upstream": {
+   "kind": "NAMED",
+   "names": [
+    "R. H. Sheppard"
+   ],
+   "quote": "As reported by R. H. Sheppard in recall 24E-010",
+   "section": "cause"
+  }
  }
 }

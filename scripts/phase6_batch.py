@@ -84,7 +84,7 @@ def sheet(split, k, files, P):
     A = json.load(open(P["work"] / "passA_auto.json")) if (P["work"] / "passA_auto.json").exists() else None
     if A is None:
         rel = str(P["work"].relative_to(ROOT))
-        subprocess.run([sys.executable, "-m", "tt.cli", "pass-a", "--selection", f"{rel}/selection.json", "--drafts", "", "--pdf-dir", P["raw"], "--out", f"{rel}/passA_auto.json",
+        subprocess.run([sys.executable, "scripts/phase6_runner.py", "pass-a", "--selection", f"{rel}/selection.json", "--drafts", "", "--pdf-dir", P["raw"], "--out", f"{rel}/passA_auto.json",
                         "--event-overrides", P["ov_ev"], "--claim-overrides", P["ov_cl"]], cwd=ROOT, check=True, capture_output=True)
         A = json.load(open(P["work"] / "passA_auto.json"))
     for r in A:
