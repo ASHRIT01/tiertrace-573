@@ -1,0 +1,174 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "now that production is no longer using BMPro.",
+  "reason": "BMPro is a component maker/supplier company named in the chronology; U is NAMED."
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "Production found out on June 15, 2026, that they need to wire the auto level controller differently now that production is no longer using BMPro.",
+  "reason": "The filer's own production discovered the wiring problem on June 15; a discovery reaching the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D003",
+  "decision": "CONTESTED",
+  "quote": "Engineering informed the committee that root cause analysis would begin.",
+  "reason": "Meeting announcement that analysis 'would begin': it could be the investigation start or just a meeting (OTHER). The text does not settle when the analysis actually started."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "In the event of a short, all sparks would be contained.",
+  "reason": "A description or assessment with no action is not an event."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "Root cause is being researched.",
+  "reason": "The cause field says the root cause is still being researched and gives only preliminary indications, so it is INSUFFICIENT. Y's SUPPORTED label also quotes the not-yet-known sentence."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "May 8, 2026 Hale Products Inc tested to determine that the same screen issues apply to Hale products",
+  "reason": "Testing was conducted to determine the scope of the issue, so the type is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "May 10, 2026 Based on test results and Weldon recall Hale started a draft part 573 notice NHTSA portal.",
+  "reason": "Hale is the supplier, not the filer (Marion), and this is only a draft. A supplier's own filing is OTHER."
+ },
+ {
+  "item_id": "D008",
+  "decision": "Y",
+  "quote": "We identified which units those were and began the process of submitting the recall",
+  "reason": "The filer only began the process. NHTSA_FILING requires that a Part 573 report is submitted or amended, so the type is OTHER."
+ },
+ {
+  "item_id": "D009",
+  "decision": "NEITHER",
+  "quote": "April 26, 2026 Weldon, an Akron Brass Company brand filed a part 573 recall resulting in NHTSA 26E020",
+  "reason": "A dated action (an upstream company's own Part 573 filing) is an event, so it should exist. The rules type a supplier's own filing as OTHER, and nothing says it reached the filer on that date.",
+  "corrected": {
+   "date_text": "April 26, 2026",
+   "type": "OTHER",
+   "quote": "April 26, 2026 Weldon, an Akron Brass Company brand filed a part 573 recall resulting in NHTSA 26E020 regarding the same Enovation Controls touch screen user interface as noticed here.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On October 28, 2021, FCA US LLC (\"FCA US\") filed NHTSA Recall ID 21V842",
+  "reason": "The filer submitted a Part 573 recall, so the type is NHTSA_FILING."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "On February 23, 2023, FCA US filed NHTSA Recall ID 23V115",
+  "reason": "The filer submitted a Part 573 recall, so the type is NHTSA_FILING."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "From March 19, 2026, through June 02, 2026, FCA US TSRC reviewed field data and met with Engineering to understand the part design and change history.",
+  "reason": "Analysis was conducted to understand the cause, so the type is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "From June 2026 through July 2026, FCA US TSRC met with FCA US engineering and manufacturing to review the issue, understand the failure mode, and to determine the suspect population.",
+  "reason": "Analysis was conducted to find the failure mode and the scope, so the type is INVESTIGATION_START. Distinct dates are split, so date_text is June 2026."
+ },
+ {
+  "item_id": "D014",
+  "decision": "NEITHER",
+  "quote": "During May and June 2026, FCA US TSRC and FCA US Engineering reviewed warranty data, field records, vehicle production records and customer assistance records",
+  "reason": "A review of data to understand the consequence and scope is INVESTIGATION_START. 'May' and 'June 2026' are distinct dates and give one event each, so this event's date_text is 'May'.",
+  "corrected": {
+   "date_text": "May",
+   "type": "INVESTIGATION_START",
+   "quote": "During May and June 2026, FCA US TSRC and FCA US Engineering reviewed warranty data, field records, vehicle production records and customer assistance records to understand potential customer consequence.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D015",
+  "decision": "X",
+  "quote": "On July 15, 2026, FCA US TSRC organization recognized an issue existed on certain vehicles",
+  "reason": "The filer recognized or became aware that the issue existed, so the type is FILER_AWARENESS. The formal decision came later, on Aug 6."
+ },
+ {
+  "item_id": "D016",
+  "decision": "NEITHER",
+  "quote": "During May and June 2026, FCA US TSRC and FCA US Engineering reviewed warranty data",
+  "reason": "Distinct dates give one event per date, so a June 2026 event exists. Its type is INVESTIGATION_START (a review conducted to understand the scope), not OTHER.",
+  "corrected": {
+   "date_text": "June 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "During May and June 2026, FCA US TSRC and FCA US Engineering reviewed warranty data, field records, vehicle production records and customer assistance records to understand potential customer consequence.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "evaluated against the cylinder manufacturer's damage assessment criteria",
+  "reason": "The narrative refers to the component (cylinder) maker only generically, so U is UNNAMED."
+ },
+ {
+  "item_id": "D018",
+  "decision": "NEITHER",
+  "quote": "Between February and March 2026, The Heil Co. removed and inspected CNG cylinders from fourteen (14) customer vehicles",
+  "reason": "An inspection conducted to assess the scope or cause is INVESTIGATION_START. February and March 2026 are distinct dates, so this (March) event keeps date_text 'March 2026'.",
+  "corrected": {
+   "date_text": "March 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Between February and March 2026, The Heil Co. removed and inspected CNG cylinders from fourteen (14) customer vehicles equipped with the same ladder configuration.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "Altec identified completed vehicles that had not received the required Bendix programming following installation.",
+  "reason": "Bendix, a component (brake system) maker, is named in the chronology, so U is NAMED."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "On July 16, 2026, further investigation identified two additional warranty claims",
+  "reason": "Warranty claims reaching the filer count as FILER_AWARENESS, including a later report."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "The additional claims were reported on June 23, 2026, and July 16, 2026.",
+  "reason": "A warranty claim reported to the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "The additional claims were reported on June 23, 2026, and July 16, 2026.",
+  "reason": "A warranty claim reported to the filer is FILER_AWARENESS."
+ },
+ {
+  "item_id": "D023",
+  "decision": "Y",
+  "quote": "certain aluminum PWC trailers manufactured between January 1, 2025, and December 31, 2025.",
+  "reason": "December 31, 2025 only bounds a production window, so it is not an event date and no event with this date exists."
+ },
+ {
+  "item_id": "D024",
+  "decision": "X",
+  "quote": "Compliance reached out to the Jayco chassis group to determine scope.",
+  "reason": "An inquiry opened to determine the scope is INVESTIGATION_START. The chassis group is internal."
+ }
+]

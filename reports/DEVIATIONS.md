@@ -61,3 +61,14 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: cause stating a mechanism plus "still under investigation" (26V415): SUPPORTED vs INSUFFICIENT; Pass C CONTESTED.
 - Pass C CONTESTED D002/D008/D014 (Ford/IMC, 26V369-26V374 + 26V397) and D042 (26V419) are event pairing artefacts (different sentences paired).
 - Multi-supplier block 26V416: joined names; manual S1/S2 quote override (D-T3).
+
+## Test-B batch 4 (b04)
+- Pass B (opus) and Pass C batch_2 isolation: first `cat` of all texts overflowed and the tool saved the output outside the batch directory; neither agent opened that file and both re-read inside the directory.
+- Rule problem: day-prefixed month-year dates ("16-Sep-2026 ...", "5-May-2026", "28-APR-2026 through 5-May-2026" in 26V644, 26V568) lose the day in Pass A code (date_text "Sep-2026"); Pass C corrected D032 to "5-May-2026". Same family as the KTM 25V598 format. Not fixed.
+- Rule problem: "Late Aug-2026" - leading modifier dropped from date_text (D047, 26V644).
+- Rule problem: "May and June 2026" - two dates or one range (D014/D016, 26V531); Pass C: two events. Contradicts the batch-3 reading of "March and April 2026" as one period in places; rules silent.
+- Rule problem: meetings held to find root cause/scope (OTHER per rules vs INVESTIGATION_START) - D003 (26V518) and D027 (26V558 or 26V561) CONTESTED; D044 (26V638) review of reports aimed at planning part collection CONTESTED.
+- Rule problem: control-bypass/production-window dates (26V577 Dec 27, 2025 - Jan 23, 2026) are window bounds, not events (Pass C D036/D037).
+- Rule problem: a supplier's own Part 573 filing (Weldon, 26V521): typed OTHER by Pass C (D009).
+- Pass A code bug seen again: "8/27/26: ... voted in favor" excluded as status statement (26V554), fixed by include override.
+- Multi-supplier block 26V581 (Astotec / Joyson): joined names; manual S1 quote override (D-T3).

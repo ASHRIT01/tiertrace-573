@@ -1,0 +1,166 @@
+[
+ {
+  "item_id": "D025",
+  "decision": "Y",
+  "quote": "From August 10, 2026 – August 21, 2026, Tesla reviewed production torque records and video footage as well as vehicle test and repair records to further assess vehicle production",
+  "reason": "Review of records to assess affected production is analysis conducted to find scope: INVESTIGATION_START, not OTHER. Date difference (range vs start) not the disputed point."
+ },
+ {
+  "item_id": "D026",
+  "decision": "Y",
+  "quote": "to further assess vehicle production between July 26, 2026, and August 7, 2026.",
+  "reason": "August 7 here only bounds a production data window; not an event date, so no event."
+ },
+ {
+  "item_id": "D027",
+  "decision": "CONTESTED",
+  "quote": "From March 2026 through May 2026, FCA US TSRC met with FCA US Engineering to understand potential root cause, customer consequence and vehicle scope.",
+  "reason": "Rules list meetings under OTHER, but the meetings are held to find root cause and scope (INVESTIGATION_START); rules do not settle which governs."
+ },
+ {
+  "item_id": "D028",
+  "decision": "Y",
+  "quote": "On August 5, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to the brake pedal position sensor",
+  "reason": "Dated action (internal finding/recognition of the issue) is an event; FILER_AWARENESS fits."
+ },
+ {
+  "item_id": "D029",
+  "decision": "X",
+  "quote": "From June 2026 through August 2026, FCA US TSRC conducted analysis of additional field records and customer assistance records to verify affected components and vehicle scope.",
+  "reason": "Dated sentence reporting analysis conducted to find scope is an event (INVESTIGATION_START)."
+ },
+ {
+  "item_id": "D030",
+  "decision": "X",
+  "quote": "On August 24, 2026, Forest River's Corporate Standards Manager went to the plant to look into the concern and inspect units on hand.",
+  "reason": "Going to look into the concern and inspect units is an investigation conducted: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D031",
+  "decision": "Y",
+  "quote": "28-APR-2026: Hiab received a report of a second field failure. The issue was escalated for further investigation.",
+  "reason": "Y correctly labels the undated sentence inside the 28-APR-2026 entry as an inherited INVESTIGATION_START. X has wrong date_text (APR-2026 instead of 28-APR-2026) and SUPPLIER_NOTICE does not fit a field report received by Hiab."
+ },
+ {
+  "item_id": "D032",
+  "decision": "NEITHER",
+  "quote": "5-May-2026: The issue was elevated to",
+  "reason": "Elevation to leadership is a dated action (OTHER), so the event exists, but date_text must be written exactly as '5-May-2026', not 'May-2026'.",
+  "corrected": {
+   "date_text": "5-May-2026",
+   "type": "OTHER",
+   "quote": "5-May-2026: The issue was elevated to Hiab’s liftgate leadership.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D033",
+  "decision": "X",
+  "quote": "28-APR-2026 through 5-May-2026: The investigation observed broken deck pins in the field failures.",
+  "reason": "Dated entry reporting a finding is an event (OTHER) dated from its entry start."
+ },
+ {
+  "item_id": "D034",
+  "decision": "Y",
+  "quote": "Hiab reviewed warranty claims involving deck pins and inspected additional units in the field.",
+  "reason": "Undated sentence inside the 28-APR-2026 dated entry reporting review/inspection: inherited INVESTIGATION_START event."
+ },
+ {
+  "item_id": "D035",
+  "decision": "Y",
+  "quote": "Based on the investigation's review, Hiab found evidence of liftgates with hydraulic cylinders that appeared to operate asymmetrically",
+  "reason": "Finding (action: found evidence) inside the dated entry is an inherited event (OTHER)."
+ },
+ {
+  "item_id": "D036",
+  "decision": "X",
+  "quote": "the error- proofing data for the relevant torque station was in bypass mode from December 27, 2025, until January 23, 2026.",
+  "reason": "The dates bound the period of bypass (a data/production window), not when an action happened; the conclusion itself is undated prose. No event with this date."
+ },
+ {
+  "item_id": "D037",
+  "decision": "X",
+  "quote": "the error- proofing data for the relevant torque station was in bypass mode from December 27, 2025, until January 23, 2026.",
+  "reason": "January 23, 2026 only bounds the bypass window; not an event date."
+ },
+ {
+  "item_id": "D038",
+  "decision": "CONTESTED",
+  "quote": "In August to September 2026, Toyota investigated the impact of the below-specification material on the steering knuckle’s performance.",
+  "reason": "Versions label different sentences of the same entry: X (own-dated investigation, INVESTIGATION_START) and Y (test results, inherited OTHER) are each correct for their own sentence; the pairing cannot be settled by the rules."
+ },
+ {
+  "item_id": "D039",
+  "decision": "Y",
+  "quote": "Toyota conducted CAE on models of the part with the below- specification material.",
+  "reason": "Y's sentence is testing conducted (INVESTIGATION_START), clearly correct; X's sentence (assessed impact and determined) is an ambiguous analysis/result."
+ },
+ {
+  "item_id": "D040",
+  "decision": "Y",
+  "quote": "As a result of the investigation, Toyota confirmed that only one batch did not go through the aging furnace step.",
+  "reason": "Finding inside the 'June 2026 – July 2026' dated entry is an inherited event (OTHER)."
+ },
+ {
+  "item_id": "D041",
+  "decision": "Y",
+  "quote": "In some operating conditions this could lead to a loss of vehicle control, which may increase the risk of a crash.",
+  "reason": "Description of possible consequence with no action or occurrence: not an event."
+ },
+ {
+  "item_id": "D042",
+  "decision": "Y",
+  "quote": "On July 13, 2026, and July 30, 2026, Altec received reports from vehicle owners regarding improper operation of the boom stow auto-neutral functionality.",
+  "reason": "Owner reports reaching the filer are FILER_AWARENESS."
+ },
+ {
+  "item_id": "D043",
+  "decision": "Y",
+  "quote": "This recall expands upon the vehicle population subject to Recall No. 25V116, filed on February 24, 2025.",
+  "reason": "The filer's earlier Part 573 report was filed on that date: NHTSA_FILING."
+ },
+ {
+  "item_id": "D044",
+  "decision": "CONTESTED",
+  "quote": "During September and October 2025, MBAG reviewed the additional reports and available vehicle and production information to determine the appropriate means of obtaining and analyzing representative field parts.",
+  "reason": "Review of reports is analysis, but its stated aim is planning parts collection rather than finding cause/scope; INVESTIGATION_START vs OTHER not settled by the rules."
+ },
+ {
+  "item_id": "D045",
+  "decision": "Y",
+  "quote": "From November 2025 through February 2026, MBAG identified candidate vehicles and markets, developed the collection protocol, and coordinated the retrieval and shipment of the requested components.",
+  "reason": "Y's sentence (collection logistics) is correctly OTHER; X labels a different sentence (beginning coordination) whose INVESTIGATION_START type is doubtful for preparatory coordination."
+ },
+ {
+  "item_id": "D046",
+  "decision": "Y",
+  "quote": "The Field Engineering Activity was formally launched in March 2026.",
+  "reason": "Formal launch of the field engineering activity to obtain parts for analysis opens an investigation activity: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D047",
+  "decision": "NEITHER",
+  "quote": "Late Aug-2026, a USA based customer noticed the hazard lamp indicators did not operate with the MRS (Master Run Switch) in the off position",
+  "reason": "Customer report of the problem is an event (FILER_AWARENESS), but date_text must keep 'Late': 'Late Aug-2026'.",
+  "corrected": {
+   "date_text": "Late Aug-2026",
+   "type": "FILER_AWARENESS",
+   "quote": "Late Aug-2026, a USA based customer noticed the hazard lamp indicators did not operate with the MRS (Master Run Switch) in the off position, which varied from their previous buses.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D048",
+  "decision": "X",
+  "quote": "From July 2026, through September 2026, FCA US TSRC conducted an analysis of field records and customer assistance records to understand potential customer consequences.",
+  "reason": "Analysis conducted is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D049",
+  "decision": "Y",
+  "quote": "On September 2, 2026, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles",
+  "reason": "Internal recognition/finding of the issue reaching the filer is FILER_AWARENESS."
+ }
+]

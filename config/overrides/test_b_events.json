@@ -409,5 +409,133 @@
   "Truck Body was advised on 5/18/2026": {
    "type": "SUPPLIER_NOTICE"
   }
+ },
+ "RCLRPT-26V518-5347.pdf": {
+  "6/16/26: Engineering notified": {
+   "type": "FILER_AWARENESS"
+  },
+  "8/6/26: An email vote": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V520-6158.pdf": {
+  "May 2026: Blue Bird began": {
+   "type": "INVESTIGATION_START"
+  },
+  "August 10, 2026: Blue Bird submitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-26V527-2982.pdf": {
+  "During the course of repairs": {
+   "type": "FILER_AWARENESS"
+  },
+  "On 06 August 2026, the PSCC": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V535-7741.pdf": {
+  "In November 2025 Heil learned": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V541-1703.pdf": {
+  "On June 25, 2026, during a Bendix": {
+   "type": "FILER_AWARENESS"
+  },
+  "On August 14, 2026, after reviewing": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V552-4130.pdf": {
+  "8/27/26: Safety Steering": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V553-8526.pdf": {
+  "On May 20, 2026, Magic Tilt": {
+   "type": "FILER_AWARENESS"
+  },
+  "In August 2026, Magic Tilt": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V554-9708.pdf": {
+  "7/8/26: Jayco Motorized": {
+   "type": "FILER_AWARENESS"
+  },
+  "8/27/26: The Safety Steering": {
+   "include": true,
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V558-7885.pdf": {
+  "On August 7, 2026, Tesla personnel": {
+   "type": "FILER_AWARENESS"
+  },
+  "On August 25, 2026, Tesla made": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V563-6702.pdf": {
+  "On August 20, 2026, Forest": {
+   "type": "FILER_AWARENESS"
+  },
+  "On August 31, 2026, Forest": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V577-7489.pdf": {
+  "On February 23, 2026, Dearborn": {
+   "type": "FILER_AWARENESS"
+  },
+  "On September 1, 2026, Ford’s Field": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V581-3933.pdf": {
+  "=Beginning": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "August 7, 2026, Ford conducted": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-26V598-8506.pdf": {
+  "The supplier contacted Toyota": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-26V607-0797.pdf": {
+  "The Product Safety and Compliance Committee (PSCC) requested": {
+   "type": "INVESTIGATION_START"
+  },
+  "On 16 September 2026, the PSCC": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V617-0141.pdf": {
+  "On September 25, 2026, after": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V638-9238.pdf": {
+  "Following the decision to conduct": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-26V644-1013.pdf": {
+  "28-Sep-2026 the Vehicle Safety": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V671-6336.pdf": {
+  "Volvo Cars received in September": {
+   "type": "FILER_AWARENESS"
+  },
+  "Based on this, Volvo together": {
+   "type": "INVESTIGATION_START"
+  }
  }
 }

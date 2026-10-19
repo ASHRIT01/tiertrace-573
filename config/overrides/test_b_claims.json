@@ -422,5 +422,170 @@
   "S2": {
    "quote": "Name: Hiab USA Inc."
   }
+ },
+ "RCLRPT-26V520-6158.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Blue Bird"
+  }
+ },
+ "RCLRPT-26V535-7741.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: The Heil Co."
+  }
+ },
+ "RCLRPT-26V541-1703.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec Ind. Inc."
+  }
+ },
+ "RCLRPT-26V577-7489.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V617-0141.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec Industies Inc."
+  }
+ },
+ "RCLRPT-26V644-1013.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: New Flyer"
+  }
+ },
+ "RCLRPT-26V518-5347.pdf": {
+  "S1": {
+   "quote": "Name: DAVE CARTER & ASSOCIATES, INC"
+  },
+  "S2": {
+   "quote": "Name: DAVE CARTER & ASSOCIATES, INC"
+  }
+ },
+ "RCLRPT-26V521-9708.pdf": {
+  "S1": {
+   "quote": "Name: Hale Products"
+  }
+ },
+ "RCLRPT-26V527-2982.pdf": {
+  "S1": {
+   "quote": "Name: SuperAlloy Industrial Co. Ltd"
+  },
+  "S2": {
+   "quote": "Name: SuperAlloy Industrial Co. Ltd"
+  }
+ },
+ "RCLRPT-26V528-8235.pdf": {
+  "S1": {
+   "quote": "Name: Nascote Industries, Inc."
+  },
+  "S2": {
+   "quote": "Name: Nascote Industries, Inc."
+  }
+ },
+ "RCLRPT-26V529-9405.pdf": {
+  "S1": {
+   "quote": "Name: Aptiv"
+  },
+  "S2": {
+   "quote": "Name: Aptiv"
+  }
+ },
+ "RCLRPT-26V531-6260.pdf": {
+  "S1": {
+   "quote": "Name: Harman Becker Automotive Systems Inc."
+  },
+  "S2": {
+   "quote": "Name: Harman Becker Automotive Systems Inc."
+  }
+ },
+ "RCLRPT-26V558-7885.pdf": {
+  "S1": {
+   "quote": "Name: Relyans Max Inc"
+  },
+  "S2": {
+   "quote": "Name: Relyans Max Inc"
+  }
+ },
+ "RCLRPT-26V561-7630.pdf": {
+  "S1": {
+   "quote": "Name: CTS CORPORATION"
+  },
+  "S2": {
+   "quote": "Name: CTS CORPORATION"
+  }
+ },
+ "RCLRPT-26V568-9693.pdf": {
+  "S1": {
+   "quote": "Name: Hiab USA Inc."
+  }
+ },
+ "RCLRPT-26V581-3933.pdf": {
+  "S1": {
+   "quote": "Name: Astotec"
+  }
+ },
+ "RCLRPT-26V598-8506.pdf": {
+  "S1": {
+   "quote": "Name: Bharat Forge Aluminum USA, INC"
+  }
+ },
+ "RCLRPT-26V607-0797.pdf": {
+  "S1": {
+   "quote": "Name: Robert Bosch Elektronik GmbH"
+  }
+ },
+ "RCLRPT-26V638-9238.pdf": {
+  "S1": {
+   "quote": "Name: Continental Automotive Technologies GmbH"
+  }
+ },
+ "RCLRPT-26V651-6989.pdf": {
+  "S1": {
+   "quote": "Name: KOSTAL OF AMERICA, INC"
+  },
+  "S2": {
+   "quote": "Name: KOSTAL OF AMERICA, INC"
+  }
+ },
+ "RCLRPT-26V671-6336.pdf": {
+  "S1": {
+   "quote": "Name: Magna Seating Baoji"
+  }
  }
 }
