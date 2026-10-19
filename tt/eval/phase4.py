@@ -1,6 +1,7 @@
 """Phase 4: agent (4B v2 run 1 + run 2 agreement + B1 agreement + verifiers) on the 100 dev filings vs SILVER labels. Dev only.
 python -m tt.eval.phase4 out.json"""
 import json
+import os
 import sys
 from collections import Counter
 
@@ -12,7 +13,8 @@ from tt.eval.phase3 import items_for, summarise
 from tt.eval.riskcov import aurc, cluster_bootstrap, risk_at
 from tt.parse.block import mask_text
 
-RUN1, RUN2 = "runs/dev_bench_4b_silver_v2.jsonl", "runs/dev_bench_4b_silver_v2_run2.jsonl"
+RUN1 = os.environ.get("TT_RUN1", "runs/dev_bench_4b_silver_v2.jsonl")
+RUN2 = os.environ.get("TT_RUN2", "runs/dev_bench_4b_silver_v2_run2.jsonl")
 
 
 def run():

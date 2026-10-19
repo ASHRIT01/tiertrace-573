@@ -2,6 +2,7 @@
 Usage: python -m tt.eval.diagnose runs/dev_bench_4b_silver.jsonl out.json"""
 import difflib
 import json
+import os
 import pickle
 import random
 import re
@@ -23,9 +24,10 @@ from tt.parse.sections import norm, split_sections
 from tt.verify.dates import parse_date
 from tt.verify.verifier import EARLIEST, locate, verify
 
-PDF = Path("data/dev_raw")
-GOLD = Path("data/labels/dev_silver_v1.json")
-CACHE = Path("runs/diag_cache.pkl")
+# split paths: default = dev; Phase 6 sets TT_PDF / TT_GOLD / TT_CACHE (code is identical, only the data differ)
+PDF = Path(os.environ.get("TT_PDF", "data/dev_raw"))
+GOLD = Path(os.environ.get("TT_GOLD", "data/labels/dev_silver_v1.json"))
+CACHE = Path(os.environ.get("TT_CACHE", "runs/diag_cache.pkl"))
 
 
 def load_world():

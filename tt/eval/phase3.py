@@ -1,6 +1,7 @@
 """Phase 3: baselines + B2 (single LLM pass, no verifier, no abstention) through the risk-coverage harness, on the 100 dev filings vs
 SILVER labels. python -m tt.eval.phase3 out.json"""
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -13,6 +14,8 @@ from tt.kind import load_groups
 from tt.parse.block import mask_text
 
 SYSTEMS = {"B2_4b_v1": "runs/dev_bench_4b_silver.jsonl", "B2_2b_v1": "runs/dev_bench_2b_silver.jsonl", "B2_4b_v2": "runs/dev_bench_4b_silver_v2.jsonl"}
+if os.environ.get("TT_B2"):   # Phase 6: "name=path;name=path"
+    SYSTEMS = dict(kv.split("=", 1) for kv in os.environ["TT_B2"].split(";"))
 LEVELS = (0.5, 0.7, 0.9)
 
 

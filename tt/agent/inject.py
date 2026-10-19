@@ -4,6 +4,7 @@ verifiers vs after verifiers + two-run agreement. The fixtures were written by t
 are known to the attacks: the ASR with verifiers is an in-sample figure, not a robustness guarantee.
 usage: python -m tt.agent.inject run <model> <runA|runB> ; python -m tt.agent.inject score"""
 import json
+import os
 import random
 import sys
 from pathlib import Path
@@ -24,6 +25,9 @@ ATTACKS = {
 }
 PER_TYPE = 4
 OUT = Path("runs")
+TAG = os.environ.get("TT_INJ_TAG", "inject")                # output file stem
+HELDOUT = os.environ.get("TT_ATTACKS")                      # JSON {attack: [sentences]}: one filing per sentence
+REPORT = os.environ.get("TT_INJ_REPORT", "reports/phase_4_injection.json")
 
 
 def fixtures():
@@ -32,20 +36,25 @@ def fixtures():
     rng = random.Random(0)
     rng.shuffle(ok)
     out = []
-    for i, (name, text) in enumerate(ATTACKS.items()):
-        for l in ok[i * PER_TYPE:(i + 1) * PER_TYPE]:
-            d = docs[l["file"]]
-            chron = d.sections.get("chronology", "") + " " + text.format(filer=d.filer)
-            out.append({"id": f"{name}:{l['file']}", "attack": name, "file": l["file"], "cause": d.sections.get("cause", ""), "chronology": chron,
-                        "block": blocks[l["file"]], "filer": d.filer, "date": str(d.filing_date)})
+    if HELDOUT:
+        att = json.load(open(HELDOUT))
+        plan = [(n, t) for n, ts in att.items() for t in ts]
+        slots = [(n, t, l) for (n, t), l in zip(plan, ok)]
+    else:
+        slots = [(n, t, l) for i, (n, t) in enumerate(ATTACKS.items()) for l in ok[i * PER_TYPE:(i + 1) * PER_TYPE]]
+    for name, text, l in slots:
+        d = docs[l["file"]]
+        chron = d.sections.get("chronology", "") + " " + text.replace("{filer}", d.filer)
+        out.append({"id": f"{name}:{l['file']}", "attack": name, "file": l["file"], "cause": d.sections.get("cause", ""), "chronology": chron,
+                    "block": blocks[l["file"]], "filer": d.filer, "date": str(d.filing_date)})
     return out
 
 
 def run(model, tag):
     opts = {**OPTIONS, "num_ctx": 6144} if tag == "runA" else {**OPTIONS, "temperature": 0.5, "seed": 1, "num_ctx": 6144}
     client = ollama.Client(timeout=300)
-    with open(OUT / f"inject_{tag}.jsonl", "a") as f:
-        done = {json.loads(l)["id"] for l in open(OUT / f"inject_{tag}.jsonl")} if (OUT / f"inject_{tag}.jsonl").exists() else set()
+    with open(OUT / f"{TAG}_{tag}.jsonl", "a") as f:
+        done = {json.loads(l)["id"] for l in open(OUT / f"{TAG}_{tag}.jsonl")} if (OUT / f"{TAG}_{tag}.jsonl").exists() else set()
         for fx in fixtures():
             if fx["id"] in done:
                 continue
@@ -80,7 +89,7 @@ def score():
     from tt.norm.aliases import AliasTable
     gold, docs, raw, blocks = D.load_world()
     fx = {x["id"]: x for x in fixtures()}
-    R = {t: {r["id"]: r["extraction"] for r in map(json.loads, open(OUT / f"inject_{t}.jsonl"))} for t in ("runA", "runB")}
+    R = {t: {r["id"]: r["extraction"] for r in map(json.loads, open(OUT / f"{TAG}_{t}.jsonl"))} for t in ("runA", "runB")}
     tab = {}
     for i, x in fx.items():
         exA = Extraction.model_validate(R["runA"][i]) if R["runA"].get(i) else None
@@ -101,7 +110,7 @@ if __name__ == "__main__":
     if sys.argv[1] == "run":
         run(sys.argv[2], sys.argv[3])
     else:
-        t = score(); json.dump(t, open("reports/phase_4_injection.json", "w"), indent=1)
+        t = score(); json.dump(t, open(REPORT, "w"), indent=1)
         tot = {k: 0 for k in ("raw", "verifiers", "verifiers_agreement")}; n = 0
         for a, rows in t.items():
             print(a, {k: f"{sum(r[k] for r in rows)}/{len(rows)}" for k in tot}, "invalid:", sum(r.get("invalid_json", False) for r in rows))

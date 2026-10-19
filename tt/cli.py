@@ -259,7 +259,7 @@ def adjudication_cmd(a: str = "reports/dev_labels_draft.json", b: str = "reports
 
 
 @app.command("pass-a")
-def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json"):
+def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "reports/dev_labels_draft.json", out: str = "data/labels/passA_v1.json", pdf_dir: str = "data/dev_raw"):
     """Build Pass A (AI drafter, code-assisted) for the labelled dev set."""
     import json
     from pathlib import Path
@@ -267,10 +267,78 @@ def pass_a_cmd(selection: str = "config/dev_silver_100.json", drafts: str = "rep
     from tt.labels.events import load_overrides
     S = json.load(open(selection))["filings"]
     co = json.load(open("config/claim_overrides.json"))
-    recs = build_pass_a(S, json.load(open(drafts)), Path("data/dev_raw"), load_overrides(), co)
+    recs = build_pass_a(S, json.load(open(drafts)) if drafts else [], Path(pdf_dir), load_overrides(), co)
     Path(out).parent.mkdir(parents=True, exist_ok=True)
     Path(out).write_text(json.dumps(recs, indent=1, ensure_ascii=False))
     typer.echo(f"{len(recs)} filings -> {out}")
+
+
+@app.command("label-export")
+def label_export_cmd(files_json: str, out_root: str, pdf_dir: str = "data/dev_raw", rules: str = "docs/LABELING_RULES.md", per_batch: int = 20):
+    """Export Pass B batches (texts + rules, 20 filings each) for blind subagents. files_json: a JSON list of file names."""
+    import json
+    from pathlib import Path
+    from tt.labels.pipeline import export_pass_b
+    m = export_pass_b(json.load(open(files_json)), Path(pdf_dir), Path(rules), Path(out_root), per_batch)
+    typer.echo(f"{sum(len(v) for v in m.values())} filings in {len(m)} batches -> {out_root}")
+
+
+@app.command("label-compare")
+def label_compare_cmd(pass_a: str, pass_b_root: str, out_dir: str, pdf_dir: str = "data/dev_raw", rules: str = "docs/LABELING_RULES.md"):
+    """Check Pass B, compare with Pass A (Wilson 95%), number disagreements and package the Pass C batches."""
+    import json
+    from pathlib import Path
+    from tt.labels.pipeline import compare_and_package
+    dirs = sorted(Path(pass_b_root).glob("batch_*"), key=lambda p: int(p.name.split("_")[1]))
+    r = compare_and_package(json.load(open(pass_a)), dirs, Path(pdf_dir), Path(rules), Path(out_dir))
+    typer.echo(json.dumps({**r, "B_check_failures": len(r["B_check_failures"])}, indent=1))
+
+
+@app.command("label-final")
+def label_final_cmd(pass_a: str, items_json: str, pass_c_root: str, out: str, pdf_dir: str = "data/dev_raw"):
+    """Apply Pass C decisions to Pass A, run the code checks, write the final silver labels and print their SHA-256."""
+    import json
+    from pathlib import Path
+    from tt.labels.pipeline import finalize
+    dirs = sorted(Path(pass_c_root).glob("batch_*"), key=lambda p: int(p.name.split("_")[1]))
+    typer.echo(json.dumps(finalize(json.load(open(pass_a)), json.load(open(items_json)), dirs, Path(pdf_dir), Path(out)), indent=1, default=str))
+
+
+@app.command("split-fetch")
+def split_fetch(ids_file: str, out_dir: str, listing_out: str, rate: float = 1.0):
+    """List 573 versions for the campaign ids in ids_file, then download the latest version of each (1 req/s; stops on 401/403/429).
+    Generalisation of dev-fetch; for Phase 6 only, after the freeze."""
+    import csv, json
+    from pathlib import Path
+    from tt.fetch.api import ApiClient, list_573
+    from tt.fetch.nhtsa import Blocked, PoliteFetcher
+    ids = Path(ids_file).read_text().split()
+    meta = {r["campaign"]: r for r in csv.DictReader(open("data/processed/campaigns.csv"))}
+    client, rows, no573 = ApiClient(rate_s=rate), [], []
+    try:
+        for i, cid in enumerate(ids, 1):
+            docs = list_573(client, cid)
+            if not docs:
+                no573.append(cid)
+            for d in docs:
+                rows.append({**d, "year": int(meta[cid]["year"]), "type": meta[cid]["type"], "n_versions": len(docs)})
+            if i % 50 == 0:
+                typer.echo(f"listed {i}/{len(ids)}")
+        Path(listing_out).write_text("".join(json.dumps(r) + "\n" for r in rows))
+        latest = [r for r in rows if r["is_latest"]]
+        f = PoliteFetcher(Path("data/cache"), rate)
+        out = Path(out_dir); out.mkdir(parents=True, exist_ok=True)
+        ok = failed = 0
+        for r in latest:
+            b = f.get(r["url"])
+            if b:
+                (out / r["url"].rsplit("/", 1)[1]).write_bytes(b); ok += 1
+            else:
+                failed += 1; typer.echo(f"FAILED {r['url']}")
+    except Blocked as e:
+        typer.echo(f"BLOCKED: {e}. Not retrying.")
+        raise typer.Exit(2)
+    typer.echo(json.dumps({"ids": len(ids), "with_573": len(latest), "no_573": len(no573), "downloaded": ok, "download_failed": failed, "api_requests": client.requests_made}))
 
 
 @app.command("dev-score")
