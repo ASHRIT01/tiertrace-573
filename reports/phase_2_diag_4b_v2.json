@@ -1,0 +1,267 @@
+{
+ "n": 100,
+ "score": {
+  "n": 100,
+  "valid": 100,
+  "verifier_pass": 17,
+  "s2_gold_supported": 24,
+  "s2_recovered": 11,
+  "s2_not_supported_gold": 73,
+  "s2_unsupported_claims": 12,
+  "cause_n": 100,
+  "cause_ok": 95,
+  "H_tp": 182,
+  "H_pred": 306,
+  "H_gold": 257,
+  "O_tp": 68,
+  "O_pred": 112,
+  "O_gold": 190,
+  "F_tp": 2,
+  "F_gold": 6,
+  "s2_contested": 3,
+  "json_valid_rate": 1.0,
+  "verifier_pass_rate": 0.17,
+  "s2_recovery": 0.4583333333333333,
+  "unsupported_claim_rate": 0.1643835616438356,
+  "event_precision": 0.5947712418300654,
+  "event_recall": 0.708171206225681,
+  "event_f1": 0.6465364120781527,
+  "event_other_precision": 0.6071428571428571,
+  "event_other_recall": 0.35789473684210527,
+  "event_other_f1": 0.4503311258278146,
+  "event_fuzzy_recall": 0.3333333333333333,
+  "cause_accuracy": 0.95
+ },
+ "s2_recovery": {
+  "k": 11,
+  "n": 24,
+  "wilson95": [
+   0.2789105835168143,
+   0.6492544644689336
+  ]
+ },
+ "verify_consistency_mismatched_filings": 0,
+ "quote_check": {
+  "total": 654,
+  "old_pass": 563,
+  "new_pass": 601,
+  "residual": {
+   "paraphrase": 49,
+   "wrong_section": 4
+  }
+ },
+ "quote_residual_examples": [
+  [
+   "paraphrase",
+   "RCLRPT-15V275-6870.PDF",
+   "cause",
+   "Under conditions of excessive engine crankcase pressure, the barbs on the breather exit tube may not adequately maintain the attachment between the 90-degree el"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21E026-4426.PDF",
+   "chronology",
+   "On July 29, BWA provided Ford with a serial number list of 173 suspect SSAs that were delivered to the Ford Livonia Transmission Plant, 8 of which were containe"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V294-1915.PDF",
+   "chronology",
+   "Alerted of issue from [MASKED] 05/03/2016"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V036-1855.PDF",
+   "chronology",
+   "[MASKED] confirmed that the steering wheels were built incorrectly because an assembler had selected the wrong horn contact plate."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V415-8099.PDF",
+   "cause",
+   "[MASKED] believes these leaks are caused by a field adjustment when overtightening a securement bolt for the saddle valve to the manifold"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "From 5-4 -18 till 5-17-18, Tiffin has been working with [MASKED] to get instructions that we can put out to make adjustment on lock mechanism."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "5-4-2018 [MASKED] investigated decided there was an over-tighening of a bolt in the locking mechanism on the door that could make the door easier to come open t"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V294-1915.PDF",
+   "chronology",
+   "Alerted of issue from [MASKED] 05/03/2016"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V415-8099.PDF",
+   "chronology",
+   "All custome and dealer contacts sent to \"STERICYLE\" to start the recall process at [MASKED]90832stericycle.com per instructions received."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "4-30-2018 Tiffin contacted [MASKED] Engineering (maker of our doors and they install the lock mechanism into each door) to see if they had any ideas regarding w"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V838-2799.PDF",
+   "chronology",
+   "[MASKED] issued recall on September 17, 2015."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-19V811-5724.PDF",
+   "chronology",
+   "10-14-19 Safety Committee meet - 3 fire on the same floor plan and origin is in the same area (near furnace). Fire Investigators reports to different causes, Co"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V805-5341.PDF",
+   "chronology",
+   "On August 30, 2018, Ford's Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model ye"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21E026-4426.PDF",
+   "chronology",
+   "On July 16, BWA began shipment of certified material to GM."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V870-6167.PDF",
+   "chronology",
+   "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its man"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V415-8099.PDF",
+   "chronology",
+   "Report was sent from [MASKED] with part numbers for stoves effected"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E044-6457.PDF",
+   "chronology",
+   "Tenneco received a copy of Gillig's June 10, 2020 Defect Information Report in Recall No. 20V342, in which Gillig states 'the lower rear suspension control rods"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V648-2307.PDF",
+   "cause",
+   "On Nov 2nd, 2015 a production failure happened in the Continental Budapest factory at the silgel dispensing station. Due to human error both containers were fil"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V399-4785.PDF",
+   "chronology",
+   "On May 6th, 2021 [MASKED] informed TEMSA about the serial numbers of recalled Cummins products."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V870-6167.PDF",
+   "chronology",
+   "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its man"
+  ]
+ ],
+ "event_miss_classes": {
+  "matched": 179,
+  "extra": 199,
+  "missing": 34,
+  "type_mismatch": 44,
+  "date_format": 12
+ },
+ "verifier_audit": {
+  "V1": {
+   "failed": 81,
+   "true_reject(wrong)": 37,
+   "false_reject(right)": 37,
+   "unlabelled": 7,
+   "precision": 0.5,
+   "recall": 0.13653136531365315
+  },
+  "V2a": {
+   "failed": 5,
+   "true_reject(wrong)": 5,
+   "false_reject(right)": 0,
+   "unlabelled": 0,
+   "precision": 1.0,
+   "recall": 0.01845018450184502
+  },
+  "V2b": {
+   "failed": 0,
+   "true_reject(wrong)": 0,
+   "false_reject(right)": 0,
+   "unlabelled": 0,
+   "precision": null,
+   "recall": 0.0
+  },
+  "V3": {
+   "failed": 83,
+   "true_reject(wrong)": 35,
+   "false_reject(right)": 48,
+   "unlabelled": 0,
+   "precision": 0.42168674698795183,
+   "recall": 0.12915129151291513
+  },
+  "ANY": {
+   "failed": 157,
+   "true_reject(wrong)": 68,
+   "false_reject(right)": 82,
+   "unlabelled": 7,
+   "precision": 0.4533333333333333,
+   "recall": 0.25092250922509224
+  }
+ },
+ "claim_classes": {
+  "company:wrong": 106,
+  "event:right": 269,
+  "event:wrong:type": 113,
+  "event:wrong:extra": 40,
+  "company:right": 21,
+  "company:unlabelled": 29,
+  "event:wrong:date_unparsed": 12
+ },
+ "v2": {},
+ "filings_failing": {
+  "V4": 0
+ },
+ "silver_S1_supported": {
+  "n": 58,
+  "filer_or_affiliate": 7
+ },
+ "over_120s": [
+  {
+   "file": "RCLRPT-18V293-6049.PDF",
+   "seconds": 121.5,
+   "prompt_tokens": 912,
+   "output_tokens": 1754
+  },
+  {
+   "file": "RCLRPT-21V415-8099.PDF",
+   "seconds": 125.0,
+   "prompt_tokens": 1078,
+   "output_tokens": 1476
+  },
+  {
+   "file": "RCLRPT-16V798-6461.PDF",
+   "seconds": 122.1,
+   "prompt_tokens": 876,
+   "output_tokens": 1969
+  },
+  {
+   "file": "RCLRPT-19E009-4588.PDF",
+   "seconds": 125.6,
+   "prompt_tokens": 1155,
+   "output_tokens": 2022
+  }
+ ]
+}

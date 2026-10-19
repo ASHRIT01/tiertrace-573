@@ -1,0 +1,29 @@
+{
+ "4b": {
+  "gold_events": 447,
+  "pred_events": 335,
+  "date_matched": 294,
+  "date_type_matched": 60,
+  "date_only_F1": 0.7519181585677749,
+  "date_type_F1": 0.1534526854219949,
+  "type_acc_given_date": 0.20408163265306123
+ },
+ "2b": {
+  "gold_events": 447,
+  "pred_events": 389,
+  "date_matched": 315,
+  "date_type_matched": 65,
+  "date_only_F1": 0.7535885167464115,
+  "date_type_F1": 0.15550239234449761,
+  "type_acc_given_date": 0.20634920634920634
+ },
+ "B1": {
+  "gold_events": 447,
+  "pred_events": 246,
+  "date_matched": 221,
+  "date_type_matched": 113,
+  "date_only_F1": 0.6378066378066378,
+  "date_type_F1": 0.32611832611832614,
+  "type_acc_given_date": 0.5113122171945701
+ }
+}

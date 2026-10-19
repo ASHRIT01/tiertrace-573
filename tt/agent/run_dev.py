@@ -17,6 +17,20 @@ SYSTEM = ("You extract facts from one NHTSA Part 573 recall report. Use only the
           "(4) dates must be copied as written; (5) if you cannot decide, abstain. Answer with JSON matching the schema.")
 
 
+SYSTEM_V2 = SYSTEM + (
+    " Additional rules (v2, from the Phase 2 diagnosis): (6) the filer named in the header is NOT a supplier or distributor; never list it with "
+    "those roles (list it as FILER or leave it out); (7) [MASKED] hides a company name; never use it as a company name, and if the text does "
+    "not name a company besides the filer and [MASKED], return no companies; (8) a quote must be one contiguous passage copied "
+    "character for character from the named section (no ellipsis, no paraphrase, no joining of passages); (9) events: one event per "
+    "sentence that reports an action or occurrence, with that sentence's own date (or the date of the dated entry it sits in), copied as written, "
+    "including ranges such as 'April to May 2019'; skip sentences with no action or no date. Event types: FILER_AWARENESS = a report or notice of the "
+    "problem reaches the filer (customer/dealer report, field report, warranty claim, 'was notified', 'became aware'); SUPPLIER_NOTICE = a "
+    "supplier or component maker tells the filer about the problem or its own recall; INVESTIGATION_START = an investigation, analysis or test is "
+    "opened or conducted; DECISION = the decision that a safety defect exists or that a recall will be made; NHTSA_FILING = the filer submits or amends "
+    "the Part 573 report or informs NHTSA of a recall; OTHER = any other action (containment, stop shipment, meetings, production changes).")
+PROMPTS = {"v1": SYSTEM, "v2": SYSTEM_V2}
+
+
 def build_user(L_file: Path, mask_block: bool = True) -> str:
     d = load(L_file)
     s = d["sections"]
@@ -32,7 +46,7 @@ OPTIONS = {"temperature": 0, "seed": 0, "presence_penalty": 0}  # explicit: the 
 
 
 def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144, chat=None, progress=None, resume: bool = False,
-        timeout: float = 300.0) -> list[dict]:
+        timeout: float = 300.0, prompt: str = "v1") -> list[dict]:
     """One call per filing: thinking off, schema-constrained, options set explicitly, keep_alive 30m, per-call timeout (recorded, not
     hanging), truncation flag. resume=True keeps filings already in `out` and runs only the rest. `chat` is injectable for tests."""
     chat = chat or ollama.Client(timeout=timeout).chat
@@ -48,7 +62,7 @@ def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144,
             opts = {**OPTIONS, "num_ctx": ctx}
             try:
                 r = chat(model=model, think=False, keep_alive="30m",
-                         messages=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": build_user(pdf_dir / name)}],
+                         messages=[{"role": "system", "content": PROMPTS[prompt]}, {"role": "user", "content": build_user(pdf_dir / name)}],
                          format=Extraction.model_json_schema(), options=opts)
                 try:
                     ex = json.loads(r.message.content)
@@ -60,7 +74,7 @@ def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144,
                        "eval_count": r.eval_count, "eval_duration_ns": r.eval_duration,
                        "prompt_eval_count": r.prompt_eval_count, "prompt_eval_duration_ns": r.prompt_eval_duration,
                        "done_reason": dr, "total_duration_ns": getattr(r, "total_duration", None),
-                       "truncated": dr == "length" or pe + ev >= ctx,
+                       "truncated": dr == "length" or pe + ev >= ctx, "prompt": prompt,
                        "raw": r.message.content if ex is None else None}
             except Exception as e:  # keep going; record the failure (a timeout is recorded as such)
                 rec = {"file": name, "extraction": None, "error": str(e), "timeout": "timed out" in str(e).lower() or "timeout" in type(e).__name__.lower(),

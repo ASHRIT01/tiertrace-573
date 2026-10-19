@@ -1,0 +1,277 @@
+{
+ "n": 100,
+ "score": {
+  "n": 100,
+  "valid": 100,
+  "verifier_pass": 13,
+  "s2_gold_supported": 24,
+  "s2_recovered": 11,
+  "s2_not_supported_gold": 73,
+  "s2_unsupported_claims": 69,
+  "cause_n": 100,
+  "cause_ok": 94,
+  "H_tp": 76,
+  "H_pred": 389,
+  "H_gold": 257,
+  "O_tp": 0,
+  "O_pred": 0,
+  "O_gold": 190,
+  "F_tp": 0,
+  "F_gold": 6,
+  "s2_contested": 3,
+  "json_valid_rate": 1.0,
+  "verifier_pass_rate": 0.13,
+  "s2_recovery": 0.4583333333333333,
+  "unsupported_claim_rate": 0.9452054794520548,
+  "event_precision": 0.1953727506426735,
+  "event_recall": 0.29571984435797666,
+  "event_f1": 0.23529411764705882,
+  "event_other_precision": NaN,
+  "event_other_recall": 0.0,
+  "event_other_f1": NaN,
+  "event_fuzzy_recall": 0.0,
+  "cause_accuracy": 0.94
+ },
+ "s2_recovery": {
+  "k": 11,
+  "n": 24,
+  "wilson95": [
+   0.2789105835168143,
+   0.6492544644689336
+  ]
+ },
+ "verify_consistency_mismatched_filings": 0,
+ "quote_check": {
+  "total": 763,
+  "old_pass": 625,
+  "new_pass": 657,
+  "residual": {
+   "paraphrase": 43,
+   "wrong_section": 44,
+   "other": 19
+  }
+ },
+ "quote_residual_examples": [
+  [
+   "paraphrase",
+   "RCLRPT-17V407-6579.PDF",
+   "chronology",
+   "Lance Camper Mfg. Corp received an email of the failure, with photos, from a customer on May 26, 2017. The item was shipped back to Lance by the customer on May"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-20V455-1120.PDF",
+   "cause",
+   "On July 31, 2020, Blue Bird's Product Safety Committee determined that Blue Bird shall conduct a voluntary safety recall to correct this potential issue."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-17V194-5119.PDF",
+   "chronology",
+   "KTM Sportmotorcylce GmbH determined the preformed hoses on affected units did not fulfill specifications."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V870-6167.PDF",
+   "chronology",
+   "On November 16, 2016, testing of the failed inflator by ARC, the supplier of the inflator to Takata, identified that the failed inflator had ruptured at its man"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-22V374-1195.PDF",
+   "chronology",
+   "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall a"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-18V489-3626.PDF",
+   "cause",
+   "Braun filed a Part 573 Noncompliance Information Report on July 20, 2018 addressing the noncompliance in 2017/2018 commercial use manual in-floor wheelchair ram"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "From 5-4 -18 till 5-17-18, Tiffin has been working with [MASKED] to get instructions that we can put out to make adjustment on lock mechanism."
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-17V584-2241.PDF",
+   "chronology",
+   "The welds joining the battery tray to the underside of the chassis bridge were insufficient."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V399-4785.PDF",
+   "chronology",
+   "On May 6th, 2021 [MASKED] informed TEMSA about the serial numbers of recalled Cummins products."
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-16V798-6461.PDF",
+   "chronology",
+   "Due to insufficient process and quality control the supplier cannot guarantee the buckle punching operation for the passenger seatbelt buckle during a period of"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "5-4-2018 [MASKED] investigated decided there was an over-tighening of a bolt in the locking mechanism on the door that could make the door easier to come open t"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-17E043-9243.PDF",
+   "chronology",
+   "VMAC V900122 Systems and VMAC V910022 Systems placed on Manufacturing Hold 07/21/2017"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-19V850-1377.PDF",
+   "cause",
+   "In October, there were 10 cases of headlamp failure reported from Vehicle Distribution Centers and dealers."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V415-8099.PDF",
+   "cause",
+   "[MASKED] believes these leaks are caused by a field adjustment when overtightening a securement bolt for the saddle valve to the manifold"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V489-3626.PDF",
+   "chronology",
+   "While developing a new wheelchair accessible vehicle platform on a Dodge RT chassis, Braun conducted routine FMVSS compliance tests..."
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-19V412-4986.PDF",
+   "cause",
+   "Further process review also revealed the jig used to mount the circlip to the transmission main shaft was inappropriate, which deformed the circlip during assem"
+  ],
+  [
+   "other",
+   "RCLRPT-16V200-2264.PDF",
+   "cause",
+   "CAUSE:"
+  ],
+  [
+   "other",
+   "RCLRPT-20V455-1120.PDF",
+   "cause",
+   "On July 31, 2020, the CIRG team presented the investigation results to Blue Bird's Product Safety Committee on July 31, 2020."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V805-5341.PDF",
+   "chronology",
+   "On August 30, 2018, Ford's Critical Concerns Review Group (CCRG) reviewed a concern regarding missing J- channel reinforcement brackets on certain 2018 model ye"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E044-6457.PDF",
+   "chronology",
+   "Tenneco believes any fatigue failure susceptibility is the result of (i) performance limitations in the Gillig-approved design specifications for this part and/"
+  ]
+ ],
+ "event_miss_classes": {
+  "type_mismatch": 144,
+  "matched": 69,
+  "missing": 44,
+  "extra": 179,
+  "date_format": 9
+ },
+ "verifier_audit": {
+  "V1": {
+   "failed": 117,
+   "true_reject(wrong)": 72,
+   "false_reject(right)": 23,
+   "unlabelled": 22,
+   "precision": 0.7578947368421053,
+   "recall": 0.15859030837004406
+  },
+  "V2a": {
+   "failed": 3,
+   "true_reject(wrong)": 3,
+   "false_reject(right)": 0,
+   "unlabelled": 0,
+   "precision": 1.0,
+   "recall": 0.006607929515418502
+  },
+  "V2b": {
+   "failed": 88,
+   "true_reject(wrong)": 82,
+   "false_reject(right)": 6,
+   "unlabelled": 0,
+   "precision": 0.9318181818181818,
+   "recall": 0.18061674008810572
+  },
+  "V3": {
+   "failed": 92,
+   "true_reject(wrong)": 75,
+   "false_reject(right)": 17,
+   "unlabelled": 0,
+   "precision": 0.8152173913043478,
+   "recall": 0.16519823788546256
+  },
+  "ANY": {
+   "failed": 268,
+   "true_reject(wrong)": 205,
+   "false_reject(right)": 41,
+   "unlabelled": 22,
+   "precision": 0.8333333333333334,
+   "recall": 0.45154185022026433
+  }
+ },
+ "claim_classes": {
+  "company:wrong": 160,
+  "company:unlabelled": 79,
+  "event:wrong:type": 251,
+  "event:right": 107,
+  "company:right": 27,
+  "event:wrong:extra": 34,
+  "event:wrong:date_unparsed": 9
+ },
+ "v2": {
+  "rejected_but_matches_silver": 6,
+  "V2b_total": 88
+ },
+ "filings_failing": {
+  "V4": 0
+ },
+ "silver_S1_supported": {
+  "n": 58,
+  "filer_or_affiliate": 7
+ },
+ "over_120s": [
+  {
+   "file": "RCLRPT-18V293-6049.PDF",
+   "seconds": 136.7,
+   "prompt_tokens": 589,
+   "output_tokens": 1866
+  },
+  {
+   "file": "RCLRPT-20E041-4869.PDF",
+   "seconds": 210.8,
+   "prompt_tokens": 388,
+   "output_tokens": 3079
+  },
+  {
+   "file": "RCLRPT-17V584-2241.PDF",
+   "seconds": 142.9,
+   "prompt_tokens": 745,
+   "output_tokens": 2088
+  },
+  {
+   "file": "RCLRPT-21E060-9563.PDF",
+   "seconds": 126.1,
+   "prompt_tokens": 610,
+   "output_tokens": 1805
+  },
+  {
+   "file": "RCLRPT-21E026-4426.PDF",
+   "seconds": 176.1,
+   "prompt_tokens": 685,
+   "output_tokens": 2481
+  }
+ ]
+}

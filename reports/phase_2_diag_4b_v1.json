@@ -1,0 +1,301 @@
+{
+ "n": 100,
+ "score": {
+  "n": 100,
+  "valid": 100,
+  "verifier_pass": 2,
+  "s2_gold_supported": 24,
+  "s2_recovered": 11,
+  "s2_not_supported_gold": 73,
+  "s2_unsupported_claims": 69,
+  "cause_n": 100,
+  "cause_ok": 98,
+  "H_tp": 61,
+  "H_pred": 322,
+  "H_gold": 257,
+  "O_tp": 9,
+  "O_pred": 13,
+  "O_gold": 190,
+  "F_tp": 0,
+  "F_gold": 6,
+  "s2_contested": 3,
+  "json_valid_rate": 1.0,
+  "verifier_pass_rate": 0.02,
+  "s2_recovery": 0.4583333333333333,
+  "unsupported_claim_rate": 0.9452054794520548,
+  "event_precision": 0.18944099378881987,
+  "event_recall": 0.23735408560311283,
+  "event_f1": 0.21070811744386872,
+  "event_other_precision": 0.6923076923076923,
+  "event_other_recall": 0.04736842105263158,
+  "event_other_f1": 0.08866995073891626,
+  "event_fuzzy_recall": 0.0,
+  "cause_accuracy": 0.98
+ },
+ "s2_recovery": {
+  "k": 11,
+  "n": 24,
+  "wilson95": [
+   0.2789105835168143,
+   0.6492544644689336
+  ]
+ },
+ "verify_consistency_mismatched_filings": 0,
+ "quote_check": {
+  "total": 632,
+  "old_pass": 526,
+  "new_pass": 554,
+  "residual": {
+   "other": 1,
+   "paraphrase": 66,
+   "wrong_section": 11
+  }
+ },
+ "quote_residual_examples": [
+  [
+   "paraphrase",
+   "RCLRPT-17V584-2241.PDF",
+   "chronology",
+   "REV requested the assistance of Lippert Components (LCI), as they are the manufacturer of the chassis bridge component into which the battery tray is integrated"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V341-1012.PDF",
+   "chronology",
+   "4-30-2018 Tiffin contacted [MASKED] Engineering (maker of our doors and they install the lock mechanism into each door) to see if they had any ideas regarding w"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V036-1855.PDF",
+   "chronology",
+   "[MASKED] confirmed that the steering wheels were built incorrectly because an assembler had selected the wrong horn contact plate."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-22V374-1195.PDF",
+   "chronology",
+   "On or about May 18, 2022, after DTNA verified the limited population of vehicles potentially subject to the defect to the extent necessary to declare a recall a"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E065-6078.PDF",
+   "chronology",
+   "October 27, 2020: Amendment submitted to change the beginning date of production for Part No. 74115 and 7411542 to August 1, 2019, increasing the population by "
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E044-6457.PDF",
+   "chronology",
+   "Tenneco believes any fatigue failure susceptibility is the result of (i) performance limitations in the Gillig-approved design specifications for this part and/"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-17V194-5119.PDF",
+   "chronology",
+   "Variations in the production process from the supplier of the preformed fuel hose"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V130-1770.PDF",
+   "chronology",
+   "The positioning of the hose nozzle in comparison to the opening for the fuel burning appliance was discovered in a routine PDI inspection of the unit for code a"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E044-6457.PDF",
+   "chronology",
+   "Tenneco received a copy of Gillig's June 10, 2020 Defect Information Report in Recall No. 20V342, in which Gillig states 'the lower rear suspension control rods"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-17V407-6579.PDF",
+   "defect",
+   "Defective manufacturer product. The manufacturer of the recalled item did not follow the prints given. The items thus did not meet Lance Camper Mfg. Corp's spec"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V415-8099.PDF",
+   "cause",
+   "[MASKED] believes these leaks are caused by a field adjustment when overtightening a securement bolt for the saddle valve to the manifold"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-20E065-6078.PDF",
+   "chronology",
+   "revise the brand name for Part No. 63010 ('TowReady' instead of Draw-Tite)"
+  ],
+  [
+   "wrong_section",
+   "RCLRPT-19V730-6964.PDF",
+   "chronology",
+   "The affected vehicles are equipped with a starter lock-out relay which accumulates damage over time caused by high voltage transients emanating from the starter"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V838-2799.PDF",
+   "chronology",
+   "Charmac Trailers Inc. issued recall on September 17, 2015."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21V399-4785.PDF",
+   "chronology",
+   "On May 6th, 2021 [MASKED] informed TEMSA about the serial numbers of recalled Cummins products."
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-17V584-2241.PDF",
+   "chronology",
+   "It was determined that LCI had purchased MTEC Corp (bridge manufacturer) after the bridges were produced"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-16V135-9273.PDF",
+   "chronology",
+   "March 2, 2016 Nova Bus informs NHTSA that a voluntary safety recall will be released to address the safety- related defect"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-15V871-0380.PDF",
+   "chronology",
+   "In February of 2015, Hyundai began an investigation of reports of intermittent activation of the vehicle's Electronic Stability Control system accompanied by fl"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-21E026-4426.PDF",
+   "chronology",
+   "On July 13, BorgWarner (BWA) was notified by GM San Luis Potosi (SLP) plant of two allegedly missing bolts on two stop-start accumulators (SSA.)"
+  ],
+  [
+   "paraphrase",
+   "RCLRPT-18V293-6049.PDF",
+   "cause",
+   "The [MASKED] supplier pre-sourcing evaluation did not fully evaluate supplier quality capability and the presence of hydrogen embrittlement in the D-ring bolt."
+  ]
+ ],
+ "event_miss_classes": {
+  "type_mismatch": 150,
+  "matched": 53,
+  "extra": 137,
+  "missing": 54,
+  "date_format": 1
+ },
+ "verifier_audit": {
+  "V1": {
+   "failed": 87,
+   "true_reject(wrong)": 59,
+   "false_reject(right)": 16,
+   "unlabelled": 12,
+   "precision": 0.7866666666666666,
+   "recall": 0.15089514066496162
+  },
+  "V2a": {
+   "failed": 4,
+   "true_reject(wrong)": 4,
+   "false_reject(right)": 0,
+   "unlabelled": 0,
+   "precision": 1.0,
+   "recall": 0.010230179028132993
+  },
+  "V2b": {
+   "failed": 105,
+   "true_reject(wrong)": 99,
+   "false_reject(right)": 6,
+   "unlabelled": 0,
+   "precision": 0.9428571428571428,
+   "recall": 0.2531969309462916
+  },
+  "V3": {
+   "failed": 58,
+   "true_reject(wrong)": 41,
+   "false_reject(right)": 17,
+   "unlabelled": 0,
+   "precision": 0.7068965517241379,
+   "recall": 0.10485933503836317
+  },
+  "ANY": {
+   "failed": 228,
+   "true_reject(wrong)": 181,
+   "false_reject(right)": 35,
+   "unlabelled": 12,
+   "precision": 0.8379629629629629,
+   "recall": 0.4629156010230179
+  }
+ },
+ "claim_classes": {
+  "company:wrong": 126,
+  "event:wrong:type": 227,
+  "event:right": 76,
+  "company:right": 25,
+  "event:wrong:extra": 37,
+  "company:unlabelled": 52,
+  "event:wrong:date_unparsed": 1
+ },
+ "v2": {
+  "V2b_total": 105,
+  "rejected_but_matches_silver": 6
+ },
+ "filings_failing": {
+  "V4": 0
+ },
+ "silver_S1_supported": {
+  "n": 58,
+  "filer_or_affiliate": 7
+ },
+ "over_120s": [
+  {
+   "file": "RCLRPT-15V036-1855.PDF",
+   "seconds": 193.2,
+   "prompt_tokens": 570,
+   "output_tokens": 1659
+  },
+  {
+   "file": "RCLRPT-19V811-5724.PDF",
+   "seconds": 173.1,
+   "prompt_tokens": 505,
+   "output_tokens": 1224
+  },
+  {
+   "file": "RCLRPT-20V202-4602.PDF",
+   "seconds": 145.7,
+   "prompt_tokens": 453,
+   "output_tokens": 1148
+  },
+  {
+   "file": "RCLRPT-20E044-6457.PDF",
+   "seconds": 130.5,
+   "prompt_tokens": 639,
+   "output_tokens": 1058
+  },
+  {
+   "file": "RCLRPT-20E065-6078.PDF",
+   "seconds": 122.8,
+   "prompt_tokens": 683,
+   "output_tokens": 961
+  },
+  {
+   "file": "RCLRPT-21E060-9563.PDF",
+   "seconds": 205.5,
+   "prompt_tokens": 610,
+   "output_tokens": 1714
+  },
+  {
+   "file": "RCLRPT-21E026-4426.PDF",
+   "seconds": 167.7,
+   "prompt_tokens": 685,
+   "output_tokens": 1427
+  },
+  {
+   "file": "RCLRPT-22V744-5844.PDF",
+   "seconds": 130.9,
+   "prompt_tokens": 483,
+   "output_tokens": 825
+  },
+  {
+   "file": "RCLRPT-22E081-1945.PDF",
+   "seconds": 128.4,
+   "prompt_tokens": 625,
+   "output_tokens": 1081
+  }
+ ]
+}
