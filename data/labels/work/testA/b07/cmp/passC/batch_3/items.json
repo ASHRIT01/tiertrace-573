@@ -1,0 +1,554 @@
+[
+ {
+  "item_id": "D044",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Jan 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Jan 2023: Start of KTM internal investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D045",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Jan 2023",
+   "type": "OTHER",
+   "quote": "Coordination, root cause analysis & testing with manufacturer and supplier 01.",
+   "inherited_date": true,
+   "entry_quote": "Jan 2023: Start of KTM internal investigation.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D046",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "Jan 2024",
+   "type": "OTHER",
+   "quote": "Jan 2024: 100% camera base inspection to check PCBA after conformal coating 01.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-01",
+    "end": "2024-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D047",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Feb 2024",
+   "type": "OTHER",
+   "quote": "Feb 2024: Automatic Cleaning of circuit board after PCBA & wire terminal soldering 18.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-01",
+    "end": "2024-02-29",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D048",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Sept 2024",
+   "type": "OTHER",
+   "quote": "Sept 2024: First contact of Transport Canada regarding consumer report to TC 25.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-01",
+    "end": "2024-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D049",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Sept 2024",
+   "type": "OTHER",
+   "quote": "Sept 2024: Vehicle inspection of reported vehicle 03.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-01",
+    "end": "2024-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D050",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "Oct 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "Oct 2024: Transport Canada starts investigation 10.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-10-01",
+    "end": "2024-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D051",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "Feb 2025",
+   "type": "OTHER",
+   "quote": "Feb 2025: Transport Canada informs KTM about two additional reports 11.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D052",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Feb 2025",
+   "type": "OTHER",
+   "quote": "Feb 2025: Transport Canada request warranty claim data.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D053",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Feb 2025",
+   "type": "OTHER",
+   "quote": "13.",
+   "inherited_date": true,
+   "entry_quote": "Feb 2025: Transport Canada request warranty claim data.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D054",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "Feb 2025",
+   "type": "OTHER",
+   "quote": "Feb 2025: Meeting Transport Canada and KTM NA 06.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D055",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Mar 2025",
+   "type": "OTHER",
+   "quote": "Mar 2025: Data shared with Transport Canada 07.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D056",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "July 2025",
+   "type": "OTHER",
+   "quote": "July 2025: Meeting request from Transport Canada 02.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-01",
+    "end": "2025-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D057",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "Sept 2025",
+   "type": "OTHER",
+   "quote": "Sept 2025: Meeting KTM HQ with Transport Canada 03.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-01",
+    "end": "2025-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D058",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Sept 2025",
+   "type": "DECISION",
+   "quote": "Sept 2025: KTM HQ determination that a recall is needed 05.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-01",
+    "end": "2025-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D059",
+  "file": "RCLRPT-25V598-1713.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "Sept 2025",
+   "type": "OTHER",
+   "quote": "Sept 2025: Notice of Defect filed with Transport Canada 11.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-01",
+    "end": "2025-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D060",
+  "file": "RCLRPT-25V604-9558.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "DTNA",
+   "quote": "On September 4, 2025 DTNA decided to conduct a safety recall to address affected vehicles.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Daimler Truck North America",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Daimler Truck North America",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D061",
+  "file": "RCLRPT-25V640-8730.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "09/15/2025",
+   "type": "OTHER",
+   "quote": "09/15/2025 International places a quality hold on all suspect wiper modules at its Parts Distribution Centers",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "09/05/2025-09/17/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "09/05/2025-09/17/2025 International completes its inspection of 1,291 buses at the Tulsa Bus Assembly Plant and finds 229 suspect wiper modules .",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-05",
+    "end": "2025-09-17",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D062",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "03/17/2025",
+   "type": "OTHER",
+   "quote": "03/17/2025 Initial analysis did not indicate a specific trend.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-17",
+    "end": "2025-03-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "03/17/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "03/17/2025 Initial analysis did not indicate a specific trend.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D063",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "08/19/2025",
+   "type": "OTHER",
+   "quote": "International again reviewed the content of the field service report and conducted further assessment of the issue.",
+   "inherited_date": true,
+   "entry_quote": "08/19/2025 NHTSA advises International that it intends to discuss the above referenced field service report at a forthcoming regularly scheduled meeting with the agency.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-19",
+    "end": "2025-08-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "08/19/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "International again reviewed the content of the field service report and conducted further assessment of the issue.",
+   "inherited_date": true,
+   "entry_quote": "08/19/2025 NHTSA advises International that it intends to discuss the above referenced field service report at a forthcoming regularly scheduled meeting with the agency.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D064",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "08/26/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "08/26/2025 A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "08/26/2025",
+   "type": "OTHER",
+   "quote": "08/26/2025 A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-26",
+    "end": "2025-08-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D065",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "03/17/2025",
+   "type": "OTHER",
+   "quote": "Vehicles referenced in the field service report were repaired.",
+   "inherited_date": true,
+   "entry_quote": "03/17/2025 Initial analysis did not indicate a specific trend.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-17",
+    "end": "2025-03-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D066",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "08/26/2025",
+   "type": "OTHER",
+   "quote": "Some claims mentioned audible air leaks.",
+   "inherited_date": true,
+   "entry_quote": "08/26/2025 A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-26",
+    "end": "2025-08-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D067",
+  "file": "RCLRPT-25V646-9542.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "08/26/2025",
+   "type": "OTHER",
+   "quote": "Rubbing of an air line was noted on the tire and fender.",
+   "inherited_date": true,
+   "entry_quote": "08/26/2025 A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-26",
+    "end": "2025-08-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D068",
+  "file": "RCLRPT-25V649-8625.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Production variances due to quality control at supplier including thinner than nominal wiring gauge.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See attached document titled “2021-2023MY Sorento HVAC Wire Harness Chronology.”",
+   "section": "chronology"
+  }
+ }
+]

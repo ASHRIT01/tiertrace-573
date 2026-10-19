@@ -1,0 +1,446 @@
+[
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-25V507-9357.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January to April 2024",
+   "type": "OTHER",
+   "quote": "From January to April 2024, MMC continued investigating the returned tailgate gas spring, confirming that the cylinder of the tailgate gas spring was severely corroded.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-01",
+    "end": "2024-04-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January to April 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "From January to April 2024, MMC continued investigating the returned tailgate gas spring, confirming that the cylinder of the tailgate gas spring was severely corroded.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-25V507-9357.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February to April 2025",
+   "type": "OTHER",
+   "quote": "From February to April 2025, MMC continued to analyze the second tailgate gas spring failure, including a replication test to attempt to identify the root cause of water penetration into the tailgate gas spring.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-04-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February to April 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "From February to April 2025, MMC continued to analyze the second tailgate gas spring failure, including a replication test to attempt to identify the root cause of water penetration into the tailgate gas spring.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-25V521-0601.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 3, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "July 3, 2025 a concern related to vehicle oversteer guidance is brought to the Product Safety organization and an investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-03",
+    "end": "2025-07-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 3, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "July 3, 2025 a concern related to vehicle oversteer guidance is brought to the Product Safety organization and an investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-25V521-0601.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 21, 2025",
+   "type": "OTHER",
+   "quote": "July 21, 2025 Product Safety Evaluation Committee is informed of early results of the investigation and that additional testing is requested.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 21, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "July 21, 2025 Product Safety Evaluation Committee is informed of early results of the investigation and that additional testing is requested.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-21",
+    "end": "2025-07-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-25V533-9464.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 26, 2024",
+   "type": "OTHER",
+   "quote": "MBAG is currently aware of one warranty claim received on August 26, 2024 in the USA.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-08-26",
+    "end": "2024-08-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-25V544-9834.pdf",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "status": "INSUFFICIENT",
+   "quote": "The root cause of rear brake hose leaks has not been fully determined to date.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The root cause of rear brake hose leaks has not been fully determined to date.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-25V544-9834.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 3, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "On October 3, 2024, NHTSA opened a Preliminary Evaluation (PE24-027) to “investigate allegations loss of braking ability in certain model year (MY) 2015-2017 Ford Edge vehicles”.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-10-03",
+    "end": "2024-10-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 3, 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "On October 3, 2024, NHTSA opened a Preliminary Evaluation (PE24-027) to “investigate allegations loss of braking ability in certain model year (MY) 2015-2017 Ford Edge vehicles”.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-25V544-9834.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2015",
+   "type": "OTHER",
+   "quote": "On July 8, 2024, NHTSA contacted Ford regarding 37 VOQs received in the prior 36 months alleging rear brake jounce hose leaks in 2015 – 2017 Edge vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2015-01-01",
+    "end": "2015-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-25V562-5431.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 11, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On July 11, 2025, a non-conforming crimp was found during production.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 11, 2025",
+   "type": "OTHER",
+   "quote": "On July 11, 2025, a non-conforming crimp was found during production.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-11",
+    "end": "2025-07-11",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 31",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "July 31- The harness manufacture (APC Manufacturing in Mexico) supplier of the harness had provided a generic brand 35-amp fuse, rather than the Bussman fuse specified on the harness drawing.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-31",
+    "end": "2025-07-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": {
+   "date_text": "July 31",
+   "type": "FILER_AWARENESS",
+   "quote": "July 31- The harness manufacture (APC Manufacturing in Mexico) supplier of the harness had provided a generic brand 35-amp fuse, rather than the Bussman fuse specified on the harness drawing.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 7",
+   "type": "OTHER",
+   "quote": "August 7- A new development occurred– a REV RV battery control center review of the macerator fuse of earlier built model year units revealed that the installation orientation of the fuse blocks by RRG employees may not match the fuse block diagram key.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-07",
+    "end": "2025-08-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": {
+   "date_text": "August 7",
+   "type": "FILER_AWARENESS",
+   "quote": "August 7- A new development occurred– a REV RV battery control center review of the macerator fuse of earlier built model year units revealed that the installation orientation of the fuse blocks by RRG employees may not match the fuse block diagram key.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 7",
+   "type": "OTHER",
+   "quote": "This could cause confusion and possibly cause a fuse of a certain rating to be installed that maybe over or under rated for the designated circuit or component.",
+   "inherited_date": true,
+   "entry_quote": "August 7- A new development occurred– a REV RV battery control center review of the macerator fuse of earlier built model year units revealed that the installation orientation of the fuse blocks by RRG employees may not match the fuse block diagram key.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-07",
+    "end": "2025-08-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 14",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "August 14 – Update to the investigation: The generic 35-amp fuse provided by APC Manufacturing, installed to protect the macerator circuit can create a subpar connection and create heat, allowing the plastic housing to melt.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-14",
+    "end": "2025-08-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 14",
+   "type": "OTHER",
+   "quote": "This may cause confusion and a fuse installed in the wrong location based upon the diagram key with risk of over or under protection of a circuit.",
+   "inherited_date": true,
+   "entry_quote": "August 14 – Update to the investigation: The generic 35-amp fuse provided by APC Manufacturing, installed to protect the macerator circuit can create a subpar connection and create heat, allowing the plastic housing to melt.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-14",
+    "end": "2025-08-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 14",
+   "type": "OTHER",
+   "quote": "Inspection of field motor home to be performed.",
+   "inherited_date": true,
+   "entry_quote": "August 14 – Update to the investigation: The generic 35-amp fuse provided by APC Manufacturing, installed to protect the macerator circuit can create a subpar connection and create heat, allowing the plastic housing to melt.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-14",
+    "end": "2025-08-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "8/14/2025",
+   "type": "OTHER",
+   "quote": "August 18 – All units in inventory with 8/14/2025 manufacture date or newer were remedied.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-14",
+    "end": "2025-08-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-25V565-4354.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 1",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "August 1 – APC Manufacturing confirmed this fuse was substituted in their harness, but no reports of similar issues.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-25V574-1873.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Component manufactured by FCA US LLC",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Component manufactured by FCA US LLC",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "FCA US",
+   "quote": "On August 28, 2025, FCA US determined, through the Vehicle Regulations Committee, a noncompliance with FVMSS No. 114 exists on all affected vehicles.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-25V574-1873.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2025",
+   "type": "OTHER",
+   "quote": "During July 2025, FCA US TSRC met with FCA US engineering and manufacturing to review the issue, understand the failure mode, review customer records and determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-01",
+    "end": "2025-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "July 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "During July 2025, FCA US TSRC met with FCA US engineering and manufacturing to review the issue, understand the failure mode, review customer records and determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

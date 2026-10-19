@@ -364,5 +364,168 @@
   "S2": {
    "quote": "Name: Q'Straint"
   }
+ },
+ "RCLRPT-25V410-8258.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Tesla, Inc."
+  }
+ },
+ "RCLRPT-25V470-8715.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: BMW AG"
+  }
+ },
+ "RCLRPT-25V533-9464.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: MBAG"
+  }
+ },
+ "RCLRPT-25V562-5431.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec"
+  }
+ },
+ "RCLRPT-25V651-2933.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec"
+  }
+ },
+ "RCLRPT-25V663-9975.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec"
+  }
+ },
+ "RCLRPT-25V659-2787.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Hyundai Motor Manufacturing Alabama"
+  }
+ },
+ "RCLRPT-25V407-8066.pdf": {
+  "S1": {
+   "quote": "Name: Cooper Standard Automotive Inc."
+  }
+ },
+ "RCLRPT-25V426-3816.pdf": {
+  "S1": {
+   "quote": "Name: Hyundai Mobis"
+  },
+  "S2": {
+   "quote": "Name: Hyundai Mobis"
+  }
+ },
+ "RCLRPT-25V441-5547.pdf": {
+  "S1": {
+   "quote": "Name: TE Connectivity"
+  },
+  "S2": {
+   "quote": "Name: TE Connectivity"
+  }
+ },
+ "RCLRPT-25V487-2548.pdf": {
+  "S1": {
+   "quote": "Name: Farasis Energy (Ganzhou) Co. Ltd."
+  }
+ },
+ "RCLRPT-25V507-9357.pdf": {
+  "S1": {
+   "quote": "Name: MITO KOGYO CO.,LTD"
+  },
+  "S2": {
+   "quote": "Name: MITO KOGYO CO.,LTD"
+  }
+ },
+ "RCLRPT-25V542-8411.pdf": {
+  "S1": {
+   "quote": "Name: Arow Global"
+  },
+  "S2": {
+   "quote": "Name: Arow Global"
+  }
+ },
+ "RCLRPT-25V544-9834.pdf": {
+  "S1": {
+   "quote": "Name: HC QUERETARO SA DE CV"
+  },
+  "S2": {
+   "quote": "Name: HC QUERETARO SA DE CV"
+  }
+ },
+ "RCLRPT-25V565-4354.pdf": {
+  "S1": {
+   "quote": "Name: APC Manufacturing"
+  }
+ },
+ "RCLRPT-25V574-1873.pdf": {
+  "S1": {
+   "quote": "Name: Component manufactured by FCA US LLC"
+  },
+  "S2": {
+   "quote": "Name: Component manufactured by FCA US LLC"
+  }
+ },
+ "RCLRPT-25V598-1713.pdf": {
+  "S1": {
+   "quote": "Name: Uno Minda Ltd."
+  }
+ },
+ "RCLRPT-25V604-9558.pdf": {
+  "S1": {
+   "quote": "Name: Daimler Truck North America"
+  },
+  "S2": {
+   "quote": "Name: Daimler Truck North America"
+  }
+ },
+ "RCLRPT-25V640-8730.pdf": {
+  "S1": {
+   "quote": "Name: CVG"
+  }
+ },
+ "RCLRPT-25V649-8625.pdf": {
+  "S1": {
+   "quote": "Name: Aptiv"
+  }
  }
 }

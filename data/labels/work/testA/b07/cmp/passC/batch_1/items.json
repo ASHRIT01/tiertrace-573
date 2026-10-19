@@ -1,0 +1,614 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 15, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "April – June 2025",
+   "type": "OTHER",
+   "quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-01",
+    "end": "2025-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 15, 2025",
+   "type": "OTHER",
+   "quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-15",
+    "end": "2025-04-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April – June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "CCRG reviewed field and warranty data, and potential for occurrence at higher mileages in the future via statistical projections.",
+   "inherited_date": true,
+   "entry_quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 22, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 22, 2025, this issue was brought to Ford’s CCRG for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-22",
+    "end": "2025-04-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 22, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "On April 22, 2025, this issue was brought to Ford’s CCRG for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 2025",
+   "type": "OTHER",
+   "quote": "May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment of C-pillar applique and division bar looseness and detachment.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Throughout May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment of C-pillar applique and division bar looseness and detachment.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April – June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Supplier process improvement actions were reviewed by Ford’s Supplier Technical Assistance team to assist in determining suspect population scoping.",
+   "inherited_date": true,
+   "entry_quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "May 2025",
+   "type": "OTHER",
+   "quote": "CCRG reviewed field and warranty data, and potential for occurrence at higher mileages in the future via statistical projections.",
+   "inherited_date": true,
+   "entry_quote": "May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment of C-pillar applique and division bar looseness and detachment.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 2025",
+   "type": "OTHER",
+   "quote": "Supplier process improvement actions were reviewed by Ford’s Supplier Technical Assistance team to assist in determining suspect population scoping.",
+   "inherited_date": true,
+   "entry_quote": "May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment of C-pillar applique and division bar looseness and detachment.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April – June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "The investigation also included a new assessment of the risk factors that considered recent road hazard safety recalls and continued discussions with NHTSA on road hazard risks.",
+   "inherited_date": true,
+   "entry_quote": "April – June 2025 On April 15, 2025, Ford’s Product Development Quality team identified a loose C-Pillar applique on an internal test vehicle.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 2022 - May 2023",
+   "type": "OTHER",
+   "quote": "This conclusion was based on the assessment that the involved parts did not represent a significant risk while falling to the ground or while in the roadway due to low masses and narrow profiles with no sharp protrusions.",
+   "inherited_date": true,
+   "entry_quote": "April 2022 - May 2023 Ford’s Critical Concern Review Group (CCRG) investigated this concern and concluded that it did not present an unreasonable risk to motor vehicle safety.",
+   "date_inferred": false,
+   "span": {
+    "start": "2022-04-01",
+    "end": "2023-05-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 2025",
+   "type": "OTHER",
+   "quote": "The investigation also included a new assessment of the risk factors that considered recent road hazard safety recalls and continued discussions with NHTSA on road hazard risks.",
+   "inherited_date": true,
+   "entry_quote": "May 2025, CCRG and Ford’s engineering teams worked to better understand the factors that lead to the detachment of C-pillar applique and division bar looseness and detachment.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-25V407-8066.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "April 14, 2025",
+   "type": "OTHER",
+   "quote": "These warranty claims were received between June 17, 2020, and April 14, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-14",
+    "end": "2025-04-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-25V441-5547.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 6, 2023",
+   "type": "DECISION",
+   "quote": "On October 6, 2023, Ford’s Field Review Committee approved field action 23V687 (23S56) to address a condition in which Direct Current (“DC”) fast charging and repeated wide open pedal events may cause the high voltage battery main contactors to overheat.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "October 6, 2023",
+   "type": "OTHER",
+   "quote": "On October 6, 2023, Ford’s Field Review Committee approved field action 23V687 (23S56) to address a condition in which Direct Current (“DC”) fast charging and repeated wide open pedal events may cause the high voltage battery main contactors to overheat.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-06",
+    "end": "2023-10-06",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-25V441-5547.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 24th, 2022",
+   "type": "OTHER",
+   "quote": "The original 23S56/23V687 recall population erroneously used a population cutoff point of May 24th, 2022.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-05-24",
+    "end": "2022-05-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-25V441-5547.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "February 17, 2025",
+   "type": "OTHER",
+   "quote": "These claims were received between October 6, 2022 and February 17, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-17",
+    "end": "2025-02-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-25V444-3918.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 29, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Oshkosh begins to evaluate this condition to understand whether the wrinkling is limited to the vehicles observed at the Oshkosh facility or may exist in other vehicles and to ascertain the impact to the customer of this wrinkling.",
+   "inherited_date": true,
+   "entry_quote": "May 29, 2025 – Oshkosh observes wrinkling on the airbag warning and roll-over warning labels which are placed on the sun visors of production vehicles located at the Oshkosh facility.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "May 29, 2025",
+   "type": "OTHER",
+   "quote": "Oshkosh begins to evaluate this condition to understand whether the wrinkling is limited to the vehicles observed at the Oshkosh facility or may exist in other vehicles and to ascertain the impact to the customer of this wrinkling.",
+   "inherited_date": true,
+   "entry_quote": "May 29, 2025 – Oshkosh observes wrinkling on the airbag warning and roll-over warning labels which are placed on the sun visors of production vehicles located at the Oshkosh facility.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-29",
+    "end": "2025-05-29",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-25V444-3918.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2025",
+   "type": "OTHER",
+   "quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-01",
+    "end": "2025-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-25V444-3918.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2025",
+   "type": "OTHER",
+   "quote": "Attention is given to their ability to remain permanently attached to the sun visor after installment.",
+   "inherited_date": true,
+   "entry_quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-01",
+    "end": "2025-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Attention is given to their ability to remain permanently attached to the sun visor after installment.",
+   "inherited_date": true,
+   "entry_quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-25V444-3918.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 2025",
+   "type": "OTHER",
+   "quote": "In addition, all labels present on the sun visor including the rollover warning label and electric shock warning label present on the BEV version of the vehicles, and their placement, are evaluated.",
+   "inherited_date": true,
+   "entry_quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-01",
+    "end": "2025-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In addition, all labels present on the sun visor including the rollover warning label and electric shock warning label present on the BEV version of the vehicles, and their placement, are evaluated.",
+   "inherited_date": true,
+   "entry_quote": "June 2025 – After identifying vehicles with the customer where the sun visor and rollover warning labels are wrinkled and starting to delaminate in certain locations, Oshkosh begins to focus on the thickness of the sun visor labels, the adhesive on them, and the surface material of the sun visor.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-25V470-8715.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "In October 2023, a test program was initiated in order to determine the specific parameters of the assembly process for possible revision, including specific details of those parameters.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "In October 2023, a test program was initiated in order to determine the specific parameters of the assembly process for possible revision, including specific details of those parameters.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-25V470-8715.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 2024",
+   "type": "OTHER",
+   "quote": "As part of this process, in January 2024, information from field vehicles would start to be collected and analyzed on a continual basis.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-01",
+    "end": "2024-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "As part of this process, in January 2024, information from field vehicles would start to be collected and analyzed on a continual basis.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-25V470-8715.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "June 2024",
+   "type": "OTHER",
+   "quote": "The process would continue for all modules produced up to June 2024, as updated parameters would not be defined until that time.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-06-01",
+    "end": "2024-06-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-25V487-2548.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2024",
+   "type": "OTHER",
+   "quote": "MBAG investigated and evaluated each reported incident to determine the cause and its impact until February 2024.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-01",
+    "end": "2024-02-29",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "MBAG investigated and evaluated each reported incident to determine the cause and its impact until February 2024.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-25V487-2548.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 2024",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "From August 2024, a risk assessment and a detailed temperature simulation were carried out in cooperation with the supplier, which, in early 2025, confirmed that a fire hazard can be ruled out in this context.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-08-01",
+    "end": "2024-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "August 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "From August 2024, a risk assessment and a detailed temperature simulation were carried out in cooperation with the supplier, which, in early 2025, confirmed that a fire hazard can be ruled out in this context.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-25V487-2548.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2025",
+   "type": "OTHER",
+   "quote": "Starting in February 2025, further failure mechanisms were evaluated, especially regarding the question of whether and how the issue might result in a loss of propulsion.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-01",
+    "end": "2025-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Starting in February 2025, further failure mechanisms were evaluated, especially regarding the question of whether and how the issue might result in a loss of propulsion.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-25V487-2548.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "April 2025",
+   "type": "OTHER",
+   "quote": "In that regard, during April 2025, MBAG analyzed the sequence of events that could lead to driving impairments resulting from unsuitable screws.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-01",
+    "end": "2025-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "April 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In that regard, during April 2025, MBAG analyzed the sequence of events that could lead to driving impairments resulting from unsuitable screws.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-25V487-2548.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "2023",
+   "type": "FILER_AWARENESS",
+   "quote": "During 2023, MBAG received isolated reports of complaints in the field regarding different allegations (e.g., warning messages).",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ }
+]

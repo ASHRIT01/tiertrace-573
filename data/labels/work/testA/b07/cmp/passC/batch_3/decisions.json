@@ -1,0 +1,258 @@
+[
+ {
+  "item_id": "D044",
+  "decision": "NEITHER",
+  "quote": "20. Jan 2023: Start of KTM internal investigation.",
+  "reason": "Event exists (investigation started) as Y says, but date_text must be '20. Jan 2023'. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "20. Jan 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "20. Jan 2023: Start of KTM internal investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D045",
+  "decision": "NEITHER",
+  "quote": "Coordination, root cause analysis & testing with manufacturer and supplier",
+  "reason": "Undated sentence inside the 20. Jan 2023 entry: an event. Root cause analysis & testing is INVESTIGATION_START, not OTHER; quote must not include the next line's '01.'; entry date is '20. Jan 2023'.",
+  "corrected": {
+   "date_text": "20. Jan 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Coordination, root cause analysis & testing with manufacturer and supplier",
+   "inherited_date": true,
+   "date_inferred": false,
+   "entry_quote": "20. Jan 2023: Start of KTM internal investigation."
+  }
+ },
+ {
+  "item_id": "D046",
+  "decision": "NEITHER",
+  "quote": "01. Jan 2024: 100% camera base inspection to check PCBA after conformal coating",
+  "reason": "Production/containment action is an OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "01. Jan 2024",
+   "type": "OTHER",
+   "quote": "01. Jan 2024: 100% camera base inspection to check PCBA after conformal coating",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D047",
+  "decision": "NEITHER",
+  "quote": "01. Feb 2024: Automatic Cleaning of circuit board after PCBA & wire terminal soldering",
+  "reason": "Production change is an OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "01. Feb 2024",
+   "type": "OTHER",
+   "quote": "01. Feb 2024: Automatic Cleaning of circuit board after PCBA & wire terminal soldering",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D048",
+  "decision": "NEITHER",
+  "quote": "18. Sept 2024: First contact of Transport Canada regarding consumer report to TC",
+  "reason": "Regulator contacting KTM about a consumer report is a notice of the problem reaching the filer: FILER_AWARENESS, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "18. Sept 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "18. Sept 2024: First contact of Transport Canada regarding consumer report to TC",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D049",
+  "decision": "NEITHER",
+  "quote": "25. Sept 2024: Vehicle inspection of reported vehicle",
+  "reason": "Inspection of the reported vehicle is testing conducted to find the cause: INVESTIGATION_START, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "25. Sept 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "25. Sept 2024: Vehicle inspection of reported vehicle",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D050",
+  "decision": "NEITHER",
+  "quote": "03. Oct 2024: Transport Canada starts investigation",
+  "reason": "An investigation is opened: INVESTIGATION_START (X right on existence and type); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "03. Oct 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "03. Oct 2024: Transport Canada starts investigation",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D051",
+  "decision": "NEITHER",
+  "quote": "10. Feb 2025: Transport Canada informs KTM about two additional reports",
+  "reason": "Later reports reaching the filer are FILER_AWARENESS, not OTHER; but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "10. Feb 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "10. Feb 2025: Transport Canada informs KTM about two additional reports",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D052",
+  "decision": "NEITHER",
+  "quote": "11. Feb 2025: Transport Canada request warranty claim data.",
+  "reason": "Regulator request is an OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "11. Feb 2025",
+   "type": "OTHER",
+   "quote": "11. Feb 2025: Transport Canada request warranty claim data.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D053",
+  "decision": "X",
+  "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+  "reason": "'13.' is the day of the next line's date (13. Feb 2025), not a sentence; no event."
+ },
+ {
+  "item_id": "D054",
+  "decision": "NEITHER",
+  "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+  "reason": "Meeting is an OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "13. Feb 2025",
+   "type": "OTHER",
+   "quote": "13. Feb 2025: Meeting Transport Canada and KTM NA",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D055",
+  "decision": "NEITHER",
+  "quote": "06. Mar 2025: Data shared with Transport Canada",
+  "reason": "Action, OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "06. Mar 2025",
+   "type": "OTHER",
+   "quote": "06. Mar 2025: Data shared with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D056",
+  "decision": "NEITHER",
+  "quote": "07. July 2025: Meeting request from Transport Canada",
+  "reason": "Occurrence, OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "07. July 2025",
+   "type": "OTHER",
+   "quote": "07. July 2025: Meeting request from Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D057",
+  "decision": "NEITHER",
+  "quote": "02. Sept 2025: Meeting KTM HQ with Transport Canada",
+  "reason": "Meeting, OTHER event (X right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "02. Sept 2025",
+   "type": "OTHER",
+   "quote": "02. Sept 2025: Meeting KTM HQ with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D058",
+  "decision": "NEITHER",
+  "quote": "03. Sept 2025: KTM HQ determination that a recall is needed",
+  "reason": "Decision to recall: DECISION (Y right on existence and type); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "03. Sept 2025",
+   "type": "DECISION",
+   "quote": "03. Sept 2025: KTM HQ determination that a recall is needed",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D059",
+  "decision": "NEITHER",
+  "quote": "05. Sept 2025: Notice of Defect filed with Transport Canada",
+  "reason": "Filing with Transport Canada is not a Part 573 NHTSA filing; OTHER event (Y right that it exists); but date_text/quote are wrong. Each KTM chronology line begins with a day number ('20. Jan 2023', '01. Feb 2024'; days rise within a month: 10/11/13 Feb, 02/03/05/11 Sept 2025), so the date as written is the day-prefixed form and the trailing numbers in the versions' quotes belong to the next line's date.",
+  "corrected": {
+   "date_text": "05. Sept 2025",
+   "type": "OTHER",
+   "quote": "05. Sept 2025: Notice of Defect filed with Transport Canada",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D060",
+  "decision": "X",
+  "quote": "On September 4, 2025 DTNA decided to conduct a safety recall to address affected vehicles.",
+  "reason": "Rules: an acronym of the block company counts ('DTNA' for 'Daimler Trucks North America'); narrative names DTNA, so SUPPORTED."
+ },
+ {
+  "item_id": "D061",
+  "decision": "CONTESTED",
+  "quote": "09/15/2025      International places a quality hold on all suspect wiper modules at its Parts Distribution Centers",
+  "reason": "The two versions are different chronology entries (09/15 quality hold = OTHER; 09/05-09/17 inspection finding suspect modules = scope inspection). Each is reasonably typed for its own entry; the paired comparison is not settled by the rules."
+ },
+ {
+  "item_id": "D062",
+  "decision": "Y",
+  "quote": "03/17/2025      Initial analysis did not indicate a specific trend.",
+  "reason": "Reports an initial analysis conducted to find the cause/scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D063",
+  "decision": "Y",
+  "quote": "International again reviewed the content of the field service report and conducted further assessment of the issue.",
+  "reason": "Further assessment conducted to find cause/scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D064",
+  "decision": "X",
+  "quote": "08/26/2025     A review of warranty data finds approximately 20 claims ,16 of which had occurred after the initial field service report.",
+  "reason": "Warranty claims found by the filer are a later report of the problem reaching it: FILER_AWARENESS."
+ },
+ {
+  "item_id": "D065",
+  "decision": "X",
+  "quote": "Vehicles referenced in the field service report were repaired.",
+  "reason": "Repair of affected vehicles is remedy logistics, not an event."
+ },
+ {
+  "item_id": "D066",
+  "decision": "Y",
+  "quote": "Some claims mentioned audible air leaks.",
+  "reason": "Description of claim content with no action; not an event."
+ },
+ {
+  "item_id": "D067",
+  "decision": "CONTESTED",
+  "quote": "Rubbing of an air line was noted on the tire and fender.",
+  "reason": "'was noted' could be a finding (event) or a description of the warranty claims' content (not an event); rules do not settle it."
+ },
+ {
+  "item_id": "D068",
+  "decision": "X",
+  "quote": "Production variances due to quality control at supplier including thinner than nominal wiring gauge.",
+  "reason": "Chronology is a pointer, but the cause (part of the narrative) refers to the supplier generically: UNNAMED."
+ }
+]

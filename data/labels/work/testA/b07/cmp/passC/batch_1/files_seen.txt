@@ -1,0 +1,10 @@
+LABELING_RULES.md
+items.json
+texts/RCLRPT-25V407-8066.txt
+texts/RCLRPT-25V441-5547.txt
+texts/RCLRPT-25V444-3918.txt
+texts/RCLRPT-25V470-8715.txt
+texts/RCLRPT-25V487-2548.txt
+make_decisions.py
+verify.py
+decisions.json

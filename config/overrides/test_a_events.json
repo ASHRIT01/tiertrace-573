@@ -821,5 +821,108 @@
   "May 16, 2025 Honda investigated": {
    "type": "INVESTIGATION_START"
   }
+ },
+ "RCLRPT-25V407-8066.pdf": {
+  "April 2022 - May 2023 Ford’s Critical Concern": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V410-8258.pdf": {
+  "From May 13 through June 10, 2025": {
+   "type": "INVESTIGATION_START"
+  },
+  "On June 10, 2025, having completed": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V425-5439.pdf": {
+  "On June 17, 2025, during a routine": {
+   "type": "FILER_AWARENESS"
+  },
+  "On June 19, 2025, OCC opened": {
+   "type": "INVESTIGATION_START"
+  },
+  "On June 20, 2025, Forest River's Corporate": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V441-5547.pdf": {
+  "On June 20, 2025, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V444-3918.pdf": {
+  "May 29, 2025 – Oshkosh observes": {
+   "type": "FILER_AWARENESS"
+  },
+  "June 19, 2025 – After concluding": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V464-0276.pdf": {
+  "On July 11, 2025, Forest River's Corporate": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V470-8715.pdf": {
+  "In May 2023, a quality review program": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V507-9357.pdf": {
+  "On July 31, 2025, MMC determined": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V521-0601.pdf": {
+  "August 11, 2025 DIR filed": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V542-8411.pdf": {
+  "These findings were present": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V544-9834.pdf": {
+  "On July 29, 2025, the CCRG reopened": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V565-4354.pdf": {
+  "July 29 - A motor home": {
+   "type": "FILER_AWARENESS"
+  },
+  "August 29 - REV elected": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V604-9558.pdf": {
+  "On October 16, 2025, DTNA is submitting": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V640-8730.pdf": {
+  "08/27/2025 Notified by Tulsa": {
+   "type": "FILER_AWARENESS"
+  },
+  "09/05/2025-09/17/2025 International completes": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V646-9542.pdf": {
+  "08/19/2025 NHTSA advises": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25V651-2933.pdf": {
+  "On September 19, 2025, Altec concluded": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V659-2787.pdf": {
+  "December 5, 2024 – Hyundai’s North America Safety Office": {
+   "type": "FILER_AWARENESS"
+  }
  }
 }
