@@ -110,3 +110,30 @@ def apply_c(A: list[dict], items: list[dict], decisions: list[dict]) -> tuple[li
             if new:                # add the chosen/corrected event
                 r["events"].append({**_strip(new), "decided_by": f"C:{choice}"})
     return list(recs.values()), counts
+
+
+def prepare_gold(records: list[dict], pdf_dir: Path) -> list[dict]:
+    """Scoring view of the final silver labels: every scored event gets a `span` (from date_text, with the chronology's year
+    context), contested events are dropped, and a contested S2 claim gets status CONTESTED (skipped by the scorer)."""
+    from datetime import date
+    from tt.labels.dates import parse_span
+    ctx = context([r["file"] for r in records], pdf_dir)
+    out = []
+    for r in records:
+        r = copy.deepcopy(r)
+        years, fd = ctx[r["file"]]
+        evs = []
+        for e in r["events"]:
+            if e.get("contested"):
+                continue
+            if not e.get("span") and e.get("date_text") and not e.get("date_inferred"):
+                sp = parse_span(e["date_text"], years=years, filing=fd)
+                if sp is not None and not sp.inferred:
+                    e["span"] = {"start": sp.start.isoformat(), "end": sp.end.isoformat(), "granularity": sp.granularity}
+            evs.append(e)
+        r["events"] = evs
+        for c in r["contested"]:
+            if c["claim"] == "S2":
+                next(x for x in r["claims"] if x["id"] == "S2")["status"] = "CONTESTED"
+        out.append(r)
+    return out

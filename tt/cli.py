@@ -193,7 +193,8 @@ def dev_fetch(rate: float = 1.0):
 
 @app.command("dev-bench")
 def dev_bench(model: str = typer.Option(..., "--model", help="exact installed tag, e.g. qwen3.5:4b-q4_K_M"), ctx: int = 6144,
-              out: str = "", labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw"):
+              out: str = "", labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw", resume: bool = False,
+              timeout: float = 300.0):
     """Run ONE named model over the 30 dev filings (thinking off, temperature 0 set explicitly), then print JSON-valid rate, tokens/s,
     p50/p95 seconds per filing, and scores vs the UNREVIEWED label drafts. Never pulls a model."""
     import json
@@ -207,19 +208,23 @@ def dev_bench(model: str = typer.Option(..., "--model", help="exact installed ta
         typer.echo(f"Model {model!r} is not installed or the Ollama server is not running ({e}). Not pulling. Start `ollama serve` / check `ollama list`.")
         raise typer.Exit(2)
     L = json.load(open(labels))
+    if "silver" in labels:   # final silver labels: add spans, drop contested events (see tt.labels.protocol.prepare_gold)
+        from tt.labels.protocol import prepare_gold
+        L = prepare_gold(L, Path(pdf_dir))
     outp = Path(out or f"runs/dev_bench_{model.replace(':', '_').replace('/', '_')}.jsonl")
     outp.parent.mkdir(exist_ok=True)
     typer.echo(f"model={model} think=False options={ {**OPTIONS, 'num_ctx': ctx} } filings={len(L)} -> {outp}")
-    recs = run(model, [l["file"] for l in L], Path(pdf_dir), outp, ctx,
-               progress=lambda i, n, r: typer.echo(f"  {i}/{n} {r['file']} {r['seconds']:.1f}s valid_json={r['extraction'] is not None}" + (f" ERROR {r['error'][:80]}" if r.get('error') else "")))
+    recs = run(model, [l["file"] for l in L], Path(pdf_dir), outp, ctx, resume=resume, timeout=timeout,
+               progress=lambda i, n, r: typer.echo(f"  {i}/{n} {r['file']} {r['seconds']:.1f}s valid_json={r['extraction'] is not None} truncated={r.get('truncated')} elapsed={r['elapsed']:.0f}s eta={r['eta']:.0f}s"
+                                                   + (f" ERROR {r['error'][:80]}" if r.get('error') else ""), flush=True))
     s = summarize(recs)
     typer.echo("\nSPEED / VALIDITY (this machine, this run)")
     typer.echo(f"  JSON-valid rate:        {s['json_valid_rate']:.1%}  ({s['errors']} call errors)")
     typer.echo(f"  generation tokens/s:    {s['generation_tokens_per_s']:.1f}   prompt tokens/s: {s['prompt_tokens_per_s']:.1f}")
-    typer.echo(f"  seconds/filing p50/p95: {s['seconds_p50_all']:.1f} / {s['seconds_p95_all']:.1f}  (all 30, includes the first cold-load call of {s['first_call_seconds']:.1f}s)")
+    typer.echo(f"  seconds/filing p50/p95: {s['seconds_p50_all']:.1f} / {s['seconds_p95_all']:.1f}  (all {len(recs)}, includes the first cold-load call of {s['first_call_seconds']:.1f}s)")
     typer.echo(f"                          {s['seconds_p50_excl_first']:.1f} / {s['seconds_p95_excl_first']:.1f}  (excluding the first call)")
     sc = score(L, recs, Path(pdf_dir))
-    typer.echo("\nSCORES vs UNREVIEWED drafts, not gold")
+    typer.echo("\nSCORES vs SILVER labels (AI-made, not human-verified)")
     for k in ("json_valid_rate", "verifier_pass_rate", "s2_recovery", "unsupported_claim_rate", "event_precision", "event_recall", "event_f1",
               "event_other_f1", "event_fuzzy_recall", "cause_accuracy"):
         typer.echo(f"  {k:24} {sc[k]:.3f}")

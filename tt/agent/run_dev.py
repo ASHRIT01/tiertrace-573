@@ -31,12 +31,19 @@ def build_user(L_file: Path, mask_block: bool = True) -> str:
 OPTIONS = {"temperature": 0, "seed": 0, "presence_penalty": 0}  # explicit: the qwen3.5 Modelfile defaults to temperature 1 and presence_penalty 1.5
 
 
-def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144, chat=None, progress=None) -> list[dict]:
-    """One call per filing: thinking off, schema-constrained, options set explicitly. `chat` is injectable for tests."""
-    chat = chat or ollama.chat
+def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144, chat=None, progress=None, resume: bool = False,
+        timeout: float = 300.0) -> list[dict]:
+    """One call per filing: thinking off, schema-constrained, options set explicitly, keep_alive 30m, per-call timeout (recorded, not
+    hanging), truncation flag. resume=True keeps filings already in `out` and runs only the rest. `chat` is injectable for tests."""
+    chat = chat or ollama.Client(timeout=timeout).chat
     recs = []
-    with open(out, "w") as f:
-        for i, name in enumerate(files, 1):
+    if resume and out.exists():
+        recs = [json.loads(l) for l in out.read_text().splitlines() if l.strip()]
+    done = {r["file"] for r in recs}
+    todo = [n for n in files if n not in done]
+    t_start = time.monotonic()
+    with open(out, "a" if resume else "w") as f:
+        for i, name in enumerate(todo, 1):
             t0 = time.monotonic()
             opts = {**OPTIONS, "num_ctx": ctx}
             try:
@@ -47,17 +54,22 @@ def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144,
                     ex = json.loads(r.message.content)
                 except Exception:
                     ex = None
+                dr = getattr(r, "done_reason", None)
+                pe, ev = r.prompt_eval_count or 0, r.eval_count or 0
                 rec = {"file": name, "extraction": ex, "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False,
                        "eval_count": r.eval_count, "eval_duration_ns": r.eval_duration,
                        "prompt_eval_count": r.prompt_eval_count, "prompt_eval_duration_ns": r.prompt_eval_duration,
-                       "done_reason": getattr(r, "done_reason", None), "total_duration_ns": getattr(r, "total_duration", None),
+                       "done_reason": dr, "total_duration_ns": getattr(r, "total_duration", None),
+                       "truncated": dr == "length" or pe + ev >= ctx,
                        "raw": r.message.content if ex is None else None}
-            except Exception as e:  # keep going; record the failure
-                rec = {"file": name, "extraction": None, "error": str(e), "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False}
+            except Exception as e:  # keep going; record the failure (a timeout is recorded as such)
+                rec = {"file": name, "extraction": None, "error": str(e), "timeout": "timed out" in str(e).lower() or "timeout" in type(e).__name__.lower(),
+                       "seconds": time.monotonic() - t0, "model": model, "options": opts, "think": False}
             recs.append(rec)
             f.write(json.dumps(rec) + "\n"); f.flush()
             if progress:
-                progress(i, len(files), rec)
+                el = time.monotonic() - t_start
+                progress(i, len(todo), {**rec, "elapsed": el, "eta": el / i * (len(todo) - i)})
     return recs
 
 

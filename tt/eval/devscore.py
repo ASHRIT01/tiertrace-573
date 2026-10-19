@@ -35,7 +35,8 @@ def _same(a: str, b: str) -> bool:
 def gold_supplier(L: dict) -> tuple[str | None, str]:
     for c in L["claims"]:
         if c["id"] == "S2":
-            name = c["label"].split(": ", 1)[1].split(" (")[0] if c["status"] == "SUPPORTED" else None
+            lab = c.get("label", "")
+            name = (c.get("name") or (lab.split(": ", 1)[1].split(" (")[0] if ": " in lab else None)) if c["status"] == "SUPPORTED" else None
             return name, c["status"]
     return None, "NOT_REPORTED"
 
@@ -62,16 +63,25 @@ def score(labels: list[dict], preds: list[dict], pdf_dir: Path, aliases: AliasTa
             except ValidationError:
                 ex = None
         m["valid"] += ex is not None
+        if st == "CONTESTED":   # excluded from S2 scoring
+            st = "NOT_REPORTED"
+            m["s2_contested"] = m.get("s2_contested", 0) + 1
+            skip_s2 = True
+        else:
+            skip_s2 = False
         if ex is None:  # invalid output counts against recovery, not as an unsupported claim
-            m["s2_gold_supported"] += st == "SUPPORTED"
-            m["s2_not_supported_gold"] += st != "SUPPORTED"
+            if not skip_s2:
+                m["s2_gold_supported"] += st == "SUPPORTED"
+                m["s2_not_supported_gold"] += st != "SUPPORTED"
             for k, v in _gold_counts(L).items():
                 m[k] += v
             m["cause_n"] += 1
             continue
         m["verifier_pass"] += not verify(ex, doc, aliases)
         asserted = [c for c in ex.companies if c.role in SUPPLIER_ROLES and c.status == "SUPPORTED"]
-        if st == "SUPPORTED":
+        if skip_s2:
+            pass
+        elif st == "SUPPORTED":
             m["s2_gold_supported"] += 1
             m["s2_recovered"] += any(_same(c.name, name) and norm(c.evidence.quote) in norm(doc.sections.get(c.evidence.section, "")) for c in asserted)
         else:
