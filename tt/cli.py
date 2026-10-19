@@ -194,7 +194,7 @@ def dev_fetch(rate: float = 1.0):
 @app.command("dev-bench")
 def dev_bench(model: str = typer.Option(..., "--model", help="exact installed tag, e.g. qwen3.5:4b-q4_K_M"), ctx: int = 6144,
               out: str = "", labels: str = "reports/dev_labels_draft.json", pdf_dir: str = "data/dev_raw", resume: bool = False,
-              timeout: float = 300.0, prompt: str = "v1"):
+              timeout: float = 300.0, prompt: str = "v1", temperature: float = 0.0, seed: int = 0):
     """Run ONE named model over the 30 dev filings (thinking off, temperature 0 set explicitly), then print JSON-valid rate, tokens/s,
     p50/p95 seconds per filing, and scores vs the UNREVIEWED label drafts. Never pulls a model."""
     import json
@@ -214,7 +214,7 @@ def dev_bench(model: str = typer.Option(..., "--model", help="exact installed ta
     outp = Path(out or f"runs/dev_bench_{model.replace(':', '_').replace('/', '_')}.jsonl")
     outp.parent.mkdir(exist_ok=True)
     typer.echo(f"model={model} think=False options={ {**OPTIONS, 'num_ctx': ctx} } filings={len(L)} -> {outp}")
-    recs = run(model, [l["file"] for l in L], Path(pdf_dir), outp, ctx, resume=resume, timeout=timeout, prompt=prompt,
+    recs = run(model, [l["file"] for l in L], Path(pdf_dir), outp, ctx, resume=resume, timeout=timeout, prompt=prompt, extra_options={"temperature": temperature, "seed": seed},
                progress=lambda i, n, r: print(f"  {i}/{n} {r['file']} {r['seconds']:.1f}s valid_json={r['extraction'] is not None} truncated={r.get('truncated')} elapsed={r['elapsed']:.0f}s eta={r['eta']:.0f}s"
                                                    + (f" ERROR {r['error'][:80]}" if r.get('error') else ""), flush=True))
     s = summarize(recs)

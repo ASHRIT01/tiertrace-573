@@ -31,22 +31,24 @@ SYSTEM_V2 = SYSTEM + (
 PROMPTS = {"v1": SYSTEM, "v2": SYSTEM_V2}
 
 
+def build_user_from(cause: str, chronology: str, block_name: str | None, filer: str, filing_date, mask_block: bool = True) -> str:
+    text = "CAUSE:\n" + cause + "\n\n" + "CHRONOLOGY:\n" + chronology
+    if mask_block and block_name:
+        text = mask_text(text, block_name)
+    return f"filer={filer}; filing_date={filing_date}\n<data>{text}</data>"
+
+
 def build_user(L_file: Path, mask_block: bool = True) -> str:
     d = load(L_file)
-    s = d["sections"]
-    parts = ["CAUSE:\n" + s.get("cause", ""), "CHRONOLOGY:\n" + s.get("chronology", "")]
-    text = "\n\n".join(parts)
-    if mask_block and d["block"].name:
-        text = mask_text(text, d["block"].name)
-    h = d["header"]
-    return f"filer={h['filer']}; filing_date={h['filing_date']}\n<data>{text}</data>"
+    s, h = d["sections"], d["header"]
+    return build_user_from(s.get("cause", ""), s.get("chronology", ""), d["block"].name, h["filer"], h["filing_date"], mask_block)
 
 
 OPTIONS = {"temperature": 0, "seed": 0, "presence_penalty": 0}  # explicit: the qwen3.5 Modelfile defaults to temperature 1 and presence_penalty 1.5
 
 
 def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144, chat=None, progress=None, resume: bool = False,
-        timeout: float = 300.0, prompt: str = "v1") -> list[dict]:
+        timeout: float = 300.0, prompt: str = "v1", extra_options: dict | None = None) -> list[dict]:
     """One call per filing: thinking off, schema-constrained, options set explicitly, keep_alive 30m, per-call timeout (recorded, not
     hanging), truncation flag. resume=True keeps filings already in `out` and runs only the rest. `chat` is injectable for tests."""
     chat = chat or ollama.Client(timeout=timeout).chat
@@ -59,7 +61,7 @@ def run(model: str, files: list[str], pdf_dir: Path, out: Path, ctx: int = 6144,
     with open(out, "a" if resume else "w") as f:
         for i, name in enumerate(todo, 1):
             t0 = time.monotonic()
-            opts = {**OPTIONS, "num_ctx": ctx}
+            opts = {**OPTIONS, **(extra_options or {}), "num_ctx": ctx}
             try:
                 r = chat(model=model, think=False, keep_alive="30m",
                          messages=[{"role": "system", "content": PROMPTS[prompt]}, {"role": "user", "content": build_user(pdf_dir / name)}],
