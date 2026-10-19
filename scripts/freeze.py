@@ -35,7 +35,7 @@ SPLITS = ["data/splits/dev_ids.txt", "data/splits/testA_ids.txt"]
 PROPOSED = ["testA_labelled_ids.txt", "testB_ids.txt", "unseen_filer_ids.txt"]
 VERIFIER = ["tt/verify/verifier.py", "tt/verify/extra.py"]
 LABEL_PROMPTS = ["docs/PASS_B_PROMPT.txt", "docs/PASS_C_PROMPT.txt", "docs/LABELING_RULES.md"]
-LABEL_ROLES = ["pass_a_drafter", "pass_b_labeller", "pass_c_adjudicator", "heldout_attack_author"]
+LABEL_ROLES = ["pass_a_drafter", "pass_b_labeller", "pass_c_adjudicator"]   # test roles: must be exact Claude model IDs; dev roles are recorded verbatim
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 if not OLLAMA_HOST.startswith("http"):
     OLLAMA_HOST = "http://" + OLLAMA_HOST
@@ -170,11 +170,12 @@ def gather() -> tuple[dict, list[str], list[str]]:
     # 5. labelling
     lm = json.loads((ROOT / "config/labelling_model.json").read_text())
     for r in LABEL_ROLES:
-        if not re.fullmatch(r"claude-[A-Za-z0-9.\-]+", str(lm.get(r, ""))):
-            problems.append(f"config/labelling_model.json: {r} must be an exact Claude model ID (got {lm.get(r)!r})")
-    man["labelling"] = {"claude_models": {r: lm.get(r) for r in LABEL_ROLES}, "sha256": {Path(f).name: sha(ROOT / f) for f in LABEL_PROMPTS},
+        if not re.fullmatch(r"claude-[A-Za-z0-9.\-]+", str(lm.get("test", {}).get(r, ""))):
+            problems.append(f"config/labelling_model.json: test.{r} must be an exact Claude model ID (got {lm.get('test', {}).get(r)!r})")
+    man["labelling"] = {"claude_models_test": {r: lm["test"].get(r) for r in LABEL_ROLES}, "claude_models_dev_not_recorded": lm.get("dev"), "alias_note": lm.get("note"), "sha256": {Path(f).name: sha(ROOT / f) for f in LABEL_PROMPTS},
                         "blind_to_runs": "tt/labels/blind.py refuses any path in runs/ (sha256 " + sha(ROOT / "tt/labels/blind.py") + ")"}
-    L += ["", "  labelling:"] + [f"    Claude model, {r}: {lm.get(r)!r}" for r in LABEL_ROLES]
+    L += ["", "  labelling:"] + [f"    Claude model, test {r}: {lm['test'].get(r)!r}" for r in LABEL_ROLES]
+    L += [f"    dev {k}: {v}" for k, v in lm.get("dev", {}).items()] + ["    (aliases as passed to the Agent tool; alias-to-version mapping cannot be proven from inside a subagent)"]
     L += [f"    sha256 {Path(f).name:24} {man['labelling']['sha256'][Path(f).name]}" for f in LABEL_PROMPTS]
     L.append(f"    blind guard tt/labels/blind.py sha256 {sha(ROOT / 'tt/labels/blind.py')}")
     return man, L, problems

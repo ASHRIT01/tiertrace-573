@@ -2,7 +2,7 @@
  "status": "PROPOSED_NOT_APPROVED",
  "status_note": "Every number below is a PROPOSAL. The owner edits the values, sets status to OWNER_APPROVED and sets primary_endpoint to one endpoint id. scripts/freeze.py refuses otherwise. proposed_primary is a suggestion only and is never used by the script.",
  "proposed_primary": "H1",
- "primary_endpoint": null,
+ "primary_endpoint": "H1",
  "bootstrap": {"resamples": 2000, "seed": 0, "level": 0.95, "unit": "filer cluster"},
  "endpoints": {
   "H1": {"tier": "primary-proposal", "claim": "event", "scored_set": "Test-A labelled",

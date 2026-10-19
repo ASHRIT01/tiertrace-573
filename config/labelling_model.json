@@ -1,8 +1,13 @@
 {
- "status": "UNSET",
- "note": "The owner fills the exact Claude model ID used for each role before approving (e.g. claude-sonnet-5-5), and every Agent call in Phase 6 must pass that model explicitly. scripts/freeze.py refuses empty values or an UNSET status.",
- "pass_a_drafter": "",
- "pass_b_labeller": "",
- "pass_c_adjudicator": "",
- "heldout_attack_author": ""
+ "status": "DECLARED",
+ "note": "Test roles are a declared plan: every Phase 6 Agent call passes the model named here explicitly. The mapping from a model alias to an exact model version cannot be proven from inside a subagent, so these are aliases as passed, not verified versions. Dev roles are recorded as they are; they were not logged at the time.",
+ "test": {
+  "pass_a_drafter": "claude-sonnet-5-5",
+  "pass_b_labeller": "claude-opus-5-5",
+  "pass_c_adjudicator": "claude-opus-5-5"
+ },
+ "dev": {
+  "labels": "not recorded: Claude via Claude Code (claude-opus-5-5 or claude-sonnet-5-5, switched during the work)",
+  "heldout_attack_author": "not recorded: Claude subagent, session model at the time"
+ }
 }
