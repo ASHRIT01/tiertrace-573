@@ -43,14 +43,8 @@
    "x_is_A": 24
   }
  },
- "check_failures": [
-  [
-   "RCLRPT-24E071-6470.pdf",
-   "Q1",
-   "S1 quote not in block: 'Name : ICM Controls'"
-  ]
- ],
- "sha256": "59b2ca3d602c0dd2dca040a4ea6f1cd3e257d49b5a7b0ce5d82c32e599e5e2d9",
+ "check_failures": [],
+ "sha256": "31a734f3731de70df5092828ea70d6538b795d0623e78192aef06cdfccaa88ed",
  "contested": 2,
  "events": 158
 }

@@ -58,6 +58,9 @@ def main():
     if cmd == "passa":
         cli("pass-a", "--selection", f"{rel}/selection.json", "--drafts", "", "--pdf-dir", P["raw"], "--out", f"{rel}/passA.json",
             "--event-overrides", P["ov_ev"], "--claim-overrides", P["ov_cl"])
+        chk = subprocess.run([sys.executable, "-c", "import json,sys;sys.path.insert(0,'.');from pathlib import Path;from tt.labels.schema import check;"
+                              f"print(check(json.load(open('{rel}/passA.json')), Path('{P['raw']}')))"], cwd=ROOT, capture_output=True, text=True)
+        print("PASS A code checks (Q1-Q4):", chk.stdout.strip() or chk.stderr[-300:])
     elif cmd == "export":
         (w / "files.json").write_text(json.dumps([f["file"] for f in files]))
         cli("label-export", f"{rel}/files.json", f"{rel}/passB", "--pdf-dir", P["raw"], "--per-batch", str(N))
