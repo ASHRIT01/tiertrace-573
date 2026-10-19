@@ -1,0 +1,593 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-23E020-3987.PDF",
+   "year": 2023,
+   "filer": "Gilbarco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E031-5488.PDF",
+   "year": 2023,
+   "filer": "Meritor, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E033-7392.PDF",
+   "year": 2023,
+   "filer": "3M Transportation Safety Division",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E068-9689.PDF",
+   "year": 2023,
+   "filer": "Hyundam Industrial",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E072-1814.PDF",
+   "year": 2023,
+   "filer": "Precision Circuits Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E073-6451.PDF",
+   "year": 2023,
+   "filer": "Mando America Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E082-7103.PDF",
+   "year": 2023,
+   "filer": "Trans-Air Manufacturing Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E086-7725.PDF",
+   "year": 2023,
+   "filer": "Cruise LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V008-6503.PDF",
+   "year": 2023,
+   "filer": "Gratimax, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V009-5168.PDF",
+   "year": 2023,
+   "filer": "Lode-King Industries, Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V035-6346.PDF",
+   "year": 2023,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V053-3046.PDF",
+   "year": 2023,
+   "filer": "Bombardier Recreational Products, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V095-6996.PDF",
+   "year": 2023,
+   "filer": "Electra Meccanica Vehicles Corp",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V147-7099.PDF",
+   "year": 2023,
+   "filer": "Newell Coach Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V148-5089.PDF",
+   "year": 2023,
+   "filer": "Terex Advance Mixer, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V161-6181.PDF",
+   "year": 2023,
+   "filer": "Kibbi, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V219-8343.PDF",
+   "year": 2023,
+   "filer": "Capacity of Texas",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V245-8278.PDF",
+   "year": 2023,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V329-1334.PDF",
+   "year": 2023,
+   "filer": "Ferrari North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V448-5435.PDF",
+   "year": 2023,
+   "filer": "Lion Electric Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V475-7264.PDF",
+   "year": 2023,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V481-6313.PDF",
+   "year": 2023,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V493-9698.PDF",
+   "year": 2023,
+   "filer": "Pleasure Way Industries, Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V497-8020.PDF",
+   "year": 2023,
+   "filer": "Vanguard National Trailer Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V498-4108.PDF",
+   "year": 2023,
+   "filer": "SPORTSMOBILE TEXAS, INC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V515-4321.PDF",
+   "year": 2023,
+   "filer": "Kawasaki Motors Corp., U.S.A.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V521-1631.PDF",
+   "year": 2023,
+   "filer": "Lucid USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V530-7086.PDF",
+   "year": 2023,
+   "filer": "Chinook Motor Coach, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V564-3664.PDF",
+   "year": 2023,
+   "filer": "Isuzu Motors Limited",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V582-4641.PDF",
+   "year": 2023,
+   "filer": "Indian Motorcycle Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V684-9960.PDF",
+   "year": 2023,
+   "filer": "T.A. Pelsue",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V729-6413.PDF",
+   "year": 2023,
+   "filer": "Chinook Motor Coach, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V748-7343.PDF",
+   "year": 2023,
+   "filer": "Alexis Fire Equipment Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V781-9407.PDF",
+   "year": 2023,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V796-1556.PDF",
+   "year": 2023,
+   "filer": "McLaren Automotive Incorporated",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V859-1885.PDF",
+   "year": 2023,
+   "filer": "Doosan Portable Power",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V873-6101.PDF",
+   "year": 2023,
+   "filer": "REV Ambulance Group Orlando, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E024-4323.PDF",
+   "year": 2024,
+   "filer": "Chrysler (FCA US, LLC)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E026-6783.PDF",
+   "year": 2024,
+   "filer": "Freedman Seating Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E043-6603.PDF",
+   "year": 2024,
+   "filer": "Firefly Integrations, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E051-6147.PDF",
+   "year": 2024,
+   "filer": "Hendrickson USA. L.L.C.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E067-1013.PDF",
+   "year": 2024,
+   "filer": "Cruise LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24E092-3134.PDF",
+   "year": 2024,
+   "filer": "Continental Automotive Systems, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V038-8261.PDF",
+   "year": 2024,
+   "filer": "Suzuki Motor USA, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V057-9009.PDF",
+   "year": 2024,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V149-8136.PDF",
+   "year": 2024,
+   "filer": "LIVEWIRE EV, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V203-1211.PDF",
+   "year": 2024,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V219-6791.PDF",
+   "year": 2024,
+   "filer": "Lamborghini (Automobili Lamborghini)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V247-4988.PDF",
+   "year": 2024,
+   "filer": "Winnebago Towable",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V285-9407.PDF",
+   "year": 2024,
+   "filer": "Winnebago Towable",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V347-4177.PDF",
+   "year": 2024,
+   "filer": "Custom Truck And Body Works",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V358-2557.PDF",
+   "year": 2024,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V379-7287.PDF",
+   "year": 2024,
+   "filer": "Karma Automotive LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V389-8924.PDF",
+   "year": 2024,
+   "filer": "HOST INDUSTRIES",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V429-7759.PDF",
+   "year": 2024,
+   "filer": "Forest River Bus, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V460-2667.PDF",
+   "year": 2024,
+   "filer": "Lion Electric Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V495-3479.PDF",
+   "year": 2024,
+   "filer": "Lucid USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V524-5942.PDF",
+   "year": 2024,
+   "filer": "Volvo Bus Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V620-8075.PDF",
+   "year": 2024,
+   "filer": "Kalmar Solutions, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V647-3002.pdf",
+   "year": 2024,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V670-1290.PDF",
+   "year": 2024,
+   "filer": "Trail King Industries, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V701-1046.PDF",
+   "year": 2024,
+   "filer": "Lamborghini (Automobili Lamborghini)",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V781-6389.PDF",
+   "year": 2024,
+   "filer": "Motiv Power Systems",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V844-7354.PDF",
+   "year": 2024,
+   "filer": "Nikola Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V885-4062.PDF",
+   "year": 2024,
+   "filer": "Brinkley RV",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V931-9261.PDF",
+   "year": 2024,
+   "filer": "Featherlite Trailer Manufacturing, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V933-4637.PDF",
+   "year": 2024,
+   "filer": "VinFast Auto, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V939-5483.PDF",
+   "year": 2024,
+   "filer": "Polestar Automotive USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V940-8922.PDF",
+   "year": 2024,
+   "filer": "Polestar Automotive USA, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-24V964-8436.pdf",
+   "year": 2024,
+   "filer": "Orange EV",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E007-3917.PDF",
+   "year": 2025,
+   "filer": "Samsung SDI Co., Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E009-8553.PDF",
+   "year": 2025,
+   "filer": "Firefly Integrations, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E024-9877.PDF",
+   "year": 2025,
+   "filer": "ILJIN Hysolus",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E036-8756.pdf",
+   "year": 2025,
+   "filer": "Holley Performance Products",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E037-4912.pdf",
+   "year": 2025,
+   "filer": "Zoox, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E048-6886.pdf",
+   "year": 2025,
+   "filer": "Bendix Commercial Vehicle Systems, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E058-9353.pdf",
+   "year": 2025,
+   "filer": "ZF North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E073-6952.pdf",
+   "year": 2025,
+   "filer": "Bendix Commercial Vehicle Systems, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25E076-9018.pdf",
+   "year": 2025,
+   "filer": "Eaton Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V006-1666.PDF",
+   "year": 2025,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V068-2775.PDF",
+   "year": 2025,
+   "filer": "ZEEKR TECHNOLOGY US, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V101-2428.pdf",
+   "year": 2025,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V292-4296.PDF",
+   "year": 2025,
+   "filer": "K.Z., Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V342-8629.pdf",
+   "year": 2025,
+   "filer": "Battle Motors, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V468-3921.pdf",
+   "year": 2025,
+   "filer": "American Manufacturing Operations, INC.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V491-8213.pdf",
+   "year": 2025,
+   "filer": "Grech Motors Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V493-6422.pdf",
+   "year": 2025,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V497-2087.pdf",
+   "year": 2025,
+   "filer": "Brinkley RV",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V558-2502.pdf",
+   "year": 2025,
+   "filer": "Midwest Fire Equipment & Repair Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V580-8142.pdf",
+   "year": 2025,
+   "filer": "International Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V625-0070.pdf",
+   "year": 2025,
+   "filer": "Wabash National Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V783-5866.pdf",
+   "year": 2025,
+   "filer": "International Motors, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-25V843-5844.pdf",
+   "year": 2025,
+   "filer": "Micro Bird USA LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E004-0495.pdf",
+   "year": 2026,
+   "filer": "Lippert",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26E008-5432.pdf",
+   "year": 2026,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V063-7895.pdf",
+   "year": 2026,
+   "filer": "Daimler Coaches North America",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V093-5181.pdf",
+   "year": 2026,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-26V105-2893.pdf",
+   "year": 2026,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  }
+ ],
+ "unreadable": []
+}

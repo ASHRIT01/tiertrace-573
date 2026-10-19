@@ -72,3 +72,6 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: a supplier's own Part 573 filing (Weldon, 26V521): typed OTHER by Pass C (D009).
 - Pass A code bug seen again: "8/27/26: ... voted in favor" excluded as status statement (26V554), fixed by include override.
 - Multi-supplier block 26V581 (Astotec / Joyson): joined names; manual S1 quote override (D-T3).
+
+## Unseen-filer fetch
+- D-T1 (again): 23V320 and 24V945 have no text layer (scanned); excluded and never replaced; see reports/phase_6_unseen_fetch.md. 98 of 100 labelled.
