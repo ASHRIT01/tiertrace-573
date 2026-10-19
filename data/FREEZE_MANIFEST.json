@@ -1,0 +1,277 @@
+{
+ "leak_check": {
+  "leak_files": [],
+  "waivers": {
+   "24V284": "Downloaded and read as a parser golden file (config/golden_urls.txt, tests/test_golden.py, tests/test_layout.py) before the splits were final. In the Test-A list of 1,000 only; in no scored subset (not Test-A labelled, Test-B or unseen-filer). Files kept; never used in any analysis."
+  },
+  "scanned": {
+   "data": 2232,
+   "runs": 28,
+   "reports": 40
+  },
+  "cross_references": {
+   "data/api_cache/si_23V867.json": [
+    "23V626"
+   ],
+   "data/api_cache/si_25V224.json": [
+    "24V928"
+   ],
+   "data/audit_raw/RCLRPT-25V224-9205.PDF": [
+    "24V928"
+   ],
+   "data/audit_raw/RCLRPT-25V782-3862.pdf": [
+    "24E099"
+   ],
+   "data/audit_raw/RCLRPT-26V336-9398.pdf": [
+    "26E032"
+   ],
+   "data/cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25V224-9205.PDF": [
+    "24V928"
+   ],
+   "data/cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25V782-3862.pdf": [
+    "24E099"
+   ],
+   "data/cache/static.nhtsa.gov_odi_rcl_2026_RCLRPT-26E042-9936.pdf": [
+    "26E022"
+   ],
+   "data/cache/static.nhtsa.gov_odi_rcl_2026_RCLRPT-26V336-9398.pdf": [
+    "26E032"
+   ],
+   "data/raw/RCLRPT-26E042-9936.pdf": [
+    "26E022"
+   ]
+  },
+  "excluded_matches": {
+   "data/processed/campaigns.csv": {
+    "n_ids": 1100,
+    "sorted_ids_sha256": "ee1ffdbbe971ae0a22b32410a3029abe368ff3edec0213f6278897b5be4215f2"
+   },
+   "data/splits/README.md": {
+    "n_ids": 1,
+    "sorted_ids_sha256": "48e888844c909d94bef3a28c03c5161a57c841da071e5aa85d6e79cbd11717a6"
+   },
+   "data/splits/proposed/testA_labelled_ids.txt": {
+    "n_ids": 200,
+    "sorted_ids_sha256": "2fe9c5130d96f8b0af6cb20342bb115873252b528cf5ad56daa4d8ecbbb19d0b"
+   },
+   "data/splits/proposed/testB_ids.txt": {
+    "n_ids": 100,
+    "sorted_ids_sha256": "bc83f176285ae5617ed8671c61d08c827bf72f5836c5bf55e18eb3840b4bfc67"
+   },
+   "data/splits/proposed/unseen_filer_ids.txt": {
+    "n_ids": 100,
+    "sorted_ids_sha256": "1e4114e86c1afb8cbba752d40dc652e734feb901d9ee6a10e4c186db130f2ac0"
+   },
+   "data/splits/testA_ids.txt": {
+    "n_ids": 1000,
+    "sorted_ids_sha256": "04edba216e3f66778c503e8de1229bafad9f452cda5998f713aa9ba54109d7e3"
+   },
+   "reports/PREREGISTRATION_PROPOSED_FINAL.md": {
+    "n_ids": 6,
+    "sorted_ids_sha256": "a0778d70116e35855eacc209e9f6a2bbdfd716f9f7180f9884a01ec98e3fb0fb"
+   }
+  }
+ },
+ "git_commit": "969a65cd2ab8471e5e63e98b4a004c55f8be622a",
+ "scorer_files": [
+  "tt/eval/devscore.py",
+  "tt/eval/diagnose.py",
+  "tt/eval/endpoints.py",
+  "tt/eval/phase3.py",
+  "tt/eval/phase4.py",
+  "tt/eval/riskcov.py"
+ ],
+ "hashes": {
+  "agent_prompt_v2_system": "a1464bfbb4b8b46b866bf9be9eec1233134faa63551ff93b2d2da4b9e4080708",
+  "agent_output_schema": "ba79b8053e35ca0bc61ce99951903eabc6df49fa8396fe97dc1eede169b237a3",
+  "agent_user_message_template": "751e7503e7fb4f311b5d7a91bd76103de50260424d13b627e1f2028bf0255459",
+  "thresholds_file": "d1dc231747eba62d2274dbd923f34a9e58327fe61421c11eab636037ecfba64f",
+  "verifier:verifier.py": "e9c6a147d0921b60196a6fd212bd9440284dbb3db74c090ca8e971f5f045189e",
+  "verifier:extra.py": "330ac1956154d447c212f0425dd8b21f3ff549949de1754940d627a574ddbb15",
+  "preregistration_proposed_final": "1026b8809bd81aeee9ec9efb01734751e40ea698269c955b3d3d48c1bc829dff",
+  "scorer:devscore.py": "67a49fc047afa910c2ce66c3269d064e56abe0bde1d04b7cc9d6a46f84e07dcb",
+  "scorer:diagnose.py": "e8892c89a487d9cce1fa5cf72ac122d6a2d355b1bd5f3909aa28a9a3deb690bf",
+  "scorer:endpoints.py": "c70ed9dfd71051078eeae7cd31fe9e30e86516984a5fb5f69fe2a29bb4cb3cf9",
+  "scorer:phase3.py": "45daaef94c248a0b794e0e96d0bfe4e8d7f60cd5fe006599def7eb7f3ffd7ca5",
+  "scorer:phase4.py": "dbb7472ea58fac4c54e73547efe8144846b651917836acf569e5468da99764b2",
+  "scorer:riskcov.py": "9492242d3fde23ea0381e2f5691d64c0d50fce788a1e2892a5057d150fb97bd2"
+ },
+ "primary_endpoint": "H1",
+ "ollama_version": "ollama version is 0.40.6",
+ "models": {
+  "qwen3.5:4b-q4_K_M": {
+   "role": "agent",
+   "model": "qwen3.5:4b-q4_K_M",
+   "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+   "size_bytes": 3324173934,
+   "modified_at": "2026-10-18T20:24:08.023393856+05:30",
+   "details": {
+    "parent_model": "model.gguf",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "4.2B",
+    "quantization_level": "Q4_K_M",
+    "context_length": 262144,
+    "embedding_length": 2560,
+    "runner": "llamacpp"
+   },
+   "ollama_show_sha256": "82b81d8d8a7d944c186217f1c5fae70ea361b584db8604783a889ab9ed14668b",
+   "weight_blobs_verified": {
+    "a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50": true,
+    "e56a899b1540860385465756dd308c84417410b94dbc1c380adffd20a921ca60": true
+   },
+   "modelfile_sha256": "a1800b4545872ddb1725adc5110bdba9d79ad9e3f85e1298e5ff3f07c00923cb"
+  },
+  "qwen3.5:2b-q8_0": {
+   "role": "dev_only",
+   "model": "qwen3.5:2b-q8_0",
+   "digest": "0689d44085e06d165161a8a9a1731344278cfb5aade63a3c3dbdb48ab54b130a",
+   "size_bytes": 2683396812,
+   "modified_at": "2026-10-18T20:26:06.88278513+05:30",
+   "details": {
+    "parent_model": "model.gguf",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+     "qwen35"
+    ],
+    "parameter_size": "1.9B",
+    "quantization_level": "Q8_0",
+    "context_length": 262144,
+    "embedding_length": 2048,
+    "runner": "llamacpp"
+   },
+   "ollama_show_sha256": "e608641bc76787424216241880511b16a10f7ab04693e2472433b00588cb21f2",
+   "weight_blobs_verified": {
+    "e8bf47d40c5ba68baf8f3e503ee36710da6e8641cb0a670a508cff5b3f0cfbf7": true,
+    "5ddf560e34046fd958b2576324f2a9b57d70f297afe6526958d60a23f3bfc20b": true
+   },
+   "modelfile_sha256": "dc96f8db080716badd47a06dbdeb804f2691f01db60e91ca9347270a65485b6b"
+  }
+ },
+ "seeds_and_options": {
+  "declared": {
+   "agent_model": "qwen3.5:4b-q4_K_M",
+   "dev_only_model": "qwen3.5:2b-q8_0",
+   "prompt": "v2",
+   "think": false,
+   "run1": {
+    "temperature": 0.0,
+    "seed": 0,
+    "presence_penalty": 0,
+    "num_ctx": 6144
+   },
+   "run2": {
+    "temperature": 0.5,
+    "seed": 1,
+    "presence_penalty": 0,
+    "num_ctx": 6144
+   },
+   "bootstrap": {
+    "resamples": 2000,
+    "seed": 0
+   },
+   "split_seed": 0,
+   "subset_sizes": {
+    "testA_labelled": 200,
+    "testB": 100,
+    "unseen_filer": 100
+   },
+   "injection_fixture_seed": 0
+  },
+  "from_code": {
+   "run1_options": {
+    "temperature": 0,
+    "seed": 0,
+    "presence_penalty": 0
+   },
+   "num_ctx_default": 6144,
+   "dev_bench_default_temperature": 0.0,
+   "dev_bench_default_seed": 0,
+   "bootstrap_resamples": 2000,
+   "bootstrap_seed": 0,
+   "draw_splits_seed": 0,
+   "phase6_subsets_seed": 0
+  }
+ },
+ "labelling": {
+  "claude_models_test": {
+   "pass_a_drafter": "code (tt/labels/draft.py, events.py, dates.py) + per-filing overrides written by the Claude Code session (claude-sonnet-5-5 for test)",
+   "pass_b_labeller": "claude-opus-5-5",
+   "pass_c_adjudicator": "claude-opus-5-5"
+  },
+  "claude_models_dev_not_recorded": {
+   "labels": "not recorded: Claude via Claude Code (claude-opus-5-5 or claude-sonnet-5-5, switched during the work)",
+   "heldout_attack_author": "not recorded: Claude subagent, session model at the time"
+  },
+  "alias_note": "Test roles are a declared plan: every Phase 6 Agent call passes the model named here explicitly. The mapping from a model alias to an exact model version cannot be proven from inside a subagent, so these are aliases as passed, not verified versions. Dev roles are recorded as they are; they were not logged at the time. Pass A has no prompt text: it is the code plus per-split override files (config/overrides/test_<split>_*.json), written blind to runs/ and hashed and committed when labelling finishes.",
+  "sha256": {
+   "PASS_B_PROMPT.txt": "6cc1bca13fa534e7493ed5cebc08285cec82835db9e4dbb0d7685ab1ebec33c3",
+   "PASS_C_PROMPT.txt": "dac9fa2c414be3a71acf8b6eb8c53c870fac54a290d8bc9541845fc867d7698c",
+   "LABELING_RULES.md": "39b99cbabe6b8c9c100193837ee81574c3da48efc2ed22319a5684757a510876"
+  },
+  "blind_to_runs": "tt/labels/blind.py refuses any path in runs/ (sha256 7cfd8f93b9ee6b0faaf2baca77fdd19e9effb10d059d3a421459ee187cdbd52b)"
+ },
+ "files": {
+  "config/affiliates.csv": "0d11d4d12c9f9efbf599e87e010d61a559b7b46772802a3a549b962f065538b5",
+  "config/aliases.csv": "709cab6728e7b9b40db61dc846ae5edefb33506f2afa10a5a9043c23c7e089cd",
+  "config/claim_overrides.json": "52db5639ba498481be0513e87749e88797ca1b0d014bf2b3a43f87c3b733720e",
+  "config/event_overrides.json": "0a6dea306291293f266468583b8b880152f51852438351fa598d057355f8bafc",
+  "config/injection_heldout_v1.json": "4e70564571994eae4527d4a745916703322772422de40722d2da302e22e28a1c",
+  "config/labelling_model.json": "661c178894b2e37c505bb5535f605574291e65e1fe6692367d57b004c69b0a61",
+  "config/model.yaml": "55e3e9b42e20a3adec9adab940c2c28f6f7ead65de3963ead5e2805690e8fb58",
+  "config/run_settings.json": "7a13cd4a37e391d672c1ad8c071d03cde0bdf62c30e8c50a4c4a00328f0edbb9",
+  "config/thresholds.json": "d1dc231747eba62d2274dbd923f34a9e58327fe61421c11eab636037ecfba64f",
+  "data/labels/dev_silver_v1.json": "d17a30a4c710e1aadb46fb773f2b4759cea49eea3ba5457279ae3441be46f35e",
+  "data/labels/passA_v1.json": "16eac53ae910e4ae5eccbcee0a43b9961fc44de25d393b69c4366408d7e6818b",
+  "data/labels/passB_v1.json": "0ebb01880cb619e788c335df3137dd8a95ca7ded1fcd374738950b960b337f99",
+  "data/labels/passC_decisions_v1.json": "80f40fe1e75f3631ef416f6ce776f634e20c74541041da4bba681b5d7a8d2da2",
+  "docs/LABELING_RULES.md": "39b99cbabe6b8c9c100193837ee81574c3da48efc2ed22319a5684757a510876",
+  "docs/LABELS.md": "e1dcac7e4d1701873cafe332dd09cef5b5467e4c50b6fabbc7e53c26e3ee9b4f",
+  "docs/PASS_B_PROMPT.txt": "6cc1bca13fa534e7493ed5cebc08285cec82835db9e4dbb0d7685ab1ebec33c3",
+  "docs/PASS_C_PROMPT.txt": "dac9fa2c414be3a71acf8b6eb8c53c870fac54a290d8bc9541845fc867d7698c",
+  "docs/PHASE6_RUNBOOK.md": "85c47f615571461acbf38a4da5ed43719afbdc416b302ee17d3f5f420d494447",
+  "docs/PROMPT_LOG.md": "5802c8bbc22c930a242b698f227d108eab34e1be9c34858705c2b07508c167d8",
+  "reports/PREREGISTRATION_PROPOSED_FINAL.md": "1026b8809bd81aeee9ec9efb01734751e40ea698269c955b3d3d48c1bc829dff",
+  "scripts/freeze.py": "127b9aa03c2df0ce159dbe40d31dd9950c02a7e09bd0865cf2550c1cb9f623fa",
+  "tt/agent/agent.py": "63bc1ddaf96bac7de8ea03c13e3e815770fa3d9facf0ddf73e2fb8eed233214f",
+  "tt/agent/inject.py": "affab587c0b19b393a58b448098938b018ae703cac1f55dd053aa1b49859fec4",
+  "tt/agent/run_dev.py": "13be7b03cdcb3908e1b9cb20954fe31b0f22a2a40adcc070051ea545e73571da",
+  "tt/agent/schemas.py": "1ad98617688ac686db79564fc1a29166f8f6aa7dd36bf0912c8e70662d40bf76",
+  "tt/baselines/rules.py": "c8107810fe9b1d8471732d76978777fe0bb5dd82f0707756157585bdbb2ee397",
+  "tt/cli.py": "20b41b1b8597438401260c4fdc291ceb57e40bfce1495dd10bb63273d5b5b9b9",
+  "tt/eval/devscore.py": "67a49fc047afa910c2ce66c3269d064e56abe0bde1d04b7cc9d6a46f84e07dcb",
+  "tt/eval/diagnose.py": "e8892c89a487d9cce1fa5cf72ac122d6a2d355b1bd5f3909aa28a9a3deb690bf",
+  "tt/eval/endpoints.py": "c70ed9dfd71051078eeae7cd31fe9e30e86516984a5fb5f69fe2a29bb4cb3cf9",
+  "tt/eval/phase3.py": "45daaef94c248a0b794e0e96d0bfe4e8d7f60cd5fe006599def7eb7f3ffd7ca5",
+  "tt/eval/phase4.py": "dbb7472ea58fac4c54e73547efe8144846b651917836acf569e5468da99764b2",
+  "tt/eval/riskcov.py": "9492242d3fde23ea0381e2f5691d64c0d50fce788a1e2892a5057d150fb97bd2",
+  "tt/kind.py": "745b16cdbb3f08708288efc9f4f8465ab8a6a3c7998599f83317b716542183ac",
+  "tt/labeldraft.py": "ae749b0468f7c350548e6e58dec3ecd8596f0bef882e9fbfe57aedd2856990ec",
+  "tt/labels/agree.py": "616c61a4dbb95f91b23b4d5d266860f2e280b39eebf86cba6f4aa1d740c1c74c",
+  "tt/labels/blind.py": "7cfd8f93b9ee6b0faaf2baca77fdd19e9effb10d059d3a421459ee187cdbd52b",
+  "tt/labels/dates.py": "17836b82a3a468203ed37bf21e39b721d889ecc904081691e199f3c8a5c97a04",
+  "tt/labels/draft.py": "3e6d2d4e2528bb09e5aa6c18e620e94b4158ce891140d95f998434b7f4f14c0d",
+  "tt/labels/events.py": "750f96f3fda992c1aaa9f2e5631f262b9498130b8b6e8ce30b28e4919b44cfc1",
+  "tt/labels/pipeline.py": "1240fdc4212c26b2110233749f81f5b0922902eefcd1acd15a7060e01bd7b085",
+  "tt/labels/protocol.py": "b5618bfda67abbc3aae8117fcd2eb9d970ea2064e7e648d7c9454bdbc2e4fcb7",
+  "tt/labels/schema.py": "3ed842383918ed322f4f4b0c1f2380d40c59265d1e2c13caaf79fe80f6e7645a",
+  "tt/labels/texts.py": "74aaddfdd1842516e4d33dd5c46aa44c1c62fb4a50f8f7bc840ace34be2a3212",
+  "tt/leakcheck.py": "5d20b145ec64b413da5c74ce533410de8ca3da9c8d30786ac609b4b0e22078fe",
+  "tt/norm/aliases.py": "743f811d3e37b85b4afbd497cc39dee8ff084a4cb5e340bcea85611523abe056",
+  "tt/parse/block.py": "b489a75f3b79edbc6c2e314753c5e4b7f2dee8187ea3b1b7fdfc787033013c8f",
+  "tt/parse/pdf.py": "85a92ea6d8fbabcbf3420d4640c5cf0ce1dc2c374bd7b7a8db82eef3afc93c97",
+  "tt/parse/sections.py": "898727fe0abfab8dd5d5592fb3133eb38f04b85e8570fed9555cf57309d560f1",
+  "tt/verify/dates.py": "6dedf1dfccb21bd43f81fcdf4522d37e491749bb1d88fe0bcf8a9f50f3559d57",
+  "tt/verify/extra.py": "330ac1956154d447c212f0425dd8b21f3ff549949de1754940d627a574ddbb15",
+  "tt/verify/verifier.py": "e9c6a147d0921b60196a6fd212bd9440284dbb3db74c090ca8e971f5f045189e",
+  "data/splits/dev_ids.txt": "f11841a831213bcaa2ca2887cf8c2939dab4de41a23cc6bffd7fdaf269ea645a",
+  "data/splits/testA_ids.txt": "89a89a5add390049da15e9f55955d512157fed3f2d4f127cf6f30a2b900c9fa1",
+  "data/splits/testA_labelled_ids.txt": "0bc380cc2ef6faa4f9cdf77cec8f239572084384728586420ab6a7dc147482b1",
+  "data/splits/testB_ids.txt": "f9e12f2976ba891f921cb969ed923041bb2134c6bc2a33f5aa55ee032c4236e6",
+  "data/splits/unseen_filer_ids.txt": "fd7174f9f9968cabeb87e5f7fca7beafb1459ee3518fb946a432074b1dcddbe4"
+ }
+}
