@@ -1,0 +1,154 @@
+{
+ "filings": [
+  {
+   "file": "RCLRPT-23E020-3987.PDF",
+   "year": 2023,
+   "filer": "Gilbarco, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E031-5488.PDF",
+   "year": 2023,
+   "filer": "Meritor, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E033-7392.PDF",
+   "year": 2023,
+   "filer": "3M Transportation Safety Division",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E068-9689.PDF",
+   "year": 2023,
+   "filer": "Hyundam Industrial",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E072-1814.PDF",
+   "year": 2023,
+   "filer": "Precision Circuits Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E073-6451.PDF",
+   "year": 2023,
+   "filer": "Mando America Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E082-7103.PDF",
+   "year": 2023,
+   "filer": "Trans-Air Manufacturing Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23E086-7725.PDF",
+   "year": 2023,
+   "filer": "Cruise LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V008-6503.PDF",
+   "year": 2023,
+   "filer": "Gratimax, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V009-5168.PDF",
+   "year": 2023,
+   "filer": "Lode-King Industries, Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V035-6346.PDF",
+   "year": 2023,
+   "filer": "Kia America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V053-3046.PDF",
+   "year": 2023,
+   "filer": "Bombardier Recreational Products, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V095-6996.PDF",
+   "year": 2023,
+   "filer": "Electra Meccanica Vehicles Corp",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V147-7099.PDF",
+   "year": 2023,
+   "filer": "Newell Coach Corp.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V148-5089.PDF",
+   "year": 2023,
+   "filer": "Terex Advance Mixer, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V161-6181.PDF",
+   "year": 2023,
+   "filer": "Kibbi, LLC",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V219-8343.PDF",
+   "year": 2023,
+   "filer": "Capacity of Texas",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V245-8278.PDF",
+   "year": 2023,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V329-1334.PDF",
+   "year": 2023,
+   "filer": "Ferrari North America, Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V448-5435.PDF",
+   "year": 2023,
+   "filer": "Lion Electric Company",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V475-7264.PDF",
+   "year": 2023,
+   "filer": "Prevost Car (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V481-6313.PDF",
+   "year": 2023,
+   "filer": "Nova Bus (US) Inc.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V493-9698.PDF",
+   "year": 2023,
+   "filer": "Pleasure Way Industries, Ltd.",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V497-8020.PDF",
+   "year": 2023,
+   "filer": "Vanguard National Trailer Corporation",
+   "origin": "test"
+  },
+  {
+   "file": "RCLRPT-23V498-4108.PDF",
+   "year": 2023,
+   "filer": "SPORTSMOBILE TEXAS, INC",
+   "origin": "test"
+  }
+ ]
+}

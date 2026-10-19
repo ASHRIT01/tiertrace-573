@@ -75,3 +75,11 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 
 ## Unseen-filer fetch
 - D-T1 (again): 23V320 and 24V945 have no text layer (scanned); excluded and never replaced; see reports/phase_6_unseen_fetch.md. 98 of 100 labelled.
+
+## Unseen-filer batch 1 (b01)
+- Pass B and Pass C isolation: no outside reads reported.
+- Rule problem: sentences listing several data dates ("warranty claims were received on 2022-03-30, 2022-07-21, ...", 23V475) yield one event per date unless ignore_dates is used; Pass C treated as non-event dates (D027).
+- Rule problem: supplier's own awareness/decision (23V493 Cummins; D034, D035): DECISION is not limited to the filer; supplier awareness typed OTHER.
+- Rule problem: routine quality-control test vs investigation (3M, 23E033; D005) - OTHER.
+- Rule problem: cause "Defective part." - INSUFFICIENT (23V161, D021).
+- Pass C CONTESTED D033 (23V481): pairing artefact (two sentences of one entry).

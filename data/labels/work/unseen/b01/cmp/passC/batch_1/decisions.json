@@ -1,0 +1,134 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "Following reporting of an overheating incident in December, 2021, Orpak undertook to conduct internal and independent testing",
+  "reason": "A report of an incident reaching the filer side in Dec 2021 is a FILER_AWARENESS event, not OTHER."
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "Orpak undertook to conduct internal and independent testing of the DataPass Plus devices up through May, 2022.",
+  "reason": "Second distinct date in the sentence attaches to the testing action (not a production data window); testing conducted to find the cause is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "2/6/2023 – Meritor Product Safety and Compliance Committee reviewed engineering technical position conclusion and determined a possible safety related concern has been identified and impacted customers should be notified.",
+  "reason": "Committee determination that a safety concern exists is a DECISION."
+ },
+ {
+  "item_id": "D004",
+  "decision": "X",
+  "quote": "3/23/2023 – Meritor notified that Spartan Fire filed a 573 Defect Report with NHTSA.",
+  "reason": "Dated occurrence (Meritor received notice of a customer's filing); not a status, pointer or remedy logistics, so it is an event (OTHER)."
+ },
+ {
+  "item_id": "D005",
+  "decision": "Y",
+  "quote": "As part of its normal quality control procedures, 3M tested a sample of sheeting from the lot in question during December 2022.",
+  "reason": "Routine QC testing, not an investigation opened to find the cause or scope of a known problem; OTHER fits better than INVESTIGATION_START."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "Additional investigation continued into early 2024, which resulted in additional raw material lots of the sub- supplier identified as being potentially affected by the subject condition.",
+  "reason": "Narrative refers to a sub-supplier only generically; Hyundai and Mercedes-Benz are customers, so UNNAMED."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "Between October 2023 and December of 2023, Hyundam continued to inspect and evaluate fuel pumps recovered by Hyundai and Mercedes-Benz.",
+  "reason": "Inspection and evaluation of recovered pumps is investigation/analysis conducted to find cause or scope: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D008",
+  "decision": "X",
+  "quote": "Between October 2023 and December of 2023, Hyundam continued to inspect and evaluate fuel pumps",
+  "reason": "Two distinct dates in one sentence give one event per date; October 2023 bounds the inspection action, not a production data window."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "Precision Circuits traveled to Brinkley RV on September 22, 2023 to review the application and to confirm that the wire in fact was undersized.",
+  "reason": "Filer conducted a review on site to confirm the defect: analysis conducted to find cause/scope, INVESTIGATION_START."
+ },
+ {
+  "item_id": "D010",
+  "decision": "Y",
+  "quote": "On Thursday, September 21, 2023, during an electrical audit performed at Brinkley RV, it was discovered that the neutral wire for the Power Control System was undersized for a 50 Amp service system.",
+  "reason": "Dated discovery of the problem in an audit is an event; first awareness of the issue (FILER_AWARENESS)."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "After a lot of research it was determined that the models that Ford sent us did not have stabilizer bar.",
+  "reason": "Ford supplied the base vehicles to the filer (base-vehicle maker), a supply-chain company named in the narrative: NAMED."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "They were all repaired in April of 2023.",
+  "reason": "Repair of affected vehicles is remedy logistics, not an event."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "On October 23, 2023, Cruise completed its review and immediately initiated an assessment of the safety risk associated with the findings.",
+  "reason": "An assessment/analysis was initiated: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "On January 4, 2023, Gratimax decided that a non- compliance with FMVSS 108 and 224 existed.",
+  "reason": "Decision that a noncompliance exists is DECISION."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "September 2022: Additional complaints were received.",
+  "reason": "Later customer complaints reaching the filer are FILER_AWARENESS."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "Engineering team instructed to conduct further investigation.",
+  "reason": "Investigation opened/ordered: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D017",
+  "decision": "X",
+  "quote": "January 30, 2023: The engineering and quality dedicated team gathered again, and updated data and information related to the propulsion issue.",
+  "reason": "Dated meeting/action, not a status or repeat; an event (OTHER)."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "NEWELL IMMEDIATELY CONDUCTED A QUALITY REVIEW AND DETERMINDED THE INSTALLATION OF AN ADDITIONAL BRAKE SWITCH",
+  "reason": "Quality review conducted to find the cause: INVESTIGATION_START."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "Mar. 7,2023 - After internal discussions and analysis of the Meritor information, Terex Advance Mixer deemed this condition to be safety related.",
+  "reason": "Determination that the condition is safety related is DECISION."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "Therefore, a 573 defect report was initiated.",
+  "reason": "Filer initiating its Part 573 report is NHTSA_FILING."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "Defective part.",
+  "reason": "Only restates that there is a defect; no cause or mechanism is stated, so INSUFFICIENT."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "June 2023: New cases of in-service vehicles with cracks in the firewall leading to damage to the cables running under the tank were reported.",
+  "reason": "New field reports reaching the filer are FILER_AWARENESS."
+ }
+]

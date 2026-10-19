@@ -1,0 +1,99 @@
+{
+ "RCLRPT-23E031-5488.PDF": {
+  "12/12/2022 - RCM": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23E033-7392.PDF": {
+  "3M has not received": {
+   "include": false,
+   "why": "status/no-complaints statement"
+  }
+ },
+ "RCLRPT-23E068-9689.PDF": {
+  "Hyundam amended its Recall Report": {
+   "type": "NHTSA_FILING"
+  },
+  "On September 18, 2023, Hyundam submitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-23E086-7725.PDF": {
+  "On October 2, 2023, a Cruise AV": {
+   "type": "FILER_AWARENESS"
+  },
+  "Cruise also reported": {
+   "type": "NHTSA_FILING"
+  },
+  "[continued on attached": {
+   "include": false,
+   "why": "continuation marker"
+  }
+ },
+ "RCLRPT-23V053-3046.PDF": {
+  "At the end of November 2022, BRP": {
+   "type": "FILER_AWARENESS"
+  },
+  "BRP found that there was a high": {
+   "ignore_dates": true
+  },
+  "With all the information collected and analyzed, BRP decided on May 3": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V095-6996.PDF": {
+  "February 9, 2023: An internal meeting": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V148-5089.PDF": {
+  "Mar. 2, 2023 - Terex": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-23V219-8343.PDF": {
+  "On March 15, 2023 - A Defect": {
+   "type": "INVESTIGATION_START"
+  },
+  "March 21, 2023 – REV Group Recall": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V245-8278.PDF": {
+  "2023-04-06 Safety Recall report": {
+   "type": "NHTSA_FILING"
+  },
+  "2023-03-28 Issue identified": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-23V475-7264.PDF": {
+  "The warranty claims were received": {
+   "ignore_dates": true
+  },
+  "2023-07-11 Defect Information Report": {
+   "type": "NHTSA_FILING"
+  },
+  "2023-08-17: Added": {
+   "include": false,
+   "why": "amendment line (ID code)"
+  },
+  "2023-01-26 One field report": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-23V481-6313.PDF": {
+  "2023-04-13: A power steering hose": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-23V493-9698.PDF": {
+  "=January 23 - Feb 10, 2023.": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "April 13, 2023 the official recall": {
+   "type": "OTHER"
+  }
+ }
+}
