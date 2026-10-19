@@ -1,0 +1,338 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-23V396-2407.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 29, 2021",
+   "type": "INVESTIGATION_START",
+   "quote": "On November 29, 2021, a subframe was pulled from inventory and the welds inspected which also showed inadequate weld penetration attaching the insert tubes into the subframe.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 29, 2021",
+   "type": "OTHER",
+   "quote": "On November 29, 2021, a subframe was pulled from inventory and the welds inspected which also showed inadequate weld penetration attaching the insert tubes into the subframe.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2021-11-29",
+    "end": "2021-11-29",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-23V405-2388.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Mercedes-Benz AG",
+   "status": "INSUFFICIENT",
+   "quote": "Immediately, analyses were started together with the supplier to determine the root cause.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "MBAG",
+   "quote": "In October 2022, MBAG launched initial investigations based on an isolated field report indicating a malfunction of the electrical drivetrain possibly referring to a loss of propulsion.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-23V405-2388.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December 2022",
+   "type": "OTHER",
+   "quote": "These analyses, including related tests, continued until December 2022.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2022-12-01",
+    "end": "2022-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "These analyses, including related tests, continued until December 2022.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-23V422-8709.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "June 6, 2023",
+   "type": "OTHER",
+   "quote": "Tesla began to deploy the software remedy to the vehicle fleet as an over-the-air software update.",
+   "inherited_date": true,
+   "entry_quote": "On June 6, 2023, Tesla completed its review and made a voluntary recall determination to remedy a noncompliance with FMVSS 206, S.4.1.2.3.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-06",
+    "end": "2023-06-06",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-23V524-5492.PDF",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Honda",
+   "quote": "June 1, 2023 Honda identified an incorrect certification label during a quality inspection and began to investigate the issue.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: American Honda Motor Co., Inc.",
+   "status": "INSUFFICIENT",
+   "quote": "Name : American Honda Motor Co., Inc.",
+   "section": "block"
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-23V524-5492.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 1, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "June 1, 2023 Honda identified an incorrect certification label during a quality inspection and began to investigate the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-01",
+    "end": "2023-06-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 1, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "June 1, 2023 Honda identified an incorrect certification label during a quality inspection and began to investigate the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-23V539-2363.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "7/13/2023",
+   "type": "OTHER",
+   "quote": "Upon receipt of this list, we reviewed our receiving log and entered the dates that we received the generator and cross referenced those dates to our internal production tracking software.",
+   "inherited_date": true,
+   "entry_quote": "7/13/2023 We decided to reach out Cummins to request a cross reference of serial numbers and invoice dates.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-07-13",
+    "end": "2023-07-13",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "7/13/2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Upon receipt of this list, we reviewed our receiving log and entered the dates that we received the generator and cross referenced those dates to our internal production tracking software.",
+   "inherited_date": true,
+   "entry_quote": "7/13/2023 We decided to reach out Cummins to request a cross reference of serial numbers and invoice dates.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-23V558-1590.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "July 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "It was noted that the manufacturing plant had received three complaints between May 2023 and July 2023 indicating that the awning leg was touching the vehicle entry door.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-07-01",
+    "end": "2023-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-23V595-8061.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 10, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "August 2023 On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-01",
+    "end": "2023-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-23V595-8061.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "August 10, 2023",
+   "type": "OTHER",
+   "quote": "August 2023 On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-10",
+    "end": "2023-08-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-23V595-8061.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 2023",
+   "type": "OTHER",
+   "quote": "These failures were identified by Kentucky Truck Plant through monitoring of warranty claims.",
+   "inherited_date": true,
+   "entry_quote": "August 2023 On August 10, 2023, an issue pertaining to left rear axle shaft fractures on 2023 model year F-250 and F-350 Super Duty vehicles equipped with single rear wheels and 10.5-inch rear axles was brought to Ford’s Critical Concern Review Group for review.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-01",
+    "end": "2023-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-23V641-2572.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 16, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On August 16, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to a condition that can lead to the lack of rearview visibility and rearview lamps, potentially causing a noncompliance with FMVSS No. 111 and No. 108.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-16",
+    "end": "2023-08-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "August 16, 2023",
+   "type": "OTHER",
+   "quote": "On August 16, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to a condition that can lead to the lack of rearview visibility and rearview lamps, potentially causing a noncompliance with FMVSS No. 111 and No. 108.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-23V641-2572.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 11, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "From April 25, 2023, through August 11, 2023, FCA US TSRC met with FCA US engineering to review the issue, understand part design and failure mode, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-23V649-3598.PDF",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Improperly welded joint by supplier.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "kind": "NOT_REPORTED",
+   "names": [],
+   "quote": "See attached document titled “2023MY Forte Right Front Lower Control Arm Chronology.”",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-23V650-5650.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "September 15, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "HMA’s Data Review Committee (“DRC”) and Technical Review Committee (“TRC”) conducted assessments of frequency and risk regarding the potential defect condition from August 30, 2023 through September 15, 2023.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

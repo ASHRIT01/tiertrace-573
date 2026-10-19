@@ -32,10 +32,11 @@ def batch_files(split, k):
 
 
 def cli(*a):
-    r = subprocess.run([sys.executable, "-m", "tt.cli", *a], cwd=ROOT, capture_output=True, text=True)
-    print(r.stdout[-3000:], r.stderr[-1500:] if r.returncode else "")
+    r = subprocess.run([sys.executable, "scripts/phase6_runner.py", *a], cwd=ROOT, capture_output=True, text=True)
+    print(r.stdout[-1500:], r.stderr[-1500:] if r.returncode else "")
     if r.returncode:
         sys.exit(r.returncode)
+    return r.stdout
 
 
 def main():
@@ -63,7 +64,19 @@ def main():
     elif cmd == "compare":
         cli("label-compare", f"{rel}/passA.json", f"{rel}/passB", f"{rel}/cmp", "--pdf-dir", P["raw"])
     elif cmd == "final":
-        cli("label-final", f"{rel}/passA.json", f"{rel}/cmp/items.json", f"{rel}/cmp/passC", f"{rel}/silver.json", "--pdf-dir", P["raw"])
+        out = cli("label-final", f"{rel}/passA.json", f"{rel}/cmp/items.json", f"{rel}/cmp/passC", f"{rel}/silver.json", "--pdf-dir", P["raw"])
+        (w / "final_stats.json").write_text(out)
+    elif cmd == "row":
+        return row(split, k, w)
+
+
+def row(split, k, w):
+    import collections
+    st = json.load(open(w / "cmp/ab_stats.json")); fin = json.load(open(w / "final_stats.json")); it = json.load(open(w / "cmp/items.json"))
+    c = collections.Counter(i["claim"] for i in it); d = fin["decisions"]; a = fin["pass_c_agreement"]
+    nev = sum(len(v) for v in json.load(open(P_ev(split)) ).values()) if False else None
+    print(f"| b{k:02d} | {len(batch_files(split, k))} | {len(it)} (S1/S2/C/U/E = {c['S1']}/{c['S2']}/{c['C']}/{c['U']}/{c['E']}) | {st['E']['agree']}/{st['E']['units']} = {st['E']['rate']:.1%} "
+          f"| {a['position']['chose_X']} X / {a['position']['chose_Y']} Y / {d['NEITHER']} NEITHER / {d['CONTESTED'] + d['missing']} CONTESTED | {d['A']}/{a['items']} = {d['A']/a['items']:.1%} | {d['B']}/{a['items']} = {d['B']/a['items']:.1%} | checks {len(fin['check_failures'])} fail; {fin['events']} events |")
 
 
 def sheet(split, k, files, P):

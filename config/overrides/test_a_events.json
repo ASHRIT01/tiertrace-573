@@ -68,5 +68,169 @@
   "5/22/23, Safety committee voted": {
    "type": "DECISION"
   }
+ },
+ "RCLRPT-23V396-2407.PDF": {
+  "Even though there are no reports": {
+   "include": true,
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V405-2388.PDF": {
+  "MBAG is currently aware of 2 field reports": {
+   "dates": [
+    {
+     "date_text": "October 5, 2022",
+     "type": "FILER_AWARENESS"
+    },
+    {
+     "date_text": "October 24, 2022",
+     "type": "FILER_AWARENESS"
+    }
+   ]
+  }
+ },
+ "RCLRPT-23V408-4127.PDF": {
+  "We were notified by our supplier": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-23V524-5492.PDF": {
+  "June 5, 2023 Honda investigated": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V539-2363.PDF": {
+  "Provan RV Industries was notified": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-23V547-9794.PDF": {
+  "May 25, 2023 an internal communication": {
+   "type": "FILER_AWARENESS"
+  },
+  "Production dates beginning": {
+   "include": false,
+   "why": "production window, not an event"
+  },
+  "July 27, 2023 SSC met": {
+   "type": "DECISION"
+  },
+  "Jayco Inc. has not received": {
+   "include": false,
+   "why": "no-claims status statement"
+  }
+ },
+ "RCLRPT-23V557-4321.PDF": {
+  "On July 29, 2023, NASO finalized": {
+   "type": "DECISION"
+  },
+  "=49.": {
+   "include": false,
+   "why": "sentence-splitter fragment ('C.F.R. 49.')"
+  }
+ },
+ "RCLRPT-23V558-1590.PDF": {
+  "On August 4, 2023, Forest Rivers": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V597-6273.PDF": {
+  "On July 30, 2023, Ford": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-23V641-2572.PDF": {
+  "From April 25, 2023, through August 11": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V650-5650.PDF": {
+  "On August 24, 2023, HMA": {
+   "type": "FILER_AWARENESS"
+  },
+  "HMA’s Data Review Committee": {
+   "type": "INVESTIGATION_START"
+  },
+  "On September 15, 2023, NASO": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V653-1716.PDF": {
+  "6/6/23: Issue first": {
+   "type": "FILER_AWARENESS"
+  },
+  "6/12/23: Engineer visited": {
+   "type": "INVESTIGATION_START"
+  },
+  "Conclusion was to issue a recall": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V656-4926.PDF": {
+  "June 27, 2023, through August 31": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V690-6126.PDF": {
+  "October 2, 2023 Findings": {
+   "type": "OTHER"
+  },
+  "October 9, 2023 The Product Safety Committee": {
+   "type": "DECISION"
+  },
+  "October 14, 2023 573 Report": {
+   "include": true,
+   "dates": [
+    {
+     "date_text": "October 14, 2023",
+     "type": "NHTSA_FILING"
+    }
+   ],
+   "quote": "October 14, 2023 573 Report filed with NHTSA"
+  }
+ },
+ "RCLRPT-23V703-2054.PDF": {
+  "Even though there are no reports": {
+   "include": true,
+   "type": "DECISION"
+  },
+  "An engineering analysis was completed": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V708-4418.PDF": {
+  "On October 12, the PSEC": {
+   "type": "DECISION"
+  },
+  "Lucid Engineering briefed": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-23V716-5715.PDF": {
+  "• From October 2022, through January 2023": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-23V750-4558.PDF": {
+  "May 2023: internal CoP tests": {
+   "type": "INVESTIGATION_START"
+  },
+  "June - August 2023: Intensive testing": {
+   "type": "INVESTIGATION_START"
+  },
+  "Out of an abundance of caution, due to inconsistent": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-23V754-7121.PDF": {
+  "August 30, 2023 – The supplier identified": {
+   "type": "FILER_AWARENESS"
+  },
+  "Subaru received information from the supplier": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "Subaru and the supplier initiated a joint study": {
+   "type": "INVESTIGATION_START"
+  }
  }
 }

@@ -1,0 +1,6 @@
+LABELING_RULES.md
+items.json
+texts/RCLRPT-23V732-5995.txt
+texts/RCLRPT-23V750-4558.txt
+texts/RCLRPT-23V754-7121.txt
+check.py

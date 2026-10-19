@@ -1,0 +1,208 @@
+[
+ {
+  "item_id": "D041",
+  "file": "RCLRPT-23V732-5995.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 2020",
+   "type": "OTHER",
+   "quote": "In February 2020, MBAG after sales department was first made aware through internal analyses for quality assurance that the inspection gauge for checking the wear of the brake pads on the rear axle",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2020-02-01",
+    "end": "2020-02-29",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 2020",
+   "type": "FILER_AWARENESS",
+   "quote": "In February 2020, MBAG after sales department was first made aware through internal analyses for quality assurance that the inspection gauge for checking the wear of the brake pads on the rear axle and the respective information in the owner's manual for using this inspection gauge",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D042",
+  "file": "RCLRPT-23V750-4558.PDF",
+  "claim": "C",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "label": "cause stated",
+   "status": "SUPPORTED",
+   "quote": "The root cause is currently not known.",
+   "section": "cause"
+  },
+  "version_Y": {
+   "status": "INSUFFICIENT",
+   "quote": "The root cause is currently not known.",
+   "section": "cause"
+  }
+ },
+ {
+  "item_id": "D043",
+  "file": "RCLRPT-23V750-4558.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "May 2023: internal CoP tests (Conformity of Production) resulted in not OK tests.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-05-01",
+    "end": "2023-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "May 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "May 2023: internal CoP tests (Conformity of Production) resulted in not OK tests.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D044",
+  "file": "RCLRPT-23V750-4558.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "June - August 2023: Intensive testing conducted.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June - August 2023",
+   "type": "OTHER",
+   "quote": "Due to Inconsistent test results no root cause identified.",
+   "inherited_date": true,
+   "entry_quote": "June - August 2023: Intensive testing conducted.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-01",
+    "end": "2023-08-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D045",
+  "file": "RCLRPT-23V750-4558.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June",
+   "type": "INVESTIGATION_START",
+   "quote": "Analysis together with supplier and other laboratories.",
+   "inherited_date": true,
+   "entry_quote": "June - August 2023: Intensive testing conducted.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "June - August 2023",
+   "type": "OTHER",
+   "quote": "Test setup discussed.",
+   "inherited_date": true,
+   "entry_quote": "June - August 2023: Intensive testing conducted.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-01",
+    "end": "2023-08-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D046",
+  "file": "RCLRPT-23V750-4558.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September 08, 2023",
+   "type": "OTHER",
+   "quote": "The Committee issued a task for additional technical clarification and evaluation of options.",
+   "inherited_date": true,
+   "entry_quote": "September 08, 2023: Topic presented to the Volkswagen Product Safety Committee.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-08",
+    "end": "2023-09-08",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D047",
+  "file": "RCLRPT-23V754-7121.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 30, 2023",
+   "type": "OTHER",
+   "quote": "The supplier’s initial findings indicated that there had been no outflow to Subaru.",
+   "inherited_date": true,
+   "entry_quote": "August 30, 2023 – The supplier identified quench cracking on the outer diameter of the outer race during magnetic particle inspection.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 30, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "August 30, 2023 – The supplier identified quench cracking on the outer diameter of the outer race during magnetic particle inspection.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-30",
+    "end": "2023-08-30",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D048",
+  "file": "RCLRPT-23V754-7121.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Subaru worked with the part supplier to trace the affected parts based on the lot number information.",
+   "inherited_date": true,
+   "entry_quote": "October 2023 – The supplier presented their findings of the scope of affected parts shipments.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "October 2023",
+   "type": "OTHER",
+   "quote": "October 2023 – The supplier presented their findings of the scope of affected parts shipments.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-01",
+    "end": "2023-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ }
+]

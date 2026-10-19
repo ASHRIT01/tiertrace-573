@@ -1,0 +1,593 @@
+[
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/16/23",
+   "type": "OTHER",
+   "quote": "6/16/23: Engineer talked with design engineering to understand the history of the parts involved.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-16",
+    "end": "2023-06-16",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "6/16/23",
+   "type": "INVESTIGATION_START",
+   "quote": "6/16/23: Engineer talked with design engineering to understand the history of the parts involved.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/17/23",
+   "type": "OTHER",
+   "quote": "Engineer received plant process document.",
+   "inherited_date": true,
+   "entry_quote": "6/17/23: Engineer visited manufacturing to understand the process of installation.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-17",
+    "end": "2023-06-17",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "6/17/23",
+   "type": "INVESTIGATION_START",
+   "quote": "6/17/23: Engineer visited manufacturing to understand the process of installation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/26/23",
+   "type": "OTHER",
+   "quote": "Found 7 warranty claims stating checked U-bolt hitting the fuel tank.",
+   "inherited_date": true,
+   "entry_quote": "6/26/23: Warranty search completed.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-26",
+    "end": "2023-06-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "6/26/23",
+   "type": "INVESTIGATION_START",
+   "quote": "6/26/23: Warranty search completed.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "6/26/23",
+   "type": "OTHER",
+   "quote": "Reassembled and checked clearances.",
+   "inherited_date": true,
+   "entry_quote": "6/26/23: Warranty search completed.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-26",
+    "end": "2023-06-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "6/26/23",
+   "type": "FILER_AWARENESS",
+   "quote": "Found 7 warranty claims stating checked U-bolt hitting the fuel tank.",
+   "inherited_date": true,
+   "entry_quote": "6/26/23: Warranty search completed.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "7/13/23",
+   "type": "OTHER",
+   "quote": "7/13/23: Reached out to PTC about testing and communicated the dynamic gap study requested",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-07-13",
+    "end": "2023-07-13",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "7/13/23",
+   "type": "INVESTIGATION_START",
+   "quote": "7/13/23: Reached out to PTC about testing and communicated the dynamic gap study requested",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "8/22/23",
+   "type": "OTHER",
+   "quote": "8/22/23: Initial test was completed, and the data was collected.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-22",
+    "end": "2023-08-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "8/22/23",
+   "type": "INVESTIGATION_START",
+   "quote": "8/22/23: Initial test was completed, and the data was collected.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "9/1/23",
+   "type": "OTHER",
+   "quote": "9/1/23: Population was scanned for errors.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "9/1/23",
+   "type": "INVESTIGATION_START",
+   "quote": "9/1/23: Population was scanned for errors.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "9/1/23",
+   "type": "OTHER",
+   "quote": "No errors found.",
+   "inherited_date": true,
+   "entry_quote": "9/1/23: Population was scanned for errors.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "9/1/23",
+   "type": "INVESTIGATION_START",
+   "quote": "Final Warranty Search",
+   "inherited_date": true,
+   "entry_quote": "9/1/23: Population was scanned for errors.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "6/26/23",
+   "type": "OTHER",
+   "quote": "No further issues were found.",
+   "inherited_date": true,
+   "entry_quote": "6/26/23: Warranty search completed.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-26",
+    "end": "2023-06-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "6/27/23",
+   "type": "OTHER",
+   "quote": "Needed further information to make decision.",
+   "inherited_date": true,
+   "entry_quote": "6/27/23: Presented investigation to safety committee.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-27",
+    "end": "2023-06-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-23V653-1716.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "9/1/23",
+   "type": "OTHER",
+   "quote": "Final Warranty Search",
+   "inherited_date": true,
+   "entry_quote": "9/1/23: Population was scanned for errors.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D027",
+  "file": "RCLRPT-23V656-4926.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "June 5, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "June 5, 2023, during an internal audit, it was determined that a steering column pinch bolt was not properly secured, and an internal investigation was initiated.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-06-05",
+    "end": "2023-06-05",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "June 5, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "June 5, 2023, during an internal audit, it was determined that a steering column pinch bolt was not properly secured, and an internal investigation was initiated.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D028",
+  "file": "RCLRPT-23V656-4926.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "August 31, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "June 27, 2023, through August 31, 2023, Autocar inspected 176 additional units and zero defects were found.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D029",
+  "file": "RCLRPT-23V690-6126.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 18, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "September 18, 2023 Volvo Product Safety Office receives a report of a potential issue in our factory with a critical joint and a formal investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "September 18, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 18, 2023 Volvo Product Safety Office receives a report of a potential issue in our factory with a critical joint and a formal investigation is opened.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-18",
+    "end": "2023-09-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D030",
+  "file": "RCLRPT-23V690-6126.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "September 18, 2023",
+   "type": "OTHER",
+   "quote": "PSRI 23-069 Castle Nut Under-torqued.",
+   "inherited_date": true,
+   "entry_quote": "September 18, 2023 Volvo Product Safety Office receives a report of a potential issue in our factory with a critical joint and a formal investigation is opened.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-18",
+    "end": "2023-09-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D031",
+  "file": "RCLRPT-23V699-7039.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 12, 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 12, 2023, during an internal inspection, Autocar personnel identified three units equipped with the suspect pressure switch, not included in recall 23V400 suspect population and began investigation.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-12",
+    "end": "2023-09-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "September 12, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "September 12, 2023, during an internal inspection, Autocar personnel identified three units equipped with the suspect pressure switch, not included in recall 23V400 suspect population and began investigation.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D032",
+  "file": "RCLRPT-23V708-4418.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 1, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On August 1, 2023, a Lucid Air customer experienced charring of a rear seat.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 1, 2023",
+   "type": "OTHER",
+   "quote": "On August 1, 2023, a Lucid Air customer experienced charring of a rear seat.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-01",
+    "end": "2023-08-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D033",
+  "file": "RCLRPT-23V708-4418.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 3",
+   "type": "OTHER",
+   "quote": "Lucid Engineering briefed Lucid’s Product Safety Working Group (PSWG) about the issue on August 3, after which, Engineering continued its analysis of the risk of harm from the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 3",
+   "type": "FILER_AWARENESS",
+   "quote": "Lucid Engineering briefed Lucid’s Product Safety Working Group (PSWG) about the issue on August 3, after which, Engineering continued its analysis of the risk of harm from the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-08-03",
+    "end": "2023-08-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  }
+ },
+ {
+  "item_id": "D034",
+  "file": "RCLRPT-23V708-4418.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "October 10",
+   "type": "OTHER",
+   "quote": "Lucid released the Remedy S/W Version for customer vehicles to download starting on October 10.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-10",
+    "end": "2023-10-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D035",
+  "file": "RCLRPT-23V708-4418.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "October 4",
+   "type": "OTHER",
+   "quote": "As of October 4, Affected S/W Versions are no longer being installed on or transmitted to any vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D036",
+  "file": "RCLRPT-23V716-5715.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "October 2022",
+   "type": "INVESTIGATION_START",
+   "quote": "From October 2022, through January 2023, FCA US TSRC analyzed warranty claims, customer records, and vehicle history to identify incidents of third-row seat belt buckles being damaged during assembly.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "October 2022",
+   "type": "OTHER",
+   "quote": "In parallel, FCA US TSRC held initial meetings with FCA US Restraints Engineering and Manufacturing to review the issue, understand the part design, assembly process, and failure mode.",
+   "inherited_date": true,
+   "entry_quote": "From October 2022, through January 2023, FCA US TSRC analyzed warranty claims, customer records, and vehicle history to identify incidents of third-row seat belt buckles being damaged during assembly.",
+   "date_inferred": false,
+   "span": {
+    "start": "2022-10-01",
+    "end": "2022-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D037",
+  "file": "RCLRPT-23V716-5715.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 2023",
+   "type": "OTHER",
+   "quote": "From June 2023, through September 2023, FCA US TSRC finalized discussions with FCA US Restraints Engineering, Interior Engineering, and Manufacturing and determined the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "September 27, 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "On September 27, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to third-row seat belt buckles being inaccessible or damaged, potentially resulting in a noncompliance with FMVSS No. 208 Occupant Crash Protection",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-27",
+    "end": "2023-09-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D038",
+  "file": "RCLRPT-23V716-5715.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "January 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "From October 2022, through January 2023, FCA US TSRC analyzed warranty claims, customer records, and vehicle history to identify incidents of third-row seat belt buckles being damaged during assembly.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D039",
+  "file": "RCLRPT-23V716-5715.PDF",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "June 2023",
+   "type": "OTHER",
+   "quote": "From June 2023, through September 2023, FCA US TSRC finalized discussions with FCA US Restraints Engineering, Interior Engineering, and Manufacturing and determined the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D040",
+  "file": "RCLRPT-23V716-5715.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September 27, 2023",
+   "type": "OTHER",
+   "quote": "On September 27, 2023, the FCA US TSRC organization recognized a vehicle build issue existed on certain vehicles related to third-row seat belt buckles being inaccessible or damaged, potentially resulting in a noncompliance with FMVSS No. 208 Occupant Crash Protection",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ }
+]
