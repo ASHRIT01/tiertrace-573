@@ -1,0 +1,3 @@
+[
+ {"item_id": "D051", "decision": "Y", "quote": "15-May-2026: ARBOC begins to confirm what buses may be affected by the suspect restraints.", "reason": "Starting to determine which buses are affected is an analysis opened to find the scope (INVESTIGATION_START). Y's date_text '15-May-2026' is copied exactly as written; X's 'May-2026' does not match the text."}
+]

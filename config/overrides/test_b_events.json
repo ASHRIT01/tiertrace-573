@@ -116,5 +116,146 @@
   "These analyses lasted until": {
    "type": "INVESTIGATION_START"
   }
+ },
+ "RCLRPT-26V193-7461.pdf": {
+  "After the October 2025 recall decision": {
+   "type": "FILER_AWARENESS"
+  },
+  "The PSEC decided that": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V203-3945.pdf": {
+  "From June through September 2025, Toyota reviewed": {
+   "type": "INVESTIGATION_START"
+  },
+  "After analysis of the test results": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V204-7221.pdf": {
+  "During January and February 2026, Ford conducted": {
+   "type": "INVESTIGATION_START"
+  },
+  "On March 24, 2026, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V205-4042.pdf": {
+  "On February 24, 2026, manufacturing team": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V213-6780.pdf": {
+  "On December 9, 2025, a GM employee": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V215-9936.pdf": {
+  "February 10, 2026, during a routine": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V236-1914.pdf": {
+  "In November 2025, Ford assessed": {
+   "type": "INVESTIGATION_START"
+  },
+  "On April 7, 2026, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V238-6269.pdf": {
+  "On October 31, 2025, Ford reviewed": {
+   "type": "FILER_AWARENESS"
+  },
+  "On April 7, 2026, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V245-1061.pdf": {
+  "April 2026: Blue Bird submitted": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-26V262-9341.pdf": {
+  "Between March 2026 and April 2026": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-26V263-6693.pdf": {
+  "On 16 April 2026, the PSCC": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V268-9028.pdf": {
+  "On October 17, 2025, Ford approved": {
+   "type": "DECISION"
+  },
+  "On April 21, 2026, Ford’s Field Review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V279-2878.pdf": {
+  "17-Apr-2026, during Early Warning": {
+   "type": "FILER_AWARENESS"
+  },
+  "27-Apr-2026 the issue was raised": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V295-7913.pdf": {
+  "On May 11, 2026, Forest River’s Corporate": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V310-8416.pdf": {
+  "On April 8, 2026, Altec identified": {
+   "type": "FILER_AWARENESS"
+  },
+  "On May 8, 2026, Altec determined": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V313-6868.pdf": {
+  "05/08/2026 – Report was made": {
+   "type": "FILER_AWARENESS"
+  },
+  "LCI notified Keystone RV": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "05/15/2026 – Keystone Safety Committee": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-26V323-5712.pdf": {
+  "4/21/2026 - Wabash learned": {
+   "type": "FILER_AWARENESS"
+  },
+  "4/23-5/14/2026 - Wabash investigated": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-26V325-1775.pdf": {
+  "On June 22, 2026, GM become aware": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V333-4875.pdf": {
+  "We received the recall notification": {
+   "type": "SUPPLIER_NOTICE"
+  }
+ },
+ "RCLRPT-26V347-0355.pdf": {
+  "On August 14, 2026 NHTSA reached out": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26V349-0404.pdf": {
+  "14-May-2026: ARBOC was formally advised": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "22-May-2026: ARBOC holds": {
+   "type": "DECISION"
+  }
  }
 }

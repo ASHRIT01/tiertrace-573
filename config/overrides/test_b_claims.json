@@ -118,5 +118,150 @@
   "S1": {
    "quote": "Name: Saturn Printing"
   }
+ },
+ "RCLRPT-26V205-4042.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V215-9936.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Autocar"
+  }
+ },
+ "RCLRPT-26V236-1914.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Ford Motor Company"
+  }
+ },
+ "RCLRPT-26V245-1061.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Blue Bird"
+  }
+ },
+ "RCLRPT-26V253-0939.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Hexagon Purus"
+  }
+ },
+ "RCLRPT-26V310-8416.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Altec Industries Inc."
+  }
+ },
+ "RCLRPT-26V193-7461.pdf": {
+  "S1": {
+   "quote": "Name: GKN Automotive / Dauch"
+  },
+  "S2": {
+   "quote": "Name: GKN Automotive / Dauch"
+  }
+ },
+ "RCLRPT-26V203-3945.pdf": {
+  "S1": {
+   "quote": "Name: Denso Corporation"
+  },
+  "S2": {
+   "quote": "Name: Denso Corporation"
+  }
+ },
+ "RCLRPT-26V204-7221.pdf": {
+  "S1": {
+   "quote": "Name: TRICO COMPONENTES SA DE CV"
+  }
+ },
+ "RCLRPT-26V213-6780.pdf": {
+  "S1": {
+   "quote": "Name: Valeo Lighting Systems North America LLC"
+  }
+ },
+ "RCLRPT-26V238-6269.pdf": {
+  "S1": {
+   "quote": "Name: Versigent"
+  }
+ },
+ "RCLRPT-26V262-9341.pdf": {
+  "S1": {
+   "quote": "Name: Valeo North America"
+  },
+  "S2": {
+   "quote": "Name: Valeo North America"
+  }
+ },
+ "RCLRPT-26V263-6693.pdf": {
+  "S1": {
+   "quote": "Name: OP Mobility"
+  }
+ },
+ "RCLRPT-26V268-9028.pdf": {
+  "S1": {
+   "quote": "Name: Magna Seating Inc."
+  }
+ },
+ "RCLRPT-26V307-4656.pdf": {
+  "S1": {
+   "quote": "Name: ARC Automotive, Inc."
+  }
+ },
+ "RCLRPT-26V313-6868.pdf": {
+  "S1": {
+   "quote": "Name: Lippert"
+  }
+ },
+ "RCLRPT-26V325-1775.pdf": {
+  "S1": {
+   "quote": "Name: Joyson Safety Systems"
+  }
+ },
+ "RCLRPT-26V333-4875.pdf": {
+  "S1": {
+   "quote": "Name: Q'Straint"
+  }
+ },
+ "RCLRPT-26V347-0355.pdf": {
+  "S1": {
+   "quote": "Name: Q'Straint"
+  }
+ },
+ "RCLRPT-26V349-0404.pdf": {
+  "S1": {
+   "quote": "Name: Q'Straint"
+  }
  }
 }

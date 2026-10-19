@@ -1,0 +1,29 @@
+[
+ {
+  "item_id": "D051",
+  "file": "RCLRPT-26V349-0404.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May-2026",
+   "type": "OTHER",
+   "quote": "15-May-2026: ARBOC begins to confirm what buses may be affected by the suspect restraints.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-01",
+    "end": "2026-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "15-May-2026",
+   "type": "INVESTIGATION_START",
+   "quote": "15-May-2026: ARBOC begins to confirm what buses may be affected by the suspect restraints.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

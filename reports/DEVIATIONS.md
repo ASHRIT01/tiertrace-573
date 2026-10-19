@@ -45,3 +45,9 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - 25V565/25V521/25V659 (b07): (D039) whether a planned action ('Inspection of field motor home to be performed.') is an event is not settled; one sentence stating both awareness and investigation start (D027) has no tie-break (same gap as b02/b05).
 - b07 had the highest A-vs-B event disagreement so far (events agree 46.6%): Pass B labels more events per filing than Pass A's code draft (209 vs fewer); the Pass C agreement with A was 3.7%. This reflects Pass A's compact-sheet overrides (D-P8) as well as rule ambiguity.
 - D-T3 (cont., b08). Some 2025+ blocks list several suppliers (e.g. 'Tier 1 ... Name: TriMark Corporation ... Tier 1 ... Name: Spartan Fire LLC'); Pass A's S1 name joins them ('TriMark Corporation Spartan Fire LLC'). For the 4 b08 filings the S1/S2 quote was set to the first supplier's Name line by a manual per-filing override; statuses unchanged.
+
+## Test-B batch 2 (b02)
+- Pass B (opus) isolation: read the tool-captured stdout of `cat texts/*.txt`, a file outside the batch directory (self-logged). Content was the same filing texts.
+- Pass C D016/D017 (Ford 26V236): CONTESTED because X and Y label different sentences (event-matching artefact, not a true disagreement). Rules unchanged.
+- Rule ambiguity: date taken from a "Month(s):" section header vs. from the sentence itself (D036, D039, D040); Pass C resolved to the sentence. Rules not changed.
+- Rule ambiguity: Ford CCRG referral typed INVESTIGATION_START vs FILER_AWARENESS (26V236); consistent within the batch only.

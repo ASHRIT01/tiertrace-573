@@ -1,0 +1,180 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "In October 2025, Lucid filed a recall (SR-25-03-0) identifying an affected population of Air Pure RWD vehicles",
+  "reason": "Filer filing a recall (Part 573 report) is NHTSA_FILING."
+ },
+ {
+  "item_id": "D002",
+  "decision": "NEITHER",
+  "quote": "As part of its investigation, the PSWG evaluated the sensitivity of the lash detection algorithm and scope of the October 2025 recall.",
+  "reason": "'October 2025' only names the earlier recall; the evaluation itself is undated prose, so the event exists but with date_inferred and empty date_text; analysis of scope is INVESTIGATION_START.",
+  "corrected": {
+   "date_text": "",
+   "type": "INVESTIGATION_START",
+   "quote": "As part of its investigation, the PSWG evaluated the sensitivity of the lash detection algorithm and scope of the October 2025 recall.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D003",
+  "decision": "NEITHER",
+  "quote": "the PSWG identified 26 half-shaft issues that occurred on customer vehicles between October 2025 and February 2026",
+  "reason": "'between October 2025 and February 2026' only bounds the incident data window; the identification is an undated prose sentence (date_inferred, no date).",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "Based on its investigation, the PSWG identified 26 half-shaft issues that occurred on customer vehicles between October 2025 and February 2026 that it attributed to the same root cause as identified in the October 2025 recall.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "the PSWG identified 26 half-shaft issues that occurred on customer vehicles between October 2025 and February 2026",
+  "reason": "October 2025 is a data-window bound / reference to the earlier recall, not an event date; no October 2025 event from this sentence (the undated event is covered in D003)."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "No customer incidents were found after the July 25, 2025 clean point and no incident vehicles had reached over 25,000 miles before failure.",
+  "reason": "Status statement ('no incidents'); July 25, 2025 is a production clean point bounding the population, not an event date."
+ },
+ {
+  "item_id": "D006",
+  "decision": "NEITHER",
+  "quote": "The PSEC decided that there was an unreasonable risk to safety for Air Pure RWD vehicles manufactured before the July 25, 2025 clean point",
+  "reason": "The decision is an event, but July 25, 2025 only bounds the affected production window; the sentence is undated prose (not a dated entry), so date_inferred with empty date_text.",
+  "corrected": {
+   "date_text": "",
+   "type": "DECISION",
+   "quote": "The PSEC decided that there was an unreasonable risk to safety for Air Pure RWD vehicles manufactured before the July 25, 2025 clean point, which have less than 25,000 miles (as of the date of the recall filing), that have not already had a drive unit replacement",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "Lucid is currently planning on implementing the same remedy as identified in the October 2025 recall",
+  "reason": "Remedy plan/logistics, not an event; October 2025 only names the earlier recall."
+ },
+ {
+  "item_id": "D008",
+  "decision": "Y",
+  "quote": "because an internal evaluation test in May 2025 identified that a future model equipped with a single speaker AVAS and this software configuration did not meet the minimum requirements for other markets.",
+  "reason": "The May 2025 item is a test result on a future model for other markets, not a report of this problem reaching the filer; test results are OTHER."
+ },
+ {
+  "item_id": "D009",
+  "decision": "X",
+  "quote": "In October 2025, Toyota performed on-vehicle sound verification testing using additional subject vehicles in each trim variation",
+  "reason": "Testing conducted to confirm performance/scope is INVESTIGATION_START."
+ },
+ {
+  "item_id": "D010",
+  "decision": "X",
+  "quote": "On January 15, 2026, an issue pertaining to stripped windshield wiper arm splines on certain Expedition and Navigator vehicles was brought to Ford´s Critical Concern Review Group for review.",
+  "reason": "Bringing the issue into the CCRG for review opens the review/investigation (INVESTIGATION_START); the awareness (warranty observation) is the next sentence."
+ },
+ {
+  "item_id": "D011",
+  "decision": "Y",
+  "quote": "Ford observed an elevated warranty claim rate for Expedition and Navigator vehicles",
+  "reason": "The sentence's action is observing elevated warranty claims (FILER_AWARENESS); by the own-date rule it takes the sentence's date 2024."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "During January and February 2026, Ford conducted a read-across and assessed field performance data for vehicles that share the same knurl driver design and supplier.",
+  "reason": "Analysis conducted to determine scope = INVESTIGATION_START; date_text is the date as written, 'January and February 2026'."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "On March 3, 2026, this was brought to Ford's Critical Concern Review Group (CCRG) for review.",
+  "reason": "Awareness occurred Feb 24 (audit finding); bringing it to the CCRG for review starts the investigation."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "February 11, 2026, an investigation was initiated and continued through March 25, 2026, and a clean point established for production.",
+  "reason": "Sentence has two distinct dates; March 25, 2026 marks the investigation's continuation end and the production clean point (OTHER), giving a separate event."
+ },
+ {
+  "item_id": "D015",
+  "decision": "X",
+  "quote": "In November 2025, Ford assessed warranty claims related to transmission output shaft spline wear",
+  "reason": "The action is an assessment/analysis of warranty claims (INVESTIGATION_START), not receipt of a report."
+ },
+ {
+  "item_id": "D016",
+  "decision": "CONTESTED",
+  "quote": "In December 2025, the CCRG’s investigation identified additional reports of similar spline wear in 2021- 2025MY vehicles",
+  "reason": "Versions label two different sentences (Dec 2025 finding vs Dec 4 CCRG intake); both are separate valid events and Y's label is correct for its sentence, while X's type (OTHER vs FILER_AWARENESS for additional reports) is debatable. The pair does not settle a single answer."
+ },
+ {
+  "item_id": "D017",
+  "decision": "CONTESTED",
+  "quote": "On February 26, 2026, Ford’s workshop manuals were updated",
+  "reason": "Versions label two different sentences: Feb 26 manual update (OTHER, correct) and Jan-Feb 2026 analysis (INVESTIGATION_START, correct). Both are valid separate events; the misaligned pair cannot be settled as one."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "On November 6, 2025, this concern was brought into Ford’s Critical Concern Review Group (CCRG) for review.",
+  "reason": "Awareness was Oct 31 (fire inspection); CCRG intake for review starts the investigation."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "During November and December 2025, the CCRG reviewed wiring harness specifications and installation procedures of the sunvisor and headliner suppliers with two notable findings.",
+  "reason": "Review/analysis conducted to find the cause = INVESTIGATION_START; date_text as written is 'November and December 2025'."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "In January and February 2026, the CCRG conducted flammability assessment testing",
+  "reason": "Testing conducted to assess the cause/risk = INVESTIGATION_START; date_text as written is 'January and February 2026'."
+ },
+ {
+  "item_id": "D021",
+  "decision": "Y",
+  "quote": "Blue Bird started its internal investigation to evaluate if the issue was related to a supplier quality spill or an internal assembly process.",
+  "reason": "Narrative refers to a supplier generically ('supplier quality spill') without naming one: UNNAMED."
+ },
+ {
+  "item_id": "D022",
+  "decision": "Y",
+  "quote": "January 2026: Blue Bird had a meeting with Transport Canada to understand windshield wiper issues they found during an inspection.",
+  "reason": "A regulator's inspection finding reaching the filer is FILER_AWARENESS (notice from a regulator)."
+ },
+ {
+  "item_id": "D023",
+  "decision": "NEITHER",
+  "quote": "Between March 2026 and April 2026, FCA US TSRC met with FCA US Engineering to review the issue, understand potential failure modes, and to determine the suspect population.",
+  "reason": "Review to understand failure modes and determine population is investigation/analysis conducted (INVESTIGATION_START); date_text should be the date range as written, not just April 2026.",
+  "corrected": {
+   "date_text": "March 2026 and April 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Between March 2026 and April 2026, FCA US TSRC met with FCA US Engineering to review the issue, understand potential failure modes, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D024",
+  "decision": "Y",
+  "quote": "On April 1, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles",
+  "reason": "Filer recognizing that a build issue exists is an internal finding/awareness (FILER_AWARENESS); the decision comes April 16."
+ },
+ {
+  "item_id": "D025",
+  "decision": "X",
+  "quote": "following information received from the fuel tank supplier that a fuel tank had failed the end-of-line leak test, a Product Safety and Compliance Committee (PSCC) investigation was opened.",
+  "reason": "One event per sentence; the main action is opening the PSCC investigation (INVESTIGATION_START), the supplier information is the subordinate trigger."
+ }
+]

@@ -1,0 +1,1260 @@
+[
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "In October 2025, Lucid filed a recall (SR-25-03-0) identifying an affected population of Air Pure RWD vehicles based on a lash detection algorithm that used vehicle telematics data to identify vehicles potentially at risk of a half-shaft disengagement while driving.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "October 2025",
+   "type": "NHTSA_FILING",
+   "quote": "In October 2025, Lucid filed a recall (SR-25-03-0) identifying an affected population of Air Pure RWD vehicles based on a lash detection algorithm that used vehicle telematics data to identify vehicles potentially at risk of a half-shaft disengagement while driving.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D001",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "As part of its investigation, the PSWG evaluated the sensitivity of the lash detection algorithm and scope of the October 2025 recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D002",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "February 2026",
+   "type": "OTHER",
+   "quote": "Based on its investigation, the PSWG identified 26 half-shaft issues that occurred on customer vehicles between October 2025 and February 2026 that it attributed to the same root cause as identified in the October 2025 recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-01",
+    "end": "2026-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D003",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "Based on its investigation, the PSWG identified 26 half-shaft issues that occurred on customer vehicles between October 2025 and February 2026 that it attributed to the same root cause as identified in the October 2025 recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D004",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "July 25, 2025",
+   "type": "OTHER",
+   "quote": "No customer incidents were found after the July 25, 2025 clean point and no incident vehicles had reached over 25,000 miles before failure.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-25",
+    "end": "2025-07-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D005",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "July 25, 2025",
+   "type": "DECISION",
+   "quote": "The PSEC decided that there was an unreasonable risk to safety for Air Pure RWD vehicles manufactured before the July 25, 2025 clean point, which have less than 25,000 miles (as of the date of the recall filing), that have not already had a drive unit replacement",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-25",
+    "end": "2025-07-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D006",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V193-7461.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "Lucid is currently planning on implementing the same remedy as identified in the October 2025 recall; however, Lucid is also currently developing a software detection strategy that includes a revised algorithm that can be installed on customer vehicles via an OTA update.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D007",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V203-3945.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 2025",
+   "type": "OTHER",
+   "quote": "From June through September 2025, Toyota reviewed different vehicle models equipped with a single speaker AVAS, that may have a certain software configuration because an internal evaluation test in May 2025 identified that a future model equipped with a single speaker AVAS",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "May 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "because an internal evaluation test in May 2025 identified that a future model equipped with a single speaker AVAS and this software configuration did not meet the minimum requirements for other markets.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D008",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V203-3945.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "October 2025",
+   "type": "OTHER",
+   "quote": "In October 2025, Toyota performed on-vehicle sound verification testing using additional subject vehicles in each trim variation (which have different vehicle characteristics) to confirm the performance.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "October 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In October 2025, Toyota performed on-vehicle sound verification testing using additional subject vehicles in each trim variation (which have different vehicle characteristics) to confirm the performance.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D009",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V204-7221.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "January 15, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On January 15, 2026, an issue pertaining to stripped windshield wiper arm splines on certain Expedition and Navigator vehicles was brought to Ford´s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-15",
+    "end": "2026-01-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January 15, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On January 15, 2026, an issue pertaining to stripped windshield wiper arm splines on certain Expedition and Navigator vehicles was brought to Ford´s Critical Concern Review Group for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D010",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V204-7221.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "2024",
+   "type": "OTHER",
+   "quote": "During review of safety recall 22S26 (NHTSA 22V250), which was conducted pursuant to the three-year recall lookback initiated as part of the Consent Order entered into by Ford and NHTSA in 2024, Ford observed an elevated warranty claim rate for Expedition",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-01",
+    "end": "2024-12-31",
+    "granularity": "year",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "2024",
+   "type": "FILER_AWARENESS",
+   "quote": "which was conducted pursuant to the three-year recall lookback initiated as part of the Consent Order entered into by Ford and NHTSA in 2024, Ford observed an elevated warranty claim rate for Expedition and Navigator vehicles",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D011",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V204-7221.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 2026",
+   "type": "OTHER",
+   "quote": "During January and February 2026, Ford conducted a read-across and assessed field performance data for vehicles that share the same knurl driver design and supplier.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-01",
+    "end": "2026-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January and February 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "During January and February 2026, Ford conducted a read-across and assessed field performance data for vehicles that share the same knurl driver design and supplier.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D012",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V205-4042.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "March 3, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On March 3, 2026, this was brought to Ford's Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-03",
+    "end": "2026-03-03",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "March 3, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On March 3, 2026, this was brought to Ford's Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D013",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V215-9936.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "March 25, 2026",
+   "type": "OTHER",
+   "quote": "February 11, 2026, an investigation was initiated and continued through March 25, 2026, and a clean point established for production.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D014",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V236-1914.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "November 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "In November 2025, Ford assessed warranty claims related to transmission output shaft spline wear and transfer case input spline wear on 2022-2023 model year (MY) Bronco vehicles.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-01",
+    "end": "2025-11-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "November 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "In November 2025, Ford assessed warranty claims related to transmission output shaft spline wear and transfer case input spline wear on 2022-2023 model year (MY) Bronco vehicles.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D015",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V236-1914.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "In December 2025, the CCRG’s investigation identified additional reports of similar spline wear in 2021- 2025MY vehicles, including reports describing a loss of power while driving and loss of park pawl engagement.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "December 4, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "On December 4, 2025, this concern was brought into Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D016",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V236-1914.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 26, 2026",
+   "type": "OTHER",
+   "quote": "On February 26, 2026, Ford’s workshop manuals were updated to ensure that the transmission and transfer case are properly aligned when they are reassembled during service repairs.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-26",
+    "end": "2026-02-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January and February 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "During January and February 2026, the CCRG analyzed returned parts, completed computer-aided engineering (CAE) simulations, and conducted physical testing to conclude the root cause of the spline wear is misalignment in the joint between the transfer case and transmission.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D017",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V238-6269.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "November 6, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "On November 6, 2025, this concern was brought into Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-11-06",
+    "end": "2025-11-06",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "November 6, 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "On November 6, 2025, this concern was brought into Ford’s Critical Concern Review Group (CCRG) for review.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D018",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V238-6269.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December 2025",
+   "type": "OTHER",
+   "quote": "During November and December 2025, the CCRG reviewed wiring harness specifications and installation procedures of the sunvisor and headliner suppliers with two notable findings.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-01",
+    "end": "2025-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "November and December 2025",
+   "type": "INVESTIGATION_START",
+   "quote": "During November and December 2025, the CCRG reviewed wiring harness specifications and installation procedures of the sunvisor and headliner suppliers with two notable findings.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D019",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V238-6269.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 2026",
+   "type": "OTHER",
+   "quote": "In January and February 2026, the CCRG conducted flammability assessment testing that showed all potentially affected materials met flammability requirements and were not combustible.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-02-01",
+    "end": "2026-02-28",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January and February 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "In January and February 2026, the CCRG conducted flammability assessment testing that showed all potentially affected materials met flammability requirements and were not combustible.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D020",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V245-1061.pdf",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "Blue Bird started its internal investigation to evaluate if the issue was related to a supplier quality spill or an internal assembly process.",
+   "section": "chronology"
+  },
+  "item_id": "D021",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V245-1061.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "January 2026",
+   "type": "OTHER",
+   "quote": "January 2026: Blue Bird had a meeting with Transport Canada to understand windshield wiper issues they found during an inspection.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-01",
+    "end": "2026-01-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "January 2026: Blue Bird had a meeting with Transport Canada to understand windshield wiper issues they found during an inspection.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D022",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V262-9341.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "April 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Between March 2026 and April 2026, FCA US TSRC met with FCA US Engineering to review the issue, understand potential failure modes, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "March 2026 and April 2026",
+   "type": "OTHER",
+   "quote": "Between March 2026 and April 2026, FCA US TSRC met with FCA US Engineering to review the issue, understand potential failure modes, and to determine the suspect population.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D023",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V262-9341.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "April 1, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On April 1, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to inoperative instrument panel clusters potentially resulting in a noncompliance with FMVSS Nos.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "April 1, 2026",
+   "type": "OTHER",
+   "quote": "On April 1, 2026, FCA US TSRC organization recognized that a vehicle build issue existed on certain vehicles related to inoperative instrument panel clusters potentially resulting in a noncompliance with FMVSS Nos. 571.108, 571.126, 571.135, 571.138, and 571.208.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D024",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V263-6693.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "27 March 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On 27 March 2026, following information received from the fuel tank supplier that a fuel tank had failed the end-of-line leak test, a Product Safety and Compliance Committee (PSCC) investigation was opened.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-27",
+    "end": "2026-03-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "27 March 2026",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "On 27 March 2026, following information received from the fuel tank supplier that a fuel tank had failed the end-of-line leak test, a Product Safety and Compliance Committee (PSCC) investigation was opened.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D025",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V268-9028.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "March 13, 2026",
+   "type": "OTHER",
+   "quote": "On March 13, 2026, the CCRG confirmed an increasing number of warranty reports for the monitor period.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-13",
+    "end": "2026-03-13",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "March 13, 2026",
+   "type": "FILER_AWARENESS",
+   "quote": "On March 13, 2026, the CCRG confirmed an increasing number of warranty reports for the monitor period.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D026",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V268-9028.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "June 2, 2025 to March 27, 2026",
+   "type": "OTHER",
+   "quote": "The reports were received from June 2, 2025 to March 27, 2026.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-02",
+    "end": "2026-03-27",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D027",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V272-8617.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "12/16/25",
+   "type": "FILER_AWARENESS",
+   "quote": "In addition to the field report on 3/25/26, Newmar is aware of one additional service claim for a loose chin spoiler on 12/16/25.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D028",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V279-2878.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "Mar-2026",
+   "type": "OTHER",
+   "quote": "17-Apr-2026, during Early Warning Report generation, a Field Report from Mar-2026 was identified that indicated the dash lamps were not illuminated during night-run on an order of buses.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "Mar-2026",
+   "type": "FILER_AWARENESS",
+   "quote": "17-Apr-2026, during Early Warning Report generation, a Field Report from Mar-2026 was identified that indicated the dash lamps were not illuminated during night-run on an order of buses.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D029",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V279-2878.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "Apr-2026",
+   "type": "OTHER",
+   "quote": "20 to 24-Apr-2026 information was gathered to verify the issue and was determined to be an incorrect program.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-01",
+    "end": "2026-04-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D030",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V279-2878.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "Mar-2026",
+   "type": "OTHER",
+   "quote": "The affected buses (4 total) were corrected on 31-Mar-2026.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-03-01",
+    "end": "2026-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D031",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V295-7913.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 4, 2026",
+   "type": "OTHER",
+   "quote": "The same day, the manufacturing plant notified OCC of concern; OCC opened a research item.",
+   "inherited_date": true,
+   "entry_quote": "May 4, 2026, Forest River’s office of Corporate Compliance was notified of a concern that was discovered at the factory when changing an interior panel that had been damaged in manufacturing.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-04",
+    "end": "2026-05-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "May 4, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "The same day, the manufacturing plant notified OCC of concern; OCC opened a research item.",
+   "inherited_date": true,
+   "entry_quote": "May 4, 2026, Forest River’s office of Corporate Compliance was notified of a concern that was discovered at the factory when changing an interior panel that had been damaged in manufacturing.",
+   "date_inferred": false
+  },
+  "item_id": "D032",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "S2",
+  "A": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: ARC Automotive, Inc.",
+   "status": "INSUFFICIENT",
+   "quote": "April through June – NASO continued recovering parts for analysis by the STIL and procured the supplier approval drawings associated with the subject inflators.",
+   "section": "chronology"
+  },
+  "B": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "ARC",
+   "quote": "September – Hyundai’s North America Safety Office (“NASO”) received ARC’s response and files under the provisions of the Protective Agreement issued on August 24, 2023, in EA16-003.",
+   "section": "chronology"
+  },
+  "item_id": "D033",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "U",
+  "A": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "April through June – NASO continued recovering parts for analysis by the STIL and procured the supplier approval drawings associated with the subject inflators.",
+   "section": "chronology"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "ARC"
+   ],
+   "quote": "September – Hyundai’s North America Safety Office (“NASO”) received ARC’s response and files under the provisions of the Protective Agreement issued on August 24, 2023, in EA16-003.",
+   "section": "chronology"
+  },
+  "item_id": "D034",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "October 23, 2023",
+   "type": "OTHER",
+   "quote": "An initial meeting to develop and review the full investigation plan was held with NG on October 23, 2023.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-10-23",
+    "end": "2023-10-23",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D035",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "January – June 2024",
+   "type": "OTHER",
+   "quote": "Month(s): January – June 2024 January through February – NASO began preparation for on-site inspection procedures of recovery parts with its Safety Testing & Investigation Laboratory (“STIL”).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-01-01",
+    "end": "2024-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D036",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "July – December 2024",
+   "type": "OTHER",
+   "quote": "Month(s): July – December 2024",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-07-01",
+    "end": "2024-12-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D037",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "January – March 2025",
+   "type": "OTHER",
+   "quote": "Month(s): January – March 2025",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-01-01",
+    "end": "2025-03-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D038",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "April – December 2025",
+   "type": "OTHER",
+   "quote": "Month(s): April – December 2025 April through August – NG continued its investigation through crush and closed-bomb testing of lower-density propellant wafers.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-01",
+    "end": "2025-12-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D039",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "January – May 2026",
+   "type": "OTHER",
+   "quote": "Month(s): January – May 2026 January through February – NG continued with validation efforts of its analysis findings.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-01-01",
+    "end": "2026-05-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D040",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V307-4656.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "July 2026",
+   "type": "OTHER",
+   "quote": "July 2026",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-07-01",
+    "end": "2026-07-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D041",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V313-6868.pdf",
+  "claim": "S2",
+  "A": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Lippert",
+   "status": "SUPPORTED",
+   "quote": "LCI notified Keystone RV that they have identified a potential concern involving shock bolts on the Curt Touring Suspension System installed on specific Lippert chassis.",
+   "section": "chronology"
+  },
+  "B": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "LCI",
+   "quote": "LCI notified Keystone RV that they have identified a potential concern involving shock bolts on the Curt Touring Suspension System installed on specific Lippert chassis.",
+   "section": "chronology"
+  },
+  "item_id": "D042",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V313-6868.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "05/10/2026",
+   "type": "OTHER",
+   "quote": "05/10/2026 – Warranty claims for shock bolts include 1 claims, claim created start date 4/25/2024 to claim created end date 05/10/2026",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-10",
+    "end": "2026-05-10",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D043",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V313-6868.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "4/25/2024",
+   "type": "OTHER",
+   "quote": "05/10/2026 – Warranty claims for shock bolts include 1 claims, claim created start date 4/25/2024 to claim created end date 05/10/2026",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-04-25",
+    "end": "2024-04-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D044",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V323-5712.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "4/21/2026",
+   "type": "OTHER",
+   "quote": "The concern was entered into Wabash’s quality system for review.",
+   "inherited_date": true,
+   "entry_quote": "4/21/2026 - Wabash learned that a customer was cited for missing conspicuity material on the rear of the trailer.",
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-21",
+    "end": "2026-04-21",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "4/21/2026",
+   "type": "INVESTIGATION_START",
+   "quote": "The concern was entered into Wabash’s quality system for review.",
+   "inherited_date": true,
+   "entry_quote": "4/21/2026 - Wabash learned that a customer was cited for missing conspicuity material on the rear of the trailer.",
+   "date_inferred": false
+  },
+  "item_id": "D045",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V323-5712.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "4/22/2026",
+   "type": "OTHER",
+   "quote": "4/22/2026 - Wabash reviewed photographs from the customer and noted the absence of conspicuity tape across the width of the rear deck.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-04-22",
+    "end": "2026-04-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "4/22/2026",
+   "type": "INVESTIGATION_START",
+   "quote": "4/22/2026 - Wabash reviewed photographs from the customer and noted the absence of conspicuity tape across the width of the rear deck.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D046",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V323-5712.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "5/15/2026",
+   "type": "OTHER",
+   "quote": "5/15/2026 - Based on the Product Safety Committee’s investigation, Wabash determined that the affected populations of trailers may not comply with FMVSS 108 S8.2.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-15",
+    "end": "2026-05-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "5/15/2026",
+   "type": "DECISION",
+   "quote": "5/15/2026 - Based on the Product Safety Committee’s investigation, Wabash determined that the affected populations of trailers may not comply with FMVSS 108 S8.2.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D047",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V323-5712.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "5/14/2026",
+   "type": "OTHER",
+   "quote": "4/23-5/14/2026 - Wabash investigated warranty, sales, and manufacturing information and escalated the issue to the Product Safety Committee to evaluate compliance with FMVSS 108 and the potential scope of the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-14",
+    "end": "2026-05-14",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D048",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V333-4875.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "5/20/2026",
+   "type": "OTHER",
+   "quote": "We as the vehicle manufacturer are required to issue a recall for the vehicles involved and started the recall process on 5/20/2026.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-20",
+    "end": "2026-05-20",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "5/20/2026",
+   "type": "DECISION",
+   "quote": "We as the vehicle manufacturer are required to issue a recall for the vehicles involved and started the recall process on 5/20/2026.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D049",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V347-0355.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 18, 2026",
+   "type": "OTHER",
+   "quote": "On May 18, 2026, research began into finding out which brands used Q'Straints products within their defined dates of recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-18",
+    "end": "2026-05-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "May 18, 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "On May 18, 2026, research began into finding out which brands used Q'Straints products within their defined dates of recall.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D050",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V349-0404.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May-2026",
+   "type": "OTHER",
+   "quote": "15-May-2026: ARBOC begins to confirm what buses may be affected by the suspect restraints.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2026-05-01",
+    "end": "2026-05-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "15-May-2026",
+   "type": "INVESTIGATION_START",
+   "quote": "15-May-2026: ARBOC begins to confirm what buses may be affected by the suspect restraints.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D051",
+  "x_is": "A"
+ }
+]
