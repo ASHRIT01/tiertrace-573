@@ -1,0 +1,5 @@
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b05/cmp/passC/batch_2/LABELING_RULES.md
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b05/cmp/passC/batch_2/items.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b05/cmp/passC/batch_2/texts/RCLRPT-24V949-7212.txt
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b05/cmp/passC/batch_2/decisions.json
+/Volumes/ASHI P1/Project A/tiertrace/data/labels/work/testA/b05/cmp/passC/batch_2/verify.py

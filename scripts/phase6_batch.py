@@ -95,8 +95,11 @@ def sheet(split, k, files, P):
         s = d["sections"]
         print(f"\n######## {r['file']}  filer={r['filer']}  filed={r['filing_date']}")
         print("BLOCK name:", d["block"].name)
-        print("CAUSE:", " ".join(s.get("cause", "").split())[:600])
-        print("CHRONOLOGY:", " ".join(s.get("chronology", "").split())[:3500])
+        import os
+        compact = bool(os.environ.get("COMPACT"))
+        print("CAUSE:", " ".join(s.get("cause", "").split())[:(220 if compact else 600)])
+        if not compact:
+            print("CHRONOLOGY:", " ".join(s.get("chronology", "").split())[:3500])
         c = {x["id"]: x for x in r["claims"]}
         print(f"AUTO S1={c['S1']['status']} S2={c['S2']['status']} ({c['S2'].get('quote','')[:70]!r}) C={r['cause']['status']} U={r['upstream']['kind']} {r['upstream'].get('names')}")
         for i, e in enumerate(r["events"]):

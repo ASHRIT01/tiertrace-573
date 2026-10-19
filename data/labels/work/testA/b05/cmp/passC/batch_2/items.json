@@ -1,0 +1,45 @@
+[
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-24V949-7212.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "September – November 2024",
+   "type": "OTHER",
+   "quote": "The customer reported that at 639 miles they experienced intermittent vibration while driving at highway speed before the vehicle suddenly made an uncommanded left turn into a side rail.",
+   "inherited_date": true,
+   "entry_quote": "September – November 2024 On September 12, 2024, Ford received a Global Common Quality Indicator System (GCQIS) incident report pertaining to a missing left front upper control arm ball joint nut on a 2024 model year F-150 BEV vehicle.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-09-01",
+    "end": "2024-11-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D026",
+  "file": "RCLRPT-24V949-7212.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "February 12, 2024",
+   "type": "OTHER",
+   "quote": "Based on a review of this data, CCRG was able to determine that certain vehicles built between November 6, 2023 and February 12, 2024, may have failed to achieve the required torque due to variation in the alignment or orientation between the DC nutrunner tool",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-02-12",
+    "end": "2024-02-12",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ }
+]
