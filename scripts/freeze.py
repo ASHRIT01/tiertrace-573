@@ -7,7 +7,7 @@ reports/APPROVED_BY_OWNER.txt. It refuses to run on a dirty git tree. Before it 
   3. for each Ollama model: digest (ollama list / API), SHA-256 of `ollama show` and of the weight blobs, Ollama version;
   4. seeds and options (checked against the code), and for labelling: the Claude model per role and SHA-256 of the labelling prompts and rules.
 Then it moves the proposed Phase 6 subsets into data/splits/, writes data/splits/SHA256SUMS and data/FREEZE_MANIFEST.json, appends a FROZEN
-section to PREREGISTRATION.md and tags the commit `prereg-v1`. Nothing in data/splits/dev_ids.txt or testA_ids.txt changes."""
+section to PREREGISTRATION.md and tags the commit `freeze-v1`. Nothing in data/splits/dev_ids.txt or testA_ids.txt changes."""
 import hashlib
 import inspect
 import json
@@ -30,7 +30,8 @@ FILES = ["data/labels/dev_silver_v1.json", "data/labels/passA_v1.json", "data/la
          "tt/agent/inject.py", "tt/baselines/rules.py", "tt/eval/riskcov.py", "tt/eval/phase3.py", "tt/eval/phase4.py", "tt/eval/diagnose.py",
          "tt/eval/devscore.py", "tt/labels/dates.py", "tt/labels/events.py", "tt/labels/agree.py", "tt/labels/protocol.py", "tt/labels/schema.py",
          "tt/labels/pipeline.py", "tt/labels/draft.py", "tt/labels/texts.py", "tt/labels/blind.py", "tt/labeldraft.py", "tt/cli.py",
-         "tt/eval/endpoints.py", "tt/leakcheck.py", "scripts/freeze.py", "reports/PREREGISTRATION_PROPOSED_FINAL.md"]
+         "tt/eval/endpoints.py", "tt/kind.py", "tt/norm/aliases.py", "tt/parse/block.py", "tt/parse/sections.py", "tt/parse/pdf.py", "tt/verify/dates.py",
+         "tt/leakcheck.py", "scripts/freeze.py", "reports/PREREGISTRATION_PROPOSED_FINAL.md"]
 SPLITS = ["data/splits/dev_ids.txt", "data/splits/testA_ids.txt"]
 PROPOSED = ["testA_labelled_ids.txt", "testB_ids.txt", "unseen_filer_ids.txt"]
 VERIFIER = ["tt/verify/verifier.py", "tt/verify/extra.py"]
@@ -47,6 +48,25 @@ def sha(p: Path) -> str:
 
 def sha_s(s: str) -> str:
     return hashlib.sha256(s.encode()).hexdigest()
+
+
+def eval_closure(entry="tt/eval/endpoints.py", extra=("tt/eval/devscore.py",)) -> list[str]:
+    """The scorer code: `entry`, `extra`, and every tt/eval module they import (transitively), found by parsing the imports."""
+    import ast
+    seen, todo = [], [entry, *extra]
+    while todo:
+        f = todo.pop(0)
+        if f in seen:
+            continue
+        seen.append(f)
+        for n in ast.walk(ast.parse((ROOT / f).read_text())):
+            mods = [n.module] if isinstance(n, ast.ImportFrom) and n.module else [a.name for a in n.names] if isinstance(n, ast.Import) else []
+            for m in mods:
+                if m == "tt.eval" and isinstance(n, ast.ImportFrom):
+                    todo += [f"tt/eval/{a.name}.py" for a in n.names if (ROOT / f"tt/eval/{a.name}.py").exists()]
+                elif m.startswith("tt.eval.") and (ROOT / (m.replace(".", "/") + ".py")).exists():
+                    todo.append(m.replace(".", "/") + ".py")
+    return sorted(seen)
 
 
 def sh(*a) -> str:
@@ -107,6 +127,9 @@ def declared_vs_code(rs: dict) -> tuple[dict, list[str]]:
     return code, bad
 
 
+SCORER = eval_closure()
+
+
 def gather() -> tuple[dict, list[str], list[str]]:
     """-> (manifest, report lines, problems). Reads only; writes nothing."""
     from tt import leakcheck
@@ -126,12 +149,16 @@ def gather() -> tuple[dict, list[str], list[str]]:
     # 2. commit and hashes
     man["git_commit"] = sh("git", "rev-parse", "HEAD")
     prompt = run_dev.PROMPTS["v2"]
+    man["scorer_files"] = SCORER
     man["hashes"] = {"agent_prompt_v2_system": sha_s(prompt),
                      "agent_output_schema": sha_s(json.dumps(Extraction.model_json_schema(), sort_keys=True)),
                      "agent_user_message_template": sha_s(inspect.getsource(run_dev.build_user_from)),
                      "thresholds_file": sha(ROOT / "config/thresholds.json"),
-                     **{f"verifier:{Path(f).name}": sha(ROOT / f) for f in VERIFIER}}
-    L += ["", "FREEZE RECORD", f"  git commit (HEAD before freeze): {man['git_commit']}"]
+                     **{f"verifier:{Path(f).name}": sha(ROOT / f) for f in VERIFIER},
+                     "preregistration_proposed_final": sha(ROOT / "reports/PREREGISTRATION_PROPOSED_FINAL.md"),
+                     **{f"scorer:{Path(f).name}": sha(ROOT / f) for f in SCORER}}
+    L += ["", "FREEZE RECORD", f"  git commit (HEAD at freeze time, before the freeze commit): {man['git_commit']}",
+          f"  scorer code = tt/eval/endpoints.py, devscore.py and the tt/eval modules they import: {', '.join(Path(f).name for f in SCORER)}"]
     L += [f"  sha256 {k:34} {v}" for k, v in man["hashes"].items()]
     th = json.loads((ROOT / "config/thresholds.json").read_text())
     if th.get("status") != "OWNER_APPROVED":
@@ -177,7 +204,8 @@ def gather() -> tuple[dict, list[str], list[str]]:
         problems.append("docs/PASS_C_PROMPT.txt must use the blind X/Y wording (version_X, version_Y) and never name pass A or B")
     man["labelling"] = {"claude_models_test": {r: lm["test"].get(r) for r in LABEL_ROLES}, "claude_models_dev_not_recorded": lm.get("dev"), "alias_note": lm.get("note"), "sha256": {Path(f).name: sha(ROOT / f) for f in LABEL_PROMPTS},
                         "blind_to_runs": "tt/labels/blind.py refuses any path in runs/ (sha256 " + sha(ROOT / "tt/labels/blind.py") + ")"}
-    L += ["", "  labelling:"] + [f"    Claude model, test {r}: {lm['test'].get(r)!r}" for r in LABEL_ROLES]
+    L += ["", "  labelling:", "    Pass A prompt: NONE EXISTS. Pass A is code-assisted (tt/labels/draft.py, events.py, dates.py) plus per-filing overrides (config/event_overrides.json, "
+          "config/claim_overrides.json), all hashed in the manifest; there is no stored Pass A prompt text to hash."] + [f"    Claude model, test {r}: {lm['test'].get(r)!r}" for r in LABEL_ROLES]
     L += [f"    dev {k}: {v}" for k, v in lm.get("dev", {}).items()] + ["    (aliases as passed to the Agent tool; alias-to-version mapping cannot be proven from inside a subagent)"]
     L += [f"    sha256 {Path(f).name:24} {man['labelling']['sha256'][Path(f).name]}" for f in LABEL_PROMPTS]
     L.append(f"    blind guard tt/labels/blind.py sha256 {sha(ROOT / 'tt/labels/blind.py')}")
@@ -189,6 +217,8 @@ def main():
         sys.exit("Refusing: reports/APPROVED_BY_OWNER.txt does not exist (the owner creates it after approving the preregistration).")
     if sh("git", "status", "--porcelain"):
         sys.exit("Refusing: git tree is not clean. Commit first.")
+    if sh("git", "tag", "--list", "freeze-v1"):
+        sys.exit("Refusing: tag freeze-v1 already exists.")
     gathered, lines, problems = gather()
     print("\n".join(lines))
     if problems:
@@ -198,7 +228,7 @@ def main():
         shutil.copy(ROOT / "data/splits/proposed" / n, ROOT / "data/splits" / n)
     split_files = SPLITS + [f"data/splits/{n}" for n in PROPOSED]
     (ROOT / "data/splits/SHA256SUMS").write_text("".join(f"{sha(ROOT / f)}  {Path(f).name}\n" for f in split_files))
-    man = {**gathered, "files": {f: sha(ROOT / f) for f in FILES + split_files}}
+    man = {**gathered, "files": {f: sha(ROOT / f) for f in sorted(set(FILES + SCORER)) + split_files}}
     (ROOT / "data/FREEZE_MANIFEST.json").write_text(json.dumps(man, indent=1))
     with open(ROOT / "PREREGISTRATION.md", "a") as f:
         f.write("\n## FROZEN (see reports/PREREGISTRATION_PROPOSED_FINAL.md for the full text)\n"
@@ -206,8 +236,8 @@ def main():
                 "| file | sha256 |\n|---|---|\n" + "".join(f"| {k} | {v} |\n" for k, v in man["files"].items()))
     sh("git", "add", "PREREGISTRATION.md", "data/splits", "data/FREEZE_MANIFEST.json")
     sh("git", "commit", "-m", "Freeze preregistration, labels and splits (owner approved)")
-    sh("git", "tag", "prereg-v1")
-    print("Frozen. Tag prereg-v1.")
+    sh("git", "tag", "freeze-v1")
+    print(f"Frozen. Tag freeze-v1 on {sh('git', 'rev-parse', 'HEAD')}.")
 
 
 if __name__ == "__main__":
