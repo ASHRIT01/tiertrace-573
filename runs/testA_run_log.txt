@@ -5,3 +5,4 @@
 2026-10-20 22:12:05 | DONE | run 2 | records 199 | json_valid_rate 0.9749 | call errors 5
 2026-10-20 22:15:44 | RETRY (infrastructure error, no model call completed) | run 2 | RCLRPT-25V574-1873.pdf | attempts 1 | valid_json True
 2026-10-20 22:19:11 | SENSITIVITY RETRY of the 4 run-2 timeouts (separate file, once) | RCLRPT-25V507-9357.pdf, RCLRPT-25V544-9834.pdf, RCLRPT-25V562-5431.pdf, RCLRPT-25V565-4354.pdf
+2026-10-20 22:34:01 | H4 injection runs started (runA t=0 seed 0, then runB t=0.5 seed 1), held-out 30 attacks
