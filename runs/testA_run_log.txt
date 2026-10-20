@@ -1,0 +1,6 @@
+2026-10-20 12:48:52 | START | run 1 | records already in file: 0 of 199
+2026-10-20 16:10:07 | DONE | run 1 | records 199 | json_valid_rate 1.0000 | call errors 0
+2026-10-20 16:10:10 | START | run 2 | records already in file: 0 of 199
+2026-10-20 21:32:45 | RESTART | run 2 | records already in file: 167 of 199
+2026-10-20 22:12:05 | DONE | run 2 | records 199 | json_valid_rate 0.9749 | call errors 5
+2026-10-20 22:15:44 | RETRY (infrastructure error, no model call completed) | run 2 | RCLRPT-25V574-1873.pdf | attempts 1 | valid_json True

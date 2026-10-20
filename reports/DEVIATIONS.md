@@ -116,3 +116,11 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Definition of "excluded gold event" fixed as "date text present and no ISO span" AFTER the first dev re-score under the broader "or flagged date_inferred" reading changed one dev prediction (434 -> 433, 19V811-5724 '11-13-'); the broader reading is kept as the pre-declared sensitivity `inferred_too`. Fixed before any Test-A model output exists.
 - `tt/leakcheck.py` already skipped `._*` files (line 68); a test now pins it. The runner reads the selection list only.
 - Isolation slips listed in config/isolation_slips.json (3 slips, 56 filings; outside-knowledge case 24V556-5723).
+
+## Test-A model runs (2026-10-20)
+- Run 1 (temperature 0, seed 0): 12:48:52 start, 16:10:07 done, 199/199 records, JSON-valid 100%, 0 call errors, no restart.
+- Run 2 (temperature 0.5, seed 1): 16:10:10 start; interrupted; RESTART 21:32:45 with 167 of 199 records already in the file (resume=True, frozen settings); done 22:12:05, 199 records, JSON-valid 0.9749, 5 call errors.
+- The 5 run-2 errors (all before the restart, lines 160, 164, 165, 166, 167 of the file): four per-call timeouts at 300 s (RCLRPT-25V507-9357, 25V544-9834, 25V562-5431, 25V565-4354; no model output retained) and one "model runner has unexpectedly stopped" at 2 s (RCLRPT-25V574-1873; no model call completed, no output). No record had an invalid-JSON output.
+- RETRY (owner rule: only records where no model call completed): RCLRPT-25V574-1873 re-run once with the frozen run-2 settings (temperature 0.5, seed 1, prompt v2, num_ctx 6144, timeout 300 s) by scripts/phase6_retry.py; it returned valid JSON on attempt 1 and replaced the failed record at line 167. The other 198 lines are unchanged (checked). The four timeouts were NOT retried. Original file kept as runs/testA_4b_v2_run2.pre_retry.jsonl (sha256 7ecd9fba...).
+- Counts before -> after the retry: run 2 JSON-valid 194 -> 195 of 199 (97.49% -> 97.99%); call errors 5 -> 4 (all timeouts). Run 1 unchanged (199/199).
+- Frozen handling of the four remaining run-2 failures: tt.eval.diagnose/phase4 read a run-2 record without an extraction as `None`, so "run 2 agrees" is false for that filing's run-1 claims (they cannot be accepted); run-2 claims are never scored. No rule was changed.
