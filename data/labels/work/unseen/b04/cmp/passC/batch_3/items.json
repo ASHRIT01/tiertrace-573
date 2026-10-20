@@ -1,0 +1,85 @@
+[
+ {
+  "item_id": "D051",
+  "file": "RCLRPT-26E008-5432.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "September 2025 Prevost was informed by the supplier that certain driver-side rearview mirrors were potentially manufactured with dimensions not meeting the required specifications.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D052",
+  "file": "RCLRPT-26V063-7895.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "March 2025 - January 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Investigation of the affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "March 2025 - January 2026 - Internal analysis at Daimler Buses to determine the cause and the remedy.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "March 2025 - January 2026",
+   "type": "OTHER",
+   "quote": "Investigation of the affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "March 2025 - January 2026 - Internal analysis at Daimler Buses to determine the cause and the remedy.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2026-01-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D053",
+  "file": "RCLRPT-26V093-5181.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "2025-12-22",
+   "type": "OTHER",
+   "quote": "No additional improperly installed anchorages were identified at that time.",
+   "inherited_date": true,
+   "entry_quote": "2025-12-22 Preliminary results of the internal inspection were obtained.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-22",
+    "end": "2025-12-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D054",
+  "file": "RCLRPT-26V093-5181.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "December 18, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Two warranty claims potentially related to this issue were received on November 18 and December 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ }
+]

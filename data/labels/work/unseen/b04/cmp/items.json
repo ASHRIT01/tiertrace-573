@@ -1,0 +1,1304 @@
+[
+ {
+  "file": "RCLRPT-25E048-6886.pdf",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "Knorr-Bremse"
+   ],
+   "quote": "On April 22, 2025, Bendix was made aware that Nova Bus had submitted Defect Information Reports to NHTSA (24V-558, 24V559 and 25E-027) related to the performance of certain brake chambers produced by Knorr-Bremse.",
+   "section": "chronology"
+  },
+  "item_id": "D001",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "S2",
+  "A": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Robert Bosch GmbH",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Robert Bosch GmbH",
+   "section": "block"
+  },
+  "B": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Bosch",
+   "quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "section": "chronology"
+  },
+  "item_id": "D002",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "NAMED",
+   "names": [
+    "Bosch"
+   ],
+   "quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "section": "chronology"
+  },
+  "item_id": "D003",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "January 2023 - June 2023",
+   "type": "OTHER",
+   "quote": "ZF jointly investigated the potential issue with Bosch, including engineering analysis and inspection / analysis of affected parts.",
+   "inherited_date": true,
+   "entry_quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January 2023 - June 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "ZF jointly investigated the potential issue with Bosch, including engineering analysis and inspection / analysis of affected parts.",
+   "inherited_date": true,
+   "entry_quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "date_inferred": false
+  },
+  "item_id": "D004",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "July 2023 - September 2023",
+   "type": "OTHER",
+   "quote": "July 2023 - September 2023: ZF jointly investigated the issue with BMW, including further testing and analysis of parts, photo-microscopy and shaker tests to evaluate long-term durability.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-07-01",
+    "end": "2023-09-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "July 2023 - September 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "July 2023 - September 2023: ZF jointly investigated the issue with BMW, including further testing and analysis of parts, photo-microscopy and shaker tests to evaluate long-term durability.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D005",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "September 2023",
+   "type": "OTHER",
+   "quote": "September 2023: Bosch reported concerns with additional E-Modules, this time affecting Stellantis and five additional OEMs of vehicles outside the U.S. Market.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "September 2023: Bosch reported concerns with additional E-Modules, this time affecting Stellantis and five additional OEMs of vehicles outside the U.S. Market.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D006",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "September 2023 - November 2023",
+   "type": "OTHER",
+   "quote": "Collaborative investigation and analyses were conducted, including failure modes and affects analyses, review of field information, production process testing details, production lot information, and scope parameters.",
+   "inherited_date": true,
+   "entry_quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-11-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 2023 - November 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D007",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "November 29, 2023",
+   "type": "OTHER",
+   "quote": "November 29, 2023: BMW initiated a recall of 552 vehicles containing ZF iTCU units with suspect Bosch E-Modules (23V-821).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-29",
+    "end": "2023-11-29",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 2023 - November 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Collaborative investigation and analyses were conducted, including failure modes and affects analyses, review of field information, production process testing details, production lot information, and scope parameters.",
+   "inherited_date": true,
+   "entry_quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "date_inferred": false
+  },
+  "item_id": "D008",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 31, 2024",
+   "type": "OTHER",
+   "quote": "May 31, 2024: Stellantis initiated a recall of 234 vehicles containing ZF iTCU units with suspect Bosch E-Modules (24V-413).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "November 2023 - May 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "November 2023 - May 2024: Further collaborative investigation and analyses were conducted with Stellantis.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D009",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "August 2024",
+   "type": "OTHER",
+   "quote": "ZF advised NHTSA that no additional vehicle manufacturers (beyond BMW and Stellantis) received these parts.",
+   "inherited_date": true,
+   "entry_quote": "August 2024: Following Stellantis's recall, NHTSA contacted ZF and asked whether ZF supplied the subject components to additional U.S.-based vehicle manufacturers.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-08-01",
+    "end": "2024-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "August 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "August 2024: Following Stellantis's recall, NHTSA contacted ZF and asked whether ZF supplied the subject components to additional U.S.-based vehicle manufacturers.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D010",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "OTHER",
+   "quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-05",
+    "end": "2025-09-16",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 4-9, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "September 4-9, 2025: ZF received a follow-up inquiry form NHTSA's Recall Management Division, again asking whether ZF supplied the subject components to other vehicle manufacturers.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D011",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "OTHER",
+   "quote": "Based on the recalls conducted by BMW and Stellantis, ZF is providing this defect information report under 49 CFR 573.3(f).",
+   "inherited_date": true,
+   "entry_quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-05",
+    "end": "2025-09-16",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "NHTSA_FILING",
+   "quote": "Based on the recalls conducted by BMW and Stellantis, ZF is providing this defect information report under 49 CFR 573.3(f).",
+   "inherited_date": true,
+   "entry_quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "date_inferred": false
+  },
+  "item_id": "D012",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "9/10/2025",
+   "type": "OTHER",
+   "quote": "9/10/2025 sample parts from customers received at manufacturing plant; Requested customers return all parts they currently have in stock (regardless of part number or date of build)",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D013",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "9/11/2025",
+   "type": "OTHER",
+   "quote": "9/11/2025 discovered during investigation at gear manufacturing plant that some samples of part number Q47170 (gear) have oversize teeth",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D014",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "5/22/2025",
+   "type": "OTHER",
+   "quote": "Total population of 98 gears was shipped to differential assembly plant on 5/22/2025",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D015",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "10/9/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "10/9/2025 to present– additional engineering testing and analysis to confirm issue and reconfirm total scope",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D016",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V068-2775.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "February 4, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Zeekr US was informed the same day and the global management team was informed at the Critical Concerns Management Team (CCMT) meeting on February 4, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-04",
+    "end": "2025-02-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "February 4, 2025",
+   "type": "OTHER",
+   "quote": "Zeekr US was informed the same day and the global management team was informed at the Critical Concerns Management Team (CCMT) meeting on February 4, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D017",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V101-2428.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "December, 2024",
+   "type": "OTHER",
+   "quote": "Similar configurations are screened through to identify other potential affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "December, 2024 : During the investigation, the safety office team notices a potential non-compliance affecting more vehicles than those of the specific customer.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-01",
+    "end": "2024-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "December, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "Similar configurations are screened through to identify other potential affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "December, 2024 : During the investigation, the safety office team notices a potential non-compliance affecting more vehicles than those of the specific customer.",
+   "date_inferred": false
+  },
+  "item_id": "D018",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V292-4296.PDF",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 1st",
+   "type": "OTHER",
+   "quote": "KZ's safety committee met on May 1st and agreed to issue a recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "B": {
+   "date_text": "May 1st",
+   "type": "DECISION",
+   "quote": "KZ's safety committee met on May 1st and agreed to issue a recall.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D019",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V292-4296.PDF",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "April 26th",
+   "type": "OTHER",
+   "quote": "On April 26th, units in the yard were repaired.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-26",
+    "end": "2025-04-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "B": null,
+  "item_id": "D020",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "During the repair process, the techician noted that no torque seal was present, indicating that the nut was not properly torqued to specification and was indeed found to be loose.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D021",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "The fleet manager had the remaining units of the same vintage inspected and found one other unit with a loose retaining nut and no torque seal.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D022",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "All other units were found to be within specification with torque seal indicating proper torque.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D023",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "Battle Motors reviewed the issue and determined that during the manufacturing process of the units in question a part shortage existed for the turn signal switch resulting in a deviation from standard manufactung practices, to continue production.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D024",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "Units at the factory were inspected and no defects were found, as well as a coursey units produced before and after the suspected time period with no issues found.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D025",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V468-3921.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "May 27,2025",
+   "type": "OTHER",
+   "quote": "On May 27,2025, a Mid-States representative visited the AMO facility and conducted inspections and testing.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-27",
+    "end": "2025-05-27",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "May 27,2025",
+   "type": "INVESTIGATION_START",
+   "quote": "On May 27,2025, a Mid-States representative visited the AMO facility and conducted inspections and testing.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D026",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V468-3921.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "June 2, 2025",
+   "type": "OTHER",
+   "quote": "On June 2, 2025, a Mid-States representative contacted AMO with the results of the inspections and testing.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-02",
+    "end": "2025-06-02",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "June 2, 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "On June 2, 2025, a Mid-States representative contacted AMO with the results of the inspections and testing.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D027",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V491-8213.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "January – February 2025",
+   "type": "OTHER",
+   "quote": "Fiamma denied the existence of a manufacturing defect.",
+   "inherited_date": true,
+   "entry_quote": "January – February 2025: Grech RV seeks input from Fiamma concerning instances of inadvertent awning deployment.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-01-01",
+    "end": "2025-02-28",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "January – February 2025",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "Fiamma denied the existence of a manufacturing defect.",
+   "inherited_date": true,
+   "entry_quote": "January – February 2025: Grech RV seeks input from Fiamma concerning instances of inadvertent awning deployment.",
+   "date_inferred": false
+  },
+  "item_id": "D028",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V491-8213.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "July 1, 2025",
+   "type": "OTHER",
+   "quote": "July 1, 2025: While Grech RV is conducting its review of the incident and company data, Grech receives an email inquiry from NHTSA regarding VOQ #11668764.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-01",
+    "end": "2025-07-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "July 1, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "July 1, 2025: While Grech RV is conducting its review of the incident and company data, Grech receives an email inquiry from NHTSA regarding VOQ #11668764.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D029",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V491-8213.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "September 2023",
+   "type": "FILER_AWARENESS",
+   "quote": "Grech RV has received 19 warranty claims involving alleged inadvertent awning deployment, the first of which was received in September 2023.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D030",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V497-2087.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "July 24, 2025",
+   "type": "OTHER",
+   "quote": "On July 24, 2025, Brinkley RV Safety Committee was presented the results of the investigation and voted unanimously to recall the affected units.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-24",
+    "end": "2025-07-24",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "July 24, 2025",
+   "type": "DECISION",
+   "quote": "On July 24, 2025, Brinkley RV Safety Committee was presented the results of the investigation and voted unanimously to recall the affected units.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D031",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V558-2502.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "8/25/2025",
+   "type": "OTHER",
+   "quote": "8/25/2025 – Warranty/service report submitted documenting the fractured mounting plate (3/16” 5052-H32 aluminum).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-25",
+    "end": "2025-08-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "8/25/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "8/25/2025 – Warranty/service report submitted documenting the fractured mounting plate (3/16” 5052-H32 aluminum).",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D032",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V558-2502.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "8/28/2025",
+   "type": "OTHER",
+   "quote": "8/28/2025 – Broader fleet review conducted; 36 trucks identified for containment and inspection.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-28",
+    "end": "2025-08-28",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "8/28/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "8/28/2025 – Broader fleet review conducted; 36 trucks identified for containment and inspection.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D033",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V580-8142.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "7/8/2025",
+   "type": "OTHER",
+   "quote": "7/8/2025 – International reviews the findings from the DOT inspection and delivery stop inspections and determines that it will conduct a comprehensive review of bus floor plans to identify those buses, which by design, should have the reinforcement installed",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-08",
+    "end": "2025-07-08",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "7/8/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "7/8/2025 – International reviews the findings from the DOT inspection and delivery stop inspections and determines that it will conduct a comprehensive review of bus floor plans to identify those buses, which by design, should have the reinforcement installed",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D034",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V580-8142.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "7/8/2025-8/22/2025",
+   "type": "OTHER",
+   "quote": "7/8/2025-8/22/2025 - International conducts comprehensive bus floor plan analysis to determine which buses, by design, should have the reinforcement installed and performs a limited field inspection.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-08",
+    "end": "2025-08-22",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "7/8/2025-8/22/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "7/8/2025-8/22/2025 - International conducts comprehensive bus floor plan analysis to determine which buses, by design, should have the reinforcement installed and performs a limited field inspection.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D035",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V580-8142.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "8/22/2025-8/27/2025",
+   "type": "OTHER",
+   "quote": "8/22/2025-8/27/2025- International conducts a review of data from previous compliance tests to determine if the presence of the reinforcement was necessary to meet the force requirements of FMVSS 210 S4.2.2 and 222 S5.1.4.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-22",
+    "end": "2025-08-27",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "8/22/2025-8/27/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "8/22/2025-8/27/2025- International conducts a review of data from previous compliance tests to determine if the presence of the reinforcement was necessary to meet the force requirements of FMVSS 210 S4.2.2 and 222 S5.1.4.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D036",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V580-8142.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "7/7/2025",
+   "type": "OTHER",
+   "quote": "6/25 - 7/7/2025 – Tulsa Bus Assembly Plant inspects the 10 buses on delivery stop, finding one bus built without the floor side reinforcement which was then added to the bus.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-07-07",
+    "end": "2025-07-07",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D037",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V580-8142.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "6/25",
+   "type": "OTHER",
+   "quote": "The other 9 contained the reinforcement.",
+   "inherited_date": true,
+   "entry_quote": "6/25 - 7/7/2025 – Tulsa Bus Assembly Plant inspects the 10 buses on delivery stop, finding one bus built without the floor side reinforcement which was then added to the bus.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-06-25",
+    "end": "2025-06-25",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "B": null,
+  "item_id": "D038",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V625-0070.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "08/15/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "The dealer was notified of the situation, and the vehicles were locked down until replacement parts could be supplied.",
+   "inherited_date": true,
+   "entry_quote": "08/15/2025 - Wabash's Manufacturing team reported to the Wabash warranty team that 10 trailers left our facility with the incorrect rear impact guards installed.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-15",
+    "end": "2025-08-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "08/15/2025",
+   "type": "OTHER",
+   "quote": "A concern response (CR) was entered into the system to bring awareness to the Product Safety Team, (PST).",
+   "inherited_date": true,
+   "entry_quote": "08/15/2025 - Wabash's Manufacturing team reported to the Wabash warranty team that 10 trailers left our facility with the incorrect rear impact guards installed.",
+   "date_inferred": false
+  },
+  "item_id": "D039",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V625-0070.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "08/18/2025",
+   "type": "OTHER",
+   "quote": "The correct rear bumper assemblies were sent to the dealer for replacement.",
+   "inherited_date": true,
+   "entry_quote": "08/18/2025 - The first Concern response meeting was held, and investigations were started.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-08-18",
+    "end": "2025-08-18",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D040",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "09/22/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "09/22/2025 International identifies a condition where school buses, when loaded as per 49 CFR Part 567.4 (g)(3), might exceed the value printed on the label and opens an investigation into the issue.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-22",
+    "end": "2025-09-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "09/22/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "09/22/2025 International identifies a condition where school buses, when loaded as per 49 CFR Part 567.4 (g)(3), might exceed the value printed on the label and opens an investigation into the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D041",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "09/23/2025-09/29/2025",
+   "type": "OTHER",
+   "quote": "09/23/2025-09/29/2025 International identifies buses to be weighed across multiple configurations to study weight estimate accuracy.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-23",
+    "end": "2025-09-29",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "09/23/2025-09/29/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "09/23/2025-09/29/2025 International identifies buses to be weighed across multiple configurations to study weight estimate accuracy.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D042",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "10/1/2025-10/29/2025",
+   "type": "OTHER",
+   "quote": "Necessary adjustments to weight estimator were completed based on these audits.",
+   "inherited_date": true,
+   "entry_quote": "10/1/2025-10/29/2025 International updates the weight estimator with the information obtained from the verification activities.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-01",
+    "end": "2025-10-29",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "10/1/2025-10/29/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "Additional physical bus weight verification audits were conducted to further refine the accuracy of the weight estimator across additional configurations.",
+   "inherited_date": true,
+   "entry_quote": "10/1/2025-10/29/2025 International updates the weight estimator with the information obtained from the verification activities.",
+   "date_inferred": false
+  },
+  "item_id": "D043",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "10/31/2025",
+   "type": "FILER_AWARENESS",
+   "quote": "10/31/2025 International determines certain bus configurations, when loaded as per 49 CFR 567.4(g)(3), could exceed the recorded Gross Vehicle Weight Rating (GVWR) printed on the label.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-10-31",
+    "end": "2025-10-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "10/31/2025",
+   "type": "DECISION",
+   "quote": "10/31/2025 International determines certain bus configurations, when loaded as per 49 CFR 567.4(g)(3), could exceed the recorded Gross Vehicle Weight Rating (GVWR) printed on the label.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D044",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "02/24/2026",
+   "type": "OTHER",
+   "quote": "02/24/2026 International finalizes recall remedy",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D045",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V783-5866.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "03/17/2026",
+   "type": "OTHER",
+   "quote": "03/17/2026 International finalizes remedy launch date",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D046",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-25V843-5844.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "March 2025",
+   "type": "OTHER",
+   "quote": "It was determined, from the location of the damages on the board for the March 2025 vehicle, that the connection between the power cable and the power stud becoming loose was probably the cause of the damages and fire incidents.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2025-03-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D047",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-25V843-5844.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "December 2, 2025",
+   "type": "DECISION",
+   "quote": "Since vehicles built at Micro Bird USA LLC are manufactured with the same material and procedures as those built by Corporation Micro Bird Inc., it was decided on December 2, 2025, to recall the vehicles equipped with a Spheros air conditioning system,",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D048",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26E004-0495.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "12/15/2025",
+   "type": "OTHER",
+   "quote": "12/16/20205 –Quality inspection begins at Blue Bird facility.",
+   "inherited_date": true,
+   "entry_quote": "12/15/2025 – Investigation opened.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-15",
+    "end": "2025-12-15",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D049",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26E004-0495.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "2/18/2026",
+   "type": "NHTSA_FILING",
+   "quote": "2/18/2026 – Updated Remedy",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D050",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26E008-5432.pdf",
+  "claim": "U",
+  "A": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "B": {
+   "kind": "UNNAMED",
+   "names": [],
+   "quote": "September 2025 Prevost was informed by the supplier that certain driver-side rearview mirrors were potentially manufactured with dimensions not meeting the required specifications.",
+   "section": "chronology"
+  },
+  "item_id": "D051",
+  "x_is": "A"
+ },
+ {
+  "file": "RCLRPT-26V063-7895.pdf",
+  "claim": "E",
+  "kind": "type differs",
+  "A": {
+   "date_text": "March 2025 - January 2026",
+   "type": "OTHER",
+   "quote": "Investigation of the affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "March 2025 - January 2026 - Internal analysis at Daimler Buses to determine the cause and the remedy.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-03-01",
+    "end": "2026-01-31",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": {
+   "date_text": "March 2025 - January 2026",
+   "type": "INVESTIGATION_START",
+   "quote": "Investigation of the affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "March 2025 - January 2026 - Internal analysis at Daimler Buses to determine the cause and the remedy.",
+   "date_inferred": false
+  },
+  "item_id": "D052",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V093-5181.pdf",
+  "claim": "E",
+  "kind": "only in A",
+  "A": {
+   "date_text": "2025-12-22",
+   "type": "OTHER",
+   "quote": "No additional improperly installed anchorages were identified at that time.",
+   "inherited_date": true,
+   "entry_quote": "2025-12-22 Preliminary results of the internal inspection were obtained.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-12-22",
+    "end": "2025-12-22",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "B": null,
+  "item_id": "D053",
+  "x_is": "B"
+ },
+ {
+  "file": "RCLRPT-26V093-5181.pdf",
+  "claim": "E",
+  "kind": "only in B",
+  "A": null,
+  "B": {
+   "date_text": "December 18, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Two warranty claims potentially related to this issue were received on November 18 and December 18, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "item_id": "D054",
+  "x_is": "A"
+ }
+]

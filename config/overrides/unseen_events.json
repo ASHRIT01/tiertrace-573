@@ -443,5 +443,224 @@
   "The Zoox Safety Committee met": {
    "type": "DECISION"
   }
+ },
+ "RCLRPT-25E048-6886.pdf": {
+  "On April 22, 2025, Bendix was made aware": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25E058-9353.pdf": {
+  "January 2023 - June 2023: Bosch notified": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "NHTSA then requested": {
+   "type": "OTHER"
+  }
+ },
+ "RCLRPT-25E073-6952.pdf": {
+  "Following a review in late October": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25E076-9018.pdf": {
+  "=o": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "ave in stock": {
+   "dates": [
+    {
+     "date_text": "9/11/2025",
+     "type": "FILER_AWARENESS"
+    }
+   ]
+  },
+  "t gear manufacturing plant": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "8/27/2025 Initial notification": {
+   "type": "FILER_AWARENESS"
+  },
+  "9/1/2025 Containment": {
+   "dates": [
+    {
+     "date_text": "9/1/2025",
+     "type": "INVESTIGATION_START"
+    }
+   ]
+  },
+  "9/16/2025 Investigation confirmed": {
+   "dates": [
+    {
+     "date_text": "9/16/2025",
+     "type": "OTHER"
+    }
+   ]
+  },
+  "9/22/2025 Population": {
+   "dates": [
+    {
+     "date_text": "9/22/2025",
+     "type": "OTHER"
+    }
+   ]
+  }
+ },
+ "RCLRPT-25V101-2428.pdf": {
+  "November 21st, 2024: Nova Bus engineering notices": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25V292-4296.pdf": {
+  "On April 26th, units": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "No warranty, consumer": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-25V342-8629.pdf": {
+  "On or around": {
+   "include": false,
+   "why": "splitter fragment"
+  },
+  "As a result Battle Motors has determined": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V468-3921.pdf": {
+  "On May 21, 2025, AMO contacted NHTSA": {
+   "type": "OTHER"
+  },
+  "On July 10, 2025, AMO decided": {
+   "type": "DECISION"
+  },
+  "No such reports": {
+   "include": false,
+   "why": "status/no-incident statement"
+  },
+  "No customers identified": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
+ },
+ "RCLRPT-25V491-8213.pdf": {
+  "January – February 2025: Grech RV seeks": {
+   "type": "OTHER"
+  },
+  "June 24, 2025: Grech RV received": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "Grech reviews the circumstances": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-25V497-2087.pdf": {
+  "On May 23, 2025, Brinkley RV received": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-25V558-2502.pdf": {
+  "8/25/2025 – Initial hose reel": {
+   "type": "FILER_AWARENESS"
+  },
+  "8/25/2025 – Warranty/service report": {
+   "dates": [
+    {
+     "date_text": "8/25/2025",
+     "type": "OTHER"
+    }
+   ]
+  },
+  "8/28/25 – Engineering review": {
+   "type": "INVESTIGATION_START"
+  },
+  "8/28/2025 – Defect report prepared": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-25V580-8142.pdf": {
+  "6/19/2025 – International receives": {
+   "type": "FILER_AWARENESS"
+  },
+  "For noncompliances": {
+   "include": false,
+   "why": "template instruction text"
+  },
+  "8/28/2025 – Based on review": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V625-0070.pdf": {
+  "09/12/2025 - Although all": {
+   "type": "DECISION"
+  }
+ },
+ "RCLRPT-25V783-5866.pdf": {
+  "10/31/2025 International determines": {
+   "type": "FILER_AWARENESS"
+  },
+  "02/24/2026 International finalizes": {
+   "include": false,
+   "why": "remedy logistics"
+  },
+  "03/17/2026 International finalizes": {
+   "include": false,
+   "why": "remedy logistics"
+  }
+ },
+ "RCLRPT-25V843-5844.pdf": {
+  "Following reports in October 2025": {
+   "type": "FILER_AWARENESS"
+  }
+ },
+ "RCLRPT-26E004-0495.pdf": {
+  "12/15/2025 – Report was made": {
+   "type": "FILER_AWARENESS"
+  },
+  "1/16/2026 – Recall Filed": {
+   "type": "NHTSA_FILING"
+  },
+  "2/18/2026 – Updated Remedy": {
+   "include": false,
+   "why": "remedy amendment line"
+  }
+ },
+ "RCLRPT-26E008-5432.pdf": {
+  "September 2025 Prevost was informed": {
+   "type": "SUPPLIER_NOTICE"
+  },
+  "November 2025 Rearview mirrors": {
+   "type": "FILER_AWARENESS"
+  },
+  "2026-02-19 Defect Information": {
+   "type": "NHTSA_FILING"
+  }
+ },
+ "RCLRPT-26V063-7895.pdf": {
+  "March 24, 2025 - Defect detection": {
+   "type": "FILER_AWARENESS"
+  },
+  "March 2025 - January 2026 - Internal analysis": {
+   "type": "INVESTIGATION_START"
+  }
+ },
+ "RCLRPT-26V093-5181.pdf": {
+  "2025-12-01 One improperly": {
+   "type": "FILER_AWARENESS"
+  },
+  "2025-12-10 An internal inspection": {
+   "type": "INVESTIGATION_START"
+  },
+  "2026-02-17 Defect Information": {
+   "type": "NHTSA_FILING"
+  },
+  "Two warranty claims potentially": {
+   "include": false,
+   "why": "status/no-incident statement"
+  }
  }
 }

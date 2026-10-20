@@ -1,0 +1,187 @@
+[
+ {
+  "item_id": "D001",
+  "decision": "X",
+  "quote": "related to the performance of certain brake chambers produced by Knorr-Bremse",
+  "reason": "Narrative names Knorr-Bremse, the component maker (block supplier) of the filer's part, so U is NAMED."
+ },
+ {
+  "item_id": "D002",
+  "decision": "Y",
+  "quote": "Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules",
+  "reason": "'Bosch' is a short form of block name Robert Bosch GmbH and is named in the narrative, so S2 is SUPPORTED."
+ },
+ {
+  "item_id": "D003",
+  "decision": "Y",
+  "quote": "Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules",
+  "reason": "Narrative names Bosch, the Tier 2 supplier, so U is NAMED."
+ },
+ {
+  "item_id": "D004",
+  "decision": "Y",
+  "quote": "ZF jointly investigated the potential issue with Bosch, including engineering analysis and inspection / analysis of affected parts.",
+  "reason": "An investigation/analysis is conducted -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D005",
+  "decision": "X",
+  "quote": "ZF jointly investigated the issue with BMW, including further testing and analysis of parts",
+  "reason": "Investigation and testing conducted -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D006",
+  "decision": "Y",
+  "quote": "September 2023: Bosch reported concerns with additional E-Modules",
+  "reason": "The supplier (Bosch) tells the filer about the problem -> SUPPLIER_NOTICE."
+ },
+ {
+  "item_id": "D007",
+  "decision": "Y",
+  "quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+  "reason": "Entry sentence reports an investigation -> INVESTIGATION_START; X's typing of the follow-on 'Collaborative investigation and analyses were conducted' sentence as OTHER is also wrong (it is an investigation)."
+ },
+ {
+  "item_id": "D008",
+  "decision": "CONTESTED",
+  "quote": "November 29, 2023: BMW initiated a recall of 552 vehicles",
+  "reason": "The two versions are different sentences: X (collaborative investigation sentence, INVESTIGATION_START) and Y (BMW recall, OTHER) are each correctly typed events, so the pairing is not settled by the rules."
+ },
+ {
+  "item_id": "D009",
+  "decision": "CONTESTED",
+  "quote": "November 2023 - May 2024: Further collaborative investigation and analyses were conducted with Stellantis.",
+  "reason": "Different sentences were paired: X's investigation entry as INVESTIGATION_START and Y's Stellantis recall as OTHER are each correct events."
+ },
+ {
+  "item_id": "D010",
+  "decision": "CONTESTED",
+  "quote": "NHTSA contacted ZF and asked whether ZF supplied the subject components to additional U.S.-based vehicle manufacturers.",
+  "reason": "Different sentences were paired: X's NHTSA contact (notice from NHTSA, FILER_AWARENESS) and Y's 'ZF advised NHTSA' (OTHER, inherited Aug 2024) are both defensible separate events."
+ },
+ {
+  "item_id": "D011",
+  "decision": "CONTESTED",
+  "quote": "September 4-9, 2025: ZF received a follow-up inquiry form NHTSA's Recall Management Division",
+  "reason": "Different entries were paired: X's records review (OTHER) and Y's NHTSA inquiry (FILER_AWARENESS) are each defensible separate events."
+ },
+ {
+  "item_id": "D012",
+  "decision": "Y",
+  "quote": "ZF is providing this defect information report under 49 CFR 573.3(f).",
+  "reason": "The filer submits its Part 573 report -> NHTSA_FILING."
+ },
+ {
+  "item_id": "D013",
+  "decision": "X",
+  "quote": "9/10/2025 sample parts from customers received at manufacturing plant",
+  "reason": "Dated bullet reports an action (parts received, return requested) -> an event exists."
+ },
+ {
+  "item_id": "D014",
+  "decision": "Y",
+  "quote": "9/11/2025 discovered during investigation at gear manufacturing plant that some samples of part number Q47170 (gear) have oversize teeth",
+  "reason": "Dated bullet reports a finding -> an event exists."
+ },
+ {
+  "item_id": "D015",
+  "decision": "Y",
+  "quote": "Total population of 98 gears was shipped to differential assembly plant on 5/22/2025",
+  "reason": "A second distinct date in the bullet marks a shipment occurrence (not a production window) -> separate event."
+ },
+ {
+  "item_id": "D016",
+  "decision": "Y",
+  "quote": "10/9/2025 to present– additional engineering testing and analysis to confirm issue and reconfirm total scope",
+  "reason": "Dated bullet reports testing/analysis to confirm issue and scope -> INVESTIGATION_START event exists."
+ },
+ {
+  "item_id": "D017",
+  "decision": "Y",
+  "quote": "the global management team was informed at the Critical Concerns Management Team (CCMT) meeting on February 4, 2025.",
+  "reason": "This is internal escalation at a meeting after the filer had already found the noncompliance, not a new report reaching the filer -> OTHER (meetings)."
+ },
+ {
+  "item_id": "D018",
+  "decision": "Y",
+  "quote": "Similar configurations are screened through to identify other potential affected vehicles.",
+  "reason": "Screening to identify the affected scope is analysis to find scope -> INVESTIGATION_START."
+ },
+ {
+  "item_id": "D019",
+  "decision": "Y",
+  "quote": "KZ's safety committee met on May 1st and agreed to issue a recall.",
+  "reason": "Decision to recall -> DECISION."
+ },
+ {
+  "item_id": "D020",
+  "decision": "Y",
+  "quote": "On April 26th, units in the yard were repaired.",
+  "reason": "Repair of affected units is remedy logistics, not an event."
+ },
+ {
+  "item_id": "D021",
+  "decision": "NEITHER",
+  "quote": "During the repair process, the techician noted that no torque seal was present",
+  "reason": "Event exists, but the chronology starts 'On or around May 19, 2025' (prose, not a dated entry), so this undated sentence gets date_inferred:true and date_text '' rather than an inherited date.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "During the repair process, the techician noted that no torque seal was present, indicating that the nut was not properly torqued to specification and was indeed found to be loose.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D022",
+  "decision": "NEITHER",
+  "quote": "The fleet manager had the remaining units of the same vintage inspected",
+  "reason": "Event exists, but the chronology starts 'On or around May 19, 2025' (prose, not a dated entry), so this undated sentence gets date_inferred:true and date_text '' rather than an inherited date.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "The fleet manager had the remaining units of the same vintage inspected and found one other unit with a loose retaining nut and no torque seal.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D023",
+  "decision": "NEITHER",
+  "quote": "All other units were found to be within specification with torque seal indicating proper torque.",
+  "reason": "Event exists, but the chronology starts 'On or around May 19, 2025' (prose, not a dated entry), so this undated sentence gets date_inferred:true and date_text '' rather than an inherited date.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "All other units were found to be within specification with torque seal indicating proper torque.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D024",
+  "decision": "NEITHER",
+  "quote": "Battle Motors reviewed the issue and determined that during the manufacturing process",
+  "reason": "Event exists, but the chronology starts 'On or around May 19, 2025' (prose, not a dated entry), so this undated sentence gets date_inferred:true and date_text '' rather than an inherited date.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "Battle Motors reviewed the issue and determined that during the manufacturing process of the units in question a part shortage existed for the turn signal switch resulting in a deviation from standard manufactung practices, to continue production.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ },
+ {
+  "item_id": "D025",
+  "decision": "NEITHER",
+  "quote": "Units at the factory were inspected and no defects were found",
+  "reason": "Event exists, but the chronology starts 'On or around May 19, 2025' (prose, not a dated entry), so this undated sentence gets date_inferred:true and date_text '' rather than an inherited date.",
+  "corrected": {
+   "date_text": "",
+   "type": "OTHER",
+   "quote": "Units at the factory were inspected and no defects were found, as well as a coursey units produced before and after the suspected time period with no issues found.",
+   "inherited_date": false,
+   "date_inferred": true
+  }
+ }
+]

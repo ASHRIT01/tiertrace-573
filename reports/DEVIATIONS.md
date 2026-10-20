@@ -100,3 +100,13 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: deploying a software update to affected vehicles - remedy logistics vs occurrence (25E037, D030).
 - Pass C CONTESTED D005, D013, D023 (24V524 etc.): pairing artefacts (different sentences paired as one event).
 - Rule problem: header junk "Condition considered as a critical concern ... 2024-12-13;" in Polestar filings (24V939, 24V940) read as dated events.
+
+## Unseen-filer batch 4 (b04)
+- Pass C agents hit the account session rate limit mid-run (HTTP 429) and were resumed with SendMessage after the reset; they continued from their saved transcripts. No labels were changed by the interruption.
+- Rule problem: an opening "On or around <date>" prose sentence followed by undated sentences (25V342): Pass A inherits the date, Pass C ruled undated (D021-D025 NEITHER).
+- Rule problem: build/production dates as event dates ("March 2025" vehicle build, 26E004; D047).
+- Rule problem: typo date "12/16/20205" (26E004; D049) kept as written.
+- Rule problem: "finalizes recall remedy" lines (25V783, D045/D046): OTHER event vs remedy logistics; "As of ... N warranty claims" status sentence with a first-claim date (D030 CONTESTED).
+- Rule problem: "identifies a condition and opens an investigation" in one sentence (D041 CONTESTED), same family as earlier awareness-plus-investigation.
+- Pass C CONTESTED D008-D011 (25E058): pairing artefacts.
+- Multi-supplier block 26V063: doubled name; manual S1 quote override (D-T3).

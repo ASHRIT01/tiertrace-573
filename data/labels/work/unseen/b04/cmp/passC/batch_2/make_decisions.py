@@ -1,0 +1,35 @@
+import json
+D=[]
+def a(i,d,q,r,c=None):
+    o={"item_id":i,"decision":d,"quote":q,"reason":r}
+    if c: o["corrected"]=c
+    D.append(o)
+a("D026","Y","On May 27,2025, a Mid-States representative visited the AMO facility and conducted inspections and testing.","Inspections and testing conducted to find the cause = INVESTIGATION_START.")
+a("D027","Y","On June 2, 2025, a Mid-States representative contacted AMO with the results of the inspections and testing.","Supplier tells the filer its findings = SUPPLIER_NOTICE.")
+a("D028","Y","Fiamma denied the existence of a manufacturing defect.","Supplier denies a defect; it does not notify the filer of a problem or finding of the problem, so OTHER.")
+a("D029","X","July 1, 2025: While Grech RV is conducting its review of the incident and company data, Grech receives an email inquiry from NHTSA regarding VOQ #11668764.","Notice from NHTSA reaching the filer = FILER_AWARENESS.")
+a("D030","CONTESTED","As of the date of this submission, following a review of available records, Grech RV has received 19 warranty claims involving alleged inadvertent awning deployment, the first of which was received in September 2023.","Sentence is an 'As of ... N claims' status statement (excluded), but it embeds a distinct dated occurrence (first claim received September 2023); rules conflict.")
+a("D031","Y","On July 24, 2025, Brinkley RV Safety Committee was presented the results of the investigation and voted unanimously to recall the affected units.","Vote to recall = DECISION.")
+a("D032","X","8/25/2025 – Warranty/service report submitted documenting the fractured mounting plate (3/16” 5052-H32 aluminum).","A warranty/service report reaching the filer = FILER_AWARENESS.")
+a("D033","X","8/28/2025 – Broader fleet review conducted; 36 trucks identified for containment and inspection.","Review conducted to determine scope = INVESTIGATION_START.")
+a("D034","Y","7/8/2025 – International reviews the findings from the DOT inspection and delivery stop inspections and determines that it will conduct a comprehensive review of bus floor plans to identify those buses","Opening of a review to determine scope = INVESTIGATION_START.")
+a("D035","Y","7/8/2025-8/22/2025 - International conducts comprehensive bus floor plan analysis to determine which buses, by design, should have the reinforcement installed and performs a limited field inspection.","Analysis conducted to determine scope = INVESTIGATION_START.")
+a("D036","X","8/22/2025-8/27/2025- International conducts a review of data from previous compliance tests to determine if the presence of the reinforcement was necessary to meet the force requirements of FMVSS 210 S4.2.2 and 222 S5.1.4.","Analysis of test data conducted to determine noncompliance = INVESTIGATION_START.")
+a("D037","X","6/25 - 7/7/2025 – Tulsa Bus Assembly Plant inspects the 10 buses on delivery stop, finding one bus built without the floor side reinforcement which was then added to the bus.","The entry's date is the single range '6/25 - 7/7/2025'; splitting off a separate 7/7/2025 event is spurious.")
+a("D038","X","The other 9 contained the reinforcement.","Description with no action (a status of the other buses); also the entry date is '6/25 - 7/7/2025', not '6/25'. Not an event.")
+a("D039","Y","A concern response (CR) was entered into the system to bring awareness to the Product Safety Team, (PST).","Entering a CR is an internal action = OTHER; X's FILER_AWARENESS for the dealer notification/lock-down sentence is wrong (that is containment, not a report reaching the filer).")
+a("D040","X","The correct rear bumper assemblies were sent to the dealer for replacement.","Remedy logistics (repair parts sent for affected vehicles) are not events.")
+a("D041","CONTESTED","09/22/2025     International identifies a condition where school buses, when loaded as per 49 CFR Part 567.4 (g)(3), might exceed the value printed on the label and opens an investigation into the issue.","One sentence both reports the filer identifying the problem (FILER_AWARENESS) and opening an investigation (INVESTIGATION_START); rules give no tie-break.")
+a("D042","Y","09/23/2025-09/29/2025 International identifies buses to be weighed across multiple configurations to study weight estimate accuracy.","Testing set up/conducted to study scope = INVESTIGATION_START.")
+a("D043","CONTESTED","Additional physical bus weight verification audits were conducted to further refine the accuracy of the weight estimator across additional configurations. Necessary adjustments to weight estimator were completed based on these audits.","Versions label two different sentences of the same entry; each is a separate event and each type is defensible for its own sentence.")
+a("D044","CONTESTED","10/31/2025       International determines certain bus configurations, when loaded as per 49 CFR 567.4(g)(3), could exceed the recorded Gross Vehicle Weight Rating (GVWR) printed on the label.","A determination that the condition exists could be a DECISION, but the recall decision is separate (11/06/2025) and it reads also as an internal finding; rules do not settle it.")
+a("D045","X","02/24/2026 International finalizes recall remedy","Dated action; finalising the remedy is not among the excluded remedy logistics (mailings, letters, repairs) = OTHER event.")
+a("D046","Y","03/17/2026 International finalizes remedy launch date","Dated action, consistent with D045; not a mailing/letter/repair = OTHER event.")
+a("D047","NEITHER","It was determined, from the location of the damages on the board for the March 2025 vehicle, that the connection between the power cable and the power stud becoming loose was probably the cause of the damages and fire incidents.","Event exists (finding), but 'March 2025' is the vehicle's build date, not an event date; undated prose sentence -> date_inferred, empty date_text.",
+  {"date_text":"","type":"OTHER","quote":"It was determined, from the location of the damages on the board for the March 2025 vehicle, that the connection between the power cable and the power stud becoming loose was probably the cause of the damages and fire incidents.","inherited_date":False,"date_inferred":True})
+a("D048","X","it was decided on December 2, 2025, to recall the vehicles equipped with a Spheros air conditioning system,","Dated decision to recall = DECISION event.")
+a("D049","NEITHER","12/16/20205 –Quality inspection begins at Blue Bird facility.","Sentence has its own (typo) date and starts its own entry, so it does not inherit 12/15/2025; event with date_text as written.",
+  {"date_text":"12/16/20205","type":"OTHER","quote":"12/16/20205 –Quality inspection begins at Blue Bird facility.","inherited_date":False,"date_inferred":False})
+a("D050","NEITHER","2/18/2026 – Updated Remedy","A dated remedy update is an occurrence, but nothing says a Part 573 report was submitted or amended; type OTHER, not NHTSA_FILING.",
+  {"date_text":"2/18/2026","type":"OTHER","quote":"2/18/2026 – Updated Remedy","inherited_date":False,"date_inferred":False})
+json.dump(D,open("decisions.json","w"),ensure_ascii=False,indent=1)

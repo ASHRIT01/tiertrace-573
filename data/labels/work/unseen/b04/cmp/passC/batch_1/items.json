@@ -1,0 +1,582 @@
+[
+ {
+  "item_id": "D001",
+  "file": "RCLRPT-25E048-6886.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NAMED",
+   "names": [
+    "Knorr-Bremse"
+   ],
+   "quote": "On April 22, 2025, Bendix was made aware that Nova Bus had submitted Defect Information Reports to NHTSA (24V-558, 24V559 and 25E-027) related to the performance of certain brake chambers produced by Knorr-Bremse.",
+   "section": "chronology"
+  },
+  "version_Y": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  }
+ },
+ {
+  "item_id": "D002",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "S2",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "id": "S2",
+   "label": "Narrative (cause/chronology) names the supplier: Robert Bosch GmbH",
+   "status": "INSUFFICIENT",
+   "quote": "Name: Robert Bosch GmbH",
+   "section": "block"
+  },
+  "version_Y": {
+   "id": "S2",
+   "status": "SUPPORTED",
+   "name": "Bosch",
+   "quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D003",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "U",
+  "what_differs": "status/kind differs",
+  "version_X": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "version_Y": {
+   "kind": "NAMED",
+   "names": [
+    "Bosch"
+   ],
+   "quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "section": "chronology"
+  }
+ },
+ {
+  "item_id": "D004",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "January 2023 - June 2023",
+   "type": "OTHER",
+   "quote": "ZF jointly investigated the potential issue with Bosch, including engineering analysis and inspection / analysis of affected parts.",
+   "inherited_date": true,
+   "entry_quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-01-01",
+    "end": "2023-06-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "January 2023 - June 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "ZF jointly investigated the potential issue with Bosch, including engineering analysis and inspection / analysis of affected parts.",
+   "inherited_date": true,
+   "entry_quote": "January 2023 - June 2023: Bosch notified ZF of a concern with iTCU weld integrity on its E-Modules supplied to BMW, discovered during certain quality assurance tests.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D005",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "July 2023 - September 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "July 2023 - September 2023: ZF jointly investigated the issue with BMW, including further testing and analysis of parts, photo-microscopy and shaker tests to evaluate long-term durability.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "July 2023 - September 2023",
+   "type": "OTHER",
+   "quote": "July 2023 - September 2023: ZF jointly investigated the issue with BMW, including further testing and analysis of parts, photo-microscopy and shaker tests to evaluate long-term durability.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-07-01",
+    "end": "2023-09-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D006",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 2023",
+   "type": "OTHER",
+   "quote": "September 2023: Bosch reported concerns with additional E-Modules, this time affecting Stellantis and five additional OEMs of vehicles outside the U.S. Market.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-09-30",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "September 2023",
+   "type": "SUPPLIER_NOTICE",
+   "quote": "September 2023: Bosch reported concerns with additional E-Modules, this time affecting Stellantis and five additional OEMs of vehicles outside the U.S. Market.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D007",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 2023 - November 2023",
+   "type": "OTHER",
+   "quote": "Collaborative investigation and analyses were conducted, including failure modes and affects analyses, review of field information, production process testing details, production lot information, and scope parameters.",
+   "inherited_date": true,
+   "entry_quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "date_inferred": false,
+   "span": {
+    "start": "2023-09-01",
+    "end": "2023-11-30",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "September 2023 - November 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D008",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 2023 - November 2023",
+   "type": "INVESTIGATION_START",
+   "quote": "Collaborative investigation and analyses were conducted, including failure modes and affects analyses, review of field information, production process testing details, production lot information, and scope parameters.",
+   "inherited_date": true,
+   "entry_quote": "September 2023 - November 2023: ZF worked with both customers (BMW and Stellantis) to investigate the issue.",
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "November 29, 2023",
+   "type": "OTHER",
+   "quote": "November 29, 2023: BMW initiated a recall of 552 vehicles containing ZF iTCU units with suspect Bosch E-Modules (23V-821).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2023-11-29",
+    "end": "2023-11-29",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D009",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "November 2023 - May 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "November 2023 - May 2024: Further collaborative investigation and analyses were conducted with Stellantis.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "May 31, 2024",
+   "type": "OTHER",
+   "quote": "May 31, 2024: Stellantis initiated a recall of 234 vehicles containing ZF iTCU units with suspect Bosch E-Modules (24V-413).",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2024-05-31",
+    "end": "2024-05-31",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D010",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "August 2024",
+   "type": "FILER_AWARENESS",
+   "quote": "August 2024: Following Stellantis's recall, NHTSA contacted ZF and asked whether ZF supplied the subject components to additional U.S.-based vehicle manufacturers.",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": {
+   "date_text": "August 2024",
+   "type": "OTHER",
+   "quote": "ZF advised NHTSA that no additional vehicle manufacturers (beyond BMW and Stellantis) received these parts.",
+   "inherited_date": true,
+   "entry_quote": "August 2024: Following Stellantis's recall, NHTSA contacted ZF and asked whether ZF supplied the subject components to additional U.S.-based vehicle manufacturers.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-08-01",
+    "end": "2024-08-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D011",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "OTHER",
+   "quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-05",
+    "end": "2025-09-16",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "September 4-9, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "September 4-9, 2025: ZF received a follow-up inquiry form NHTSA's Recall Management Division, again asking whether ZF supplied the subject components to other vehicle manufacturers.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D012",
+  "file": "RCLRPT-25E058-9353.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "OTHER",
+   "quote": "Based on the recalls conducted by BMW and Stellantis, ZF is providing this defect information report under 49 CFR 573.3(f).",
+   "inherited_date": true,
+   "entry_quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-09-05",
+    "end": "2025-09-16",
+    "granularity": "range",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "September 5 - 16, 2025",
+   "type": "NHTSA_FILING",
+   "quote": "Based on the recalls conducted by BMW and Stellantis, ZF is providing this defect information report under 49 CFR 573.3(f).",
+   "inherited_date": true,
+   "entry_quote": "September 5 - 16, 2025: ZF reviewed records to confirm regulatory requirements.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D013",
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "9/10/2025",
+   "type": "OTHER",
+   "quote": "9/10/2025 sample parts from customers received at manufacturing plant; Requested customers return all parts they currently have in stock (regardless of part number or date of build)",
+   "inherited_date": false,
+   "date_inferred": false
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D014",
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "9/11/2025",
+   "type": "OTHER",
+   "quote": "9/11/2025 discovered during investigation at gear manufacturing plant that some samples of part number Q47170 (gear) have oversize teeth",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D015",
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "5/22/2025",
+   "type": "OTHER",
+   "quote": "Total population of 98 gears was shipped to differential assembly plant on 5/22/2025",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D016",
+  "file": "RCLRPT-25E076-9018.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "10/9/2025",
+   "type": "INVESTIGATION_START",
+   "quote": "10/9/2025 to present– additional engineering testing and analysis to confirm issue and reconfirm total scope",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D017",
+  "file": "RCLRPT-25V068-2775.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "February 4, 2025",
+   "type": "FILER_AWARENESS",
+   "quote": "Zeekr US was informed the same day and the global management team was informed at the Critical Concerns Management Team (CCMT) meeting on February 4, 2025.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-02-04",
+    "end": "2025-02-04",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "February 4, 2025",
+   "type": "OTHER",
+   "quote": "Zeekr US was informed the same day and the global management team was informed at the Critical Concerns Management Team (CCMT) meeting on February 4, 2025.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D018",
+  "file": "RCLRPT-25V101-2428.pdf",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "December, 2024",
+   "type": "OTHER",
+   "quote": "Similar configurations are screened through to identify other potential affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "December, 2024 : During the investigation, the safety office team notices a potential non-compliance affecting more vehicles than those of the specific customer.",
+   "date_inferred": false,
+   "span": {
+    "start": "2024-12-01",
+    "end": "2024-12-31",
+    "granularity": "month",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": {
+   "date_text": "December, 2024",
+   "type": "INVESTIGATION_START",
+   "quote": "Similar configurations are screened through to identify other potential affected vehicles.",
+   "inherited_date": true,
+   "entry_quote": "December, 2024 : During the investigation, the safety office team notices a potential non-compliance affecting more vehicles than those of the specific customer.",
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D019",
+  "file": "RCLRPT-25V292-4296.PDF",
+  "claim": "E",
+  "what_differs": "type differs",
+  "version_X": {
+   "date_text": "May 1st",
+   "type": "OTHER",
+   "quote": "KZ's safety committee met on May 1st and agreed to issue a recall.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-01",
+    "end": "2025-05-01",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": {
+   "date_text": "May 1st",
+   "type": "DECISION",
+   "quote": "KZ's safety committee met on May 1st and agreed to issue a recall.",
+   "inherited_date": false,
+   "date_inferred": false
+  }
+ },
+ {
+  "item_id": "D020",
+  "file": "RCLRPT-25V292-4296.PDF",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "April 26th",
+   "type": "OTHER",
+   "quote": "On April 26th, units in the yard were repaired.",
+   "inherited_date": false,
+   "date_inferred": false,
+   "span": {
+    "start": "2025-04-26",
+    "end": "2025-04-26",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": true
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D021",
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "During the repair process, the techician noted that no torque seal was present, indicating that the nut was not properly torqued to specification and was indeed found to be loose.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D022",
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "The fleet manager had the remaining units of the same vintage inspected and found one other unit with a loose retaining nut and no torque seal.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D023",
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "All other units were found to be within specification with torque seal indicating proper torque.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ },
+ {
+  "item_id": "D024",
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "what_differs": "only in Y",
+  "version_X": null,
+  "version_Y": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "Battle Motors reviewed the issue and determined that during the manufacturing process of the units in question a part shortage existed for the turn signal switch resulting in a deviation from standard manufactung practices, to continue production.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  }
+ },
+ {
+  "item_id": "D025",
+  "file": "RCLRPT-25V342-8629.pdf",
+  "claim": "E",
+  "what_differs": "only in X",
+  "version_X": {
+   "date_text": "May 19, 2025",
+   "type": "OTHER",
+   "quote": "Units at the factory were inspected and no defects were found, as well as a coursey units produced before and after the suspected time period with no issues found.",
+   "inherited_date": true,
+   "entry_quote": "May 19, 2025, Battle Motors was notified by one of its customers, that a steering wheel was noted as being loose during a routine inspection by the operator.",
+   "date_inferred": false,
+   "span": {
+    "start": "2025-05-19",
+    "end": "2025-05-19",
+    "granularity": "day",
+    "inferred": false,
+    "year_from_context": false
+   }
+  },
+  "version_Y": null
+ }
+]

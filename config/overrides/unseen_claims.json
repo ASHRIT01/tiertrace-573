@@ -144,5 +144,128 @@
   "S1": {
    "quote": "Name: Accauto Co., LTD"
   }
+ },
+ "RCLRPT-25E048-6886.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Knorr-Bremse"
+  }
+ },
+ "RCLRPT-25E073-6952.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Bendix Commercial Vehicle Systems"
+  }
+ },
+ "RCLRPT-25V625-0070.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Wabash National"
+  }
+ },
+ "RCLRPT-26E004-0495.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Lippert"
+  }
+ },
+ "RCLRPT-26E008-5432.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Prevost"
+  }
+ },
+ "RCLRPT-26V093-5181.pdf": {
+  "upstream": {
+   "kind": "NONE_MENTIONED",
+   "names": [],
+   "quote": "",
+   "section": "any"
+  },
+  "S1": {
+   "quote": "Name: Prevost"
+  }
+ },
+ "RCLRPT-25E058-9353.pdf": {
+  "S1": {
+   "quote": "Name: Robert Bosch GmbH"
+  },
+  "S2": {
+   "quote": "Name: Robert Bosch GmbH"
+  }
+ },
+ "RCLRPT-25V101-2428.pdf": {
+  "S1": {
+   "quote": "Name: Arow Global"
+  },
+  "S2": {
+   "quote": "Name: Arow Global"
+  }
+ },
+ "RCLRPT-25V468-3921.pdf": {
+  "S1": {
+   "quote": "Name: Mid-States Bolt & Screw Company"
+  }
+ },
+ "RCLRPT-25V491-8213.pdf": {
+  "S1": {
+   "quote": "Name: Fiamma Inc."
+  }
+ },
+ "RCLRPT-25V493-6422.pdf": {
+  "S1": {
+   "quote": "Name: Keumgang Chemical"
+  }
+ },
+ "RCLRPT-25V558-2502.pdf": {
+  "S1": {
+   "quote": "Name: Midwest Fire"
+  },
+  "S2": {
+   "quote": "Name: Midwest Fire"
+  }
+ },
+ "RCLRPT-25V843-5844.pdf": {
+  "S1": {
+   "quote": "Name: Spheros North America Inc"
+  }
+ },
+ "RCLRPT-26V063-7895.pdf": {
+  "S1": {
+   "quote": "Name: ZF CV Distribution Germany GmbH & Co. KG"
+  }
+ },
+ "RCLRPT-26V105-2893.pdf": {
+  "S1": {
+   "quote": "Name: DAS North America"
+  },
+  "S2": {
+   "quote": "Name: DAS North America"
+  }
  }
 }
