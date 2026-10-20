@@ -110,3 +110,9 @@ Rules, prompts and scoring code are frozen (tag `freeze-v1`). Nothing below chan
 - Rule problem: "identifies a condition and opens an investigation" in one sentence (D041 CONTESTED), same family as earlier awareness-plus-investigation.
 - Pass C CONTESTED D008-D011 (25E058): pairing artefacts.
 - Multi-supplier block 26V063: doubled name; manual S1 quote override (D-T3).
+
+## Amendment 1 (tag amendment-1; docs/AMENDMENT_1.md)
+- Scorer wrapper `tt/eval/amend1.py` (rules a, b, c; crash-only `parse_span` guard; bounding and sensitivity switches); frozen scorer files untouched. Resolves the open D-T2 scorer-crash issue for scoring.
+- Definition of "excluded gold event" fixed as "date text present and no ISO span" AFTER the first dev re-score under the broader "or flagged date_inferred" reading changed one dev prediction (434 -> 433, 19V811-5724 '11-13-'); the broader reading is kept as the pre-declared sensitivity `inferred_too`. Fixed before any Test-A model output exists.
+- `tt/leakcheck.py` already skipped `._*` files (line 68); a test now pins it. The runner reads the selection list only.
+- Isolation slips listed in config/isolation_slips.json (3 slips, 56 filings; outside-knowledge case 24V556-5723).

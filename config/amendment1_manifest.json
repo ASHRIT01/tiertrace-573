@@ -1,0 +1,83 @@
+{
+ "purpose": "Amendment 1 manifest: what is in each split, what is excluded and why. Written before any Test-A model output exists. The freeze manifest (data/FREEZE_MANIFEST.json, tag freeze-v1) is not edited.",
+ "ignored_files": "macOS AppleDouble files '._*' are not filings: ignored by the runner (it reads the selection list only) and by the leak check (tt/leakcheck.py skips names starting '._'; tested in tests/test_amend1.py).",
+ "splits": {
+  "testA": {
+   "campaigns_in_split": 200,
+   "selection_file": "config/testA_selection.json",
+   "selection_sha256": "8ac363c278f7df24640d7bef6d390606397f84419871b2c344e714fcf2a966af",
+   "id_file": "data/splits/testA_labelled_ids.txt",
+   "id_file_sha256": "0bc380cc2ef6faa4f9cdf77cec8f239572084384728586420ab6a7dc147482b1",
+   "readable_in_selection": 199,
+   "excluded_unreadable": [
+    {
+     "campaign": "23V313",
+     "file": "RCLRPT-23V313-1055.PDF",
+     "reason": "scanned, 0 characters of text, single version; no OCR in v1, never replaced (D-T1)"
+    }
+   ],
+   "raw_dir": "data/testA_raw",
+   "silver_labels": "data/labels/testA_silver.json",
+   "silver_sha256": "c8b637830c2e46753241cebd33b1043917f8832f03da41238b1d1d9aae180950",
+   "override_files": {
+    "config/overrides/test_a_events.json": "88bf83c9fd31e327a94389f3ddab83cf7cc80462ef52520aa22be71036314558",
+    "config/overrides/test_a_claims.json": "2e0e1b996f1da198018ddaeee71683b4911fd3982597ad08cc27d7736256445e"
+   },
+   "model_outputs": {
+    "run1": "runs/testA_4b_v2_run1.jsonl",
+    "run2": "runs/testA_4b_v2_run2.jsonl"
+   }
+  },
+  "testB": {
+   "campaigns_in_split": 100,
+   "selection_file": "config/testB_selection.json",
+   "selection_sha256": "4b42640f7ac47c137bf516e80e1b6fa60ddc542bb01e865f63cdc81a2b70a78a",
+   "id_file": "data/splits/testB_ids.txt",
+   "id_file_sha256": "f9e12f2976ba891f921cb969ed923041bb2134c6bc2a33f5aa55ee032c4236e6",
+   "readable_in_selection": 100,
+   "excluded_unreadable": [],
+   "raw_dir": "data/testB_raw",
+   "silver_labels": "data/labels/testB_silver.json",
+   "silver_sha256": "96e1f793d759766ce565b34f9e4a675d3f4f8ed505ae5c06b2d01589082004c2",
+   "override_files": {
+    "config/overrides/test_b_events.json": "1eda8447c5ae82cc5ca607466f8aaede6f777327fec4367da8ce3741a7d48bab",
+    "config/overrides/test_b_claims.json": "990d80b6e9d7d265225879566661c53c128efd425cd50161851c291314de5236"
+   },
+   "model_outputs": {
+    "run1": "runs/testB_4b_v2_run1.jsonl",
+    "run2": "runs/testB_4b_v2_run2.jsonl"
+   }
+  },
+  "unseen": {
+   "campaigns_in_split": 100,
+   "selection_file": "config/unseen_selection.json",
+   "selection_sha256": "f66b64ad590ad595411b511a1c0f6c9b3e11953e8a98fad3db2d561f892eb0f3",
+   "id_file": "data/splits/unseen_filer_ids.txt",
+   "id_file_sha256": "fd7174f9f9968cabeb87e5f7fca7beafb1459ee3518fb946a432074b1dcddbe4",
+   "readable_in_selection": 98,
+   "excluded_unreadable": [
+    {
+     "campaign": "23V320",
+     "file": "RCLRPT-23V320-7857.pdf",
+     "reason": "scanned, 7 pages, 0 characters of text, latest of 2 versions; no OCR, earlier version not substituted, never replaced (D-T1)"
+    },
+    {
+     "campaign": "24V945",
+     "file": "RCLRPT-24V945-7916.PDF",
+     "reason": "scanned, 3 pages, 0 characters of text, single version; no OCR, never replaced (D-T1)"
+    }
+   ],
+   "raw_dir": "data/unseen_raw",
+   "silver_labels": "data/labels/unseen_silver.json",
+   "silver_sha256": "86f669683547bea16422241dec42f418e79d6d155d55a163fb52e0edf4abae07",
+   "override_files": {
+    "config/overrides/unseen_events.json": "eb9fcc377e5d645323f3d80edcb8f050b2c0c1d6f0ff1c71623715012db1b451",
+    "config/overrides/unseen_claims.json": "14b55beb2e9ab1fec67723e9fbb44842b14e0ad3af815ff5bf44c0f0bd29da82"
+   },
+   "model_outputs": {
+    "run1": "runs/unseen_4b_v2_run1.jsonl",
+    "run2": "runs/unseen_4b_v2_run2.jsonl"
+   }
+  }
+ }
+}
