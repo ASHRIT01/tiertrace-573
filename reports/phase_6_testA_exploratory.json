@@ -1,0 +1,135 @@
+{
+ "note": "EXPLORATORY; silver labels (AI-made, not human-verified); run-1 claims, run 2 as agreement filter; primary amendment-1 settings; no model run",
+ "unlabelled_company_claims_excluded": 39,
+ "a_decomposition_events": {
+  "verifiers only (no verifier reason fired)": {
+   "accepted": 662,
+   "of": 1005,
+   "coverage": 0.6587064676616915,
+   "accepted_error": 0.29607250755287007,
+   "unfiltered_error": 0.4019900497512438,
+   "delta_unfiltered_minus_accepted": [
+    0.10591754219837374,
+    0.058212402033781696,
+    0.16042443415056679
+   ]
+  },
+  "run-2 agreement only (ignoring verifiers)": {
+   "accepted": 718,
+   "of": 1005,
+   "coverage": 0.7144278606965174,
+   "accepted_error": 0.2994428969359331,
+   "unfiltered_error": 0.4019900497512438,
+   "delta_unfiltered_minus_accepted": [
+    0.10254715281531068,
+    0.05669986071996125,
+    0.1551894532706795
+   ]
+  },
+  "both (= the accepted set of H1)": {
+   "accepted": 536,
+   "of": 1005,
+   "coverage": 0.5333333333333333,
+   "accepted_error": 0.2667910447761194,
+   "unfiltered_error": 0.4019900497512438,
+   "delta_unfiltered_minus_accepted": [
+    0.13519900497512438,
+    0.08552183020495335,
+    0.19239313960721585
+   ]
+  }
+ },
+ "b_risk_coverage_events": {
+  "ordering": "frozen tt.eval.phase4 score: 0 if any verifier fired, else 1 + 2*[run 2 agrees] + [B1 agrees]; higher score accepted first; ties included fractionally (expected value under random tie-breaking); no model confidence",
+  "score_counts": {
+   "0": 343,
+   "1": 83,
+   "2": 43,
+   "3": 303,
+   "4": 233
+  },
+  "N": 1005,
+  "overall_error_no_ranking": 0.4019900497512438,
+  "AURC": [
+   0.26932924983646644,
+   0.21536387584662117,
+   0.3315900013134246
+  ],
+  "risk@90": [
+   0.3791506488815501,
+   0.324251859539872,
+   0.44128649984671986
+  ],
+  "risk@70": [
+   0.31458719851576994,
+   0.25763742690058483,
+   0.376967095851216
+  ],
+  "risk@50": [
+   0.2622841965471448,
+   0.2125495235035871,
+   0.318859649122807
+  ],
+  "curve_at_coverage": {
+   "0.05": 0.18025751072961374,
+   "0.10": 0.18025751072961374,
+   "0.20": 0.1802575107296137,
+   "0.30": 0.2152317880794702,
+   "0.40": 0.24461028192371478,
+   "0.50": 0.2622841965471448,
+   "0.60": 0.2778876700833183,
+   "0.70": 0.31458719851576994,
+   "0.80": 0.3508840636467807,
+   "0.90": 0.3791506488815501,
+   "1.00": 0.4019900497512438
+  }
+ },
+ "c_cause_and_supplier": {
+  "C": {
+   "label": "cause (NR-or-not detection)",
+   "candidates": 199,
+   "accepted": 155,
+   "coverage": 0.7788944723618091,
+   "unfiltered_errors": 32,
+   "accepted_errors": 4,
+   "unfiltered_error": [
+    0.16080402010050251,
+    0.102803738317757,
+    0.22340425531914893
+   ],
+   "accepted_error": [
+    0.025806451612903226,
+    0.005847953216374269,
+    0.058333333333333334
+   ],
+   "delta_unfiltered_minus_accepted": [
+    0.13499756848759928,
+    0.08026377767310411,
+    0.19772727272727272
+   ]
+  },
+  "S2": {
+   "label": "supplier claims",
+   "candidates": 70,
+   "accepted": 20,
+   "coverage": 0.2857142857142857,
+   "unfiltered_errors": 48,
+   "accepted_errors": 8,
+   "unfiltered_error": [
+    0.6857142857142857,
+    0.5263157894736842,
+    0.8085106382978723
+   ],
+   "accepted_error": [
+    0.4,
+    0.0625,
+    0.6551724137931034
+   ],
+   "delta_unfiltered_minus_accepted": [
+    0.2857142857142857,
+    0.0544347164065474,
+    0.6012987012987013
+   ]
+  }
+ }
+}
