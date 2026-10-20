@@ -1,0 +1,174 @@
+{
+ "filings": 199,
+ "gold_events_noncontested": 1445,
+ "gold_events_with_date_text": 991,
+ "gold_contested_events_dropped_by_frozen_prepare": 21,
+ "excluded_gold_events": 27,
+ "excluded_gold_share_of_events": 0.018685121107266434,
+ "excluded_gold_share_of_dated_events": 0.027245206861755803,
+ "filings_with_excluded_gold": 11,
+ "excluded_gold_list": [
+  {
+   "file": "RCLRPT-23V310-1286.PDF",
+   "type": "NHTSA_FILING",
+   "date_text": "May2, 2023"
+  },
+  {
+   "file": "RCLRPT-23V801-2565.PDF",
+   "type": "FILER_AWARENESS",
+   "date_text": "October-November 2023"
+  },
+  {
+   "file": "RCLRPT-23V855-3267.PDF",
+   "type": "OTHER",
+   "date_text": "3208-07-52"
+  },
+  {
+   "file": "RCLRPT-24E068-9308.PDF",
+   "type": "FILER_AWARENESS",
+   "date_text": "the months leading up to July 2024"
+  },
+  {
+   "file": "RCLRPT-24V480-8563.PDF",
+   "type": "FILER_AWARENESS",
+   "date_text": "CW49/2023"
+  },
+  {
+   "file": "RCLRPT-24V480-8563.PDF",
+   "type": "OTHER",
+   "date_text": "CW50/2023"
+  },
+  {
+   "file": "RCLRPT-24V480-8563.PDF",
+   "type": "OTHER",
+   "date_text": "CW05/24"
+  },
+  {
+   "file": "RCLRPT-24V515-2399.PDF",
+   "type": "OTHER",
+   "date_text": "March 19-21"
+  },
+  {
+   "file": "RCLRPT-24V820-7053.PDF",
+   "type": "FILER_AWARENESS",
+   "date_text": "October 2022 \u2013 March 2024"
+  },
+  {
+   "file": "RCLRPT-24V892-6729.PDF",
+   "type": "SUPPLIER_NOTICE",
+   "date_text": "August 2023 throughout November 2023"
+  },
+  {
+   "file": "RCLRPT-24V897-2591.PDF",
+   "type": "INVESTIGATION_START",
+   "date_text": "October 2023, through September 2024"
+  },
+  {
+   "file": "RCLRPT-25V100-5055.PDF",
+   "type": "FILER_AWARENESS",
+   "date_text": "October \u2013 November 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "20. Jan 2023"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "20. Jan 2023"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "01. Jan 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "01. Feb 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "FILER_AWARENESS",
+   "date_text": "18. Sept 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "25. Sept 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "03. Oct 2024"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "FILER_AWARENESS",
+   "date_text": "10. Feb 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "11. Feb 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "13. Feb 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "06. Mar 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "07. July 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "02. Sept 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "DECISION",
+   "date_text": "03. Sept 2025"
+  },
+  {
+   "file": "RCLRPT-25V598-1713.pdf",
+   "type": "OTHER",
+   "date_text": "05. Sept 2025"
+  }
+ ],
+ "systems": {
+  "B0": {
+   "predicted_events": 0,
+   "ignored_predictions": 0,
+   "ignored_share": null
+  },
+  "B1": {
+   "predicted_events": 627,
+   "ignored_predictions": 3,
+   "ignored_share": 0.004784688995215311
+  },
+  "B2_4b_v2": {
+   "predicted_events": 1006,
+   "ignored_predictions": 1,
+   "ignored_share": 0.0009940357852882703
+  },
+  "agent_run1": {
+   "predicted_events": 1006,
+   "ignored_predictions": 1,
+   "ignored_share": 0.0009940357852882703
+  }
+ },
+ "bounding_runs_required": true,
+ "bounding_runs": [
+  "TT_AMEND_MODE=bound_errors (unmatched predictions counted as errors)",
+  "TT_AMEND_MODE=bound_drop (all affected filings dropped)"
+ ]
+}
