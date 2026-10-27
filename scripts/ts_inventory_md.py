@@ -149,12 +149,12 @@ w("- **full_date:** a day with a year.")
 w("- **numeric_ambiguous:** a numeric date that reads validly as both mm/dd and dd/mm.")
 w("- **yearless:** a day or month with no year.")
 w("- **week:** \"CW51/2020\" or \"week of …\".")
-w("- **early_mid_late:** of a month or a year.")
+w("- **part_of_period:** the first, middle or final third of a month or year (\"early March\", \"mid-March\", \"end of March\").")
 w("- **quarter, year, range** (two dates), and **unparsed.**")
 w("")
 w("Silver = non-contested events. Agent = run-1 events accepted by the frozen gate.")
 w("")
-K = ["full_date", "numeric_ambiguous", "month", "yearless", "week", "early_mid_late", "quarter", "year", "range", "unparsed"]
+K = ["full_date", "numeric_ambiguous", "month", "yearless", "week", "part_of_period", "quarter", "year", "range", "unparsed"]
 w("| split | set | " + " | ".join(K) + " | total |")
 w("|---|---|" + "---|" * (len(K) + 1))
 for s in S:

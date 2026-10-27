@@ -129,12 +129,12 @@ Each non-empty date text was classified by the TS parser (`scripts/ts_lib.py`, `
 - **numeric_ambiguous:** a numeric date that reads validly as both mm/dd and dd/mm.
 - **yearless:** a day or month with no year.
 - **week:** "CW51/2020" or "week of …".
-- **early_mid_late:** of a month or a year.
+- **part_of_period:** the first, middle or final third of a month or year ("early March", "mid-March", "end of March").
 - **quarter, year, range** (two dates), and **unparsed.**
 
 Silver = non-contested events. Agent = run-1 events accepted by the frozen gate.
 
-| split | set | full_date | numeric_ambiguous | month | yearless | week | early_mid_late | quarter | year | range | unparsed | total |
+| split | set | full_date | numeric_ambiguous | month | yearless | week | part_of_period | quarter | year | range | unparsed | total |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Test-A | silver, all types | 622 | 49 | 153 | 60 | 3 | 16 | 0 | 4 | 82 | 2 | 991 |
 | Test-A | silver, DECISION | 153 | 6 | 5 | 5 | 0 | 0 | 0 | 0 | 1 | 0 | 170 |

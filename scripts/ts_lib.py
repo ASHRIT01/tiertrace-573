@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from datetime import date, timedelta
 
 # ---------------------------------------------------------------- holidays (5 U.S.C. 6103(a), observed rule 6103(b)) -------------
-HOLIDAY_YEARS = range(1980, 2028)
+HOLIDAY_YEARS = range(1980, 2029)
 
 
 def _nth_weekday(y: int, m: int, weekday: int, n: int) -> date:
@@ -303,7 +303,7 @@ def date_format(text: str) -> str:
         return "range"
     if r.y is None:
         return "yearless"
-    return {"day": "full_date", "iso_week": "week", "month": "month", "month_part": "early_mid_late", "year_part": "early_mid_late",
+    return {"day": "full_date", "iso_week": "week", "month": "month", "month_part": "part_of_period", "year_part": "part_of_period",
             "quarter": "quarter", "year": "year"}[r.kind]
 
 

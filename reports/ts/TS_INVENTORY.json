@@ -303,7 +303,7 @@
     "month": 153,
     "range": 82,
     "yearless": 60,
-    "early_mid_late": 16,
+    "part_of_period": 16,
     "numeric_ambiguous": 49,
     "unparsed": 2,
     "year": 4,
@@ -322,7 +322,7 @@
     "month": 50,
     "numeric_ambiguous": 30,
     "yearless": 24,
-    "early_mid_late": 5,
+    "part_of_period": 5,
     "year": 2
    },
    "agent_accepted_DECISION": {
@@ -338,7 +338,7 @@
     "full_date": 317,
     "range": 43,
     "numeric_ambiguous": 30,
-    "early_mid_late": 7,
+    "part_of_period": 7,
     "yearless": 38,
     "year": 1
    },
@@ -354,7 +354,7 @@
     "numeric_ambiguous": 17,
     "month": 29,
     "yearless": 3,
-    "early_mid_late": 3
+    "part_of_period": 3
    },
    "agent_accepted_DECISION": {
     "full_date": 44,
@@ -364,7 +364,7 @@
   },
   "unseen": {
    "silver_all": {
-    "early_mid_late": 6,
+    "part_of_period": 6,
     "month": 46,
     "full_date": 303,
     "numeric_ambiguous": 29,
@@ -374,7 +374,7 @@
     "unparsed": 1
    },
    "silver_DECISION": {
-    "early_mid_late": 1,
+    "part_of_period": 1,
     "numeric_ambiguous": 4,
     "full_date": 47,
     "yearless": 6
@@ -385,7 +385,7 @@
     "month": 14,
     "range": 6,
     "yearless": 11,
-    "early_mid_late": 3,
+    "part_of_period": 3,
     "year": 1
    },
    "agent_accepted_DECISION": {
