@@ -14,7 +14,7 @@ Error rates are against silver labels, not checked by a human. Sources are given
 | H2 cause reported or not (NR detection only) | secondary, preregistered | Test-A | 0.1350 [0.0803, 0.1977] | CI lower > 0 | PASS | same |
 | H4 prompt-injection success after checks | secondary, preregistered | 30 attacks | 2/30 = 0.067; exact 95% upper bound 0.195 | ≤ 0.10 | PASS (point estimate; bound above 0.10) | `reports/phase_6_H4.md@b9611e0` |
 | H5 event error, rule baseline B1 − B2 | secondary, preregistered | Test-A | 0.1092 [0.0308, 0.1765] | CI lower > 0 | PASS | `reports/phase_6_testA_primary.md@37f93c9` |
-| H6 JSON-valid rate / p95 seconds per filing | secondary, preregistered | 100 dev filings | 1.000; p95 80.1 s including the cold-load call; p50 31.7 s; max 112.5 s (M2 8 GB, Terminal.app, other apps closed, as stated by the owner) | ≥ 0.95; ≤ 120 s | PASS | `reports/phase_6_H6.md@08d7916` |
+| H6 JSON-valid rate / p95 seconds per filing | secondary, preregistered | 100 dev filings | 1.000; p95 80.1 s including the cold-load call; p50 31.7 s; max 112.5 s (M2 8 GB, Terminal.app, other apps closed, as stated by the owner). H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s. | ≥ 0.95; ≤ 120 s | PASS | `reports/phase_6_H6.md@08d7916` |
 | H1-style delta | exploratory | Test-B (100) | **0.0327 [−0.0244, 0.0984]**: interval includes 0 | none | n/a | `reports/phase_6_secondary_splits.md@ef19956` |
 | H1-style delta | exploratory | unseen-filer (98) | 0.0877 [0.0219, 0.1587] | none | n/a | same |
 | H5-style B1 − B2 | exploratory | Test-B / unseen-filer | 0.1458 [0.0639, 0.2048] / **0.0877 [−0.0103, 0.1612]**: unseen interval includes 0 | none | n/a | same |
@@ -59,6 +59,7 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 | `docs/` | labelling rules, Pass B/C prompts, amendment 1, runbook |
 | `PREREGISTRATION.md` | the frozen preregistration and freeze record |
 | `scripts/` | Phase 6 runners, supervisor, analysis scripts, `writeup_claims.py` (checks every number in the write-up) |
+| `LICENSE`, `LICENSE-DATA.md`, `CITATION.cff` | MIT for code; CC BY 4.0 for labels, run outputs and reports; citation metadata |
 
 ## Limitations
 
@@ -68,7 +69,7 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 - **Supplier claims** are few (13–20 accepted per split) and their error is 23–40%, with wide intervals.
 - **H4 limits.** H4 has 30 attacks; the upper bound of 0.195 cannot rule out a true rate above 10%. An attack that makes the model return no events is invisible to every claim-level check.
 - **Cause.** Only "cause reported or not" is scored, never the cause itself.
-- **Speed.** H6 is one run on one machine, with the clean condition as stated by the owner. With apps open, Test-A's p95 was 130–184 s.
+- **Speed.** H6 is one run on one machine, with the clean condition as stated by the owner. H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s.
 - **Wording.** Suppliers are "named in the filing as component manufacturer", never "responsible" for a recall.
 
 ## How to cite
@@ -76,11 +77,14 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 ```
 TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings (2026).
 Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md.
-Author and repository URL: AUTHOR_AND_URL_TO_BE_ADDED
+Author: <MY FULL NAME>. Repository URL: <REPOSITORY_URL> (to be added when the repository exists). See also CITATION.cff.
 ```
 
-Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Auto Recall Timing and Process Dataset. *Manufacturing & Service Operations Management*, 24(3), 1457–1473.
+Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085
 
 ## Licence
 
-**No licence has been chosen yet.** Until the owner adds one, no licence is granted. NHTSA filings are public records; this repository's code and labels are not yet licensed.
+- **Code:** MIT ([LICENSE](LICENSE)).
+- **Silver labels, run outputs and reports:** CC BY 4.0 ([LICENSE-DATA.md](LICENSE-DATA.md)).
+- **NHTSA source documents** (Part 573 filings, and the quotes from them inside the labels and outputs) are US-government records. We do not relicense them.
+- **The MSOM dataset** (Astvansh, Ball & Josefy 2022) is not included or redistributed here.

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or its labels, please cite it as below. All labels are silver labels (AI-made, not checked by a human)."
+title: "TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings"
+type: software
+authors:
+  - name: "<MY FULL NAME>"
+version: "0.1.0"
+date-released: "2026-10-28"
+license: MIT
+repository-code: "<REPOSITORY_URL>"
+keywords:
+  - NHTSA
+  - Part 573
+  - vehicle recalls
+  - information extraction
+  - selective prediction
+  - preregistration
+references:
+  - type: article
+    title: "The Recall Decision Exposed: Automobile Recall Timing and Process Data Set"
+    authors:
+      - family-names: Astvansh
+      - family-names: Ball
+      - family-names: Josefy
+    journal: "Manufacturing & Service Operations Management"
+    volume: 24
+    issue: 3
+    start: 1457
+    end: 1473
+    year: 2022
+    doi: "10.1287/msom.2022.1085"

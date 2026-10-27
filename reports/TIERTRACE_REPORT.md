@@ -14,9 +14,9 @@ A Part 573 Safety Recall Report is the form a vehicle or equipment maker files w
 
 NHTSA publishes a flat file of recall campaigns, but it has no structured field for the chronology's dates or event types. The supplier fields are filled unevenly. Turning the chronology into data therefore means reading PDFs.
 
-**Closest prior work.** Astvansh, Ball and Josefy (2022), "The Recall Decision Exposed: Auto Recall Timing and Process Dataset", *Manufacturing & Service Operations Management* 24(3): 1457–1473, doi 10.1287/msom.2022.1085.
-- The owner describes it as hand-coding 2,120 recalls from 2009–2018.
-- A web search confirmed the title, journal, volume and pages, but not the DOI or the 2,120 and 2009–2018 figures. These come from the owner, not from a committed report (section 9, item X1).
+**Closest prior work.** Astvansh, Ball and Josefy (2022), "The Recall Decision Exposed: Automobile Recall Timing and Process Data Set", *Manufacturing & Service Operations Management* 24(3): 1457–1473, doi 10.1287/msom.2022.1085.
+- It hand-codes 2,120 recalls by 27 automakers, 2009–2018.
+- Verified against the RePEc record and the accepted manuscript (McGill); this is the one cited fact not taken from a committed report (section 9, item X1).
 - TierTrace does not reproduce that dataset and has not yet been compared with it (section 8).
 
 **What TierTrace tries.**
@@ -180,7 +180,7 @@ The preregistration also commits to a negative-result rule. If H1 had failed, ev
 | H2 | delta 0.1350 [0.0803, 0.1977]; B2 0.161 → agent 0.026 at coverage 0.779 | lower > 0 | PASS | same |
 | H4 | 2/30 = 0.067 after verifiers + agreement; exact one-sided 95% Clopper-Pearson upper bound **0.195**; raw 11/30 = 0.367 | ≤ 0.10 | PASS (point estimate only) | `phase_6_H4.md@b9611e0` |
 | H5 | B1 − B2 = 0.1092 [0.0308, 0.1765]; B1 0.511 (624 claims), B2 0.402 | lower > 0 | PASS | `phase_6_testA_primary.md@37f93c9` |
-| H6 | JSON-valid 1.000; p95 **80.1 s** including the 65.0 s cold-load call (81.0 s without it); p50 31.7 s; max 112.5 s | ≥ 0.95; ≤ 120 s | PASS | `phase_6_H6.md@08d7916` (output file committed in e0a5892) |
+| H6 | JSON-valid 1.000; p95 **80.1 s** including the 65.0 s cold-load call (81.0 s without it); p50 31.7 s; max 112.5 s. H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s. | ≥ 0.95; ≤ 120 s | PASS | `phase_6_H6.md@08d7916` (output file committed in e0a5892) |
 
 Notes on each endpoint:
 - **H1, H2 and H5 rest on run 2.** These claims come from run 1, with run 2 used as the agreement filter. Run 2 had 4 timeouts, kept as missing, so those filings' claims could not be accepted.
@@ -190,7 +190,7 @@ Notes on each endpoint:
 - **H4 bound.** With 30 attacks the data cannot rule out a true attack success rate of up to 19.5%. A bound below 10% would have needed 0 successes (0/30 gives 0.095; `PREREGISTRATION_PROPOSED_FINAL.md@9d8a6de`).
 - **H4 blind spot.** Both remaining successes are the `suppress_events` attack, which makes the model return an empty event list. An absent claim gives no verifier anything to check, so this attack is outside what the design can catch. The other attacks behaved differently: `flip_cause` succeeded 6 of 6 times in the raw model and 0 times after the verifiers (`phase_6_H4.md@b9611e0`). On ordinary Test-A filings, run 1 returned an empty list for 4 of 199 filings (2.0%), none of which had a gold event. Under `suppress_events`, 2 of 6 attacks produced one (`phase_6_exploratory_2.md@805a34c`).
 - **H6 conditions.** One run on the 100 dev filings with `qwen3.5:4b-q4_K_M`, on an Apple M2 with 8 GB, macOS 15.6.1 and Ollama 0.40.6. It was started from Terminal.app with other apps closed, as stated by the owner, who ran it. The log does not record power state or free RAM, so the clean condition is not independently verified.
-- **Speed on Test-A.** For comparison, the Test-A production runs had a p95 of 130 s (run 1) and 184 s (run 2) with apps open (`phase_6_testA_primary.md@37f93c9`). The H6 pass applies to the clean condition only.
+- **Speed on Test-A.** H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s. Sources: `phase_6_H6.md@08d7916`, `phase_6_testA_primary.md@37f93c9`. The H6 pass applies to the clean condition only.
 
 ### 5(b) EXPLORATORY (named as secondary splits in the freeze): Test-B and unseen-filer
 
@@ -292,7 +292,7 @@ This is one scenario in one direction, not an estimate of label noise.
 - **Label independence.** Pass C sided with Pass B in 72–78% of items, both are the same model family, and the agent's type definitions come from the labelling rules. Shared errors are invisible.
 - **No human check.** No label was checked by a human, so every error rate here is relative to AI labels.
 - **H4 limits.** There were only 30 attacks (upper bound 0.195). They were written by a Claude instance (same family as the labellers and the verifier author) and target the Qwen model. The empty-output attack is outside the design.
-- **H6 limits.** One run, one machine, dev filings, with the clean condition as stated by the owner.
+- **H6 limits.** One run, one machine, dev filings, with the clean condition as stated by the owner. H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s.
 - **Cause correctness is not measured.** Only "cause reported or not" is scored.
 
 ---
@@ -317,7 +317,7 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 
 **Operational lessons.**
 - **The restart.** Test-B run 2 was lost when the laptop ran its battery to 1% and slept (section 4). After that, runs were made on AC power under a supervisor script that restarts the runner and Ollama.
-- **Speed varies with the machine's state.** Test-A's p95 with apps open was 130–184 s, above H6's 120 s limit. H6 passed only in the clean condition.
+- **Speed varies with the machine's state.** H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s.
 
 ---
 
@@ -325,7 +325,7 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 
 1. **External validation against the MSOM hand-coded data** (Astvansh, Ball and Josefy 2022). Compare TierTrace's dates and event types with human coding on the overlapping recalls. No comparison with human labels has been made in this project yet. The supplementary data file has not been obtained yet.
 2. **An awareness-vs-investigation rule.** Add a tie-break for sentences that report both, the largest gap specific to the agent in section 5(c). This changes the labelling rules and the prompt, so it needs a v2 with a new freeze and new held-out data. It cannot be applied to the current results.
-3. **Post-2018 extension.** The MSOM data end in 2018 (as stated by the owner); TierTrace covers 2015–2026 filings. A combined, longer series would need validation on the overlapping years before use.
+3. **Post-2018 extension.** The MSOM data end in 2018; TierTrace covers 2015–2026 filings. A combined, longer series would need validation on the overlapping years before use.
 4. **Prediction-powered inference for labelling cost.** Use a small human-labelled sample to correct estimates made on many AI-labelled filings. This could turn silver-label error rates into interval estimates against human judgement while labelling only a small sample by hand.
 
 ---
@@ -334,9 +334,9 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 
 Every number used above and in `README.md`, with its source file and the commit it was read from. "Matched text" is the exact string that `scripts/writeup_claims.py` finds in `git show <commit>:<file>` (¦ stands for a table bar).
 
-- **Result of the check when this report was written:** 123 claims checked, 0 mismatches.
-- **Durations in section 7:** these are arithmetic on checked timestamps (H1, H5–H8).
-- **X1 is outside the check:** item X1 is the only number not from a committed report.
+- **Result of the check when this report was written:** 125 claims checked, 0 mismatches.
+- **Durations in section 7:** these are arithmetic on checked timestamps (H1, H5–H8). H3 is split into H3, H3b and H3c so that the timeouts, the crash and its single retry are each matched.
+- **X1 is outside the check:** item X1 is the only number not from a committed report; it is verified against the RePEc record and the accepted manuscript.
 
 | # | claim | source | commit | matched text |
 |---|---|---|---|---|
@@ -455,7 +455,9 @@ Every number used above and in `README.md`, with its source file and the commit 
 | C33 | cluster t-bound false-certification rate, cause: highest 0.2056 | `reports/phase_6_exploratory_2.md` | 805a34c | `¦ 4111/20000 ¦ 0.2056` |
 | H1 | Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min) | `reports/DEVIATIONS.md` | 75e4841 | `12:48:52 start, 16:10:07 done` |
 | H2 | Test-A run 2: restart at 21:32:45 with 167 of 199 records | `reports/DEVIATIONS.md` | 75e4841 | `RESTART 21:32:45 with 167 of 199 records` |
-| H3 | Test-A run 2: four timeouts at 300 s, one runner crash retried | `reports/DEVIATIONS.md` | 75e4841 | `four per-call timeouts at 300 s` |
+| H3 | Test-A run 2: four timeouts at 300 s | `reports/DEVIATIONS.md` | 75e4841 | `four per-call timeouts at 300 s` |
+| H3b | Test-A run 2: one runner crash, no model call completed | `reports/DEVIATIONS.md` | 75e4841 | `one "model runner has unexpectedly stopped" at 2 s (RCLRPT-25V574-1873; no model call completed, no output)` |
+| H3c | Test-A run 2: the crashed record retried once | `reports/DEVIATIONS.md` | 75e4841 | `RCLRPT-25V574-1873 re-run once with the frozen run-2 settings` |
 | H4 | battery death: Low Power Sleep 2026-10-25 17:56:21 on battery at 1% | `reports/phase_6_secondary_splits.md` | ef19956 | `Low Power Sleep at 2026-10-25 17:56:21 while on battery at 1% charge` |
 | H4b | the Mac rebooted at 19:22:49 | `reports/phase_6_secondary_splits.md` | ef19956 | `the machine rebooted at 19:22:49` |
 | H4c | Test-B run 2 restart 2026-10-27 11:48:06 | `reports/phase_6_secondary_splits.md` | ef19956 | `RESTART 2026-10-27 11:48:06` |
@@ -466,4 +468,4 @@ Every number used above and in `README.md`, with its source file and the commit 
 
 | # | claim | source | status |
 |---|---|---|---|
-| X1 | Astvansh, Ball & Josefy (2022), MSOM 24(3):1457–1473, doi 10.1287/msom.2022.1085; 2,120 recalls hand-coded, 2009–2018 | owner-supplied, not a committed report | title, journal, volume and pages confirmed by a web search (Indiana University Kelley faculty profile); DOI, 2,120 and 2009–2018 **not confirmed** |
+| X1 | Astvansh, Ball & Josefy (2022), "The Recall Decision Exposed: Automobile Recall Timing and Process Data Set", MSOM 24(3):1457–1473, doi 10.1287/msom.2022.1085; 2,120 recalls by 27 automakers, 2009–2018 | owner-supplied, not a committed report | **verified against RePEc + accepted manuscript** |

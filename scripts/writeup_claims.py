@@ -140,7 +140,9 @@ CLAIMS = [
     # cost, hardware, runs
     ("H1", "Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min)", DEV, "12:48:52 start, 16:10:07 done"),
     ("H2", "Test-A run 2: restart at 21:32:45 with 167 of 199 records", DEV, "RESTART 21:32:45 with 167 of 199 records"),
-    ("H3", "Test-A run 2: four timeouts at 300 s, one runner crash retried", DEV, "four per-call timeouts at 300 s"),
+    ("H3", "Test-A run 2: four timeouts at 300 s", DEV, "four per-call timeouts at 300 s"),
+    ("H3b", "Test-A run 2: one runner crash, no model call completed", DEV, 'one "model runner has unexpectedly stopped" at 2 s (RCLRPT-25V574-1873; no model call completed, no output)'),
+    ("H3c", "Test-A run 2: the crashed record retried once", DEV, "RCLRPT-25V574-1873 re-run once with the frozen run-2 settings"),
     ("H4", "battery death: Low Power Sleep 2026-10-25 17:56:21 on battery at 1%", SEC, "Low Power Sleep at 2026-10-25 17:56:21 while on battery at 1% charge"),
     ("H4b", "the Mac rebooted at 19:22:49", SEC, "the machine rebooted at 19:22:49"),
     ("H4c", "Test-B run 2 restart 2026-10-27 11:48:06", SEC, "RESTART 2026-10-27 11:48:06"),
