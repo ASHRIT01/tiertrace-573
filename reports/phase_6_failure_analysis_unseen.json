@@ -1,0 +1,1896 @@
+{
+ "split": "unseen",
+ "claims": 444,
+ "accepted": 231,
+ "accepted_wrong": 76,
+ "classes": {
+  "i": 57,
+  "iii_undated_same_type": 2,
+  "ii": 8,
+  "v": 3,
+  "iii": 4,
+  "iv": 2
+ },
+ "duplicate_underlying": {
+  "ii": 1,
+  "i": 1
+ },
+ "top5_filers_by_accepted_wrong": [
+  "nova bus (us) inc.",
+  "zoox, inc.",
+  "lucid usa, inc.",
+  "electra meccanica vehicles corp",
+  "zeekr technology us, llc"
+ ],
+ "classes_by_filer": {
+  "other": {
+   "i": 36,
+   "iii_undated_same_type": 2,
+   "ii": 6,
+   "iii": 3,
+   "iv": 1
+  },
+  "electra meccanica vehicles corp": {
+   "i": 3,
+   "ii": 1
+  },
+  "nova bus (us) inc.": {
+   "i": 7,
+   "iv": 1
+  },
+  "lucid usa, inc.": {
+   "v": 3,
+   "ii": 1,
+   "iii": 1
+  },
+  "zoox, inc.": {
+   "i": 7
+  },
+  "zeekr technology us, llc": {
+   "i": 4
+  }
+ },
+ "strict_view": {
+  "claims": 444,
+  "accepted": 231,
+  "coverage": 0.5202702702702703,
+  "error_all": [
+   0.4166666666666667,
+   0.3448979591836735,
+   0.5026455026455027
+  ],
+  "error_accepted": [
+   0.329004329004329,
+   0.25806451612903225,
+   0.4120603015075377
+  ],
+  "delta_all_minus_accepted": [
+   0.08766233766233766,
+   0.021859121508343904,
+   0.15870621752974695
+  ]
+ },
+ "date_only_view": {
+  "claims": 444,
+  "accepted": 231,
+  "coverage": 0.5202702702702703,
+  "error_all": [
+   0.15315315315315314,
+   0.09071274298056156,
+   0.23772609819121446
+  ],
+  "error_accepted": [
+   0.07792207792207792,
+   0.03501945525291829,
+   0.13716814159292035
+  ],
+  "delta_all_minus_accepted": [
+   0.07523107523107522,
+   0.03175106153748654,
+   0.1345546864278853
+  ]
+ },
+ "repetition_rows": [
+  {
+   "file": "RCLRPT-23E020-3987.PDF",
+   "filer": "gilbarco, inc.",
+   "norm": [
+    "following reporting of an overheating incident in orpak undertook to conduct internal and independent testing of the datapass plus devices up through",
+    "based on the testing conducted orpak was unable to replicate the defect reported in the overheating incident but orpak identified a potential anomaly in the de paneling process used to manufacture certain units that could cause capacitor cracking",
+    "in two more overheating incidents were reported and orpak determined to undertake a recall while continuing to investigate any potential defect"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23E031-5488.PDF",
+   "filer": "meritor, inc.",
+   "norm": [
+    "notified by customer that it was observed that the orange keeper was not installed correctly from the meritor factory on some of the protorq spindle nuts",
+    "rcm d cc was opened for improper keeper installation on front axles by laurinburg",
+    "front axle quality technicians were assigned to validate engagement of keepers and capture pictures of keeper installation and on all protorq spindle nuts built on the front axle line",
+    "engineering began working on analysis involving improper keeper installation reported by customer",
+    "engineering provide summary of investigation to product safety and compliance counsel and continued investigation",
+    "meritor product safety and compliance committee reviewed engineering technical position conclusion and determined a possible safety related concern has been identified and impacted customers should be notified",
+    "communication with customers conducted",
+    "meritor notified that spartan fire filed a defect report with nhtsa",
+    "meritor notified that capacity of texas filed a defect report with nhtsa"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 1,
+   "accepted": 7,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23E033-7392.PDF",
+   "filer": "3m transportation safety division",
+   "norm": [
+    "as part of its normal quality control procedures m tested a sample of sheeting from the lot in question during",
+    "the third party lab contacted m by email and informed m that this sheeting did not pass the retroreflection requirement",
+    "because of the lower brightness measurement on the sheeting at the degree angle m believes the lot of sheeting identified above may not comply with s of fmvss no",
+    "m has not received any complaints regarding this issue from the field"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 3,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23E068-9689.PDF",
+   "filer": "hyundam industrial",
+   "norm": [
+    "on hyundam submitted recall report e",
+    "hyundam amended its recall report on to specify the estimated percentage of products with defect",
+    "between and hyundam continued to inspect and evaluate fuel pumps recovered by hyundai and mercedes benz",
+    "additional investigation continued into which resulted in additional raw material lots of the sub supplier identified as being potentially affected by the subject condition",
+    "hyundam continued to work with hyundai and mercedes benz to monitor and evaluate fuel pumps containing product from the additional raw material lots of the sub supplier",
+    "hyundam decided to amend its recall to address the additional products potentially affected by the subject condition"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23E072-1814.PDF",
+   "filer": "precision circuits inc.",
+   "norm": [
+    "on thursday during an electrical audit performed at brinkley rv it was discovered that the neutral wire for the power control system was undersized for a amp service system",
+    "the neutral wire was discovered to be gauge during the audit",
+    "of note is there have been zero reported issues in the field relative to this issue",
+    "precision circuits was contacted immediately and advised of the error",
+    "thereafter precision circuits traveled to brinkley rv on to review the application and to confirm that the wire in fact was undersized",
+    "immediate corrective action was taken at the precision circuits production facility to ensure no other components were built with the undersized wiring",
+    "all brinkley rv model g units located on brinkley rv premises were subjected to a stop ship to permit all units to be remedied prior to shipment",
+    "precision circuits manufactured new power control system assemblies and helped to facilitate swapping the correct systems for those units containing undersized wiring version of the power control system",
+    "once completed brinkley rv permitted those units to ship as the intended remedy was supplied in those units and effectively removed them from the vin range of this recall",
+    "in parallel precision circuits also performed lab testing to evaluate the risk related to amperage draw and temperature and found that the wire was at no risk of component failure or fire hazard when continuously subjected to amps of power",
+    "despite this determination by precision circuits brinkley rv and precision circuits both still agreed that changing to the gauge neutral wire is necessary and should be performed to be in compliance with applicable code",
+    "owners of brinkley model g units may elect to add additional power equipment to the rv in reliance on the amp rating of the rv changing the loads and thus this recall is being instituted to ensure there is no possibility of a thermal event occurring due to changes"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 7,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23E073-6451.PDF",
+   "filer": "mando america corporation",
+   "norm": [
+    "please see attachment a for the chronology of events"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23E082-7103.PDF",
+   "filer": "trans-air manufacturing corp.",
+   "norm": [
+    "in we received a report of a non delivered vehicle with cid compressors hitting stabilizer bar",
+    "after a lot of research it was determined that the models that ford sent us did not have stabilizer bar",
+    "we prototyped numerous mounts until we developed one that was acceptable to our quality and engineering departments",
+    "by that point there were vehicles with this issue",
+    "they were all repaired in",
+    "we were under the impression that there were no other issues until we received a report of a failure in on a bus with cid compressors",
+    "at that point we reached out to starcraft for their assistance with gaining dealer information for the vins"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23E086-7725.PDF",
+   "filer": "cruise llc",
+   "norm": [
+    "on a cruise av operating in driverless mode was involved in a collision in which a human driven vehicle collided with a pedestrian and propelled the pedestrian into the immediate path of the cruise av",
+    "after coming to an initial stop the av attempted to pull over out of traffic pulling the individual forward",
+    "cruise immediately began an investigation of the incident",
+    "on cruise met with the california department of motor vehicles dmv national highway traffic safety administration nhtsa and other san francisco officials to discuss the incident and it provided a briefing to the california public utilities commission cpuc",
+    "cruise also reported the incident to nhtsa that same day in accordance with nhtsa s standing general order",
+    "in the course of its investigation of the incident cruise determined that the ads attempted to pull over after the collision rather than remain stationary as a result of the issue described in this notice",
+    "cruise continued its evaluation of the av s post collision response to ascertain whether and under what circumstances the issue could recur by conducting a broad review of historical driving data and running extensive simulation tests to analyze the behavior of the ads in comparable circumstances",
+    "this review took approximately three weeks to complete due to the rarity of the circumstances being examined and the extensiveness of the review",
+    "on cruise completed its review and immediately initiated an assessment of the safety risk associated with the findings",
+    "continued on attached report"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23V008-6503.PDF",
+   "filer": "gratimax, llc",
+   "norm": [
+    "on gratimax was notified by its customer vermeer mv solutions inc of a possible compliance issue relating to the design of the affected trailers",
+    "an investigation of the design was opened at that time including review of applicable regulations standards manufacturing documents and design files and production of the affected trailers was placed on hold",
+    "on gratimax decided that a non compliance with fmvss and existed"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23V009-5168.PDF",
+   "filer": "lode-king industries, ltd.",
+   "norm": [
+    "during a recent quality system audit it was noted that a detailed installation drawing complete with weld symbols was not provided to production personnel for this winch installation",
+    "subsequently these winches were only welded along the top and bottom sides the end weld was omitted",
+    "with this end weld being missed the cargo winch fails at approximately lb of load just shy of the required lb"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 3,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V035-6346.PDF",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my telluride nd row seat side airbag wire harness chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V053-3046.PDF",
+   "filer": "bombardier recreational products, inc.",
+   "norm": [
+    "at the brp confirmed a trend of high warranty rates of mirror falling from the housing",
+    "while most of the mirrors were found in the bottom of the crate at dealership brp received reports of mirrors falling while riding representing of the overall claims",
+    "in trying to understand the trend brp made various tests and validations",
+    "brp found that there was a high probability that the issue was due to a wrong plastic injection control for the mirror housings by its supplier for a batch molded in",
+    "as of in the us brp had received reports of disloged lens at the moment of pre delivery preparation confirmed reports of lens falling while riding in in and in and reports of lens falling unconfirmed if it was while riding or not",
+    "with all the information collected and analyzed brp decided on had enough information to report and wants to proceed with a safety recall",
+    "no accident injury or death was reported worldwide",
+    "update my week of brp found one lens dislodged from the mirror housing in a box of parts for my",
+    "the housing molding date was a batch date that brp did not want for its production",
+    "inspection of the parts identified inadequate molding dates as required by brp and agreed by the supplier",
+    "then brp inspected of vehicles in its production yard and found vehicles with mirror housing s from an inadequate molding date",
+    "vehicles outside the production yard are expected to have a similar rate of mirror housings with an inadequate molding date",
+    "the housings from an inadequate molding date could have a similar failure rate seen for my",
+    "however brp has no report of failures from the field including of accident worldwide",
+    "with all the information collected and analyzed brp decided on it had enough information to report and recall"
+   ],
+   "entries": 15,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 7,
+   "accepted": 3,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-23V095-6996.PDF",
+   "filer": "electra meccanica vehicles corp",
+   "norm": [
+    "electrameccanica received complaints related to loss of propulsion",
+    "additional complaints were received",
+    "an internal meeting was held to review this issue",
+    "engineering team instructed to conduct further investigation",
+    "a new team comprised of engineering and quality dedicated personnel overseeing issues was installed and a status review of issues was conducted during the first two weeks of",
+    "the engineering and quality dedicated team gathered again and updated data and information related to the propulsion issue",
+    "an internal meeting was held with the engineering operations and quality dedicated team to further review this issue",
+    "decision escalate to executive team",
+    "an internal meeting was held with executives and it was determined to conduct a voluntary recall of the affected vehicles",
+    "as of emv has identified field reports potentially related to this issue with dates of receipt ranging from to",
+    "as of emv is aware of zero accidents or injuries potentially related to this issue for all markets"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 4,
+   "accepted": 5,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-23V147-7099.PDF",
+   "filer": "newell coach corp.",
+   "norm": [
+    "newell coach noticed a coach s tailights not displaying while slowing down onthe property",
+    "newell immediately conducted a quality review and determinded the installation of an additional brake switch to accomodate a required brake signal for the push button start igintion was miss wired inadvertently bypassing the orignial brake switch"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23V148-5089.PDF",
+   "filer": "terex advance mixer, inc.",
+   "norm": [
+    "terex advance mixer and meritor had a conference call where meritor shared that axles that where shipped to terex advance mixer had a defect",
+    "after internal discussions and analysis of the meritor information terex advance mixer deemed this condition to be safety related",
+    "therefore a defect report was initiated"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V161-6181.PDF",
+   "filer": "kibbi, llc",
+   "norm": [
+    "lippert determined an issue which relates to motor vehicle safety may exist in certain entry doors for motorized rv product built with global link motorized rotary latch mrl",
+    "lippert informed renegade rv and rev recreation group on of their decision to file equipment recall e with nhtsa",
+    "renegade and rev recreation group began an investigation into the units affected and compiled a list of potentially affected vehicles"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V219-8343.PDF",
+   "filer": "capacity of texas",
+   "norm": [
+    "on rev group received communication from meritor of a potential issue with their pro torque nut keeper installation",
+    "rev group relayed this information to spartan fire and confirmed with meritor that spartan was the only business unit affected",
+    "on a defect investigation report was generated and escalated to rev group management",
+    "rev group recall committee approved a voluntary recall for this issue",
+    "on meritor notified rev group that capacity of texas was also affected",
+    "on capacity of texas started an investigation to gather pertinent information to file its own recall"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23V245-8278.PDF",
+   "filer": "prevost car (us) inc.",
+   "norm": [
+    "issue identified in production during the final verification at the end of the assembly line",
+    "internal prevost investigation was opened to identify the root cause and to determine if vehicles were delivered with this issue",
+    "delivery stop was issued to stop the delivery of new vehicles until the investigation is completed and corrective actions are implemented",
+    "case was presented on volvo pswg",
+    "decision made to raise the potential safety issue to volvo product safety committee psc for review and determination",
+    "internal campaign was launched to solve the issue on all vehicles in production before being delivered",
+    "case was presented to volvo psc",
+    "it was concluded that there was a safety related defect and that a recall is needed",
+    "safety recall report submitted to authorities",
+    "no warranty claims related to this issue",
+    "no field reports incidents accidents injury or fatality were reported"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 0,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V329-1334.PDF",
+   "filer": "ferrari north america, inc.",
+   "norm": [
+    "please see the attached chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V448-5435.PDF",
+   "filer": "lion electric company",
+   "norm": [
+    "opening of an investigation following several cases of cracks and damaged hv harnesses detected in service",
+    "new cases of in service vehicles with cracks in the firewall leading to damage to the cables running under the tank were reported",
+    "confirmation that the firewall cracks represent a defect regarding the motor vehicle safety regulations and approval of the recall proposal by lion electric s safety committee",
+    "to this day there is no warranty claim raised by the customers related to this issue"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V475-7264.PDF",
+   "filer": "prevost car (us) inc.",
+   "norm": [
+    "one field report involving two my prevost x vehicles was received",
+    "the field report indicated that the seat recline function was inoperative and that the seatback could move freely on certain seats",
+    "internal prevost investigation was opened to identify the root cause and to determine if the issue is potentially safety related",
+    "as part of the investigation warranty data was analyzed and five warranty claims potentially related to this issue were identified all on my prevost x commuter",
+    "the warranty claims were received on and on",
+    "prevost requested the seat supplier to perform a survey on potentially affected vehicles to support the ongoing investigation",
+    "prevost s safety office reviewed the preliminary results of the survey completed by the seat supplier",
+    "according to the supplier approximately of the inspected vehicles had at least one loose or disengaged seat recline mechanism bolt",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "decision made to raise the potential safety issue to volvo product safety committee psc for review and determination",
+    "case was presented to volvo product safety committee psc",
+    "it was concluded that there was a safety related issue and that a recall is needed",
+    "defect information report submitted to authorities",
+    "no other field reports incidents accidents injury or fatality were reported",
+    "added prevost s identification code for this recall"
+   ],
+   "entries": 15,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V481-6313.PDF",
+   "filer": "nova bus (us) inc.",
+   "norm": [
+    "a power steering hose failure is reported from a customer to nova bus",
+    "additional power steering hose failures are reported from the same customer",
+    "a field report is created",
+    "nova bus product safety working group is informed investigation opened",
+    "analysis of the new information vs the v safety recall about power steering hose separation is completed",
+    "nova bus product safety working group decides to raise this new situation to the nova bus product safety committee",
+    "nova bus product safety committee determines a safety related defect exits",
+    "the affected vehicle population in service and at the plants is confirmed",
+    "nova bus submits a vehicle recall report to nhtsa",
+    "nova bus has not received any property damage claim and neither notice or claim of injury or death associated with this defect"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-23V493-9698.PDF",
+   "filer": "pleasure way industries, ltd.",
+   "norm": [
+    "pleasure way industries ltd was officially notified by cummins of recall e",
+    "cummins had indication that there had been fuel line failures out in the field these where brought to their attention during the tampa rv super show",
+    "pleasure way had also notified cummins of generators with fuel leaks",
+    "pleasure way removed these generators from the vehicles and sent them back to cummins for analysis",
+    "cummins conducted a review and testing of the product and concluded on that a defect existed",
+    "cummins sent a list of qg i generator serial numbers that had been supplied to pleasure way",
+    "the official recall was launched by cummins",
+    "pleasure way provided a list to cummins of all owners and dealers with the generators under recall"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 3,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V497-8020.PDF",
+   "filer": "vanguard national trailer corporation",
+   "norm": [
+    "saf holland notified us of the issue with tire pilot plus tpp officially on",
+    "this included the shipment history of suspect components their service bulletin xl aa sb",
+    "this instructed us of the recalled items actions needed in the field to disable any units identified with the tpp susytem in the suspect population"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V498-4108.PDF",
+   "filer": "sportsmobile texas, inc",
+   "norm": [
+    "cummins informed us of recall on",
+    "they received reports of fuel leaks on the onan generators"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V515-4321.PDF",
+   "filer": "kawasaki motors corp., u.s.a.",
+   "norm": [
+    "kawasaki motors ltd kml received a report from kawasaki motors corp u s a",
+    "kmc that one of these vehicles had problems starting",
+    "kml quality assurance division started an investigation of the cause",
+    "kml received a nd case report from chinese distributor kmsh that the engine cannot re start",
+    "kml inspected the vehicle which reported this nd incident of starting problems and found that the alternator rotor and the alternator rotor bolt were loose",
+    "after investigating the manufacturing process for this model kml determined that the cause of this problem was improper degreasing of the crank shaft prior to installation of the alternator rotor or improper tightening of the alternator rotor bolt during the manufacturing process",
+    "kml decided to initiate a recall campaign",
+    "kawasaki motors corp u s a",
+    "has not received any warranty claims injuries or crashes related to this issue in the u s market"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V521-1631.PDF",
+   "filer": "lucid usa, inc.",
+   "norm": [
+    "in lucid received a report of a wiper arm not working in a vehicle brought to a service center",
+    "lucid began investigating the issue and discovered reports of similar issues between january and then an increase of reported incidents through",
+    "lucid s product safety working group pswg was first briefed on the issue on",
+    "lucid s investigation continued in an attempt to identify the population of vehicles affected by wiper arm loosening",
+    "concurrently lucid was testing potential countermeasures involving increased torque values",
+    "the pswg received subsequent briefings in and",
+    "lucid implemented a permanent countermeasure of increasing the torque specification at its factory on",
+    "lucid briefed nhtsa about its investigation in and july",
+    "through lucid observed a total of customer incidents of wiper arm torque loosening",
+    "the lucid product safety executive council psec determined on that the wiper arm issue presented a noncompliance with fmvss"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 8,
+   "accepted": 4,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-23V530-7086.PDF",
+   "filer": "chinook motor coach, llc",
+   "norm": [
+    "chinook received an important safety recall from cummins about the onan qg i being recalled",
+    "then notified by cummins that they will be performing the recall",
+    "chinook reviewed its records and identified affected bayside models then provided the information to cummins to perform the recall and send out owner notification letters",
+    "cummins came to chinook and checked fuel hose lines and correct any if needed",
+    "chinook was notified and decided to conduct a safety campaign to address the affected chinook bayside models",
+    "there are no records of warranty claims relating to this recall nor have there been any reports of accidents injuries or fires"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 3,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-23V564-3664.PDF",
+   "filer": "isuzu motors limited",
+   "norm": [],
+   "entries": 0,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V582-4641.PDF",
+   "filer": "indian motorcycle company",
+   "norm": [
+    "in indian motorcycle identified runability issues on a small quantity of units at the end of line dyno audit in production",
+    "indian motorcycle s internal quality team investigated the suspect units which identified a concern related to improper assembly of the fuel lines by the supplier",
+    "thereafter indian motorcycle began an investigation which included outreach to the fuel line supplier and containment of suspect product still within indian s control",
+    "in indian motorcycle began internal testing of the fuel lines to further understand the impact to vehicle performance",
+    "through the investigation indian motorcycle identified no reports of fuel line failures corresponding to this reported issue",
+    "indian motorcycle has not identified any reports involving a crash injuries or deaths related to this reported issue and has not identified any associated ndfrs",
+    "on indian motorcycle s executive review committee decided that vehicles equipped with an improperly assembled fuel line by the supplier may result in a vehicle stall during operation and is a safety related defect"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V684-9960.PDF",
+   "filer": "t.a. pelsue",
+   "norm": [
+    "customer sefnco notified pelsue of the first incident",
+    "a new design for these two models of trailer frames were released",
+    "the service bulletin describing the defect and the fix for trailers in the field was created",
+    "the first batch of corner caps for the field fix on affected trailers were sent to customer lumen",
+    "the second incident was reported",
+    "j b trailers in lubbock tx reported this defect to nhtsa",
+    "dave thornton nhtsa contacted pelsue regarding the defect and spoke with pelsue ceo chris munson",
+    "through filtering work orders in our erp system pelsue determined there were pelsue tradesman fiberlite pod trailers pelsue tradesman fiberlite xl trailers potentially affected total trailers",
+    "pelsue learned of the safety recalls portal nhtsa reporting requirements and the report",
+    "pelsue created vehicle reports for both trailer models",
+    "pelsue submitted a safety recall on the safety recalls portal"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 11,
+   "wrong": 3,
+   "accepted": 9,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-23V729-6413.PDF",
+   "filer": "chinook motor coach, llc",
+   "norm": [
+    "chinook motor coach received safety recall notice s nhtsa recall v from ford motor company",
+    "chinook reviewed its records to determine which ford transit vans are affected by this recall",
+    "chinook then filed a recall with nhtsa for all affected chinook bayside motorhomes"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V748-7343.PDF",
+   "filer": "alexis fire equipment company",
+   "norm": [
+    "alexis fire equipment was notified by spartan fire llc of the possible safety defect along with the list of chassis vehicles sold to alexis fire equipment that could have the possible safety defect",
+    "all testing and decision for the safety defect recall was completed by spartan file llc"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 3,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V781-9407.PDF",
+   "filer": "nova bus (us) inc.",
+   "norm": [
+    "nova bus is informed of occurrences where the sunvisor fell",
+    "the issue is raised to the safety forum as a potential risk for evaluation",
+    "nova bus opens a formal potential safety related issue investigation",
+    "nova bus opens a formal potential safety related issue investigation",
+    "the product safety evaluation committee recommends raising this issue to the product safety committee",
+    "nova bus initiates an internal factory campaign to inspect and remedy product",
+    "nova bus performs and inspection in the field to further understand the fault frequency",
+    "product safety committee determination of product defect",
+    "nova bus files with nhtsa that a voluntary recall will be released to address the safety related defect",
+    "nova bus corrected errors in the model and production dates in vehicle information",
+    "there have been no accidents or injuries related to this defect",
+    "warranty experience with one customer shows a failure rate of percent",
+    "there are three claims associated with this defect"
+   ],
+   "entries": 13,
+   "dup_entries": 1,
+   "claims": 10,
+   "wrong": 5,
+   "accepted": 9,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-23V796-1556.PDF",
+   "filer": "mclaren automotive incorporated",
+   "norm": [],
+   "entries": 0,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V859-1885.PDF",
+   "filer": "doosan portable power",
+   "norm": [
+    "doosan portable power received a field report on of a portable generator with both electric brake and battery disconnect options that had the electric brake harness connected to the positive distribution post of the battery disconnect switch instead of the positive battery cable terminal",
+    "based on the field report doosan portable power initiated an internal investigation and determined a noncompliance with the connection point of the electrical brake harness on units with both electric brakes and battery disconnect options",
+    "it was determined the affect range of generators with both electric brakes and battery disconnect options were built between"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-23V873-6101.PDF",
+   "filer": "rev ambulance group orlando, inc.",
+   "norm": [
+    "rev ambulance gorup orlando inc revo warranty department received a technical service bulletin tsb regarding equipment recall e",
+    "revo was notified on",
+    "revo conducted an inventory inspection on and determined that units were affected",
+    "all units in house units have been updated to correct the issue per weldon s provided instructions"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24E024-4323.PDF",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my dodge charger and chrysler vehicles that may have been built with a suspect sabic inflator that may rupture",
+    "from through fca us tsrc conducted an analysis of sabic inflator ruptures and determined that the affected vehicles may have had moisture introduced into the inflator during supplier manufacturing that may cause internal corrosion over time and potentially leading to stress corrosion cracking scc in the inflator",
+    "as of fca us is aware of five customer assistance records two warranty claims and field reports potentially related to this issue for all markets with dates of receipt ranging from to",
+    "as of fca us is not aware of any accidents or injuries potentially relating to this issue for all markets",
+    "on fca us determined through the vehicle regulations committee to conduct a voluntary safety recall of the affected units"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24E026-6783.PDF",
+   "filer": "freedman seating company",
+   "norm": [
+    "during an fmvss test in the company s test lab on the place go es spacer saver foldaway seat was unable to sustain the test load on the shoulder belts",
+    "seat back adjusted position forward under load when the seat back was in fully reclined position",
+    "investigation of the production processes for these seats on determined the welding fixtures for the recliner mechanism were not being used properly",
+    "an experienced welder who had been welding this component left the company on",
+    "welder who took over this process was not effectively trained in the use of the welding fixtures and neglected to use the additional fixture that was needed to accurately locate the recliner mechanism relative to the seat back stop"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24E043-6603.PDF",
+   "filer": "firefly integrations, llc",
+   "norm": [
+    "original recall e was conducted in where the g ecm failure was discovered and recall was undertaken",
+    "firefly integrations learned that there were affected units that had not been part of the original recall in",
+    "firefly integrations first verified the information with foretravel motorcoach and then determined that a recall for the remaining units was needed"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24E051-6147.PDF",
+   "filer": "hendrickson usa. l.l.c.",
+   "norm": [
+    "hendrickson received letter from its supplier usk internacional s a",
+    "usk advising it had shipped tie rod assemblies equipped with improperly hardened ball studs resulting from an experimental heat treatment process",
+    "usk identified the applicable manufacturing date codes for the suspect tie rod assemblies",
+    "hendrickson completed its initial internal sort and containment of affected usk tie rod assemblies part nos",
+    "and for use on lift axle suspension assemblies",
+    "hendrickson contained all suspect part no tie rod assemblies for use on lift axle suspension assemblies",
+    "hendrickson located an additional shipment of suspect part no tie rod assemblies received from usk and informed usk accordingly",
+    "hendrickson began conferring with its applicable vehicle manufacturer and equipment installer customers regarding the subject condition and affected lift axle suspension assemblies",
+    "hendrickson began assisting its above referenced customers with efforts to identify inspect and remedy as needed affected lift axle suspension assemblies",
+    "hendrickson has not received any warranty claims end user complaints or field reports of accidents or injuries associated with this issue"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24E067-1013.PDF",
+   "filer": "cruise llc",
+   "norm": [
+    "on nhtsa opened pe to investigate allegations of hard braking during certain events that cruise reported to nhtsa under standing general order",
+    "specifically nhtsa noted that it had received three reports of rear end collisions with cruise avs in situations where the cruise ads initiated a hard braking maneuver in response to another road user that was quickly approaching from the rear",
+    "all three of the reports occurred while the cruise av was operating in supervised mode with an onboard human safety driver in the driver s seat",
+    "over the next eleven months as part of pe cruise responded to nhtsa s information requests producing various documents and videos and holding discussions with the agency",
+    "on cruise met with nhtsa to discuss the status of pe including nhtsa s preliminary review of the materials and data cruise provided in",
+    "nhtsa also provided insight into the peer information requests sent to other av companies related to hard braking",
+    "on cruise met with nhtsa and provided data demonstrating that the rate of occurrence for unexpected braking events in cruise avs is very low and much lower than a human driver based on relevant and available human driver datasets",
+    "cruise also provided data demonstrating that various cruise ads software updates had improved ads braking performance resulting in a significant reduction in unexpected braking",
+    "on cruise met with nhtsa to follow up on the discussion from regarding the low rate of occurrence of unexpected braking events and the effectiveness of cruise s software improvements",
+    "further on cruise met with nhtsa and nhtsa requested that cruise file a safety recall to close the pe based on software updates that cruise had implemented",
+    "continued on attached report"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24E092-3134.PDF",
+   "filer": "continental automotive systems, inc.",
+   "norm": [
+    "two damaged mk c brake systems were reported to continental by audi of norway",
+    "continental started an internal investigation into the root cause",
+    "continental determined there was an issue in the production plant during the specified dates",
+    "other possible affected customers were informed",
+    "on volkswagen group of america inc audi filed a recall report v",
+    "on volvo car usa llc filed a recall report",
+    "continental automotive systems inc is providing this notification in accordance with its obligations as a component part manufacturer under part f to identify other vehicle manufacturers who may be impacted by vw and volvo s defect determinations"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V038-8261.PDF",
+   "filer": "suzuki motor usa, llc",
+   "norm": [
+    "the chronology is provided as a separate document"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V057-9009.PDF",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my niro ev and my ev drive shaft chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V149-8136.PDF",
+   "filer": "livewire ev, llc",
+   "norm": [
+    "livewire s service organization was notified of a report involving an alleged unexpected loss of propulsion on a livewire motorcycle",
+    "the technical subcommittee tsc launched a formal investigation of this issue",
+    "the tsc conducted a warranty field service review which identified two additional reports of a loss of propulsion that appeared to be potentially related to the vehicle supervisory controller vsc",
+    "none of the reported incidents involved reports of a crash or injuries",
+    "the tsc concluded its investigation and the root cause was determined to be related to software in the vsc",
+    "the tsc escalated the matter to the field action committee fac",
+    "the fac reviewed the tsc s findings and analysis and escalated the matter to livewire s executive decision authority eda",
+    "based upon the information developed during the investigation the eda authorized a recall to address this condition",
+    "there have been no reports of crashes or injuries related to this issue"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-24V203-1211.PDF",
+   "filer": "nova bus (us) inc.",
+   "norm": [
+    "nova bus was notified that a maintenance technician found evidence of arcing on the power cable to the alternator on a single bus",
+    "a preliminary inspection of additional buses was performed",
+    "nova bus opened an investigation to determine the potential scope and risk level",
+    "an internal campaign issued to ensure the correct torque was applied to buses under manufacturing control",
+    "product safety evaluation committee evaluates the preliminary information",
+    "product safety evaluation committee raises the investigation to psri status and additional field information is gathered",
+    "product safety evaluation committee evaluates the investigation findings and raises to the product safety committee",
+    "march product safety committee makes the determination of a product safety defect",
+    "nova bus files dir with nhtsa that a voluntary recall will be released to address the safety related defect",
+    "there have been no accidents or injuries related to this defect",
+    "there have been no warranty claims attributed to this issue",
+    "the original vehicle is the only vehicle that showed signs of arcing however vehicles were found where the alternator power cable was identified as loose during the process of the investigation"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V219-6791.PDF",
+   "filer": "lamborghini (automobili lamborghini)",
+   "norm": [
+    "on a report following quality controls indicated that some vehicles were missing the correct functionality of the high beam headlamps",
+    "an investigation was immediately launched which confirmed that the vehicles had undergone an internal rework after assembly release",
+    "further analysis confirmed that a missing configuration step during rework was the cause for the missing functionality",
+    "countermeasures were immediately implemented to ensure the correct configuration of vehicles in factory premises",
+    "identification of potentially affected vehicles initiated and a compliance assessment was requested",
+    "on the results of investigation and assessments were presented in lamborghini s product safety committee",
+    "the pre delivery inspections carried out by the dealers are highly likely to intercept and solve the issue before owners receive their cars however a possibility that some vehicles are delivered with the issue still remains",
+    "out of abundance of caution the product safety committee determined that a non compliance with fmvss which relates to vehicle safety cannot be ruled out and decided to conduct a voluntary recall",
+    "lamborghini has not received any complaint or reports of a crash or injury due to this topic"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-24V247-4988.PDF",
+   "filer": "winnebago towable",
+   "norm": [
+    "in winnebago product safety found a defect in wiring on certain access models",
+    "the defect was found through dealership warranty submissions",
+    "production was immediately notified and an investigation was opened",
+    "on the product safety committee reviewed all available information and decided the issue presented an unreasonable risk to motor vehicle safety",
+    "winnebago is aware of dealership submissions with no incidents involving a customer",
+    "the first submission occurred",
+    "there are no injuries related to this issue"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V285-9407.PDF",
+   "filer": "winnebago towable",
+   "norm": [
+    "in winnebago was notified of two incidents related to melted led light rings on stove knobs",
+    "an investigation was opened and the supplier suburban was notified",
+    "winnebago continued to meet with the supplier over the next few months working together to try and understand scope of the issue",
+    "in winnebago escalated the issue to the product safety committee",
+    "on the product safety committee determined that the issue presents an unreasonable risk to safety",
+    "winnebago is aware of thermal incidents that it believes may relate to the recall condition",
+    "winnebago has received claims notices regarding these incidents on the following dates and of those incidents winnebago is aware of death or injuries"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V347-4177.PDF",
+   "filer": "custom truck and body works",
+   "norm": [
+    "in weldon was notified that eternal wiring in a vehicle using the node had melted",
+    "the part was returned to weldon for analysis in mid october where it was found that when an external short circuit occurred the electrical output did not shut down as specified",
+    "weldon conducted testing and analysis of the version of the node used in the vehicle as well as prior versions of the node and it was found that for the version of the node installed on the vehicle the electrical current sensing calibration was outside the specified limits",
+    "weldon found that the calibration was previously updated in production but was not considered to pose a broader concern at the time",
+    "on weldon decided to conduct a safety recall to address the issue"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V358-2557.PDF",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my niro ev high voltage battery safety plug chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V379-7287.PDF",
+   "filer": "karma automotive llc",
+   "norm": [
+    "see karma automotive supplemental report to uploaded"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V389-8924.PDF",
+   "filer": "host industries",
+   "norm": [
+    "suburban notified host industries inc compliance by email of their equipment recall e that they filed with nhtsa regarding certain slide in range models that contain red led backlight knobs that we purchased affected by their equipment recall e",
+    "nhtsa had informed us of recall",
+    "the warranty department and management had discussed the incident and had started an investigation on which customers were affected",
+    "the remedy for the defect will be to disconnect and cut the circuit powering all of the led backlights and properly terminate all of the wiring",
+    "the remedy will be done at no cost to the owner",
+    "repairs made prior to the recall will be reimbursed",
+    "host will notify affected retail owners and dealers",
+    "host will file completion reports",
+    "host had started and submitted form to nhtsa"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 4,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V429-7759.PDF",
+   "filer": "forest river bus, llc",
+   "norm": [],
+   "entries": 0,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V460-2667.PDF",
+   "filer": "lion electric company",
+   "norm": [
+    "reported loss of high voltage distribution on a lionc in the state of maine",
+    "investigation into potential causes of loss of high voltage distribution",
+    "inspection of vehicles in the state of maine",
+    "confirmation that the misalignment of the can connector increases the risk of water infiltration into the can connector and represents a defect with respect to the motor vehicle safety regulations",
+    "recall proposal approved by lion electric s safety committee to this day there is no warranty claim raised by the customers related to this issue",
+    "there was also no injuries or death caused by this issue"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V495-3479.PDF",
+   "filer": "lucid usa, inc.",
+   "norm": [
+    "lucid incorporates the original chronology for recall no v herein",
+    "hvch used in lucid vehicles can be grouped into three batches by supplier manufacturing date hvch manufactured i prior to the v population ii from this recall population and iii after the new design",
+    "since just before filing of lucid s recall report for v on lucid has monitored hvch failures via vehicle telemetry",
+    "on or about lucid shipped failed hvch to supplier for additional analysis to determine the failure mode delamination or otherwise and whether any hvch outside the v population had experienced delamination failures",
+    "on webasto provided preliminary results from their analysis which indicated approximately of failed hvch examined were delaminations",
+    "through lucid has identified failures in vehicles with hvch from this recall s population",
+    "lucid s product safety working group pswg examined the failures detected via telemetry lucid internal analysis and analysis of data from supplier and vehicle production and service records",
+    "based on recommendation of the pswg on lucid s product safety executive council psec determined that in addition to the v population an unreasonable risk to safety exists for all vehicles with hvch manufactured from and whose owners have not accepted installation of the ota remedy software update that provides a warning upon failure"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-24V524-5942.PDF",
+   "filer": "volvo bus corporation",
+   "norm": [
+    "volvo bus initiated a field survey in mexico on vehicles outside the recall v population to further corroborate its scope",
+    "during this field survey improperly torqued castle nuts were identified on certain vehicles but no missing cotter pins were identified",
+    "field survey results were analyzed by volvo bus product safety office",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "decision made to raise the potential safety issue to volvo product safety committee psc for review and determination",
+    "case was presented to volvo product safety committee psc",
+    "it was concluded that there was a safety related issue and that a recall is needed",
+    "given that an improperly torqued castle nut secured by a cotter pin poses a different safety risk compared to an improperly torqued caste nut without a cotter pin volvo bus opted to initiate a new recall instead of expending the recall scope of v",
+    "defect information report submitted to authorities",
+    "no warranty claims related to this issue",
+    "no field reports incidents accidents injuries or fatalities related to this issue were reported"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 2,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V620-8075.PDF",
+   "filer": "kalmar solutions, llc",
+   "norm": [
+    "in after rd party testing and receiving a pass one of the air tanks was relocated",
+    "in the process the air tank size was decreased and the minimum required capacity was overlooked",
+    "in when federal requirements for stability control fmvss went into effect kalmar decided to limit the maximum speed of the vehicle to less than mph thus exempting it from federal requirements for abs and stability control",
+    "in some recent design changes air volume was recalculated to determine required capacity and it was determined that existing trucks were insufficient not meeting the regulatory requirement",
+    "thus leading to the decision on to issue a non compliance recall"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V647-3002.pdf",
+   "filer": "nova bus (us) inc.",
+   "norm": [
+    "nova bus submits a vehicle recall report to nhtsa v",
+    "nova bus was informed by a customer regarding a potential ineffective remedy to prevent seat belt pinching",
+    "nova bus started an internal investigation",
+    "the issue was raised to the safety forum as a potential risk for evaluation",
+    "survey to confirm seat models potentially affected was completed",
+    "product safety evaluation committee evaluates and raises to product safety committee",
+    "product safety committee determination of product defect",
+    "nova bus files with nhtsa that a voluntary recall will be released to address the safety related defect",
+    "there have been no accidents or injuries related to this defect",
+    "there have been no warranty claims related to this defect"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V670-1290.PDF",
+   "filer": "trail king industries, inc.",
+   "norm": [
+    "in trail king began production of a new hdg paver special gooseneck design that was specially developed to transport paving equipment",
+    "this trailer uses a hydraulic cylinder that attaches to the lower end of the structure to raise and lower the trailer during the loading and unloading process",
+    "on trail king was notified by a customer of a failure in the lower cylinder mount",
+    "during the review it was determined that the welds showed signs of fatigue cracking and which appeared to be due to dynamic loading by not having the transport doors in place during specific points during transport to achieve clearance of road obstacles",
+    "however reinforcements to the lower cylinder mount were added to new production in to reinforce this area",
+    "on trail king was informed of another failure to the lower cylinder mount on a unit built prior to that did not have reinforcements added",
+    "trail king reviewed the unit and again indicated the failure was due to dynamic loading by not having the transport doors in place during specific points during transport to achieve clearance of road obstacles",
+    "on trail king was notified of a failure of the lower cylinder mount area of the gooseneck where the vehicle operator alleged an injury",
+    "trail king initiated an investigation into the issue",
+    "the investigation indicated this unit appeared to have experienced fatigue related cracks due to the presence of repair welds in the gooseneck",
+    "these welds suggested the presence of cracks or fractures over time where repairs were attempted but it was not clear when the repair welds were made and it could not be determined whether improper loading unloading or operation of the trailer was a contributing factor to the failure",
+    "trail king decided to conduct a safety recall to address this issue on"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 0,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V701-1046.PDF",
+   "filer": "lamborghini (automobili lamborghini)",
+   "norm": [
+    "on during production assembly phase one working shift reported the bracket t assembled in the wrong vehicle side left side instead of right side",
+    "lamborghini immediately launched an internal investigation to determine the root cause",
+    "results from the investigation revealed a risk that additional number of vehicles may have been produced not according to product specification",
+    "a compliance assessment was requested and following the results on lamborghini product safety committee determined that a non compliance related to motor vehicle safety exists and decided to conduct a voluntary non compliance recall",
+    "lamborghini is not aware of crashes deaths or injuries related to this issue"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V781-6389.PDF",
+   "filer": "motiv power systems",
+   "norm": [
+    "motiv received a customer report alleging a loss of power on a motiv motiv epic e vehicle",
+    "the customer reported a loss of propulsion while driving",
+    "motiv immediately grounded the vehicle and began an investigation of the incident",
+    "motiv field technicians conducted an inspection of the affected vehicle",
+    "that inspection determined the vehicle had experienced a temporary loss of volt control power to the high voltage hv batteries",
+    "motiv conducted additional analysis and testing to identify a failure or malfunction that may have led to a reported loss of propulsion",
+    "the investigation determined that a cable assembly failure caused by a partially collapsed grid on the connector s socket that in turn resulted in a temporary loss of connection interrupting volt control power to the hv batteries",
+    "the loss of volt control power to the batteries was responsible for the loss of vehicle propulsion",
+    "based on its investigation and analysis motiv concluded that a potential safety risk could not be ruled out and decided to conduct a recall",
+    "motiv is currently aware of field report including warranty claims field reports and service reports received in the us potentially related to this defect",
+    "motiv is not aware of any reported crashes injuries or property damage in connection with the defect"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V844-7354.PDF",
+   "filer": "nikola corporation",
+   "norm": [
+    "on the nikola campaign committee identified reported cases in customer service portal of instrument cluster screens going black for to seconds or permanently in the field from and launched an investigation into root cause and corrective action",
+    "on nikola campaign committee met to discuss field action and referred issue to vehicle defects managers as a potential fmvss non compliance",
+    "on nikola vehicle defects managers met and referred issue to vehicle defects technical team for consideration of a recall",
+    "on nikola vehicle defects technical team recommend recall to vehicle defects committee",
+    "on nikola vehicle defects committee voted to issue a voluntary recall to replace all affected instrument clusters",
+    "nikola is not aware of any injuries or property damage associated with this issue"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V885-4062.PDF",
+   "filer": "brinkley rv",
+   "norm": [
+    "on brinkley rv brv was notified by the chassis pin box supplier of an open investigation regarding pin box torque",
+    "material was put on hold and inspected corrected as necessary",
+    "brv safety committee met on and determined that if the lippert investigation indicated the need for a voluntary recall that brv would issue a parallel recall for the affected population",
+    "if the lippert investigation recommended any other course of action further review would be necessary to determine direction",
+    "on lippert formally notified brv that a voluntary recall is being issued",
+    "the corresponding brv recall is being initiated on"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 3,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-24V931-9261.PDF",
+   "filer": "featherlite trailer manufacturing, llc",
+   "norm": [
+    "on i was notified by our production team that they felt the rubber lp line inside the cooktop was not adequate for the application we were using on the cooktop which could cause a failure in the hose and cause a fire",
+    "we found that other rv manufacturers were using a rubber hose in that area also but after investigating with the manufacturer of the hose that the hose was not rated for the heat in the cooktop"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V933-4637.PDF",
+   "filer": "vinfast auto, llc",
+   "norm": [
+    "on nhtsa conducted a dynamic side impact compliance test on a vinfast vf with vin rllv aebxrh",
+    "during the test nhtsa observed that the deploying center air bag contacted the test dummy s arm",
+    "nhtsa then sent an inquiry to vinfast on seeking an explanation of this anomaly",
+    "vinfast conducted an investigation which concluded on resulting in the filing decision on the same date"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V939-5483.PDF",
+   "filer": "polestar automotive usa, inc.",
+   "norm": [
+    "condition considered as a critical concern by critical concern management team field service action decision confirmed by polestar condition detected by supplier information number of tr with the condition total number of cars included in trs concerning this condition implementation date of field service action",
+    "critical concern management team technical reports extended chronology of event",
+    "polestar was notified by its supplier that they had found a potentially critical issue with the far side airbag fsab",
+    "the investigation was escalated through the critical concern action process ccap",
+    "on the issue was concluded as potentially critical and the critical concern management team ccmt initiated a technical investigation to conclude customer symptom risk assessment testing root cause etc",
+    "on the technical investigation was complete the ccmt team took the decision to start the preparation of a recall as it was judged as an increased risk towards motor vehicle safety"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-24V940-8922.PDF",
+   "filer": "polestar automotive usa, inc.",
+   "norm": [
+    "condition considered as a critical concern by critical concern management team field service action decision confirmed by polestar condition detected by supplier information number of tr with the condition total number of cars included in trs concerning this condition implementation date of field service action",
+    "critical concern management team technical reports extended chronology of event",
+    "polestar was notified by its supplier that they had found in the us vehicles with diagnostic trouble codes set indicating that the high to low voltage converter module hlcm is not working properly",
+    "the investigation was escalated through the critical concern action process ccap",
+    "we connected customer symptoms reported from the market with the diagnostic trouble codes identified by our supplier",
+    "on the issue was concluded as potentially critical and the critical concern management team ccmt initiated a technical investigation to conclude customer symptom risk assessment root cause etc",
+    "on the technical investigation was complete the ccmt team took the decision to start the preparation of a recall as it was judged as an increased risk towards motor vehicle safety"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-24V964-8436.pdf",
+   "filer": "orange ev",
+   "norm": [
+    "please see the attached part defect information report for the full chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E007-3917.PDF",
+   "filer": "samsung sdi co., ltd.",
+   "norm": [],
+   "entries": 0,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E009-8553.PDF",
+   "filer": "firefly integrations, llc",
+   "norm": [
+    "internal testing at firefly integrations found possible awning program issue",
+    "issue was confirmed and programming update began",
+    "firefly integrations communicated with thor engineering about the confirmed issues",
+    "firefly integrations notified thor motor coach compliance of the issue"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-25E024-9877.PDF",
+   "filer": "iljin hysolus",
+   "norm": [],
+   "entries": 0,
+   "dup_entries": 0,
+   "claims": 0,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E036-8756.pdf",
+   "filer": "holley performance products",
+   "norm": [
+    "following receipt of a report of a leaking pressure regulator from a customer units were pulled from holley inventory and tested at psi dead head with no failures",
+    "a new customer complaint was received and a quality audit request was initiated",
+    "additional samples were pulled for evaluation",
+    "holley conducted a product investigation to evaluate the issue including a comparison of the subject products to similar products sourced from a different supplier which showed visually different diaphragms testing and teardowns of sample products multiple consultations with the supplier review of design and engineering records and specifications and a review of product return history",
+    "based upon the results of the investigation holley decided to initiate a safety recall to address this condition",
+    "to date holley is not aware of any accidents injuries or fires related to this issue"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E037-4912.pdf",
+   "filer": "zoox, inc.",
+   "norm": [
+    "on in san francisco ca an unoccupied stopped zoox robotaxi operating in autonomy was struck by an e scooterist",
+    "the e scooterist fell to the ground directly next to the vehicle",
+    "the robotaxi then started to move but did not make contact with the fallen e scooterist",
+    "minor injuries related to the initial collision were reported",
+    "zoox paused all driverless vehicle operations across all geofences to conduct an internal review",
+    "between and zoox confirmed the root cause implemented a software update and conducted simulation and testing with both robotaxis and drivered retrofitted test vehicles",
+    "on zoox reported the incident to nhtsa in accordance with the standing general order sgo report and offered a heads up call to nhtsa",
+    "zoox met several times with nhtsa to discuss the sgo submission and answered additional questions between and",
+    "between and zoox verified the software update through the safety clearance process",
+    "on updated software was deployed to all impacted zoox vehicles in use for public road operation",
+    "following confirmation of the deployment of the updated software operations resumed in all geofences",
+    "the zoox safety committee met on and after final analysis and review of all the facts made a determination to voluntarily and proactively submit this part notification for the remedied software"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 16,
+   "wrong": 9,
+   "accepted": 11,
+   "accepted_wrong": 7
+  },
+  {
+   "file": "RCLRPT-25E048-6886.pdf",
+   "filer": "bendix commercial vehicle systems, llc",
+   "norm": [
+    "on bendix was made aware that nova bus had submitted defect information reports to nhtsa v v and e related to the performance of certain brake chambers produced by knorr bremse",
+    "knorr bremse had previously reviewed this issue with nova bus in and the parties concluded the performance of the brake chamber did not amount to an unreasonable risk to safety due to the low severity of any risk no potential for unexpected brake application or risk of fire and high detectability obvious signs of smoke and reapplication of the parking brake would reset the brake chamber and the matter was considered resolved",
+    "following nova bus determination that a safety defect exists in these parts and in order to support its campaign on bendix decided to conduct a recall to address the aftermarket parts that it sells to distributors and end customers",
+    "inclusive of those presented by nova bus bendix received warranty claims on part number k n",
+    "bendix and knorr bremse are not aware of any crashes injuries or reports of fire in the field as a result of this issue"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E058-9353.pdf",
+   "filer": "zf north america, inc.",
+   "norm": [
+    "bosch notified zf of a concern with itcu weld integrity on its e modules supplied to bmw discovered during certain quality assurance tests",
+    "zf jointly investigated the potential issue with bosch including engineering analysis and inspection analysis of affected parts",
+    "zf informed bmw about a potential concern involving the itcus with bosch e modules",
+    "zf jointly investigated the issue with bmw including further testing and analysis of parts photo microscopy and shaker tests to evaluate long term durability",
+    "bosch reported concerns with additional e modules this time affecting stellantis and five additional oems of vehicles outside the u s market",
+    "zf worked with both customers bmw and stellantis to investigate the issue",
+    "collaborative investigation and analyses were conducted including failure modes and affects analyses review of field information production process testing details production lot information and scope parameters",
+    "bmw initiated a recall of vehicles containing zf itcu units with suspect bosch e modules v",
+    "further collaborative investigation and analyses were conducted with stellantis",
+    "stellantis initiated a recall of vehicles containing zf itcu units with suspect bosch e modules v",
+    "following stellantis s recall nhtsa contacted zf and asked whether zf supplied the subject components to additional u s based vehicle manufacturers",
+    "zf advised nhtsa that no additional vehicle manufacturers beyond bmw and stellantis received these parts",
+    "zf received a follow up inquiry form nhtsa s recall management division again asking whether zf supplied the subject components to other vehicle manufacturers",
+    "zf again advised nhtsa that these parts were supplied only to bmw and stellantis",
+    "nhtsa then requested that zf file a report based upon the reports submitted by bmw v and stellantis v",
+    "zf reviewed records to confirm regulatory requirements",
+    "based on the recalls conducted by bmw and stellantis zf is providing this defect information report under cfr f",
+    "to date zf has not received any reports of accidents or injuries related to the recalled vehicles or the vehicles of other manufacturers outside the us in which the subject itcus are installed"
+   ],
+   "entries": 18,
+   "dup_entries": 0,
+   "claims": 16,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25E073-6952.pdf",
+   "filer": "bendix commercial vehicle systems, llc",
+   "norm": [
+    "following a review in bendix identified certain ecu part numbers that were believed to be obsolete that were still active in bendix internal systems",
+    "bendix performed a query which identified approximately parts with the same or substantially similar software to the ecus that are the subject of nhtsa recall e had inadvertently been sold as aftermarket equipment",
+    "on bendix decided to conduct a safety recall to address these additional units"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-25E076-9018.pdf",
+   "filer": "eaton corporation",
+   "norm": [
+    "initial notification from customer that differentials were generating a ratcheting noise o",
+    "containment and root cause investigation started at manufacturing plants for p n aftermarket differential requests sent to customers to place all parts with p n on hold pending further notice o sample parts from customers received at manufacturing plant requested customers return all parts they currently have in stock regardless of part number or date of build o discovered during investigation at gear manufacturing plant that some samples of part number gear have oversize teeth o",
+    "investigation confirmed total population of gears did not complete machining operation for teeth height total population of gears was shipped to differential assembly plant on all differentials assembled from are considered suspect",
+    "population of suspect differentials is expanded to p n as they all are determined to use the same gear total suspect differential population now parts o to present additional engineering testing and analysis to confirm issue and reconfirm total scope"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 3,
+   "accepted": 5,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-25V006-1666.PDF",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my sorento my sorento hybrid plug in hybrid exterior lamps chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 0,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V068-2775.PDF",
+   "filer": "zeekr technology us, llc",
+   "norm": [
+    "on the final verification crash test was performed according to fmvss occupant crash protection paragraph s a unbelted test front impact kph degrees right",
+    "the nij criteria failed to meet legal limits",
+    "zeekr immediately launched an investigation to determine the root cause and understand why this had not been found during previous testing",
+    "the result of the investigation revealed a difference in dummy trajectory towards the ic and pab resulting in an impact of the head to an unintended area of the ic which caused the higher nij values",
+    "an assessment of the noncompliance risk was started and following the results the issue was escalated to the top management of zeekr technology europe on with a subsequent determination of noncompliance",
+    "zeekr us was informed the same day and the global management team was informed at the critical concerns management team ccmt meeting on",
+    "a decision was made to notify nhtsa and remedy all vehicles before delivery to the customer",
+    "there have been no crashes deaths or injuries related to this issue"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 4,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-25V101-2428.pdf",
+   "filer": "nova bus (us) inc.",
+   "norm": [
+    "customer project manager files a client request to replaced fixed windows by openable windows on buses in service for ventilation purposes",
+    "engineering evaluates the request",
+    "nova bus engineering notices a potential non compliance to fvmss with client bus configuration and informs the safety office",
+    "nova bus opens a formal potential safety related issue investigation",
+    "during the investigation the safety office team notices a potential non compliance affecting more vehicles than those of the specific customer",
+    "similar configurations are screened through to identify other potential affected vehicles",
+    "product safety evaluation committee evaluates the information and decides to raise to product safety committee",
+    "product safety committee requests additional information and clarifications",
+    "product safety committee determination of a non compliance to fmvss",
+    "nova bus files with nhtsa that a voluntary recall will be released to address the non compliance",
+    "there have been no accidents or injuries related to this defect",
+    "there have been no warranty claims related to this defect"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 3,
+   "accepted": 5,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-25V292-4296.PDF",
+   "filer": "k.z., inc.",
+   "norm": [
+    "on a morryde sales representative informed kz of the recall",
+    "all affected units in the yard were placed on hold",
+    "on units in the yard were repaired",
+    "on kz received official notification via email from morryde regarding the recall",
+    "kz s safety committee met on and agreed to issue a recall",
+    "no warranty consumer complaints or injury claims have been received"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-25V342-8629.pdf",
+   "filer": "battle motors, inc.",
+   "norm": [
+    "battle motors was notified by one of its customers that a steering wheel was noted as being loose during a routine inspection by the operator",
+    "during the repair process the techician noted that no torque seal was present indicating that the nut was not properly torqued to specification and was indeed found to be loose",
+    "the fleet manager had the remaining units of the same vintage inspected and found one other unit with a loose retaining nut and no torque seal",
+    "all other units were found to be within specification with torque seal indicating proper torque",
+    "battle motors reviewed the issue and determined that during the manufacturing process of the units in question a part shortage existed for the turn signal switch resulting in a deviation from standard manufactung practices to continue production",
+    "units at the factory were inspected and no defects were found as well as a coursey units produced before and after the suspected time period with no issues found",
+    "as a result battle motors has determined that a inspection and potential retorque is necessary for the potential units involved"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 7,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V468-3921.pdf",
+   "filer": "american manufacturing operations, inc.",
+   "norm": [
+    "on an operator installing the axle to the trailer chassis noticed that an installed shackle nut did not lock and was able to be unsecured by hand",
+    "the operator reported the condition",
+    "amo called the supplier of the shackle nut mid states bolt screw company to report the condition and ask for technical assistance to investigate it",
+    "on a loctite adhesive was added to the operation to secure the shackle nut to the axle bolt",
+    "the loctite proved effective in securing the nut to the bolt",
+    "vins were recorded of when the loctite process was incorporated in production",
+    "a review of manufacturing and supply records was conducted to identify when the suspect supply of shackle nuts was used in production",
+    "based on these reviews amo was able to determine the potentially affected population",
+    "on amo contacted customers asking them to inspect trailers still in their possession to identify whether any nuts had loosened",
+    "no customers identified any loosen nuts",
+    "on amo contacted nhtsa about the proper process for reporting the potential loose nut condition",
+    "nhtsa instructed amo that the supplier of the nut would be responsible for any required recall actions",
+    "on amo consulted legal counsel about their responsibilities under the safety act",
+    "on a mid states representative visited the amo facility and conducted inspections and testing",
+    "on a mid states representative contacted amo with the results of the inspections and testing",
+    "mid states indicated they could replicate the loose nut condition and the inability of certain nuts to remain securely locked",
+    "amo continued to monitor field reports and customer reports for potential loose nuts or other indications of unsecured axles",
+    "no such reports have been identified",
+    "on amo decided in the abundance of cautious to file a part report to nhtsa and plans to conduct a safety recall to address the potential that nuts may become unsecured over time in service"
+   ],
+   "entries": 19,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 2,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V491-8213.pdf",
+   "filer": "grech motors inc.",
+   "norm": [
+    "grech rv seeks input from fiamma concerning instances of inadvertent awning deployment",
+    "fiamma denied the existence of a manufacturing defect",
+    "grech rv received notification from the awning supplier fiamma inc of an incident of unintended awning deployment",
+    "grech reviews the circumstances of this incident and undertakes an investigation into the subject awning",
+    "while grech rv is conducting its review of the incident and company data grech receives an email inquiry from nhtsa regarding voq",
+    "grech rv provides information to nhtsa in response to its email inquiry regarding voq",
+    "grech rv provides additional information to nhtsa stemming from its email inquiry",
+    "as of the date of this submission following a review of available records grech rv has received warranty claims involving alleged inadvertent awning deployment the first of which was received in"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-25V493-6422.pdf",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my k c pillar garnish face plate chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V497-2087.pdf",
+   "filer": "brinkley rv",
+   "norm": [
+    "on brinkley rv received a unit for service repairs",
+    "during the repair process it was determined that an unsecured wire was pinched between a holding tank and an underlying support member",
+    "upon review of this information brinkley rv launched an investigation to determine possible risk",
+    "on brinkley rv safety committee was presented the results of the investigation and voted unanimously to recall the affected units"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-25V558-2502.pdf",
+   "filer": "midwest fire equipment & repair company",
+   "norm": [
+    "initial hose reel detachment observed in the field on one fire truck",
+    "photographs and service reports were collected",
+    "warranty service report submitted documenting the fractured mounting plate h aluminum",
+    "engineering review initiated to assess the mounting plate design bend radius and potential fatigue concerns",
+    "team inspection confirmed fracture at bend radius was the failure mode likely caused by stress concentration and vibration during service",
+    "broader fleet review conducted trucks identified for containment and inspection",
+    "management meeting held to determine recall action consensus reached that defect relates to motor vehicle safety due to potential for hose reel detachment",
+    "defect report prepared and submitted through part recall portal"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 0,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V580-8142.pdf",
+   "filer": "international motors, llc",
+   "norm": [
+    "international receives notice that a new york dot inspector fails a bus due to the absence of a floor side reinforcement",
+    "upon further review it was determined that this bus did not require a floor side reinforcement based on its configuration",
+    "notwithstanding the conclusion that the bus described above did not require a reinforcement out of an abundance of caution international initiates a delivery stop on school buses at the tulsa bus assembly plant to identify vehicles with configurations that could potentially require a floor side reinforcement",
+    "international identifies such vehicles",
+    "tulsa bus assembly plant inspects the buses on delivery stop finding one bus built without the floor side reinforcement which was then added to the bus",
+    "the other contained the reinforcement",
+    "international reviews the findings from the dot inspection and delivery stop inspections and determines that it will conduct a comprehensive review of bus floor plans to identify those buses which by design should have the reinforcement installed and that it will conduct a limited field inspection to verify the presence of reinforcements where required by the floor plan",
+    "international conducts comprehensive bus floor plan analysis to determine which buses by design should have the reinforcement installed and performs a limited field inspection",
+    "international conducts a review of data from previous compliance tests to determine if the presence of the reinforcement was necessary to meet the force requirements of fmvss s and s",
+    "based on review of the information gathered in the course of the investigation international declares a non compliance recall",
+    "for noncompliances identify the test results and other information considered in determining the existence of the noncompliance and provide the date of each test and observation indicative of that noncompliance"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-25V625-0070.pdf",
+   "filer": "wabash national corporation",
+   "norm": [
+    "wabash s manufacturing team reported to the wabash warranty team that trailers left our facility with the incorrect rear impact guards installed",
+    "these trailers were shipped to a nearby dealer",
+    "the dealer was notified of the situation and the vehicles were locked down until replacement parts could be supplied",
+    "a concern response cr was entered into the system to bring awareness to the product safety team pst",
+    "the first concern response meeting was held and investigations were started",
+    "the correct rear bumper assemblies were sent to the dealer for replacement",
+    "the cause of the manufacturing error was investigated and corrected",
+    "a wabash warranty representative visited the dealer and inspected all vehicles to assure the correct bumpers were properly installed",
+    "the pst held its bi weekly meeting and discussed",
+    "during the bi weekly safety meeting the pst evaluated this condition as a potential fmvss noncompliance and voted to escalate the situation to the product safety committee psc",
+    "although all the subject vehicles were remedied prior to delivery to owners the psc voted to declare this condition as an fmvss noncompliance and to submit this noncompliance report",
+    "wabash is not aware of any accidents or injuries related to this condition"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 10,
+   "wrong": 2,
+   "accepted": 10,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-25V783-5866.pdf",
+   "filer": "international motors, llc",
+   "norm": [
+    "international identifies a condition where school buses when loaded as per cfr part g might exceed the value printed on the label and opens an investigation into the issue",
+    "international identifies buses to be weighed across multiple configurations to study weight estimate accuracy",
+    "international completes weighing of buses",
+    "upon physical weight verification international determines that buses were found to be lighter than the initial estimated weight",
+    "international updates the weight estimator with the information obtained from the verification activities",
+    "additional physical bus weight verification audits were conducted to further refine the accuracy of the weight estimator across additional configurations",
+    "necessary adjustments to weight estimator were completed based on these audits",
+    "international determines certain bus configurations when loaded as per cfr g could exceed the recorded gross vehicle weight rating gvwr printed on the label",
+    "international finalizes the suspect population",
+    "international declares a safety recall",
+    "international finalizes recall remedy",
+    "international finalizes remedy launch date"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 4,
+   "accepted": 6,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-25V843-5844.pdf",
+   "filer": "micro bird usa llc",
+   "norm": [
+    "following reports in regarding localized heat damages to the air conditioning control in a vehicle manufactured in by corporation micro bird inc in drummondville an investigation was launched to determine the source of the incidents",
+    "it was then discovered that a claim for heat damages had been submitted in for similar circumstances",
+    "it was determined from the location of the damages on the board for the vehicle that the connection between the power cable and the power stud becoming loose was probably the cause of the damages and fire incidents",
+    "since vehicles built at micro bird usa llc are manufactured with the same material and procedures as those built by corporation micro bird inc it was decided on to recall the vehicles equipped with a spheros air conditioning system for which the power cable was either connected or reconnected to the power stud during vehicle manufacture micro bird usa llc is not aware of any other claim or complaints or any incidents regarding this defect"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26E004-0495.pdf",
+   "filer": "lippert",
+   "norm": [
+    "report was made by blue bird corporation busses after a bus was inspected at the border and found the dot designator on a window illegible",
+    "quality inspection and containment done at all lippert manufacturing facilities of the windows for blue bird",
+    "quality inspection begins at blue bird facility",
+    "investigation opened to determine scope and range of components"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 2,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E008-5432.pdf",
+   "filer": "prevost car (us) inc.",
+   "norm": [
+    "prevost was informed by the supplier that certain driver side rearview mirrors were potentially manufactured with dimensions not meeting the required specifications",
+    "rearview mirrors exhibiting abnormal play were identified during prevost vehicle production",
+    "an internal prevost investigation was opened to identify the root cause and to determine if the issue is potentially safety related",
+    "prevost initiated durability testing of the subject driver side exterior rearview mirrors",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "it was concluded that further investigation was required to complete the assessment",
+    "testing activities were completed",
+    "analysis of the results indicated that the dimensional variation may increase the risk of mirror detachment",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "decision made to raise the potential safety related issue to volvo product safety committee psc for review and determination",
+    "case was presented to volvo product safety committee psc",
+    "it was concluded that there was a safety related defect and that a recall is needed",
+    "defect information report submitted to authorities",
+    "no warranty claims related to this issue",
+    "no field reports incidents accidents injury or fatality were reported"
+   ],
+   "entries": 15,
+   "dup_entries": 1,
+   "claims": 9,
+   "wrong": 3,
+   "accepted": 8,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-26V063-7895.pdf",
+   "filer": "daimler coaches north america",
+   "norm": [
+    "defect detection by internal quality controls",
+    "internal analysis at daimler buses to determine the cause and the remedy",
+    "clarification with the supplier regarding which delivery batches are affected",
+    "investigation of the affected vehicles",
+    "daimler buses gmbh decided a recall regarding this issue at mercedes benz tourrider business and tourrider premium coaches"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V093-5181.pdf",
+   "filer": "prevost car (us) inc.",
+   "norm": [
+    "one improperly installed passenger seat anchorage was identified during an internal prevost production audit",
+    "internal prevost investigation was opened to identify the root cause and to determine if the issue is potentially safety related",
+    "an internal inspection was initiated on a sample of vehicles to assess whether the audit finding was an isolated occurrence",
+    "preliminary results of the internal inspection were obtained",
+    "no additional improperly installed anchorages were identified at that time",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "it was concluded that further investigation was required to complete the assessment",
+    "final internal inspection results were obtained",
+    "approximately of the inspected vehicles had at least one improperly installed seat anchorage",
+    "case was presented on volvo product safety evaluation committee psec to evaluate if there is a potential safety related issue",
+    "decision made to raise the potential safety related issue to volvo product safety committee psc for review and determination",
+    "case was presented to volvo product safety committee psc",
+    "it was concluded that there was a safety related defect and that a recall is needed",
+    "defect information report submitted to authorities",
+    "two warranty claims potentially related to this issue were received on and",
+    "no field reports incidents accidents injuries or fatalities were reported"
+   ],
+   "entries": 16,
+   "dup_entries": 1,
+   "claims": 9,
+   "wrong": 3,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V105-2893.pdf",
+   "filer": "kia america, inc.",
+   "norm": [
+    "see attached document titled my telluride front seatback chronology"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  }
+ ]
+}

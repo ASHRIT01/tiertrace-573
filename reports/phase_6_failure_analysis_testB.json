@@ -1,0 +1,2153 @@
+{
+ "split": "testB",
+ "claims": 510,
+ "accepted": 263,
+ "accepted_wrong": 93,
+ "classes": {
+  "i": 80,
+  "iii_undated_same_type": 2,
+  "ii": 10,
+  "iii": 1
+ },
+ "duplicate_underlying": {},
+ "top5_filers_by_accepted_wrong": [
+  "ford motor company",
+  "jayco, inc.",
+  "chrysler (fca us, llc)",
+  "lippert",
+  "general motors, llc"
+ ],
+ "classes_by_filer": {
+  "other": {
+   "i": 35,
+   "iii_undated_same_type": 1,
+   "ii": 8
+  },
+  "lippert": {
+   "i": 4
+  },
+  "general motors, llc": {
+   "i": 4
+  },
+  "ford motor company": {
+   "i": 20,
+   "iii_undated_same_type": 1,
+   "ii": 2
+  },
+  "chrysler (fca us, llc)": {
+   "i": 5
+  },
+  "jayco, inc.": {
+   "i": 12,
+   "iii": 1
+  }
+ },
+ "strict_view": {
+  "claims": 510,
+  "accepted": 263,
+  "coverage": 0.515686274509804,
+  "error_all": [
+   0.3862745098039216,
+   0.3060240963855422,
+   0.4560669456066946
+  ],
+  "error_accepted": [
+   0.35361216730038025,
+   0.24390243902439024,
+   0.4608695652173913
+  ],
+  "delta_all_minus_accepted": [
+   0.03266234250354133,
+   -0.024390243902439046,
+   0.09841082475353574
+  ]
+ },
+ "date_only_view": {
+  "claims": 510,
+  "accepted": 263,
+  "coverage": 0.515686274509804,
+  "error_all": [
+   0.1,
+   0.06342494714587738,
+   0.146
+  ],
+  "error_accepted": [
+   0.049429657794676805,
+   0.022388059701492536,
+   0.07874015748031496
+  ],
+  "delta_all_minus_accepted": [
+   0.0505703422053232,
+   0.02178600009414866,
+   0.09043683871121833
+  ]
+ },
+ "repetition_rows": [
+  {
+   "file": "RCLRPT-26E009-2878.pdf",
+   "filer": "webasto thermo & comfort na, inc",
+   "norm": [
+    "as part of its market observation obligations the webasto organization noticed that there had been recalls by automotive manufacturers who use the same cells in the hv batteries installed in their vehicles as those used in webasto s cv standard v v batteries",
+    "an inquiry to the supplier samsung sdi co ltd revealed that affected cells have also been delivered to webasto roof components se",
+    "first meeting with samsung sdi co ltd to analyze the suspect cells and develop corrective measures",
+    "from multiple alignment meetings with samsung sdi co ltd to determine potential risks",
+    "internal analyses were conducted",
+    "field observation of webasto batteries without any indication of defect parts",
+    "market analysis revealed that packs in the us market could also be affected",
+    "webasto roof components se is not aware of any injuries crashes or thermal events related to this issue",
+    "a final meeting to assess product safety relevance and u s market exposure was performed and concluded with the decision to notify nhtsa",
+    "reports for remedy completion rates will be provided by the individual manufacturers"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 3,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26E010-2338.pdf",
+   "filer": "vision wheel, inc.",
+   "norm": [
+    "seojin sends vision wheel an d report identifying an internal inventory of approximately pieces manufactured for vision wheel s discount tire program and notes manufacturing irregularities",
+    "the report describes internal hardness and impact testing and observes that certain wheels exhibit elevated hardness values and impact test cracking",
+    "specifically the report states that wheels with post paint hardness in the range of hb particularly those exceeding hb demonstrate cracking and failure in impact tests",
+    "the report also states that a corrective action had been implemented as of the date of the report by reducing paint oven temperatures to specification for the vision wheel program",
+    "subsequent validation testing shows post paint hardness readings averaging approximately hb and no impact test cracking in these post correction wheels",
+    "through vision wheel conducts a further investigation regarding wheels manufactured before",
+    "on sales of the affected wheels were halted",
+    "vision wheel also returns affected wheels identified as defective to seojin for destruction or controlled rework",
+    "these return shipments are documented by container numbers and seal numbers and are subject to instructions that the wheels not be resold or reintroduced into commerce",
+    "after reviewing the full set of supplier data internal testing and the results of the february validation and sorting activity vision wheel s executive team in consultation with outside counsel and its regulatory team determined that a safety related defect exists and decided to conduct a safety recall",
+    "this date constitutes the manufacturer s defect determination for purposes of c f r"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E011-5568.pdf",
+   "filer": "cummins, inc.",
+   "norm": [
+    "a vehicle collision occurred in a customer s bus yard and was reported to cummins service engineering",
+    "the accelera by cummins product safety leader was notified of the incident",
+    "a review of datalogger data retrieved from the vehicle involved in the incident was reviewed with the software architect",
+    "the accelera by cummins engineering team was able to replicate the software behavior on a test vehicle",
+    "a product safety hazard analysis was initiated to evaluate this software behavior",
+    "the product safety hazard analysis was completed",
+    "the software behavior issue was reviewed by the cummins product safety defect board and was determined to constitute a safety defect"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 1,
+   "accepted": 7,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26E013-6412.pdf",
+   "filer": "lippert",
+   "norm": [
+    "report was made of axles built with incorrect seals",
+    "axles bill of materials reviewed and orders put on hold with affected seals",
+    "pac reviewed the information and concluded that the data reviewed indicated a unanimous vote for a voluntary recall",
+    "investigation called for determining affected component range",
+    "investigation concluded and scope completed"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26E020-6137.pdf",
+   "filer": "weldon division of akron brass",
+   "norm": [
+    "following a report of two failures of installed screens in vehicles in the field a weldon technician inspected the units and found installation issues e g cracking around the mounting screws of the unit which were believed to have caused the issue",
+    "the screens were returned to weldon for futher assessment but no faults were found",
+    "weldon scheduled a service call to same customer to check that screens were operating properly which the customer confirmed",
+    "shortly thereafter on the same customer reported a screen failure on same vehicle where the installation issues were previously resolved",
+    "a new screen out of the box indicated the same issue as the unit installed in the vehicle",
+    "weldon contacted the supplier of the device enovation controls enc for technical support and began to investigate further including development of a test fixture",
+    "testing data and additional failed units were provided to the supplier",
+    "by the supplier was able to recreate the failure",
+    "it was also determined by that end of line testing at enovation controls would not reliably indicate the presence of the issue",
+    "the supplier advised weldon that even though the root cause analysis is ongoing given the potential safety implications it is recommended that weldon report a safety defect",
+    "upon further review of information and given the supplier s statement weldon determined that a safety related defect exists and will conduct a recall to address units in the field",
+    "weldon is aware of warranty claims potentially related to the issue and it is not aware of any injuries or fatalities potentially related to the issue"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26E022-4329.pdf",
+   "filer": "q'straint",
+   "norm": [
+    "q straint detected a defect during random inspection of qrt retractor",
+    "discontinued production and shipments",
+    "oem supplier initiated evaluation to determine root cause review of production records product builds and shipments",
+    "oem supplier confirmed defect and initiated testing to validate root cause",
+    "dispatched company representative to visit manufacturing supplier",
+    "identified root cause and finalized assembly and shipment records of suspected product",
+    "decided a safety related defect"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 4,
+   "accepted": 6,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26E025-2942.pdf",
+   "filer": "general motors, llc",
+   "norm": [
+    "on nhtsa notified gm that certain samples of ac delco gmw dot brake and clutch fluid produced in failed fmvss compliance testing conducted by a third party test lab in",
+    "gm opened a product investigation on the same day",
+    "gm responded to nhtsa s information requests on and together the responses and gm incorporates the responses by reference",
+    "gm identified no relevant warranty claims involving the subject brake fluid",
+    "on nhtsa conducted supplemental compliance testing on the remaining unopened sample from the subject brake fluid lot",
+    "on nhtsa supplied gm with the final test reports from this supplemental testing which indicated that the subject brake fluid failed s due to the presence of visible sediment",
+    "chemical analysis of the tested samples completed by gm s supplier confirmed that the visible sediment is a precipitate from two additives in the brake fluid and is not external contamination",
+    "on gm s safety field action decision authority sfada decided to conduct a noncompliance recall on the production lot of the brake fluid sample that failed nhtsa s supplemental compliance testing"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 3,
+   "accepted": 4,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-26E026-6527.pdf",
+   "filer": "waymo llc",
+   "norm": [
+    "on an unoccupied waymo av encountered an untraversable flooded section of a roadway that has a mph speed limit",
+    "the waymo av detected potentially untraversable flood water and proceeded at reduced speed",
+    "on following the event described above waymo implemented additional operational restrictions at times and in locations where there is an elevated risk of encountering a flooded higher speed roadway",
+    "on waymo s safety board reviewed information about this issue and decided to conduct a recall"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E032-5214.pdf",
+   "filer": "lippert",
+   "norm": [
+    "opened internal review of any similar reports",
+    "containment cutoff implemented in production",
+    "tsb released to replace all bolts on affected units",
+    "keystone notifies lippert of their decision to release as a recall",
+    "lippert escalates to recall"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 5,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26E033-7019.pdf",
+   "filer": "natural gas fuel systems, llc dba ccft",
+   "norm": [
+    "potential issue initially identified through theoretical fea stress analysis",
+    "a stop ship stop build was implemented for production units to prevent further release as the issue was investigated",
+    "new bracket me was introduced into design and production cross functional team conducted an extended review including root cause analysis to confirm the fea stress analysis and to evaluate potential safety implications",
+    "determination to conduct a safety recall out of an abundance of caution",
+    "there have been no reports of component failures accidents or injuries"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 4,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E046-1566.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on ford s recall service program rsp team introduced a concern to ford s critical concern review group ccrg after an rsp analyst identified a vehicle that had field service action fsa c marked as complete but was found by a dealer to have an integrated trailer module itrm containing incorrect software",
+    "subsequent investigation determined that although the vehicle had successfully received the fsa c software update the commercially available ford itrm accessory kit contains itrm modules with obsoleted pre fsa c software",
+    "the itrm accessory kit installation instructions did not direct the dealer to perform an itrm software update as part of the installation thereby reintroducing the software condition previously addressed by fsa c",
+    "on ford initiated containment actions to prevent further distribution of affected inventory for all ford itrm accessory kits containing the software level recalled under c",
+    "between and ford s cross functional team investigated the affected population",
+    "as of this team accounted for a total population of itrm accessory kits comprised of kits held in inventory and kits sold",
+    "of the sold population kits were installed on vehicles and traced to specific vins outside the c population while the remaining units represented over the counter or online sales for which a documented transaction existed but could not be linked to a specific vin",
+    "on ford s critical concern review group ccrg completed its investigation which considered ford s c recall and federal motor vehicle safety standard fmvss no section",
+    "based on this review and because the itrm accessory kits contain the same software previously recalled under c ccrg recommended an equipment recall for the itrm accessory kits sold containing the software level identified under c",
+    "as of no warranty claims or vehicle owner questionnaires voqs have been identified as potentially related to this condition",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E056-7471.pdf",
+   "filer": "odyne systems, llc",
+   "norm": [
+    "webasto identified that automotive oems using samsung sdi cells had initiated recalls inquiry to samsung sdi confirmed affected cells were delivered to webasto",
+    "webasto and samsung sdi conducted multiple alignment meetings and internal analyses no field defects observed in webasto batteries",
+    "webasto determined that packs in the u s market may be affected",
+    "webasto confirmed no injuries crashes or thermal events related to this issue",
+    "webasto concluded decision to notify nhtsa following final product safety assessment meeting",
+    "webasto filed part safety recall report nhtsa recall no e",
+    "webasto began notifying purchasers including odyne by email and certified mail",
+    "nhtsa contacted odyne requesting submission of a part defect information report",
+    "odyne responded to nhtsa requesting clarification of filing obligations applicable to a downstream purchaser",
+    "nhtsa confirmed odyne s independent filing obligation under cfr f",
+    "odyne initiated internal audit and engaged legal counsel began preparing this report",
+    "odyne completed internal audit and confirmed total affected vehicle population and owner information"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 12,
+   "wrong": 8,
+   "accepted": 6,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-26E059-0404.pdf",
+   "filer": "avride inc.",
+   "norm": [
+    "on nhtsa opened a preliminary evaluation pe into avride s automated driving system ads citing incidents reported between and by avride under standing general order",
+    "on nhtsa issued information request ir pe seeking further information on the incidents and any others related to a set of subject behaviors which included changing lanes and failing to yield to the right of way of other road users traveling in close proximity in an adjacent lane to a subject vehicle from through avride conducted a thorough review of the incidents and behaviors detailed in nhtsa s ir and submitted a response and supporting information to nhtsa on",
+    "avride s review included an aggregate reassessment of these incidents in conjunction with relevant disengagement data and near miss records to evaluate potential safety risks along with a review to determine if subsequent software updates to the ads may have addressed those risks",
+    "on upon completion of their review the avride safety team identified the lateral maneuver condition along with a set of previously completed software updates that it was determined addressed the condition",
+    "the avride safety team then formally escalated the matter to avride s safety board for their consideration",
+    "on avride s safety board determined that based on the avride safety team s review of the lateral maneuver condition and the risks posed by the condition prior to its mitigation that the circumstances that existed prior to the software updates warranted submitting this report to nhtsa to fulfill relevant notification obligations"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 4,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26E066-0581.pdf",
+   "filer": "cummins, inc.",
+   "norm": [
+    "following a redesign of the fuel hose that was implemented into production in cummins conducted an evaluation of the previous fuel hose designs that were used as remedy parts in recall no e e and e to assess in service performance of those designs",
+    "based upon the results of this evaluation cummins decided to replace the fuel hoses on the subject population with the redesigned parts which were used in current production beginning in"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V119-2340.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on the kentucky truck plant ktp plant vehicle team reported that three model year super duty vehicles experienced separation of the aluminum driveshaft during end of line testing",
+    "the separation occurred at the friction weld between the driveshaft tube and driveshaft end yoke",
+    "ktp issued a stop ship for this concern on the same day",
+    "ford and the supplier conducted testing on the welders used to produce the subject driveshafts on",
+    "the supplier uses two friction welders for aluminum driveshaft tube friction welding",
+    "all three separated driveshafts were produced on the same welder",
+    "testing confirmed that the issue was isolated to driveshafts produced on only one of the two welders due to degradation of that welder s spindle",
+    "on this issue was brought to ford s critical concern review group ccrg for review",
+    "during the ccrg s investigation ford and the supplier reviewed supplier production history and analyzed weld quality data to determine the population of driveshafts that may not have sufficient weld penetration to prevent a separation",
+    "ford utilized this information to determine suspect vehicle production",
+    "as of ford is aware of six warranty claims and five field reports for driveshaft separation",
+    "these reports were received between and and represent six unique vins",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any accidents fires or injuries related to this concern"
+   ],
+   "entries": 14,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V126-1137.pdf",
+   "filer": "mitsubishi fuso truck of america, inc.",
+   "norm": [
+    "on state of charge was observed to be faultily displayed as",
+    "this issue was both during driving and while standing",
+    "soc issue was fixed with vcu and icuc update released as recall to us from mftbc on feb c for units",
+    "however it was found further improvements are required for soc while standing issue remained",
+    "with software update development completed mftbc is ready to release recall to us units to complete soc defect in all vehicles imported to the us"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V127-9048.pdf",
+   "filer": "general motors, llc",
+   "norm": [
+    "on a gm brand quality manager submitted a report to gm s speak up for safety sufs program following a report from a fleet customer that they had received some vehicles with a gouge in the sidewall of the right rear tire",
+    "on international motors identified a broken roller on the wheel alignment fixture in their assembly plant as the cause of the tire damage",
+    "on international motors provided a list of potentially affected vins",
+    "gm opened a product investigation on",
+    "an analysis of field data completed on identified complaints potentially related to this condition",
+    "gm received these reports between and",
+    "gm is not aware of any crashes or injuries associated with this condition",
+    "on gm s safety and field decision authority decided to conduct a safety recall"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 2,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V133-7407.pdf",
+   "filer": "pebble mobility inc.",
+   "norm": [
+    "on pebble mobility inc pebble received a customer report alleging that a solar panel had detached from the roof",
+    "on pebble initiated an engineering study to investigate the condition and understand the scope of potentially affected vehicles",
+    "on the pebble safety committee convened to assess the issue and review the root cause analysis performed by the pebble engineering team",
+    "this review included further follow up with the engineering team and identification of an adequate remedy",
+    "on pebble made the determination to voluntarily recall the affected vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V136-5856.pdf",
+   "filer": "volvo car usa, llc",
+   "norm": [
+    "october a first report was received at volvo cars normal investigation and monitoring market situation",
+    "after receiving some more reports an investigation started by quality of january",
+    "th of february the investigation was escalated to the critical concern action process ccap",
+    "on after the completion of the investigation ccmt decided to start preparation for a recall to repair concerned cars wiring harness",
+    "volvo cars can confirm there are warranty claims and vehicle reports related to this defect in the us"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 3,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V147-8112.pdf",
+   "filer": "corp. micro bird, inc.",
+   "norm": [
+    "on during a demonstration on the use of the wheelchair tie downs with a new employee an engineer couldn t lock the tie down in the anchor",
+    "a visual inspection revealed that the anchor screw cap wasn t pushed completely down preventing the apparatus from locking",
+    "after pushing it down manually the system worked as intended",
+    "an internal review of the procedures and inspection of the vehicles on site revealed that in a small percentage of vehicles the caps were not pushed down sufficiently",
+    "new tools and procedures were developed to ensure that the installation was consistent throughout and extensive testing confirmed the successful corrections were implemented"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 3,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-26V150-4696.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "in an owner identified a discrepancy between the altec final stage certification label and the tire ratings of the tires installed on the vehicle",
+    "upon review engineering determined that the altec label was incorrect",
+    "altec opened a root cause investigation initiating containment procedures and identifying all potentially affected units and began containment of affected units",
+    "on a potential field action investigation was opened to determine whether additional completed units with an incorrect certification label had been delivered to owners and to find the number of field affected units",
+    "on after reviewing the potential issue and the affected unit investigation altec determined that a field action was necessary to inspect and replace the potentially incorrect certification labels",
+    "no warranty claims field reports accidents injuries or deaths have been identified related to this issue"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V153-3088.pdf",
+   "filer": "orange ev",
+   "norm": [
+    "orange ev oev produces electric terminal trucks that are primarily used at private shipping yards and terminals but may also operate on public roads in some capacity",
+    "certain oev trucks are motor vehicles while others are not designed or intended for use on public roads and are not certified to the federal motor vehicle safety standards fmvss",
+    "all oev vehicles have a gvwr above pounds",
+    "the t series and e trievers are speed limited to mph",
+    "husk es are speed limited to mph",
+    "in oev began offering a foldable training seat as an option that customers could select at the time of order",
+    "in a customer requested the installation of a foldable training seat in their trucks",
+    "to support this request and given the passage of time beginning in oev undertook a comprehensive review of the training seat and its compliance with any applicable fmvss requirements",
+    "the review included an assessment of whether or not the training seat qualified as a designated seating position under c f r",
+    "whether the specialized orientation of the training seat qualified it as a side facing seat and an assessment of whether the training seat met associated performance requirements",
+    "this assessment occurred through and on oev concluded that the training seat did not meet fmvss requirements for designated seating positions under fmvss and",
+    "oev is not aware of any deaths or injuries potentially related to this issue"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V170-5531.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "in a missing harness was discovered while troubleshooting for a different issue on a unit during production testing at altec",
+    "upon identifying the issue altec immediately initiated an investigation to determine the underlying cause",
+    "the investigation revealed the required harness was not installed on units built on a specific production line",
+    "as a result containment actions were promptly implemented and the potentially affected units were inspected",
+    "further investigation indicated that additional units assembled on a particular production line could have been completed without the necessary harness",
+    "it was also found that some units might have passed production testing without the lighting issue being detected and without the missing harness being noticed",
+    "on altec opened a potential field action investigation to determine the scope of the issue identify production dates and affected units",
+    "on altec determined that a potential defect affecting units in the field could exist and owner notification was necessary",
+    "there were no warranty claims or field reports of accidents injuries or fatalities related to this issue"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V172-3940.pdf",
+   "filer": "mercedes-benz usa, llc",
+   "norm": [
+    "in mbag launched initial investigations regarding the potential installation of different belt variants based on seatbelt part anomalies discovered during an internal audit",
+    "in the following months out of an abundance of caution mbag implemented a plant action to rework all potentially affected vehicles which were still accessible to mbag",
+    "in mbag became aware that vehicles in the field could also be affected",
+    "further analyses were initiated to determine the root cause of the possible deviation",
+    "these analyses lasted until the",
+    "in mbag launched investigations into potential consequences of different variants of the seat belts and to determine the potentially affected population in the field",
+    "on mbag determined that a non compliance cannot be ruled out and decided to conduct a recall",
+    "mbag can confirm there are no warranty claims field or service reports or other information related to this defect in the usa"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V175-7571.pdf",
+   "filer": "hino motors sales u.s.a., inc.",
+   "norm": [
+    "on hino discovered during a model year production audit that some owner s manuals for the identified model year vehicles contained pages from an owner s manual associated with a different vehicle model",
+    "hino worked with the supplier to investigate the issue and identify the root cause and potential scope",
+    "hino also began to assess potential customer impacts that could result from the issue",
+    "in the supplier reported to hino that a printer malfunction occurred while printing a specific order and when printing resumed the incorrect inside pages were mistakenly selected and printed for the remainder of the order",
+    "hino reviewed production records to identify the population of vehicles for which the incorrect owner s manual may have been provided",
+    "hino also identified several differences between the correct and incorrect manual pages that could result in safety concerns in the event owners rely on the information in performing certain maintenance",
+    "a technical review was performed to evaluate the impact those differences could have on vehicle safety",
+    "in hino concluded that the front u bolt tightening torque specification in the incorrect pages was higher than the correct specification which could result in bolt breakage if followed",
+    "on based on the investigation results hino determined to conduct a voluntary safety recall campaign for the subject vehicles",
+    "as of hino is not aware of warranty claims related to the issue",
+    "hino is also not aware of reports of injuries or accidents related to the issue"
+   ],
+   "entries": 11,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V193-7461.pdf",
+   "filer": "lucid usa, inc.",
+   "norm": [
+    "in lucid filed a recall sr identifying an affected population of air pure rwd vehicles based on a lash detection algorithm that used vehicle telematics data to identify vehicles potentially at risk of a half shaft disengagement while driving",
+    "lucid believed that the lash detection analysis was an adequate means of predicting which lucid air pure rwd vehicles may experience a half shaft disengagement while driving",
+    "after the recall decision was made lucid discovered additional vehicles that were not part of the recall had experienced half shaft disengagements",
+    "the issue of the half shaft disengagements in non recalled vehicles was referred to lucid s product safety working group pswg for consideration and evaluation",
+    "as part of its investigation the pswg evaluated the sensitivity of the lash detection algorithm and scope of the recall",
+    "based on its investigation the pswg identified half shaft issues that occurred on customer vehicles between and that it attributed to the same root cause as identified in the recall",
+    "lucid reviewed the total customer incidents",
+    "no customer incidents were found after the clean point and no incident vehicles had reached over miles before failure",
+    "the pswg briefed this issue to lucid s product safety executive council psec on",
+    "the psec decided that there was an unreasonable risk to safety for air pure rwd vehicles manufactured before the clean point which have less than miles as of the date of the recall filing that have not already had a drive unit replacement and were not included in lucid s recall sr",
+    "lucid is currently planning on implementing the same remedy as identified in the recall however lucid is also currently developing a software detection strategy that includes a revised algorithm that can be installed on customer vehicles via an ota update",
+    "this update will enable continuous real time on vehicle evaluation of each vehicle s signals to proactively determine if a vehicle may be at risk of a half shaft disengagement while driving and would provide a warning to the driver",
+    "this remedy would require a half shaft bolt replacement on algorithmically identified vehicles rather than replacing half shaft bolts on vehicles when not identified and therefore not needed"
+   ],
+   "entries": 13,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V203-3945.pdf",
+   "filer": "toyota motor engineering & manufacturing",
+   "norm": [
+    "from toyota reviewed different vehicle models equipped with a single speaker avas that may have a certain software configuration because an internal evaluation test in identified that a future model equipped with a single speaker avas and this software configuration did not meet the minimum requirements for other markets",
+    "thus during this period toyota performed testing on these models and found that each of the test vehicles representing those models met the applicable requirements of fmvss no",
+    "however toyota decided to conduct additional testing on the subject vehicles because while the test vehicle met the fmvss no targets it did not meet toyota s internal margin targets",
+    "in toyota performed on vehicle sound verification testing using additional subject vehicles in each trim variation which have different vehicle characteristics to confirm the performance",
+    "after analysis of the test results and confirmation of the testing parameters data on toyota determined that the vehicles identified in section above may not meet the reverse sound pressure level requirements specified in fmvss no paragraph s table"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V204-7221.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to stripped windshield wiper arm splines on certain expedition and navigator vehicles was brought to ford s critical concern review group for review",
+    "during review of safety recall s nhtsa v which was conducted pursuant to the three year recall lookback initiated as part of the consent order entered into by ford and nhtsa in ford observed an elevated warranty claim rate for expedition and navigator vehicles produced after the s v population cut off date through",
+    "the reports described stripped wiper arm splines or wiper arms detaching from the vehicle",
+    "during and ford conducted a read across and assessed field performance data for vehicles that share the same knurl driver design and supplier",
+    "additionally the team inspected field return parts to evaluate conformance to dimensional specifications conducted computer aided engineering stress analysis and reproduced the failure of the returned parts",
+    "ford also reviewed the supplier s historic production data including dimensional data",
+    "based on the read across findings ford expanded the investigation to include super duty vehicles manufactured within the same period as the suspect population of expedition and navigator vehicles",
+    "in the root cause was determined to be a combination of conditions that led to incorrect teeth engagement in the arm head to knurl interface which can result in damage due to stripping of the engagement surfaces",
+    "supplier records confirmed that the combination of conditions was present in expedition navigator and super duty vehicles",
+    "ford verified these findings through statistical life warranty projections",
+    "an improvement in production processes at the supplier in addressed the issues that led to the defective wiper arms",
+    "as of march ford is aware of warranty reports field reports and three customer service reports associated with this concern representing unique vins globally received between and",
+    "as of ford is aware of two vehicle owner questionnaires voq attributed to this concern and one potentially related voq which were submitted between and",
+    "ford is not aware of any accidents injuries or fires related to this concern",
+    "on ford s field review committee reviewed the concern and approved a field service action"
+   ],
+   "entries": 15,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V205-4042.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on manufacturing team members from ford s dearborn engine fuel tank plant deftp identified an engine with missing piston circlips during engine teardown performed as part of standard production audit testing",
+    "on this was brought to ford s critical concern review group ccrg for review",
+    "the investigation team determined the missing circlips resulted from a period of engine production in which the equipment used to install the clips was misaligned",
+    "additionally during this period the error proofing station that inspects for circlip presence experienced a broken transducer which prevented the issue from being detected initially",
+    "the ccrg and deftp team members reviewed engine plant and vehicle assembly plant production records as part of the investigation to determine the population of engines produced during this time and the vehicles they were installed in",
+    "as of ford is not aware of any occurrences in the field related to this condition",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any reports of accidents or injuries related to this condition"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V213-6780.pdf",
+   "filer": "general motors, llc",
+   "norm": [
+    "on a gm employee submitted a report to gm s speak up for safety sufs system following validation testing for the model year corvette",
+    "during the test the vehicle failed to detect and notify the driver of an inoperative rear turn signal lamp",
+    "gm opened a product investigation on",
+    "gm s investigation determined that in the rear lamp assembly supplier made a software change to assist technicians performing a tire pressure monitor system tpms learn process",
+    "the change inadvertently prevented the exterior lighting control module from detecting a failed rear turn signal in certain circumstances",
+    "gm s safety field action decision authority sfada decided to conduct a noncompliance recall on",
+    "gm is not aware of any field complaints or incidents associated with this condition"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V215-9936.pdf",
+   "filer": "autocar, llc",
+   "norm": [
+    "during a routine internal inspection autocar personnel identified a defective unit",
+    "an investigation was initiated and continued through and a clean point established for production",
+    "the investigation was concluded and all relevant information was presented to autocar s management team out of an abundance of caution autocar decided to perform a voluntary safety recall for all affected vehicles",
+    "we have no known complaints cases or claims"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V236-1914.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "in ford assessed warranty claims related to transmission output shaft spline wear and transfer case input spline wear on model year my bronco vehicles",
+    "these warranty claims included reports of noise and vibration and a failure to engage drive",
+    "on this concern was brought into ford s critical concern review group ccrg for review",
+    "in the ccrg s investigation identified additional reports of similar spline wear in my vehicles including reports describing a loss of power while driving and loss of park pawl engagement",
+    "the ccrg identified a strong correlation between spline wear reports and a history of documented service repairs involving the removal of the transmission or transfer case",
+    "during and the ccrg analyzed returned parts completed computer aided engineering cae simulations and conducted physical testing to conclude the root cause of the spline wear is misalignment in the joint between the transfer case and transmission",
+    "physical vehicle testing found that an induced misalignment in this joint resulted in spline wear patterns consistent with those observed on warranty failures in the field",
+    "on ford s workshop manuals were updated to ensure that the transmission and transfer case are properly aligned when they are reassembled during service repairs",
+    "the ccrg searched warranty data on bronco vehicle production until the workshop manual update and found bronco vehicles in the us with documented transmission or transfer case related repairs during this time period",
+    "as of ford s investigation identified warranty claims field reports and two customer service reports globally potentially related to this concern received between and representing a total of vins",
+    "on ford s field review committee reviewed the concern and approved a field service action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 12,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 5,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V238-6269.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on ford reviewed inspection results from a fire in the right a pillar area on a model year my ranger vehicle",
+    "initial visual evidence suggested the fire may have originated from an electrical short in the power lead of the sunvisor",
+    "data gathered from the vehicle indicated a diagnostic trouble code dtc b aa for a circuit short in the sunvisor lamp",
+    "on this concern was brought into ford s critical concern review group ccrg for review",
+    "during and the ccrg reviewed wiring harness specifications and installation procedures of the sunvisor and headliner suppliers with two notable findings",
+    "firstly supplier control records showed a thickness of protective tape around the headliner wiring circuit that exceeded the width of a section of a sheet metal opening where the wiring passed through",
+    "a taped wire harness with excess thickness could become stuck in the metal opening and result in damage to one of the wire circuits",
+    "secondly positioning of wiring to the headliner did not include sufficient placement controls to guarantee that the wiring would be routed as intended through the sheet metal opening",
+    "an improperly routed wiring harness may lead to unintended harness to metal contact which may result in wiring damage",
+    "in and the ccrg conducted flammability assessment testing that showed all potentially affected materials met flammability requirements and were not combustible",
+    "however analysis of the electrical system design indicated that repetitive body control module bcm re starts after the sunvisor lamp circuit dtc is set may cause repeated shorts and arcing over time building up soot and eventually causing fire",
+    "as of ford is aware of three warranty claims two field reports and one customer service report in the us potentially related to this concern received between and representing a total of four vins",
+    "flame was reported for one of the vins",
+    "smoke or burn evidence around the sunvisor lamp circuit was reported for the other three vins",
+    "on ford s field review committee reviewed the concern and approved a field service action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 16,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 2,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V245-1061.pdf",
+   "filer": "blue bird body company",
+   "norm": [
+    "blue bird had a meeting with transport canada to understand windshield wiper issues they found during an inspection",
+    "blue bird started its internal investigation to evaluate if the issue was related to a supplier quality spill or an internal assembly process",
+    "blue bird informed transport canada that the issue was assembly process related and was identifying the impacted population",
+    "blue bird submitted a defect report"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V253-0939.pdf",
+   "filer": "hexagon purus systems usa llc",
+   "norm": [
+    "a third party test laboratory that was engaged by hexagon purus to conduct"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V262-9341.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into inoperative instrument panel clusters in my jeep wagoneer s and dodge charger daytona vehicles",
+    "between and fca us tsrc met with fca us engineering to review the issue understand potential failure modes and to determine the suspect population",
+    "on fca us tsrc organization recognized that a vehicle build issue existed on certain vehicles related to inoperative instrument panel clusters potentially resulting in a noncompliance with fmvss nos",
+    "on fca us determined through the vehicle regulations committee that noncompliances to various federal motor vehicle safety standards exist in certain vehicles"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V263-6693.pdf",
+   "filer": "jaguar land rover north america, llc",
+   "norm": [
+    "on following information received from the fuel tank supplier that a fuel tank had failed the end of line leak test a product safety and compliance committee pscc investigation was opened",
+    "the pscc heard that the affected tank had been quarantined and not supplied to jlr for use in series production but that analysis was ongoing at the supplier to establish the risk to fuel tanks in the remainder of the batch",
+    "on following completion of testing and analysis at the supplier jlr s pscc reconvened to discuss the results",
+    "the pscc was informed that anomalous material extrusion results had been detected in a number of fuel tanks and whilst they had passed their end of line leak tests it was likely that the wall thickness was below the intended specification",
+    "it was confirmed that these tanks had been used in series vehicle production and work was started to establish the locations of the affected vehicles and the matter was referred to the pscc decision forum",
+    "on the pscc decision forum met and instructed a safety recall be launched to remedy the identified vehicles",
+    "jlr has received no claims and field reports in the us relating to this concern",
+    "there have been no reported accidents injuries or fires in the us as a result of this concern"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V268-9028.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on ford approved safety recall sb nhtsa v to address a population of vehicles produced from to with front seat pivot bolts that may be loose",
+    "ford s critical concern review group ccrg continued to monitor an additional population of vehicles that were produced in and during the time a torque check for the front seat pivot bolts was in place at the seat structure assembly supplier",
+    "on the ccrg confirmed an increasing number of warranty reports for the monitor period",
+    "upon investigation ccrg discovered the torque check at the supplier was performed before the thread adhesive patch was fully cured preventing full effectiveness of the adhesive patch",
+    "the ccrg investigation studied the design and performance of the joint and determined that the compromised thread adhesive patch in conjunction with vibration associated with road loads may result in a reduced break way torque that can lead to loosening of the front seat pivot bolts",
+    "as of ford is aware of warranty claims and one field report representing unique vins for ford bronco and ford ranger vehicles produced during the time the supplier torque check was in effect",
+    "the reports were received from",
+    "on ford s field review committee reviewed the concern and approved a field service action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V271-4869.pdf",
+   "filer": "roadtrek inc.",
+   "norm": [
+    "upon hearing about on social media facebook in an rv group on thapril s w department brought the concern to roadtrek engineering department",
+    "after further investigation was completed and it was determined under high wind and or bumpy road condition the primary latching mechanism potentially becomes disengaged",
+    "as of thapr there has been no warranty claims or death injuries reported"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V272-8617.pdf",
+   "filer": "newmar corporation",
+   "norm": [
+    "newmar received a field report on indicating a chin spoiler had loosened and detached on a freedom aire unit",
+    "newmar initiated an investigation and identified additional report of chin spoiler loosening",
+    "a production change was implemented on to replace screws with pop rivets",
+    "in addition to the field report on newmar is aware of one additional service claim for a loose chin spoiler on",
+    "following internal review a brand action committee met on and determined the issue should go to product safety committee",
+    "the product safety committee met on and determined a safety defect exists and initiated this recall",
+    "newmar is not aware of any injuries death or property damage related to this issue"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V279-2878.pdf",
+   "filer": "new flyer of america, inc.",
+   "norm": [
+    "during early warning report generation a field report from was identified that indicated the dash lamps were not illuminated during night run on an order of buses",
+    "to information was gathered to verify the issue and was determined to be an incorrect program",
+    "the issue was raised to the vehicle safety committee culminating in a consensus to issue a noncompliance recall",
+    "the affected buses total were corrected on"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V295-7913.pdf",
+   "filer": "forest river, inc.",
+   "norm": [
+    "forest river s office of corporate compliance was notified of a concern that was discovered at the factory when changing an interior panel that had been damaged in manufacturing",
+    "when they removed the panel they found the vent pipe was not plumbed all the way through the roof of the vehicle",
+    "the same day the manufacturing plant notified occ of concern occ opened a research item",
+    "on forest river s corporate committee voted to recall"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V307-4656.pdf",
+   "filer": "hyundai motor america",
+   "norm": [
+    "month s september hyundai s north america safety office naso received arc s response and files under the provisions of the protective agreement issued on in ea",
+    "naso began investigating potential impact to u s market vehicles equipped with dual stage hybrid inflators produced by arc monitoring field data and establishing routine weekly reviews of airbag related claims and customer complaints",
+    "october naso engaged northrup grumman ng for airbag inflator condition performance investigation support",
+    "an initial meeting to develop and review the full investigation plan was held with ng on",
+    "november naso engaged a third party for support in recovering airbag inflators for study from recyclers across the u s the initial target for recovery was set to units from specific vehicles grades trims",
+    "naso met with nhtsa s office of defects investigation odi for a full update of its investigation plan and planned partnerships",
+    "hyundai submitted its response to nhtsa s initial decision issued in ea",
+    "hyundai also joined the comments of safety professionals filed on the same date",
+    "month s january through february naso began preparation for on site inspection procedures of recovery parts with its safety testing investigation laboratory stil",
+    "parts were recovered during this period",
+    "the stil developed and implemented advanced ct methodologies based on input from northrop grumman focusing on gray value and weld flash",
+    "naso met with odi for an update of its findings to date",
+    "april through june naso continued recovering parts for analysis by the stil and procured the supplier approval drawings associated with the subject inflators",
+    "by june end over inflators were recovered for study",
+    "naso began preparing to execute recovery parts forwarding to ng for dissection and analysis",
+    "joint weekly meetings to review findings and parts logistics were initiated",
+    "august through december the stil began shipping specifically selected inflators based on propellant condition or anomalies such as weld flash to ng",
+    "additionally an estimated parts were sent to baker hughes to validate stil ct scanning capabilities",
+    "october hyundai submitted its response to nhtsa s supplemental initial decision issued in ea",
+    "hyundai also joined the comments of safety professionals filed on the same day",
+    "november through december ng informed naso of preliminary findings which included scans of abnormal propellant appearance and non homogeneous structure in some inflators",
+    "naso visited ng s inspection facilities to confirm dissection procedures and findings on",
+    "naso requested information from arc regarding propellant observations based on initial findings from northrup grumman",
+    "january through march ng continued investigative activities into abnormal propellant identified through recovery part dissections including d volumetric density measurement ftir analysis and micro ct scans",
+    "during this period all identified abnormal propellant wafers could be traced to a specific production lot",
+    "naso met with arc to review its preliminary findings",
+    "month s april through august ng continued its investigation through crush and closed bomb testing of lower density propellant wafers",
+    "initial findings indicated lower mechanical strength and faster burn rate in these wafers",
+    "identified low density wafers from suspect production lots were forwarded by ng to arc for further analysis",
+    "naso met with odi for an update of its findings to date",
+    "october through november naso continued meeting with arc to review recovery part analysis findings and the results of replication testing performed by arc",
+    "naso initiated a special customer outreach to owners with vehicles known to contain inflators from specific production lots",
+    "month s january through february ng continued with validation efforts of its analysis findings",
+    "naso continued meeting with arc to review and complete open investigation action items",
+    "during this period arc acknowledged lower density propellant wafer production limited to certain lots however according to arc these wafers are expected to have minimal impact to deployment",
+    "naso met with ng to discuss findings to date",
+    "march through april the stil performed l tank deployment testing on inflators obtained from suspect production lots confirmed by arc",
+    "the stil s findings were shared with naso on",
+    "based on its investigation findings to date including the recent tank testing performed at the stil naso s north america safety decision authority nasda convened to review the complete findings and decided to conduct a safety recall of affected vehicles in the u s month s",
+    "based on updated information regarding remedy availability hyundai is amending the current remedy notification schedule",
+    "field counts as of the date of the decision there are no incidents crashes fires or injuries related to this condition in the u s market"
+   ],
+   "entries": 41,
+   "dup_entries": 1,
+   "claims": 10,
+   "wrong": 10,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V310-8416.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "on altec identified that on a unit in production equipped with epto that the emergency stop at the ground controls did not function to disable all hydraulic functions when activated",
+    "altec opened a root cause investigation to determine the cause of the issue",
+    "altec identified that the unit had been wired incorrectly and that the schematics on the affected unit had the incorrect wiring harness design",
+    "on after determining the cause of the issue a potential field action investigation was opened to determine whether risk to units in the field existed and to identify all units potentially affected by the harness design",
+    "on altec determined that an issue existed in units in the field and unit owners should be notified",
+    "no other warranty claims or field reports were identified",
+    "there have been no accidents injuries or deaths related to this issue"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V313-6868.pdf",
+   "filer": "keystone rv company",
+   "norm": [
+    "lci notified keystone rv that they have identified a potential concern involving shock bolts on the curt touring suspension system installed on specific lippert chassis",
+    "sporadic instances of improper torque have been identified",
+    "investigation opened to determine scope and range of units affected",
+    "warranty claims for shock bolts include claims claim created start date to claim created end date",
+    "keystone safety committee reviewed the information and concluded that the data reviewed indicated a unanimous vote for a voluntary recall",
+    "investigation concluded and scope completed"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V323-5712.pdf",
+   "filer": "wabash national corporation",
+   "norm": [
+    "wabash learned that a customer was cited for missing conspicuity material on the rear of the trailer",
+    "the concern was entered into wabash s quality system for review",
+    "wabash reviewed photographs from the customer and noted the absence of conspicuity tape across the width of the rear deck",
+    "wabash investigated warranty sales and manufacturing information and escalated the issue to the product safety committee to evaluate compliance with fmvss and the potential scope of the issue",
+    "based on the product safety committee s investigation wabash determined that the affected populations of trailers may not comply with fmvss s",
+    "there have been no reported injuries or accidents related to this issue"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V325-1775.pdf",
+   "filer": "general motors, llc",
+   "norm": [
+    "on a gm investigator submitted a report to gm s speak up for safety sufs program following a report from a dealer that a chevrolet silverado experienced a potential rupture of the right side roof rail airbag rrab while the vehicle was parked and unattended",
+    "photographs provided by the dealer show the end cap of the inflator is missing and the headliner and vehicle roof are damaged",
+    "gm is not aware of any other inflator ruptures associated with this inflator lot",
+    "on gm s safety field action decision authority sfada decided to conduct a safety recall of rrab containing inflators from the same supplier production lot d a as the silverado field incident",
+    "on gm become aware of a potential rupture of the left side rrab in a chevrolet silverado while the vehicle was parked and unattended",
+    "on gm s sfada decided to expand the prior safety recall to include vehicles built with rrabs containing inflators from supplier production lot c b",
+    "gm is not aware of any other inflator ruptures associated with this inflator lot"
+   ],
+   "entries": 7,
+   "dup_entries": 1,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V333-4875.pdf",
+   "filer": "coach and equipment mfg. corp.",
+   "norm": [
+    "the q straint company the equipment manufacturer issued a recall e for defective qrt wheelchair restraints",
+    "we received the recall notification letter",
+    "we as the vehicle manufacturer are required to issue a recall for the vehicles involved and started the recall process on"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V347-0355.pdf",
+   "filer": "forest river bus, llc",
+   "norm": [
+    "on forest river s office of corporate compliance was notified by q straint that they would be recalling certain retractor products",
+    "on research began into finding out which brands used q straints products within their defined dates of recall",
+    "on occ and the plant confirmed the vehicles and usage of the recalled components",
+    "on nhtsa reached out to forest river s office of corporate compliance about additional units in the recall",
+    "forest river responded that ongoing research was happening",
+    "on research concluded and forest river s office of corporate compliance was able to identify units that are being added to the recall",
+    "previous total amended total"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 3,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V349-0404.pdf",
+   "filer": "arboc specialty vehicles, llc",
+   "norm": [
+    "arboc was formally advised by q straint supplier of the suspect restraints that an equipment recall had been issued e due to some restraints distributed to arboc may not fully lock",
+    "arboc discussed the issue with q straint telephonically to get clarity on the check test method",
+    "arboc begins to confirm what buses may be affected by the suspect restraints",
+    "arboc holds a special safety committee meeting concurrence was provided to issue this recall"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V369-8635.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to incomplete software recall remedies was brought to ford s critical concern group ccrg for review",
+    "this issue was initially identified in a quality office forum where an audit was requested for software part numbers applied to vehicles remedied under a sample of field service actions fsas",
+    "initial review of three fsas revealed insufficient data to confirm correct software application across all fsas using the current field service tool known as fdrs",
+    "ccrg decided to conduct further investigation",
+    "in a cross functional team was formed to audit all software fsas that used the fdrs service tool with its first focus being on safety and compliance fsas",
+    "templates were created to track software lineage part numbers",
+    "on ford informed nhtsa of this concern the service tool data confirmed that the software state on the service tool at the time of installation matches the fsa software release for most vehicles",
+    "however there are vehicles that do not have a match between the software state on the service tool and the fsa software release",
+    "ford discussed with nhtsa its plan to address the mismatched vehicles",
+    "in the cross functional team created database records to store all software lineage part numbers for previously launched fsas",
+    "the team then began auditing the current software level for every vin repaired under several previously launched fsas",
+    "in during a comprehensive audit of software related fsas dating back to discrepancies were identified during the transition between the legacy field service tool known as ids and the new fdrs service tool",
+    "the audit revealed that implementation inconsistencies found in fdrs could also be present within the ids software as well as a significant lack of historical data",
+    "further investigation was deemed necessary",
+    "in a harvest program was approved to assess the success of remedies applied using the ids tool for programs administered during this transition period",
+    "results of this harvest program showed that in some fsas the intended remedy software may not have been successfully applied to all vehicles",
+    "on the matter was presented to the critical concern review group ccrg",
+    "the ccrg determined that several fsas that had a recall remedy implemented using the ids tool may have been closed without that remedy being installed",
+    "as a result an activity was initiated to verify the software levels of vehicles that previously received these fsa repairs",
+    "the vins included in this program are both vins confirmed to docusign envelope id ae f b c b a dc e contain the incorrect software and vins with a closed fsa but the software version cannot be confirmed due to gaps in the records",
+    "on ford s audit team confirmed that the software state matched the fsa software release in a subset of vehicles out of the total population of completed fsa s remedy repairs",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "on following an investigation into the s workflow ford discovered that the population for s did not include certain affected vins that fall outside of the us but are located in us federal territories",
+    "on ford s field review committee reviewed the concern and approved an amendment to the population of the field action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 25,
+   "dup_entries": 0,
+   "claims": 11,
+   "wrong": 8,
+   "accepted": 4,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-26V370-0555.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to incomplete software recall remedies was brought to ford s critical concern group ccrg for review",
+    "this issue was initially identified in a quality office forum where an audit was requested for software part numbers applied to vehicles remedied under a sample of field service actions fsas",
+    "initial review of three fsas revealed insufficient data to confirm correct software application across all fsas using the current field service tool known as fdrs",
+    "ccrg decided to conduct further investigation",
+    "in a cross functional team was formed to audit all software fsas that used the fdrs service tool with its first focus being on safety and compliance fsas",
+    "templates were created to track software lineage part numbers",
+    "on ford informed nhtsa of this concern the service tool data confirmed that the software state on the service tool at the time of installation matches the fsa software release for most vehicles",
+    "however there are vehicles that do not have a match between the software state on the service tool and the fsa software release",
+    "ford discussed with nhtsa its plan to address the mismatched vehicles",
+    "in the cross functional team created database records to store all software lineage part numbers for previously launched fsas",
+    "the team then began auditing the current software level for every vin repaired under several previously launched fsas",
+    "in during a comprehensive audit of software related fsas dating back to discrepancies were identified during the transition between the legacy field service tool known as ids and the new fdrs service tool",
+    "the audit revealed that implementation inconsistencies found in fdrs could also be present within the ids software as well as a significant lack of historical data",
+    "further investigation was deemed necessary",
+    "in a harvest program was approved to assess the success of remedies applied using the ids tool for programs administered during this transition period",
+    "results of this harvest program showed that in some fsas the intended remedy software may not have been successfully applied to all vehicles",
+    "on the matter was presented to the critical concern review group ccrg",
+    "the ccrg determined that several fsas that had a recall remedy implemented using the ids tool may have been closed without that remedy being installed",
+    "as a result an activity was initiated to verify the software levels of vehicles that previously received these fsa repairs",
+    "the vins included in this program are both vins confirmed to contain the incorrect software and vins with a closed fsa but the software version cannot be confirmed due to gaps in the records",
+    "on ford s audit team confirmed that the software state matched the fsa software release in a subset of vehicles out of the total population of completed fsa c remedy repairs",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 23,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 6,
+   "accepted": 5,
+   "accepted_wrong": 5
+  },
+  {
+   "file": "RCLRPT-26V374-8779.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to incomplete software recall remedies was brought to ford s critical concern group ccrg for review",
+    "this issue was initially identified in a quality office forum where an audit was requested for software part numbers applied to vehicles remedied under a sample of field service actions fsas",
+    "initial review of three fsas revealed insufficient data to confirm correct software application across all fsas using the current field service tool known as fdrs",
+    "ccrg decided to conduct further investigation",
+    "in a cross functional team was formed to audit all software fsas that used the fdrs service tool with its first focus being on safety and compliance fsas",
+    "templates were created to track software lineage part numbers",
+    "on ford informed nhtsa of this concern the service tool data confirmed that the software state on the service tool at the time of installation matches the fsa software release for most vehicles",
+    "however there are vehicles that do not have a match between the software state on the service tool and the fsa software release",
+    "ford discussed with nhtsa its plan to address the mismatched vehicles",
+    "in the cross functional team created database records to store all software lineage part numbers for previously launched fsas",
+    "the team then began auditing the current software level for every vin repaired under several previously launched fsas",
+    "in during a comprehensive audit of software related fsas dating back to discrepancies were identified during the transition between the legacy field service tool known as ids and the new fdrs service tool",
+    "the audit revealed that implementation inconsistencies found in fdrs could also be present within the ids software as well as a significant lack of historical data",
+    "further investigation was deemed necessary",
+    "in a harvest program was approved to assess the success of remedies applied using the ids tool for programs administered during this transition period",
+    "results of this harvest program showed that in some fsas the intended remedy software may not have been successfully applied to all vehicles",
+    "on the matter was presented to the critical concern review group ccrg",
+    "the ccrg determined that several fsas that had a recall remedy implemented using the ids tool may have been closed without that remedy being installed",
+    "as a result an activity was initiated to verify the software levels of vehicles that previously received these fsa repairs",
+    "the vins included in this program are both vins confirmed to contain the incorrect software and vins with a closed fsa but the software version cannot be confirmed due to gaps in the records",
+    "on ford s audit team confirmed that the software state matched the fsa software release in a subset of vehicles out of the total population of completed fsa c remedy repairs",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 23,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 7,
+   "accepted": 4,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-26V395-0079.pdf",
+   "filer": "farber specialty vehicles",
+   "norm": [
+    "on or about farber specialty vehicles was contacted by weldon a division of akron brass and notified that uv touch screens may contain a defect that"
+   ],
+   "entries": 1,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V397-4460.pdf",
+   "filer": "indian motorcycle company",
+   "norm": [
+    "on in an audit for information documentation imc found a discrepancy on the vin label for indian chief vintage models",
+    "an update was made to the manufacturing documentation system updating the vin labels",
+    "vehicles built on or after were produced with corrected vin labels and in conjunction imc started an investigation",
+    "the imc executive review committee reviewed and agreed upon a violation of"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 5,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V405-2481.pdf",
+   "filer": "harbinger motors inc.",
+   "norm": [
+    "steering gear mounting bolts found loose on two vehicles during initial vehicle validation testing one reported with loose steering feel and one reported with poor alignment",
+    "to address the above issue prw factory product rework was issued to apply threadlocker to all vehicles already produced",
+    "a clean point was established as of vin zn s a sg for the production line on the clean point",
+    "a customer vehicle experienced steering looseness and initial investigation found the cause to be the steering gear box fasteners had become loose",
+    "an internal investigation was initiated establishing that the threadlocker had not been applied despite documentation to the contrary in the prw record and the picture requirement in the prw work instruction was modified for clarity",
+    "further investigation found that the prw instructions called for photographic evidence of the threadlocker and that the documentation for the customer truck at issue was not consistent with the instructions and the record was inconclusive",
+    "further study of the prw records showed that the majority of the vins listed in the prw had either no picture or a picture inconsistent with the instructions and were therefore inconclusive",
+    "harbinger s vehicle safety committee met on and determined this condition could pose an unreasonable risk to public safety in violation of the safety act and that a part recall should commence to appropriately address the condition",
+    "subsequent to the original part submission three vehicles outside the initially identified population presented related conditions",
+    "although none of these vehicles had received the initial recall remedy harbinger elected out of an abundance of caution to expand the population of potentially affected vehicles and to revise the remedy",
+    "customer brought a truck to the dealer for an unrelated repair during inspection the dealer found a missing ercb bolt",
+    "the truck was repaired",
+    "customer complained of steering play and dealer inspection of the vehicle found missing ercb bolts",
+    "the truck was repaired",
+    "customer complained of alignment issues and dealer inspection found missing ercb bolts",
+    "the truck was repaired",
+    "harbinger engineering evaluated whether the cause of the missing ercb bolts was the same underlying condition as seen in the initial recalled vehicles and determined that it was likely the result of the same condition",
+    "to better repair the condition harbinger developed and validated a new remedy that increases the friction between the ercb and the mounting member and changes the torque procedure to torque to angle for higher accuracy",
+    "harbinger s technical review committee met on and determined that it would proceed with an amendment to the current part recall to better address the condition",
+    "harbinger is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 20,
+   "dup_entries": 2,
+   "claims": 12,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V407-5609.pdf",
+   "filer": "daimler trucks north america, llc",
+   "norm": [
+    "following feedback from a dealer about a potential issue with the entrance door on dtna initiated a review of the issue",
+    "on vehicles at the manufacturing facility were placed in containment as a precaution",
+    "from dtna engineering teams evaluated door system performance and confirmed the condition described by the dealer could be reproduced under defined operating sequences",
+    "from dtna conducted warranty claims and field report analysis which identified some potentially related reports",
+    "through continued analysis engineering determined the condition was caused by improper timer relay behavior and identified a design incompatibility between a relay requiring a momentary input signal and a maintained contact door switch",
+    "on dtna determined that a defect related to motor vehicle safety may exist",
+    "dtna is aware of warranty claims and field report which may be related with this issue",
+    "dtna is not aware of any reports of injury or death potentially related to this issue as of the date of this recall",
+    "on dtna updated its defect information report to include a description of the recall remedy",
+    "on dtna further amended the defect information report by updating the description of the recall remedy listing the planned interim owner notification dates and updating the planned final owner notification dates"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V409-2533.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "in altec identified a potential issue with a weight study that was not completed correctly",
+    "the incorrect weight study allowed the unit to be shipped without the correct reduced pole rack capacities",
+    "a root cause investigation was opened",
+    "during the root cause analysis altec identified that additional units could be affected by incorrect weight studies",
+    "on a potential field action investigation was initiated to identify field units and the potential risk to owners if the reduced pole rack capacity was not communicated correctly",
+    "after identifying the specific jobs that could have been shipped with incorrect ratings on altec determined that a field action was needed to communicate the risk that while using the pole rack at full capacity the vertical center of gravity could exceed the recommended limit on the affected units",
+    "no other warranty claims or field reports were identified",
+    "there have been no accidents injuries or deaths related to this issue"
+   ],
+   "entries": 8,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 0,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V413-6519.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my jeep grand cherokee grand cherokee l wagoneer and wagoneer l vehicles that may have been built with shifters modules that experience a loss of communication with the prnd display module and not indicating the transmission shift positions",
+    "from through fca us tsrc reviewed warranty data field records and customer assistance records to understand potential customer consequence and vehicle scope",
+    "from through fca us tsrc held regular meetings with fca us engineering manufacturing and supplier operations to understand all potential failure modes related to the shifter module display performance",
+    "on fca us tsrc organization recognized that a vehicle build issue existed on certain vehicles related to a shifter module display not indicating the gear positions and the relationship to each other potentially resulting in a noncompliance with fmvss no",
+    "on fca us determined through the vehicle regulations committee that a noncompliance to federal motor vehicle safety standard no exists in certain vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 3,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V415-6798.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to loss of acoustic vehicle alerting system avas also referred to as pedestrian alert system pas function on vehicles that had previously received the remedy for ford s safety recall sa was brought to ford s critical concern review group for review",
+    "safety recall sa addressed the loss of pas functionality due to a software related defect within the digital signal processor dsp or the audio control module acm of certain hybrid electric vehicles",
+    "the remedy for sa was a software update that ford made available through dealer service on",
+    "on ccrg requested a pause in the deployment of this service remedy due to post recall complaints for the loss of pas functionality",
+    "in these complaints many drivers reported observing a message on the instrument panel cluster stating pedestrian sounder fault",
+    "in and ccrg analyzed warranty claims and began its technical investigation",
+    "first ccrg binned the post recall complaints against the different audio architectures",
+    "in total for the hevs there are three different audio systems the base audio system the channel dsp system and the channel dsp system",
+    "the team identified a potential software issue within the channel dsp system on nautilus hev vehicles that can cause a loss of pas function",
+    "however this causal factor accounted for a portion of the warranty claims associated with this topic and did not fully explain why there was a loss of pas functionality after receiving the sa remedy",
+    "ccrg continued its investigation",
+    "in and ccrg identified an additional concern that appears to affect all audio systems on the nautilus hev and explorer hev vehicle variants and leads to intermittent loss of pas function",
+    "while the precise cause of this condition remains under investigation ccrg believes that the condition appears to be related to vehicles detecting a loss of communication between the audio control module acm and the accessory protocol interface module apim",
+    "when this occurs two specific diagnostic trouble codes dtcs are recorded",
+    "based on a review of connected vehicle data and customer interviews ccrg believes drivers may randomly lose pas function for a key cycle",
+    "it is not known at this time if the loss of pas function is due to a communication loss occurring between the acm and the apim or if there is an error in the detection and response strategy that results in dtcs and subsequent loss of pas function",
+    "on ford s field review committee reviewed the concerns and approved a field action however the remedy was not fully described as more root cause investigation was needed",
+    "by late june and ford s audio and ivi teams determined that the additional pas system concern is related to a transient interaction between the acm and the accessory protocol interface module apim rather than a persistent hardware defect",
+    "analysis of can message history on test vehicles led to the understanding that dtcs typically occur during initialization of the audio bus at vehicle start",
+    "additional analysis of retail vehicle connected data found that most audio system faults take place while the vehicle is in park",
+    "in summary this is a momentary condition during vehicle startup usually while the vehicle is in park and results in unavailability of the pas function for the remainder of the key cycle",
+    "on ford s field review committee reviewed the proposed remedy and approved an amendment to the s field action",
+    "as of ford is aware of warranty claims on model year nautilus hev vehicles and warranty claims on model year explorer hev vehicles alleging post sa pas issues",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 24,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 3,
+   "accepted": 4,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V416-1095.pdf",
+   "filer": "jayco, inc.",
+   "norm": [
+    "jayco engineering informed compliance via email of a situation where the front dinette securement was not installed",
+    "engineering provided a preliminary scope of and a preliminary instruction",
+    "the incident was reviewed by the warranty incident review committee wirc",
+    "the members of wirc decided to elevate it to the corrective and preventive action committee cpac due to failing to meet fmvss code seating systems",
+    "the corrective and preventive action committee cpac met to discuss this incident and elevated it to the safety steering committee ssc",
+    "the safety steering committee ssc met and voted in favor of proceeding with a noncompliance recall for failure to comply with the requirements of cfr seating systems",
+    "there have been one complaint and no warranty claims associated with this recall"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V419-3539.pdf",
+   "filer": "nissan north america, inc.",
+   "norm": [
+    "on during a routine end of line vehicle quality confirmation check at nissan s smyrna tennessee assembly plant a technician identified an issue on a model year nissan rogue vehicle",
+    "when shifting the transmission from park p to neutral n the malfunction indicator lamp mil illuminated diagnostic trouble code dtc p transmission range sensor circuit malfunction was stored and a loss of drivability occurred",
+    "the technician noted that the condition was resolved after a subsequent ignition cycle",
+    "nissan along with the transmission supplier jatco initiated an investigation",
+    "the supplier conducted an initial teardown and evaluation of the suspect control valve assembly",
+    "initial findings indicated a lack of electrical contact between terminal block sw within the inhibitor switch of the transmission control valve assembly",
+    "on nissan received a field warranty report describing a similar condition",
+    "nissan initiated a dealership investigation to evaluate the vehicle to duplicate the concern and to collect data where dtcs p and p were confirmed",
+    "during vehicle evaluation with the engine running shifting between reverse r and drive d initially showed normal transmission engagement",
+    "however after returning the vehicle to park p and attempting to re select neutral n the combination meter displayed multiple warning messages to include service cvt system warning and see owner s manual",
+    "the mil illuminated and the vehicle experienced a loss of transmission engagement in all gear positions",
+    "the subject part was collected and returned to the supplier for analysis",
+    "nissan initiated a targeted warranty return parts collection",
+    "throughout this month the supplier collected and analyzed a total of five failed parts returned from the field and three failed parts returned from the plant",
+    "jatco determined that all verified failed components were manufactured from",
+    "a review of the sub supplier s manufacturing process for the inhibitor switch found that a locator pin may have broken on the production line on",
+    "a broken locator pin in service at the riveting stage may contribute to misalignment and result in a terminal height variation within the inhibitor switch housing",
+    "this condition may contribute to the electrical continuity concern",
+    "in response part sorting and yard audits were initiated based on the affected date code",
+    "jatco conducted traceability analysis to identify control valve assemblies containing suspect inhibitor switches produced and link them to specific continuously variable transmissions cvts",
+    "the supplier part audit and smyrna plant vehicle audit identified suspect parts vehicles and cvts at nissan north america smyrna plant and control valve assemblies at jatco mexico",
+    "at the nissan initiated testing and evaluation of suspect parts including electrical resistance checks teardown inspections motor bench testing and vehicle dynamic testing",
+    "technical analysis confirmed the terminal misalignment of the sw slider inside the inhibitor switch resulting in electrical discontinuity",
+    "the subject concern was successfully replicated during both the motor bench and dynamic vehicle testing",
+    "nissan conducted a horizontal confirmation audit to determine the scope of potentially affected vehicles including export markets and other vehicle lines",
+    "the investigation confirmed that jatco mexico was exclusive in utilizing the affected inhibitor switch manufactured at valeo thailand",
+    "while the kicks and sentra vehicle models utilize the same transmission assembly line production records verified that no units for those specific models were manufactured during the identified manufacturing window",
+    "during this time the tier supplier confirmed that a total of inhibitor switches were made during the identified manufacturing window",
+    "traceability data confirmed that the first vehicle built using a transmission made during the identified manufacturing window occurred on",
+    "concurrently nissan conducted an internal safety and compliance evaluation of the subject condition",
+    "nissan identified certain fmvss requirements related to illumination of the gear selection that may be impacted by this condition",
+    "nissan decided to conduct a voluntary non compliance recall on vehicles equipped with the subject control valve assembly in the u s market",
+    "nissan has identified forty eight technical reports and one hundred and six warranty claims for this issue received between and",
+    "nissan is not aware of any reports of accidents or injuries related to this issue"
+   ],
+   "entries": 34,
+   "dup_entries": 0,
+   "claims": 16,
+   "wrong": 2,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V420-2030.pdf",
+   "filer": "teko, inc.",
+   "norm": [
+    "on during an internal compliance review teko identified a potential issue involving the fmvss no requirements and began reviewing production assembly and vehicle configuration records for the potentially affected vehicle population",
+    "on based on that review teko confirmed that certain vehicles may have been delivered for sale without an installed avas and evaluated potential corrective and preventive actions",
+    "on following approval by executive management teko determined that a noncompliance existed and decided to conduct a voluntary recall to provide and install the avas on the affected vehicles"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V421-6272.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my ram vehicles with premium headlamp assemblies lm that may experience intermittent parking lamps and drls",
+    "from fca us tsrc met with fca us engineering to understand root cause customer consequence and vehicle scope",
+    "from fca us tsrc conducted an analysis of field records and customer assistance records to understand potential customer consequences",
+    "on fca us tsrc organization recognized that a vehicle build issue existed on certain vehicles related to premium headlamp assemblies potentially resulting in a noncompliance with fmvss no",
+    "on fca us determined through the vehicle regulations committee that a noncompliance to federal motor vehicle safety standard no exists in certain vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V428-5975.pdf",
+   "filer": "crestline coach ltd.",
+   "norm": [
+    "a production technician brought it to the attention of the engineering team that a bolt was protruding from the underside of the floor that is above the fuel tank",
+    "an investigation occurred and determined that the bolt may contact the fuel line",
+    "an analysis of all our ambulance models was conducted and it was determined that only this model was affected"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V436-4136.pdf",
+   "filer": "subaru of america, inc.",
+   "norm": [
+    "subaru was notified by nhtsa of a potential issue relating to the stated rear axle gawr on the part certification label",
+    "subaru met with nhtsa staff in order to discuss the details of this concern",
+    "subaru conducted an investigation of the calculated gawr ratings for all subaru vehicles dating back to",
+    "subaru decided to conduct a non compliance recall",
+    "subaru has not received any technical reports in the u s market and is not aware of any crashes or injuries resulting from this condition"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 4,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V449-4273.pdf",
+   "filer": "wabash national corporation",
+   "norm": [
+    "on wabash warranty received a recall notice from hiab advising that four liftgates were delivered to wabash through and",
+    "a search was completed for all vehicles equipped with the effected models of liftgates all four were matched to vehicles that were delivered to customers between and"
+   ],
+   "entries": 2,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V455-3228.pdf",
+   "filer": "nissan north america, inc.",
+   "norm": [
+    "in during the development phase of a new vehicle model nissan identified a discrepancy between the regulatory language specified in fmvss and the corresponding nhtsa test procedure",
+    "nissan initiated an investigation into this potential concern",
+    "during the summer of an initial review indicated that nissan s engineering standards defined requirements based on the original regulatory statement",
+    "due to ambiguity in the standard the gross axle weight rating gawr value was calculated based on only the maximum tire pressure as opposed to both the maximum tire pressure and the manufacturer recommended tire pressure listed on the placard",
+    "by nissan initiated internal discussions regarding the interpretation of the standard fmvss and how it relates to the calculation of the gawr",
+    "in early nissan initiated a comprehensive regulatory assessment to evaluate the potential risk of the calculated gawr",
+    "additionally a production countermeasure consisting of a revision to the gawr values printed on the vehicle certification was implemented and a formal label correction notification was issued to the plant",
+    "on the revised label countermeasure was successfully adopted into current vehicle production",
+    "nissan initiated a horizontal evaluation to identify the scope of potentially affected vehicles",
+    "in nissan conducted a remedy feasibility study to evaluate the performance adhesion and long term quality of utilizing an overlay label as a field remedy",
+    "additionally by the end of june nissan concluded the horizontal confirmation audit and confirmed the scope of potentially affected vehicles including other vehicle model years and export markets",
+    "nissan decided to conduct a voluntary recall campaign to remedy the potentially affected vehicles in the u s market",
+    "nissan is not aware of any warranty claims accident or injuries related to the subject condition"
+   ],
+   "entries": 13,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 5,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V474-5478.pdf",
+   "filer": "the heil co.",
+   "norm": [
+    "the heil revamp product is an electric sideloading body design that can be incorporated onto an electric diesel or gas powered chassis",
+    "heil directly monitors and provides exclusive service for the limited number of revamp electric sideloaders in the field",
+    "in heil service technicians identified the potential for moisture in the control panel to be the root cause of performance interruption and further investigation began",
+    "the high voltage cabinet is designed to meet an ip protection rating which provides a high level of protection against dust and water exposure",
+    "however under conditions of prolonged and continuous rainfall water can gradually bypass the door sealing system and accumulate inside the cabinet",
+    "water intrusion may also occur during high pressure washing activities at specific interface locations",
+    "once confirmed engineering began to address the design and developed an additional sealed compartment that reinforces against moisture ingress",
+    "this design was prototyped and tested in",
+    "furthermore the consensus was reached that this should be retroactive as opposed to a running change at the end of june triggering this recall"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V478-7478.pdf",
+   "filer": "bmw of north america, llc",
+   "norm": [
+    "in bmw became aware of an increasing number of ignition locks on s rr models replaced under warranty",
+    "an engineering investigation was initiated",
+    "field parts were requested to be returned for analysis",
+    "at that time the rate of occurrence in the field was less than",
+    "between may and november parts were returned and analyzed",
+    "preliminary information suggested that vibration induced wear on the contact pin within the ignition lock could occur",
+    "however further analysis was necessary to understand specific conditions in which vibration could play a role and if so the specific parameters or characteristics involved with vibration",
+    "further investigations were initiated as a systematic pattern was not yet clear from an examination of the field cases",
+    "among other factors the possible influence of decoupling of the fork bridge was analyzed using nvh profiles and comparing these profiles with s rr model updates that had occurred since",
+    "additional evaluations involved comparing these analyses with other similar four cylinder models",
+    "the ongoing field observation indicated that the rate of occurrence remained at less than",
+    "between and the investigation continued and was focused on analysis of the wear process of the contact pin",
+    "in a detailed analysis involving field data and statistical forecasting was initiated",
+    "by june the rate of occurrence in the field was less than approximately which indicated that as mileage increased the rate of occurrence could also increase",
+    "on bmw decided to conduct a voluntary safety recall",
+    "bmw has not received any reports nor is bmw otherwise aware of any accidents or injuries related to this issue"
+   ],
+   "entries": 16,
+   "dup_entries": 0,
+   "claims": 7,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V496-1031.pdf",
+   "filer": "general motors, llc",
+   "norm": [
+    "on a gm engineer submitted a report through gm s speak up for safety sufs program after the wheel supplier notified gm that certain steel wheels may have been shipped to gm s assembly plant without meeting gm s internal fatigue testing requirements",
+    "gm opened a product investigation on",
+    "during continuous conformance fatigue testing the supplier found hairline cracks and traced the condition to the piercing coining process that forms the outer ring of the vent holes in the wheel disc",
+    "these hairline cracks could propagate over time and potentially lead to disc separation",
+    "gm s investigation identified silverado ev and sierra ev vehicles that may have received one or more wheels from the supplier s suspect lots",
+    "gm is not aware of any field complaints or incidents associated with this condition",
+    "on gm s safety field action decision authority sfada decided to conduct a safety recall"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V501-8521.pdf",
+   "filer": "autocar, llc",
+   "norm": [
+    "during a routine inspection autocar personnel identified a unit with missing fasteners at the abs ecu",
+    "the unit was corrected and an investigation initiated",
+    "through the investigation continued",
+    "all relevant information was presented to autocar s management team and out of an abundance of caution autocar decided to perform a voluntary safety recall for all suspect units",
+    "we have no known cases claims or complaints"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V503-1662.pdf",
+   "filer": "forest river, inc.",
+   "norm": [
+    "on forest river s office of corporate compliance occ was notified that vehicles may have been manufactured without proper overcurrent protection at the house battery that power multiple mini breakers feeding multiple v components",
+    "on occ and the plant discovered that some vehicles may have been shipped",
+    "on forest rivers corporate committee voted to recall"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V510-6191.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "in fca us notified stellantis europe s p a stellantis europe of a potential issue related to rear seat belt retractor malfunction concerning my dodge hornet and alfa romeo tonale",
+    "on stellantis europe opened an investigation related to dodge hornet and alfa romeo tonale rear seat belt retractor malfunction",
+    "from stellantis europe engineering reviewed information related to those claims and looked into the previous topics known in europe",
+    "on stellantis europe s p a organization recognized that the defect may occur on particular conditions due to a weakness in the design",
+    "as of fca us is aware of customer assistance records warranty claims field reports and no other service records potentially relating to this issue",
+    "as of fca us is not aware of any accidents or injuries potentially related to this issue for all markets",
+    "on stellantis europe determined through the vehicle regulations committee that a safety defect exists in certain vehicles"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 1,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V517-1639.pdf",
+   "filer": "us truck body co., inc",
+   "norm": [
+    "u s truck body has no knowledge of the events leading up to the defect decision or test data",
+    "truck body was advised on via email by waltco liftgates haib usa inc that the hydraulic liftgates were defective",
+    "at that time all liftgates purchased by u s truck body had been mounted on truck bodies and shipped as directed by our customer by that date"
+   ],
+   "entries": 3,
+   "dup_entries": 0,
+   "claims": 1,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V518-5347.pdf",
+   "filer": "jayco, inc.",
+   "norm": [
+    "engineering notified compliance that production found out on that they need to wire the auto level controller differently now that production is no longer using bmpro",
+    "the incident was reviewed by the warranty incident review committee wirc",
+    "the members of wirc decided to elevate it to the corrective and preventive action committee cpac",
+    "during the corrective and preventive action committee cpac meeting engineering informed the committee that root cause analysis would begin",
+    "corrective and preventive action committee cpac met and decided that additional testing needs to be conducted",
+    "corrective and preventive action committee cpac met and determined that since the wire was omitted for the stop lamp lockout for the auto level system there is a potential safety risk because the retail owner could use the phone app to activate the jacks during travel",
+    "cpac decided to submit the incident to the safety steering committee ssc for review and a vote",
+    "an email vote was conducted by the safety steering committee ssc and voted in favor of proceeding with a safety recall due to the possibility that the jacks could be activated during transit by the phone app",
+    "jayco inc is not aware of any warranty claims or complaints regarding this situation"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 5,
+   "accepted": 5,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-26V520-6158.pdf",
+   "filer": "blue bird body company",
+   "norm": [
+    "blue bird received field complaints where bus units experienced thermal stress of the c zone body harness",
+    "blue bird began an in depth review of the installation of the v power wire on the c and d zones",
+    "blue bird s investigation revealed that the power wire was rubbing on bus component edges over time resulting in abrasion",
+    "blue bird further ruled out the risk of a thermal event as the c and d zone harnesses are contained within and around non combustible materials",
+    "in the event of a short all sparks would be contained",
+    "blue bird s safety committee determined that this issue affects safety critical components deeming it a safety recall",
+    "blue bird submitted a defect report",
+    "blue bird is aware of warranty claims submitted between and",
+    "blue bird is not aware of any injury or death related to this issue"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 6,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V521-9708.pdf",
+   "filer": "marion body works inc.",
+   "norm": [
+    "weldon an akron brass company brand filed a part recall resulting in nhtsa e regarding the same enovation controls touch screen user interface as noticed here",
+    "hale products is one of the weldon customers of the same enovation controls screen",
+    "hale products inc tested to determine that the same screen issues apply to hale products that utilize different firmware which could have impacted or prevented the issue",
+    "based on test results and weldon recall hale started a draft part notice nhtsa portal",
+    "may hale researched the systems shipped that used the effected display and the qty affected and submitted the part recall",
+    "marion body works was notified that two trucks that we built had components affected by this recall installed on them",
+    "we identified which units those were and began the process of submitting the recall so we can notify our customers of the defect on their trucks"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V527-2982.pdf",
+   "filer": "jaguar land rover north america, llc",
+   "norm": [
+    "during the course of repairs under prior safety recalls d d n a concern was raised that the replacement front suspension knuckle had been difficult to fit onto a small number of vehicles",
+    "on inspection of the engineering release data it was revealed that the as published repair procedure did not specify the correct replacement part for range rover sv vehicles",
+    "on the issue was referred to jlr s product safety and compliance committee pscc for review where it was concluded that as there was no vehicle sign off data assuring the quality and performance of the vehicle with the incorrect suspension knuckle specification fitted the matter should be escalated to the pscc decision forum",
+    "on the pscc decision forum reviewed the matter and requested a safety recall be launched to remedy the incorrectly repaired vehicles",
+    "jlr has not received any claims or field reports in the usa related to this issue"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 2,
+   "wrong": 1,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V528-8235.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on fca us llc fca us filed nhtsa recall id v y for my dodge durango for rear spoilers that may detach from the vehicle",
+    "the population of y was determined based on engineering change and vehicle production records available at the time of recall decision",
+    "on fca us filed nhtsa recall id v a for my dodge durango for rear spoilers that may detach from the vehicle",
+    "the population of a was determined based on engineering change and vehicle production records available at the time of recall decision",
+    "on the fca us technical safety and regulatory compliance tsrc organization opened an investigation due to field data indicating potential rear spoiler detachments after y or a recall remedies were completed",
+    "from through fca us tsrc reviewed field data and met with engineering to understand the part design and change history",
+    "as of fca us is aware of customer assistance records warranty claims and other service records potentially relating to this issue for all markets with dates of receipt ranging from",
+    "as of fca us is not aware of any accidents or injuries potentially related to this issue for all markets",
+    "on fca us determined through the vehicle regulations committee that a safety defect exists in certain vehicles"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V529-9405.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my jeep grand cherokee and grand cherokee l vehicles with a software issue which may disable windshield wiper functionality",
+    "from fca us tsrc met with fca us engineering and manufacturing to review the issue understand the failure mode and to determine the suspect population",
+    "as of fca us is aware of customer assistance records warranty claims field reports and no other service records potentially relating to this issue for all markets with dates of receipt ranging from to",
+    "as of fca us is not aware of any accidents or injuries potentially related to this issue for all markets",
+    "on fca us determined through the vehicle regulations committee that a safety defect exists in certain vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V531-6260.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into a potential issue related to a loss of rearview image display on some my ram promaster promaster ev jeep compass gladiator wrangler grand cherokee grand cherokee l grand wagoneer grand wagoneer l cherokee and my chrysler pacifica pacifica phev voyager dodge charger vehicles",
+    "during and fca us tsrc and fca us engineering reviewed warranty data field records vehicle production records and customer assistance records to understand potential customer consequence",
+    "on fca us tsrc organization recognized an issue existed on certain vehicles related to the rearview image not being displayed potentially resulting in a noncompliance with fmvss no",
+    "on fca us determined through the vehicle regulations committee that a noncompliance to fmvss no exists in certain vehicles"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V535-7741.pdf",
+   "filer": "the heil co.",
+   "norm": [
+    "in heil learned that a ladder mounting bracket may have been assembled with a bolt longer than specified in one leg of the ladder support structure on a customer unit",
+    "the longer bolt reduced the designed clearance between the bolt and an adjacent cng cylinder",
+    "no evidence of contact or interference with the cng cylinder on that customer s unit was identified at that time however the heil co initiated an investigation to evaluate the potential for cylinder to bolt contact",
+    "between february and the heil co removed and inspected cng cylinders from fourteen customer vehicles equipped with the same ladder configuration",
+    "inspection identified surface blemishes on seven cylinders in an area corresponding to the location of the ladder mounting bolt",
+    "measurements of the observed blemishes were evaluated against the cylinder manufacturer s damage assessment criteria and were determined to be within repairable limits",
+    "the heil co continued its investigation to determine the mechanism by which the observed blemishes could occur",
+    "the investigation considered both original vehicle assembly and subsequent service activities",
+    "the investigation determined that installation of an incorrect bolt at one particular location during vehicle assembly or during subsequent service and inspection activities could reduce the intended clearance between the ladder structure and the cylinder",
+    "the investigation continued through july and",
+    "based on the investigation findings the heil co concluded that an incorrect bolt could potentially be installed in the affected location and could reduce the designed clearance to the adjacent cng cylinder creating the potential for cylinder contact and damage",
+    "to eliminate the possibility of incorrect bolt installation at this location the heil co implemented a design change on removing the ladder support leg containing the subject bolt",
+    "on the heil co determined that the condition described above constituted a safety related defect and decided to conduct a voluntary safety recall",
+    "with the exception of the vehicles inspected as described above there have been no other warranty claims customer complaints or field reports on this issue"
+   ],
+   "entries": 14,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V541-1703.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "on during a bendix programming audit conducted by the chassis team altec identified completed vehicles that had not received the required bendix programming following installation",
+    "altec initiated an investigation to determine whether other complete vehicles were affected",
+    "on the investigation identified complete vehicles within the affected population",
+    "on a potential field action investigation was opened to review the scope of the issue",
+    "on after reviewing the potential field action investigation results altec approved the field action",
+    "there were no warranty claims or field reports identified",
+    "there have been no accidents injuries or deaths related to this issue"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 3,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V552-4130.pdf",
+   "filer": "jayco, inc.",
+   "norm": [
+    "production discovered the axle rating on the certification labels was pounds but the axles are actually rated at pounds",
+    "engineering provided compliance with a scope of units and reported a data entry error for the axle rating",
+    "an incident was generated for review by wirc",
+    "the incident was reviewed by the warranty incident review committee wirc",
+    "the members of wirc decided to elevate it to the corrective and preventive action committee cpac due to a non compliance to crf part certification",
+    "the corrective and preventive action committee cpac met to review the incident and decided to elevate the matter to the safety steering committee ssc",
+    "safety steering committee ssc met and voted in favor of proceeding with a noncompliance recall for failing to comply with requirement of the cfr part certification"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 4,
+   "accepted": 5,
+   "accepted_wrong": 4
+  },
+  {
+   "file": "RCLRPT-26V553-8526.pdf",
+   "filer": "magic tilt trailers, inc.",
+   "norm": [
+    "on magic tilt trailers received notice from nhtsa of a voq concerning a winch post issue on a trailer",
+    "on further investigation identified two additional warranty claims bringing the total number of reports to three",
+    "the additional claims were reported on and",
+    "review identified a possible safety issue involving the weld between the winch post and the base plate on certain aluminum pwc trailers manufactured between and",
+    "magic tilt immediately reviewed the applicable records and identified the trailers that could potentially be affected",
+    "in magic tilt initiated a safety recall"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 2,
+   "accepted": 2,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V554-9708.pdf",
+   "filer": "jayco, inc.",
+   "norm": [
+    "jayco motorized group informed compliance via email of a situation where the label was incorrect",
+    "compliance reached out to the jayco chassis group to determine scope",
+    "the incident was reviewed by the warranty incident review committee wirc",
+    "the members of wirc decided to elevate it to the corrective and preventive action committee cpac due to a potential safety issue",
+    "the corrective and preventive action committee cpac met to discuss this incident and decided more information needed to be collected",
+    "the corrective and preventive action committee cpac met to discuss this incident and elevated it to the safety steering committee due to understanding the scope and the issue",
+    "the safety steering committee ssc voted in favor of proceeding with a noncompliance recall for failing to comply with requirement of the cfr part section wheels and rims other than passenger cars jayco inc is not aware of any warranty claims or complaints regarding this situation"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 3,
+   "accepted": 5,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-26V558-7885.pdf",
+   "filer": "tesla, inc.",
+   "norm": [
+    "on tesla personnel flagged a vehicle for a handling and noise concern at its fremont assembly factory",
+    "upon inspection at end of line tesla s production quality team discovered a missing fastener at the lateral link to sub frame attachment",
+    "on tesla initiated a vehicle containment hold and began investigating the issue",
+    "on after reviewing production records tesla s production quality team identified the incorrect torque recovery was completed for the vehicle in question",
+    "on a programmable logic controller plc control which assured position control for a recovery torque completion tool was inadvertently deactivated eliminating process control for assuring the correct fastener was torqued",
+    "from tesla reviewed production torque records and video footage as well as vehicle test and repair records to further assess vehicle production between and",
+    "on tesla completed their investigation of all production records and affected vehicle population",
+    "on tesla made a determination to voluntarily recall the affected vehicles",
+    "as of tesla has identified warranty claims or field reports that are related to or may be related to this topic",
+    "tesla is not aware of any crashes injuries or deaths related to this topic"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 3,
+   "accepted": 7,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V561-7630.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my chrysler pacifica pacifica phev and voyager vehicles that may have a loss of the brake pedal position sensor function",
+    "from fca us tsrc met with fca us engineering to understand potential root cause customer consequence and vehicle scope",
+    "from fca us tsrc conducted analysis of additional field records and customer assistance records to verify affected components and vehicle scope",
+    "on fca us tsrc organization recognized that a vehicle build issue existed on certain vehicles related to the brake pedal position sensor potentially resulting in a noncompliance with fmvss no",
+    "on fca us determined through the vehicle regulations committee that a noncompliance to a federal motor vehicle safety standard potentially exists in certain vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V563-6702.pdf",
+   "filer": "forest river, inc.",
+   "norm": [
+    "on forest river s corporate pdi was performing an inspection of a unit and found the concern",
+    "on forest river s corporate standards manager went to the plant to look into the concern and inspect units on hand",
+    "on forest river s office of corporate compliance was made aware of the concern and began research",
+    "on forest rivers corporate recall committee voted to recall"
+   ],
+   "entries": 4,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 0,
+   "accepted": 4,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V568-9693.pdf",
+   "filer": "marathon industries inc.",
+   "norm": [
+    "report of a field failure that hiab reviewed and began investigating the potential cause",
+    "hiab received a report of a second field failure",
+    "the issue was escalated for further investigation",
+    "through the investigation observed broken deck pins in the field failures",
+    "hiab reviewed warranty claims involving deck pins and inspected additional units in the field",
+    "based on the investigation s review hiab found evidence of liftgates with hydraulic cylinders that appeared to operate asymmetrically as well as evidence of hydraulic systems that had not been properly bled which likely contributed to deck pin failures",
+    "the issue was elevated to hiab s liftgate leadership",
+    "based on the investigation hiab usa decided to conduct a safety recall for the subject liftgates",
+    "there have been no reports of injury related to this condition"
+   ],
+   "entries": 9,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 4,
+   "accepted": 2,
+   "accepted_wrong": 2
+  },
+  {
+   "file": "RCLRPT-26V577-7489.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on dearborn truck plant dtp was alerted to a warranty claim on a model year my ford f raptor regarding a customer rattle",
+    "upon further inspection the dealer confirmed that the rear panhard rod was loose",
+    "further investigation by dtp concluded that the error proofing data for the relevant torque station was in bypass mode from until",
+    "a review of the torque data confirmed the vehicles that either did not meet the torque requirement or had missing incomplete rundown data",
+    "on ford s critical concern review group ccrg opened an investigation into loose or missing rear panhard rod fasteners on my ford f raptor vehicles",
+    "as part of its ongoing investigation ccrg evaluated the geometry of the suspension system and detectability of a loose panhard rod",
+    "ccrg initially assessed that the condition would be overt progressive and easily detectable to the customer",
+    "ccrg continued its evaluation and in ultimately determined that the loose condition may not be detectable from inside the cabin",
+    "ccrg also considered the likely usage of these vehicles by owners many of whom are driving or racing enthusiasts",
+    "in ford s global data insight and analytics gdia team completed a statistical analysis of the potentially affected population which indicated a low likelihood of future field failures",
+    "as of ford is aware of two warranty claims received on and and no field reports or customer complaints related to a panhard rod with loose or missing fasteners",
+    "on ford s field review committee reviewed the concern and approved a field service action",
+    "ford is not aware of any reports of accident or injury related to this condition"
+   ],
+   "entries": 13,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 5,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V581-3933.pdf",
+   "filer": "ford motor company",
+   "norm": [
+    "on an issue pertaining to the ford explorer passenger airbag active vent was brought to ford s critical concern review group ccrg for review",
+    "the passenger airbag supplier informed ford that the active vent activation unit on the passenger airbag module failed to deploy correctly during a routine lot acceptance lat audit test",
+    "ford conducted evaluation of the suspect active vent activation units",
+    "on ford s field review committee reviewed the concern and approved a field action",
+    "ford is not aware of any accidents or injuries related to this concern"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 3,
+   "wrong": 0,
+   "accepted": 1,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V598-8506.pdf",
+   "filer": "toyota motor engineering & manufacturing",
+   "norm": [
+    "in during a standard quality audit a tier supplier conducted tensile strength tests and found a production batch of front steering knuckles that had material strength below specification",
+    "the supplier contacted toyota regarding the issue since the batch had already been shipped to the tier supplier",
+    "toyota initiated containment activities and determined that some parts flowed out to the toyota manufacturing plants",
+    "toyota was able to identify some of the affected parts based on their batch id however a small number of parts were not contained",
+    "additionally toyota began an investigation of the tier supplier s manufacturing process and documentation",
+    "as a result of the investigation toyota confirmed that only one batch did not go through the aging furnace step",
+    "in toyota investigated the impact of the below specification material on the steering knuckle s performance",
+    "toyota conducted cae on models of the part with the below specification material",
+    "the test results concluded that a fracture could occur at the strut attachment point and or the tie rod attachment point after a sudden large impact force such as from hitting a pot hole or a curb",
+    "toyota further assessed the impact to vehicle performance should the steering knuckle fracture at these locations while driving and determined that the vehicle steering control function may be reduced or lost",
+    "in some operating conditions this could lead to a loss of vehicle control which may increase the risk of a crash",
+    "based on the results of the above investigation toyota decided to conduct a voluntary safety recall campaign",
+    "as of based on a diligent review of records toyota s best engineering judgment is that there are no toyota field technical reports and no warranty claims that have been received from u s sources that relate or may relate to this condition"
+   ],
+   "entries": 13,
+   "dup_entries": 0,
+   "claims": 8,
+   "wrong": 0,
+   "accepted": 0,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V607-0797.pdf",
+   "filer": "jaguar land rover north america, llc",
+   "norm": [
+    "on the powertrain control module pcm supplier informed jlr that a review of production records had identified a small number of modules which had been identified as having anomalous production parameters",
+    "work was started to trace the affected parts to vehicles",
+    "on a pre stop shipment meeting was held where it was confirmed that a number of at risk pcms had been assembled into new vehicles and a quarantine notice was issued together with an update prior to sale instruction",
+    "it was reported that additional vehicles had been manufactured in this condition but records showed that they were in the hands of customers",
+    "the product safety and compliance committee pscc requested that an investigation be launched to review the potential effect on vehicle operation to ascertain whether this issue would pose any elevated risk to the customers",
+    "on the issue was further reviewed at pscc where the range of possible effects on vehicle operation was reviewed and confirmed to include potential engine stall without warning",
+    "the matter was referred to the pscc decision forum",
+    "on the pscc decision forum agreed that the issue constitutes a safety defect and requested that a safety recall be launched to remedy the affected vehicles",
+    "jlr has not received any claims or field reports in the us related to this issue",
+    "there have been no reported accidents injuries or fires in the us as a result of this concern"
+   ],
+   "entries": 10,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V617-0141.pdf",
+   "filer": "altec industries, inc.",
+   "norm": [
+    "on and altec received reports from vehicle owners regarding improper operation of the boom stow auto neutral functionality",
+    "altec opened an d investigation to determine the root cause and identify potentially affected units",
+    "on altec initiated a potential field action investigation after the d indicated that additional units in the field may have the same condition",
+    "the investigation evaluated the reported condition identified units that could be affected and reviewed production records to determine other owners with units equipped with the same functionality",
+    "on after reviewing the investigation results altec determined that a field campaign was necessary to address affected units in the field",
+    "in addition to the july warranty claim there were no other warranty claims or field reports identified",
+    "there have been no accidents injuries or deaths related to this issue"
+   ],
+   "entries": 7,
+   "dup_entries": 0,
+   "claims": 4,
+   "wrong": 1,
+   "accepted": 2,
+   "accepted_wrong": 0
+  },
+  {
+   "file": "RCLRPT-26V638-9238.pdf",
+   "filer": "mercedes-benz usa, llc",
+   "norm": [
+    "this recall expands upon the vehicle population subject to recall no v filed on",
+    "please refer to the chronology submitted with that recall report",
+    "based on the field information and technical evidence then available mbag had identified two factors associated with the condition climatic exposure and a particular vehicle production period",
+    "the available field data indicated that the reported cases were concentrated in particular climatic regions and within that production period",
+    "mbag therefore defined the original recall population using those factors",
+    "following the decision to conduct a recall mbag continued monitoring field performance of the front brake hoses including vehicles both within and outside the original recall population",
+    "between march and mbag received additional field reports from markets outside the united states involving vehicles produced outside the original recall production range and in some instances operated outside the climatic regions on which the original population determination had been based",
+    "these reports presented information that was not reflected in the data available when the original recall population was determined and prompted mbag to reassess whether the condition might extend beyond the originally identified production period and climatic regions",
+    "during and mbag reviewed the additional reports and available vehicle and production information to determine the appropriate means of obtaining and analyzing representative field parts",
+    "in mbag began coordinating a dedicated field engineering activity to obtain additional brake hoses from vehicles exhibiting the reported condition",
+    "from mbag identified candidate vehicles and markets developed the collection protocol and coordinated the retrieval and shipment of the requested components",
+    "the field engineering activity was formally launched in",
+    "by the requested brake hose components had been collected and returned to mbag",
+    "mbag forwarded the components to the supplier for detailed technical analysis and testing",
+    "in mbag reviewed and discussed the results of the supplier s laboratory and durability testing for the retrieved field parts",
+    "based on the additional field reports the analysis of the retrieved components and the resulting laboratory and durability testing mbag reassessed the affected vehicle population with respect to production range and climatic restrictions",
+    "as a result mbag identified an expanded vehicle scope covering vehicles produced up to the implementation of a modified brake hose design in series production",
+    "mbag subsequently identified the potentially affected vehicles in the field",
+    "on mbag determined that a potential safety risk cannot be ruled out for the expanded vehicle population and decided to expand the recall",
+    "in the united states mbag is aware of three reports involving vehicles in the expanded recall population dated and",
+    "mbag is not aware of any cases of crashes injuries or property damage related to this condition in the expanded recall population"
+   ],
+   "entries": 21,
+   "dup_entries": 0,
+   "claims": 9,
+   "wrong": 4,
+   "accepted": 5,
+   "accepted_wrong": 3
+  },
+  {
+   "file": "RCLRPT-26V644-1013.pdf",
+   "filer": "new flyer of america, inc.",
+   "norm": [
+    "late a usa based customer noticed the hazard lamp indicators did not operate with the mrs master run switch in the off position which varied from their previous buses",
+    "new flyer began investigating the affected program and checking other similar programs to see if an ignition condition was required for hazard lamp tell tale indicators to illuminate",
+    "the issue was briefly discussed during the vehicle safety committee meeting while the engineering analysis continued",
+    "documentation indicated an error in programming on certain buses",
+    "the vehicle safety committee was provided with the information and concurred a noncompliance recall was warranted"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 4,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V651-6989.pdf",
+   "filer": "chrysler (fca us, llc)",
+   "norm": [
+    "on the fca us llc fca us determined through the vehicle regulations committee that a safety defect exists in certain vehicles resulting in recall nhtsa id v fca us id d d",
+    "on the fca us technical safety and regulatory compliance tsrc organization opened an investigation into some my ram vehicles potentially built with a suspect sccm outside the scope of d due to continuous monitoring",
+    "from through fca us tsrc conducted an analysis of field records and customer assistance records to understand potential customer consequences",
+    "on the fca us tsrc organization recognized a vehicle build issue existed on certain vehicles related to a condition potentially resulting in a noncompliance with fmvss no",
+    "on fca us determined through the vehicle regulations committee that a noncompliance to fmvss no exists in certain vehicles"
+   ],
+   "entries": 5,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 1,
+   "accepted": 5,
+   "accepted_wrong": 1
+  },
+  {
+   "file": "RCLRPT-26V671-6336.pdf",
+   "filer": "volvo car usa, llc",
+   "norm": [
+    "volvo cars received in information concerning a potential issue with the head restraint cushion attachment",
+    "based on this volvo together with the supplier initiated internal investigations to assess the reported information evaluation of the existing attachment design and consideration of measures to improve its robustness",
+    "the matter was subsequently escalated through the critical concern action process ccap where a technical investigation and risk assessment were conducted",
+    "on the concern was classified as critical and on",
+    "volvo cars decided to prepare a recall after determining that the condition could increase the risk to motor vehicle safety",
+    "volvo cars centrally has not received any reports alleging injuries or fatalities related to this condition"
+   ],
+   "entries": 6,
+   "dup_entries": 0,
+   "claims": 5,
+   "wrong": 3,
+   "accepted": 3,
+   "accepted_wrong": 1
+  }
+ ]
+}
