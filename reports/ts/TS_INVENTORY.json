@@ -1,0 +1,398 @@
+{
+ "note": "silver reference (AI-generated, not human-verified); counts and field checks only; no gap or date difference computed",
+ "1_filings": {
+  "testA": {
+   "processed_readable": 199,
+   "unreadable_listed_in_selection": 0
+  },
+  "testB": {
+   "processed_readable": 100,
+   "unreadable_listed_in_selection": 0
+  },
+  "unseen": {
+   "processed_readable": 98,
+   "unreadable_listed_in_selection": 0
+  }
+ },
+ "2_submission_date": {
+  "regex": "Submission\\s*Date\\s*:\\s*([A-Za-z]{3,9})\\.?\\s+(\\d{1,2}),\\s*(\\d{4})",
+  "layouts": {
+   "testA | 2025+ form (label and value on separate lines)": 62,
+   "testA | pre-2025 form (label : value on one line)": 137,
+   "testB | 2025+ form (label and value on separate lines)": 100,
+   "unseen | 2025+ form (label and value on separate lines)": 24,
+   "unseen | pre-2025 form (label : value on one line)": 74
+  },
+  "parse": {
+   "testA | one-digit day in text": 0,
+   "testA | parsed": 199,
+   "testA | single occurrence": 199,
+   "testB | one-digit day in text": 0,
+   "testB | parsed": 100,
+   "testB | single occurrence": 100,
+   "unseen | one-digit day in text": 0,
+   "unseen | parsed": 98,
+   "unseen | single occurrence": 98
+  },
+  "cross_checks": {
+   "testA | equals frozen parse_header filing_date": 199,
+   "testA | equals silver label filing_date": 199,
+   "testB | equals frozen parse_header filing_date": 100,
+   "testB | equals silver label filing_date": 100,
+   "unseen | equals frozen parse_header filing_date": 98,
+   "unseen | equals silver label filing_date": 98
+  },
+  "failing_layouts": {},
+  "examples": [
+   {
+    "split": "testA",
+    "layout": "pre-2025 form (label : value on one line)",
+    "header": "[redacted line] / Manufacturer Name: [redacted] / Submission Date : FEB 09, 2023 / NHTSA Recall No.: [redacted] / Manufacturer Recall No.: [redacted]"
+   },
+   {
+    "split": "testA",
+    "layout": "2025+ form (label and value on separate lines)",
+    "header": "[redacted line] / Manufacturer Name: [redacted] / Submission Date: Jun 20, 2025 / NHTSA Recall No.: [redacted] / Manufacturer Recall No.: [redacted]"
+   },
+   {
+    "split": "testB",
+    "layout": "2025+ form (label and value on separate lines)",
+    "header": "[redacted line] / Manufacturer Name: [redacted] / Submission Date: May 04, 2026 / NHTSA Recall No.: [redacted] / Manufacturer Recall No.: [redacted]"
+   },
+   {
+    "split": "unseen",
+    "layout": "pre-2025 form (label : value on one line)",
+    "header": "[redacted line] / Manufacturer Name: [redacted] / Submission Date : MAY 02, 2023 / NHTSA Recall No.: [redacted] / Manufacturer Recall No.: [redacted]"
+   },
+   {
+    "split": "unseen",
+    "layout": "2025+ form (label and value on separate lines)",
+    "header": "[redacted line] / Manufacturer Name: [redacted] / Submission Date: Jun 26, 2025 / NHTSA Recall No.: [redacted] / Manufacturer Recall No.: [redacted]"
+   }
+  ]
+ },
+ "3_flat_file": {
+  "file": "data/flat/FLAT_RCL_POST_2010.zip",
+  "member": "FLAT_RCL_POST_2010.txt",
+  "layout_doc": "data/flat/RCL.txt (TAB-delimited, 29 fields, dates YYYYMMDD; last updated May 2025)",
+  "column_names": [
+   "RECORD_ID",
+   "CAMPNO",
+   "MAKETXT",
+   "MODELTXT",
+   "YEARTXT",
+   "MFGCAMPNO",
+   "COMPNAME",
+   "MFGNAME",
+   "BGMAN",
+   "ENDMAN",
+   "RCLTYPECD",
+   "POTAFF",
+   "ODATE",
+   "INFLUENCED_BY",
+   "MFGTXT",
+   "RCDATE",
+   "DATEA",
+   "RPNO",
+   "FMVSS",
+   "DESC_DEFECT",
+   "CONEQUENCE_DEFECT",
+   "CORRECTIVE_ACTION",
+   "NOTES",
+   "RCL_CMPT_ID",
+   "MFR_COMP_NAME",
+   "MFR_COMP_DESC",
+   "MFR_COMP_PTNO",
+   "DO_NOT_DRIVE",
+   "PARK_OUTSIDE"
+  ],
+  "campno_shapes_all_rows": {
+   "99A999999": 244431,
+   "99A99A999": 1678
+  },
+  "join_rule": "campaign id = the 6 characters after 'RCLRPT-' in the processed PDF file name (e.g. YYTNNN); flat-file rows with CAMPNO matching \\d{2}[VECT]\\d{6} whose first 6 characters equal it; one campaign has many rows (one per make/model/year), the first row by file order is used after checking the fields below are constant across rows",
+  "joined": {
+   "testA": "199/199",
+   "testB": "100/100",
+   "unseen": "98/98"
+  },
+  "row_consistency": {
+   "RCDATE: campaigns with more than one distinct value across rows": 0,
+   "RCLTYPECD: campaigns with more than one distinct value across rows": 0,
+   "INFLUENCED_BY: campaigns with more than one distinct value across rows": 0,
+   "FMVSS: campaigns with more than one distinct value across rows": 0,
+   "RPNO: campaigns with more than one distinct value across rows": 0
+  },
+  "RCDATE": {
+   "present_and_8_digits": 397,
+   "of": 397,
+   "meaning (RCL.txt)": "Part 573 Defect/Noncompliance Report Received Date"
+  },
+  "INFLUENCED_BY": {
+   "exists": true,
+   "meaning (RCL.txt)": "Recall Initiated By (MFR/OVSC/ODI)",
+   "values": {
+    "MFR": 349,
+    "ODI": 42,
+    "OVSC": 5,
+    "(empty)": 1
+   }
+  },
+  "RCLTYPECD": {
+   "exists": true,
+   "meaning (RCL.txt)": "Vehicle, Equipment, Child Restraint, Or Tire Part 573 Defect/Noncompliance Report",
+   "values": {
+    "V": 341,
+    "E": 56
+   },
+   "note": "codes the product type (V/E/C/T), NOT defect vs noncompliance"
+  },
+  "FMVSS": {
+   "exists": true,
+   "meaning (RCL.txt)": "Federal Motor Vehicle Safety Standard Number",
+   "non_empty": 104,
+   "of": 397
+  },
+  "RPNO": {
+   "exists": true,
+   "meaning (RCL.txt)": "Regulation Part Number",
+   "non_empty": 0,
+   "of": 397
+  },
+  "explicit_noncompliance_indicator": "none: no flat-file column states defect vs noncompliance (FMVSS gives a standard number, which defect reports can also carry)"
+ },
+ "4_defect_vs_noncompliance": {
+  "counts": {
+   "testA | DECIDED BY (hierarchy) | flat-file FMVSS proxy: DEFECT": 48,
+   "testA | DECIDED BY (hierarchy) | flat-file FMVSS proxy: NONCOMPLIANCE": 14,
+   "testA | DECIDED BY (hierarchy) | report text header: DEFECT": 104,
+   "testA | DECIDED BY (hierarchy) | report text header: NONCOMPLIANCE": 33,
+   "testA | NHTSA document title (any version) | DEFECT": 55,
+   "testA | NHTSA document title (any version) | NONCOMPLIANCE": 15,
+   "testA | NHTSA document title (any version) | absent": 129,
+   "testA | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | DEFECT": 144,
+   "testA | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | NONCOMPLIANCE": 55,
+   "testA | report text header | DEFECT": 104,
+   "testA | report text header | NONCOMPLIANCE": 33,
+   "testA | report text header | absent": 62,
+   "testB | DECIDED BY (hierarchy) | flat-file FMVSS proxy: DEFECT": 73,
+   "testB | DECIDED BY (hierarchy) | flat-file FMVSS proxy: NONCOMPLIANCE": 27,
+   "testB | NHTSA document title (any version) | absent": 100,
+   "testB | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | DEFECT": 73,
+   "testB | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | NONCOMPLIANCE": 27,
+   "testB | report text header | absent": 100,
+   "unseen | DECIDED BY (hierarchy) | flat-file FMVSS proxy: DEFECT": 18,
+   "unseen | DECIDED BY (hierarchy) | flat-file FMVSS proxy: NONCOMPLIANCE": 6,
+   "unseen | DECIDED BY (hierarchy) | report text header: DEFECT": 62,
+   "unseen | DECIDED BY (hierarchy) | report text header: NONCOMPLIANCE": 12,
+   "unseen | NHTSA document title (any version) | DEFECT": 41,
+   "unseen | NHTSA document title (any version) | NONCOMPLIANCE": 5,
+   "unseen | NHTSA document title (any version) | absent": 52,
+   "unseen | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | DEFECT": 76,
+   "unseen | flat-file FMVSS empty=DEFECT / non-empty=NONCOMPLIANCE | NONCOMPLIANCE": 22,
+   "unseen | report text header | DEFECT": 62,
+   "unseen | report text header | NONCOMPLIANCE": 12,
+   "unseen | report text header | absent": 24
+  },
+  "cross_checks": {
+   "header DEFECT vs flat FMVSS proxy DEFECT": 153,
+   "header DEFECT vs flat FMVSS proxy NONCOMPLIANCE": 13,
+   "header NONCOMPLIANCE vs flat FMVSS proxy DEFECT": 1,
+   "header NONCOMPLIANCE vs flat FMVSS proxy NONCOMPLIANCE": 44,
+   "header vs title: DISAGREE": 2,
+   "header vs title: agree": 114
+  }
+ },
+ "5_event_fields": {
+  "silver_stores": "date_text (raw, as written; for an entry-header date the header text), span (ISO start/end; stored only for Pass A items), quote, type, flags inherited_date/date_inferred/contested",
+  "agent_stores": "date_text (raw), type, status, evidence.quote, evidence.section; no ISO date; acceptance from the frozen gate (score >= 3)",
+  "counts": {
+   "testA": {
+    "silver events (all)": 1466,
+    "silver non-contested": 1445,
+    "  with raw date text": 991,
+    "  with stored ISO span": 757,
+    "  ISO span only (no raw date text)": 0,
+    "  raw date text but no stored span": 234,
+    "  undated (no date text, no span)": 454,
+    "  with evidence quote": 1445,
+    "  DECISION (all)": 180,
+    "  DECISION with raw date text": 170,
+    "  DECISION quote cites a different recall number": 2,
+    "silver events contested (dropped)": 21,
+    "agent filings with valid run-1 output": 199,
+    "agent filings with valid run-2 output": 195,
+    "agent run-1 events": 1006,
+    "agent run-1 events with raw date text": 1006,
+    "agent run-1 events with evidence quote": 1006,
+    "agent accepted events": 537,
+    "agent accepted DECISION": 111,
+    "agent accepted DECISION with raw date text": 111,
+    "agent accepted DECISION quote cites a different recall number": 2,
+    "agent run-1 DECISION (any gate outcome)": 170
+   },
+   "testB": {
+    "silver events (all)": 806,
+    "silver non-contested": 790,
+    "  with raw date text": 527,
+    "  with stored ISO span": 416,
+    "  ISO span only (no raw date text)": 0,
+    "  raw date text but no stored span": 111,
+    "  undated (no date text, no span)": 263,
+    "  with evidence quote": 790,
+    "silver events contested (dropped)": 16,
+    "  DECISION (all)": 95,
+    "  DECISION with raw date text": 93,
+    "  DECISION quote cites a different recall number": 1,
+    "agent filings with valid run-1 output": 100,
+    "agent filings with valid run-2 output": 100,
+    "agent run-1 events": 524,
+    "agent run-1 events with raw date text": 524,
+    "agent run-1 events with evidence quote": 524,
+    "agent accepted events": 264,
+    "agent run-1 DECISION (any gate outcome)": 97,
+    "agent accepted DECISION": 48,
+    "agent accepted DECISION with raw date text": 48,
+    "agent accepted DECISION quote cites a different recall number": 0
+   },
+   "unseen": {
+    "silver events (all)": 580,
+    "silver non-contested": 569,
+    "  with raw date text": 436,
+    "  with stored ISO span": 340,
+    "  ISO span only (no raw date text)": 0,
+    "  raw date text but no stored span": 96,
+    "  undated (no date text, no span)": 133,
+    "  with evidence quote": 569,
+    "  DECISION (all)": 63,
+    "  DECISION with raw date text": 58,
+    "  DECISION quote cites a different recall number": 2,
+    "silver events contested (dropped)": 11,
+    "agent filings with valid run-1 output": 98,
+    "agent filings with valid run-2 output": 98,
+    "agent run-1 events": 445,
+    "agent run-1 events with raw date text": 445,
+    "agent run-1 events with evidence quote": 445,
+    "agent run-1 DECISION (any gate outcome)": 62,
+    "agent accepted events": 231,
+    "agent accepted DECISION": 34,
+    "agent accepted DECISION with raw date text": 34,
+    "agent accepted DECISION quote cites a different recall number": 0
+   }
+  }
+ },
+ "6_version": {
+  "counts": {
+   "testA | processed = later (amended) version": 100,
+   "testA | processed = original (only version)": 99,
+   "testA | processed is the latest version": 199,
+   "testB | processed = later (amended) version": 45,
+   "testB | processed = original (only version)": 55,
+   "testB | processed is the latest version": 100,
+   "unseen | processed = later (amended) version": 68,
+   "unseen | processed = original (only version)": 30,
+   "unseen | processed is the latest version": 98
+  },
+  "original_pdfs_of_multi_version_campaigns_cached": 0,
+  "note": "knowable from the NHTSA version listing (is_original, n_versions); only the latest version was downloaded, so the original's own Submission Date is not available"
+ },
+ "7_date_formats": {
+  "testA": {
+   "silver_all": {
+    "full_date": 622,
+    "month": 153,
+    "range": 82,
+    "yearless": 60,
+    "early_mid_late": 16,
+    "numeric_ambiguous": 49,
+    "unparsed": 2,
+    "year": 4,
+    "week": 3
+   },
+   "silver_DECISION": {
+    "full_date": 153,
+    "month": 5,
+    "yearless": 5,
+    "numeric_ambiguous": 6,
+    "range": 1
+   },
+   "agent_accepted_all": {
+    "full_date": 389,
+    "range": 37,
+    "month": 50,
+    "numeric_ambiguous": 30,
+    "yearless": 24,
+    "early_mid_late": 5,
+    "year": 2
+   },
+   "agent_accepted_DECISION": {
+    "full_date": 104,
+    "month": 2,
+    "yearless": 2,
+    "numeric_ambiguous": 3
+   }
+  },
+  "testB": {
+   "silver_all": {
+    "month": 91,
+    "full_date": 317,
+    "range": 43,
+    "numeric_ambiguous": 30,
+    "early_mid_late": 7,
+    "yearless": 38,
+    "year": 1
+   },
+   "silver_DECISION": {
+    "full_date": 84,
+    "numeric_ambiguous": 3,
+    "month": 5,
+    "yearless": 1
+   },
+   "agent_accepted_all": {
+    "full_date": 187,
+    "range": 25,
+    "numeric_ambiguous": 17,
+    "month": 29,
+    "yearless": 3,
+    "early_mid_late": 3
+   },
+   "agent_accepted_DECISION": {
+    "full_date": 44,
+    "numeric_ambiguous": 1,
+    "month": 3
+   }
+  },
+  "unseen": {
+   "silver_all": {
+    "early_mid_late": 6,
+    "month": 46,
+    "full_date": 303,
+    "numeric_ambiguous": 29,
+    "yearless": 22,
+    "range": 25,
+    "year": 4,
+    "unparsed": 1
+   },
+   "silver_DECISION": {
+    "early_mid_late": 1,
+    "numeric_ambiguous": 4,
+    "full_date": 47,
+    "yearless": 6
+   },
+   "agent_accepted_all": {
+    "full_date": 182,
+    "numeric_ambiguous": 14,
+    "month": 14,
+    "range": 6,
+    "yearless": 11,
+    "early_mid_late": 3,
+    "year": 1
+   },
+   "agent_accepted_DECISION": {
+    "numeric_ambiguous": 3,
+    "full_date": 28,
+    "yearless": 3
+   }
+  }
+ }
+}
