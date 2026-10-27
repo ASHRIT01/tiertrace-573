@@ -38,7 +38,7 @@ def main(split, k, names):
                 break
             time.sleep(10)
         lines[i] = new
-        with open("runs/testA_run_log.txt", "a") as f:
+        with open(f"runs/{split}_run_log.txt", "a") as f:
             f.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} | RETRY (infrastructure error, no model call completed) | run {k} | {name} | attempts {attempt} | valid_json {new['extraction'] is not None}\n")
     out.write_text("".join(json.dumps(x) + "\n" for x in lines))
 

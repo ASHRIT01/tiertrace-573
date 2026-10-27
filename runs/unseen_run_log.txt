@@ -1,0 +1,4 @@
+2026-10-27 12:47:02 | START | run 1 | records already in file: 0 of 98
+2026-10-27 13:39:30 | DONE | run 1 | records 98 | json_valid_rate 1.0000 | call errors 0
+2026-10-27 13:39:32 | START | run 2 | records already in file: 0 of 98
+2026-10-27 14:30:00 | DONE | run 2 | records 98 | json_valid_rate 1.0000 | call errors 0
