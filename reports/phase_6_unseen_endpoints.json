@@ -1,0 +1,49 @@
+{
+ "note": "all metrics against silver labels (AI-made, not human-verified); claims from run 1; run 2 only as the agreement filter",
+ "H1": {
+  "delta": 0.08766233766233766,
+  "ci95": [
+   0.021859121508343904,
+   0.15870621752974695
+  ],
+  "coverage": 0.5202702702702703,
+  "accepted": 231,
+  "of": 444,
+  "pass": true
+ },
+ "H2": {
+  "delta": 0.10034013605442177,
+  "ci95": [
+   0.038393839383938394,
+   0.17117117117117117
+  ],
+  "pass": true,
+  "measures": "NR-or-not detection of the cause field only"
+ },
+ "H5": {
+  "b2_system": "B2_4b_v2",
+  "b1_claims": 230,
+  "b2_claims": 444,
+  "b1_error": 0.5043478260869565,
+  "b2_error": 0.4166666666666667,
+  "b1_minus_b2": 0.08768115942028981,
+  "ci95": [
+   -0.010333828856784022,
+   0.1612421428616826
+  ],
+  "pass": false
+ },
+ "exploratory_agent_accepted_vs_B1": {
+  "coverage": 0.5202702702702703,
+  "accepted": 231,
+  "of": 444,
+  "agent_accepted_error": 0.329004329004329,
+  "b1_error": 0.5043478260869565,
+  "b1_minus_agent_accepted": 0.17534349708262748,
+  "ci95": [
+   0.07653846153846156,
+   0.25271828066475144
+  ],
+  "print": "agent accepted error 0.329 at coverage 52.0% (231/444) vs B1 0.504 at full coverage"
+ }
+}

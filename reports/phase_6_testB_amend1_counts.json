@@ -1,0 +1,59 @@
+{
+ "filings": 100,
+ "gold_events_noncontested": 790,
+ "gold_events_with_date_text": 527,
+ "gold_contested_events_dropped_by_frozen_prepare": 16,
+ "excluded_gold_events": 4,
+ "excluded_gold_share_of_events": 0.005063291139240506,
+ "excluded_gold_share_of_dated_events": 0.007590132827324478,
+ "filings_with_excluded_gold": 2,
+ "excluded_gold_list": [
+  {
+   "file": "RCLRPT-26V279-2878.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "20 to 24-Apr-2026"
+  },
+  {
+   "file": "RCLRPT-26V307-4656.pdf",
+   "type": "OTHER",
+   "date_text": "January through February"
+  },
+  {
+   "file": "RCLRPT-26V307-4656.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "April through August"
+  },
+  {
+   "file": "RCLRPT-26V307-4656.pdf",
+   "type": "INVESTIGATION_START",
+   "date_text": "January through February"
+  }
+ ],
+ "systems": {
+  "B0": {
+   "predicted_events": 0,
+   "ignored_predictions": 0,
+   "ignored_share": null
+  },
+  "B1": {
+   "predicted_events": 328,
+   "ignored_predictions": 1,
+   "ignored_share": 0.003048780487804878
+  },
+  "B2_4b_v2": {
+   "predicted_events": 524,
+   "ignored_predictions": 14,
+   "ignored_share": 0.026717557251908396
+  },
+  "agent_run1": {
+   "predicted_events": 524,
+   "ignored_predictions": 14,
+   "ignored_share": 0.026717557251908396
+  }
+ },
+ "bounding_runs_required": true,
+ "bounding_runs": [
+  "TT_AMEND_MODE=bound_errors (unmatched predictions counted as errors)",
+  "TT_AMEND_MODE=bound_drop (all affected filings dropped)"
+ ]
+}

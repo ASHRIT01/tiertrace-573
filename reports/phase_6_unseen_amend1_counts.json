@@ -1,0 +1,54 @@
+{
+ "filings": 98,
+ "gold_events_noncontested": 569,
+ "gold_events_with_date_text": 436,
+ "gold_contested_events_dropped_by_frozen_prepare": 11,
+ "excluded_gold_events": 3,
+ "excluded_gold_share_of_events": 0.005272407732864675,
+ "excluded_gold_share_of_dated_events": 0.006880733944954129,
+ "filings_with_excluded_gold": 3,
+ "excluded_gold_list": [
+  {
+   "file": "RCLRPT-24E067-1013.PDF",
+   "type": "OTHER",
+   "date_text": "February 29"
+  },
+  {
+   "file": "RCLRPT-24V203-1211.PDF",
+   "type": "DECISION",
+   "date_text": "March12, 2024"
+  },
+  {
+   "file": "RCLRPT-26E004-0495.pdf",
+   "type": "OTHER",
+   "date_text": "12/16/20205"
+  }
+ ],
+ "systems": {
+  "B0": {
+   "predicted_events": 0,
+   "ignored_predictions": 0,
+   "ignored_share": null
+  },
+  "B1": {
+   "predicted_events": 231,
+   "ignored_predictions": 1,
+   "ignored_share": 0.004329004329004329
+  },
+  "B2_4b_v2": {
+   "predicted_events": 445,
+   "ignored_predictions": 1,
+   "ignored_share": 0.0022471910112359553
+  },
+  "agent_run1": {
+   "predicted_events": 445,
+   "ignored_predictions": 1,
+   "ignored_share": 0.0022471910112359553
+  }
+ },
+ "bounding_runs_required": false,
+ "bounding_runs": [
+  "TT_AMEND_MODE=bound_errors (unmatched predictions counted as errors)",
+  "TT_AMEND_MODE=bound_drop (all affected filings dropped)"
+ ]
+}
