@@ -1,0 +1,43 @@
+{
+ "split": "unseen",
+ "groups": {
+  "other": {
+   "AB_n": 408,
+   "AB_agree": 338,
+   "BA_n": 394,
+   "BA_agree": 324,
+   "agent_n": 210,
+   "agent_agree": 152
+  },
+  "FCA": {
+   "AB_n": 3,
+   "AB_agree": 2,
+   "BA_n": 3,
+   "BA_agree": 3,
+   "agent_n": 3,
+   "agent_agree": 3
+  }
+ },
+ "pairs_AB": {
+  "FILER_AWARENESS / OTHER": 17,
+  "DECISION / OTHER": 16,
+  "INVESTIGATION_START / OTHER": 26,
+  "OTHER / SUPPLIER_NOTICE": 3,
+  "NHTSA_FILING / OTHER": 4,
+  "FILER_AWARENESS / SUPPLIER_NOTICE": 1,
+  "FILER_AWARENESS / INVESTIGATION_START": 2,
+  "DECISION / FILER_AWARENESS": 2
+ },
+ "pairs_agent": {
+  "INVESTIGATION_START / OTHER": 21,
+  "FILER_AWARENESS / OTHER": 13,
+  "FILER_AWARENESS / INVESTIGATION_START": 8,
+  "DECISION / FILER_AWARENESS": 2,
+  "FILER_AWARENESS / SUPPLIER_NOTICE": 3,
+  "NHTSA_FILING / OTHER": 2,
+  "DECISION / OTHER": 5,
+  "DECISION / NHTSA_FILING": 3,
+  "DECISION / INVESTIGATION_START": 1
+ },
+ "filings": 98
+}

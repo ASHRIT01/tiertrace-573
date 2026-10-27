@@ -1,0 +1,75 @@
+{
+ "split": "testA",
+ "groups": {
+  "FCA": {
+   "AB_n": 56,
+   "AB_agree": 42,
+   "BA_n": 55,
+   "BA_agree": 41,
+   "agent_n": 44,
+   "agent_agree": 36
+  },
+  "other": {
+   "AB_n": 818,
+   "AB_agree": 653,
+   "BA_n": 765,
+   "BA_agree": 602,
+   "agent_n": 435,
+   "agent_agree": 338
+  },
+  "Ford": {
+   "AB_n": 73,
+   "AB_agree": 50,
+   "BA_n": 64,
+   "BA_agree": 48,
+   "agent_n": 13,
+   "agent_agree": 10
+  },
+  "Jayco": {
+   "AB_n": 4,
+   "AB_agree": 3,
+   "BA_n": 4,
+   "BA_agree": 3,
+   "agent_n": 3,
+   "agent_agree": 1
+  },
+  "PACCAR": {
+   "AB_n": 40,
+   "AB_agree": 33,
+   "BA_n": 37,
+   "BA_agree": 28,
+   "agent_n": 20,
+   "agent_agree": 8
+  }
+ },
+ "pairs_AB": {
+  "INVESTIGATION_START / OTHER": 68,
+  "FILER_AWARENESS / INVESTIGATION_START": 16,
+  "FILER_AWARENESS / OTHER": 67,
+  "DECISION / INVESTIGATION_START": 1,
+  "NHTSA_FILING / OTHER": 9,
+  "OTHER / SUPPLIER_NOTICE": 7,
+  "DECISION / SUPPLIER_NOTICE": 2,
+  "DECISION / OTHER": 28,
+  "DECISION / FILER_AWARENESS": 6,
+  "FILER_AWARENESS / SUPPLIER_NOTICE": 4,
+  "INVESTIGATION_START / NHTSA_FILING": 1,
+  "INVESTIGATION_START / SUPPLIER_NOTICE": 1
+ },
+ "pairs_agent": {
+  "DECISION / FILER_AWARENESS": 8,
+  "FILER_AWARENESS / INVESTIGATION_START": 26,
+  "FILER_AWARENESS / SUPPLIER_NOTICE": 6,
+  "DECISION / INVESTIGATION_START": 2,
+  "DECISION / OTHER": 5,
+  "OTHER / SUPPLIER_NOTICE": 3,
+  "FILER_AWARENESS / OTHER": 13,
+  "NHTSA_FILING / OTHER": 5,
+  "DECISION / NHTSA_FILING": 4,
+  "INVESTIGATION_START / OTHER": 47,
+  "INVESTIGATION_START / SUPPLIER_NOTICE": 1,
+  "INVESTIGATION_START / NHTSA_FILING": 1,
+  "FILER_AWARENESS / NHTSA_FILING": 1
+ },
+ "filings": 199
+}

@@ -104,3 +104,67 @@ Filing-level association (Spearman rank correlation between a filing's repeat sh
 Mostly type disagreement: in Test-B 80 of the 93 accepted-wrong event claims (86%) have a date that matches a gold event of the same filing but a different type, only 13 (14%) have a date that matches no gold event or cannot be parsed, and ignoring type the Test-B delta is 0.051 [0.022, 0.090] with accepted error 0.049, so wrong or invented dates do not drive the Test-B shortfall. The data cannot say whether those type disagreements are the agent mistyping events or silver labelling conventions (both are AI judgements, none human-verified), and the date-only view is lenient (a date can coincide with an unrelated gold event), so it understates date errors somewhat.
 
 Notes: (1) The pattern is the same on Test-A (85% type-only) and unseen-filer (75%); Test-B's smaller delta comes with a higher strict accepted error, not with more date errors. (2) Within a filing, near-duplicate entries are almost absent (repeat share about 0 for Ford, Jayco and most manufacturers; only 2 accepted-wrong claims are duplicates, both in unseen-filer), and the filing-level correlation between repeat share and accepted error is about 0. (3) **Correction to `reports/phase_6_secondary_splits.md` section 3**, which described Ford and Jayco as having 'repeated' chronologies: that is supported only across filings of the same manufacturer for Ford (about 33% of its entries recur in another Ford filing, e.g. the shared software-recall text of 26V369/370/374; FCA also shows about 26% with a low accepted error of 0.197, and Jayco about 11%), not within filings, and the data do not show that repetition causes the errors. (4) The class counts, date-only view and repetition shares are descriptive; nothing here was tuned, rerun or changed.
+
+## (e) Type-ambiguity ceiling: labeller vs labeller, next to the agent (POST HOC, EXPLORATORY)
+Existing label files only (`data/labels/<split>_passA.json`, `_passB.json`, final silver); no model call. Same matching rule as the frozen scorer: an event is date-matched if its date span coarsely overlaps a non-fuzzy event of the other side in the same filing, and its type agrees if any overlapping event has the same type (lenient for both sides). Dates of both passes are parsed with the same guarded parser and the filing's chronology-year context; undated, inferred or unparseable events take no part. Labellers: every Pass A event that is date-matched to Pass B (A->B; B->A shown too). Agent: every accepted run-1 event claim (the H1 accepted set) that is date-matched to the final scoring labels, so agent agreement = 1 - share of class (i) among date-matched accepted claims (duplicates included). Wilson 95% intervals; manufacturers by the filer name in the header.
+
+**Test-A (primary)**
+
+| manufacturer | Pass A vs Pass B type agreement (A->B) | (B->A) | agent vs final label, date-matched accepted claims |
+|---|---|---|---|
+| Ford | 0.685 [0.571, 0.780] (50/73) | 0.750 [0.632, 0.840] (48/64) | 0.769 [0.497, 0.918] (10/13) |
+| Jayco | 0.750 [0.301, 0.954] (3/4) | 0.750 [0.301, 0.954] (3/4) | 0.333 [0.061, 0.792] (1/3) |
+| PACCAR | 0.825 [0.680, 0.913] (33/40) | 0.757 [0.599, 0.866] (28/37) | 0.400 [0.219, 0.613] (8/20) |
+| FCA | 0.750 [0.623, 0.845] (42/56) | 0.745 [0.617, 0.842] (41/55) | 0.818 [0.680, 0.905] (36/44) |
+| other | 0.798 [0.769, 0.824] (653/818) | 0.787 [0.757, 0.814] (602/765) | 0.777 [0.736, 0.814] (338/435) |
+| **all** | 0.788 [0.762, 0.812] (781/991) | 0.781 [0.753, 0.806] (722/925) | 0.763 [0.725, 0.798] (393/515) |
+
+**Test-B**
+
+| manufacturer | Pass A vs Pass B type agreement (A->B) | (B->A) | agent vs final label, date-matched accepted claims |
+|---|---|---|---|
+| Ford | 0.671 [0.561, 0.764] (53/79) | 0.645 [0.533, 0.743] (49/76) | 0.355 [0.211, 0.531] (11/31) |
+| Jayco | 0.897 [0.736, 0.964] (26/29) | 0.897 [0.736, 0.964] (26/29) | 0.333 [0.163, 0.563] (6/18) |
+| PACCAR | n/a (0) | n/a (0) | n/a (0) |
+| FCA | 0.595 [0.445, 0.730] (25/42) | 0.756 [0.607, 0.862] (31/41) | 0.815 [0.633, 0.918] (22/27) |
+| other | 0.825 [0.782, 0.861] (293/355) | 0.781 [0.735, 0.822] (268/343) | 0.753 [0.684, 0.811] (131/174) |
+| **all** | 0.786 [0.748, 0.820] (397/505) | 0.765 [0.725, 0.800] (374/489) | 0.680 [0.620, 0.735] (170/250) |
+
+**unseen-filer**
+
+| manufacturer | Pass A vs Pass B type agreement (A->B) | (B->A) | agent vs final label, date-matched accepted claims |
+|---|---|---|---|
+| Ford | n/a (0) | n/a (0) | n/a (0) |
+| Jayco | n/a (0) | n/a (0) | n/a (0) |
+| PACCAR | n/a (0) | n/a (0) | n/a (0) |
+| FCA | 0.667 [0.208, 0.939] (2/3) | 1.000 [0.438, 1.000] (3/3) | 1.000 [0.438, 1.000] (3/3) |
+| other | 0.828 [0.789, 0.862] (338/408) | 0.822 [0.782, 0.857] (324/394) | 0.724 [0.660, 0.780] (152/210) |
+| **all** | 0.827 [0.788, 0.861] (340/411) | 0.824 [0.783, 0.858] (327/397) | 0.728 [0.664, 0.783] (155/213) |
+
+Most frequent type disagreements (unordered pairs; a disagreeing event is paired with the most frequent type among the events it overlaps), pooled over the three splits, with the per-split counts:
+
+(a) Pass A vs Pass B: 389 disagreements
+
+| type pair | count | share of disagreements | Test-A | Test-B | unseen |
+|---|---|---|---|---|---|
+| INVESTIGATION_START / OTHER | 128 | 32.9% | 68 | 34 | 26 |
+| FILER_AWARENESS / OTHER | 126 | 32.4% | 67 | 42 | 17 |
+| DECISION / OTHER | 59 | 15.2% | 28 | 15 | 16 |
+| FILER_AWARENESS / INVESTIGATION_START | 25 | 6.4% | 16 | 7 | 2 |
+| NHTSA_FILING / OTHER | 19 | 4.9% | 9 | 6 | 4 |
+| OTHER / SUPPLIER_NOTICE | 12 | 3.1% | 7 | 2 | 3 |
+
+(b) agent (accepted claims) vs final label: 260 disagreements
+
+| type pair | count | share of disagreements | Test-A | Test-B | unseen |
+|---|---|---|---|---|---|
+| INVESTIGATION_START / OTHER | 102 | 39.2% | 47 | 34 | 21 |
+| FILER_AWARENESS / INVESTIGATION_START | 54 | 20.8% | 26 | 20 | 8 |
+| FILER_AWARENESS / OTHER | 33 | 12.7% | 13 | 7 | 13 |
+| DECISION / FILER_AWARENESS | 15 | 5.8% | 8 | 5 | 2 |
+| FILER_AWARENESS / SUPPLIER_NOTICE | 14 | 5.4% | 6 | 5 | 3 |
+| DECISION / OTHER | 11 | 4.2% | 5 | 1 | 5 |
+
+**Plain reading.** The agent's type agreement with the final labels, on date-matched accepted claims, compared with Pass A's type agreement with Pass B on date-matched events: Test-A (primary): agent 76.3% vs labellers 78.8%, i.e. similar to (the intervals overlap); Test-B: agent 68.0% vs labellers 78.6%, i.e. below; unseen-filer: agent 72.8% vs labellers 82.7%, i.e. below. 4 of the agent's 6 most frequent confusions are also among the labellers' 6 most frequent (INVESTIGATION_START / OTHER, FILER_AWARENESS / INVESTIGATION_START, FILER_AWARENESS / OTHER, DECISION / OTHER), so the two disagree over largely the same type boundaries. On Test-A the agent's type disagreement is at about the level two AI labellers already have with each other on the same dates; on Test-B and unseen-filer it is larger. The labeller rate indicates how ambiguous these type boundaries are, but it is not a hard ceiling (an extractor could agree with the adjudicated labels more often than two raw passes agree with each other). Two differences stand out. FILER_AWARENESS / INVESTIGATION_START is a much larger share of the agent's confusions (21%) than of the labellers' (6%), which matches the logged rule gap for sentences that report both awareness and the start of an investigation. And on Test-B the gap is concentrated where the labellers did not find the types ambiguous: for Jayco the two passes agree 26/29 but the agent only 6/18; for Ford the passes agree 53/79 and the agent 11/31 (small numbers, wide intervals). That part of the Test-B shortfall is therefore not explained by label ambiguity as measured here; it points more to the agent's typing (or to how the adjudicated labels typed these filers), though the data cannot separate those two.
+
+**Caveats.** The labels are not independent: Pass C sided with Pass B in 72-78% of its items (Test-A 73.5%, Test-B 72.2%, unseen 77.6%), the final labels are Pass A plus Pass C's corrections, and Pass B and Pass C are both Opus; the agent's event-type definitions were copied from the labelling rules (a disclosed bias in the agent's favour). The labeller rate compares two raw passes before adjudication, the agent rate compares with the adjudicated labels, so the two are not measured against the same reference. Matching is lenient on both sides (any overlapping event of the same type counts). Nothing here is a label-error figure; none of it is human-verified.

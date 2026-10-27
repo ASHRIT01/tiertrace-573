@@ -83,4 +83,48 @@ b = R["testB"]; nb = b["accepted_wrong"]; ib = b["classes"].get("i", 0); do = b[
 L += ["", "## (d) Conclusion (two sentences)", "",
       f"Mostly type disagreement: in Test-B {ib} of the {nb} accepted-wrong event claims ({ib / nb:.0%}) have a date that matches a gold event of the same filing but a different type, only {nb - ib} ({(nb - ib) / nb:.0%}) have a date that matches no gold event or cannot be parsed, and ignoring type the Test-B delta is {do['delta_all_minus_accepted'][0]:.3f} [{do['delta_all_minus_accepted'][1]:.3f}, {do['delta_all_minus_accepted'][2]:.3f}] with accepted error {do['error_accepted'][0]:.3f}, so wrong or invented dates do not drive the Test-B shortfall. The data cannot say whether those type disagreements are the agent mistyping events or silver labelling conventions (both are AI judgements, none human-verified), and the date-only view is lenient (a date can coincide with an unrelated gold event), so it understates date errors somewhat.", "",
       "Notes: (1) The pattern is the same on Test-A (85% type-only) and unseen-filer (75%); Test-B's smaller delta comes with a higher strict accepted error, not with more date errors. (2) Within a filing, near-duplicate entries are almost absent (repeat share about 0 for Ford, Jayco and most manufacturers; only 2 accepted-wrong claims are duplicates, both in unseen-filer), and the filing-level correlation between repeat share and accepted error is about 0. (3) **Correction to `reports/phase_6_secondary_splits.md` section 3**, which described Ford and Jayco as having 'repeated' chronologies: that is supported only across filings of the same manufacturer for Ford (about 33% of its entries recur in another Ford filing, e.g. the shared software-recall text of 26V369/370/374; FCA also shows about 26% with a low accepted error of 0.197, and Jayco about 11%), not within filings, and the data do not show that repetition causes the errors. (4) The class counts, date-only view and repetition shares are descriptive; nothing here was tuned, rerun or changed."]
+# ---- (e) type-ambiguity ceiling (scripts/phase6_type_ceiling.py) --------------------------------------------------------------
+from tt.labels.agree import wilson
+T = {k: json.load(open(f"reports/phase_6_type_ceiling_{k}.json")) for k, _ in S}
+GR = ["Ford", "Jayco", "PACCAR", "FCA", "other"]
+def rate(k, n):
+    if not n: return "n/a (0)"
+    lo, hi = wilson(k, n); return f"{k / n:.3f} [{lo:.3f}, {hi:.3f}] ({k}/{n})"
+def tot(k):
+    t = defaultdict(int)
+    for v in T[k]["groups"].values():
+        for a, b in v.items(): t[a] += b
+    return t
+L += ["", "## (e) Type-ambiguity ceiling: labeller vs labeller, next to the agent (POST HOC, EXPLORATORY)",
+      "Existing label files only (`data/labels/<split>_passA.json`, `_passB.json`, final silver); no model call. Same matching rule as the frozen scorer: an event is date-matched if its date span coarsely overlaps a non-fuzzy event of the other side in the same filing, and its type agrees if any overlapping event has the same type (lenient for both sides). Dates of both passes are parsed with the same guarded parser and the filing's chronology-year context; undated, inferred or unparseable events take no part. Labellers: every Pass A event that is date-matched to Pass B (A->B; B->A shown too). Agent: every accepted run-1 event claim (the H1 accepted set) that is date-matched to the final scoring labels, so agent agreement = 1 - share of class (i) among date-matched accepted claims (duplicates included). Wilson 95% intervals; manufacturers by the filer name in the header.", ""]
+for k, n in S:
+    L += [f"**{n}**", "", "| manufacturer | Pass A vs Pass B type agreement (A->B) | (B->A) | agent vs final label, date-matched accepted claims |", "|---|---|---|---|"]
+    for g in GR + ["all"]:
+        v = tot(k) if g == "all" else T[k]["groups"].get(g, {})
+        L.append(f"| {'**all**' if g == 'all' else g} | {rate(v.get('AB_agree', 0), v.get('AB_n', 0))} | {rate(v.get('BA_agree', 0), v.get('BA_n', 0))} | {rate(v.get('agent_agree', 0), v.get('agent_n', 0))} |")
+    L.append("")
+# confusion pairs
+from collections import Counter as _C
+pab, pag = _C(), _C()
+for k, _ in S: pab.update(T[k]["pairs_AB"]); pag.update(T[k]["pairs_agent"])
+L += ["Most frequent type disagreements (unordered pairs; a disagreeing event is paired with the most frequent type among the events it overlaps), pooled over the three splits, with the per-split counts:", ""]
+for title, P_, key in (("(a) Pass A vs Pass B", pab, "pairs_AB"), ("(b) agent (accepted claims) vs final label", pag, "pairs_agent")):
+    totd = sum(P_.values())
+    L += [f"{title}: {totd} disagreements", "", "| type pair | count | share of disagreements | Test-A | Test-B | unseen |", "|---|---|---|---|---|---|"]
+    for pair, c in P_.most_common(6):
+        L.append(f"| {pair} | {c} | {c / totd:.1%} | " + " | ".join(str(T[k][key].get(pair, 0)) for k, _ in S) + " |")
+    L.append("")
+top_ab = [p for p, _ in pab.most_common(6)]; top_ag = [p for p, _ in pag.most_common(6)]
+shared = [p for p in top_ag if p in top_ab]
+words = []
+for k, n in S:
+    t = tot(k); a_lo, a_hi = wilson(t["AB_agree"], t["AB_n"]); g_lo, g_hi = wilson(t["agent_agree"], t["agent_n"])
+    rel = "below" if g_hi < a_lo else ("above" if g_lo > a_hi else "similar to (the intervals overlap)")
+    words.append(f"{n}: agent {t['agent_agree'] / t['agent_n']:.1%} vs labellers {t['AB_agree'] / t['AB_n']:.1%}, i.e. {rel}")
+L += ["**Plain reading.** The agent's type agreement with the final labels, on date-matched accepted claims, compared with Pass A's type agreement with Pass B on date-matched events: " + "; ".join(words) + ". "
+      f"{len(shared)} of the agent's 6 most frequent confusions are also among the labellers' 6 most frequent ({', '.join(shared) if shared else 'none'}), so the two disagree over largely the same type boundaries. "
+      "On Test-A the agent's type disagreement is at about the level two AI labellers already have with each other on the same dates; on Test-B and unseen-filer it is larger. The labeller rate indicates how ambiguous these type boundaries are, but it is not a hard ceiling (an extractor could agree with the adjudicated labels more often than two raw passes agree with each other). "
+      f"Two differences stand out. FILER_AWARENESS / INVESTIGATION_START is a much larger share of the agent's confusions ({pag['FILER_AWARENESS / INVESTIGATION_START'] / sum(pag.values()):.0%}) than of the labellers' ({pab.get('FILER_AWARENESS / INVESTIGATION_START', 0) / sum(pab.values()):.0%}), which matches the logged rule gap for sentences that report both awareness and the start of an investigation. "
+      f"And on Test-B the gap is concentrated where the labellers did not find the types ambiguous: for Jayco the two passes agree {T['testB']['groups']['Jayco']['AB_agree']}/{T['testB']['groups']['Jayco']['AB_n']} but the agent only {T['testB']['groups']['Jayco']['agent_agree']}/{T['testB']['groups']['Jayco']['agent_n']}; for Ford the passes agree {T['testB']['groups']['Ford']['AB_agree']}/{T['testB']['groups']['Ford']['AB_n']} and the agent {T['testB']['groups']['Ford']['agent_agree']}/{T['testB']['groups']['Ford']['agent_n']} (small numbers, wide intervals). That part of the Test-B shortfall is therefore not explained by label ambiguity as measured here; it points more to the agent's typing (or to how the adjudicated labels typed these filers), though the data cannot separate those two.", "",
+      "**Caveats.** The labels are not independent: Pass C sided with Pass B in 72-78% of its items (Test-A 73.5%, Test-B 72.2%, unseen 77.6%), the final labels are Pass A plus Pass C's corrections, and Pass B and Pass C are both Opus; the agent's event-type definitions were copied from the labelling rules (a disclosed bias in the agent's favour). The labeller rate compares two raw passes before adjudication, the agent rate compares with the adjudicated labels, so the two are not measured against the same reference. Matching is lenient on both sides (any overlapping event of the same type counts). Nothing here is a label-error figure; none of it is human-verified."]
 open("reports/phase_6_failure_analysis.md", "w").write("\n".join(L) + "\n")
