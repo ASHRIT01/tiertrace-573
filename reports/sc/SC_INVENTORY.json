@@ -1,0 +1,319 @@
+{
+ "note": "reference = filer-declared supplier/component (non-AI, not ground truth); inventory only, no claim compared with the reference",
+ "1_block_parse": {
+  "counts": {
+   "testA|older|blocks found": 137,
+   "testA|older|filings": 137,
+   "testA|older|parsed": 137,
+   "testA|portal|blocks found": 62,
+   "testA|portal|filings": 62,
+   "testA|portal|parsed": 62,
+   "testB|portal|blocks found": 100,
+   "testB|portal|filings": 100,
+   "testB|portal|parsed": 100,
+   "unseen|older|blocks found": 74,
+   "unseen|older|filings": 74,
+   "unseen|older|parsed": 74,
+   "unseen|portal|blocks found": 24,
+   "unseen|portal|filings": 24,
+   "unseen|portal|parsed": 24
+  },
+  "examples": {
+   "older": [
+    {
+     "split": "testA",
+     "block": "Supplier Identification : / Component Manufacturer / Name : CONTINENTAL AUTONOMOUS MOBILITY US / Address: [redacted] / [line redacted] / Country : United States"
+    },
+    {
+     "split": "unseen",
+     "block": "Supplier Identification : / Component Manufacturer / Name : 3M Company / Address: [redacted] / [line redacted] / Country : United States"
+    },
+    {
+     "split": "testA",
+     "block": "Supplier Identification : / Component Manufacturer / Name : East Penn Manufacturing Co. / Address: [redacted] / [line redacted] / Country : United States"
+    },
+    {
+     "split": "testA",
+     "block": "Supplier Identification : / Component Manufacturer / Name : Suburban Manufacturing Co / Address: [redacted] / [line redacted] / Country : United States"
+    },
+    {
+     "split": "testA",
+     "block": "Supplier Identification : / Component Manufacturer / Name : Autocar LLC / Address: [redacted] / [line redacted] / Country : United States"
+    }
+   ],
+   "portal": [
+    {
+     "split": "testA",
+     "block": "Component Manufacturer / Tier of Supplier: / Supplier Type: / Name: / ICM Controls / Address: [redacted] / [lines redacted] / Country: / United States"
+    },
+    {
+     "split": "testB",
+     "block": "Component Manufacturer / Tier of Supplier: / Tier 2 / Supplier Type: / Other / Name: / Samsung SDI Co., Ltd. / Address: [redacted] / [lines redacted] / Country: / Hungary"
+    },
+    {
+     "split": "unseen",
+     "block": "Component Manufacturer / Tier of Supplier: / Supplier Type: / Name: / RECARO Automotive North America, Inc. / Address: [redacted] / [lines redacted] / Country: / United States"
+    },
+    {
+     "split": "unseen",
+     "block": "Component Manufacturer / Tier of Supplier: / Supplier Type: / Other / Name: / Accauto Co., LTD / Address: [redacted] / [lines redacted] / Country: / Thailand"
+    },
+    {
+     "split": "unseen",
+     "block": "Component Manufacturer / Tier of Supplier: / Tier 1 / Supplier Type: / OEM / Name: / Knorr-Bremse / Address: [redacted] / [lines redacted] / Country: / Germany"
+    }
+   ]
+  },
+  "failures": []
+ },
+ "2_strata": {
+  "primary": {
+   "testA|older|BLANK": 21,
+   "testA|older|NAMED_SUPPLIER": 99,
+   "testA|older|OEM_SELF": 17,
+   "testA|portal|BLANK": 14,
+   "testA|portal|MULTIPLE": 3,
+   "testA|portal|NAMED_SUPPLIER": 41,
+   "testA|portal|OBTAINED_FROM": 1,
+   "testA|portal|OEM_SELF": 3,
+   "testB|portal|BLANK": 21,
+   "testB|portal|MULTIPLE": 3,
+   "testB|portal|NAMED_SUPPLIER": 60,
+   "testB|portal|OBTAINED_FROM": 1,
+   "testB|portal|OEM_SELF": 15,
+   "unseen|older|BLANK": 22,
+   "unseen|older|NAMED_SUPPLIER": 43,
+   "unseen|older|OEM_SELF": 9,
+   "unseen|portal|BLANK": 7,
+   "unseen|portal|NAMED_SUPPLIER": 12,
+   "unseen|portal|OBTAINED_FROM": 2,
+   "unseen|portal|OEM_SELF": 3
+  },
+  "literal_type_oem_rule": {
+   "testA|BLANK": 35,
+   "testA|MULTIPLE": 3,
+   "testA|NAMED_SUPPLIER": 125,
+   "testA|OBTAINED_FROM": 1,
+   "testA|OEM_SELF": 35,
+   "testB|BLANK": 21,
+   "testB|MULTIPLE": 3,
+   "testB|NAMED_SUPPLIER": 39,
+   "testB|OBTAINED_FROM": 1,
+   "testB|OEM_SELF": 36,
+   "unseen|BLANK": 29,
+   "unseen|NAMED_SUPPLIER": 47,
+   "unseen|OBTAINED_FROM": 1,
+   "unseen|OEM_SELF": 21
+  },
+  "supplier_type_vs_filer_name": {
+   "(blank)|name = filer": 33,
+   "(blank)|name \u2260 filer": 203,
+   "Distributor|name \u2260 filer": 5,
+   "OEM|name = filer": 13,
+   "OEM|name \u2260 filer": 52,
+   "Other|name = filer": 1,
+   "Other|name \u2260 filer": 15
+  },
+  "pointer_names_counted_as_blank": 2,
+  "declared_names_per_filing": {
+   "testA|0": 35,
+   "testA|1": 161,
+   "testA|2": 3,
+   "testB|0": 21,
+   "testB|1": 76,
+   "testB|2": 3,
+   "unseen|0": 29,
+   "unseen|1": 69
+  }
+ },
+ "3_components": {
+  "testA|older|PRESENT": 137,
+  "testA|older|component records": 206,
+  "testA|older|filings": 137,
+  "testA|older|with component name": 137,
+  "testA|older|with part number": 123,
+  "testA|portal|PRESENT": 62,
+  "testA|portal|component records": 206,
+  "testA|portal|filings": 62,
+  "testA|portal|with component name": 62,
+  "testA|portal|with part number": 55,
+  "testB|portal|BLANK": 1,
+  "testB|portal|PRESENT": 99,
+  "testB|portal|component records": 177,
+  "testB|portal|filings": 100,
+  "testB|portal|with component name": 98,
+  "testB|portal|with part number": 93,
+  "unseen|older|BLANK": 6,
+  "unseen|older|PRESENT": 68,
+  "unseen|older|component records": 125,
+  "unseen|older|filings": 74,
+  "unseen|older|with component name": 68,
+  "unseen|older|with part number": 64,
+  "unseen|portal|PRESENT": 24,
+  "unseen|portal|component records": 41,
+  "unseen|portal|filings": 24,
+  "unseen|portal|with component name": 24,
+  "unseen|portal|with part number": 20
+ },
+ "4_flat_file": {
+  "file": "data/flat/FLAT_RCL_POST_2010.zip",
+  "member": "FLAT_RCL_POST_2010.txt",
+  "member_date": "2026-10-18",
+  "sha256": "d4c96957c1de88eb415fb4b6fcd532dbb567a00782268618b279c9a67c063c74",
+  "column_names": [
+   "RECORD_ID",
+   "CAMPNO",
+   "MAKETXT",
+   "MODELTXT",
+   "YEARTXT",
+   "MFGCAMPNO",
+   "COMPNAME",
+   "MFGNAME",
+   "BGMAN",
+   "ENDMAN",
+   "RCLTYPECD",
+   "POTAFF",
+   "ODATE",
+   "INFLUENCED_BY",
+   "MFGTXT",
+   "RCDATE",
+   "DATEA",
+   "RPNO",
+   "FMVSS",
+   "DESC_DEFECT",
+   "CONEQUENCE_DEFECT",
+   "CORRECTIVE_ACTION",
+   "NOTES",
+   "RCL_CMPT_ID",
+   "MFR_COMP_NAME",
+   "MFR_COMP_DESC",
+   "MFR_COMP_PTNO",
+   "DO_NOT_DRIVE",
+   "PARK_OUTSIDE"
+  ],
+  "mfr_comp_fields_present": true,
+  "download": "not needed: MFR_COMP_NAME, MFR_COMP_DESC and MFR_COMP_PTNO are present (fields 25-27); nothing downloaded",
+  "join_rule": "campaign id = 6 characters after 'RCLRPT-' in the PDF file name; flat rows whose CAMPNO (\\d{2}[VECT]\\d{6}) starts with it; all rows kept, distinct values per field",
+  "per_split": {
+   "testA": {
+    "campaigns": 199,
+    "joined": 199,
+    "MFR_COMP_NAME": {
+     "campaigns_with_value": 199,
+     "distinct_values_median": 1,
+     "distinct_values_max": 8
+    },
+    "MFR_COMP_DESC": {
+     "campaigns_with_value": 191,
+     "distinct_values_median": 1,
+     "distinct_values_max": 12
+    },
+    "MFR_COMP_PTNO": {
+     "campaigns_with_value": 189,
+     "distinct_values_median": 1,
+     "distinct_values_max": 70
+    }
+   },
+   "testB": {
+    "campaigns": 100,
+    "joined": 100,
+    "MFR_COMP_NAME": {
+     "campaigns_with_value": 98,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 6
+    },
+    "MFR_COMP_DESC": {
+     "campaigns_with_value": 97,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 22
+    },
+    "MFR_COMP_PTNO": {
+     "campaigns_with_value": 93,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 22
+    }
+   },
+   "unseen": {
+    "campaigns": 98,
+    "joined": 98,
+    "MFR_COMP_NAME": {
+     "campaigns_with_value": 95,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 3
+    },
+    "MFR_COMP_DESC": {
+     "campaigns_with_value": 92,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 8
+    },
+    "MFR_COMP_PTNO": {
+     "campaigns_with_value": 92,
+     "distinct_values_median": 1.0,
+     "distinct_values_max": 21
+    }
+   }
+  }
+ },
+ "5_claims": {
+  "agent_stores": "companies[]: name, role (SUPPLIER/SUB_SUPPLIER/DISTRIBUTOR count as supplier claims), status, evidence.section (cause/chronology/components/defect), evidence.quote; NO character offset; gate decision from the frozen agent.decide (scripts/sc_gate.py)",
+  "silver_stores": "claims S1 (block reports a component manufacturer; section 'block') and S2 (the narrative names that supplier; section cause/chronology): id, label (contains the name after ': '), status, quote, section; NO character offset; no gate",
+  "no_component_claims": "neither the frozen agent schema (tt/agent/schemas.py) nor the silver labels contain component claims",
+  "counts": {
+   "testA": {
+    "silver S1 SUPPORTED": 164,
+    "silver S1 quote located in parsed text": 164,
+    "agent supplier claims (all)": 109,
+    "agent supplier claims (gate-accepted)": 35,
+    "agent quote located in parsed text": 91,
+    "agent quote contains [MASKED]": 29,
+    "silver S2 SUPPORTED": 77,
+    "silver S2 quote located in parsed text": 77
+   },
+   "testB": {
+    "agent supplier claims (all)": 50,
+    "agent supplier claims (gate-accepted)": 20,
+    "agent quote located in parsed text": 49,
+    "agent quote contains [MASKED]": 16,
+    "silver S1 SUPPORTED": 79,
+    "silver S1 quote located in parsed text": 79,
+    "silver S2 SUPPORTED": 41,
+    "silver S2 quote located in parsed text": 41
+   },
+   "unseen": {
+    "agent supplier claims (all)": 67,
+    "agent supplier claims (gate-accepted)": 37,
+    "agent quote located in parsed text": 65,
+    "agent quote contains [MASKED]": 15,
+    "silver S1 SUPPORTED": 69,
+    "silver S1 quote located in parsed text": 69,
+    "silver S2 SUPPORTED": 40,
+    "silver S2 quote located in parsed text": 40
+   }
+  }
+ },
+ "6_agent_input": {
+  "how": "the frozen tt.agent.run_dev.build_user rebuilt for every filing (no model call): 'CAUSE:' + cause + 'CHRONOLOGY:' + chronology, block name masked",
+  "counts": {
+   "testA|older|a declared name appears verbatim (case-insensitive) in the input": 14,
+   "testA|older|filings": 137,
+   "testA|older|input contains [MASKED]": 15,
+   "testA|older|input contains a block heading or block field line": 0,
+   "testA|portal|a declared name appears verbatim (case-insensitive) in the input": 6,
+   "testA|portal|filings": 62,
+   "testA|portal|input contains [MASKED]": 9,
+   "testA|portal|input contains a block heading or block field line": 0,
+   "testB|portal|a declared name appears verbatim (case-insensitive) in the input": 17,
+   "testB|portal|filings": 100,
+   "testB|portal|input contains [MASKED]": 16,
+   "testB|portal|input contains a block heading or block field line": 0,
+   "unseen|older|a declared name appears verbatim (case-insensitive) in the input": 12,
+   "unseen|older|filings": 74,
+   "unseen|older|input contains [MASKED]": 10,
+   "unseen|older|input contains a block heading or block field line": 0,
+   "unseen|portal|a declared name appears verbatim (case-insensitive) in the input": 6,
+   "unseen|portal|filings": 24,
+   "unseen|portal|input contains [MASKED]": 5,
+   "unseen|portal|input contains a block heading or block field line": 0
+  }
+ }
+}
