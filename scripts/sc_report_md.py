@@ -208,7 +208,7 @@ w("- **Declared ≠ actual maker.** The reference is what the filer declared: an
   "declaration, not identification of the true manufacturer. A non-match is not a filer error.")
 w("- **Masking and circularity.**")
 w("  - The agent saw neither the block nor the masked block name, so its recall is bounded by narrative mentions that the mask missed. Agent vs silver "
-  "comparisons mostly reflect this.")
+  "comparisons are affected by this, by an amount not quantified here.")
 w("  - Silver S1 is read from the block (circular). Only out-of-block S2 evidence is independent of the reference.")
 w("- **Small accepted n.** Gate-accepted agent claims in the population number 70 pooled, and 17–32 per split, so the intervals are wide; cells with n < 20 "
   "are marked unstable.")

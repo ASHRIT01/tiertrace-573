@@ -176,7 +176,7 @@ The matching rule and the fuzzy threshold (token_set_ratio ≥ 90) are fixed in 
 ## Limitations
 - **Declared ≠ actual maker.** The reference is what the filer declared: an assembler, a distributor or the filer itself. A match is fidelity to that declaration, not identification of the true manufacturer. A non-match is not a filer error.
 - **Masking and circularity.**
-  - The agent saw neither the block nor the masked block name, so its recall is bounded by narrative mentions that the mask missed. Agent vs silver comparisons mostly reflect this.
+  - The agent saw neither the block nor the masked block name, so its recall is bounded by narrative mentions that the mask missed. Agent vs silver comparisons are affected by this, by an amount not quantified here.
   - Silver S1 is read from the block (circular). Only out-of-block S2 evidence is independent of the reference.
 - **Small accepted n.** Gate-accepted agent claims in the population number 70 pooled, and 17–32 per split, so the intervals are wide; cells with n < 20 are marked unstable.
 - **Parse failures.** None in the 397 filings, but the parser was written on these filings' layouts, and two pointer names ("See … .pdf") are counted as BLANK.
