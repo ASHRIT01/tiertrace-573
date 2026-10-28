@@ -22,3 +22,9 @@ data/labels/work/**/sheet_*.txt
 .env.groq
 data/external/
 data/inv/
+
+# local tooling (not part of the study)
+.claude/
+.mcp.json
+skills-lock.json
+graphify-out/
