@@ -50,14 +50,19 @@ Snapshot at 2026-10-28 07:50 UTC (about 9 minutes in):
 | PDFs in `data/cache` | 1,143 (1,103 before this phase, which were mostly 2015-2019 audit and test samples) |
 | API listings in `data/api_cache` | 1,150 |
 | Disk, `data/cache` / `data/api_cache` | 303 MB / 37 MB |
+
+(That snapshot is from the first run, before the cache move.)
 | Failures so far | 2, both "no Part 573 document in the API listing" (`20E002`, `20E051`); no HTTP errors, no blocks |
 
-**Expected download time.** The rate limit alone would give about 3.8 h (6,685 campaigns × 2 requests at 1/s). Measured
-throughput is far lower, about 4-7 campaigns per minute, because the project drive is a FAT (msdos) volume whose small
-writes take 0.7-8 s each (the fetcher sits in uninterruptible disk wait; NHTSA responds in about 0.6 s). At that rate expect
-**roughly 16-28 hours**. Average PDF size so far is about 0.27 MB, so the 6,685 PDFs should add about 1.8 GB (28 GB free).
-Moving `data/cache` and `data/api_cache` to the internal disk would bring it near the 3.8 h floor; I have not done that
-because it changes the cache location.
+**Cache location (operational note, see `reports/DEVIATIONS.md`).** The first ~200 campaigns went into `data/cache`. Because writes
+to the FAT project drive took 0.7-8 s each (about 5 campaigns/min), the fetch was stopped and resumed with
+`--cache-dir ~/tiertrace_sn1_cache` (internal disk, outside the repo; `cache/` PDFs, `api_cache/` listings). Already-cached files for the
+SN-1 campaigns were copied from the old directories (read-only, SHA-256 verified per file, 0 mismatches: 982 listings, 978 PDFs;
+`scripts/sn1_migrate_cache.py`). The old directories were not modified.
+
+**Expected download time.** After the switch the first 100 new campaigns took 2.11 s each (floor: two requests at 1.05 s spacing = 2.1 s),
+so the remaining ~5,500 campaigns need about 3.3 hours. Average PDF size is about 0.27 MB, so about 1.8 GB in total (28 GB free on the
+project drive; the internal disk holds the cache).
 
 ## 3. Investigations flat file
 

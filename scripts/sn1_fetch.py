@@ -2,7 +2,7 @@
 Reuses tt.fetch (identifying UA, robots check, on-disk cache) and list_573 (API doc listing, cached).
 Resumable: anything already in data/api_cache or data/cache is skipped without a request.
 Combined rate across API + PDF calls stays under 1 request/s. Stops on 401/403/429 (project rule).
-  python scripts/sn1_fetch.py [--types VE] [--limit N]   appends to runs/sn1_fetch.log; failures -> runs/sn1_failures.jsonl"""
+  python scripts/sn1_fetch.py [--types VE] [--limit N] [--cache-dir DIR]   appends to runs/sn1_fetch.log; failures -> runs/sn1_failures.jsonl"""
 import argparse
 import json
 import sys
@@ -48,13 +48,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--types", default="VE")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--cache-dir", default=None,
+                    help="root holding cache/ (PDFs) and api_cache/ (listings); default: data/cache and data/api_cache")
     a = ap.parse_args()
     camps = campaigns(a.types)
     if a.limit:
         camps = camps[:a.limit]
-    log(f"START campaigns={len(camps)} types={a.types}")
-    api = ApiClient(rate_s=1.05)
-    fx = PoliteFetcher(Path("data/cache"), rate_s=1.05)
+    log(f"START campaigns={len(camps)} types={a.types} cache_dir={a.cache_dir or 'data (default)'}")
+    if a.cache_dir:
+        root = Path(a.cache_dir).expanduser()
+        api, fx = ApiClient(root / "api_cache", rate_s=1.05), PoliteFetcher(root / "cache", rate_s=1.05)
+    else:
+        api, fx = ApiClient(rate_s=1.05), PoliteFetcher(Path("data/cache"), rate_s=1.05)
 
     def sync():  # one shared clock so API + PDF calls together stay <= 1/s
         t = max(api._last, fx._last)
