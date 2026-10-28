@@ -17,6 +17,9 @@ FAB = ("reports/phase_6_failure_analysis.md", "b67c054")
 H6L = ("reports/H6_hw_report.md", "08d7916")
 TS = ("reports/phase_7_timeliness.md", "2157cf1")
 TSP = ("reports/TS_PROTOCOL.md", "246e30e")
+SC = ("reports/phase_8_supplier_check.md", "f35dfb6")
+SCP = ("reports/SC_PROTOCOL.md", "24f7c34")
+SCI = ("reports/SC_INVENTORY.md", "c27b962")
 
 # (id, claim as used in the write-up, source, exact text in the source)
 CLAIMS = [
@@ -157,6 +160,26 @@ CLAIMS = [
     ("T12", "TS-1: agent vs reference kappa 0.937 where both have a date (primary)", TS, "(Cohen's κ 0.937)"),
     ("T13", "TS-1 amendment TS-A1: 2 filings, 0 anchors affected", TS, "**Anchors using a year from context in them: 0**"),
     ("T14", "TS-1: 186 of 397 filings typed by the flat-file FMVSS proxy (2025+ form has no type field)", TS, "186 of 397 filings are typed by a flat-file FMVSS proxy"),
+    # SC-1 supplier check (post-freeze protocol sc-protocol-1; reference = filer-declared supplier, non-AI, not ground truth)
+    ("U0", "SC-1 protocol fixed before any claim was compared with the reference", SCP, "**Status: fixed before any claim is compared with the reference.**"),
+    ("U1", "SC-1: supplier block parsed in 397/397 filings (portal 186, older 211)", SC, "Parse rate 397/397, with 0 failures, in both layouts: portal (186) and older (211)."),
+    ("U2", "SC-1 strata: NAMED 255, OEM_SELF 47, OBTAINED_FROM 4, MULTIPLE 6, BLANK 85, PARSE_FAIL 0", SC, "| **all** | 255 | 47 | 4 | 6 | 85 | 0 |"),
+    ("U3", "SC-1 population: 261 filings declare one or more external suppliers", SC, "**Population:** 261 filings declare one or more external suppliers"),
+    ("U4", "SC-1: 52 of 65 Supplier-Type-OEM names are not the filer", SCI, "52 of the 65 OEM-typed names are not the filer"),
+    ("U5", "SC-1: the agent's frozen input contains no supplier-block line in any filing", SC, "no block heading or field line appears in the agent's frozen input in any filing"),
+    ("U6", "SC-1: agent supplier claims 226 (92 gate-accepted)", SC, "Agent run-1: 226 in total, of which 92 are gate-accepted."),
+    ("U7", "SC-1 agent exact, pooled: recall 18/261 = 0.069; accepted 13/261; precision 19/172 = 0.110; accepted 14/70 = 0.200", SC,
+     "| **pooled** | 261 | 18/261 = 0.069 W[0.044, 0.106] B[0.037, 0.110] | 13/261 = 0.050 W[0.029, 0.083] B[0.024, 0.085] | 19/172 = 0.110 W[0.072, 0.166] B[0.065, 0.168] | 14/70 = 0.200 W[0.123, 0.308] B[0.105, 0.317] |"),
+    ("U8", "SC-1 silver exact, pooled: S2 recall 92/261 = 0.352; S1 precision 254/261 = 0.973; S2 precision 92/113 = 0.814", SC,
+     "| **pooled** | 261 | 255/261 = 0.977 W[0.951, 0.989] B[0.958, 0.993] | 92/261 = 0.352 W[0.297, 0.412] B[0.268, 0.463] | 254/261 = 0.973 W[0.946, 0.987] B[0.953, 0.991] | 92/113 = 0.814 W[0.733, 0.875] B[0.723, 0.897] |"),
+    ("U9", "SC-1 agent vs silver S2, pooled: 18 both / 0 agent only / 74 silver only / 169 neither", SC, "| **pooled** | agent all vs silver S2 | 18 | 0 | 74 | 169 |"),
+    ("U10", "SC-1 containment, pooled: agent precision (accepted) 27/70", SC, "| token containment | **pooled** | 261 | 34/261 = 0.130 | 35/172 = 0.203 | 26/261 = 0.100 | 27/70 = 0.386 |"),
+    ("U11", "SC-1 fuzzy tsr>=90, pooled: agent precision (accepted) 29/70", SC, "| fuzzy token_set_ratio ≥ 90 | **pooled** | 261 | 40/261 = 0.153 | 41/172 = 0.238 | 28/261 = 0.107 | 29/70 = 0.414 |"),
+    ("U12", "SC-1 components not run: no component claims exist", SC, "**Not run: there are no component claims to check.**"),
+    ("U13", "SC-1 amendment SC-A1: 23 of 26 Pass-C silver S2 claims fall in the population", SC, "**23 of these 26 claims fall in the population;**"),
+    ("U14", "SC-1 post hoc: 24 of 261 population filings declare a short form of the filer's own name; 1 of 19 agent matches there", SC,
+     "In 24 of 261 population filings"),
+    ("U15", "SC-1 post hoc: 14 silver S1 quotes located out of block are first-match artefacts", SC, "**POST HOC diagnostic:** in all 14"),
     # cost, hardware, runs
     ("H1", "Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min)", DEV, "12:48:52 start, 16:10:07 done"),
     ("H2", "Test-A run 2: restart at 21:32:45 with 167 of 199 records", DEV, "RESTART 21:32:45 with 167 of 199 records"),

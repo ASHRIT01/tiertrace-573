@@ -19,6 +19,7 @@ Error rates are against silver labels, not checked by a human. Sources are given
 | H1-style delta | exploratory | unseen-filer (98) | 0.0877 [0.0219, 0.1587] | none | n/a | same |
 | H5-style B1 − B2 | exploratory | Test-B / unseen-filer | 0.1458 [0.0639, 0.2048] / **0.0877 [−0.0103, 0.1612]**: unseen interval includes 0 | none | n/a | same |
 | TS-1 timeliness screen: self-reported decision-to-original-filing gap > 5 working days (screening signal, not a legal finding) | post-freeze protocol ts-protocol-1, silver reference | 305 defect filings | FLAGGED with RCDATE as filing date 19/305 = 0.062 [0.040, 0.095]; originals stratum 6/136 = 0.044 [0.020, 0.093] (CIs added after seeing results). The primary (PDF Submission Date, 104/305) is not interpretable as timing: amended versions carry the amendment date | none (descriptive) | n/a | `reports/phase_7_timeliness.md@2157cf1` |
+| SC-1 supplier claims vs the filer-declared supplier (reference = filer's declaration, non-AI, not ground truth) | post-freeze protocol sc-protocol-1 | 261 filings declaring an external supplier | agent (never saw the block, name masked): recall 18/261 = 0.069, precision 19/172 = 0.110 (accepted 14/70 = 0.200); silver S2 precision 92/113 = 0.814; components not run (no component claims) | none (descriptive) | n/a | `reports/phase_8_supplier_check.md@f35dfb6` |
 
 ## Quick start
 
