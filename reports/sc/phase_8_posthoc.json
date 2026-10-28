@@ -1,0 +1,18 @@
+{
+ "note": "POST HOC diagnostics added after seeing results; reference = filer-declared supplier (non-AI, not ground truth)",
+ "population_filings": 261,
+ "declared_name_is_short_form_of_filer": {
+  "filings": 24,
+  "agent_all_matching_claims_in_them": 1,
+  "agent_all_matching_claims_total": 19,
+  "agent_accepted_matching_claims_in_them": 1,
+  "agent_accepted_matching_claims_total": 14,
+  "agent_filings_recalled_in_them": 1,
+  "agent_filings_recalled_total": 18
+ },
+ "silver_S1_located_outside_block": {
+  "n": 14,
+  "first_match_is_header_manufacturer_name": 14,
+  "with_an_occurrence_inside_block": 14
+ }
+}
