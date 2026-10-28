@@ -3,7 +3,7 @@ message: "If you use this software or its labels, please cite it as below. All l
 title: "TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings"
 type: software
 authors:
-  - name: "<MY FULL NAME>"
+  - name: "<YOUR NAME AS ON APPLICATIONS>"
 version: "0.1.0"
 date-released: "2026-10-28"
 license: MIT
