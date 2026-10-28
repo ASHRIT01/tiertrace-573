@@ -21,3 +21,4 @@ data/labels/work/**/alltexts/
 data/labels/work/**/sheet_*.txt
 .env.groq
 data/external/
+data/inv/
