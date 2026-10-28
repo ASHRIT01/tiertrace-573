@@ -84,8 +84,26 @@ project drive; the internal disk holds the cache).
 - 467 distinct campaign ids are linked from investigations opened since 2015; the other 296 are pre-2020 campaigns.
 - Some old CAMPNO values are not recall-style ids (e.g. `00I002000`, `01I004000`); they cannot join and are ignored.
 
+## 2b. Final download status (fetch finished 2026-10-28 11:53 UTC)
+
+| | |
+|---|---|
+| Campaigns in the fetch set (V/E, RCDATE >= 2020-01-01) | 6,685 |
+| Latest Part 573 PDF on disk | **6,668** |
+| No Part 573 document in the API listing | **17** (20E002, 20E051, 20V374, 20V400, 20V413, 20V425, 20V504, 20V511, 20V512, 21V010, 21V073, 21V422, 21V484, 21V576, 25V167, 25V334, 26V360) |
+| HTTP errors, timeouts, blocks (401/403/429), unparsable listings | 0 |
+| PDFs fetched in this phase / copied in from earlier caches | 5,690 (plus 2 in the smoke test and ~200 into the old drive) / 978, SHA-256 verified |
+| Disk (`~/tiertrace_sn1_cache`) | PDFs 1.7 GB, listings 71 MB |
+| Run time after the cache move | 08:28 to 11:53 UTC (3 h 25 min), 2.1 s per campaign |
+| Manifest | `~/tiertrace_sn1_cache/sn1_manifest.json`: 13,353 files (6,668 PDFs, 6,685 listings), SHA-256 of the manifest `7686b2344fb96a7ce1bd4b80b702aacbb007720d6e12bd47911ed887e9232131` |
+
+Integrity check of all 6,668 PDFs (header `%PDF`, size against the API's `fileSize`, which is bytes for older files and KB for newer ones):
+- 6,663 pass.
+- **2 are not PDFs:** the API's latest 573 document for `24E028` (RCLRPT-24E028-9058, loaded 2024-06-21) and `24V528` (RCLRPT-24V528-5855, loaded 2024-09-11) is a 125-byte NHTSA reply, `NO SUCH ENTITY: There is no such recall id or contact id`. Earlier versions of both campaigns are valid PDFs but were not fetched. These two campaigns have no usable report in the cache until a fallback rule is chosen (for example the latest version that is a valid PDF); nothing was changed.
+- **3 are valid PDFs (`%PDF` header and `%%EOF`) whose size disagrees with the listing:** `20V317` (121,742 B vs listed 2,799,953), `24V806` (328,852 B vs listed 387), `26V010` (441,385 B vs listed 357). The listing metadata is probably stale for these; they are kept as downloaded.
+
 ## Limits
 
 - The recall flat file is the local copy of 2026-10-18; campaigns filed after 2026-10-09 are not in it.
 - "Latest version" depends on the API's `loadDate`; campaigns with no Part 573 document in the API listing are logged as failures, not retried.
-- The download figures above are a snapshot; the log and cache are the live record. Final counts will be appended when the run finishes.
+- Section 2 holds the first-run snapshot; section 2b is the final status.
