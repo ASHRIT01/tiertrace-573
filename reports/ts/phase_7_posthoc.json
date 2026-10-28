@@ -1,0 +1,1880 @@
+{
+ "note": "silver reference (AI-generated, not human-verified); descriptive screening signal, not a legal finding; CIs ADDED AFTER SEEING RESULTS (post hoc additions for two pre-declared variants)",
+ "tests": "25 passed in 0.78s",
+ "rcdate_as_filing_date": {
+  "testA": {
+   "a": {
+    "N": 152,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 117,
+    "gap_mid": {
+     "n": 117,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0.0,
+     "max": 242.0
+    },
+    "gap_min": {
+     "n": 117,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 242
+    },
+    "gap_max": {
+     "n": 117,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0,
+     "max": 242
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 9,
+      "n": 152,
+      "share": 0.05921052631578947,
+      "wilson95": [
+       0.03146030398541715,
+       0.10869148223357711
+      ],
+      "cluster_boot95": [
+       0.023668639053254437,
+       0.10483870967741936
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 104,
+      "n": 152,
+      "share": 0.6842105263157895,
+      "wilson95": [
+       0.6065492505197002,
+       0.7527903015081828
+      ],
+      "cluster_boot95": [
+       0.5882352941176471,
+       0.764367816091954
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 4,
+      "n": 152,
+      "share": 0.02631578947368421,
+      "wilson95": [
+       0.010280235864764092,
+       0.06570377320639395
+      ],
+      "cluster_boot95": [
+       0.005917159763313609,
+       0.055944055944055944
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 35,
+      "n": 152,
+      "share": 0.23026315789473684,
+      "wilson95": [
+       0.17048029066540799,
+       0.30334393672233473
+      ],
+      "cluster_boot95": [
+       0.15483870967741936,
+       0.3208955223880597
+      ]
+     }
+    },
+    "anchor_ambiguous": 2,
+    "anchor_precision": {
+     "day": 115,
+     "month": 2
+    }
+   },
+   "b": {
+    "N": 152,
+    "coverage": {
+     "k": 72,
+     "n": 152,
+     "share": 0.47368421052631576,
+     "wilson95": [
+      0.3959377545194448,
+      0.552728023762286
+     ],
+     "cluster_boot95": [
+      0.34615384615384615,
+      0.5961538461538461
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 79,
+    "no_decision_date_total": 80,
+    "status_counts": {
+     "NO_DECISION_DATE": 80,
+     "NOT_FLAGGED": 65,
+     "FLAGGED": 6,
+     "INDETERMINATE": 1
+    },
+    "complete_case_flagged": {
+     "k": 6,
+     "n": 72,
+     "share": 0.08333333333333333,
+     "wilson95": [
+      0.038752424956949666,
+      0.17012355220676517
+     ],
+     "cluster_boot95": [
+      0.027777777777777776,
+      0.16176470588235295
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 1,
+     "n": 72,
+     "share": 0.013888888888888888,
+     "wilson95": [
+      0.002455951882905767,
+      0.07456602147476155
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.05194805194805195
+     ]
+    },
+    "manski_lower": {
+     "value": 0.039473684210526314,
+     "cluster_boot95": [
+      0.012195121951219513,
+      0.0763888888888889
+     ]
+    },
+    "manski_upper": {
+     "value": 0.5723684210526315,
+     "cluster_boot95": [
+      0.4527027027027027,
+      0.7013888888888888
+     ]
+    },
+    "reference_flagged_share": 0.05921052631578947
+   },
+   "c": {
+    "n_both": 71,
+    "identical_interval": {
+     "value": 0.9859154929577465,
+     "cluster_boot95": [
+      0.95,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.971830985915493,
+     "cluster_boot95": [
+      0.9206349206349206,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 71,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 0.0,
+     "min": 0.0,
+     "max": 1.5,
+     "share_0": 0.9859154929577465,
+     "share_le_5": 1.0
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 5,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 64,
+      "INDETERMINATE": 0
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 1,
+      "INDETERMINATE": 1
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "kappa": {
+     "value": 0.9168618266978924,
+     "cluster_boot95": [
+      0.6635220125786168,
+      1.0
+     ]
+    },
+    "pabak": {
+     "value": 0.9788732394366197,
+     "cluster_boot95": [
+      0.9249999999999998,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 5,
+    "unstable": true
+   }
+  },
+  "testB": {
+   "a": {
+    "N": 73,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 58,
+    "gap_mid": {
+     "n": 58,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 5.300000000000004,
+     "min": 0.0,
+     "max": 20.5
+    },
+    "gap_min": {
+     "n": 58,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 18
+    },
+    "gap_max": {
+     "n": 58,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0,
+     "max": 41
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 3,
+      "n": 73,
+      "share": 0.0410958904109589,
+      "wilson95": [
+       0.01407394035392058,
+       0.1140009162629833
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.09090909090909091
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 51,
+      "n": 73,
+      "share": 0.6986301369863014,
+      "wilson95": [
+       0.5856263409869292,
+       0.7917740942087393
+      ],
+      "cluster_boot95": [
+       0.5454545454545454,
+       0.8105263157894737
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 4,
+      "n": 73,
+      "share": 0.0547945205479452,
+      "wilson95": [
+       0.02151249741569728,
+       0.1325899754215975
+      ],
+      "cluster_boot95": [
+       0.011494252873563218,
+       0.12307692307692308
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 15,
+      "n": 73,
+      "share": 0.2054794520547945,
+      "wilson95": [
+       0.1286697211101815,
+       0.31173653015141345
+      ],
+      "cluster_boot95": [
+       0.11702127659574468,
+       0.3333333333333333
+      ]
+     }
+    },
+    "anchor_ambiguous": 1,
+    "anchor_precision": {
+     "day": 55,
+     "month": 3
+    }
+   },
+   "b": {
+    "N": 73,
+    "coverage": {
+     "k": 27,
+     "n": 73,
+     "share": 0.3698630136986301,
+     "wilson95": [
+      0.26823149760636467,
+      0.48450614829992145
+     ],
+     "cluster_boot95": [
+      0.24705882352941178,
+      0.5074626865671642
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 45,
+    "no_decision_date_total": 46,
+    "status_counts": {
+     "NO_DECISION_DATE": 46,
+     "NOT_FLAGGED": 22,
+     "FLAGGED": 3,
+     "INDETERMINATE": 2
+    },
+    "complete_case_flagged": {
+     "k": 3,
+     "n": 27,
+     "share": 0.1111111111111111,
+     "wilson95": [
+      0.038520348283098374,
+      0.2805780081827982
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.25925925925925924
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 2,
+     "n": 27,
+     "share": 0.07407407407407407,
+     "wilson95": [
+      0.020554654060988622,
+      0.23369592683023144
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.20833333333333334
+     ]
+    },
+    "manski_lower": {
+     "value": 0.0410958904109589,
+     "cluster_boot95": [
+      0.0,
+      0.0945945945945946
+     ]
+    },
+    "manski_upper": {
+     "value": 0.6986301369863014,
+     "cluster_boot95": [
+      0.5542168674698795,
+      0.8285714285714286
+     ]
+    },
+    "reference_flagged_share": 0.0410958904109589
+   },
+   "c": {
+    "n_both": 26,
+    "identical_interval": {
+     "value": 0.8846153846153846,
+     "cluster_boot95": [
+      0.7272727272727273,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.8846153846153846,
+     "cluster_boot95": [
+      0.7272727272727273,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 26,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 0.5,
+     "min": 0.0,
+     "max": 6.0,
+     "share_0": 0.8846153846153846,
+     "share_le_5": 0.9615384615384616
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 2,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 21,
+      "INDETERMINATE": 2
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 1,
+      "INDETERMINATE": 0
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "kappa": {
+     "value": 0.5243902439024389,
+     "cluster_boot95": [
+      -0.07462686567164202,
+      1.0
+     ]
+    },
+    "pabak": {
+     "value": 0.8269230769230769,
+     "cluster_boot95": [
+      0.5909090909090908,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 2,
+    "unstable": true
+   }
+  },
+  "unseen": {
+   "a": {
+    "N": 80,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 42,
+    "gap_mid": {
+     "n": 42,
+     "median": 4.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 42.89999999999997,
+     "min": 0.0,
+     "max": 141.0
+    },
+    "gap_min": {
+     "n": 42,
+     "median": 3.5,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 22.399999999999977,
+     "min": 0,
+     "max": 141
+    },
+    "gap_max": {
+     "n": 42,
+     "median": 4.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 45.9,
+     "min": 0,
+     "max": 141
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 7,
+      "n": 80,
+      "share": 0.0875,
+      "wilson95": [
+       0.04303200178205986,
+       0.16976795508474996
+      ],
+      "cluster_boot95": [
+       0.03571428571428571,
+       0.15476190476190477
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 33,
+      "n": 80,
+      "share": 0.4125,
+      "wilson95": [
+       0.3110585761276188,
+       0.5219595965410984
+      ],
+      "cluster_boot95": [
+       0.28205128205128205,
+       0.5465116279069767
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 2,
+      "n": 80,
+      "share": 0.025,
+      "wilson95": [
+       0.006882893202970648,
+       0.0866443298557801
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.06493506493506493
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 38,
+      "n": 80,
+      "share": 0.475,
+      "wilson95": [
+       0.36924733297407564,
+       0.5830435735027005
+      ],
+      "cluster_boot95": [
+       0.3333333333333333,
+       0.6125
+      ]
+     }
+    },
+    "anchor_ambiguous": 1,
+    "anchor_precision": {
+     "year_part": 1,
+     "day": 41
+    }
+   },
+   "b": {
+    "N": 80,
+    "coverage": {
+     "k": 27,
+     "n": 80,
+     "share": 0.3375,
+     "wilson95": [
+      0.24345612608081602,
+      0.4464347660182303
+     ],
+     "cluster_boot95": [
+      0.2345679012345679,
+      0.45
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 53,
+    "no_decision_date_total": 53,
+    "status_counts": {
+     "NO_DECISION_DATE": 53,
+     "FLAGGED": 6,
+     "NOT_FLAGGED": 20,
+     "INDETERMINATE": 1
+    },
+    "complete_case_flagged": {
+     "k": 6,
+     "n": 27,
+     "share": 0.2222222222222222,
+     "wilson95": [
+      0.10607239452360037,
+      0.4075692886663257
+     ],
+     "cluster_boot95": [
+      0.07407407407407407,
+      0.38461538461538464
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 1,
+     "n": 27,
+     "share": 0.037037037037037035,
+     "wilson95": [
+      0.006568145980785103,
+      0.18283465933575843
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.12
+     ]
+    },
+    "manski_lower": {
+     "value": 0.075,
+     "cluster_boot95": [
+      0.023809523809523808,
+      0.14285714285714285
+     ]
+    },
+    "manski_upper": {
+     "value": 0.75,
+     "cluster_boot95": [
+      0.6470588235294118,
+      0.8493150684931506
+     ]
+    },
+    "reference_flagged_share": 0.0875
+   },
+   "c": {
+    "n_both": 24,
+    "identical_interval": {
+     "value": 0.875,
+     "cluster_boot95": [
+      0.7,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.8333333333333334,
+     "cluster_boot95": [
+      0.64,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 24,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 1.3999999999999986,
+     "min": 0.0,
+     "max": 10.0,
+     "share_0": 0.875,
+     "share_le_5": 0.9583333333333334
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 3,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 1,
+      "NOT_FLAGGED": 19,
+      "INDETERMINATE": 0
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 1
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 0.75,
+     "cluster_boot95": [
+      0.0,
+      1.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "kappa": {
+     "value": 0.8688524590163935,
+     "cluster_boot95": [
+      0.4651162790697671,
+      1.0
+     ]
+    },
+    "pabak": {
+     "value": 0.9375,
+     "cluster_boot95": [
+      0.7954545454545454,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 3,
+    "unstable": true
+   }
+  },
+  "pooled": {
+   "a": {
+    "N": 305,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 217,
+    "gap_mid": {
+     "n": 217,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0.0,
+     "max": 242.0
+    },
+    "gap_min": {
+     "n": 217,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 242
+    },
+    "gap_max": {
+     "n": 217,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0,
+     "max": 242
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 19,
+      "n": 305,
+      "share": 0.06229508196721312,
+      "wilson95": [
+       0.040240007878466655,
+       0.09523875517512409
+      ],
+      "cluster_boot95": [
+       0.03272727272727273,
+       0.09608540925266904
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 188,
+      "n": 305,
+      "share": 0.6163934426229508,
+      "wilson95": [
+       0.5606948005212327,
+       0.6691966145469137
+      ],
+      "cluster_boot95": [
+       0.5307692307692308,
+       0.6902356902356902
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 10,
+      "n": 305,
+      "share": 0.03278688524590164,
+      "wilson95": [
+       0.017904899423020305,
+       0.05929153304991365
+      ],
+      "cluster_boot95": [
+       0.01288659793814433,
+       0.05787781350482315
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 88,
+      "n": 305,
+      "share": 0.28852459016393445,
+      "wilson95": [
+       0.24055629042553897,
+       0.34175367374642057
+      ],
+      "cluster_boot95": [
+       0.22033898305084745,
+       0.36742424242424243
+      ]
+     }
+    },
+    "anchor_ambiguous": 4,
+    "anchor_precision": {
+     "day": 211,
+     "month": 5,
+     "year_part": 1
+    }
+   },
+   "b": {
+    "N": 305,
+    "coverage": {
+     "k": 126,
+     "n": 305,
+     "share": 0.4131147540983607,
+     "wilson95": [
+      0.35926966633581203,
+      0.4691212491766985
+     ],
+     "cluster_boot95": [
+      0.32471264367816094,
+      0.49851632047477745
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 177,
+    "no_decision_date_total": 179,
+    "status_counts": {
+     "NO_DECISION_DATE": 179,
+     "NOT_FLAGGED": 107,
+     "FLAGGED": 15,
+     "INDETERMINATE": 4
+    },
+    "complete_case_flagged": {
+     "k": 15,
+     "n": 126,
+     "share": 0.11904761904761904,
+     "wilson95": [
+      0.07348665559365336,
+      0.18715011734516446
+     ],
+     "cluster_boot95": [
+      0.06349206349206349,
+      0.1885245901639344
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 4,
+     "n": 126,
+     "share": 0.031746031746031744,
+     "wilson95": [
+      0.012413278972689408,
+      0.07878608776460755
+     ],
+     "cluster_boot95": [
+      0.00684931506849315,
+      0.0661764705882353
+     ]
+    },
+    "manski_lower": {
+     "value": 0.04918032786885246,
+     "cluster_boot95": [
+      0.026402640264026403,
+      0.07630522088353414
+     ]
+    },
+    "manski_upper": {
+     "value": 0.6491803278688525,
+     "cluster_boot95": [
+      0.5616883116883117,
+      0.7381703470031545
+     ]
+    },
+    "reference_flagged_share": 0.06229508196721312
+   },
+   "c": {
+    "n_both": 121,
+    "identical_interval": {
+     "value": 0.9421487603305785,
+     "cluster_boot95": [
+      0.8867924528301887,
+      0.9844961240310077
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.9256198347107438,
+     "cluster_boot95": [
+      0.8608695652173913,
+      0.9734513274336283
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 121,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 0.0,
+     "min": 0.0,
+     "max": 10.0,
+     "share_0": 0.9421487603305785,
+     "share_le_5": 0.9834710743801653
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 10,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 1,
+      "NOT_FLAGGED": 104,
+      "INDETERMINATE": 2
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 2,
+      "INDETERMINATE": 2
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 0.9090909090909091,
+     "cluster_boot95": [
+      0.7,
+      1.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "kappa": {
+     "value": 0.8093287109990547,
+     "cluster_boot95": [
+      0.6108464639061927,
+      0.9565081351689615
+     ]
+    },
+    "pabak": {
+     "value": 0.9380165289256199,
+     "cluster_boot95": [
+      0.8738317757009346,
+      0.9876033057851239
+     ]
+    },
+    "n_reference_flagged": 10,
+    "unstable": false
+   }
+  }
+ },
+ "original_version_only": {
+  "testA": {
+   "a": {
+    "N": 72,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 56,
+    "gap_mid": {
+     "n": 56,
+     "median": 4.5,
+     "p25": 2.75,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0.0,
+     "max": 242.0
+    },
+    "gap_min": {
+     "n": 56,
+     "median": 4.0,
+     "p25": 2.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 242
+    },
+    "gap_max": {
+     "n": 56,
+     "median": 4.5,
+     "p25": 2.75,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 242
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 2,
+      "n": 72,
+      "share": 0.027777777777777776,
+      "wilson95": [
+       0.007651021904494577,
+       0.09574175221438225
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.07352941176470588
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 51,
+      "n": 72,
+      "share": 0.7083333333333334,
+      "wilson95": [
+       0.5949425733065095,
+       0.8006194381116332
+      ],
+      "cluster_boot95": [
+       0.5757575757575758,
+       0.8125
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 3,
+      "n": 72,
+      "share": 0.041666666666666664,
+      "wilson95": [
+       0.014270807466925182,
+       0.11549276741316111
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.0945945945945946
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 16,
+      "n": 72,
+      "share": 0.2222222222222222,
+      "wilson95": [
+       0.14167443539575805,
+       0.3309095493800518
+      ],
+      "cluster_boot95": [
+       0.12,
+       0.3484848484848485
+      ]
+     }
+    },
+    "anchor_ambiguous": 2,
+    "anchor_precision": {
+     "day": 55,
+     "month": 1
+    }
+   },
+   "b": {
+    "N": 72,
+    "coverage": {
+     "k": 33,
+     "n": 72,
+     "share": 0.4583333333333333,
+     "wilson95": [
+      0.34828627057626194,
+      0.5726013271401095
+     ],
+     "cluster_boot95": [
+      0.2891566265060241,
+      0.6341463414634146
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 39,
+    "no_decision_date_total": 39,
+    "status_counts": {
+     "NO_DECISION_DATE": 39,
+     "NOT_FLAGGED": 32,
+     "INDETERMINATE": 1
+    },
+    "complete_case_flagged": {
+     "k": 0,
+     "n": 33,
+     "share": 0.0,
+     "wilson95": [
+      0.0,
+      0.10426999754245206
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 1,
+     "n": 33,
+     "share": 0.030303030303030304,
+     "wilson95": [
+      0.00536941053687183,
+      0.1531872538211892
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.1111111111111111
+     ]
+    },
+    "manski_lower": {
+     "value": 0.0,
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "manski_upper": {
+     "value": 0.5555555555555556,
+     "cluster_boot95": [
+      0.3815789473684211,
+      0.7285714285714285
+     ]
+    },
+    "reference_flagged_share": 0.027777777777777776
+   },
+   "c": {
+    "n_both": 33,
+    "identical_interval": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.9696969696969697,
+     "cluster_boot95": [
+      0.8888888888888888,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 33,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 0.0,
+     "min": 0.0,
+     "max": 0.0,
+     "share_0": 1.0,
+     "share_le_5": 1.0
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 32,
+      "INDETERMINATE": 0
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 1
+     }
+    },
+    "precision_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "kappa": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "pabak": {
+     "value": 1.0,
+     "cluster_boot95": [
+      1.0,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 0,
+    "unstable": true
+   }
+  },
+  "testB": {
+   "a": {
+    "N": 38,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 31,
+    "gap_mid": {
+     "n": 31,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0.0,
+     "max": 20.5
+    },
+    "gap_min": {
+     "n": 31,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 8
+    },
+    "gap_max": {
+     "n": 31,
+     "median": 5.0,
+     "p25": 4.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0,
+     "max": 41
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 2,
+      "n": 38,
+      "share": 0.05263157894736842,
+      "wilson95": [
+       0.014554208147292413,
+       0.17285462131770377
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.1388888888888889
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 27,
+      "n": 38,
+      "share": 0.7105263157894737,
+      "wilson95": [
+       0.5524286232424794,
+       0.8299672217151693
+      ],
+      "cluster_boot95": [
+       0.5161290322580645,
+       0.8518518518518519
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 2,
+      "n": 38,
+      "share": 0.05263157894736842,
+      "wilson95": [
+       0.014554208147292413,
+       0.17285462131770377
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.14285714285714285
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 7,
+      "n": 38,
+      "share": 0.18421052631578946,
+      "wilson95": [
+       0.09221765185221271,
+       0.334188580711314
+      ],
+      "cluster_boot95": [
+       0.06976744186046512,
+       0.35714285714285715
+      ]
+     }
+    },
+    "anchor_ambiguous": 1,
+    "anchor_precision": {
+     "day": 30,
+     "month": 1
+    }
+   },
+   "b": {
+    "N": 38,
+    "coverage": {
+     "k": 13,
+     "n": 38,
+     "share": 0.34210526315789475,
+     "wilson95": [
+      0.21212415179959412,
+      0.5010789644821693
+     ],
+     "cluster_boot95": [
+      0.20588235294117646,
+      0.5
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 25,
+    "no_decision_date_total": 25,
+    "status_counts": {
+     "NO_DECISION_DATE": 25,
+     "NOT_FLAGGED": 10,
+     "INDETERMINATE": 2,
+     "FLAGGED": 1
+    },
+    "complete_case_flagged": {
+     "k": 1,
+     "n": 13,
+     "share": 0.07692307692307693,
+     "wilson95": [
+      0.013710421242556586,
+      0.3331395092109959
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.25
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 2,
+     "n": 13,
+     "share": 0.15384615384615385,
+     "wilson95": [
+      0.043258178358081184,
+      0.4223463101948254
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.38461538461538464
+     ]
+    },
+    "manski_lower": {
+     "value": 0.02631578947368421,
+     "cluster_boot95": [
+      0.0,
+      0.0967741935483871
+     ]
+    },
+    "manski_upper": {
+     "value": 0.7368421052631579,
+     "cluster_boot95": [
+      0.5666666666666667,
+      0.8823529411764706
+     ]
+    },
+    "reference_flagged_share": 0.05263157894736842
+   },
+   "c": {
+    "n_both": 12,
+    "identical_interval": {
+     "value": 0.8333333333333334,
+     "cluster_boot95": [
+      0.6,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.8333333333333334,
+     "cluster_boot95": [
+      0.6,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 12,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 3.6000000000000014,
+     "min": 0.0,
+     "max": 6.0,
+     "share_0": 0.8333333333333334,
+     "share_le_5": 0.9166666666666666
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 10,
+      "INDETERMINATE": 2
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     }
+    },
+    "precision_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "kappa": {
+     "value": 0.0,
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "pabak": {
+     "value": 0.75,
+     "cluster_boot95": [
+      0.3999999999999999,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 0,
+    "unstable": true
+   }
+  },
+  "unseen": {
+   "a": {
+    "N": 26,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 12,
+    "gap_mid": {
+     "n": 12,
+     "median": 3.5,
+     "p25": 2.75,
+     "p75": 5.0,
+     "p90": 6.800000000000001,
+     "min": 0.0,
+     "max": 8.0
+    },
+    "gap_min": {
+     "n": 12,
+     "median": 3.5,
+     "p25": 2.75,
+     "p75": 5.0,
+     "p90": 6.800000000000001,
+     "min": 0,
+     "max": 8
+    },
+    "gap_max": {
+     "n": 12,
+     "median": 3.5,
+     "p25": 2.75,
+     "p75": 5.0,
+     "p90": 6.800000000000001,
+     "min": 0,
+     "max": 8
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 2,
+      "n": 26,
+      "share": 0.07692307692307693,
+      "wilson95": [
+       0.0213550884722762,
+       0.2414155377162906
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.2
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 10,
+      "n": 26,
+      "share": 0.38461538461538464,
+      "wilson95": [
+       0.22428594435712798,
+       0.5746514991488447
+      ],
+      "cluster_boot95": [
+       0.18181818181818182,
+       0.6
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 0,
+      "n": 26,
+      "share": 0.0,
+      "wilson95": [
+       0.0,
+       0.1287289218592153
+      ],
+      "cluster_boot95": [
+       0.0,
+       0.0
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 14,
+      "n": 26,
+      "share": 0.5384615384615384,
+      "wilson95": [
+       0.35457938746858797,
+       0.7124414646960878
+      ],
+      "cluster_boot95": [
+       0.3076923076923077,
+       0.7586206896551724
+      ]
+     }
+    },
+    "anchor_ambiguous": 0,
+    "anchor_precision": {
+     "day": 12
+    }
+   },
+   "b": {
+    "N": 26,
+    "coverage": {
+     "k": 6,
+     "n": 26,
+     "share": 0.23076923076923078,
+     "wilson95": [
+      0.11033849405783291,
+      0.42051554078943687
+     ],
+     "cluster_boot95": [
+      0.07692307692307693,
+      0.4
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 20,
+    "no_decision_date_total": 20,
+    "status_counts": {
+     "NO_DECISION_DATE": 20,
+     "NOT_FLAGGED": 5,
+     "FLAGGED": 1
+    },
+    "complete_case_flagged": {
+     "k": 1,
+     "n": 6,
+     "share": 0.16666666666666666,
+     "wilson95": [
+      0.030053369748306635,
+      0.5635028221864702
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.5
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 0,
+     "n": 6,
+     "share": 0.0,
+     "wilson95": [
+      2.7755575615628914e-17,
+      0.3903342879021653
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "manski_lower": {
+     "value": 0.038461538461538464,
+     "cluster_boot95": [
+      0.0,
+      0.13043478260869565
+     ]
+    },
+    "manski_upper": {
+     "value": 0.8076923076923077,
+     "cluster_boot95": [
+      0.6538461538461539,
+      0.9583333333333334
+     ]
+    },
+    "reference_flagged_share": 0.07692307692307693
+   },
+   "c": {
+    "n_both": 6,
+    "identical_interval": {
+     "value": 0.6666666666666666,
+     "cluster_boot95": [
+      0.3333333333333333,
+      1.0
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.6666666666666666,
+     "cluster_boot95": [
+      0.3333333333333333,
+      1.0
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 6,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 2.25,
+     "p90": 6.5,
+     "min": 0.0,
+     "max": 10.0,
+     "share_0": 0.6666666666666666,
+     "share_le_5": 0.8333333333333334
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 1,
+      "NOT_FLAGGED": 5,
+      "INDETERMINATE": 0
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 0.0,
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "kappa": {
+     "value": 0.0,
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "pabak": {
+     "value": 0.75,
+     "cluster_boot95": [
+      0.25,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 0,
+    "unstable": true
+   }
+  },
+  "pooled": {
+   "a": {
+    "N": 136,
+    "n_no_filing_date": 0,
+    "n_with_decision_date": 99,
+    "gap_mid": {
+     "n": 99,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0.0,
+     "max": 242.0
+    },
+    "gap_min": {
+     "n": 99,
+     "median": 4.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 5.0,
+     "min": 0,
+     "max": 242
+    },
+    "gap_max": {
+     "n": 99,
+     "median": 5.0,
+     "p25": 3.0,
+     "p75": 5.0,
+     "p90": 6.0,
+     "min": 0,
+     "max": 242
+    },
+    "status": {
+     "FLAGGED": {
+      "k": 6,
+      "n": 136,
+      "share": 0.04411764705882353,
+      "wilson95": [
+       0.020374017012018374,
+       0.09290754450977734
+      ],
+      "cluster_boot95": [
+       0.013422818791946308,
+       0.0859375
+      ]
+     },
+     "NOT_FLAGGED": {
+      "k": 88,
+      "n": 136,
+      "share": 0.6470588235294118,
+      "wilson95": [
+       0.5637110471210781,
+       0.722327158839633
+      ],
+      "cluster_boot95": [
+       0.5254237288135594,
+       0.75
+      ]
+     },
+     "INDETERMINATE": {
+      "k": 5,
+      "n": 136,
+      "share": 0.03676470588235294,
+      "wilson95": [
+       0.01580408641950637,
+       0.0831755648042538
+      ],
+      "cluster_boot95": [
+       0.007633587786259542,
+       0.0743801652892562
+      ]
+     },
+     "NO_DECISION_DATE": {
+      "k": 37,
+      "n": 136,
+      "share": 0.27205882352941174,
+      "wilson95": [
+       0.2042969938206384,
+       0.35234378694025936
+      ],
+      "cluster_boot95": [
+       0.18055555555555555,
+       0.3897058823529412
+      ]
+     }
+    },
+    "anchor_ambiguous": 3,
+    "anchor_precision": {
+     "day": 97,
+     "month": 2
+    }
+   },
+   "b": {
+    "N": 136,
+    "coverage": {
+     "k": 52,
+     "n": 136,
+     "share": 0.38235294117647056,
+     "wilson95": [
+      0.3049760312382753,
+      0.4661934039931557
+     ],
+     "cluster_boot95": [
+      0.2661290322580645,
+      0.5116279069767442
+     ]
+    },
+    "abstained_no_accepted_decision_claim": 84,
+    "no_decision_date_total": 84,
+    "status_counts": {
+     "NO_DECISION_DATE": 84,
+     "NOT_FLAGGED": 47,
+     "INDETERMINATE": 3,
+     "FLAGGED": 2
+    },
+    "complete_case_flagged": {
+     "k": 2,
+     "n": 52,
+     "share": 0.038461538461538464,
+     "wilson95": [
+      0.010611711001315298,
+      0.12981189157455764
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.10416666666666667
+     ]
+    },
+    "complete_case_indeterminate": {
+     "k": 3,
+     "n": 52,
+     "share": 0.057692307692307696,
+     "wilson95": [
+      0.019814172112270614,
+      0.1564251136896076
+     ],
+     "cluster_boot95": [
+      0.0,
+      0.13636363636363635
+     ]
+    },
+    "manski_lower": {
+     "value": 0.014705882352941176,
+     "cluster_boot95": [
+      0.0,
+      0.04040404040404041
+     ]
+    },
+    "manski_upper": {
+     "value": 0.6544117647058824,
+     "cluster_boot95": [
+      0.5203252032520326,
+      0.7794117647058824
+     ]
+    },
+    "reference_flagged_share": 0.04411764705882353
+   },
+   "c": {
+    "n_both": 51,
+    "identical_interval": {
+     "value": 0.9215686274509803,
+     "cluster_boot95": [
+      0.8260869565217391,
+      0.9846153846153847
+     ]
+    },
+    "same_day_both_day_precision": {
+     "value": 0.9019607843137255,
+     "cluster_boot95": [
+      0.7954545454545454,
+      0.9803921568627451
+     ]
+    },
+    "abs_diff_gap_mid_wd": {
+     "n": 51,
+     "median": 0.0,
+     "p25": 0.0,
+     "p75": 0.0,
+     "p90": 0.0,
+     "min": 0.0,
+     "max": 10.0,
+     "share_0": 0.9215686274509803,
+     "share_le_5": 0.9607843137254902
+    },
+    "flag_table_rows_reference_cols_agent": {
+     "FLAGGED": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 0
+     },
+     "NOT_FLAGGED": {
+      "FLAGGED": 1,
+      "NOT_FLAGGED": 47,
+      "INDETERMINATE": 2
+     },
+     "INDETERMINATE": {
+      "FLAGGED": 0,
+      "NOT_FLAGGED": 0,
+      "INDETERMINATE": 1
+     }
+    },
+    "precision_agent_flagged": {
+     "value": 0.0,
+     "cluster_boot95": [
+      0.0,
+      0.0
+     ]
+    },
+    "recall_agent_flagged": {
+     "value": NaN,
+     "cluster_boot95": [
+      NaN,
+      NaN
+     ]
+    },
+    "kappa": {
+     "value": 0.38306451612903264,
+     "cluster_boot95": [
+      0.0,
+      1.0
+     ]
+    },
+    "pabak": {
+     "value": 0.9117647058823528,
+     "cluster_boot95": [
+      0.7857142857142856,
+      1.0
+     ]
+    },
+    "n_reference_flagged": 0,
+    "unstable": true
+   }
+  }
+ },
+ "wilson_checks": {
+  "19/305": [
+   0.04,
+   0.095
+  ],
+  "6/136": [
+   0.02,
+   0.093
+  ]
+ }
+}

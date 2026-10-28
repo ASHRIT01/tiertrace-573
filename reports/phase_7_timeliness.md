@@ -2,6 +2,17 @@
 
 **Silver reference (AI-generated, not human-verified).** This is a **descriptive screening signal, not a legal finding** about any filing or filer. It was computed under the protocol fixed before any gap was computed (`reports/TS_PROTOCOL.md`, tag `ts-protocol-1`), with one implementation amendment (TS-A1, below), which affects no anchor. No model was run and nothing under `freeze-v1` or `amendment-1` changed. Aggregates only; manufacturers are anonymised. Tests: `25 passed in 0.05s` (`tests/test_ts_screen.py`, run by the script before anything is written). Raw aggregates: `reports/ts/phase_7_timeliness.json`.
 
+## How to read this (interpretation added after seeing results)
+- **The primary FLAGGED share (104/305) is dominated by amended versions.**
+  - 98 of the 104 FLAGGED filings are processed from an amended version, against 6/136 among originals.
+  - An amended version's Submission Date is the amendment's date, not the initial report date: it equals RCDATE in only 15 of 169 amended versions, against 131 of 136 originals (section f).
+- **Two pre-declared checks reveal this:** the RCDATE variant (19/305 FLAGGED) and the original/amended strata.
+- **The primary stays as defined, but it is not interpretable as decision-to-filing timing.**
+- **The interpretable figures** are the RCDATE variant and the originals stratum. Both measure a self-reported decision-to-original-filing gap and are a screening signal only:
+  - RCDATE variant: FLAGGED 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096].
+  - originals stratum: FLAGGED 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086].
+- **Their full outputs** are in the section "Post hoc additions" below.
+
 ## Summary
 **1. Population and primary result.**
 - **Population:** 305 defect filings (out of 397; 92 noncompliance filings are reported separately).
@@ -215,6 +226,39 @@ An order inconsistency means an event of an earlier type in the chain lies entir
 | M2 | 12 | 0 | 12 | 0 | 0 |
 | M3 | 10 | 5 | 4 | 0 | 1 |
 
+## Post hoc additions: CIs added after seeing results (two pre-declared variants; no new variant, no protocol change)
+These are the outputs the primary got in (a), (b) and (c), computed for two variants that already existed. They were added after the results were seen.
+- **RCDATE variant:** RCDATE is the filing date for all defect filings; anchors, caps and gaps are recomputed against it.
+- **Originals stratum:** the primary rule within filings whose processed PDF is the original (only) version.
+
+The code paths are the same as for the primary (`scripts/ts_posthoc.py`, raw `reports/ts/phase_7_posthoc.json`). Gaps are in working days.
+
+Columns:
+- **3×3:** reference rows FLAGGED / NOT / INDET; within each row, the agent's FLAGGED, NOT and INDET counts.
+- **κ and PABAK:** computed on the filings where both have a decision date.
+
+Wilson checks: 19/305 → [0.040, 0.095]; 6/136 → [0.020, 0.093].
+
+**RCDATE as the filing date (all defect filings)**
+
+| split | N | with decision date | reference FLAGGED | gap_mid median [IQR] p90 | gap_min median [IQR] p90 | gap_max median [IQR] p90 | agent coverage | agent complete-case FLAGGED | worst-case bounds on FLAGGED share [B] | n both | 3×3 (F,N,I per reference row) | κ [B] | PABAK [B] |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Test-A | 152 | 117 | 9/152 = 0.059 W[0.031, 0.109] B[0.024, 0.105] | 5 [4–5] 6 | 5 [3–5] 5 | 5 [4–5] 6 | 72/152 (0.474) | 6/72 (0.083) | 0.039 [0.012, 0.076] – 0.572 [0.453, 0.701] | 71 | 5,0,0; 0,64,0; 0,1,1 | 0.917 [0.664, 1.000] | 0.979 [0.925, 1.000] (reference FLAGGED among n both: 5, fewer than 10: unstable) |
+| Test-B | 73 | 58 | 3/73 = 0.041 W[0.014, 0.114] B[0.000, 0.091] | 5 [4–5] 5.3 | 5 [4–5] 5 | 5 [4–5] 6 | 27/73 (0.370) | 3/27 (0.111) | 0.041 [0.000, 0.095] – 0.699 [0.554, 0.829] | 26 | 2,0,0; 0,21,2; 0,1,0 | 0.524 [-0.075, 1.000] | 0.827 [0.591, 1.000] (reference FLAGGED among n both: 2, fewer than 10: unstable) |
+| unseen-filer | 80 | 42 | 7/80 = 0.087 W[0.043, 0.170] B[0.036, 0.155] | 4 [3–5] 42.9 | 3.5 [3–5] 22.4 | 4 [3–5] 45.9 | 27/80 (0.338) | 6/27 (0.222) | 0.075 [0.024, 0.143] – 0.750 [0.647, 0.849] | 24 | 3,0,0; 1,19,0; 0,0,1 | 0.869 [0.465, 1.000] | 0.938 [0.795, 1.000] (reference FLAGGED among n both: 3, fewer than 10: unstable) |
+| pooled | 305 | 217 | 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096] | 5 [3–5] 6 | 5 [3–5] 5 | 5 [3–5] 6 | 126/305 (0.413) | 15/126 (0.119) | 0.049 [0.026, 0.076] – 0.649 [0.562, 0.738] | 121 | 10,0,0; 1,104,2; 0,2,2 | 0.809 [0.611, 0.957] | 0.938 [0.874, 0.988] |
+
+**Originals stratum (primary rule)**
+
+| split | N | with decision date | reference FLAGGED | gap_mid median [IQR] p90 | gap_min median [IQR] p90 | gap_max median [IQR] p90 | agent coverage | agent complete-case FLAGGED | worst-case bounds on FLAGGED share [B] | n both | 3×3 (F,N,I per reference row) | κ [B] | PABAK [B] |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Test-A | 72 | 56 | 2/72 = 0.028 W[0.008, 0.096] B[0.000, 0.074] | 4.5 [2.8–5] 5 | 4 [2–5] 5 | 4.5 [2.8–5] 5 | 33/72 (0.458) | 0/33 (0.000) | 0.000 [0.000, 0.000] – 0.556 [0.382, 0.729] | 33 | 0,0,0; 0,32,0; 0,0,1 | 1.000 [1.000, 1.000] | 1.000 [1.000, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) |
+| Test-B | 38 | 31 | 2/38 = 0.053 W[0.015, 0.173] B[0.000, 0.139] | 5 [4–5] 6 | 5 [4–5] 5 | 5 [4–5] 6 | 13/38 (0.342) | 1/13 (0.077) | 0.026 [0.000, 0.097] – 0.737 [0.567, 0.882] | 12 | 0,0,0; 0,10,2; 0,0,0 | 0.000 [0.000, 0.000] | 0.750 [0.400, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) |
+| unseen-filer | 26 | 12 | 2/26 = 0.077 W[0.021, 0.241] B[0.000, 0.200] | 3.5 [2.8–5] 6.8 | 3.5 [2.8–5] 6.8 | 3.5 [2.8–5] 6.8 | 6/26 (0.231) | 1/6 (0.167) | 0.038 [0.000, 0.130] – 0.808 [0.654, 0.958] | 6 | 0,0,0; 1,5,0; 0,0,0 | 0.000 [0.000, 0.000] | 0.750 [0.250, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) |
+| pooled | 136 | 99 | 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086] | 5 [3–5] 6 | 4 [3–5] 5 | 5 [3–5] 6 | 52/136 (0.382) | 2/52 (0.038) | 0.015 [0.000, 0.040] – 0.654 [0.520, 0.779] | 51 | 0,0,0; 1,47,2; 0,0,1 | 0.383 [0.000, 1.000] | 0.912 [0.786, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) |
+
+In the originals stratum, none of the filings where both sides have a decision date is reference FLAGGED, so κ is driven by a few NOT/INDET disagreements and is unstable. The bootstrap interval of a share that is 0 or close to 0 can include 0.
+
 ## Amendments
 **TS-A1 (2026-10-28)** (`reports/TS_AMENDMENTS.md`):
 - **What it is:** the amendment-1 crash-only guard on the frozen date parser inside `chronology_years`, which crashed on an invalid calendar date.
@@ -224,6 +268,9 @@ An order inconsistency means an event of an earlier type in the chain lies entir
 ## Limitations
 - **Silver labels.** Every decision date is an AI-made silver label or an AI agent's claim; no human checked any of them. Pass C sided with Pass B in 72–78% of items, and both are the same model family.
 - **Self-reported dates.** The screen measures the interval between the decision date the filer wrote in its chronology and the filing date. The legally relevant trigger can be when a defect *should have* been determined, which may be earlier than any chronology date. So the gap is at best a lower bound on the legally relevant interval, and it depends on how each filer words its chronology.
+- **Uncited legal premise.** The "should have determined" premise is stated without a citation. Two candidate sources were checked on 2026-10-29 and could not be opened, so neither is cited:
+  - United States v. General Motors Corp., 656 F. Supp. 1555 (D.D.C. 1987): Justia and Leagle refused automated access (HTTP 403), and CourtListener requires an account. Search snippets suggest the phrase appears there as the government's allegation, in a case the court decided for General Motors; that is unverified.
+  - The 2015 Harbor Freight consent order: the nhtsa.gov document page returned HTTP 403, and per the project rules no workaround was tried.
 - **Filing-date artefact.** The processed PDF is the latest version. For amended versions, the Submission Date is generally later than RCDATE (section f), so the primary gap is longer than the initial-report gap for most of those filings. The original version's own date was not available (not downloaded).
 - **Working-days assumption.** Part 573 does not define "working days". We assume Mon–Fri excluding observed federal holidays. The holiday table follows 5 U.S.C. 6103 and **omits one-off executive-order closures** and Inauguration Day. The holidays-not-excluded variant changes few statuses; the calendar-days variant changes many.
 - **DECISION vs OTHER typing.** The DECISION/OTHER boundary is one of the most frequent type confusions, both between the labellers and between the agent and the labels (`reports/phase_6_failure_analysis.md` section e).

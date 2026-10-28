@@ -35,6 +35,24 @@ w("**Silver reference (AI-generated, not human-verified).** This is a **descript
   "below), which affects no anchor. No model was run and nothing under `freeze-v1` or `amendment-1` changed. Aggregates only; manufacturers are anonymised. "
   f"Tests: `{R['tests']}` (`tests/test_ts_screen.py`, run by the script before anything is written). Raw aggregates: `reports/ts/phase_7_timeliness.json`.")
 w("")
+PH = json.load(open("reports/ts/phase_7_posthoc.json"))
+amb = sens["amended_version_only"]; org = sens["original_version_only"]
+rcp, orp = PH["rcdate_as_filing_date"]["pooled"]["a"], PH["original_version_only"]["pooled"]["a"]
+w("## How to read this (interpretation added after seeing results)")
+w(f"- **The primary FLAGGED share ({pooled['status']['FLAGGED']['k']}/{pooled['N']}) is dominated by amended versions.**")
+w(f"  - {amb['ref_status_counts'].get('FLAGGED', 0)} of the {pooled['status']['FLAGGED']['k']} FLAGGED filings are processed from an amended version, against "
+  f"{org['ref_status_counts'].get('FLAGGED', 0)}/{org['N']} among originals.")
+w(f"  - An amended version's Submission Date is the amendment's date, not the initial report date: it equals RCDATE in only {rc['amended']['equal_0']} of "
+  f"{rc['amended']['n']} amended versions, against {rc['original']['equal_0']} of {rc['original']['n']} originals (section f).")
+w(f"- **Two pre-declared checks reveal this:** the RCDATE variant ({sens['rcdate_as_filing_date']['ref']['status_counts'].get('FLAGGED', 0)}/{pooled['N']} "
+  f"FLAGGED) and the original/amended strata.")
+w("- **The primary stays as defined, but it is not interpretable as decision-to-filing timing.**")
+w("- **The interpretable figures** are the RCDATE variant and the originals stratum. Both measure a self-reported decision-to-original-filing gap and are a "
+  "screening signal only:")
+w(f"  - RCDATE variant: FLAGGED {sh(rcp['status']['FLAGGED'])}.")
+w(f"  - originals stratum: FLAGGED {sh(orp['status']['FLAGGED'])}.")
+w("- **Their full outputs** are in the section \"Post hoc additions\" below.")
+w("")
 w("## Summary")
 amb = sens["amended_version_only"]; org = sens["original_version_only"]
 w("**1. Population and primary result.**")
@@ -217,6 +235,38 @@ for lab, x in R["f_descriptive"]["manufacturers_n_ge_10_pooled"].items():
 w("")
 # ---------------------------------------------------------------- amendments, limitations, prior art
 a1 = R["amendment_TS_A1"]
+w("## Post hoc additions: CIs added after seeing results (two pre-declared variants; no new variant, no protocol change)")
+w("These are the outputs the primary got in (a), (b) and (c), computed for two variants that already existed. They were added after the results were seen.")
+w("- **RCDATE variant:** RCDATE is the filing date for all defect filings; anchors, caps and gaps are recomputed against it.")
+w("- **Originals stratum:** the primary rule within filings whose processed PDF is the original (only) version.")
+w("")
+w("The code paths are the same as for the primary (`scripts/ts_posthoc.py`, raw `reports/ts/phase_7_posthoc.json`). Gaps are in working days.")
+w("")
+w("Columns:")
+w("- **3×3:** reference rows FLAGGED / NOT / INDET; within each row, the agent's FLAGGED, NOT and INDET counts.")
+w("- **κ and PABAK:** computed on the filings where both have a decision date.")
+w("")
+w(f"Wilson checks: 19/305 → {ci(PH['wilson_checks']['19/305'])}; 6/136 → {ci(PH['wilson_checks']['6/136'])}.")
+w("")
+for key, title in (("rcdate_as_filing_date", "RCDATE as the filing date (all defect filings)"), ("original_version_only", "Originals stratum (primary rule)")):
+    w(f"**{title}**")
+    w("")
+    w("| split | N | with decision date | reference FLAGGED | gap_mid median [IQR] p90 | gap_min median [IQR] p90 | gap_max median [IQR] p90 | agent coverage | agent complete-case FLAGGED | worst-case bounds on FLAGGED share [B] | n both | 3×3 (F,N,I per reference row) | κ [B] | PABAK [B] |")
+    w("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
+    for g in G:
+        a, b, c = PH[key][g]["a"], PH[key][g]["b"], PH[key][g]["c"]
+        q = lambda d: f"{num(d['median'])} [{num(d['p25'])}–{num(d['p75'])}] {num(d['p90'])}"
+        t = c["flag_table_rows_reference_cols_agent"]
+        tt = "; ".join(f"{t[r]['FLAGGED']},{t[r]['NOT_FLAGGED']},{t[r]['INDETERMINATE']}" for r in ("FLAGGED", "NOT_FLAGGED", "INDETERMINATE"))
+        cc = b["complete_case_flagged"]
+        b2 = lambda v: f"{p(v['value'])} {ci(v['cluster_boot95'])}"
+        w(f"| {NAME[g]} | {a['N']} | {a['n_with_decision_date']} | {sh(a['status']['FLAGGED'])} | {q(a['gap_mid'])} | {q(a['gap_min'])} | {q(a['gap_max'])} | "
+          f"{b['coverage']['k']}/{b['N']} ({p(b['coverage']['share'])}) | {cc['k']}/{cc['n']} ({p(cc['share'])}) | {b2(b['manski_lower'])} – {b2(b['manski_upper'])} | "
+          f"{c['n_both']} | {tt} | {b2(c['kappa'])} | {b2(c['pabak'])}{' (reference FLAGGED among n both: ' + str(c['n_reference_flagged']) + ', fewer than 10: unstable)' if c['unstable'] else ''} |")
+    w("")
+w("In the originals stratum, none of the filings where both sides have a decision date is reference FLAGGED, so κ is driven by a few NOT/INDET "
+  "disagreements and is unstable. The bootstrap interval of a share that is 0 or close to 0 can include 0.")
+w("")
 w("## Amendments")
 w(f"**TS-A1 (2026-10-28)** (`reports/TS_AMENDMENTS.md`):")
 w("- **What it is:** the amendment-1 crash-only guard on the frozen date parser inside `chronology_years`, which crashed on an invalid calendar date.")
@@ -230,6 +280,12 @@ w("- **Silver labels.** Every decision date is an AI-made silver label or an AI 
 w("- **Self-reported dates.** The screen measures the interval between the decision date the filer wrote in its chronology and the filing date. The legally "
   "relevant trigger can be when a defect *should have* been determined, which may be earlier than any chronology date. So the gap is at best a lower bound on "
   "the legally relevant interval, and it depends on how each filer words its chronology.")
+w("- **Uncited legal premise.** The \"should have determined\" premise is stated without a citation. Two candidate sources were checked on 2026-10-29 and "
+  "could not be opened, so neither is cited:")
+w("  - United States v. General Motors Corp., 656 F. Supp. 1555 (D.D.C. 1987): Justia and Leagle refused automated access (HTTP 403), and CourtListener "
+  "requires an account. Search snippets suggest the phrase appears there as the government's allegation, in a case the court decided for General Motors; that "
+  "is unverified.")
+w("  - The 2015 Harbor Freight consent order: the nhtsa.gov document page returned HTTP 403, and per the project rules no workaround was tried.")
 w("- **Filing-date artefact.** The processed PDF is the latest version. For amended versions, the Submission Date is generally later than RCDATE (section f), "
   "so the primary gap is longer than the initial-report gap for most of those filings. The original version's own date was not available (not downloaded).")
 w("- **Working-days assumption.** Part 573 does not define \"working days\". We assume Mon–Fri excluding observed federal holidays. The holiday table "
