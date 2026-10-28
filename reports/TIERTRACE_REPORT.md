@@ -280,6 +280,38 @@ This is one scenario in one direction, not an estimate of label noise.
 
 ---
 
+### 5(d) POST-FREEZE PROTOCOL `ts-protocol-1`, SILVER REFERENCE: TS-1 timeliness screen
+
+*Tier: post-freeze protocol `ts-protocol-1` (tag on commit 246e30e, fixed before any gap was computed), silver reference (AI-generated, not checked by a human). A screening signal, not a legal finding.*
+
+**What it measures.** The screen measures a **self-reported decision-to-original-filing gap**: the working days from the DECISION date a filer wrote in its chronology to the filing date.
+- Working days are Mon–Fri excluding observed federal holidays; this is an assumption, since Part 573 does not define them.
+- A filing is FLAGGED if the gap is certainly above 5 working days, NOT_FLAGGED if it is certainly at most 5, and INDETERMINATE otherwise.
+- The decision date comes from the silver labels (reference) or from the agent's accepted claims.
+- The legally relevant trigger can be earlier than any chronology date, so the gap is at best a lower bound. That premise is stated without a citation: the two candidate sources could not be opened.
+
+**Population.** 305 defect filings out of 397; the 92 noncompliance filings are reported separately (`reports/phase_7_timeliness.md@2157cf1`).
+
+**How to read it.**
+- **The primary is not interpretable as decision-to-filing timing.** The primary filing date is the processed PDF's Submission Date, and the primary FLAGGED share (104/305 = 0.341 W[0.290, 0.396]) is dominated by amended versions.
+  - 98 of the 104 FLAGGED filings are amended versions, against 6/136 among originals.
+  - An amended version's Submission Date equals RCDATE (NHTSA's received date) in only 15 of 169, and RCDATE is earlier by a median of 35 calendar days.
+  - The primary stays as defined.
+- **The interpretable figures** are two pre-declared checks. Their confidence intervals were added after seeing the results:
+
+*Tier: post-freeze protocol ts-protocol-1, silver reference; CIs added after seeing results.*
+| figure | reference FLAGGED [Wilson; filer-cluster bootstrap] | gap_mid median [IQR] p90 (working days) | agent coverage | agent worst-case bounds on FLAGGED share | agent vs reference κ / PABAK (n both) |
+|---|---|---|---|---|---|
+| RCDATE as the filing date | 19/305 = 0.062 [0.040, 0.095]; [0.033, 0.096] | 5 [3–5] 6 | 126/305 (0.413) | 0.049 – 0.649 | 0.809 / 0.938 (121) |
+| originals stratum (Submission Date = RCDATE in 131/136) | 6/136 = 0.044 [0.020, 0.093]; [0.013, 0.086] | 5 [3–5] 6 | 52/136 (0.382) | 0.015 – 0.654 | 0.383 / 0.912 (51; no reference FLAGGED among them: unstable) |
+
+**Other results.**
+- **Missing decision dates:** 88 of 305 defect filings (0.289) have no usable DECISION date in the silver reference.
+- **Agent coverage:** the agent has an accepted, dated DECISION claim for 127/305 (0.416).
+- **Agreement:** where both have a date, Cohen's κ is 0.937. Both mostly quote the same sentence, so the agreement says nothing about which date is legally relevant.
+- **Amendment TS-A1:** a crash-only parser guard on 2 filings, affecting 0 anchors.
+- **Population caveat:** defect vs noncompliance is typed by a flat-file FMVSS proxy for the 186 filings on the 2025+ form, which has no type field.
+
 ## 6. What failed or is unknown
 
 - **Test-B H1.** The delta is 0.0327 with an interval that includes 0, about a quarter of Test-A's. It stays near 0 in both bounding runs and without Ford. The check-and-abstain step did not show a clear gain on filings from after March 2026.
@@ -334,7 +366,7 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 
 Every number used above and in `README.md`, with its source file and the commit it was read from. "Matched text" is the exact string that `scripts/writeup_claims.py` finds in `git show <commit>:<file>` (¦ stands for a table bar).
 
-- **Result of the check when this report was written:** 125 claims checked, 0 mismatches.
+- **Result of the check when this report was written:** 140 claims checked, 0 mismatches.
 - **Durations in section 7:** these are arithmetic on checked timestamps (H1, H5–H8). H3 is split into H3, H3b and H3c so that the timeouts, the crash and its single retry are each matched.
 - **X1 is outside the check:** item X1 is the only number not from a committed report; it is verified against the RePEc record and the accepted manuscript.
 
@@ -453,6 +485,21 @@ Every number used above and in `README.md`, with its source file and the commit 
 | C31 | cluster t-bound false-certification rate, events: highest 0.0273 | `reports/phase_6_exploratory_2.md` | 805a34c | `¦ 546/20000 ¦ 0.0273` |
 | C32 | cluster t-bound false-certification rate, cause: lowest 0.0481 | `reports/phase_6_exploratory_2.md` | 805a34c | `¦ 963/20000 ¦ 0.0481` |
 | C33 | cluster t-bound false-certification rate, cause: highest 0.2056 | `reports/phase_6_exploratory_2.md` | 805a34c | `¦ 4111/20000 ¦ 0.2056` |
+| T0 | TS-1 protocol fixed and committed before any gap was computed | `reports/TS_PROTOCOL.md` | 246e30e | `**Status: fixed before any gap is computed.**` |
+| T1 | TS-1 population: 305 defect filings of 397; 92 noncompliance | `reports/phase_7_timeliness.md` | 2157cf1 | `**Population:** 305 defect filings (out of 397; 92 noncompliance filings are reported separately).` |
+| T2 | TS-1 primary (Submission Date): FLAGGED 104/305 = 0.341 W[0.290, 0.396] | `reports/phase_7_timeliness.md` | 2157cf1 | `FLAGGED 104/305 = 0.341 W[0.290, 0.396] B[0.268, 0.418]` |
+| T3 | TS-1: 98 of the 104 primary FLAGGED are amended versions; originals 6/136 | `reports/phase_7_timeliness.md` | 2157cf1 | `98 of the 104 FLAGGED filings are processed from an amended version, against 6/136 among originals.` |
+| T4 | TS-1: Submission Date equals RCDATE in 15 of 169 amended versions and 131 of 136 originals | `reports/phase_7_timeliness.md` | 2157cf1 | `it equals RCDATE in only 15 of 169 amended versions, against 131 of 136 originals` |
+| T5 | TS-1: RCDATE earlier than an amended version's Submission Date by a median of 35 calendar days | `reports/phase_7_timeliness.md` | 2157cf1 | `RCDATE is earlier by a median of 35 calendar days` |
+| T6 | TS-1 RCDATE variant: FLAGGED 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096] | `reports/phase_7_timeliness.md` | 2157cf1 | `RCDATE variant: FLAGGED 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096].` |
+| T7 | TS-1 originals stratum: FLAGGED 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086] | `reports/phase_7_timeliness.md` | 2157cf1 | `originals stratum: FLAGGED 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086].` |
+| T8 | TS-1 RCDATE variant, pooled: gap_mid 5 [3-5] 6; agent coverage 126/305; bounds 0.049-0.649; kappa 0.809, PABAK 0.938 (n 121) | `reports/phase_7_timeliness.md` | 2157cf1 | `¦ pooled ¦ 305 ¦ 217 ¦ 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096] ¦ 5 [3–5] 6 ¦ 5 [3–5] 5 ¦ 5 [3–5] 6 ¦ 126/305 (0.413) ¦ 15/126 (0.119) ¦ 0.049 [0.026, 0.076] – 0.649 [0.562, 0.738] ¦ 121 ¦ 10,0,0; 1,104,2; 0,2,2 ¦ 0.809 [0.611, 0.957] ¦ 0.938 [0.874, 0.988] ¦` |
+| T9 | TS-1 originals stratum, pooled: gap_mid 5 [3-5] 6; agent coverage 52/136; bounds 0.015-0.654; kappa 0.383, PABAK 0.912 (n 51, unstable) | `reports/phase_7_timeliness.md` | 2157cf1 | `¦ pooled ¦ 136 ¦ 99 ¦ 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086] ¦ 5 [3–5] 6 ¦ 4 [3–5] 5 ¦ 5 [3–5] 6 ¦ 52/136 (0.382) ¦ 2/52 (0.038) ¦ 0.015 [0.000, 0.040] – 0.654 [0.520, 0.779] ¦ 51 ¦ 0,0,0; 1,47,2; 0,0,1 ¦ 0.383 [0.000, 1.000] ¦ 0.912 [0.786, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) ¦` |
+| T10 | TS-1: 88 of 305 defect filings have no usable DECISION date (silver) | `reports/phase_7_timeliness.md` | 2157cf1 | `88 of 305 defect filings (0.289) have no usable DECISION date` |
+| T11 | TS-1: agent accepted, dated DECISION claim for 127/305 (0.416) | `reports/phase_7_timeliness.md` | 2157cf1 | `127/305 = 0.416` |
+| T12 | TS-1: agent vs reference kappa 0.937 where both have a date (primary) | `reports/phase_7_timeliness.md` | 2157cf1 | `(Cohen's κ 0.937)` |
+| T13 | TS-1 amendment TS-A1: 2 filings, 0 anchors affected | `reports/phase_7_timeliness.md` | 2157cf1 | `**Anchors using a year from context in them: 0**` |
+| T14 | TS-1: 186 of 397 filings typed by the flat-file FMVSS proxy (2025+ form has no type field) | `reports/phase_7_timeliness.md` | 2157cf1 | `186 of 397 filings are typed by a flat-file FMVSS proxy` |
 | H1 | Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min) | `reports/DEVIATIONS.md` | 75e4841 | `12:48:52 start, 16:10:07 done` |
 | H2 | Test-A run 2: restart at 21:32:45 with 167 of 199 records | `reports/DEVIATIONS.md` | 75e4841 | `RESTART 21:32:45 with 167 of 199 records` |
 | H3 | Test-A run 2: four timeouts at 300 s | `reports/DEVIATIONS.md` | 75e4841 | `four per-call timeouts at 300 s` |

@@ -15,6 +15,8 @@ P, H4, X1, X2, SEC, FA, H6, H6C, LAB, AM, PF, TH, DEV, PRE = (
 ERR = ("reports/phase_6_secondary_splits.md", "b67c054")
 FAB = ("reports/phase_6_failure_analysis.md", "b67c054")
 H6L = ("reports/H6_hw_report.md", "08d7916")
+TS = ("reports/phase_7_timeliness.md", "2157cf1")
+TSP = ("reports/TS_PROTOCOL.md", "246e30e")
 
 # (id, claim as used in the write-up, source, exact text in the source)
 CLAIMS = [
@@ -137,6 +139,24 @@ CLAIMS = [
     ("C31", "cluster t-bound false-certification rate, events: highest 0.0273", X2, "| 546/20000 | 0.0273"),
     ("C32", "cluster t-bound false-certification rate, cause: lowest 0.0481", X2, "| 963/20000 | 0.0481"),
     ("C33", "cluster t-bound false-certification rate, cause: highest 0.2056", X2, "| 4111/20000 | 0.2056"),
+    # TS-1 timeliness screen (post-freeze protocol ts-protocol-1, silver reference)
+    ("T0", "TS-1 protocol fixed and committed before any gap was computed", TSP, "**Status: fixed before any gap is computed.**"),
+    ("T1", "TS-1 population: 305 defect filings of 397; 92 noncompliance", TS, "**Population:** 305 defect filings (out of 397; 92 noncompliance filings are reported separately)."),
+    ("T2", "TS-1 primary (Submission Date): FLAGGED 104/305 = 0.341 W[0.290, 0.396]", TS, "FLAGGED 104/305 = 0.341 W[0.290, 0.396] B[0.268, 0.418]"),
+    ("T3", "TS-1: 98 of the 104 primary FLAGGED are amended versions; originals 6/136", TS, "98 of the 104 FLAGGED filings are processed from an amended version, against 6/136 among originals."),
+    ("T4", "TS-1: Submission Date equals RCDATE in 15 of 169 amended versions and 131 of 136 originals", TS, "it equals RCDATE in only 15 of 169 amended versions, against 131 of 136 originals"),
+    ("T5", "TS-1: RCDATE earlier than an amended version's Submission Date by a median of 35 calendar days", TS, "RCDATE is earlier by a median of 35 calendar days"),
+    ("T6", "TS-1 RCDATE variant: FLAGGED 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096]", TS, "RCDATE variant: FLAGGED 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096]."),
+    ("T7", "TS-1 originals stratum: FLAGGED 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086]", TS, "originals stratum: FLAGGED 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086]."),
+    ("T8", "TS-1 RCDATE variant, pooled: gap_mid 5 [3-5] 6; agent coverage 126/305; bounds 0.049-0.649; kappa 0.809, PABAK 0.938 (n 121)", TS,
+     "| pooled | 305 | 217 | 19/305 = 0.062 W[0.040, 0.095] B[0.033, 0.096] | 5 [3–5] 6 | 5 [3–5] 5 | 5 [3–5] 6 | 126/305 (0.413) | 15/126 (0.119) | 0.049 [0.026, 0.076] – 0.649 [0.562, 0.738] | 121 | 10,0,0; 1,104,2; 0,2,2 | 0.809 [0.611, 0.957] | 0.938 [0.874, 0.988] |"),
+    ("T9", "TS-1 originals stratum, pooled: gap_mid 5 [3-5] 6; agent coverage 52/136; bounds 0.015-0.654; kappa 0.383, PABAK 0.912 (n 51, unstable)", TS,
+     "| pooled | 136 | 99 | 6/136 = 0.044 W[0.020, 0.093] B[0.013, 0.086] | 5 [3–5] 6 | 4 [3–5] 5 | 5 [3–5] 6 | 52/136 (0.382) | 2/52 (0.038) | 0.015 [0.000, 0.040] – 0.654 [0.520, 0.779] | 51 | 0,0,0; 1,47,2; 0,0,1 | 0.383 [0.000, 1.000] | 0.912 [0.786, 1.000] (reference FLAGGED among n both: 0, fewer than 10: unstable) |"),
+    ("T10", "TS-1: 88 of 305 defect filings have no usable DECISION date (silver)", TS, "88 of 305 defect filings (0.289) have no usable DECISION date"),
+    ("T11", "TS-1: agent accepted, dated DECISION claim for 127/305 (0.416)", TS, "127/305 = 0.416"),
+    ("T12", "TS-1: agent vs reference kappa 0.937 where both have a date (primary)", TS, "(Cohen's κ 0.937)"),
+    ("T13", "TS-1 amendment TS-A1: 2 filings, 0 anchors affected", TS, "**Anchors using a year from context in them: 0**"),
+    ("T14", "TS-1: 186 of 397 filings typed by the flat-file FMVSS proxy (2025+ form has no type field)", TS, "186 of 397 filings are typed by a flat-file FMVSS proxy"),
     # cost, hardware, runs
     ("H1", "Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min)", DEV, "12:48:52 start, 16:10:07 done"),
     ("H2", "Test-A run 2: restart at 21:32:45 with 167 of 199 records", DEV, "RESTART 21:32:45 with 167 of 199 records"),
