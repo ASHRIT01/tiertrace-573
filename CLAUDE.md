@@ -5,5 +5,3 @@
 - Say suppliers are "named in the filing", never "responsible" or "caused".
 - Never touch the test data (Test-A, Test-B, unseen-filer, injection splits) before the labels and splits are frozen and hashed in PREREGISTRATION.md.
 - Do not edit tt/verify/verifier.py unless the user asks.
-- Save progress after every task (git commit).
-- Do not run model benchmarks while the user is measuring memory; they run bench scripts themselves.
