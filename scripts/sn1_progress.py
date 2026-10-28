@@ -4,6 +4,7 @@ campaigns whose listing has no 573 document, campaigns not yet listed, unparsabl
 import argparse
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -33,13 +34,20 @@ for c in camps:
     else:
         unlisted += 1  # listed but PDF still to fetch / failed
 todo = len(camps) - have - no573
-fails = set()
+fails, no573_logged = set(), set()
 fp = Path("runs/sn1_failures.jsonl")
 if fp.exists():
     for line in fp.read_text().splitlines():
         r = json.loads(line)
-        if "no_573" not in r["reason"]:
-            fails.add(r["campaign"])
-print(f"{have + no573:,} of {len(camps):,} done ({have:,} PDFs, {no573} with no Part 573 in the API listing); "
-      f"{todo:,} to go; non-573 failures logged: {len(fails)}; unparsable listings: {bad}; "
-      f"ETA {todo * 2.15 / 3600:.1f} h")
+        (no573_logged if "no_573" in r["reason"] else fails).add(r["campaign"])
+# files this fetch phase wrote itself (mtime after the last START that used --cache-dir), as opposed to copied-in ones
+start = None
+for line in Path("runs/sn1_fetch.log").read_text().splitlines():
+    if " START " in line and "cache_dir=/" in line:
+        start = datetime.fromisoformat(line.split()[0]).timestamp()
+new_pdfs = sum(1 for p in (root / "cache").iterdir() if start and p.stat().st_mtime > start)
+n_pdf_files, n_listings = len(list((root / "cache").iterdir())), len(list((root / "api_cache").iterdir()))
+print(f"{have + no573:,} of {len(camps):,} campaigns done = {have:,} with latest 573 PDF on disk + {no573} with no 573 in listing; "
+      f"{todo:,} to go; failures (non-573): {len(fails)}; unparsable listings: {bad}; ETA {todo * 2.15 / 3600:.1f} h")
+print(f"on disk: {n_pdf_files:,} PDF files, {n_listings:,} listings; fetched since the cache move: {new_pdfs:,} PDFs "
+      f"(rest were copied in); distinct campaigns logged with no 573 document: {len(no573_logged)}")
