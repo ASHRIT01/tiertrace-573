@@ -20,6 +20,9 @@ TSP = ("reports/TS_PROTOCOL.md", "246e30e")
 SC = ("reports/phase_8_supplier_check.md", "f35dfb6")
 SCP = ("reports/SC_PROTOCOL.md", "24f7c34")
 SCI = ("reports/SC_INVENTORY.md", "c27b962")
+HA = ("reports/phase_9_human_audit.md", "46daac6")
+HAP = ("reports/HA_PROTOCOL.md", "06296f3")
+HAA = ("reports/HA_AMENDMENTS.md", "8c24800")
 
 # (id, claim as used in the write-up, source, exact text in the source)
 CLAIMS = [
@@ -193,6 +196,23 @@ CLAIMS = [
     ("H6", "Test-B run 2 after restart: 11:48:29 to 12:46:55 (58 min)", SEC, "START 11:48:29 | 2026-10-27 12:46:55"),
     ("H7", "unseen run 1: 12:47:02 to 13:39:30 (52 min)", SEC, "| unseen | 1 | 2026-10-27 12:47:02 | 2026-10-27 13:39:30 |"),
     ("H8", "unseen run 2: 13:39:32 to 14:30:00 (50 min)", SEC, "| unseen | 2 | 2026-10-27 13:39:32 | 2026-10-27 14:30:00 |"),
+    # HA-1 small audit (post-freeze protocol ha-protocol-1; marks by the author, a single non-expert; silver labels are AI-made)
+    ("HA0", "HA-1 protocol fixed before the audit sheet is built", HAP, "**Status: fixed before the audit sheet is built.**"),
+    ("HA1", "HA-1: HA-01 practice item excluded from all results; primary n = 39", HAA, "HA-01 was a practice item and is EXCLUDED from all HA-1 results"),
+    ("HA2", "HA-1 population: 536 accepted claims in 159 filings", HA, "(159 filings with at least one)"),
+    ("HA3", "HA-1 primary: 26/39 = 0.667, Wilson [0.510, 0.794]", HA, "| **Primary:** claims with DATE_OK = yes and TYPE_OK = yes | 26/39 = 0.667 | [0.510, 0.794] |"),
+    ("HA4", "HA-1 sensitivity excluding unsure: 26/38 = 0.684 [0.525, 0.809]", HA, "| 26/38 = 0.684 | [0.525, 0.809] |"),
+    ("HA5", "HA-1 date only: 38/39 = 0.974 [0.868, 0.995]", HA, "| 38/39 = 0.974 | [0.868, 0.995] |"),
+    ("HA6", "HA-1 marks vs silver: 23 / 3 / 6 / 7", HA, "| marks: correct | 23 | 3 |\n| marks: not correct | 6 | 7 |"),
+    ("HA7", "HA-1 agreement 30/39 = 0.769, kappa 0.449", HA, "**Agreement:** 30/39 = 0.769. **Cohen's kappa = 0.449**"),
+    ("HA8", "HA-1 marks wrong, silver right (6): HA-02, HA-15, HA-16, HA-27, HA-36, HA-38", HA, "(6):** HA-02, HA-15, HA-16, HA-27, HA-36, HA-38."),
+    ("HA9", "HA-1 marks correct, silver wrong (3): HA-22, HA-32, HA-33", HA, "(3):** HA-22, HA-32, HA-33."),
+    ("HA10", "HA-1 repeats: 8/8 on date, type and both", HA, "**DATE_OK 8/8, TYPE_OK 8/8, both 8/8.**"),
+    ("HA11", "HA-1 prediction-powered, weighted: 0.612 [0.452, 0.771], SE 0.081", HA, "**0.612, 95% interval [0.452, 0.771]** (SE 0.081)"),
+    ("HA12", "HA-1 comparison lines: weighted without silver 0.715; unweighted with silver 0.656", HA, "| Same weighted estimator without silver | 0.715 |\n| Unweighted form with silver (ignores the design) | 0.656 |"),
+    ("HA13", "HA-1 per-item time not recorded", HA, "**Per-item time was not recorded**"),
+    ("HA14", "HA-1 post hoc: silver rates 29/39 right in the sample, 393/536 overall", HA, "29/39 = 0.744 right, against 393/536 = 0.733 over the whole accepted set"),
+    ("HA15", "HA-1: the four estimates span 0.612 to 0.733", HA, "The four estimates span 0.612 to 0.733"),
 ]
 
 

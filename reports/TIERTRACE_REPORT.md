@@ -339,6 +339,27 @@ This is one scenario in one direction, not an estimate of label noise.
 - **Components:** not run, because neither the agent schema nor the silver labels contain component claims.
 - **Amendment SC-A1:** the name field of the Pass-C silver claims; 23 of these claims fall in the population and are labelled POST HOC.
 
+### 5(f) POST-FREEZE PROTOCOL `ha-protocol-1`: HA-1 small audit of accepted event claims
+
+*Tier: post-freeze protocol `ha-protocol-1` (tag on commit 06296f3, fixed before the audit sheet was built). Wilson 95% CIs. Details and limits: `reports/phase_9_human_audit.md@46daac6`.*
+
+**Audited by the author, a single non-expert, n = 39.** The sample was one accepted event claim from each of 40 random filings of the 536 accepted on Test-A (159 filings with at least one); HA-01 was a practice item and is excluded from all results (`reports/HA_AMENDMENTS.md@8c24800`). The sample **estimates a random accepted claim from a random filing**, not the share of the 536 claims. Per-item time was not recorded.
+
+| quantity | result |
+|---|---|
+| claims marked correct (date and type both yes; unsure counts as not correct) | 26/39 = 0.667 [0.510, 0.794] |
+| the same, excluding the one claim with an unsure mark | 26/38 = 0.684 [0.525, 0.809] |
+| date only | 38/39 = 0.974 [0.868, 0.995] |
+| marks vs the silver verdict (correct/correct, correct/wrong, wrong/correct, wrong/wrong) | 23 / 3 / 6 / 7; agreement 30/39 = 0.769, kappa 0.449 |
+| repeat items (8 pairs): date, type, both | 8/8, 8/8, 8/8 |
+| exploratory prediction-powered estimate over the 536 claims | 0.612 [0.452, 0.771] |
+
+**Reading the table.**
+- **Where the marks and silver differ:** the marks rate more claims as wrong than silver does. Claims the marks reject and silver accepts: HA-02, HA-15, HA-16, HA-27, HA-36, HA-38. Claims the marks accept and silver rejects: HA-22, HA-32, HA-33. A disagreement is not automatically a silver error, because the scorer widens overlapping dates and the marks compare the date as stated.
+- **Type, not date:** nearly all of the shortfall is the type mark.
+- **The interval did not shrink:** the prediction-powered interval is not narrower than the primary one, and the estimates range from 0.612 to 0.733 depending on the method.
+- **Limits:** one rater, not an expert, small n, wide intervals, repeats recognisable as repeats, the marks and the silver labels are both fallible. The marks are not a reference standard. A POST HOC table by claimed type is in the phase 9 report.
+
 ## 6. What failed or is unknown
 
 - **Test-B H1.** The delta is 0.0327 with an interval that includes 0, about a quarter of Test-A's. It stays near 0 in both bounding runs and without Ford. The check-and-abstain step did not show a clear gain on filings from after March 2026.
@@ -349,7 +370,7 @@ This is one scenario in one direction, not an estimate of label noise.
   - false-certification rates were 0.0115–0.0273 for events and 0.0481–0.2056 for cause, against a required ≤ 0.01 (`phase_6_exploratory_2.md@805a34c`);
   - its numbers (for example an events upper bound of 0.324) are not guarantees.
 - **Label independence.** Pass C sided with Pass B in 72–78% of items, both are the same model family, and the agent's type definitions come from the labelling rules. Shared errors are invisible.
-- **No human check.** No label was checked by a human, so every error rate here is relative to AI labels.
+- **Almost no human check.** The silver labels were not checked by anyone. Only 39 accepted Test-A claims were read by the author (HA-1, a single non-expert), so every error rate here is relative to AI labels.
 - **H4 limits.** There were only 30 attacks (upper bound 0.195). They were written by a Claude instance (same family as the labellers and the verifier author) and target the Qwen model. The empty-output attack is outside the design.
 - **H6 limits.** One run, one machine, dev filings, with the clean condition as stated by the owner. H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s.
 - **Cause correctness is not measured.** Only "cause reported or not" is scored.
@@ -385,7 +406,7 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 1. **External validation against the MSOM hand-coded data** (Astvansh, Ball and Josefy 2022). Compare TierTrace's dates and event types with human coding on the overlapping recalls. No comparison with human labels has been made in this project yet. The supplementary data file has not been obtained yet.
 2. **An awareness-vs-investigation rule.** Add a tie-break for sentences that report both, the largest gap specific to the agent in section 5(c). This changes the labelling rules and the prompt, so it needs a v2 with a new freeze and new held-out data. It cannot be applied to the current results.
 3. **Post-2018 extension.** The MSOM data end in 2018; TierTrace covers 2015–2026 filings. A combined, longer series would need validation on the overlapping years before use.
-4. **Prediction-powered inference for labelling cost.** Use a small human-labelled sample to correct estimates made on many AI-labelled filings. This could turn silver-label error rates into interval estimates against human judgement while labelling only a small sample by hand.
+4. **Prediction-powered inference for labelling cost.** HA-1 tried this on 39 claims and the interval did not shrink (section 5(f)). Use a larger sample read by more than one person to correct estimates made on many AI-labelled filings. This could turn silver-label error rates into interval estimates against human judgement while labelling only a small sample by hand.
 
 ---
 
@@ -393,7 +414,7 @@ Sources: `DEVIATIONS.md@75e4841` and `phase_6_secondary_splits.md@ef19956`.
 
 Every number used above and in `README.md`, with its source file and the commit it was read from. "Matched text" is the exact string that `scripts/writeup_claims.py` finds in `git show <commit>:<file>` (¦ stands for a table bar).
 
-- **Result of the check when this report was written:** 156 claims checked, 0 mismatches.
+- **Result of the check when this report was written:** 172 claims checked, 0 mismatches.
 - **Durations in section 7:** these are arithmetic on checked timestamps (H1, H5–H8). H3 is split into H3, H3b and H3c so that the timeouts, the crash and its single retry are each matched.
 - **X1 is outside the check:** item X1 is the only number not from a committed report; it is verified against the RePEc record and the accepted manuscript.
 
@@ -543,6 +564,22 @@ Every number used above and in `README.md`, with its source file and the commit 
 | U13 | SC-1 amendment SC-A1: 23 of 26 Pass-C silver S2 claims fall in the population | `reports/phase_8_supplier_check.md` | f35dfb6 | `**23 of these 26 claims fall in the population;**` |
 | U14 | SC-1 post hoc: 24 of 261 population filings declare a short form of the filer's own name; 1 of 19 agent matches there | `reports/phase_8_supplier_check.md` | f35dfb6 | `In 24 of 261 population filings` |
 | U15 | SC-1 post hoc: 14 silver S1 quotes located out of block are first-match artefacts | `reports/phase_8_supplier_check.md` | f35dfb6 | `**POST HOC diagnostic:** in all 14` |
+| HA0 | HA-1 protocol fixed before the audit sheet is built | `reports/HA_PROTOCOL.md` | 06296f3 | `**Status: fixed before the audit sheet is built.**` |
+| HA1 | HA-1: HA-01 practice item excluded from all results; primary n = 39 | `reports/HA_AMENDMENTS.md` | 8c24800 | `HA-01 was a practice item and is EXCLUDED from all HA-1 results` |
+| HA2 | HA-1 population: 536 accepted claims in 159 filings | `reports/phase_9_human_audit.md` | 46daac6 | `(159 filings with at least one)` |
+| HA3 | HA-1 primary: 26/39 = 0.667, Wilson [0.510, 0.794] | `reports/phase_9_human_audit.md` | 46daac6 | `¦ **Primary:** claims with DATE_OK = yes and TYPE_OK = yes ¦ 26/39 = 0.667 ¦ [0.510, 0.794] ¦` |
+| HA4 | HA-1 sensitivity excluding unsure: 26/38 = 0.684 [0.525, 0.809] | `reports/phase_9_human_audit.md` | 46daac6 | `¦ 26/38 = 0.684 ¦ [0.525, 0.809] ¦` |
+| HA5 | HA-1 date only: 38/39 = 0.974 [0.868, 0.995] | `reports/phase_9_human_audit.md` | 46daac6 | `¦ 38/39 = 0.974 ¦ [0.868, 0.995] ¦` |
+| HA6 | HA-1 marks vs silver: 23 / 3 / 6 / 7 | `reports/phase_9_human_audit.md` | 46daac6 | `¦ marks: correct ¦ 23 ¦ 3 ¦
+| HA7 | HA-1 agreement 30/39 = 0.769, kappa 0.449 | `reports/phase_9_human_audit.md` | 46daac6 | `**Agreement:** 30/39 = 0.769. **Cohen's kappa = 0.449**` |
+| HA8 | HA-1 marks wrong, silver right (6): HA-02, HA-15, HA-16, HA-27, HA-36, HA-38 | `reports/phase_9_human_audit.md` | 46daac6 | `(6):** HA-02, HA-15, HA-16, HA-27, HA-36, HA-38.` |
+| HA9 | HA-1 marks correct, silver wrong (3): HA-22, HA-32, HA-33 | `reports/phase_9_human_audit.md` | 46daac6 | `(3):** HA-22, HA-32, HA-33.` |
+| HA10 | HA-1 repeats: 8/8 on date, type and both | `reports/phase_9_human_audit.md` | 46daac6 | `**DATE_OK 8/8, TYPE_OK 8/8, both 8/8.**` |
+| HA11 | HA-1 prediction-powered, weighted: 0.612 [0.452, 0.771], SE 0.081 | `reports/phase_9_human_audit.md` | 46daac6 | `**0.612, 95% interval [0.452, 0.771]** (SE 0.081)` |
+| HA12 | HA-1 comparison lines: weighted without silver 0.715; unweighted with silver 0.656 | `reports/phase_9_human_audit.md` | 46daac6 | `¦ Same weighted estimator without silver ¦ 0.715 ¦
+| HA13 | HA-1 per-item time not recorded | `reports/phase_9_human_audit.md` | 46daac6 | `**Per-item time was not recorded**` |
+| HA14 | HA-1 post hoc: silver rates 29/39 right in the sample, 393/536 overall | `reports/phase_9_human_audit.md` | 46daac6 | `29/39 = 0.744 right, against 393/536 = 0.733 over the whole accepted set` |
+| HA15 | HA-1: the four estimates span 0.612 to 0.733 | `reports/phase_9_human_audit.md` | 46daac6 | `The four estimates span 0.612 to 0.733` |
 | H1 | Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min) | `reports/DEVIATIONS.md` | 75e4841 | `12:48:52 start, 16:10:07 done` |
 | H2 | Test-A run 2: restart at 21:32:45 with 167 of 199 records | `reports/DEVIATIONS.md` | 75e4841 | `RESTART 21:32:45 with 167 of 199 records` |
 | H3 | Test-A run 2: four timeouts at 300 s | `reports/DEVIATIONS.md` | 75e4841 | `four per-call timeouts at 300 s` |
