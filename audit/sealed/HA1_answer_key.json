@@ -1,0 +1,198 @@
+{
+ "note": "SEALED. Do not open until the filled sheet is committed (reports/HA_PROTOCOL.md, section C).",
+ "items": [
+  {
+   "item": "HA-01",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-02",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-03",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-04",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-05",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-06",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-07",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-08",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-09",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-10",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-11",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-12",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-13",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-14",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-15",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-16",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-17",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-18",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-19",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-20",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-21",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-22",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-23",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-24",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-25",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-26",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-27",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-28",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-29",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-30",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-31",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-32",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-33",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-34",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-35",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-36",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-37",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-38",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-39",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-40",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-41",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-42",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-43",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-44",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-45",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-46",
+   "silver_correct": true
+  },
+  {
+   "item": "HA-47",
+   "silver_correct": false
+  },
+  {
+   "item": "HA-48",
+   "silver_correct": true
+  }
+ ],
+ "mean_silver_correct_536": 0.7332089552238806
+}
