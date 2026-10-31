@@ -1,0 +1,34 @@
+{
+ "n": 38,
+ "excluded": [
+  "HA-01",
+  "HA-02"
+ ],
+ "label": "POST HOC",
+ "primary": {
+  "correct": 26,
+  "n": 38,
+  "share": 0.6842105263157895,
+  "wilson95": [
+   0.5254394356005149,
+   0.8091557997633335
+  ]
+ },
+ "date_only": {
+  "yes": 37,
+  "n": 38,
+  "share": 0.9736842105263158,
+  "wilson95": [
+   0.8650482156319974,
+   0.9953395324464698
+  ]
+ },
+ "human_vs_silver": {
+  "human_yes_silver_yes": 23,
+  "human_yes_silver_no": 3,
+  "human_no_silver_yes": 5,
+  "human_no_silver_no": 7,
+  "agreement": 0.7894736842105263,
+  "kappa": 0.4899328859060402
+ }
+}

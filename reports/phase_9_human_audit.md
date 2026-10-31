@@ -1,6 +1,6 @@
 # Phase 9: HA-1 small audit of accepted event claims
 
-**Wording for every figure below: audited by the author, a single non-expert, n = 39.** The marks are one person's reading of the filing text with the codebook (`docs/HA1_CODEBOOK.md`). They are not a reference standard, and the silver labels they are compared with are AI-made and are not one either.
+**Wording for every figure below: audited by the author, a single non-expert, n = 39** (the DATE_OK and TYPE_OK judgements; see Provenance of the marks). The marks are one person's reading of the filing text with the codebook (`docs/HA1_CODEBOOK.md`). They are not a reference standard, and the silver labels they are compared with are AI-made and are not one either.
 
 *Tier: post-freeze protocol `ha-protocol-1` (tag `8a649c2`, commit `06296f3`, fixed before the audit sheet was built). No model run. Nothing frozen changed. Marks committed in `55fdd1a` before the sealed key was opened; the practice-item exclusion is recorded in `reports/HA_AMENDMENTS.md` (`8c24800`).*
 
@@ -10,6 +10,14 @@
 - **Sample:** 40 filings drawn at random (seed 7), one accepted claim per filing, plus 8 of them repeated at the end. HA-01 was a practice item: the AI gave its reading before the author marked it. **It is excluded from every result, so the primary n is 39**, and it has no repeat.
 - **What the sample estimates:** it estimates a random accepted claim from a random filing. Filings hold 1 to 17 accepted claims and each contributes one, so it does not estimate the share of the 536 claims that are correct. Section 4 is the only line that targets the 536.
 - **Marks:** DATE_OK and TYPE_OK (yes, no, unsure). A claim counts as correct only if both are yes; unsure counts as not correct. **Per-item time was not recorded** (MINUTES is NA for every item), so no time is reported and none is estimated.
+
+## Provenance of the marks
+
+- **(a)** DATE_OK and TYPE_OK were judged by the author. MINUTES was not recorded (NA for every item).
+- **(b)** The notes were written by the author; an AI assistant rewrote their wording. They are not used as evidence and are not quoted.
+- **(c)** HA-01 was answered by the AI (a practice item, excluded from all results, recorded in `reports/HA_AMENDMENTS.md`). HA-02 was also discussed with the AI assistant: the assistant gave item-specific guiding questions and confirmed the author's reading of the sentence, but did not give the marks. This became known **after** the results were seen, so the sensitivity row without HA-02 (section 5) is POST HOC.
+- The marking process was not observed.
+- The notes are identical in all 8 repeat pairs. Because the note wording was AI-polished, that observation is uninformative about re-judgement.
 
 ## 1. Primary and secondary results (as fixed by the protocol)
 
@@ -42,7 +50,7 @@ The silver verdict is the frozen scorer's right/wrong for the claim (amendment-1
 ## 3. Repeat-item consistency (8 pairs)
 
 HA-41 to HA-48 repeat eight of the audited claims. Exact agreement between the repeat and its original: **DATE_OK 8/8, TYPE_OK 8/8, both 8/8.** No interval is given.
-- **Weak evidence:** repeats were recognisable as repeats (protocol section F), and the note text is identical in 8 of 8 pairs. This is a check that the marks were entered consistently, not a test of independent re-judgement.
+- **Weak evidence:** repeats were recognisable as repeats (protocol section F). This is a check that the marks were entered consistently, not a test of independent re-judgement. The identical notes in the pairs are uninformative about re-judgement (see Provenance of the marks).
 
 ## 4. Exploratory: prediction-powered estimate over all 536 accepted claims
 
@@ -72,18 +80,26 @@ Protocol section E, with the silver verdict as the predictor and the correction 
 
   Descriptive only. With 1 to 14 claims per type, no rate here is interpretable, and the table was made after seeing the marks.
 - **The silver verdict within the sample:** 29/39 = 0.744 right, against 393/536 = 0.733 over the whole accepted set. This only shows the sample is not unusual on silver; no test was run.
-- **Identical note text in all repeat pairs** (section 3).
+- **Sensitivity without HA-02 (n = 38).** HA-02 was discussed with the AI assistant (see Provenance of the marks), which became known after the results were seen. The primary result stays at n = 39; this row does not replace it.
+
+| quantity | n = 39 (primary, as fixed) | n = 38 (POST HOC, HA-02 excluded) |
+|---|---|---|
+| marked correct | 26/39 = 0.667 [0.510, 0.794] | 26/38 = 0.684 [0.525, 0.809] |
+| date only | 38/39 = 0.974 [0.868, 0.995] | 37/38 = 0.974 [0.865, 0.995] |
+| agreement with silver (kappa) | 30/39 = 0.769 (0.449) | 30/38 = 0.789 (0.490) |
+
+  **The story does not change.** The correct rate moves by 0.017, the intervals overlap almost completely, and the date-only share is 0.974 in both. HA-02 was one of the six claims the marks rejected and silver accepted, so removing it lifts the agreement slightly. The n = 38 figure 26/38 equals the unsure-excluded figure in section 1 by coincidence: they come from different exclusions. The sensitivity was derived from the committed results only (`scripts/ha1_sensitivity_ha02.py`).
 
 Everything else above was fixed in `reports/HA_PROTOCOL.md` before the sheet existed.
 
 ## 6. Limits
 
-- **One rater, not an expert, who is also the author.** There is no second reader and no inter-rater figure. The marking process was not observed; the record shows only that HA-01 was shown an AI reading.
+- **One rater, not an expert, who is also the author.** There is no second reader and no inter-rater figure. The marking process was not observed, and the provenance of the marks is as stated in Provenance of the marks: the notes were AI-polished, HA-01 was answered by the AI, and HA-02 was discussed with it.
 - **Small n:** 39 claims, one per filing. The intervals are wide: the primary interval spans 0.28.
 - **Not blind:** the author knew every item had passed the gate and knew the published silver error of the accepted set (0.267).
 - **Silver comparison:** silver labels are AI-made, one model family, and Pass C sided mostly with Pass B (`docs/AMENDMENT_1.md`). Agreement or disagreement with silver is not evidence of which is right.
 - **Estimand:** a random accepted claim from a random filing, not the 536 claims.
 - **Per-item time not recorded.**
-- **HA-01 excluded** as a practice item.
+- **HA-01 excluded** as a practice item; **HA-02 discussed** with the AI assistant (POST HOC sensitivity in section 5).
 - **Scope:** this is Test-A, one agent, one set of frozen prompts. Nothing here says anything about a named company; suppliers and filers appear in the audit only as parts of the filing text.
 - **Nothing is changed in the frozen result.** H1 and its silver-based error stay as committed.
