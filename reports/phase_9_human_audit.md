@@ -17,7 +17,7 @@
 - **(b)** The notes were written by the author; an AI assistant rewrote their wording. They are not used as evidence and are not quoted.
 - **(c)** HA-01 was answered by the AI (a practice item, excluded from all results, recorded in `reports/HA_AMENDMENTS.md`). HA-02 was also discussed with the AI assistant: the assistant gave item-specific guiding questions and confirmed the author's reading of the sentence, but did not give the marks. This became known **after** the results were seen, so the sensitivity row without HA-02 (section 5) is POST HOC.
 - The marking process was not observed.
-- The notes are identical in all 8 repeat pairs. Because the note wording was AI-polished, that observation is uninformative about re-judgement.
+- The notes are identical in all 8 repeat pairs. Because an AI assistant rewrote the notes' wording, that observation is uninformative about re-judgement.
 
 ## 1. Primary and secondary results (as fixed by the protocol)
 
@@ -94,7 +94,7 @@ Everything else above was fixed in `reports/HA_PROTOCOL.md` before the sheet exi
 
 ## 6. Limits
 
-- **One rater, not an expert, who is also the author.** There is no second reader and no inter-rater figure. The marking process was not observed, and the provenance of the marks is as stated in Provenance of the marks: the notes were AI-polished, HA-01 was answered by the AI, and HA-02 was discussed with it.
+- **One rater, not an expert, who is also the author.** There is no second reader and no inter-rater figure. The marking process was not observed, and the provenance of the marks is as stated in Provenance of the marks: an AI assistant rewrote the notes' wording, HA-01 was answered by the AI, and HA-02 was discussed with it.
 - **Small n:** 39 claims, one per filing. The intervals are wide: the primary interval spans 0.28.
 - **Not blind:** the author knew every item had passed the gate and knew the published silver error of the accepted set (0.267).
 - **Silver comparison:** silver labels are AI-made, one model family, and Pass C sided mostly with Pass B (`docs/AMENDMENT_1.md`). Agreement or disagreement with silver is not evidence of which is right.

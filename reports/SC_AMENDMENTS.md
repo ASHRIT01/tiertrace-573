@@ -1,6 +1,6 @@
 # SC-1 amendments to the protocol (tag `sc-protocol-1`)
 
-The protocol requires every change made after the tag to be listed here, with its date and reason, and the results it affects to be labelled POST HOC. Reference = filer-declared supplier (non-AI, not ground truth).
+The protocol requires every change made after the tag to be listed here, with its date and reason, and the results it affects to be labelled POST HOC. Reference = filer-declared supplier (non-AI, not a reference standard).
 
 ## SC-A1 (2026-10-29): where a silver supplier claim stores its name
 
