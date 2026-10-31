@@ -73,13 +73,14 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 - **Cause.** Only "cause reported or not" is scored, never the cause itself.
 - **Speed.** H6 is one run on one machine, with the clean condition as stated by the owner. H6 PASS on 100 dev filings with apps closed (p95 80.1 s); on Test-A filings with apps open, p95 was 130 s (run 1) / 184 s (run 2) (A13), so longer recent filings with other apps running can exceed 120 s.
 - **Wording.** Suppliers are "named in the filing as component manufacturer", never "responsible" for a recall.
+- **SN-1 scope.** SN-1 is data collection only; no analysis has been done yet. Coverage is campaigns received 2020-01-01 to 2026-10-09, vehicle and equipment: 6,666 usable Part 573 PDFs (17 campaigns with no Part 573, 2 unusable). Tire and child-restraint campaigns are out of scope. PDFs are not redistributed; the repository holds NHTSA URLs and campaign IDs only.
 
 ## How to cite
 
 ```
 TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings (2026).
 Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md.
-Author: <YOUR NAME AS ON APPLICATIONS>. Repository URL: <REPOSITORY_URL> (to be added when the repository exists). See also CITATION.cff.
+Author: Ashrit Kota. Repository URL: <REPOSITORY_URL> (to be added when the repository exists). See also CITATION.cff.
 ```
 
 Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085

@@ -1,6 +1,6 @@
 # Data licence: CC BY 4.0
 
-Copyright (c) 2026 <YOUR NAME AS ON APPLICATIONS>
+Copyright (c) 2026 Ashrit Kota
 
 The following parts of this repository are licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0),
 https://creativecommons.org/licenses/by/4.0/ (legal code: https://creativecommons.org/licenses/by/4.0/legalcode):

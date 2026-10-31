@@ -220,7 +220,7 @@ w("- **Quote location.** It takes the first occurrence of the quote; for 14 silv
   "verbatim cannot be located.")
 w(f"- **Flat-file vintage.** The flat file is from {I['4_flat_file']['member_date']} (RCL.txt layout last updated May 2025). It was used here for MFGNAME (the "
   "OEM_SELF test) and for component availability only.")
-w("- **Prior-art context.** The owner reports that the DOT OIG (2018) found the component-manufacturer information missing in 16.2% (±8.5%) of 2012–2016 "
-  "initial reports. That figure is owner-supplied and was not verified here (protocol G). In these 397 filings, the block names no supplier in 85 (BLANK).")
+w("- **What the reference can be.** The declared supplier may be blank, the OEM itself, or a distributor. In these 397 filings, the block names no supplier "
+  "in 85 (BLANK).")
 open("reports/phase_8_supplier_check.md", "w").write("\n".join(L) + "\n")
 print("written", len(L))

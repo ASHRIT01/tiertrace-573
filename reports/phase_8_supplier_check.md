@@ -183,4 +183,4 @@ The matching rule and the fuzzy threshold (token_set_ratio ≥ 90) are fixed in 
 - **Normalisation.** No alias list was used. Short forms and parent-subsidiary names ("Bosch" vs "Robert Bosch LLC") match only at the containment level. 24 population filings declare a short form of the filer's own name (POST HOC).
 - **Quote location.** It takes the first occurrence of the quote; for 14 silver S1 quotes that is the page header (section D). Agent quotes that are not verbatim cannot be located.
 - **Flat-file vintage.** The flat file is from 2026-10-18 (RCL.txt layout last updated May 2025). It was used here for MFGNAME (the OEM_SELF test) and for component availability only.
-- **Prior-art context.** The owner reports that the DOT OIG (2018) found the component-manufacturer information missing in 16.2% (±8.5%) of 2012–2016 initial reports. That figure is owner-supplied and was not verified here (protocol G). In these 397 filings, the block names no supplier in 85 (BLANK).
+- **What the reference can be.** The declared supplier may be blank, the OEM itself, or a distributor. In these 397 filings, the block names no supplier in 85 (BLANK).
