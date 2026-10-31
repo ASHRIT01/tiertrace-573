@@ -15,7 +15,8 @@ A Part 573 Safety Recall Report is the form a vehicle or equipment maker files w
 NHTSA publishes a flat file of recall campaigns, but it has no structured field for the chronology's dates or event types. The supplier fields are filled unevenly. Turning the chronology into data therefore means reading PDFs.
 
 **Closest prior work.** Astvansh, Ball and Josefy (2022), "The Recall Decision Exposed: Automobile Recall Timing and Process Data Set", *Manufacturing & Service Operations Management* 24(3): 1457–1473, doi 10.1287/msom.2022.1085.
-- It hand-codes 2,120 recalls by 27 automakers, 2009–2018.
+- It is the closest prior dataset known to the author: it hand-codes one Part 573 chronology per recall, with supplier involvement, for 2,120 recalls by 27 automakers, 2009–2018. The "one chronology per recall, with supplier involvement" description was supplied by the owner and is not separately verified here.
+- This report makes no claim that its data, task or method is new, and no "no prior work" claim. No systematic literature search was run for it.
 - Verified against the RePEc record and the accepted manuscript (McGill); this is the one cited fact not taken from a committed report (section 9, item X1).
 - TierTrace does not reproduce that dataset and has not yet been compared with it (section 8).
 
@@ -334,7 +335,7 @@ This is one scenario in one direction, not an estimate of label noise.
 **Reading the table.**
 - **Recall:** agent recall is low and bounded by the masking.
 - **Precision understates:** a correct sub-supplier named only in the narrative counts as a non-match. Precision is higher at the pre-declared containment and fuzzy levels; for accepted claims it is 27/70 and 29/70 respectively.
-- **Silver S2:** this is the first non-AI check of the silver supplier labels. They agree with the filer's declaration in 81% of narrative claims.
+- **Silver S2:** this is the first non-AI check of the silver supplier labels within this project (no claim about other work). They agree with the filer's declaration in 81% of narrative claims.
 - **Agent vs silver:** a filing matched by the agent but not by silver never occurs.
 - **Components:** not run, because neither the agent schema nor the silver labels contain component claims.
 - **Amendment SC-A1:** the name field of the Pass-C silver claims; 23 of these claims fall in the population and are labelled POST HOC.
