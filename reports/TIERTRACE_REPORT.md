@@ -314,7 +314,7 @@ This is one scenario in one direction, not an estimate of label noise.
 
 ### 5(e) POST-FREEZE PROTOCOL `sc-protocol-1`: SC-1 supplier claims against the filer's own declaration
 
-*Tier: post-freeze protocol `sc-protocol-1` (tag on commit 24f7c34, fixed before any claim was compared). Reference = filer-declared supplier (non-AI, not ground truth).*
+*Tier: post-freeze protocol `sc-protocol-1` (tag on commit 24f7c34, fixed before any claim was compared). Reference = filer-declared supplier (non-AI, not a reference standard).*
 
 **The reference.** The reference is the "Component Manufacturer" block a filer completes under 49 CFR 573.6(c)(2)(iv).
 - **What a match means:** the declared supplier may be an assembler, the entity the part was obtained from, or the filer itself. A match measures fidelity to the declaration, not who made the part. A non-match is not an error by the filer.
@@ -341,11 +341,11 @@ This is one scenario in one direction, not an estimate of label noise.
 
 ### 5(f) POST-FREEZE PROTOCOL `ha-protocol-1`: HA-1 small audit of accepted event claims
 
-*Tier: post-freeze protocol `ha-protocol-1` (tag on commit 06296f3, fixed before the audit sheet was built). Wilson 95% CIs. Details and limits: `reports/phase_9_human_audit.md@e6e3e4f`.*
+*Tier: post-freeze protocol `ha-protocol-1` (tag on commit 06296f3, fixed before the audit sheet was built). Wilson 95% CIs. Details and limits: `reports/phase_9_human_audit.md@6d81416`.*
 
 **Audited by the author, a single non-expert, n = 39.** The sample was one accepted event claim from each of 40 random filings of the 536 accepted on Test-A (159 filings with at least one); HA-01 was a practice item and is excluded from all results (`reports/HA_AMENDMENTS.md@8c24800`). The sample **estimates a random accepted claim from a random filing**, not the share of the 536 claims. Per-item time was not recorded.
 
-**Provenance of the marks.** The DATE_OK and TYPE_OK judgements were made by the author. The note wording was polished by an AI assistant, and the notes are not used as evidence. HA-01 was answered by the AI (excluded). HA-02 was also discussed with the AI assistant, which gave guiding questions and confirmed the author's reading of the sentence but did not give the marks; this became known after the results were seen. The marking process was not observed.
+**Provenance of the marks.** The DATE_OK and TYPE_OK judgements were made by the author. The notes were written by the author; an AI assistant rewrote their wording. The notes are not used as evidence. HA-01 was answered by the AI (excluded). HA-02 was also discussed with the AI assistant, which gave guiding questions and confirmed the author's reading of the sentence but did not give the marks; this became known after the results were seen. The marking process was not observed.
 
 | quantity | result |
 |---|---|
@@ -361,7 +361,7 @@ This is one scenario in one direction, not an estimate of label noise.
 - **Type, not date:** nearly all of the shortfall is the type mark.
 - **Without HA-02 (POST HOC, n = 38):** marked correct 26/38 = 0.684 [0.525, 0.809], date only 37/38 = 0.974 [0.865, 0.995], agreement with silver 30/38 = 0.789 (kappa 0.490). The story does not change. The primary result stays at n = 39.
 - **The interval did not shrink:** the prediction-powered interval is not narrower than the primary one, and the estimates range from 0.612 to 0.733 depending on the method.
-- **Limits:** one rater, not an expert, small n, wide intervals, repeats recognisable as repeats (and AI-polished notes, so identical notes say nothing about re-judgement), the marks and the silver labels are both fallible. The marks are not a reference standard. A POST HOC table by claimed type is in the phase 9 report.
+- **Limits:** one rater, not an expert, small n, wide intervals, repeats recognisable as repeats (and an AI assistant rewrote the notes' wording, so identical notes say nothing about re-judgement), the marks and the silver labels are both fallible. The marks are not a reference standard. A POST HOC table by claimed type is in the phase 9 report.
 
 ## 6. What failed or is unknown
 
@@ -569,26 +569,26 @@ Every number used above and in `README.md`, with its source file and the commit 
 | U15 | SC-1 post hoc: 14 silver S1 quotes located out of block are first-match artefacts | `reports/phase_8_supplier_check.md` | f35dfb6 | `**POST HOC diagnostic:** in all 14` |
 | HA0 | HA-1 protocol fixed before the audit sheet is built | `reports/HA_PROTOCOL.md` | 06296f3 | `**Status: fixed before the audit sheet is built.**` |
 | HA1 | HA-1: HA-01 practice item excluded from all results; primary n = 39 | `reports/HA_AMENDMENTS.md` | 8c24800 | `HA-01 was a practice item and is EXCLUDED from all HA-1 results` |
-| HA2 | HA-1 population: 536 accepted claims in 159 filings | `reports/phase_9_human_audit.md` | e6e3e4f | `(159 filings with at least one)` |
-| HA3 | HA-1 primary: 26/39 = 0.667, Wilson [0.510, 0.794] | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ **Primary:** claims with DATE_OK = yes and TYPE_OK = yes ¦ 26/39 = 0.667 ¦ [0.510, 0.794] ¦` |
-| HA4 | HA-1 sensitivity excluding unsure: 26/38 = 0.684 [0.525, 0.809] | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ 26/38 = 0.684 ¦ [0.525, 0.809] ¦` |
-| HA5 | HA-1 date only: 38/39 = 0.974 [0.868, 0.995] | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ 38/39 = 0.974 ¦ [0.868, 0.995] ¦` |
-| HA6 | HA-1 marks vs silver: 23 / 3 / 6 / 7 | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ marks: correct ¦ 23 ¦ 3 ¦
-| HA7 | HA-1 agreement 30/39 = 0.769, kappa 0.449 | `reports/phase_9_human_audit.md` | e6e3e4f | `**Agreement:** 30/39 = 0.769. **Cohen's kappa = 0.449**` |
-| HA8 | HA-1 marks wrong, silver right (6): HA-02, HA-15, HA-16, HA-27, HA-36, HA-38 | `reports/phase_9_human_audit.md` | e6e3e4f | `(6):** HA-02, HA-15, HA-16, HA-27, HA-36, HA-38.` |
-| HA9 | HA-1 marks correct, silver wrong (3): HA-22, HA-32, HA-33 | `reports/phase_9_human_audit.md` | e6e3e4f | `(3):** HA-22, HA-32, HA-33.` |
-| HA10 | HA-1 repeats: 8/8 on date, type and both | `reports/phase_9_human_audit.md` | e6e3e4f | `**DATE_OK 8/8, TYPE_OK 8/8, both 8/8.**` |
-| HA11 | HA-1 prediction-powered, weighted: 0.612 [0.452, 0.771], SE 0.081 | `reports/phase_9_human_audit.md` | e6e3e4f | `**0.612, 95% interval [0.452, 0.771]** (SE 0.081)` |
-| HA12 | HA-1 comparison lines: weighted without silver 0.715; unweighted with silver 0.656 | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ Same weighted estimator without silver ¦ 0.715 ¦
-| HA13 | HA-1 per-item time not recorded | `reports/phase_9_human_audit.md` | e6e3e4f | `**Per-item time was not recorded**` |
-| HA14 | HA-1 post hoc: silver rates 29/39 right in the sample, 393/536 overall | `reports/phase_9_human_audit.md` | e6e3e4f | `29/39 = 0.744 right, against 393/536 = 0.733 over the whole accepted set` |
-| HA15 | HA-1: the four estimates span 0.612 to 0.733 | `reports/phase_9_human_audit.md` | e6e3e4f | `The four estimates span 0.612 to 0.733` |
-| HA16 | HA-1 post hoc, without HA-02 (n = 38): marked correct 26/38 = 0.684 [0.525, 0.809] | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ marked correct ¦ 26/39 = 0.667 [0.510, 0.794] ¦ 26/38 = 0.684 [0.525, 0.809] ¦` |
-| HA17 | HA-1 post hoc, without HA-02: date only 37/38 = 0.974 [0.865, 0.995] | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ date only ¦ 38/39 = 0.974 [0.868, 0.995] ¦ 37/38 = 0.974 [0.865, 0.995] ¦` |
-| HA18 | HA-1 post hoc, without HA-02: agreement 30/38 = 0.789, kappa 0.490 | `reports/phase_9_human_audit.md` | e6e3e4f | `¦ agreement with silver (kappa) ¦ 30/39 = 0.769 (0.449) ¦ 30/38 = 0.789 (0.490) ¦` |
-| HA19 | HA-1 provenance: notes written by the author, wording rewritten by an AI assistant; not evidence, not quoted | `reports/phase_9_human_audit.md` | e6e3e4f | `an AI assistant rewrote their wording. They are not used as evidence and are not quoted.` |
-| HA20 | HA-1 provenance: HA-02 discussed with the AI assistant, which did not give the marks | `reports/phase_9_human_audit.md` | e6e3e4f | `gave item-specific guiding questions and confirmed the author's reading of the sentence, but did not give the marks` |
-| HA21 | HA-1 amendment: the HA-02 sensitivity (n = 38) is post hoc | `reports/HA_AMENDMENTS.md` | e6e3e4f | `The sensitivity analysis without HA-02 (n = 38) is post hoc` |
+| HA2 | HA-1 population: 536 accepted claims in 159 filings | `reports/phase_9_human_audit.md` | 6d81416 | `(159 filings with at least one)` |
+| HA3 | HA-1 primary: 26/39 = 0.667, Wilson [0.510, 0.794] | `reports/phase_9_human_audit.md` | 6d81416 | `¦ **Primary:** claims with DATE_OK = yes and TYPE_OK = yes ¦ 26/39 = 0.667 ¦ [0.510, 0.794] ¦` |
+| HA4 | HA-1 sensitivity excluding unsure: 26/38 = 0.684 [0.525, 0.809] | `reports/phase_9_human_audit.md` | 6d81416 | `¦ 26/38 = 0.684 ¦ [0.525, 0.809] ¦` |
+| HA5 | HA-1 date only: 38/39 = 0.974 [0.868, 0.995] | `reports/phase_9_human_audit.md` | 6d81416 | `¦ 38/39 = 0.974 ¦ [0.868, 0.995] ¦` |
+| HA6 | HA-1 marks vs silver: 23 / 3 / 6 / 7 | `reports/phase_9_human_audit.md` | 6d81416 | `¦ marks: correct ¦ 23 ¦ 3 ¦
+| HA7 | HA-1 agreement 30/39 = 0.769, kappa 0.449 | `reports/phase_9_human_audit.md` | 6d81416 | `**Agreement:** 30/39 = 0.769. **Cohen's kappa = 0.449**` |
+| HA8 | HA-1 marks wrong, silver right (6): HA-02, HA-15, HA-16, HA-27, HA-36, HA-38 | `reports/phase_9_human_audit.md` | 6d81416 | `(6):** HA-02, HA-15, HA-16, HA-27, HA-36, HA-38.` |
+| HA9 | HA-1 marks correct, silver wrong (3): HA-22, HA-32, HA-33 | `reports/phase_9_human_audit.md` | 6d81416 | `(3):** HA-22, HA-32, HA-33.` |
+| HA10 | HA-1 repeats: 8/8 on date, type and both | `reports/phase_9_human_audit.md` | 6d81416 | `**DATE_OK 8/8, TYPE_OK 8/8, both 8/8.**` |
+| HA11 | HA-1 prediction-powered, weighted: 0.612 [0.452, 0.771], SE 0.081 | `reports/phase_9_human_audit.md` | 6d81416 | `**0.612, 95% interval [0.452, 0.771]** (SE 0.081)` |
+| HA12 | HA-1 comparison lines: weighted without silver 0.715; unweighted with silver 0.656 | `reports/phase_9_human_audit.md` | 6d81416 | `¦ Same weighted estimator without silver ¦ 0.715 ¦
+| HA13 | HA-1 per-item time not recorded | `reports/phase_9_human_audit.md` | 6d81416 | `**Per-item time was not recorded**` |
+| HA14 | HA-1 post hoc: silver rates 29/39 right in the sample, 393/536 overall | `reports/phase_9_human_audit.md` | 6d81416 | `29/39 = 0.744 right, against 393/536 = 0.733 over the whole accepted set` |
+| HA15 | HA-1: the four estimates span 0.612 to 0.733 | `reports/phase_9_human_audit.md` | 6d81416 | `The four estimates span 0.612 to 0.733` |
+| HA16 | HA-1 post hoc, without HA-02 (n = 38): marked correct 26/38 = 0.684 [0.525, 0.809] | `reports/phase_9_human_audit.md` | 6d81416 | `¦ marked correct ¦ 26/39 = 0.667 [0.510, 0.794] ¦ 26/38 = 0.684 [0.525, 0.809] ¦` |
+| HA17 | HA-1 post hoc, without HA-02: date only 37/38 = 0.974 [0.865, 0.995] | `reports/phase_9_human_audit.md` | 6d81416 | `¦ date only ¦ 38/39 = 0.974 [0.868, 0.995] ¦ 37/38 = 0.974 [0.865, 0.995] ¦` |
+| HA18 | HA-1 post hoc, without HA-02: agreement 30/38 = 0.789, kappa 0.490 | `reports/phase_9_human_audit.md` | 6d81416 | `¦ agreement with silver (kappa) ¦ 30/39 = 0.769 (0.449) ¦ 30/38 = 0.789 (0.490) ¦` |
+| HA19 | HA-1 provenance: notes written by the author, wording rewritten by an AI assistant; not evidence, not quoted | `reports/phase_9_human_audit.md` | 6d81416 | `The notes were written by the author; an AI assistant rewrote their wording.` |
+| HA20 | HA-1 provenance: HA-02 discussed with the AI assistant, which did not give the marks | `reports/phase_9_human_audit.md` | 6d81416 | `gave item-specific guiding questions and confirmed the author's reading of the sentence, but did not give the marks` |
+| HA21 | HA-1 amendment: the HA-02 sensitivity (n = 38) is post hoc | `reports/HA_AMENDMENTS.md` | 6d81416 | `The sensitivity analysis without HA-02 (n = 38) is post hoc` |
 | H1 | Test-A run 1: 12:48:52 to 16:10:07 (3 h 21 min) | `reports/DEVIATIONS.md` | 75e4841 | `12:48:52 start, 16:10:07 done` |
 | H2 | Test-A run 2: restart at 21:32:45 with 167 of 199 records | `reports/DEVIATIONS.md` | 75e4841 | `RESTART 21:32:45 with 167 of 199 records` |
 | H3 | Test-A run 2: four timeouts at 300 s | `reports/DEVIATIONS.md` | 75e4841 | `four per-call timeouts at 300 s` |

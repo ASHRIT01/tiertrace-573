@@ -20,8 +20,8 @@ TSP = ("reports/TS_PROTOCOL.md", "246e30e")
 SC = ("reports/phase_8_supplier_check.md", "f35dfb6")
 SCP = ("reports/SC_PROTOCOL.md", "24f7c34")
 SCI = ("reports/SC_INVENTORY.md", "c27b962")
-HA = ("reports/phase_9_human_audit.md", "e6e3e4f")
-HAB = ("reports/HA_AMENDMENTS.md", "e6e3e4f")
+HA = ("reports/phase_9_human_audit.md", "6d81416")
+HAB = ("reports/HA_AMENDMENTS.md", "6d81416")
 HAP = ("reports/HA_PROTOCOL.md", "06296f3")
 HAA = ("reports/HA_AMENDMENTS.md", "8c24800")
 
@@ -164,7 +164,7 @@ CLAIMS = [
     ("T12", "TS-1: agent vs reference kappa 0.937 where both have a date (primary)", TS, "(Cohen's κ 0.937)"),
     ("T13", "TS-1 amendment TS-A1: 2 filings, 0 anchors affected", TS, "**Anchors using a year from context in them: 0**"),
     ("T14", "TS-1: 186 of 397 filings typed by the flat-file FMVSS proxy (2025+ form has no type field)", TS, "186 of 397 filings are typed by a flat-file FMVSS proxy"),
-    # SC-1 supplier check (post-freeze protocol sc-protocol-1; reference = filer-declared supplier, non-AI, not ground truth)
+    # SC-1 supplier check (post-freeze protocol sc-protocol-1; reference = filer-declared supplier, non-AI, not a reference standard)
     ("U0", "SC-1 protocol fixed before any claim was compared with the reference", SCP, "**Status: fixed before any claim is compared with the reference.**"),
     ("U1", "SC-1: supplier block parsed in 397/397 filings (portal 186, older 211)", SC, "Parse rate 397/397, with 0 failures, in both layouts: portal (186) and older (211)."),
     ("U2", "SC-1 strata: NAMED 255, OEM_SELF 47, OBTAINED_FROM 4, MULTIPLE 6, BLANK 85, PARSE_FAIL 0", SC, "| **all** | 255 | 47 | 4 | 6 | 85 | 0 |"),
@@ -217,7 +217,7 @@ CLAIMS = [
     ("HA16", "HA-1 post hoc, without HA-02 (n = 38): marked correct 26/38 = 0.684 [0.525, 0.809]", HA, "| marked correct | 26/39 = 0.667 [0.510, 0.794] | 26/38 = 0.684 [0.525, 0.809] |"),
     ("HA17", "HA-1 post hoc, without HA-02: date only 37/38 = 0.974 [0.865, 0.995]", HA, "| date only | 38/39 = 0.974 [0.868, 0.995] | 37/38 = 0.974 [0.865, 0.995] |"),
     ("HA18", "HA-1 post hoc, without HA-02: agreement 30/38 = 0.789, kappa 0.490", HA, "| agreement with silver (kappa) | 30/39 = 0.769 (0.449) | 30/38 = 0.789 (0.490) |"),
-    ("HA19", "HA-1 provenance: notes written by the author, wording rewritten by an AI assistant; not evidence, not quoted", HA, "an AI assistant rewrote their wording. They are not used as evidence and are not quoted."),
+    ("HA19", "HA-1 provenance: notes written by the author, wording rewritten by an AI assistant; not evidence, not quoted", HA, "The notes were written by the author; an AI assistant rewrote their wording."),
     ("HA20", "HA-1 provenance: HA-02 discussed with the AI assistant, which did not give the marks", HA, "gave item-specific guiding questions and confirmed the author's reading of the sentence, but did not give the marks"),
     ("HA21", "HA-1 amendment: the HA-02 sensitivity (n = 38) is post hoc", HAB, "The sensitivity analysis without HA-02 (n = 38) is post hoc"),
 ]
