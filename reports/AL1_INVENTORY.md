@@ -177,5 +177,5 @@ Notes:
 - **ORIGINAL_MISSING rule:** a campaign is flagged if every document tied for earliest is labelled as an amendment. Ties need this rule because their array order is arbitrary. Literally taking the first document in the listing would flag 12 campaigns, and 22 have an amendment label somewhere in the earliest load-timestamp group, but none has only amendment labels there. For the 4 no-date campaigns the check uses load order. The flag does not detect missing intermediate amendments, and the 159 in section 4 came from array order and overstates the same way.
 - **The 47 tied campaigns:** the tie touches the latest position in 17, the earliest in 15, and only middle positions in 15. All have at least 2 distinct positions.
 - **Tiebreak:** in 16 ordered campaigns, at least two versions share a Submission Date and only the load timestamp separates them.
-- **Date versus load order:** the two disagree in 12 campaigns.
+- **Date versus load order:** the two disagree in 12 of the 300 campaigns: 8 ordered and 4 ORDER_AMBIGUOUS (see `reports/AL1_PROTOCOL.md`).
 - **`24V528`:** its order covers only its 2 usable documents. The missing one is the latest listed, so the campaign has no usable latest version.
