@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/1440585674.svg)](https://doi.org/10.5281/zenodo.23831372)
 
-**All labels in this repository are silver labels: AI-made (code plus Claude models) and cross-checked by other AI passes. No human checked any label.**
+**All labels in this repository are silver labels: AI-made (code plus Claude models) and cross-checked by other AI passes. No label was checked by anyone; the only reading by a person is the small HA-1 audit of 39 accepted claims (see Limitations).**
 
 TierTrace-573 extracts timeline events (supplier notice, awareness, investigation, decision, NHTSA filing) and supplier names from NHTSA Part 573 Safety Recall Reports. Each claim comes with a verbatim quote. A small local model (`qwen3.5:4b-q4_K_M` via Ollama) proposes the claims. Deterministic code then checks each one, and the agent keeps a claim only if every check passes and a second, differently sampled run agrees; otherwise it abstains. The study was preregistered (tag `freeze-v1`) and scored once against silver labels. The full write-up is [reports/TIERTRACE_REPORT.md](reports/TIERTRACE_REPORT.md).
 
@@ -21,7 +21,8 @@ Error rates are against silver labels, not checked by a human. Sources are given
 | H1-style delta | exploratory | unseen-filer (98) | 0.0877 [0.0219, 0.1587] | none | n/a | same |
 | H5-style B1 − B2 | exploratory | Test-B / unseen-filer | 0.1458 [0.0639, 0.2048] / **0.0877 [−0.0103, 0.1612]**: unseen interval includes 0 | none | n/a | same |
 | TS-1 timeliness screen: self-reported decision-to-original-filing gap > 5 working days (screening signal, not a legal finding) | post-freeze protocol ts-protocol-1, silver reference | 305 defect filings | FLAGGED with RCDATE as filing date 19/305 = 0.062 [0.040, 0.095]; originals stratum 6/136 = 0.044 [0.020, 0.093] (CIs added after seeing results). The primary (PDF Submission Date, 104/305) is not interpretable as timing: amended versions carry the amendment date | none (descriptive) | n/a | `reports/phase_7_timeliness.md@2157cf1` |
-| SC-1 supplier claims vs the filer-declared supplier (reference = filer's declaration, non-AI, not ground truth) | post-freeze protocol sc-protocol-1 | 261 filings declaring an external supplier | agent (never saw the block, name masked): recall 18/261 = 0.069, precision 19/172 = 0.110 (accepted 14/70 = 0.200); silver S2 precision 92/113 = 0.814; components not run (no component claims) | none (descriptive) | n/a | `reports/phase_8_supplier_check.md@f35dfb6` |
+| SC-1 supplier claims vs the filer-declared supplier (reference = filer's declaration, non-AI, not a reference standard) | post-freeze protocol sc-protocol-1 | 261 filings declaring an external supplier | agent (never saw the block, name masked): recall 18/261 = 0.069, precision 19/172 = 0.110 (accepted 14/70 = 0.200); silver S2 precision 92/113 = 0.814; components not run (no component claims) | none (descriptive) | n/a | `reports/phase_8_supplier_check.md@f35dfb6` |
+| HA-1 small audit of accepted event claims (audited by the author, a single non-expert, n = 39; HA-01 practice item excluded) | post-freeze protocol ha-protocol-1; silver verdict compared, not a reference standard | 39 accepted Test-A claims, one per filing (estimates a random accepted claim from a random filing) | marked correct (date and type) 26/39 = 0.667 [0.510, 0.794]; date only 38/39 = 0.974 [0.868, 0.995]; marks vs silver agreement 30/39 = 0.769, kappa 0.449; repeats 8/8; exploratory prediction-powered estimate over the 536 claims 0.612 [0.452, 0.771] (not narrower); post hoc without HA-02 (n = 38): 26/38 = 0.684 [0.525, 0.809] | none (descriptive) | n/a | `reports/phase_9_human_audit.md@6d81416` |
 
 ## Quick start
 
@@ -67,7 +68,7 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 
 ## Limitations
 
-- **Silver labels only.** No human checked any label. Pass C sided with Pass B in 72–78% of items, and both are the same model family, so the labels are not independent evidence. No label-error rate is claimed.
+- **Silver labels only.** Nobody checked the labels; the only reading by a person is HA-1, 39 accepted claims marked by the author, a single non-expert (The notes were written by the author; an AI assistant rewrote their wording; one practice item was answered by the AI and one was discussed with it), and one rater is not a reference standard. Pass C sided with Pass B in 72–78% of items, and both are the same model family, so the labels are not independent evidence. No label-error rate is claimed.
 - **Results are weaker beyond Test-A.** The check-and-abstain gain did not show clearly on Test-B (H1 interval includes 0), and the advantage over the rule baseline did not show clearly on unseen filers (H5 interval includes 0).
 - **Event types are where errors concentrate.** Most wrong accepted claims have the right date but a different type. The agent's typing falls below the two labellers' agreement on Test-B and unseen filers.
 - **Supplier claims** are few (13–20 accepted per split) and their error is 23–40%, with wide intervals.
@@ -83,11 +84,11 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 Ashrit Kota (2026). TierTrace-573 (v1.0.0) [software and data]. Zenodo. https://doi.org/10.5281/zenodo.23831372
 ```
 
-That DOI covers all versions. v1.0.0 specifically is https://doi.org/10.5281/zenodo.23831373.
+That DOI covers all versions. v1.0.0 specifically is https://doi.org/10.5281/zenodo.23831373; v1.1.0 specifically is https://doi.org/10.5281/zenodo.23838592.
 
 Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md. Repository URL: https://github.com/ASHRIT01/tiertrace-573. See also CITATION.cff.
 
-Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085
+Closest prior dataset (hand-coded Part 573 chronologies with supplier involvement, 2,120 recalls, 2009–2018; description supplied by the owner): Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085
 
 ## Licence
 

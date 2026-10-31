@@ -167,7 +167,7 @@ Subsets (status changes do not apply; primary rule within the subset):
 
 Every pre-declared variant ran. Variant 7 cannot use the original version's own Submission Date, because those PDFs were not downloaded; it reports the two strata instead, as the protocol fixed. Variant 8 is empty for Test-B, where every filing is typed by the FMVSS proxy.
 
-## (e) Consistency audit (no ground truth), defect filings
+## (e) Consistency audit (no reference standard), defect filings
 | split | set | order inconsistency (FILER_AWARENESS ≤ INVESTIGATION_START ≤ DECISION ≤ filing) | any dated event after the filing date | DECISION more than 10 years before filing |
 |---|---|---|---|---|
 | Test-A | silver | 20/152 (0.132) W[0.087, 0.195] | 2/152 (0.013) W[0.004, 0.047] | 0/152 (0.000) W[0.000, 0.025] |

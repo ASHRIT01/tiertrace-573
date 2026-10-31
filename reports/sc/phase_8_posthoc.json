@@ -1,5 +1,5 @@
 {
- "note": "POST HOC diagnostics added after seeing results; reference = filer-declared supplier (non-AI, not ground truth)",
+ "note": "POST HOC diagnostics added after seeing results; reference = filer-declared supplier (non-AI, not a reference standard)",
  "population_filings": 261,
  "declared_name_is_short_form_of_filer": {
   "filings": 24,

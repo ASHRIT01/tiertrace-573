@@ -29,7 +29,7 @@ def sh(v, ci=True):
 E = R["levels"]["exact"]
 w("# Phase 8 (SC-1): agent and silver supplier claims checked against the filer's own declaration")
 w("")
-w("**Reference = filer-declared supplier (non-AI, not ground truth).** The declared supplier is what the filer wrote under 49 CFR 573.6(c)(2)(iv). It may be "
+w("**Reference = filer-declared supplier (non-AI, not a reference standard).** The declared supplier is what the filer wrote under 49 CFR 573.6(c)(2)(iv). It may be "
   "a tier-1 assembler, the entity the part was obtained from, or the filer itself. **A match measures fidelity to the filer's declaration, not who really made "
   "the part, and a non-match is not an error by the filer.**")
 w("")

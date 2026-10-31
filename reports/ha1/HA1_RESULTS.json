@@ -1,0 +1,244 @@
+{
+ "n_primary": 39,
+ "excluded": [
+  "HA-01"
+ ],
+ "wording": "audited by the author, a single non-expert, n = 39",
+ "primary": {
+  "correct": 26,
+  "n": 39,
+  "share": 0.6666666666666666,
+  "wilson95": [
+   0.5097710432024052,
+   0.7936723389308484
+  ]
+ },
+ "sensitivity_excluding_unsure": {
+  "correct": 26,
+  "n": 38,
+  "share": 0.6842105263157895,
+  "wilson95": [
+   0.5254394356005149,
+   0.8091557997633335
+  ],
+  "excluded_items": [
+   "HA-38"
+  ]
+ },
+ "date_only": {
+  "yes": 38,
+  "n": 39,
+  "share": 0.9743589743589743,
+  "wilson95": [
+   0.8681871352137286,
+   0.9954594139347627
+  ]
+ },
+ "human_vs_silver": {
+  "human_yes_silver_yes": 23,
+  "human_yes_silver_no": 3,
+  "human_no_silver_yes": 6,
+  "human_no_silver_no": 7,
+  "agreement": 0.7692307692307693,
+  "kappa": 0.44897959183673475,
+  "silver_correct_in_sample": 29,
+  "silver_correct_share_in_sample": 0.7435897435897436,
+  "marks_wrong_silver_right": [
+   "HA-02",
+   "HA-15",
+   "HA-16",
+   "HA-27",
+   "HA-36",
+   "HA-38"
+  ],
+  "marks_right_silver_wrong": [
+   "HA-22",
+   "HA-32",
+   "HA-33"
+  ],
+  "marks_wrong_total": [
+   "HA-02",
+   "HA-04",
+   "HA-12",
+   "HA-13",
+   "HA-15",
+   "HA-16",
+   "HA-27",
+   "HA-34",
+   "HA-35",
+   "HA-36",
+   "HA-37",
+   "HA-38",
+   "HA-40"
+  ],
+  "marks_wrong_silver_wrong": [
+   "HA-04",
+   "HA-12",
+   "HA-13",
+   "HA-34",
+   "HA-35",
+   "HA-37",
+   "HA-40"
+  ]
+ },
+ "repeats": {
+  "pairs": [
+   {
+    "repeat": "HA-41",
+    "original": "HA-30",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-42",
+    "original": "HA-23",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-43",
+    "original": "HA-22",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-44",
+    "original": "HA-21",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-45",
+    "original": "HA-37",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "no",
+     "no"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-46",
+    "original": "HA-05",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-47",
+    "original": "HA-32",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "yes",
+     "yes"
+    ],
+    "identical_note": true
+   },
+   {
+    "repeat": "HA-48",
+    "original": "HA-36",
+    "date": [
+     "yes",
+     "yes"
+    ],
+    "type": [
+     "no",
+     "no"
+    ],
+    "identical_note": true
+   }
+  ],
+  "date_agree": 8,
+  "type_agree": 8,
+  "both_agree": 8,
+  "of": 8,
+  "identical_notes": 8,
+  "disagreeing": []
+ },
+ "minutes": "not recorded",
+ "unsure_marks_primary": {
+  "DATE_OK": 1,
+  "TYPE_OK": 0
+ },
+ "ppi": {
+  "theta": 0.6115097588978187,
+  "se": 0.08134311327225623,
+  "ci95": [
+   0.4520772568841965,
+   0.7709422609114409
+  ],
+  "mean_silver_536": 0.7332089552238806,
+  "weighted_human_only": 0.7149827784156142,
+  "unweighted_with_silver": 0.6562858783008036,
+  "F": 159,
+  "weights": {
+   "min": 1,
+   "max": 13
+  },
+  "silver_correct_536": 393,
+  "n_used": 39,
+  "note": "protocol formula with 40 replaced by 39"
+ },
+ "post_hoc_by_claimed_type": {
+  "OTHER": {
+   "claims": 6,
+   "marked_correct": 4
+  },
+  "FILER_AWARENESS": {
+   "claims": 9,
+   "marked_correct": 7
+  },
+  "DECISION": {
+   "claims": 14,
+   "marked_correct": 12
+  },
+  "INVESTIGATION_START": {
+   "claims": 9,
+   "marked_correct": 3
+  },
+  "NHTSA_FILING": {
+   "claims": 1,
+   "marked_correct": 0
+  }
+ }
+}

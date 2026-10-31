@@ -1,6 +1,6 @@
 # Phase 8 (SC-1): agent and silver supplier claims checked against the filer's own declaration
 
-**Reference = filer-declared supplier (non-AI, not ground truth).** The declared supplier is what the filer wrote under 49 CFR 573.6(c)(2)(iv). It may be a tier-1 assembler, the entity the part was obtained from, or the filer itself. **A match measures fidelity to the filer's declaration, not who really made the part, and a non-match is not an error by the filer.**
+**Reference = filer-declared supplier (non-AI, not a reference standard).** The declared supplier is what the filer wrote under 49 CFR 573.6(c)(2)(iv). It may be a tier-1 assembler, the entity the part was obtained from, or the filer itself. **A match measures fidelity to the filer's declaration, not who really made the part, and a non-match is not an error by the filer.**
 
 The computation follows the protocol fixed before any comparison (`reports/SC_PROTOCOL.md`, tag `sc-protocol-1`), with one amendment (SC-A1). No model was run, and nothing under `freeze-v1`, `amendment-1` or `ts-protocol-1` changed. Tests: `15 passed, 5 warnings in 0.80s` (`tests/test_sc_check.py`, run by the script before anything is written). Raw aggregates: `reports/sc/phase_8_supplier_check.json`. Aggregates only; no per-filer rows and no supplier names in any result table.
 

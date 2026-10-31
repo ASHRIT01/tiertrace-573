@@ -1,0 +1,464 @@
+{
+ "protocol": "reports/HA_PROTOCOL.md",
+ "seed": 7,
+ "population_claims": 536,
+ "frame_filings": 159,
+ "accepted_claims_per_frame_filing": {
+  "RCLRPT-23E009-8284.PDF": 4,
+  "RCLRPT-23E044-2601.PDF": 4,
+  "RCLRPT-23E062-2246.PDF": 2,
+  "RCLRPT-23V023-3785.PDF": 3,
+  "RCLRPT-23V043-5517.PDF": 1,
+  "RCLRPT-23V049-3369.PDF": 5,
+  "RCLRPT-23V065-2221.PDF": 4,
+  "RCLRPT-23V105-3926.PDF": 2,
+  "RCLRPT-23V112-8018.PDF": 2,
+  "RCLRPT-23V123-8136.PDF": 3,
+  "RCLRPT-23V160-2575.PDF": 2,
+  "RCLRPT-23V186-7351.PDF": 1,
+  "RCLRPT-23V217-6513.PDF": 3,
+  "RCLRPT-23V229-8645.PDF": 4,
+  "RCLRPT-23V238-8204.PDF": 5,
+  "RCLRPT-23V253-4361.PDF": 2,
+  "RCLRPT-23V256-5237.PDF": 3,
+  "RCLRPT-23V289-4389.PDF": 4,
+  "RCLRPT-23V310-1286.PDF": 2,
+  "RCLRPT-23V332-7382.PDF": 4,
+  "RCLRPT-23V351-3281.PDF": 6,
+  "RCLRPT-23V375-6379.PDF": 5,
+  "RCLRPT-23V383-8713.PDF": 9,
+  "RCLRPT-23V396-2407.PDF": 5,
+  "RCLRPT-23V405-2388.PDF": 3,
+  "RCLRPT-23V408-4127.PDF": 1,
+  "RCLRPT-23V422-8709.PDF": 6,
+  "RCLRPT-23V524-5492.PDF": 3,
+  "RCLRPT-23V539-2363.PDF": 2,
+  "RCLRPT-23V547-9794.PDF": 1,
+  "RCLRPT-23V557-4321.PDF": 3,
+  "RCLRPT-23V558-1590.PDF": 4,
+  "RCLRPT-23V595-8061.PDF": 1,
+  "RCLRPT-23V641-2572.PDF": 3,
+  "RCLRPT-23V650-5650.PDF": 1,
+  "RCLRPT-23V653-1716.PDF": 17,
+  "RCLRPT-23V656-4926.PDF": 1,
+  "RCLRPT-23V690-6126.PDF": 3,
+  "RCLRPT-23V699-7039.PDF": 3,
+  "RCLRPT-23V703-2054.PDF": 3,
+  "RCLRPT-23V708-4418.PDF": 6,
+  "RCLRPT-23V716-5715.PDF": 4,
+  "RCLRPT-23V732-5995.PDF": 1,
+  "RCLRPT-23V750-4558.PDF": 4,
+  "RCLRPT-23V754-7121.PDF": 1,
+  "RCLRPT-23V787-5200.PDF": 5,
+  "RCLRPT-23V798-4906.PDF": 3,
+  "RCLRPT-23V801-2565.PDF": 2,
+  "RCLRPT-23V818-7970.PDF": 2,
+  "RCLRPT-23V848-6524.PDF": 2,
+  "RCLRPT-23V854-1196.PDF": 2,
+  "RCLRPT-23V855-3267.PDF": 3,
+  "RCLRPT-23V882-8764.PDF": 3,
+  "RCLRPT-24E012-8633.PDF": 4,
+  "RCLRPT-24E030-1138.PDF": 8,
+  "RCLRPT-24E041-7047.PDF": 1,
+  "RCLRPT-24E068-9308.PDF": 1,
+  "RCLRPT-24E083-7160.PDF": 2,
+  "RCLRPT-24E095-2052.PDF": 6,
+  "RCLRPT-24E097-7957.PDF": 4,
+  "RCLRPT-24E099-7080.PDF": 1,
+  "RCLRPT-24V039-2530.PDF": 3,
+  "RCLRPT-24V046-1641.PDF": 2,
+  "RCLRPT-24V047-5176.PDF": 3,
+  "RCLRPT-24V164-6230.PDF": 5,
+  "RCLRPT-24V198-2281.PDF": 4,
+  "RCLRPT-24V217-5008.PDF": 4,
+  "RCLRPT-24V276-7026.PDF": 6,
+  "RCLRPT-24V318-2050.PDF": 1,
+  "RCLRPT-24V352-8650.PDF": 1,
+  "RCLRPT-24V369-1153.PDF": 3,
+  "RCLRPT-24V438-1492.PDF": 6,
+  "RCLRPT-24V446-1426.PDF": 3,
+  "RCLRPT-24V448-4950.PDF": 2,
+  "RCLRPT-24V476-9574.PDF": 5,
+  "RCLRPT-24V477-8229.PDF": 6,
+  "RCLRPT-24V480-8563.PDF": 2,
+  "RCLRPT-24V515-2399.PDF": 2,
+  "RCLRPT-24V526-6201.PDF": 8,
+  "RCLRPT-24V556-5723.PDF": 6,
+  "RCLRPT-24V588-9241.PDF": 1,
+  "RCLRPT-24V607-1671.PDF": 11,
+  "RCLRPT-24V631-8870.PDF": 4,
+  "RCLRPT-24V658-4420.PDF": 5,
+  "RCLRPT-24V666-8037.PDF": 2,
+  "RCLRPT-24V673-2026.PDF": 1,
+  "RCLRPT-24V688-3680.PDF": 5,
+  "RCLRPT-24V706-2031.PDF": 2,
+  "RCLRPT-24V743-7902.PDF": 3,
+  "RCLRPT-24V765-9156.PDF": 1,
+  "RCLRPT-24V775-3530.PDF": 4,
+  "RCLRPT-24V789-9845.PDF": 4,
+  "RCLRPT-24V809-8433.PDF": 1,
+  "RCLRPT-24V820-7053.PDF": 7,
+  "RCLRPT-24V826-8574.pdf": 1,
+  "RCLRPT-24V852-6661.PDF": 1,
+  "RCLRPT-24V860-6666.PDF": 3,
+  "RCLRPT-24V863-6452.PDF": 3,
+  "RCLRPT-24V892-6729.PDF": 2,
+  "RCLRPT-24V897-2591.PDF": 3,
+  "RCLRPT-24V899-7356.PDF": 4,
+  "RCLRPT-24V949-7212.PDF": 1,
+  "RCLRPT-25E013-1210.PDF": 3,
+  "RCLRPT-25E018-7359.pdf": 3,
+  "RCLRPT-25E064-2115.pdf": 6,
+  "RCLRPT-25E071-3446.pdf": 5,
+  "RCLRPT-25V023-3132.PDF": 1,
+  "RCLRPT-25V027-7244.PDF": 6,
+  "RCLRPT-25V032-4431.PDF": 2,
+  "RCLRPT-25V037-7272.PDF": 1,
+  "RCLRPT-25V100-5055.PDF": 4,
+  "RCLRPT-25V102-4724.PDF": 3,
+  "RCLRPT-25V112-9017.PDF": 2,
+  "RCLRPT-25V119-7599.PDF": 7,
+  "RCLRPT-25V132-5563.pdf": 2,
+  "RCLRPT-25V164-5067.PDF": 1,
+  "RCLRPT-25V217-8601.pdf": 4,
+  "RCLRPT-25V222-7359.pdf": 2,
+  "RCLRPT-25V295-2205.pdf": 3,
+  "RCLRPT-25V297-4164.PDF": 4,
+  "RCLRPT-25V307-4487.PDF": 2,
+  "RCLRPT-25V377-7112.pdf": 4,
+  "RCLRPT-25V378-0084.pdf": 1,
+  "RCLRPT-25V381-4395.pdf": 4,
+  "RCLRPT-25V410-8258.pdf": 2,
+  "RCLRPT-25V425-5439.pdf": 1,
+  "RCLRPT-25V441-5547.pdf": 1,
+  "RCLRPT-25V444-3918.pdf": 4,
+  "RCLRPT-25V464-0276.pdf": 2,
+  "RCLRPT-25V470-8715.pdf": 5,
+  "RCLRPT-25V487-2548.pdf": 2,
+  "RCLRPT-25V521-0601.pdf": 5,
+  "RCLRPT-25V533-9464.pdf": 3,
+  "RCLRPT-25V574-1873.pdf": 3,
+  "RCLRPT-25V604-9558.pdf": 6,
+  "RCLRPT-25V640-8730.pdf": 4,
+  "RCLRPT-25V646-9542.pdf": 5,
+  "RCLRPT-25V651-2933.pdf": 3,
+  "RCLRPT-25V659-2787.pdf": 6,
+  "RCLRPT-25V690-8658.pdf": 3,
+  "RCLRPT-25V702-0345.pdf": 1,
+  "RCLRPT-25V706-1572.pdf": 8,
+  "RCLRPT-25V737-6790.pdf": 5,
+  "RCLRPT-25V744-2593.pdf": 4,
+  "RCLRPT-25V754-7812.pdf": 1,
+  "RCLRPT-25V801-2150.pdf": 3,
+  "RCLRPT-25V807-4146.pdf": 3,
+  "RCLRPT-25V832-9661.pdf": 3,
+  "RCLRPT-25V834-3517.pdf": 1,
+  "RCLRPT-25V836-1434.pdf": 13,
+  "RCLRPT-25V870-2680.pdf": 2,
+  "RCLRPT-25V906-7035.pdf": 3,
+  "RCLRPT-26V001-4623.pdf": 1,
+  "RCLRPT-26V007-7238.pdf": 4,
+  "RCLRPT-26V018-6626.pdf": 7,
+  "RCLRPT-26V059-8421.pdf": 1,
+  "RCLRPT-26V062-8099.pdf": 2,
+  "RCLRPT-26V068-2387.pdf": 2,
+  "RCLRPT-26V110-5688.pdf": 1
+ },
+ "input_sha256": {
+  "runs/testA_4b_v2_run1.jsonl": "1979a89b69e45e86362681b17e8a93dbeb8f90a3a6d0be169bdb0fbd806832f8",
+  "runs/testA_4b_v2_run2.jsonl": "a5705ea365dbd19b1258f5e2967ae2843324af8b95e920f45a3ea62821d12ee3",
+  "data/labels/testA_silver.json": "c8b637830c2e46753241cebd33b1043917f8832f03da41238b1d1d9aae180950",
+  "runs/testA_cache.pkl": "5506d2c14cda126178f07746b4cf8e9ec32d0a70a137f0e00fbfbd33e46de928",
+  "docs/LABELING_RULES.md": "39b99cbabe6b8c9c100193837ee81574c3da48efc2ed22319a5684757a510876"
+ },
+ "items": [
+  {
+   "item": "HA-01",
+   "file": "RCLRPT-24V631-8870.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-02",
+   "file": "RCLRPT-23V699-7039.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-03",
+   "file": "RCLRPT-24V949-7212.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-04",
+   "file": "RCLRPT-23V217-6513.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-05",
+   "file": "RCLRPT-23V310-1286.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-06",
+   "file": "RCLRPT-25V651-2933.pdf",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-07",
+   "file": "RCLRPT-23V405-2388.PDF",
+   "event_index": 5,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-08",
+   "file": "RCLRPT-24V820-7053.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-09",
+   "file": "RCLRPT-25V836-1434.pdf",
+   "event_index": 13,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-10",
+   "file": "RCLRPT-23V238-8204.PDF",
+   "event_index": 4,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-11",
+   "file": "RCLRPT-25V470-8715.pdf",
+   "event_index": 4,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-12",
+   "file": "RCLRPT-24E030-1138.PDF",
+   "event_index": 4,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-13",
+   "file": "RCLRPT-23V123-8136.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-14",
+   "file": "RCLRPT-23V383-8713.PDF",
+   "event_index": 10,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-15",
+   "file": "RCLRPT-25V102-4724.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-16",
+   "file": "RCLRPT-25V027-7244.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-17",
+   "file": "RCLRPT-23V289-4389.PDF",
+   "event_index": 6,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-18",
+   "file": "RCLRPT-24V039-2530.PDF",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-19",
+   "file": "RCLRPT-23V396-2407.PDF",
+   "event_index": 4,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-20",
+   "file": "RCLRPT-25V032-4431.PDF",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-21",
+   "file": "RCLRPT-23V253-4361.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-22",
+   "file": "RCLRPT-23V558-1590.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-23",
+   "file": "RCLRPT-24E083-7160.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-24",
+   "file": "RCLRPT-25V659-2787.pdf",
+   "event_index": 14,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-25",
+   "file": "RCLRPT-26V062-8099.pdf",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-26",
+   "file": "RCLRPT-26V059-8421.pdf",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-27",
+   "file": "RCLRPT-24E068-9308.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-28",
+   "file": "RCLRPT-23V186-7351.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-29",
+   "file": "RCLRPT-23V650-5650.PDF",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-30",
+   "file": "RCLRPT-24V476-9574.PDF",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-31",
+   "file": "RCLRPT-25V744-2593.pdf",
+   "event_index": 2,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-32",
+   "file": "RCLRPT-23V656-4926.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-33",
+   "file": "RCLRPT-24V352-8650.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-34",
+   "file": "RCLRPT-25V640-8730.pdf",
+   "event_index": 8,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-35",
+   "file": "RCLRPT-24V448-4950.PDF",
+   "event_index": 0,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-36",
+   "file": "RCLRPT-23V703-2054.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-37",
+   "file": "RCLRPT-24V438-1492.PDF",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-38",
+   "file": "RCLRPT-25E064-2115.pdf",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-39",
+   "file": "RCLRPT-24V706-2031.PDF",
+   "event_index": 3,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-40",
+   "file": "RCLRPT-25V702-0345.pdf",
+   "event_index": 1,
+   "repeat_of": null
+  },
+  {
+   "item": "HA-41",
+   "file": "RCLRPT-24V476-9574.PDF",
+   "event_index": 3,
+   "repeat_of": "HA-30"
+  },
+  {
+   "item": "HA-42",
+   "file": "RCLRPT-24E083-7160.PDF",
+   "event_index": 0,
+   "repeat_of": "HA-23"
+  },
+  {
+   "item": "HA-43",
+   "file": "RCLRPT-23V558-1590.PDF",
+   "event_index": 1,
+   "repeat_of": "HA-22"
+  },
+  {
+   "item": "HA-44",
+   "file": "RCLRPT-23V253-4361.PDF",
+   "event_index": 2,
+   "repeat_of": "HA-21"
+  },
+  {
+   "item": "HA-45",
+   "file": "RCLRPT-24V438-1492.PDF",
+   "event_index": 1,
+   "repeat_of": "HA-37"
+  },
+  {
+   "item": "HA-46",
+   "file": "RCLRPT-23V310-1286.PDF",
+   "event_index": 0,
+   "repeat_of": "HA-05"
+  },
+  {
+   "item": "HA-47",
+   "file": "RCLRPT-23V656-4926.PDF",
+   "event_index": 0,
+   "repeat_of": "HA-32"
+  },
+  {
+   "item": "HA-48",
+   "file": "RCLRPT-23V703-2054.PDF",
+   "event_index": 1,
+   "repeat_of": "HA-36"
+  }
+ ]
+}

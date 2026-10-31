@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HA-1 Audit Sheet</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5f6670;--line:#d9d6cd;--panel:#fff;--mark:#fbe8a6;--link:#0b5cad}
+@media (prefers-color-scheme:dark){:root{--bg:#16181b;--fg:#e8e6e1;--muted:#a3a8b0;--line:#34383e;--panel:#1f2226;--mark:#6a5513;--link:#7db7f2}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main,.bar,.intro{max-width:760px;margin:0 auto;padding:0 16px}
+.intro{padding-top:20px;color:var(--muted);font-size:14px}.intro h1{font-size:18px;margin:0 0 4px;color:var(--fg)}.intro p{margin:0 0 6px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px;margin:16px 0}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}h2{margin:0;font-size:22px}.filing{color:var(--muted);font-variant-numeric:tabular-nums}header a{margin-left:auto}
+a{color:var(--link)}dl{display:flex;flex-wrap:wrap;gap:8px 32px;margin:14px 0}dt,h3{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0}
+dd{margin:2px 0 0;font-size:18px;font-weight:600;overflow-wrap:anywhere}h3{margin-top:16px}
+blockquote{margin:6px 0 0;padding:2px 0 2px 12px;border-left:3px solid var(--line);overflow-wrap:anywhere}.ctx{margin:6px 0 0;overflow-wrap:anywhere}mark{background:var(--mark);color:inherit}
+.bar{display:flex;align-items:center;gap:12px;padding-bottom:24px}.bar button{font:inherit;padding:8px 18px;min-height:44px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--fg);cursor:pointer}
+.bar button:disabled{opacity:.4;cursor:default}#pos{color:var(--muted);font-variant-numeric:tabular-nums;margin-right:auto}
+.js .item{display:none}.js .item.on{display:block}.bar{display:none}.js .bar{display:flex}
+</style></head>
+<body>
+<div class="intro"><h1>HA-1 audit</h1>
+<p>Using <a href="../docs/HA1_CODEBOOK.md">the codebook</a>, judge each item from the filing's own text. Enter <b>DATE_OK</b> and <b>TYPE_OK</b> (yes, no or unsure), <b>MINUTES</b> and an optional <b>NOTE</b> in <code>HA1_sheet.csv</code>, on the row with the same item number.</p></div>
+<main>
+<!--ITEMS-->
+</main>
+<nav class="bar"><span id="pos"></span><button id="prev" type="button">Previous</button><button id="next" type="button">Next</button></nav>
+<script>
+document.documentElement.classList.add("js");
+var items=[].slice.call(document.querySelectorAll(".item")),at=0,start=items.findIndex(function(s){return "#"+s.id===location.hash});
+function show(n){at=Math.max(0,Math.min(items.length-1,n));items.forEach(function(s,i){s.classList.toggle("on",i===at)});
+document.getElementById("pos").textContent="Item "+(at+1)+" of "+items.length;document.getElementById("prev").disabled=at===0;document.getElementById("next").disabled=at===items.length-1;
+history.replaceState(null,"","#"+items[at].id);window.scrollTo(0,0)}
+document.getElementById("prev").onclick=function(){show(at-1)};document.getElementById("next").onclick=function(){show(at+1)};
+document.addEventListener("keydown",function(e){if(e.key==="ArrowRight")show(at+1);if(e.key==="ArrowLeft")show(at-1)});
+show(start<0?0:start);
+</script>
+</body></html>

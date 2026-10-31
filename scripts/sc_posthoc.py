@@ -22,7 +22,7 @@ def main():
     P = [f for f in F if f["stratum"] in POP]
     short = [f for f in P if any(match_contain(d, fn) for d in f["declared"] for fn in f["filer_names"] if fn)]
     hit = lambda c, f: any(match_exact(c["name"], d) for d in f["declared"])
-    R = {"note": "POST HOC diagnostics added after seeing results; reference = filer-declared supplier (non-AI, not ground truth)",
+    R = {"note": "POST HOC diagnostics added after seeing results; reference = filer-declared supplier (non-AI, not a reference standard)",
          "population_filings": len(P),
          "declared_name_is_short_form_of_filer": {"filings": len(short),
                                                   "agent_all_matching_claims_in_them": sum(hit(c, f) for f in short for c in f["agent"]),

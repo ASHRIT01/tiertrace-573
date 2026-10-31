@@ -1,0 +1,51 @@
+# Allowed values for DATE_OK and TYPE_OK: yes, no or unsure (lower case). Fill in after the = sign on each line.
+# MINUTES is a number (minutes spent on the item, decimals allowed).
+# NOTE is optional free text and must not contain the | character.
+HA-01 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=May 20 is the NHTSA lab-test date; Endera's internal investigation followed its June 11 notification.
+HA-02 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=October 10 is correct, but the quoted event is Autocar's decision to recall, not OTHER.
+HA-03 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=September 12 is explicitly when Ford received the GCQIS incident report.
+HA-04 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=March 2023 matches Ford's remedy-parts notification to Jayco; this is a notification, not filer awareness of the original concern.
+HA-05 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=April 10 is explicitly tied to Mack reporting the inoperative horns and opening an investigation.
+HA-06 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=September 19 is the stated date Altec concluded a field action was necessary; that is a decision milestone.
+HA-07 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=May 26 is explicitly tied to MBAG deciding to conduct a recall.
+HA-08 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=March 2, 2021 is explicitly tied to Honda receiving an additional quality report.
+HA-09 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=October 2025 is the stated ODI discussion and supplier coordination milestone, appropriately classified as OTHER.
+HA-10 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=March 29 is explicitly tied to DTNA deciding to initiate a voluntary safety recall.
+HA-11 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=July 9 is explicitly tied to BMW deciding to conduct a voluntary safety recall.
+HA-12 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=March 6 is when Eberspaecher began notifying subsidiaries and customers; the excerpt does not establish this as its first awareness of the defect.
+HA-13 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=January is when the review identified insufficient supplier specifications; the recall decision followed in February.
+HA-14 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=April 11 matches the safety team's escalation vote, an OTHER milestone rather than the later recall decision.
+HA-15 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=February 12 is the committee's noncompliance determination; the excerpt does not state that it decided to initiate the recall.
+HA-16 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=June 24 to 28 is the continued research period; OCC opened the research item on June 20.
+HA-17 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=April 21 is explicitly tied to the Corporate Recall Committee voting to recall.
+HA-18 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=January 17 is explicitly tied to Rolls-Royce deciding to conduct a voluntary safety recall.
+HA-19 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=May 23 is explicitly the field-fix validation completion date; the recall decision followed on June 1.
+HA-20 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=January 16 is explicitly tied to Honda determining a defect existed and deciding to conduct a recall.
+HA-21 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=March 30 is explicitly tied to BMW determining noncompliance and deciding to conduct a recall.
+HA-22 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=July 27 is the date OCC opened the research item.
+HA-23 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=July 21 is explicitly when FCA US TSRC became aware of the potential defect.
+HA-24 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=September 25 is explicitly tied to NASO's decision authority deciding to conduct a safety recall.
+HA-25 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=November 18 is when the assembly-line operator identified the missing washers during production.
+HA-26 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=August 28 is explicitly when FCA US TSRC opened the investigation.
+HA-27 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=June and July are the stated investigation and sampling period; the passage does not identify the investigation's start.
+HA-28 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=March 13 is explicitly when Kentucky Trailer received NHTSA's email notifying it of the related recall.
+HA-29 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=September 15 is explicitly tied to NASO's noncompliance determination and decision to conduct a recall.
+HA-30 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=June 19 is the final report date, a substantive investigation milestone distinct from the June 25 recall initiation.
+HA-31 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=October 24 is explicitly tied to Toyota's determination and subsequent decision to recall.
+HA-32 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=June 5 is explicitly tied to the internal audit finding and initiation of an investigation.
+HA-33 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=May 13 is explicitly when the company was notified of recall 24E-026.
+HA-34 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=September 18 is the stated recall declaration; the excerpt does not establish it as the NHTSA filing date.
+HA-35 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=October 2023 is the stated testing period during floor-reinforcement development, not a documented investigation start.
+HA-36 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=August 29 is the engineering-analysis completion date; the initial discovery occurred on June 20.
+HA-37 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=November 3 is the date of system testing; the field report and investigation activity began earlier.
+HA-38 | DATE_OK=unsure | TYPE_OK=no | MINUTES=NA | NOTE=The exact report ID could not be matched independently; the supplied passage describes ongoing review meetings, not an investigation start.
+HA-39 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=September 16 is explicitly tied to the decision to recall the affected vehicles.
+HA-40 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=August 15 is when International began a limited inspection to determine whether the issue affected other chassis; this is investigative activity, not OTHER.
+HA-41 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=June 19 is the final report date, a substantive investigation milestone distinct from the June 25 recall initiation.
+HA-42 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=July 21 is explicitly when FCA US TSRC became aware of the potential defect.
+HA-43 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=July 27 is the date OCC opened the research item.
+HA-44 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=March 30 is explicitly tied to BMW determining noncompliance and deciding to conduct a recall.
+HA-45 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=November 3 is the date of system testing; the field report and investigation activity began earlier.
+HA-46 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=April 10 is explicitly tied to Mack reporting the inoperative horns and opening an investigation.
+HA-47 | DATE_OK=yes | TYPE_OK=yes | MINUTES=NA | NOTE=June 5 is explicitly tied to the internal audit finding and initiation of an investigation.
+HA-48 | DATE_OK=yes | TYPE_OK=no | MINUTES=NA | NOTE=August 29 is the engineering-analysis completion date; the initial discovery occurred on June 20.

@@ -1,5 +1,5 @@
 """SC-1 supplier check: compute (protocol tag sc-protocol-1, reports/SC_PROTOCOL.md). Pure Python, deterministic, no model run.
-Reference = filer-declared supplier (non-AI, not ground truth). A match measures fidelity to the declaration, not who made the part.
+Reference = filer-declared supplier (non-AI, not a reference standard). A match measures fidelity to the declaration, not who made the part.
   python scripts/sc_check.py  -> reports/sc/phase_8_supplier_check.json (aggregates only, no per-filer rows, no names)
 Runs tests/test_sc_check.py first and writes nothing if any test fails. Needs runs/sc/<split>_agent_suppliers.json (scripts/sc_gate.py)."""
 import json
@@ -16,7 +16,7 @@ from tt.eval.riskcov import cluster_bootstrap  # noqa: E402
 
 POP = ("NAMED_SUPPLIER", "MULTIPLE")
 LEVELS = {"exact": match_exact, "containment": match_contain, "fuzzy_tsr90": match_fuzzy}
-NOTE = "reference = filer-declared supplier (non-AI, not ground truth); a match measures fidelity to the filer's declaration, not who made the part"
+NOTE = "reference = filer-declared supplier (non-AI, not a reference standard); a match measures fidelity to the filer's declaration, not who made the part"
 
 
 def loc(quote, f):
