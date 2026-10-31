@@ -186,7 +186,7 @@ w("Every pre-declared variant ran. Variant 7 cannot use the original version's o
   "strata instead, as the protocol fixed. Variant 8 is empty for Test-B, where every filing is typed by the FMVSS proxy.")
 w("")
 # ---------------------------------------------------------------- (e)
-w("## (e) Consistency audit (no ground truth), defect filings")
+w("## (e) Consistency audit (no reference standard), defect filings")
 w("| split | set | order inconsistency (FILER_AWARENESS ≤ INVESTIGATION_START ≤ DECISION ≤ filing) | any dated event after the filing date | DECISION more than 10 years before filing |")
 w("|---|---|---|---|---|")
 for g in G:

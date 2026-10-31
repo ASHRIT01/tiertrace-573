@@ -1,5 +1,5 @@
 {
- "note": "reference = filer-declared supplier (non-AI, not ground truth); a match measures fidelity to the filer's declaration, not who made the part",
+ "note": "reference = filer-declared supplier (non-AI, not a reference standard); a match measures fidelity to the filer's declaration, not who made the part",
  "protocol": "sc-protocol-1",
  "tests": "15 passed, 5 warnings in 0.80s",
  "levels": {
