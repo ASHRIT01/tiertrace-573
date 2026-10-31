@@ -1,0 +1,234 @@
+{
+ "n_campaigns": 6685,
+ "n_docs": 14219,
+ "docs_per_campaign": {
+  "0": 17,
+  "1": 2777,
+  "2": 1980,
+  "3": 1001,
+  "4": 490,
+  "5": 228,
+  "6": 89,
+  "7": 50,
+  "8": 24,
+  "9": 12,
+  "10": 7,
+  "11": 3,
+  "12": 3,
+  "13": 2,
+  "14": 1,
+  "16": 1
+ },
+ "distinct_load_days_per_campaign": {
+  "0": 17,
+  "1": 3192,
+  "2": 2164,
+  "3": 839,
+  "4": 304,
+  "5": 106,
+  "6": 34,
+  "7": 15,
+  "8": 8,
+  "9": 2,
+  "10": 1,
+  "11": 1,
+  "12": 1,
+  "13": 1
+ },
+ "ge2_docs": 3891,
+ "ge2_distinct_stamps": 3476,
+ "ge2_distinct_days": 3476,
+ "ge2_docs_all_one_day": 415,
+ "campaigns_with_tied_stamps": 1447,
+ "campaigns_latest_stamp_tied": 859,
+ "by_year": {
+  "2020": {
+   "campaigns": 867,
+   "ge2": 462,
+   "share": 0.5329
+  },
+  "2021": {
+   "campaigns": 1069,
+   "ge2": 746,
+   "share": 0.6978
+  },
+  "2022": {
+   "campaigns": 1030,
+   "ge2": 681,
+   "share": 0.6612
+  },
+  "2023": {
+   "campaigns": 988,
+   "ge2": 614,
+   "share": 0.6215
+  },
+  "2024": {
+   "campaigns": 1059,
+   "ge2": 598,
+   "share": 0.5647
+  },
+  "2025": {
+   "campaigns": 970,
+   "ge2": 496,
+   "share": 0.5113
+  },
+  "2026": {
+   "campaigns": 702,
+   "ge2": 294,
+   "share": 0.4188
+  }
+ },
+ "by_type": {
+  "E": {
+   "campaigns": 614,
+   "ge2": 433,
+   "share": 0.7052
+  },
+  "V": {
+   "campaigns": 6071,
+   "ge2": 3458,
+   "share": 0.5696
+  }
+ },
+ "by_year_type": {
+  "2020": {
+   "E": {
+    "campaigns": 85,
+    "ge2": 58,
+    "share": 0.6824
+   },
+   "V": {
+    "campaigns": 782,
+    "ge2": 404,
+    "share": 0.5166
+   }
+  },
+  "2021": {
+   "E": {
+    "campaigns": 91,
+    "ge2": 70,
+    "share": 0.7692
+   },
+   "V": {
+    "campaigns": 978,
+    "ge2": 676,
+    "share": 0.6912
+   }
+  },
+  "2022": {
+   "E": {
+    "campaigns": 97,
+    "ge2": 83,
+    "share": 0.8557
+   },
+   "V": {
+    "campaigns": 933,
+    "ge2": 598,
+    "share": 0.6409
+   }
+  },
+  "2023": {
+   "E": {
+    "campaigns": 94,
+    "ge2": 72,
+    "share": 0.766
+   },
+   "V": {
+    "campaigns": 894,
+    "ge2": 542,
+    "share": 0.6063
+   }
+  },
+  "2024": {
+   "E": {
+    "campaigns": 109,
+    "ge2": 74,
+    "share": 0.6789
+   },
+   "V": {
+    "campaigns": 950,
+    "ge2": 524,
+    "share": 0.5516
+   }
+  },
+  "2025": {
+   "E": {
+    "campaigns": 79,
+    "ge2": 50,
+    "share": 0.6329
+   },
+   "V": {
+    "campaigns": 891,
+    "ge2": 446,
+    "share": 0.5006
+   }
+  },
+  "2026": {
+   "E": {
+    "campaigns": 59,
+    "ge2": 26,
+    "share": 0.4407
+   },
+   "V": {
+    "campaigns": 643,
+    "ge2": 268,
+    "share": 0.4168
+   }
+  }
+ },
+ "gap_days_ge2_docs": {
+  "n": 3891,
+  "median": 47,
+  "q1": 13.0,
+  "q3": 120.0,
+  "iqr": 107.0,
+  "max": 2154
+ },
+ "gap_days_ge2_days": {
+  "n": 3476,
+  "median": 55.0,
+  "q1": 24.0,
+  "q3": 138.0,
+  "iqr": 114.0,
+  "max": 2154
+ },
+ "label_vs_load": {
+  "docs_with_date_in_label": 4648,
+  "abs_diff_days": {
+   "n": 4648,
+   "median": 3.0,
+   "q1": 2.0,
+   "q3": 7.0,
+   "iqr": 5.0,
+   "max": 10947
+  },
+  "within_7_days": 3635
+ },
+ "amendment_labels": {
+  "campaigns_with_2plus_numbered": 546,
+  "numbers_out_of_load_order": 11,
+  "earliest_doc_labelled_amendment": 159
+ },
+ "busiest_load_days": [
+  [
+   "2020-06-11",
+   49
+  ],
+  [
+   "2022-11-03",
+   47
+  ],
+  [
+   "2025-10-23",
+   46
+  ],
+  [
+   "2022-11-04",
+   41
+  ],
+  [
+   "2025-08-19",
+   40
+  ]
+ ]
+}

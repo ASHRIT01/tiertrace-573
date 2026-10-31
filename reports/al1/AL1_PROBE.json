@@ -1,0 +1,71 @@
+{
+ "user_agent": "TierTrace-573 research crawler (contact: ashrit0104@gmail.com)",
+ "spacing_s": 1.05,
+ "results": [
+  {
+   "campaign": "20V466",
+   "fileName": "RCLRPT-20V466-5022.PDF",
+   "loadDate": "2020-08-22T00:05:22Z",
+   "url": "https://static.nhtsa.gov/odi/rcl/2020/RCLRPT-20V466-5022.PDF",
+   "strictly_earlier": true,
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 213532,
+   "pdf_header": true,
+   "sha256": "f766600c5c04c3ca8097040e6eb1174dffac9d2acb268dfeb7e881f7e177060d",
+   "fetched_utc": "2026-10-31T07:07:35+00:00"
+  },
+  {
+   "campaign": "21V782",
+   "fileName": "RCLRPT-21V782-9448.PDF",
+   "loadDate": "2021-10-13T03:00:03Z",
+   "url": "https://static.nhtsa.gov/odi/rcl/2021/RCLRPT-21V782-9448.PDF",
+   "strictly_earlier": true,
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 236574,
+   "pdf_header": true,
+   "sha256": "04d8f7c6fe488daf541f5cfc3cefa3aa1cf1c05ee4d3c06a989d746a0a114c25",
+   "fetched_utc": "2026-10-31T07:07:37+00:00"
+  },
+  {
+   "campaign": "23V694",
+   "fileName": "RCLRPT-23V694-5195.PDF",
+   "loadDate": "2023-10-25T07:00:10Z",
+   "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23V694-5195.PDF",
+   "strictly_earlier": true,
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 213989,
+   "pdf_header": true,
+   "sha256": "f2afdc188b37a0a4dbaa77509d6a9419ab2fe16f49d0a7cfa19becfacd2687f5",
+   "fetched_utc": "2026-10-31T07:07:39+00:00"
+  },
+  {
+   "campaign": "25E043",
+   "fileName": "RCLRPT-25E043-0159.pdf",
+   "loadDate": "2025-07-15T07:00:27Z",
+   "url": "https://static.nhtsa.gov/odi/rcl/2025/RCLRPT-25E043-0159.pdf",
+   "strictly_earlier": true,
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 458364,
+   "pdf_header": true,
+   "sha256": "61f50ecac93e97dbf54e61ef8ad68215252d0e00de6e78b615fb3a4ad9822732",
+   "fetched_utc": "2026-10-31T07:07:41+00:00"
+  },
+  {
+   "campaign": "26V230",
+   "fileName": "RCLRPT-26V230-6760.pdf",
+   "loadDate": "2026-04-21T07:00:27Z",
+   "url": "https://static.nhtsa.gov/odi/rcl/2026/RCLRPT-26V230-6760.pdf",
+   "strictly_earlier": true,
+   "status": 200,
+   "content_type": "application/pdf",
+   "bytes": 295502,
+   "pdf_header": true,
+   "sha256": "158ee8262e1077f7ae4cec168c0d23261333a98ddb4454c911b51b2027641ee9",
+   "fetched_utc": "2026-10-31T07:07:42+00:00"
+  }
+ ]
+}
