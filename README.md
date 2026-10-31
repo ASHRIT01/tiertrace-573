@@ -80,7 +80,7 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 ```
 TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings (2026).
 Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md.
-Author: Ashrit Kota. Repository URL: <REPOSITORY_URL> (to be added when the repository exists). See also CITATION.cff.
+Author: Ashrit Kota. Repository URL: https://github.com/ASHRIT01/tiertrace-573. See also CITATION.cff.
 ```
 
 Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085

@@ -3,11 +3,12 @@ message: "If you use this software or its labels, please cite it as below. All l
 title: "TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings"
 type: software
 authors:
-  - name: "Ashrit Kota"
-version: "0.1.0"
-date-released: "2026-10-28"
+  - family-names: "Kota"
+    given-names: "Ashrit"
+version: "1.0.0"
+date-released: "2026-10-31"
 license: MIT
-repository-code: "<REPOSITORY_URL>"
+repository-code: "https://github.com/ASHRIT01/tiertrace-573"
 keywords:
   - NHTSA
   - Part 573
