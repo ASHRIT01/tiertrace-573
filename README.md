@@ -84,7 +84,7 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 Ashrit Kota (2026). TierTrace-573 (v1.0.0) [software and data]. Zenodo. https://doi.org/10.5281/zenodo.23831372
 ```
 
-That DOI covers all versions. v1.0.0 specifically is https://doi.org/10.5281/zenodo.23831373.
+That DOI covers all versions. v1.0.0 specifically is https://doi.org/10.5281/zenodo.23831373; v1.1.0 specifically is https://doi.org/10.5281/zenodo.23838592.
 
 Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md. Repository URL: https://github.com/ASHRIT01/tiertrace-573. See also CITATION.cff.
 
