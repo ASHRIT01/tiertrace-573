@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Kota"
     given-names: "Ashrit"
-version: "1.0.0"
+version: "1.1.0"
 doi: "10.5281/zenodo.23831372"
 identifiers:
   - type: doi
