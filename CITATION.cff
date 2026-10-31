@@ -6,6 +6,14 @@ authors:
   - family-names: "Kota"
     given-names: "Ashrit"
 version: "1.0.0"
+doi: "10.5281/zenodo.23831372"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23831372"
+    description: "all versions"
+  - type: doi
+    value: "10.5281/zenodo.23831373"
+    description: "v1.0.0"
 date-released: "2026-10-31"
 license: MIT
 repository-code: "https://github.com/ASHRIT01/tiertrace-573"

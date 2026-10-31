@@ -1,5 +1,7 @@
 # TierTrace-573
 
+[![DOI](https://zenodo.org/badge/1440585674.svg)](https://doi.org/10.5281/zenodo.23831372)
+
 **All labels in this repository are silver labels: AI-made (code plus Claude models) and cross-checked by other AI passes. No human checked any label.**
 
 TierTrace-573 extracts timeline events (supplier notice, awareness, investigation, decision, NHTSA filing) and supplier names from NHTSA Part 573 Safety Recall Reports. Each claim comes with a verbatim quote. A small local model (`qwen3.5:4b-q4_K_M` via Ollama) proposes the claims. Deterministic code then checks each one, and the agent keeps a claim only if every check passes and a second, differently sampled run agrees; otherwise it abstains. The study was preregistered (tag `freeze-v1`) and scored once against silver labels. The full write-up is [reports/TIERTRACE_REPORT.md](reports/TIERTRACE_REPORT.md).
@@ -78,10 +80,12 @@ The Phase 6 test procedure is in `docs/PHASE6_RUNBOOK.md`.
 ## How to cite
 
 ```
-TierTrace-573: verified extraction of supplier and timeline facts from NHTSA Part 573 recall filings (2026).
-Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md.
-Author: Ashrit Kota. Repository URL: https://github.com/ASHRIT01/tiertrace-573. See also CITATION.cff.
+Ashrit Kota (2026). TierTrace-573 (v1.0.0) [software and data]. Zenodo. https://doi.org/10.5281/zenodo.23831372
 ```
+
+That DOI covers all versions. v1.0.0 specifically is https://doi.org/10.5281/zenodo.23831373.
+
+Preregistration tag freeze-v1 (commit b2c5ed5); amendment-1 (commit 8525779). Report: reports/TIERTRACE_REPORT.md. Repository URL: https://github.com/ASHRIT01/tiertrace-573. See also CITATION.cff.
 
 Related work: Astvansh, V., Ball, G., & Josefy, M. (2022). The Recall Decision Exposed: Automobile Recall Timing and Process Data Set. *Manufacturing & Service Operations Management*, 24(3), 1457–1473. https://doi.org/10.1287/msom.2022.1085
 
