@@ -107,3 +107,7 @@ Integrity check of all 6,668 PDFs (header `%PDF`, size against the API's `fileSi
 - The recall flat file is the local copy of 2026-10-18; campaigns filed after 2026-10-09 are not in it.
 - "Latest version" depends on the API's `loadDate`; campaigns with no Part 573 document in the API listing are logged as failures, not retried.
 - Section 2 holds the first-run snapshot; section 2b is the final status.
+
+## Known limitation: "latest" version (added in AL-1 Step 0b, 2026-10-31)
+
+SN-1's "latest" is arbitrary for 859 campaigns whose latest load timestamp is tied: `list_573` takes whichever tied document the listing returned last. A future SN-1 analysis must order versions by the Submission Date header. No SN-1 file was changed. See `reports/AL1_INVENTORY.md`.

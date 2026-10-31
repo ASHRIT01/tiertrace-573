@@ -45,7 +45,7 @@ Gap between first and last load date:
 | >= 2 documents (same-day groups count as 0) | 3,891 | 47 | 13 | 120 | 107 | 2,154 |
 | >= 2 distinct load days | 3,476 | 55 | 24 | 138 | 114 | 2,154 |
 
-## 2. Sample plan (not fetched)
+## 2. Sample plan v1 (superseded by section 5, never fetched)
 
 - **Frame:** >= 2 documents, excluding the union of `dev_ids`, `testA_ids`, `testA_labelled_ids`, `testB_ids` and `unseen_filer_ids` (1,500 distinct IDs). The labelled and unseen-filer lists are subsets of Test-A. The exclusion removes 697 campaigns, leaving **3,194**. The injection fixture lists no campaign IDs.
 - **Draw:** 300 campaigns, random with seed 0, stratified by RCDATE year. Allocation is proportional to the frame, by largest remainder. The request did not specify the allocation; this is the rule Test-A used.
@@ -90,7 +90,9 @@ The 5 campaigns are from the sample, one each from 2020, 2021, 2023, 2025 and 20
 | 25E043 | RCLRPT-25E043-0159.pdf | 2025-07-15 | 200 | application/pdf | 458,364 | yes |
 | 26V230 | RCLRPT-26V230-6760.pdf | 2026-04-21 | 200 | application/pdf | 295,502 | yes |
 
-All 5 are downloadable, with no block. Five files cannot show the failure rate across the 578. SN-1 found NHTSA can return a 125-byte `NO SUCH ENTITY` body in place of a PDF, so the full fetch must check the header and not rely on the HTTP status. `24E028` and `24V528`, the two known cases, are not in the sample.
+All 5 are downloadable, with no block. Five files cannot show the failure rate across the 578. SN-1 found NHTSA can return a 125-byte `NO SUCH ENTITY` body in place of a PDF, so the full fetch must check the header and not rely on the HTTP status. `24E028` and `24V528`, the two known cases, are not in plan v1.
+
+**Correction (Step 0b):** the code did not pace the first PDF request against the robots.txt request just before it, so that one gap may have been under 1.05 s. This applies to this probe and to the Step 0b fetch run. Both code paths are now fixed.
 
 ## 4. Limits of the listing metadata
 
@@ -102,3 +104,78 @@ These matter for AL-1 and were not resolved here.
 - **Load date is a proxy for filing date.** 4,648 documents carry a date in their summary label. The absolute difference from the load date has a median of 3 days (IQR 2 to 7), and 3,635 (78.2%) are within 7 days. The maximum of 10,947 days suggests label typos.
 - **Amendment labels mostly agree with load order.** Of 546 campaigns with >= 2 numbered amendments, 11 have a higher number loaded strictly before a lower one. In 159 campaigns the earliest document is labelled as an amendment (by array order among ties), so the original may be missing or tied.
 - **No check of completeness.** The listing may not hold every version ever filed. 17 campaigns have no Part 573 document at all.
+
+## 5. Step 0b: resample
+
+**Reason:** version order must be knowable, and in 337 campaigns of the v1 frame every document shares one load day. Eligibility now requires >= 2 distinct load days.
+
+| | Plan v1 (`AL1_SAMPLE_PLAN.json`) | Plan v2 (`AL1_SAMPLE_PLAN_v2.json`) |
+|---|---|---|
+| Eligibility | >= 2 documents | >= 2 documents on >= 2 distinct load days |
+| Frame, after dev/test exclusions | 3,194 | **2,857** |
+| Draw | 300, seed 0, proportional by RCDATE year | same |
+| Sample, 2020 to 2026 | 41, 67, 61, 39, 39, 32, 21 | 41, 69, 60, 39, 39, 31, 21 |
+| Vehicle / equipment | 266 / 34 | 269 / 31 |
+| Documents | 883 | 956 |
+| Status | Superseded, not fetched | **Fetched** |
+
+28 campaigns are in both plans. Plan v2 has 0 overlap with the dev and test IDs. `24V528` is in plan v2.
+
+## 6. Step 0b: fetch
+
+| | |
+|---|---:|
+| Part 573 documents in the 300 campaigns | 956 |
+| Fetched over HTTP, accepted (status 200 and `%PDF`) | 655 |
+| Copied from the SN-1 cache, SHA-256 verified against the SN-1 manifest | 299 |
+| Reused from the Step 0 probe | 1 |
+| **NON_PDF** | **1** |
+| PDF requests | 657 |
+| Successful retries | 0 |
+| 401, 403, 429 | 0 |
+| Network errors | 0 |
+| Main run | 07:11:57 to 07:23:49 UTC, 2026-10-31 (11 min 52 s) |
+| Files on disk / bytes | 959 / 234,054,598 |
+
+- **NON_PDF:** `RCLRPT-24V528-5855.PDF`, the campaign's latest listed document. Both tries returned HTTP 200 and 125 bytes, beginning `<html><title>NO SUCH ENTITY</title><body>There is no such recall id or contact id. Please check and `. The SN-1 copy is the same kind of reply, so it was not reused.
+- **Probe leftovers:** 4 files from the Step 0 probe are not in plan v2 (`20V466`, `23V694`, `25E043`, `26V230`). They remain on disk and are marked `in_sample: false` in the manifest, which is why the disk holds 959 files and the sample 955.
+- **Case collision:** `22V173` lists two different documents, `RCLRPT-22V173-7909.pdf` and `RCLRPT-22V173-7909.PDF`. This disk is case-insensitive, so the main run treated the second as already cached. It was then fetched separately (HTTP 200, different bytes) and saved as `..._RCLRPT-22V173-7909__casevariant.PDF`. Across all listings, 3 campaigns have such URL pairs (`21V174`, `21V187`, `22V173`), and any future fetch of all versions must handle them.
+
+**Manifest:** `~/tiertrace_al1_cache/al1_manifest.json`, SHA-256 `000b497cb6c54457e5e034b6703ca49c921f798ad9430a06158d459599947511`.
+
+## 7. Step 0b: ordering metadata
+
+Only the `Submission Date` line of page 1 was kept. Page text was matched in memory and discarded, and no chronology was read, parsed or compared. Versions are ordered by Submission Date, then load timestamp. A remaining tie makes the campaign ORDER_AMBIGUOUS. A usable document with no readable date also does, because it cannot be placed by the rule.
+
+| Status | Campaigns |
+|---|---:|
+| **Ordered** | **249** |
+| of which every listed document is a usable PDF | 248 |
+| of which one document is NON_PDF (`24V528`) | 1 |
+| **ORDER_AMBIGUOUS** | **51** |
+| same date and same load timestamp, different bytes | 47 |
+| no readable Submission Date (no text layer) | 4 |
+| **ORIGINAL_MISSING** | **0** |
+| **NON_PDF** (1 document) | **1** |
+| **Total** | **300** |
+
+ORIGINAL_MISSING and NON_PDF are flags and overlap the order statuses.
+
+| Year | Sample | Ordered |
+|---|---:|---:|
+| 2020 | 41 | 34 |
+| 2021 | 69 | 57 |
+| 2022 | 60 | 51 |
+| 2023 | 39 | 31 |
+| 2024 | 39 | 30 |
+| 2025 | 31 | 26 |
+| 2026 | 21 | 20 |
+
+Notes:
+
+- **Documents:** of 955 usable PDFs, 951 have exactly one Submission Date and 4 have no text layer on page 1 (`22V173`, `25V063`, `25V680`, `26V219`). No OCR was run.
+- **ORIGINAL_MISSING rule:** a campaign is flagged if every document tied for earliest is labelled as an amendment. Ties need this rule because their array order is arbitrary. Literally taking the first document in the listing would flag 12 campaigns, and 22 have an amendment label somewhere in the earliest load-timestamp group, but none has only amendment labels there. For the 4 no-date campaigns the check uses load order. The flag does not detect missing intermediate amendments, and the 159 in section 4 came from array order and overstates the same way.
+- **The 47 tied campaigns:** the tie touches the latest position in 17, the earliest in 15, and only middle positions in 15. All have at least 2 distinct positions.
+- **Tiebreak:** in 16 ordered campaigns, at least two versions share a Submission Date and only the load timestamp separates them.
+- **Date versus load order:** the two disagree in 12 campaigns.
+- **`24V528`:** its order covers only its 2 usable documents. The missing one is the latest listed, so the campaign has no usable latest version.

@@ -143,12 +143,12 @@ def make_inventory(camps, docs):
     }
 
 
-def make_plan(rows, docs):
+def make_plan(rows, docs, min_days=1):
     excl = {name: set((Path("data/splits") / f"{name}.txt").read_text().split()) for name in EXCLUDE}
     union = set().union(*excl.values())
     pool = defaultdict(list)
     for r in rows:
-        if r["n_docs"] >= 2 and r["campaign"] not in union:
+        if r["n_docs"] >= 2 and r["n_days"] >= min_days and r["campaign"] not in union:
             pool[r["year"]].append(r["campaign"])
     total = sum(map(len, pool.values()))
     raw = {y: N_SAMPLE * len(v) / total for y, v in pool.items()}
@@ -204,6 +204,7 @@ def probe(plan):
         picks.append(next(d for d in plan["need"] if d["campaign"] == c and d["strictly_earlier"]))  # need is in load order: earliest version
     fx = PoliteFetcher(AL1 / "cache", rate_s=RATE_S)  # robots.txt check, honest UA
     res = []
+    time.sleep(RATE_S)  # robots.txt was just requested
     for i, d in enumerate(picks):
         if not fx.robots.can_fetch(UA, d["url"]):
             res.append({**d, "status": "robots-disallowed"})
