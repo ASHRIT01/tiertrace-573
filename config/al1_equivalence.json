@@ -1,0 +1,129 @@
+{
+ "rule": "the frame is every campaign with exactly one PDF in the SN-1 cache whose file begins with %PDF,\nminus every campaign in data/splits/{dev,testA,testA_labelled,testB,unseen_filer}_ids.txt and minus the 300 AL-1 sample campaigns\n(reports/al1/AL1_ORDER.json). The draw is random.Random(0).sample(sorted(frame), 20).",
+ "seed": 0,
+ "frame_size": 5119,
+ "excluded_ids": 1800,
+ "sn1_manifest_sha256": "7686b2344fb96a7ce1bd4b80b702aacbb007720d6e12bd47911ed887e9232131",
+ "documents": [
+  {
+   "campaign": "23V718",
+   "file": "RCLRPT-23V718-8025.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2023_RCLRPT-23V718-8025.PDF",
+   "sha256": "b236a07500b9978744b20a7e4830e7aea9353c8e457ddcf897192f0b2ea4ed49"
+  },
+  {
+   "campaign": "24V171",
+   "file": "RCLRPT-24V171-5654.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2024_RCLRPT-24V171-5654.PDF",
+   "sha256": "ce18de455e6efb75dcc721082f932de4e58c070d07c6fe87454a98a9ca6c5596"
+  },
+  {
+   "campaign": "20V303",
+   "file": "RCLRPT-20V303-1201.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2020_RCLRPT-20V303-1201.PDF",
+   "sha256": "e13b57425866451cdc9d0f9560331232f8a329e2a1005d2942728825b8800380"
+  },
+  {
+   "campaign": "22V382",
+   "file": "RCLRPT-22V382-2680.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2022_RCLRPT-22V382-2680.PDF",
+   "sha256": "c0ea5d79c69384265540490927e573ce48fca05d901820e205867021b0dea512"
+  },
+  {
+   "campaign": "25V311",
+   "file": "RCLRPT-25V311-1557.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25V311-1557.PDF",
+   "sha256": "068d3b0543665834bc7c3b152f1381101998347d6dd7ec04131014b03149c770"
+  },
+  {
+   "campaign": "25E062",
+   "file": "RCLRPT-25E062-5812.pdf",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25E062-5812.pdf",
+   "sha256": "90ee9a904fff1363c1779f979e483d3f41907796ef816ea1f972574df4398351"
+  },
+  {
+   "campaign": "24E080",
+   "file": "RCLRPT-24E080-9847.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2024_RCLRPT-24E080-9847.PDF",
+   "sha256": "297ef5be5cdbc6894ecfc85284e59b9f299a813dd5b1d6e1b8fe683d373d39c0"
+  },
+  {
+   "campaign": "22V791",
+   "file": "RCLRPT-22V791-3050.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2022_RCLRPT-22V791-3050.PDF",
+   "sha256": "cbeb93cac9ea59267219c99ff5e05c6ba19e023f68202cdbe4885e93918a1673"
+  },
+  {
+   "campaign": "24V888",
+   "file": "RCLRPT-24V888-2351.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2024_RCLRPT-24V888-2351.PDF",
+   "sha256": "8f8e9a97b0ae1275e0ca1a2cfccd48bf7f0264a1870cee910d952479f50f15a5"
+  },
+  {
+   "campaign": "23V365",
+   "file": "RCLRPT-23V365-6343.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2023_RCLRPT-23V365-6343.PDF",
+   "sha256": "edb4086ea62ef5194e3e203002036c51955c29b3296d52994d557e873640d5d7"
+  },
+  {
+   "campaign": "26V227",
+   "file": "RCLRPT-26V227-5608.pdf",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2026_RCLRPT-26V227-5608.pdf",
+   "sha256": "5aca4face276491b4233ff0bc93ddb40813d96d1f2a60d10bd7c777ac2327756"
+  },
+  {
+   "campaign": "22E097",
+   "file": "RCLRPT-22E097-4446.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2022_RCLRPT-22E097-4446.PDF",
+   "sha256": "ffba9952701f0e1a782df535c3750c0eea6996a803f3c075922adcdc743b670f"
+  },
+  {
+   "campaign": "25V220",
+   "file": "RCLRPT-25V220-2748.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25V220-2748.PDF",
+   "sha256": "dac27d38d429469192643064445fa103b68ac80a24bca5570850f9cdb354360f"
+  },
+  {
+   "campaign": "21V336",
+   "file": "RCLRPT-21V336-9552.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2021_RCLRPT-21V336-9552.PDF",
+   "sha256": "0616b9ed6527d4d8f7382f6b6ae3e31ef7e1c33e6f68c8f659f4f91540f0fe40"
+  },
+  {
+   "campaign": "22V598",
+   "file": "RCLRPT-22V598-5503.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2022_RCLRPT-22V598-5503.PDF",
+   "sha256": "349384a7bd33a06e9b730ebcaddd4a34924209e130d3782138b7afdeb204646f"
+  },
+  {
+   "campaign": "21V340",
+   "file": "RCLRPT-21V340-3662.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2021_RCLRPT-21V340-3662.PDF",
+   "sha256": "edf6e0c87278f95dc29069075960265f5f8b851e6280c03937f3be9736fde357"
+  },
+  {
+   "campaign": "21E009",
+   "file": "RCLRPT-21E009-7353.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2021_RCLRPT-21E009-7353.PDF",
+   "sha256": "6f1b6628d05705e334a08b2237a19aaa0ce5504caa246b5d8f8bc09d6b8b962c"
+  },
+  {
+   "campaign": "26V601",
+   "file": "RCLRPT-26V601-9878.pdf",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2026_RCLRPT-26V601-9878.pdf",
+   "sha256": "beaf45cb16cb36e8531df2a150c7a740ef9f4dcf1bbf5ec95682750dcc8b2a00"
+  },
+  {
+   "campaign": "22V303",
+   "file": "RCLRPT-22V303-3174.PDF",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2022_RCLRPT-22V303-3174.PDF",
+   "sha256": "b9d328cee6d82cd7ad695975cbb32e0cc185d89b9388c28f92e342396a524700"
+  },
+  {
+   "campaign": "25V585",
+   "file": "RCLRPT-25V585-0759.pdf",
+   "sn1_path": "cache/static.nhtsa.gov_odi_rcl_2025_RCLRPT-25V585-0759.pdf",
+   "sha256": "693ba40f35f6b04ea2d194336c0b8deb90e16e5bb10f8b63da26229f4f54c9e7"
+  }
+ ]
+}

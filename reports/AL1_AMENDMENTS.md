@@ -105,3 +105,55 @@ This replaces J's line "No significance test" for ablations. It still applies to
 ## Prior-art wording note (2026-11-14; not a protocol change)
 
 The novelty sentence in reports/AL1_PRIOR_ART.md section 4 is superseded by reports/AL1_PRIOR_ART_ADDENDUM.md (Timmerman & Bronselaer 2022).
+
+## Amendment 2 (2026-11-14): extraction on Kaggle, model re-pulled, equivalence check
+
+**No AL-1 outcome has been seen.** When this amendment was written and tagged (`al1-amendment-2`):
+- the agent had not been run on any AL-1 filing, and `runs/al1/` did not exist;
+- no lineage class, pair, label draw, ablation or timeliness result existed, and no AL-1 extraction output existed on any machine;
+- no AL-1 chronology had been opened, parsed or compared. Since amendment 1, the only operations on AL-1 PDFs were SHA-256 checks of the cached files against `al1_manifest.json` and `AL1_FETCH.json` (959 of 959 verified, 2026-11-14; nothing re-fetched);
+- the equivalence reference run (below) had not started, and no output existed for the 20 equivalence documents.
+
+The owner made the decision to amend, and it was not based on any AL-1 result.
+
+**Reason.** The external drive that held the working repository is unavailable. Lost with it: the original local model files (the Ollama blobs; only the manifest files remained on the internal disk), the dev run outputs (gitignored `runs/`), `data/dev_raw/`, and one unpushed commit, `f488d2a`, whose content (one line in this file) was restored on 2026-11-14 as the prior-art wording note above. Section D's plan to run about 23 h on the M2 is replaced by a Kaggle notebook.
+
+### A2.1 Where the extraction runs
+- **Kaggle notebook** (`kaggle/al1_extraction.ipynb`): Linux, one NVIDIA T4-class GPU, Ollama **0.40.6** (the official `ollama-linux-amd64.tar.zst`, SHA-256 `c164ab8b1b28e2a247c29719b8e404c423c5b83ae64c3ab4e59d50c7ff7fc5e0`, checked before use; any other version stops the run).
+- **Same frozen code, prompts and settings**: `config/run_settings.json` (SHA-256 `7a13cd4a...`), prompt v2, thinking off, `num_ctx` 6144, run 1 temperature 0 seed 0, run 2 temperature 0.5 seed 1, 300 s timeout, the frozen gate through the amendment-1 wrapper. The notebook clones this repository at tag `al1-amendment-2` and checks every file hash in `data/FREEZE_MANIFEST.json` and the prompt, schema and user-message hashes before any model call.
+- **Python environment.** The package versions of the freeze-v1 environment were never recorded and were lost with the drive. The environment was rebuilt on 2026-11-14 from `pyproject.toml` (Python 3.12.6); the resolved versions are fixed in `kaggle/requirements-lock.txt` and installed identically on Kaggle (Python 3.12.6 via uv). The 155 previously existing tests pass in it; the 18 that need `data/raw` or `data/dev_raw` skip. This environment may differ from the one that produced the v1 results (notably PyMuPDF, now 2.1), which every AL-1 report states.
+- **One GPU, one Ollama server.** Splitting documents across two servers would change which request precedes which on each server and could not be shown to leave every document's output unchanged, so a second GPU, if present, is not used.
+- **Order.** AL-1 documents run campaign by campaign in `config/al1_docs.json` order (sorted campaign IDs, versions in resolved order): run 1 on the campaign's versions, then run 2 on them, then the gate. One record per document per run, one gate record per document, and a progress file. The notebook prints counts only.
+- **Sessions.** Each Kaggle session stops cleanly before an 11-hour budget is reached (no call starts unless it is expected to end in time) and writes its outputs; the next session resumes from them, attached as an input dataset. A session whose GPU model differs from the one of the session that passed the equivalence check stops.
+- **Retry rule unchanged** (section D): a timeout is recorded and not retried; one retry after a runner crash; a missing run 1 leaves the document's pairs uncomputed, and a missing run 2 counts as "run 2 does not agree".
+
+**Consequences.** Outputs may differ across hardware. **H6 latency claims do not apply to AL-1**, and section D's M2 compute estimate is void. **Every AL-1 report states where the extraction ran** (Kaggle, GPU model, driver, Ollama version, model digest, repository commit, from the notebook's environment record) and gives both equivalence shares (A2.3).
+
+### A2.2 The model is pulled, and accepted only if identical
+The model `qwen3.5:4b-q4_K_M` is pulled from the Ollama registry, on the Mac (done 2026-11-14) and on Kaggle, and is accepted only if:
+1. the Ollama API digest equals the frozen `d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04`; and
+2. every blob re-hashes to its digest: the blob named by the frozen digest (the registry manifest) re-hashes to it, and each blob it lists (config, projector, weights, template, license, params) exists with the listed size and re-hashes to its digest. The frozen weight blobs `a9d0a3e1...` and `e56a899b...` must be among them.
+
+The SHA-256 of the local manifest file is not the criterion (on this Ollama version it differs from the API digest). Any failure stops the run. Result on the Mac, 2026-11-14: API digest equal; all 7 blobs re-hash; `ollama show` and modelfile hashes equal the frozen record.
+
+### A2.3 Equivalence check (fixed now)
+**Documents.** 20 campaigns from the SN-1 cache, drawn by `scripts/al1_lists.py`: the frame is every campaign with exactly one PDF in the SN-1 cache whose file begins with `%PDF`, minus every dev, Test-A, Test-A labelled, Test-B and unseen-filer campaign and minus the 300 AL-1 sample campaigns (frame: 5,119), then `random.Random(0).sample(sorted(frame), 20)`. Their cached PDFs are verified against the SN-1 manifest (SHA-256 `7686b2344fb9...`). None is an AL-1 filing. The 20 campaigns (`config/al1_equivalence.json`):
+
+23V718, 24V171, 20V303, 22V382, 25V311, 25E062, 24E080, 22V791, 24V888, 23V365, 26V227, 22E097, 25V220, 21V336, 22V598, 21V340, 21E009, 26V601, 22V303, 25V585
+
+**Reference.** A fresh M2 run of the full frozen pipeline (run 1, run 2, gate) on these 20 documents, on this Mac, **after** the tag `al1-amendment-2`, on AC power (checked first; a run on battery does not start), with `scripts/al1_extract.py --mode batch` (run 1 on all 20, then run 2 on all 20, then the gate). Its outputs are the M2 reference and go into the Kaggle bundle with their hashes. The original dev outputs that were planned as a reference were lost with the drive.
+
+**Kaggle side.** The same command on the same 20 documents in the same order, in the first Kaggle session, before any AL-1 document.
+
+**Metric** (`equivalence` in `scripts/al1_kaggle_lib.py`). The claims are run-1 event claims accepted by the gate. A claim on one machine is matched if the other machine accepted a claim in the same document with the same event type and the same date (`date_text` compared after lower-casing and removing everything but letters and digits), one-to-one within a document.
+- share A = matched / M2-accepted claims (M2 claims also accepted on Kaggle);
+- share B = matched / Kaggle-accepted claims (the reverse).
+
+**Rule.** The AL-1 run continues only if **both shares are >= 0.85**. Otherwise it stops and the decision returns to the author; nothing is re-run, tuned or replaced. A zero denominator does not pass. **Both shares appear in every AL-1 report.**
+
+### A2.4 New code (not frozen)
+`scripts/al1_kaggle_lib.py` (hashes, model check, resume, budget, metric), `scripts/al1_extract.py` (runner: the frozen `run_dev.run` and the frozen gate exactly as in `scripts/ts_gate.py`, taking the document list from a file instead of a gold file), `scripts/al1_equiv_check.py`, `scripts/al1_lists.py` (writes `config/al1_docs.json`, 712 documents, and `config/al1_equivalence.json`), `scripts/al1_env.py` (environment record), `scripts/al1_bundle.py` (input bundle), `kaggle/requirements-lock.txt`, and `tests/test_al1_kaggle.py` (made-up records, blobs and PDFs only). No frozen file was changed.
+
+**How this relates to section M.** As with amendment 1, results under this amendment are labelled **"pre-specified under al1-amendment-2 (amended after al1-protocol-1, before any outcome existed)"**, and section M applies in full to any change after `al1-amendment-2`.
+
+**Unchanged:** everything in `al1-protocol-1` and amendment 1 not stated here, including the analysis sets (248 and 228), the 712 documents, the matcher and its parameters, the labels, the draw, the endpoints and the wording rules.
