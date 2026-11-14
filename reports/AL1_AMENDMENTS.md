@@ -101,3 +101,7 @@ This replaces J's line "No significance test" for ablations. It still applies to
 ### A1.6 Tests and files
 
 `scripts/al1_lib.py` adds the functions above and keeps `match_versions`'s results as tagged. `tests/test_al1_matcher.py` adds tests on made-up version pairs only, including a brute-force check of the assignment and a case where global matching beats greedy.
+
+## Prior-art wording note (2026-11-14; not a protocol change)
+
+The novelty sentence in reports/AL1_PRIOR_ART.md section 4 is superseded by reports/AL1_PRIOR_ART_ADDENDUM.md (Timmerman & Bronselaer 2022).
