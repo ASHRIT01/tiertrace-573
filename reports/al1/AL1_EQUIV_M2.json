@@ -1,0 +1,38 @@
+{
+ "what": "M2 equivalence reference (amendment 2): frozen run 1, run 2 and gate on the 20 documents of config/al1_equivalence.json, after tag al1-amendment-2. Counts and hashes only; the outputs are in the Kaggle bundle (m2_reference/).",
+ "machine": {
+  "where": "M2 Mac",
+  "hardware_model": "Mac14,15",
+  "chip": "Apple M2",
+  "os": "macOS-15.6.1-arm64-arm-64bit",
+  "python": "3.12.6",
+  "ollama_server_version": "0.40.6",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "repo_commit": "e5cc4fe9c486816595481ebf3357792f7fc6af84",
+  "power": "Now drawing from 'AC Power'"
+ },
+ "started_utc_local": "2026-11-14 22:37:00",
+ "done_local": "2026-11-14 23:09:58",
+ "counts": {
+  "documents": 20,
+  "run1_valid_json": 20,
+  "run2_valid_json": 20,
+  "timeouts": 0,
+  "call_errors": 0,
+  "truncated": 0,
+  "run1_event_claims": 98,
+  "gate_accepted_event_claims": 63,
+  "documents_with_accepted_event": 18,
+  "run1_mean_seconds": 47.1,
+  "run2_mean_seconds": 51.6
+ },
+ "files": {
+  "gate.jsonl": "00905caf09a43f48682480eca9d4be493fcee1fa4856852bee1a6276f2b066a5",
+  "run1.jsonl": "fe51680c252ca67c33561b16b97fa7edb71e9fe24ed42542ea887545bf010b75",
+  "run2.jsonl": "7d55f2278f74bbac769d6bdf99d4fbcd731534250ccc65619ffd74ff029d86bd",
+  "prompts.jsonl": "4686f26effc1b9e10ab15650b8277bb568401476ac321477f7b76ef0750bde38",
+  "progress.json": "09ce361b5692b8101953030f7084f6525ba2fdb86484d662162df611d87dfa86",
+  "run_log.txt": "e86abf80419fff677c2a9940a5052ef3d7ca518dc84c29c0236fd98605bce042",
+  "env.json": "bdb853fe863355779ade7d17e566274a726a7623a6d07ee502ecf6f7f59e0a0c"
+ }
+}
