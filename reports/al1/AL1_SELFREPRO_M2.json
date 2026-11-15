@@ -1,0 +1,51 @@
+{
+ "what": "M2 self-reproducibility check (amendment 3 A3.2): the 20 equivalence documents re-run on the M2 with the reference command, compared with the M2 reference. Counts and hashes only.",
+ "machine": {
+  "hardware_model": "Mac14,15",
+  "chip": "Apple M2",
+  "os": "macOS-15.6.1-arm64-arm-64bit",
+  "python": "3.12.6",
+  "ollama_server_version": "0.40.6",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "repo_commit": "557105d2b172c0d21eb72512a7172afdf4183aca",
+  "power": "Now drawing from 'AC Power'"
+ },
+ "run_log": [
+  "2026-11-15 10:02:46 | START | mode batch | documents 20 | run1 0 run2 0 gated 0",
+  "2026-11-15 10:30:28 | DONE | run1 20 run2 20 gated 20 | timeouts 0 errors 0"
+ ],
+ "counts": {
+  "documents": 20,
+  "run1_valid_json": 20,
+  "run2_valid_json": 20,
+  "timeouts": 0,
+  "call_errors": 0,
+  "truncated": 0
+ },
+ "shares": {
+  "reference_accepted": 63,
+  "new_accepted": 63,
+  "matched": 63,
+  "share_reference_also_new": 1.0,
+  "share_new_also_reference": 1.0,
+  "reference_gate_sha256": "00905caf09a43f48682480eca9d4be493fcee1fa4856852bee1a6276f2b066a5",
+  "new_gate_sha256": "00905caf09a43f48682480eca9d4be493fcee1fa4856852bee1a6276f2b066a5"
+ },
+ "rule": "both shares >= 0.95: the M2 reproduces itself and the Kaggle gap is a hardware effect",
+ "result": "both shares 1.000 >= 0.95: the M2 reproduces itself",
+ "diagnostics": {
+  "user_message_identical": "20 of 20",
+  "run1_extraction_byte_identical": "20 of 20",
+  "run2_extraction_byte_identical": "20 of 20"
+ },
+ "files": {
+  "gate.jsonl": "00905caf09a43f48682480eca9d4be493fcee1fa4856852bee1a6276f2b066a5",
+  "run1.jsonl": "da4dfad84761252fd9f196aae7d65958b7868777c1520b1826c6fc80f0b8002d",
+  "run2.jsonl": "2320eedbea336ec58dac27bb76bf127874eae2602fb702b9b78855ddd43173f8",
+  "prompts.jsonl": "4686f26effc1b9e10ab15650b8277bb568401476ac321477f7b76ef0750bde38",
+  "progress.json": "849ed32b3f82b5c657861d94c097eb309618e6c9b0f77b0f0b4139a39c1656fa",
+  "run_log.txt": "2e299d53c6cfda2f61183474961951bbd1d4b6ea0b4ff293a8176cc8a3a079cc",
+  "env.json": "5d800b741686e3a253782f10b7a2d7ecaedcc6328600b238fbb9c637388ccbcb",
+  "selfrepro_result.json": "a20582f9a96dc88f89c52c231695c3ecdc9fe4df0add8286e068f73314051189"
+ }
+}

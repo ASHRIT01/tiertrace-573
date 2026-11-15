@@ -192,3 +192,6 @@ The 20 equivalence documents are run again on this Mac with the identical frozen
 `scripts/al1_kaggle_lib.py` (`Budget.can_start` takes a number of calls), `scripts/al1_extract.py` (`--stop-at-campaign-boundary`), `tests/test_al1_kaggle.py` (2 tests on made-up records), `reports/al1/AL1_EQUIV_KAGGLE.json`. No frozen file changed. Results are labelled **"pre-specified under al1-amendment-3 (amended after al1-protocol-1, before any outcome existed)"**; section M applies in full to any change after `al1-amendment-3`.
 
 **Unchanged:** everything else in `al1-protocol-1` and amendments 1 and 2, including the 712 documents, the gate, the matcher, the labels, the draw and the endpoints.
+
+### A3.2 result (2026-11-15; a result of a pre-specified check, not a change)
+M2 self-reproducibility: M2 reference accepted 63, re-run accepted 63, matched 63; **both shares 1.000 (>= 0.95)**. The run-1 and run-2 extractions were byte-identical to the reference for 20 of 20 documents each, from identical user messages. Under the fixed interpretation, **the M2 reproduces itself and the Kaggle gap (0.746 / 0.855) is read as a hardware effect**. Record: `reports/al1/AL1_SELFREPRO_M2.json`. No AL-1 outcome existed when this was computed.
