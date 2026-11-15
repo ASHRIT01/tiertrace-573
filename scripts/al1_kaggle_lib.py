@@ -136,8 +136,9 @@ class Budget:
     def estimate(self) -> float:
         return self.total / self.n if self.n else self.first_guess
 
-    def can_start(self) -> bool:
-        return self.deadline is None or self.clock() + self.estimate() + self.margin <= self.deadline
+    def can_start(self, calls: int = 1) -> bool:
+        """True if `calls` more calls are expected to finish before the deadline."""
+        return self.deadline is None or self.clock() + calls * self.estimate() + self.margin <= self.deadline
 
 
 def campaign_groups(docs: list[dict]) -> list[tuple[str, list[str]]]:

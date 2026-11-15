@@ -165,3 +165,30 @@ The SHA-256 of the local manifest file is not the criterion (on this Ollama vers
 **Result: not run, because no input can be matched by hash.** None of the 1,456 records in the 14 committed v1 run files (`runs/H6_clean_4b.jsonl` and the committed Test-A, Test-B and unseen run files; the other committed files under `runs/` are logs) holds a hash of its input document. They hold the file name only (fields: `file`, `extraction`, `seconds`, `model`, `options`, `think`, token counts and durations, `done_reason`, `truncated`, `prompt`, `raw`, and `error`/`timeout`/`id` on some). No other committed file records a SHA-256 of a v1 input PDF: the hashes in `data/labels/work/**/final_stats.json` are of label files, and `data/splits/SHA256SUMS` covers the ID lists. Matching by file name alone was not allowed by the specification, so no filing qualifies and no model call was made for this check.
 
 **Limitation stated in every AL-1 report.** The v1 results (freeze-v1) were produced with package versions that were never recorded; AL-1 runs with the versions in `kaggle/requirements-lock.txt` (Python 3.12.6, PyMuPDF 2.1, ollama-python 0.6.3), and whether today's environment reproduces the v1 outputs could not be checked, because the v1 run records hold no input hash. Results are labelled "pre-specified under al1-amendment-2".
+
+## Amendment 3 (2026-11-15): the Kaggle equivalence check failed; the AL-1 extraction runs on the M2
+
+**No AL-1 outcome has been seen.** When this amendment was written and tagged (`al1-amendment-3`):
+- the agent had not been run on any AL-1 filing on any machine: Kaggle session 1 stopped after the equivalence check, before any AL-1 document (its output archive holds no `al1/` folder), and `runs/al1/` did not exist;
+- no lineage class, pair, label draw, ablation or timeliness result existed;
+- the only model outputs in existence were on the 20 equivalence documents, which are not AL-1 filings.
+
+**Kaggle session 1 (amendment 2, as specified).** Tesla T4 (GPU 0 of two; driver 580.178.04), Linux, Python 3.12.6, Ollama 0.40.6, model digest `d8b0f5e9760c...`, repository commit `e5cc4fe`; every pre-check passed (Ollama build hash, tag commit and pinned files, the 57 frozen files and the prompt, schema and template hashes, package lock, model digest and all 7 blobs, bundle and PDF hashes). Result on the 20 equivalence documents: **M2 accepted 63, Kaggle accepted 55, matched 47; share M2 -> Kaggle 0.746, share Kaggle -> M2 0.855.** The first is below the 0.85 rule, so the run stopped as specified. Diagnostics, hash comparisons only: the user messages sent to the model were identical on both machines for 20 of 20 documents, so the difference arises in the model computation, not in PDF parsing; the run-1 extraction was byte-identical to the M2's for 9 of 20 documents, run 2 for 1 of 20. Record: `reports/al1/AL1_EQUIV_KAGGLE.json` (counts and hashes; the archive, SHA-256 `8191e0f16c0e47120fdeca7de9288e7ccae2c1c1a66833048e259d1be3831dfd`, is kept out of git).
+
+**Author's decision.** Kaggle is not used. The AL-1 extraction runs on the M2, the hardware of the frozen v1 runs, in resumable sessions. **The Kaggle result (both shares and the counts above) is reported in every AL-1 report.**
+
+### A3.1 How the M2 run works
+- Same frozen code, prompts, settings and gate as amendment 2 A2.1, with the environment of `kaggle/requirements-lock.txt` (Python 3.12.6) and the model accepted under A2.2 (digest and every blob re-hashed at the start of each session, `--blobs-dir`).
+- `scripts/al1_extract.py --docs config/al1_docs.json --pdf-dir <the 712 PDFs, verified against config/al1_docs.json> --out-dir runs/al1 --mode campaign --stop-at-campaign-boundary --deadline <session end>`, under `caffeinate -i`, on AC power (checked before each session; a session on battery does not start).
+- **Sessions.** Each session has a time budget set when it starts (the first: 4.5 hours). New option `--stop-at-campaign-boundary`: the deadline is checked only before a campaign, and the campaign starts only if all its remaining calls are expected to fit (mean call time so far, or 120 s before any call, plus 60 s); a session therefore stops between campaigns. Resume, the retry rule (section D) and the counts-only output are as in amendment 2. The Ollama server is left running between sessions.
+- **H6** latency claims are still not made from AL-1 runs.
+
+### A3.2 M2 self-reproducibility check (fixed now, before it runs)
+The 20 equivalence documents are run again on this Mac with the identical frozen pipeline and the same command as the reference (`--mode batch`), into a new folder `runs/al1_equiv_m2_rerun/`, and the two shares of A2.3 are computed against the existing M2 reference (`scripts/al1_equiv_check.py`, reference gate SHA-256 `00905caf...`).
+
+**Fixed interpretation.** If **both shares are >= 0.95**, the M2 reproduces itself and the Kaggle gap is read as a hardware effect. If either is **below 0.95**, run-to-run variation exists on one machine, and this is stated as a **limitation of the gate in every AL-1 report**, with both shares. Either way the AL-1 run on the M2 goes ahead; this check has no stop rule.
+
+### A3.3 Files
+`scripts/al1_kaggle_lib.py` (`Budget.can_start` takes a number of calls), `scripts/al1_extract.py` (`--stop-at-campaign-boundary`), `tests/test_al1_kaggle.py` (2 tests on made-up records), `reports/al1/AL1_EQUIV_KAGGLE.json`. No frozen file changed. Results are labelled **"pre-specified under al1-amendment-3 (amended after al1-protocol-1, before any outcome existed)"**; section M applies in full to any change after `al1-amendment-3`.
+
+**Unchanged:** everything else in `al1-protocol-1` and amendments 1 and 2, including the 712 documents, the gate, the matcher, the labels, the draw and the endpoints.

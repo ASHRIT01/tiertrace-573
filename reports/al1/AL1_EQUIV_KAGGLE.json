@@ -1,0 +1,60 @@
+{
+ "what": "Kaggle session 1 of the AL-1 notebook (amendment 2): equivalence check only; the AL-1 run never started. Counts and hashes only; the zip is kept out of git.",
+ "archive": {
+  "file_name": "al1_outputs.zip",
+  "sha256": "8191e0f16c0e47120fdeca7de9288e7ccae2c1c1a66833048e259d1be3831dfd",
+  "bytes": 29265,
+  "internal_manifest_entries": 8,
+  "internal_manifest_verified": true,
+  "al1_outputs_present": false,
+  "output_manifest_sha256": "848ba6c5530c4a6929326f288a9a61c42b4e83d3a0627856852d98a18711ba38"
+ },
+ "environment": {
+  "gpus": [
+   "0, Tesla T4, 580.178.04, 15360 MiB",
+   "1, Tesla T4, 580.178.04, 15360 MiB"
+  ],
+  "gpu_used": "Tesla T4",
+  "cuda_visible_devices": "0",
+  "os": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "python": "3.12.6",
+  "ollama_server_version": "0.40.6",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "repo_commit": "e5cc4fe9c486816595481ebf3357792f7fc6af84"
+ },
+ "counts": {
+  "documents": 20,
+  "run1_valid_json": 20,
+  "run2_valid_json": 20,
+  "timeouts": 0,
+  "call_errors": 0,
+  "truncated": 0
+ },
+ "equivalence": {
+  "documents": 20,
+  "reference_accepted": 63,
+  "new_accepted": 55,
+  "matched": 47,
+  "share_reference_also_new": 0.746031746031746,
+  "share_new_also_reference": 0.8545454545454545,
+  "threshold": 0.85,
+  "continue": false,
+  "reference_gate_sha256": "00905caf09a43f48682480eca9d4be493fcee1fa4856852bee1a6276f2b066a5",
+  "new_gate_sha256": "c3f32904ff2841bdb0e92e2d38d65e1eeff568dc85bb3d7462e4de7855d2a95e"
+ },
+ "diagnostics": {
+  "user_message_sha256_identical": "20 of 20",
+  "run1_extraction_identical_to_m2": "9 of 20",
+  "run2_extraction_identical_to_m2": "1 of 20"
+ },
+ "files": {
+  "env/session_1.json": "d1f9e6178e4779aa18c4f4099455b3bd5d229813f7e62a2fda671a5f9a8aa533",
+  "equivalence/kaggle/gate.jsonl": "c3f32904ff2841bdb0e92e2d38d65e1eeff568dc85bb3d7462e4de7855d2a95e",
+  "equivalence/kaggle/progress.json": "7050a37628009ed747e2e8f4b2e64ec0e27f2d7c827ed01634084c1f62fa1f85",
+  "equivalence/kaggle/prompts.jsonl": "4686f26effc1b9e10ab15650b8277bb568401476ac321477f7b76ef0750bde38",
+  "equivalence/kaggle/run1.jsonl": "afda24cc67ba226a8e1bde55cf3f0e722355849e49bb4f92633a050a38a5e3db",
+  "equivalence/kaggle/run2.jsonl": "207dc9983d2e800d779c60b9a54a040ef8bf36d5bbd33034f236fe88e9663994",
+  "equivalence/kaggle/run_log.txt": "1b80e6e7185de0fa48770fc44e7c1a1fa699311b7e38eff15235796f87d6999e",
+  "equivalence/result.json": "0caf5f8722c973d88348f2317be35303acc9f142f00bf697480e9492c85026f5"
+ }
+}

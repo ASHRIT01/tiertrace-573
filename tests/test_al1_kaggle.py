@@ -284,3 +284,26 @@ def test_runner_refuses_missing_pdfs(runner):
     X, calls, docs, args, out = runner
     (Path(args[3]) / docs[0]["file"]).unlink()
     assert X.main(args) == 2 and calls == []
+
+
+def test_budget_for_several_calls():
+    b = Budget(deadline=1000.0, first_guess=100, margin=0, clock=lambda: 0.0)
+    assert b.can_start(10) and not b.can_start(11)
+
+
+def test_runner_stops_only_at_campaign_boundaries(runner, monkeypatch):
+    X, calls, docs, args, out = runner
+
+    class Fits6(Budget):                       # room for 6 more calls in this session
+        def can_start(self, calls=1):
+            return self.n + calls <= 6
+
+    monkeypatch.setattr(X, "Budget", Fits6)
+    assert X.main(args + ["--stop-at-campaign-boundary"]) == 3
+    # X needs 4 calls (fits), Y needs 6 more (4 + 6 > 6): stop before Y, never inside a campaign
+    assert [f for _, f in calls] == ["X-0.pdf", "X-1.pdf", "X-0.pdf", "X-1.pdf"]
+    assert [r["file"] for r in read_jsonl_repair(out / "gate.jsonl")] == ["X-0.pdf", "X-1.pdf"]
+    monkeypatch.setattr(X, "Budget", Budget)
+    calls.clear()
+    assert X.main(args + ["--stop-at-campaign-boundary"]) == 0
+    assert len(calls) == 10 and len(read_jsonl_repair(out / "gate.jsonl")) == 7

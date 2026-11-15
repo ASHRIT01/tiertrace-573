@@ -104,6 +104,8 @@ def main(argv=None) -> int:
     ap.add_argument("--mode", choices=("campaign", "batch"), default="campaign")
     ap.add_argument("--deadline", type=float, default=None)
     ap.add_argument("--blobs-dir", default=None)
+    ap.add_argument("--stop-at-campaign-boundary", action="store_true",
+                    help="amendment 3: check the deadline only before a campaign, for all its remaining calls")
     a = ap.parse_args(argv)
 
     if sha256_file(ROOT / "config/run_settings.json") != RUN_SETTINGS_SHA256:
@@ -159,19 +161,26 @@ def main(argv=None) -> int:
             append(PR, {"file": f, "user_message_sha256": sha256_bytes(build_user(pdf_dir / f).encode())})
             prompted.add(f)
 
+    def deadline_stop():
+        c = counts("STOPPED_BY_DEADLINE")
+        with open(LOG, "a") as fh:
+            fh.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} | DEADLINE STOP | run1 {c['run1_records']} run2 {c['run2_records']} gated {c['gated']}\n")
+        print(f"DEADLINE STOP: {json.dumps({k2: c[k2] for k2 in ('run1_records', 'run2_records', 'gated', 'documents')})}", flush=True)
+        return 3
+
     for gi, (_, files) in enumerate(groups, 1):
+        if a.stop_at_campaign_boundary:
+            todo = sum(f not in done_files(read_jsonl_repair(P[k])) for k in (1, 2) for f in files)
+            if todo and not budget.can_start(todo):
+                return deadline_stop()
         for k in (1, 2):
             r = S[f"run{k}"]
             done = done_files(read_jsonl_repair(P[k]))
             for f in files:
                 if f in done:
                     continue
-                if not budget.can_start():
-                    c = counts("STOPPED_BY_DEADLINE")
-                    with open(LOG, "a") as fh:
-                        fh.write(f"{time.strftime('%Y-%m-%d %H:%M:%S')} | DEADLINE STOP | run1 {c['run1_records']} run2 {c['run2_records']} gated {c['gated']}\n")
-                    print(f"DEADLINE STOP: {json.dumps({k2: c[k2] for k2 in ('run1_records', 'run2_records', 'gated', 'documents')})}", flush=True)
-                    return 3
+                if not a.stop_at_campaign_boundary and not budget.can_start():
+                    return deadline_stop()
                 rec = run(model, [f], pdf_dir, P[k], r["num_ctx"], resume=True, timeout=300.0, prompt=prompt,
                           extra_options={"temperature": r["temperature"], "seed": r["seed"], "presence_penalty": r["presence_penalty"]})[-1]
                 budget.record(rec["seconds"])
